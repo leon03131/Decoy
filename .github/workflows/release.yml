@@ -1,0 +1,56 @@
+name: Release
+
+# Push a tag such as v0.1.0 to build the installer and attach it to a draft GitHub release.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate translations
+        run: npm run check-locales
+
+      - uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tagName: ${{ github.ref_name }}
+          releaseName: Decoy ${{ github.ref_name }}
+          releaseBody: See [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/${{ github.ref_name }}/CHANGELOG.md) for what changed. The installer is not code signed, so Windows SmartScreen may ask for confirmation.
+          releaseDraft: true
+          prerelease: false
+
+      # the installer is uploaded by tauri-action; add the portable zip and the checksums next to it
+      - name: Build portable zip and checksums
+        shell: pwsh
+        run: ./scripts/make-release.ps1 -SkipBuild
+
+      - name: Attach portable build and checksums
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          draft: true
+          files: |
+            release/Decoy_*_x64-portable.zip
+            release/SHA256SUMS.txt

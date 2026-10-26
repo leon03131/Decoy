@@ -1,0 +1,37 @@
+{
+  "name": "decoy",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Tiny stand-in processes that make Discord think a game is running.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leon03131/Decoy.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "tauri": "tauri",
+    "check-locales": "node scripts/check-locales.mjs",
+    "readme-langs": "node scripts/update-readme-langs.mjs",
+    "check-readmes": "node scripts/update-readme-langs.mjs --check"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@tanstack/react-virtual": "^3.14.22",
+    "@tauri-apps/api": "^2.12.4",
+    "framer-motion": "^14.6.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  }
+}

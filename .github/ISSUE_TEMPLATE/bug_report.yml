@@ -1,0 +1,49 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: game
+    attributes:
+      label: Game
+      description: The game and executable you used, as shown in Decoy.
+    validations:
+      required: true
+  - type: dropdown
+    id: detected
+    attributes:
+      label: Did Discord show the game?
+      description: Detection can take about 15 seconds.
+      options:
+        - No, even after waiting a minute
+        - Yes, but late
+        - Yes, but it disappeared
+        - Not related to detection
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Decoy version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 23H2"
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Screenshots, antivirus software, other overlays or game tools running, etc.

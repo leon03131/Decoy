@@ -1,0 +1,19 @@
+name: Feature request
+description: Suggest an idea
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help?
+  - type: markdown
+    attributes:
+      value: |
+        Please note that features that use a user's Discord token, automate accepting or completing quests, or
+        interact with the Discord client are out of scope for this project.

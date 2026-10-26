@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Translations
+    url: https://github.com/leon03131/Decoy/blob/main/docs/TRANSLATING.md
+    about: How to add or improve a language (a pull request with one JSON file is enough).

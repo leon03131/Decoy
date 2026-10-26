@@ -1,0 +1,53 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Decoy",
+  "version": "0.1.0",
+  "identifier": "app.decoy.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "withGlobalTauri": false,
+    "windows": [
+      {
+        "label": "main",
+        "create": false,
+        "title": "Decoy",
+        "width": 1240,
+        "height": 800,
+        "minWidth": 980,
+        "minHeight": 620,
+        "decorations": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self' ipc: http://ipc.localhost; img-src 'self' data: https://cdn.discordapp.com; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self'; connect-src 'self' ipc: http://ipc.localhost ws://127.0.0.1:1420 http://127.0.0.1:1420"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "publisher": "Decoy contributors",
+    "copyright": "Copyright © 2026 Decoy contributors. MIT License.",
+    "shortDescription": "Stand-in game processes for Discord",
+    "longDescription": "Decoy keeps a tiny, harmless stand-in process running under a game's executable name so Discord shows the game as being played, without installing the real game.",
+    "license": "MIT",
+    "resources": { "../LICENSE": "LICENSE.txt" },
+    "windows": {
+      "nsis": {
+        "languages": ["English", "Russian"],
+        "displayLanguageSelector": false,
+        "installMode": "currentUser",
+        "installerIcon": "icons/icon.ico",
+        "headerImage": "windows/header.bmp",
+        "sidebarImage": "windows/sidebar.bmp",
+        "installerHooks": "windows/hooks.nsh"
+      }
+    },
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.ico"]
+  }
+}
