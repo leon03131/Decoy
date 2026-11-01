@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "ไทย" },
-
+  "_meta": {
+    "name": "ไทย"
+  },
   "nav.library": "คลัง",
   "nav.favorites": "รายการโปรด",
   "nav.running": "กำลังทำงาน",
   "nav.settings": "การตั้งค่า",
-
   "discord.checking": "กำลังตรวจสอบ…",
   "discord.up": "กำลังทำงาน",
   "discord.down": "ไม่ได้ทำงาน",
-
   "window.minimize": "ย่อขนาด",
   "window.maximize": "ขยายขนาด",
   "window.close": "ปิด",
-
   "tag.live": "กำลังทำงาน",
   "tag.noExe": "ไม่มี exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "ลอนเชอร์",
-
   "lib.title": "คลัง",
   "lib.subtitle": "{n} เกมที่ทราบโปรเซส · อัปเดต {date}",
   "lib.loading": "กำลังโหลดฐานข้อมูลเกม…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "เพิ่มในรายการโปรด",
   "lib.empty.title": "ไม่พบผลลัพธ์",
   "lib.empty.text": "ลองค้นหาด้วยชื่ออื่น หรือเปิด “แสดงเกมที่ไม่มี exe”",
-
   "fav.title": "รายการโปรด",
   "fav.count": "{n} เกม",
   "fav.hint": "ทำเครื่องหมายเกมด้วยรูปดาว",
   "fav.empty.title": "ยังไม่มีรายการที่นี่",
   "fav.empty.text": "กดรูปดาวบนการ์ดเกมเพื่อเพิ่มลงที่นี่",
-
   "detail.process": "โปรเซส",
   "detail.duration": "ระยะเวลาทำงาน",
   "detail.minutes": "{n} นาที",
@@ -62,7 +57,6 @@
   "detail.favorite": "รายการโปรด",
   "detail.close": "ปิด",
   "detail.id": "ID {id}",
-
   "running.title": "กำลังทำงาน",
   "running.count": "Decoy ที่ทำงานอยู่ {n} รายการ",
   "running.none": "ขณะนี้ไม่มีอะไรทำงานอยู่",
@@ -70,14 +64,36 @@
   "running.stop": "หยุด",
   "running.empty.title": "ไม่มีรายการที่กำลังทำงาน",
   "running.empty.text": "เปิดเกมในคลังแล้วกด “เริ่ม Decoy”",
-
   "settings.title": "การตั้งค่า",
   "settings.general": "ทั่วไป",
   "settings.language": "ภาษา",
   "settings.language.desc": "ภาษาของอินเทอร์เฟซ สามารถเพิ่มภาษาใหม่เป็นไฟล์ในโฟลเดอร์ locales ได้",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "ระยะเวลาเริ่มต้น",
-  "settings.defaultTime.desc": "จำนวนนาทีที่จะเปิดโปรเซสค้างไว้ (เควสต์ Discord มักต้องการ 15 นาที)",
+  "settings.defaultTime.desc": "ระยะเวลาคงกระบวนการไว้กี่นาที ค่าเริ่มต้นคือ 16 ไม่ใช่ 15 เควสต์ Discord ต้องการให้เล่น 15 นาที แต่ Discord อาจใช้เวลาถึงหนึ่งนาทีกว่าจะตรวจพบเกมใหม่ ดังนั้นแค่ 15 นาทีพอดีจึงไม่เพียงพอ",
+  "settings.smartTimer": "ตัวจับเวลาอัจฉริยะ",
+  "settings.smartTimer.desc": "การนับถอยหลังจะเริ่มขึ้นเมื่อ Discord ตรวจพบ decoy แล้ว ไม่ใช่เริ่มนับทันทีที่คุณเปิด ในการตรวจสอบนี้ แอปจะอ่านเฉพาะบรรทัดเกี่ยวกับเกมที่กำลังทำงานจากบันทึกในเครื่องของ Discord เท่านั้น ไม่มีการจัดเก็บหรือส่งข้อมูลไปที่ใด",
+  "settings.updates": "การอัปเดต",
+  "settings.checkNow": "ตรวจสอบเลย",
+  "settings.autoUpdate": "อัปเดตอัตโนมัติ",
+  "settings.autoUpdate.desc": "ตรวจสอบ GitHub เมื่อเริ่มต้นและทุกๆ 6 ชั่วโมง พร้อมทั้งดาวน์โหลดเวอร์ชันใหม่ในเบื้องหลัง การติดตั้งจะต้องรอการยืนยันจากคุณเสมอ และไฟล์ได้รับการตรวจสอบความถูกต้องด้วยลายเซ็นดิจิทัล",
+  "update.current": "เวอร์ชันที่ติดตั้ง {v}",
+  "update.checking": "กำลังตรวจสอบ…",
+  "update.uptodate": "คุณกำลังใช้เวอร์ชันล่าสุดแล้ว",
+  "update.available": "มีเวอร์ชัน {v} ให้อัปเดต",
+  "update.downloading": "กำลังดาวน์โหลดเวอร์ชัน {v}… {p}%",
+  "update.ready": "เวอร์ชัน {v} พร้อมติดตั้งแล้ว",
+  "update.installing": "กำลังติดตั้งและรีสตาร์ท…",
+  "update.download": "ดาวน์โหลด",
+  "update.restart": "รีสตาร์ทและอัปเดต",
+  "update.later": "ไว้ทีหลัง",
+  "update.notes": "มีอะไรใหม่",
+  "update.running": "Decoy ที่กำลังทำงานอยู่ ({n}) จะหยุดลง",
+  "update.error": "ไม่สามารถอัปเดตได้: {e}",
+  "detail.waiting": "กำลังรอ Discord",
+  "detail.waitingNote": "Discord อาจใช้เวลาถึงหนึ่งนาทีกว่าจะตรวจพบเกม การนับถอยหลังจะเริ่มเมื่อ Discord ตรวจพบ decoy",
+  "detail.detected": "Discord ตรวจพบ decoy แล้ว",
+  "detail.assumed": "Discord ยังไม่ยืนยัน แต่เวลาก็กำลังนับต่อไป",
   "settings.autoStop": "หยุดตามเวลา",
   "settings.autoStop.desc": "Decoy จะปิดเองโดยอัตโนมัติเมื่อหมดเวลา",
   "settings.notify": "แจ้งเตือนเมื่อเสร็จสิ้น",
@@ -97,7 +113,6 @@
   "settings.files": "ไฟล์",
   "settings.open": "เปิด",
   "settings.legal": "Decoy ไม่ได้ใช้โทเคน Discord ของคุณและไม่ได้กดรับเควสต์แทนคุณ การจำลองโปรเซสของเกมอาจขัดต่อกฎของ Discord โปรดใช้งานด้วยความเสี่ยงของคุณเอง",
-
   "toast.launched": "เริ่ม “{name}” เป็นเวลา {n} นาทีแล้ว Discord น่าจะตรวจพบภายในประมาณ 15 วินาที",
   "toast.stopped": "หยุด Decoy แล้ว",
   "toast.allStopped": "หยุด Decoy ทั้งหมดแล้ว",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} เกมมีไฟล์ exe แล้ว: {names}",
   "toast.refreshAdded": "อัปเดตฐานข้อมูลแล้ว: +{n} เกมใหม่",
   "toast.refreshUpToDate": "ฐานข้อมูลเป็นเวอร์ชันล่าสุดแล้ว",
-
   "nav.lab": "ห้องแล็บ",
   "lab.title": "ห้องแล็บ",
   "lab.subtitle": "แท็บลับ: เปิด Decoy หลายรายการพร้อมกันในคราวเดียว",
@@ -115,16 +129,19 @@
   "lab.launch": "เริ่ม {n} เกม",
   "lab.launching": "กำลังเริ่ม {done} จาก {total}…",
   "lab.cancel": "ยกเลิก",
-  "lab.warn": "Decoy แต่ละตัวเป็นโปรเซสแยกต่างหากพร้อมหน้าต่าง การเปิดมากกว่า 200–300 รายการพร้อมกันอาจทำให้คอมพิวเตอร์ของคุณช้าลง สูงสุดคือ {max}",
+  "lab.warn": "Decoy แต่ละตัวเป็นกระบวนการแยกต่างหากที่มีหน้าต่าง การเปิดมากเกินไปในคราวเดียวอาจทำให้คอมพิวเตอร์ของคุณค้างได้: แต่ละกระบวนการและหน้าต่างจะใช้หน่วยความจำ และหลังจากเปิดหน้าต่างหลายพันบาน Windows อาจหยุดสร้างหน้าต่างเพิ่ม หากคุณปิด Decoy ตัว decoy ทั้งหมดจะหยุดทำงาน",
+  "lab.all": "ทั้งหมด ({n})",
+  "lab.estimate": "Decoy {n} ตัวจะใช้ RAM ประมาณ {ram}",
+  "lab.confirm": "คลิกอีกครั้งเพื่อเริ่ม {n}",
+  "lab.limit": "Windows หยุดเริ่มกระบวนการใหม่หลังจาก {n}: นั่นคือขีดจำกัดของระบบ",
+  "running.more": "…และอีก {n} รายการ แสดง 120 รายการแรก",
   "lab.hide": "ซ่อนแท็บนี้",
   "toast.labUnlocked": "ปลดล็อกแท็บลับ “ห้องแล็บ” แล้ว",
   "toast.labHidden": "ซ่อนแท็บแล้ว",
   "toast.labDone": "เริ่มเกมแล้ว: {n}",
-
   "tray.show": "เปิด Decoy",
   "tray.stop": "หยุด Decoy ทั้งหมด",
   "tray.quit": "ออกจากโปรแกรม",
-
   "notify.title": "หมดเวลาแล้ว",
   "notify.body": "{name}: ผ่านไป {n} นาทีแล้ว"
 }

@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Kreyòl ayisyen" },
-
+  "_meta": {
+    "name": "Kreyòl ayisyen"
+  },
   "nav.library": "Bibliyotèk",
   "nav.favorites": "Favori",
   "nav.running": "Ap fonksyone",
   "nav.settings": "Paramèt",
-
   "discord.checking": "Ap tcheke…",
   "discord.up": "Ap fonksyone",
   "discord.down": "Pa ap fonksyone",
-
   "window.minimize": "Minimize",
   "window.maximize": "Maksimize",
   "window.close": "Fèmen",
-
   "tag.live": "Ap fonksyone",
   "tag.noExe": "pa gen exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "lansè",
-
   "lib.title": "Bibliyotèk",
   "lib.subtitle": "{n} jwèt ki gen yon pwosesis li te ye · mete ajou {date}",
   "lib.loading": "Ap chaje baz done jwèt yo…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Mete nan favori",
   "lib.empty.title": "Pa gen anyen yo jwenn",
   "lib.empty.text": "Eseye yon lòt non oswa aktive «Montre jwèt san exe».",
-
   "fav.title": "Favori",
   "fav.count": "{n} jwèt",
   "fav.hint": "Make jwèt yo avèk yon zetwal",
   "fav.empty.title": "Pa gen anyen isit la ankò",
   "fav.empty.text": "Peze zetwal sou yon kat jwèt pou mete li isit la.",
-
   "detail.process": "Pwosesis",
   "detail.duration": "Konbyen tan pou kenbe l",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favori",
   "detail.close": "Fèmen",
   "detail.id": "ID {id}",
-
   "running.title": "Ap fonksyone",
   "running.count": "{n} Decoy aktif",
   "running.none": "Pa gen anyen k ap fonksyone kounye a",
@@ -70,14 +64,36 @@
   "running.stop": "Sispann",
   "running.empty.title": "Pa gen anyen k ap fonksyone",
   "running.empty.text": "Louvri yon jwèt nan bibliyotèk la epi peze «Kòmanse Decoy».",
-
   "settings.title": "Paramèt",
   "settings.general": "Jeneral",
   "settings.language": "Lang",
   "settings.language.desc": "Lang entèfas la. Nouvo lang yo ajoute kòm fichye nan dosye locales a.",
   "settings.stubs": "Decoy yo",
   "settings.defaultTime": "Dire pa defo",
-  "settings.defaultTime.desc": "Konbyen minit pou kenbe pwosesis la (kèt Discord yo anjeneral bezwen 15).",
+  "settings.defaultTime.desc": "Konbyen minit pou kenbe pwosesis la. Valè pa defo a se 16, pa 15: kèt Discord mande 15 minit jwèt, men Discord bezwen jiska yon minit pou l remake yon nouvo jwèt, kidonk egzakteman 15 pa ase.",
+  "settings.smartTimer": "Kwonomèt entèlijan",
+  "settings.smartTimer.desc": "Konta rebou a kòmanse lè Discord remake decoy la, pa lè w kòmanse l. Pou konnen sa, aplikasyon an li sèlman liy ki konsène jwèt k ap kouri a nan jounal lokal Discord; anyen pa anrejistre oswa voye okenn kote.",
+  "settings.updates": "Mizajou",
+  "settings.checkNow": "Tcheke kounye a",
+  "settings.autoUpdate": "Mizajou otomatik",
+  "settings.autoUpdate.desc": "Tcheke GitHub lè w kòmanse ak chak 6 èdtan epi telechaje nouvo vèsyon nan fon. Enstalasyon toujou ap tann konfimasyon ou, epi dosye yo verifye pa siyati dijital yo.",
+  "update.current": "Vèsyon enstale {v}",
+  "update.checking": "K ap tcheke…",
+  "update.uptodate": "Ou sou dènye vèsyon an",
+  "update.available": "Vèsyon {v} disponib",
+  "update.downloading": "K ap telechaje vèsyon {v}… {p}%",
+  "update.ready": "Vèsyon {v} pare pou enstale",
+  "update.installing": "K ap enstale epi rekòmanse…",
+  "update.download": "Telechaje",
+  "update.restart": "Rekòmanse epi mete ajou",
+  "update.later": "Pita",
+  "update.notes": "Sa ki nouvo",
+  "update.running": "Decoy k ap kouri yo ({n}) ap sispann.",
+  "update.error": "Pa t kapab mete ajou: {e}",
+  "detail.waiting": "ap tann Discord",
+  "detail.waitingNote": "Discord bezwen jiska yon minit pou l remake yon jwèt. Konta rebou a kòmanse lè li wè decoy la.",
+  "detail.detected": "Discord remake decoy la",
+  "detail.assumed": "Discord pa konfime sa, yo konte tan an kanmenm.",
   "settings.autoStop": "Sispann sou revèy",
   "settings.autoStop.desc": "Decoy la ap fini poukont li lè tan an fin pase.",
   "settings.notify": "Notifye lè li fini",
@@ -97,7 +113,6 @@
   "settings.files": "Fichye yo",
   "settings.open": "Louvri",
   "settings.legal": "Decoy pa itilize jeton Discord ou a epi li pa aksepte kèt pou ou. Fo pwosesis jwèt ka ale kont règ Discord yo, itilize li sou pwòp risk ou.",
-
   "toast.launched": "«{name}» kòmanse pou {n} min. Discord ta dwe remake li nan anviwon 15 segonn.",
   "toast.stopped": "Decoy sispann",
   "toast.allStopped": "Tout Decoy sispann",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} jwèt jwenn fichye exe: {names}",
   "toast.refreshAdded": "Baz done a mete ajou: +{n} nouvo jwèt",
   "toast.refreshUpToDate": "Baz done a deja ajou",
-
   "nav.lab": "Laboratwa",
   "lab.title": "Laboratwa",
   "lab.subtitle": "Yon onglet sekrè: kòmanse anpil Decoy an menm tan.",
@@ -115,16 +129,19 @@
   "lab.launch": "Kòmanse {n} jwèt",
   "lab.launching": "Ap kòmanse {done} nan {total}…",
   "lab.cancel": "Anile",
-  "lab.warn": "Chak Decoy se yon pwosesis separe ki gen yon fenèt. Plis pase 200–300 an menm tan ka ralanti òdinatè w lan, maksimòm lan se {max}.",
+  "lab.warn": "Chak decoy se yon pwosesis separe ak yon fenèt. Twòp an menm tan ka bloke òdinatè w: chak pwosesis ak fenèt itilize memwa, epi apre kèk milye fenèt Windows ka sispann kreye plis. Si w fèmen Decoy, tout decoy ap sispann.",
+  "lab.all": "Tout ({n})",
+  "lab.estimate": "{n} decoy ap itilize apeprè {ram} RAM.",
+  "lab.confirm": "Klike ankò pou kòmanse {n}",
+  "lab.limit": "Windows sispann kòmanse nouvo pwosesis apre {n}: sa se limit sistèm nan.",
+  "running.more": "…ak {n} lòt ankò. Premye 120 yo afiche.",
   "lab.hide": "Kache onglet sa a",
   "toast.labUnlocked": "Onglet sekrè «Laboratwa» debloke",
   "toast.labHidden": "Onglet la kache",
   "toast.labDone": "Jwèt ki kòmanse: {n}",
-
   "tray.show": "Louvri Decoy",
   "tray.stop": "Sispann tout Decoy",
   "tray.quit": "Kite",
-
   "notify.title": "Tan an fini",
   "notify.body": "{name}: {n} min pase."
 }

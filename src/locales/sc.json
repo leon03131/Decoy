@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Sardu" },
-
+  "_meta": {
+    "name": "Sardu"
+  },
   "nav.library": "Bibrioteka",
   "nav.favorites": "Preferidos",
   "nav.running": "In esecutzione",
   "nav.settings": "Impostatziones",
-
   "discord.checking": "Verifitchende…",
   "discord.up": "In esecutzione",
   "discord.down": "Non in esecutzione",
-
   "window.minimize": "Mìnima",
   "window.maximize": "Màssima",
   "window.close": "Serra",
-
   "tag.live": "In esecutzione",
   "tag.noExe": "perunu exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "aviatore",
-
   "lib.title": "Bibrioteka",
   "lib.subtitle": "{n} giogos cun unu protzessu connòschidu · agiornadu {date}",
   "lib.loading": "Carrighende sa base de datos de sos giogos…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Agiunghe a sos preferidos",
   "lib.empty.title": "Peruna cosa agatada",
   "lib.empty.text": "Pròa un'àteru nùmene o ativa “Ammustra sos giogos sena exe”.",
-
   "fav.title": "Preferidos",
   "fav.count": "{n} giogos",
   "fav.hint": "Signa sos giogos cun un'isteddu",
   "fav.empty.title": "Ancora peruna cosa inoghe",
   "fav.empty.text": "Incarca s'isteddu in una casella de giogu pro lu giùnghere inoghe.",
-
   "detail.process": "Protzessu",
   "detail.duration": "Cantu tempus a lu mantènnere",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Preferidu",
   "detail.close": "Serra",
   "detail.id": "ID {id}",
-
   "running.title": "In esecutzione",
   "running.count": "{n} decoy ativos",
   "running.none": "Peruna cosa in esecutzione como",
@@ -70,14 +64,36 @@
   "running.stop": "Firma",
   "running.empty.title": "Peruna cosa in esecutzione",
   "running.empty.text": "Aberi unu giogu in sa bibrioteka e incarca “Incomintza decoy”.",
-
   "settings.title": "Impostatziones",
   "settings.general": "Generale",
   "settings.language": "Lìngua",
   "settings.language.desc": "Lìngua de s'interfàtzia. Sas lìnguas noas benint agiuntas comente archìvios in sa cartella locales.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "Durada predefinida",
-  "settings.defaultTime.desc": "Canto minutos a mantènnere su protzessu (sas chertas de Discord pretzisant de sòlitu de 15).",
+  "settings.defaultTime.desc": "Cantas minutos mantènnere su protzessu. Sa predefinida est 16, no 15: is chircas de Discord pedint 15 minutos de giogu, ma a Discord ddi serbit fintzas a unu minutu pro bìdere unu giogu nou, duncas pretzisu 15 non bastat.",
+  "settings.smartTimer": "Temporizadore intellighente",
+  "settings.smartTimer.desc": "Su contu a s'inversu cumintzat cando Discord at bidu su decoy, no cando dd'incomintzas tue. Pro ddu ischire, s'aplicatzione leghet isceti is lìnnias subra su giogu in cursu dae su registru locale de Discord; nudda est sarvadu o imbiadu a ateras partes.",
+  "settings.updates": "Agiornamentos",
+  "settings.checkNow": "Verìfica como",
+  "settings.autoUpdate": "Agiornamentos automàticos",
+  "settings.autoUpdate.desc": "Controlla GitHub a s'aviu e cada 6 oras e iscàrriga versiones noas in su fundu. S'installatzione abetat semper sa cunfirma tua, e is archìvios sunt verificados pro mèdiu de sa firma digitale issoro.",
+  "update.current": "Versione installada {v}",
+  "update.checking": "Verifitchende…",
+  "update.uptodate": "Tenet sa versione prus reghente",
+  "update.available": "Sa versione {v} est disponìbila",
+  "update.downloading": "Iscarrighende sa versione {v}… {p}%",
+  "update.ready": "Sa versione {v} est pronta pro s'installatzione",
+  "update.installing": "Installende e reaviende…",
+  "update.download": "Iscàrriga",
+  "update.restart": "Reàvia e agiorna",
+  "update.later": "Prus a tardu",
+  "update.notes": "Iscobertas noas",
+  "update.running": "Is decoy ativos ({n}) s'ant a firmare.",
+  "update.error": "Non s'est pòdidu agiornare: {e}",
+  "detail.waiting": "abetende a Discord",
+  "detail.waitingNote": "A Discord ddi serbit fintzas a unu minutu pro bìdere unu giogu. Su contu cumintzat cando bidet su decoy.",
+  "detail.detected": "Discord at bidu su decoy",
+  "detail.assumed": "Discord no at cunfirmadu, su tempus est contadu su matessi.",
   "settings.autoStop": "Firma a cronòmetru",
   "settings.autoStop.desc": "Su decoy finit a sa sola cando su tempus est acabosu.",
   "settings.notify": "Notìfica cando acabat",
@@ -97,7 +113,6 @@
   "settings.files": "Archìvios",
   "settings.open": "Aberi",
   "settings.legal": "Decoy non faghet impreu de su token de Discord tuo e non retzit chertas pro tene. Fintzire unu protzessu de giogu podet andare contra sas règulas de Discord, imprea·lu a riscu tuo.",
-
   "toast.launched": "“{name}” aviadu pro {n} min. Discord diat dèpere bìdere su giogu in unos 15 segundos.",
   "toast.stopped": "Decoy firmadu",
   "toast.allStopped": "Totu sos decoy firmados",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} giogos ant otentu archìvios exe: {names}",
   "toast.refreshAdded": "Base de datos agiornada: +{n} giogos noos",
   "toast.refreshUpToDate": "Sa base de datos est giai agiornada",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "Un'ischeda segreta: aviat medas decoy a sa borta.",
@@ -115,16 +129,19 @@
   "lab.launch": "Avia {n} giogos",
   "lab.launching": "Aviende {done} de {total}…",
   "lab.cancel": "Annulla",
-  "lab.warn": "Cada decoy est unu protzessu separadu cun una bentana. Prus de 200–300 a sa borta podent allentare su computer tuo, su màssimu est {max}.",
+  "lab.warn": "Cada decoy est unu protzessu separadu cun una bentana. Medas a sa borta podent blocare su computadore: cada protzessu e bentana impreat memòria, e a pustis de carchi mìgia de bentanas Windows podet sessare de nde creare ateras. Si serras Decoy, totu is decoy si firmant.",
+  "lab.all": "Totu ({n})",
+  "lab.estimate": "{n} decoy ant a impreare a inghìriu de {ram} de RAM.",
+  "lab.confirm": "Incarca fintas una borta pro incomintzare {n}",
+  "lab.limit": "Windows at sessadu de incomintzare protzessos noos a pustis de {n}: custu est su lìmite de su sistema.",
+  "running.more": "…e ateros {n}. Is primos 120 sunt ammustrados.",
   "lab.hide": "Cua cust'ischeda",
   "toast.labUnlocked": "Ischeda segreta “Lab” sblocada",
   "toast.labHidden": "Ischeda cuada",
   "toast.labDone": "Giogos aviados: {n}",
-
   "tray.show": "Aberi Decoy",
   "tray.stop": "Firma totu sos decoy",
   "tray.quit": "Essi",
-
   "notify.title": "Tempus acabosu",
   "notify.body": "{name}: {n} min sunt colados."
 }

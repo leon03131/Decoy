@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Brezhoneg" },
-
+  "_meta": {
+    "name": "Brezhoneg"
+  },
   "nav.library": "Levraoueg",
   "nav.favorites": "Re wellañ",
   "nav.running": "O vont en-dro",
   "nav.settings": "Arventennoù",
-
   "discord.checking": "O wiriañ…",
   "discord.up": "O vont en-dro",
   "discord.down": "Ket o vont en-dro",
-
   "window.minimize": "Bihanaat",
   "window.maximize": "Brasaat",
   "window.close": "Serriñ",
-
   "tag.live": "O vont en-dro",
   "tag.noExe": "exe ebet",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "lañser",
-
   "lib.title": "Levraoueg",
   "lib.subtitle": "{n} c'hoari gant un argerzh anavezet · hizivaet d'an {date}",
   "lib.loading": "O kargañ diaz roadennoù ar c'hoarioù…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Ouzhpennañ d'ar re wellañ",
   "lib.empty.title": "N'eus bet kavet netra",
   "lib.empty.text": "Klaskit gant un anv all pe enaouit « Diskouez ar c'hoarioù hep exe ».",
-
   "fav.title": "Re wellañ",
   "fav.count": "{n} c'hoari",
   "fav.hint": "Merkañ ar c'hoarioù gant ur steredenn",
   "fav.empty.title": "Netra amañ evit c'hoazh",
   "fav.empty.text": "Pouezit war ar steredenn war deolig ur c'hoari evit e ouzhpennañ amañ.",
-
   "detail.process": "Argerzh",
   "detail.duration": "Padelezh dalc'h",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Re wellañ",
   "detail.close": "Serriñ",
   "detail.id": "ID {id}",
-
   "running.title": "O vont en-dro",
   "running.count": "{n} decoy oberiant",
   "running.none": "N'eus netra o vont en-dro evit ar poent",
@@ -70,14 +64,36 @@
   "running.stop": "Paouez",
   "running.empty.title": "N'eus netra o vont en-dro",
   "running.empty.text": "Digorit ur c'hoari el levraoueg ha pouezit war « Kregiñ gant an decoy ».",
-
   "settings.title": "Arventennoù",
   "settings.general": "Hollek",
   "settings.language": "Yezh",
   "settings.language.desc": "Yezh an etrefas. Ouzhpennet e vez yezhoù nevez evel restroù en teuliad locales.",
   "settings.stubs": "Decoyoù",
   "settings.defaultTime": "Padelezh dre ziouer",
-  "settings.defaultTime.desc": "Pet munutenn da zerc'hel an argerzh (15 munutenn a vez goulennet gant kefridioù Discord peurvuiañ).",
+  "settings.defaultTime.desc": "Peder munutenn e ranker derc'hel an argerzh. 16 eo an dalvoudenn dre ziouer, ha n'eo ket 15: goulenn a ra ar c'hefridioù Discord c'hoari e-pad 15 munutenn, met betek ur vunutenn e c'hall kemer Discord evit merzout ur c'hoari nevez, setu ne vo ket a-walc'h gant 15 rik.",
+  "settings.smartTimer": "Amzerer speredek",
+  "settings.smartTimer.desc": "Kregiñ a ra ar gontadeg pa vez merzet an decoy gant Discord, ha n'eo ket pa loc'hit anezhañ. Evit gouzout kement-se ne lenn an arload nemet al linennoù diwar-benn ar c'hoari o vont en-dro e marilh lec'hel Discord; netra ne vez enrollet na kaset da nep lec'h.",
+  "settings.updates": "Hizivadurioù",
+  "settings.checkNow": "Gwiriañ bremañ",
+  "settings.autoUpdate": "Hizivadurioù emgefreek",
+  "settings.autoUpdate.desc": "Gwiriañ GitHub pa vez loc'het ha bep 6 eurvezh ha pellgargañ er foñs ar stummoù nevez. Gortoz a ra bepred an staliañ ho kadarnadenn, ha gwiriet eo ar restroù gant o sinadur niverel.",
+  "update.current": "Stumm staliet {v}",
+  "update.checking": "O wiriañ…",
+  "update.uptodate": "Gant ar stumm diwezhañ emaoc'h",
+  "update.available": "Hegerz eo ar stumm {v}",
+  "update.downloading": "O pellgargañ ar stumm {v}… {p}%",
+  "update.ready": "Prest eo ar stumm {v} da vezañ staliet",
+  "update.installing": "O staliañ hag adloc'hañ…",
+  "update.download": "Pellgargañ",
+  "update.restart": "Adloc'hañ hag hizivaat",
+  "update.later": "Diwezhatoc'h",
+  "update.notes": "Petra nevez",
+  "update.running": "Arveret decoy ({n}) a chomo a-sav.",
+  "update.error": "N'haller ket hizivaat: {e}",
+  "detail.waiting": "o c'hortoz Discord",
+  "detail.waitingNote": "Betek ur vunutenn e kemer Discord evit merzout ur c'hoari. Kregiñ a ra ar gontadeg pa wel an decoy.",
+  "detail.detected": "Merzet eo bet an decoy gant Discord",
+  "detail.assumed": "N'eo ket bet kadarnaet gant Discord, kontet eo an amzer evelato.",
   "settings.autoStop": "Paouez gant an amzerer",
   "settings.autoStop.desc": "Echuiñ a ra an decoy e-unan pa vez aet an amzer hebiou.",
   "settings.notify": "Kelaouiñ pa vo echu",
@@ -97,7 +113,6 @@
   "settings.files": "Restroù",
   "settings.open": "Digeriñ",
   "settings.legal": "Ne implij ket Decoy ho tokenn Discord ha ne asant ket kefridioù evidoc'h. Gallout a ra c'hoari gant un argerzh faos bezañ a-enep reolennoù Discord, implijit anezhañ war ho kontelc'h.",
-
   "toast.launched": "« {name} » lañset evit {n} min. Discord a rankfe e verzhout a-benn war-dro 15 eilenn.",
   "toast.stopped": "Decoy paouezet",
   "toast.allStopped": "An holl zecoyoù paouezet",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "Restroù exe zo bet resevet gant {n} c'hoari: {names}",
   "toast.refreshAdded": "Diaz roadennoù hizivaet: +{n} c'hoari nevez",
   "toast.refreshUpToDate": "Hizivaet eo an diaz roadennoù dija",
-
   "nav.lab": "Arnodva",
   "lab.title": "Arnodva",
   "lab.subtitle": "Un ivinell sekred: lañsañ a ra meur a zecoy war un dro.",
@@ -115,16 +129,19 @@
   "lab.launch": "Lañsañ {n} c'hoari",
   "lab.launching": "O lañsañ {done} diwar {total}…",
   "lab.cancel": "Nullañ",
-  "lab.warn": "Pep decoy a zo un argerzh disheñvel gant ur prenestr. Ouzhpenn 200–300 war un dro a c'hall gorrekaat hoc'h urzhiataer, ar muiañ bras a zo {max}.",
+  "lab.warn": "Un argerzh disrann gant ur prenestr eo pep decoy. Ma vez re a re war un dro e c'hall stagañ ho stlenneg: memoriezh a implij pep argerzh ha prenestr, ha goude un nebeud miliadoù a brenestroù e c'hall Windows paouez da grouiñ re all. Ma serrit Decoy e chomo a-sav an holl decoys.",
+  "lab.all": "An holl ({n})",
+  "lab.estimate": "Implijout a raio {n} decoy war-dro {ram} a RAM.",
+  "lab.confirm": "Klikit en-dro evit kregiñ gant {n}",
+  "lab.limit": "Paouezet en deus Windows da lañsañ argerzhioù nevez goude {n}: harz ar reizhiad eo.",
+  "running.more": "…ha {n} ouzhpenn. Diskouezet eo ar 120 kentañ.",
   "lab.hide": "Kuzhat an ivinell-mañ",
   "toast.labUnlocked": "Ivinell sekred « Arnodva » dibrennet",
   "toast.labHidden": "Ivinell kuzhet",
   "toast.labDone": "C'hoarioù lañset: {n}",
-
   "tray.show": "Digeriñ Decoy",
   "tray.stop": "Paouez an holl zecoyoù",
   "tray.quit": "Kuitaat",
-
   "notify.title": "Aet eo an amzer hebiou",
   "notify.body": "{name}: tremenet ez eus {n} min."
 }

@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Deutsch" },
-
+  "_meta": {
+    "name": "Deutsch"
+  },
   "nav.library": "Bibliothek",
   "nav.favorites": "Favoriten",
   "nav.running": "Laufend",
   "nav.settings": "Einstellungen",
-
   "discord.checking": "Wird geprüft…",
   "discord.up": "Läuft",
   "discord.down": "Läuft nicht",
-
   "window.minimize": "Minimieren",
   "window.maximize": "Maximieren",
   "window.close": "Schließen",
-
   "tag.live": "Läuft",
   "tag.noExe": "keine exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "Launcher",
-
   "lib.title": "Bibliothek",
   "lib.subtitle": "{n} Spiele mit bekanntem Prozess · aktualisiert {date}",
   "lib.loading": "Spieledatenbank wird geladen…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Zu Favoriten hinzufügen",
   "lib.empty.title": "Nichts gefunden",
   "lib.empty.text": "Versuche einen anderen Namen oder aktiviere „Spiele ohne exe anzeigen“.",
-
   "fav.title": "Favoriten",
   "fav.count": "{n} Spiele",
   "fav.hint": "Spiele mit einem Stern markieren",
   "fav.empty.title": "Hier ist noch nichts",
   "fav.empty.text": "Klicke auf den Stern einer Spielkachel, um sie hier hinzuzufügen.",
-
   "detail.process": "Prozess",
   "detail.duration": "Laufzeit",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorit",
   "detail.close": "Schließen",
   "detail.id": "ID {id}",
-
   "running.title": "Laufend",
   "running.count": "{n} aktive Decoys",
   "running.none": "Aktuell läuft nichts",
@@ -70,14 +64,36 @@
   "running.stop": "Stoppen",
   "running.empty.title": "Nichts läuft",
   "running.empty.text": "Öffne ein Spiel in der Bibliothek und klicke auf „Decoy starten“.",
-
   "settings.title": "Einstellungen",
   "settings.general": "Allgemein",
   "settings.language": "Sprache",
   "settings.language.desc": "Sprache der Benutzeroberfläche. Neue Sprachen werden als Dateien im Ordner „locales“ hinzugefügt.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Standarddauer",
-  "settings.defaultTime.desc": "Wie viele Minuten der Prozess aktiv bleibt (Discord-Quests erfordern meist 15).",
+  "settings.defaultTime.desc": "Wie viele Minuten der Prozess laufen soll. Der Standardwert ist 16, nicht 15: Discord-Quests verlangen 15 Minuten Spielzeit, aber Discord benötigt bis zu einer Minute, um ein neues Spiel zu erkennen, sodass genau 15 Minuten zu kurz sind.",
+  "settings.smartTimer": "Smarter Timer",
+  "settings.smartTimer.desc": "Der Countdown beginnt erst, wenn Discord den Decoy erkannt hat, nicht schon beim Starten. Um das festzustellen, liest die App lediglich die Zeilen zum laufenden Spiel aus Discords lokalem Protokoll; nichts wird gespeichert oder übertragen.",
+  "settings.updates": "Updates",
+  "settings.checkNow": "Jetzt prüfen",
+  "settings.autoUpdate": "Automatische Updates",
+  "settings.autoUpdate.desc": "Prüft GitHub beim Start und alle 6 Stunden und lädt neue Versionen im Hintergrund herunter. Die Installation wartet stets auf deine Bestätigung, und Dateien werden anhand ihrer digitalen Signatur überprüft.",
+  "update.current": "Installierte Version {v}",
+  "update.checking": "Wird geprüft…",
+  "update.uptodate": "Du verwendest die neueste Version",
+  "update.available": "Version {v} ist verfügbar",
+  "update.downloading": "Lade Version {v} herunter… {p}%",
+  "update.ready": "Version {v} ist bereit zur Installation",
+  "update.installing": "Wird installiert und neu gestartet…",
+  "update.download": "Herunterladen",
+  "update.restart": "Neu starten und aktualisieren",
+  "update.later": "Später",
+  "update.notes": "Was ist neu",
+  "update.running": "Laufende Decoys ({n}) werden beendet.",
+  "update.error": "Aktualisierung fehlgeschlagen: {e}",
+  "detail.waiting": "Warte auf Discord",
+  "detail.waitingNote": "Discord benötigt bis zu einer Minute, um ein Spiel zu erkennen. Der Countdown beginnt, sobald es den Decoy sieht.",
+  "detail.detected": "Discord hat den Decoy erkannt",
+  "detail.assumed": "Discord hat es nicht bestätigt, die Zeit wird trotzdem gezählt.",
   "settings.autoStop": "Per Timer stoppen",
   "settings.autoStop.desc": "Das Decoy beendet sich automatisch, wenn die Zeit abgelaufen ist.",
   "settings.notify": "Benachrichtigen, wenn fertig",
@@ -97,7 +113,6 @@
   "settings.files": "Dateien",
   "settings.open": "Öffnen",
   "settings.legal": "Decoy verwendet nicht deinen Discord-Token und nimmt keine Quests für dich an. Das Vortäuschen eines Spielprozesses kann gegen die Regeln von Discord verstoßen – Nutzung auf eigene Gefahr.",
-
   "toast.launched": "„{name}“ für {n} min gestartet. Discord sollte es in etwa 15 Sekunden erkennen.",
   "toast.stopped": "Decoy gestoppt",
   "toast.allStopped": "Alle Decoys gestoppt",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} Spiele haben exe-Dateien erhalten: {names}",
   "toast.refreshAdded": "Datenbank aktualisiert: +{n} neue Spiele",
   "toast.refreshUpToDate": "Die Datenbank ist bereits auf dem neuesten Stand",
-
   "nav.lab": "Labor",
   "lab.title": "Labor",
   "lab.subtitle": "Geheimer Tab: startet viele Decoys auf einmal.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} Spiele starten",
   "lab.launching": "Starte {done} von {total}…",
   "lab.cancel": "Abbrechen",
-  "lab.warn": "Jedes Decoy ist ein separater Prozess mit einem Fenster. Mehr als 200–300 gleichzeitig können den Computer verlangsamen, das Maximum ist {max}.",
+  "lab.warn": "Jeder Decoy ist ein eigener Prozess mit Fenster. Zu viele auf einmal können den Computer einfrieren: Jeder Prozess und jedes Fenster verbraucht Speicher, und nach einigen tausend Fenstern kann Windows aufhören, weitere zu erstellen. Wenn du Decoy schließt, stoppen alle Decoys.",
+  "lab.all": "Alle ({n})",
+  "lab.estimate": "{n} Decoys verbrauchen ungefähr {ram} RAM.",
+  "lab.confirm": "Erneut klicken, um {n} zu starten",
+  "lab.limit": "Windows hat nach {n} aufgehört, neue Prozesse zu starten: Das ist das Systemlimit.",
+  "running.more": "…und {n} weitere. Die ersten 120 werden angezeigt.",
   "lab.hide": "Diesen Tab ausblenden",
   "toast.labUnlocked": "Geheimer Tab „Labor“ freigeschaltet",
   "toast.labHidden": "Tab ausgeblendet",
   "toast.labDone": "Spiele gestartet: {n}",
-
   "tray.show": "Decoy öffnen",
   "tray.stop": "Alle Decoys stoppen",
   "tray.quit": "Beenden",
-
   "notify.title": "Zeit abgelaufen",
   "notify.body": "{name}: {n} min sind vergangen."
 }

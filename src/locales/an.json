@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Aragonés" },
-
+  "_meta": {
+    "name": "Aragonés"
+  },
   "nav.library": "Biblioteca",
   "nav.favorites": "Favoritos",
   "nav.running": "En execución",
   "nav.settings": "Achustes",
-
   "discord.checking": "Comprobando…",
   "discord.up": "En execución",
   "discord.down": "No ye en execución",
-
   "window.minimize": "Minimizar",
   "window.maximize": "Maximizar",
   "window.close": "Zarrar",
-
   "tag.live": "En execución",
   "tag.noExe": "sin exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "iniciador",
-
   "lib.title": "Biblioteca",
   "lib.subtitle": "{n} chuegos con proceso conoixiu · actualizau {date}",
   "lib.loading": "Cargando la base de datos de chuegos…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Adhibir a favoritos",
   "lib.empty.title": "No s'ha trobau nada",
   "lib.empty.text": "Preba con unatro nombre u activa «Amostrar chuegos sin exe».",
-
   "fav.title": "Favoritos",
   "fav.count": "{n} chuegos",
   "fav.hint": "Marca chuegos con una estrela",
   "fav.empty.title": "Encara no i hai nada aquí",
   "fav.empty.text": "Preta la estrela en a caixeta d'un chuego ta adhibir-lo aquí.",
-
   "detail.process": "Proceso",
   "detail.duration": "Cuánto tiempo mantener-lo",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorito",
   "detail.close": "Zarrar",
   "detail.id": "ID {id}",
-
   "running.title": "En execución",
   "running.count": "{n} decoys activos",
   "running.none": "No i hai nada en execución agora mesmo",
@@ -70,14 +64,36 @@
   "running.stop": "Aturar",
   "running.empty.title": "No i hai nada en execución",
   "running.empty.text": "Ubre un chuego en a biblioteca y preta «Prencipiar decoy».",
-
   "settings.title": "Achustes",
   "settings.general": "Cheneral",
   "settings.language": "Idioma",
   "settings.language.desc": "Idioma d'a interficie. Os nuevos idiomas s'adhiben como fichers en a carpeta locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Durada predeterminada",
-  "settings.defaultTime.desc": "Cuántos menutos mantener o proceso (as misions de Discord gosan precisar 15).",
+  "settings.defaultTime.desc": "Quántos menutos mantener o proceso. O predeterminau ye 16, no pas 15: as misions de Discord piden 15 menutos de chuego, pero Discord amenista dica un menuto pa detectar un nuevo chuego, asinas que exactament 15 se queda curto.",
+  "settings.smartTimer": "Temporizador intelichent",
+  "settings.smartTimer.desc": "A cuenta arranca quan Discord detecta o decoy, no pas quan lo prenzipias. Pa saber-lo, l'aplicación leye nomás as linias sobre o chuego en execución d'o rechistro local de Discord; no se guarda ni s'obría cosa en garra puesto.",
+  "settings.updates": "Actualizacions",
+  "settings.checkNow": "Comprobar agora",
+  "settings.autoUpdate": "Actualizacions automaticas",
+  "settings.autoUpdate.desc": "Comprobar GitHub en l'inicio y cada 6 horas y descargar nuevas versions en segundo plan. A instalación siempre aspera a tuya confirmación, y os fichers se verifican con a suya sinyatura dichital.",
+  "update.current": "Versión instalada {v}",
+  "update.checking": "Comprobando…",
+  "update.uptodate": "Tienes a zaguera versión",
+  "update.available": "A versión {v} ye disponible",
+  "update.downloading": "Descargando versión {v}… {p}%",
+  "update.ready": "A versión {v} ye presta pa instalar",
+  "update.installing": "Instalando y reiniciando…",
+  "update.download": "Descargar",
+  "update.restart": "Reiniciar y actualizar",
+  "update.later": "Dimpués",
+  "update.notes": "Qué bi ha de nuevo",
+  "update.running": "Os decoys en execución ({n}) s'aturarán.",
+  "update.error": "No s'ha puesto actualizar: {e}",
+  "detail.waiting": "esperando a Discord",
+  "detail.waitingNote": "Discord amenista dica un menuto pa detectar un chuego. A cuenta arranca quan veye o decoy.",
+  "detail.detected": "Discord ha detectau o decoy",
+  "detail.assumed": "Discord no l'ha confirmao, o tiempo se conta igualment.",
   "settings.autoStop": "Aturar con temporizador",
   "settings.autoStop.desc": "O decoy s'atura solo quan o tiempo s'ha rematau.",
   "settings.notify": "Notificar en rematar",
@@ -97,7 +113,6 @@
   "settings.files": "Fichers",
   "settings.open": "Ubrir",
   "settings.legal": "Decoy no fa servir o tuyo token de Discord ni accepta misions por tu. Simular un proceso de chuego puede ir contra as normas de Discord, fa-lo servir baixo lo tuyo propio risgo.",
-
   "toast.launched": "«{name}» prencipiau por {n} min. Discord lo habría de notar en bels 15 segundos.",
   "toast.stopped": "Decoy aturau",
   "toast.allStopped": "Totz os decoys aturaus",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} chuegos han obteniu fichers exe: {names}",
   "toast.refreshAdded": "Base de datos actualizada: +{n} nuevos chuegos",
   "toast.refreshUpToDate": "A base de datos ya ye actualizada",
-
   "nav.lab": "Laboratorio",
   "lab.title": "Laboratorio",
   "lab.subtitle": "Una pestanya secreta: prencipia quantos decoys a la vegada.",
@@ -115,16 +129,19 @@
   "lab.launch": "Prencipiar {n} chuegos",
   "lab.launching": "Prencipiando {done} de {total}…",
   "lab.cancel": "Cancelar",
-  "lab.warn": "Cada decoy ye un proceso deseparau con finestra. Mas de 200–300 chuntos pueden ralentizar o tuyo ordenador, o maximo ye {max}.",
+  "lab.warn": "Cada decoy ye un proceso deseparau con una finestra. Masiaus a la vegada pueden conchelar o tuyo ordinador: cada proceso y finestra gasta memoria, y dimpués d'unas quantas milars de finestras Windows puede deixar de creyar-ne mas. Si zarras Decoy, totz os decoys s'aturan.",
+  "lab.all": "Totz ({n})",
+  "lab.estimate": "{n} decoys ferán servir arredol de {ram} de RAM.",
+  "lab.confirm": "Fe clic una atra vegada pa prencipiar {n}",
+  "lab.limit": "Windows ha deixau d'iniciar nuevos procesos dimpués de {n}: ye o limite d'o sistema.",
+  "running.more": "…y {n} mas. Se'n amuestran os primers 120.",
   "lab.hide": "Amagar ista pestanya",
   "toast.labUnlocked": "Pestanya secreta «Laboratorio» desbloqueyada",
   "toast.labHidden": "Pestanya amagada",
   "toast.labDone": "Chuegos prencipiaus: {n}",
-
   "tray.show": "Ubrir Decoy",
   "tray.stop": "Aturar totz os decoys",
   "tray.quit": "Salir",
-
   "notify.title": "O tiempo s'ha rematau",
   "notify.body": "{name}: han pasau {n} min."
 }

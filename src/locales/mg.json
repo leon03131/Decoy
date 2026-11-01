@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Malagasy" },
-
+  "_meta": {
+    "name": "Malagasy"
+  },
   "nav.library": "Trano famakiam-boky",
   "nav.favorites": "Ankafizina",
   "nav.running": "Mandeha",
   "nav.settings": "Fikirana",
-
   "discord.checking": "Manamarina…",
   "discord.up": "Mandeha",
   "discord.down": "Tsy mandeha",
-
   "window.minimize": "Ahena",
   "window.maximize": "Halalaho",
   "window.close": "Akatona",
-
   "tag.live": "Mandeha",
   "tag.noExe": "tsy misy exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "mpandefa",
-
   "lib.title": "Trano famakiam-boky",
   "lib.subtitle": "Lalao {n} manana dingana fantatra · nohavaozina {date}",
   "lib.loading": "Mampiditra ny tahirin-kevitry ny lalao…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Ampidiro amin'ny ankafizina",
   "lib.empty.title": "Tsy misy hita",
   "lib.empty.text": "Manandrama anarana hafa na velomy ny “Asehoy ny lalao tsy misy exe”.",
-
   "fav.title": "Ankafizina",
   "fav.count": "Lalao {n}",
   "fav.hint": "Asio kintana ny lalao",
   "fav.empty.title": "Mbola tsy misy na inona na inona eto",
   "fav.empty.text": "Tsindrio ny kintana amin'ny lalao iray mba hanampiana azy eto.",
-
   "detail.process": "Dingana",
   "detail.duration": "Faharetana itazonana azy",
   "detail.minutes": "{n} mn",
@@ -62,7 +57,6 @@
   "detail.favorite": "Ankafizina",
   "detail.close": "Akatona",
   "detail.id": "ID {id}",
-
   "running.title": "Mandeha",
   "running.count": "Decoy miasa {n}",
   "running.none": "Tsy misy mandeha amin'izao fotoana izao",
@@ -70,14 +64,36 @@
   "running.stop": "Atsaharo",
   "running.empty.title": "Tsy misy mandeha",
   "running.empty.text": "Manokafa lalao ao amin'ny trano famakiam-boky ary tsindrio ny “Alefaso ny decoy”.",
-
   "settings.title": "Fikirana",
   "settings.general": "Ankapobeny",
   "settings.language": "Teny",
   "settings.language.desc": "Tenin'ny fampiharana. Ny teny vaovao dia ampidirina ho rakitra ao amin'ny fitoeran-drakitra locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Faharetana mahazatra",
-  "settings.defaultTime.desc": "Minitra firy no itazonana ny dingana (matetika 15 minitra no ilain'ny fikatsahana Discord).",
+  "settings.defaultTime.desc": "Firy minitra no hitazonana ny dingana. Ny mahazatra dia 16, fa tsy 15: mangataka filalaovana 15 minitra ny iraka Discord, saingy mila hatramin'ny iray minitra i Discord vao mahatsikaritra lalao vaovao.",
+  "settings.smartTimer": "Famantaranandro marani-tsaina",
+  "settings.smartTimer.desc": "Manomboka ny fanisam-potoana rehefa tsikaritr'i Discord ny decoy, fa tsy amin'ny fotoana anombohanao azy. Mba hahafantarana izany, ny andalana momba ny lalao mandeha ihany no vakin'ny fampiharana avy amin'ny firaketan'i Discord anatiny; tsy misy tehirizina na alefa na aiza na aiza.",
+  "settings.updates": "Fampaharana",
+  "settings.checkNow": "Zahao izao",
+  "settings.autoUpdate": "Fampaharana mandeha ho azy",
+  "settings.autoUpdate.desc": "Zahao ny GitHub rehefa manomboka sy isaky ny 6 ora ary ampidino any ambadika ny kinova vaovao. Miandry mandrakariva ny fanamafisanao ny fametrahana, ary voamarina amin'ny sonia nomerika ny rakitra.",
+  "update.current": "Kinova voapetraka {v}",
+  "update.checking": "Mizaha…",
+  "update.uptodate": "Efa eo amin'ny kinova farany indrindra ianao",
+  "update.available": "Misy ny kinova {v}",
+  "update.downloading": "Mampidina ny kinova {v}… {p}%",
+  "update.ready": "Vonona hapetraka ny kinova {v}",
+  "update.installing": "Mametraka sy mamerina mampandeha…",
+  "update.download": "Ampidino",
+  "update.restart": "Atsaharo ary havaozy",
+  "update.later": "Aoriana",
+  "update.notes": "Inona ny vaovao",
+  "update.running": "Hitsahatra ny decoy mandeha ({n}).",
+  "update.error": "Tsy nahomby ny fanavaozana: {e}",
+  "detail.waiting": "miandry an'i Discord",
+  "detail.waitingNote": "Mila hatramin'ny iray minitra i Discord vao mahatsikaritra lalao. Manomboka ny fanisana rehefa hitany ny decoy.",
+  "detail.detected": "Voatsikaritr'i Discord ny decoy",
+  "detail.assumed": "Tsy mbola nohamafisin'i Discord, nefa isaina ihany ny fotoana.",
   "settings.autoStop": "Atsaharo amin'ny famantaranandro",
   "settings.autoStop.desc": "Mijanona ho azy ny decoy rehefa tapitra ny fotoana.",
   "settings.notify": "Ampahafantaro rehefa vita",
@@ -97,7 +113,6 @@
   "settings.files": "Rakitra",
   "settings.open": "Sokafy",
   "settings.legal": "Ny Decoy dia tsy mampiasa ny token Discord-nao ary tsy manaiky fikatsahana ho anao. Mety hanitsakitsaka ny fitsipiky ny Discord ny fanahafana dingana lalao, ampiasao amin'ny andraikitrao manokana.",
-
   "toast.launched": "Nalefa ho an'ny {n} mn ny “{name}”. Tokony hahatsikaritra izany ny Discord afaka 15 segondra eo ho eo.",
   "toast.stopped": "Natsahatra ny decoy",
   "toast.allStopped": "Natsahatra ny decoys rehetra",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "Lalao {n} no nahazo rakitra exe: {names}",
   "toast.refreshAdded": "Nohavaozina ny tahirin-kevitra: lalao vaovao +{n}",
   "toast.refreshUpToDate": "Efa manara-penitra ny tahirin-kevitra",
-
   "nav.lab": "Laboratoara",
   "lab.title": "Laboratoara",
   "lab.subtitle": "Tabilao miafina: mandefa decoys maro miaraka.",
@@ -115,16 +129,19 @@
   "lab.launch": "Alefaso ny lalao {n}",
   "lab.launching": "Mandefa {done} amin'ny {total}…",
   "lab.cancel": "Aoka ihany",
-  "lab.warn": "Dingana misaraka manana varavarankely ny decoy tsirairay. Mety hampiadana ny solosainao ny mihoatra ny 200–300 indray mandeha, {max} no fetra farany ambony.",
+  "lab.warn": "Dingana mitokana misy varavarankely ny decoy tsirairay. Mety hampivaingana ny solosainao ny fisian'ny maro be miaraka: mampiasa fitadidiana ny dingana sy varavarankely tsirairay, ary aorian'ny varavarankely an'arivony dia mety hatsahatry ny Windows ny famoronana vaovao. Raha mikatona ny Decoy dia hitsahatra ny decoy rehetra.",
+  "lab.all": "Rehetra ({n})",
+  "lab.estimate": "{n} decoy dia hampiasa RAM manodidina ny {ram}.",
+  "lab.confirm": "Tsindrio indray mba hanombohana {n}",
+  "lab.limit": "Najanony Windows ny fandefasana dingana vaovao taorian'ny {n}: izany ny fetran'ny rafitra.",
+  "running.more": "…sy {n} hafa. Aseho ny 120 voalohany.",
   "lab.hide": "Afeno ity tabilao ity",
   "toast.labUnlocked": "Nisatraka ny tabilao miafina “Laboratoara”",
   "toast.labHidden": "Voafina ny tabilao",
   "toast.labDone": "Lalao nalefa: {n}",
-
   "tray.show": "Sokafy ny Decoy",
   "tray.stop": "Atsaharo ny decoys rehetra",
   "tray.quit": "Hiala",
-
   "notify.title": "Tapitra ny fotoana",
   "notify.body": "{name}: lasa ny {n} mn."
 }

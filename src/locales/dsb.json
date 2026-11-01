@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Dolnoserbšćina" },
-
+  "_meta": {
+    "name": "Dolnoserbšćina"
+  },
   "nav.library": "Biblioteka",
   "nav.favorites": "Favority",
   "nav.running": "Běžece",
   "nav.settings": "Nastajenja",
-
   "discord.checking": "Pśeglědujo se…",
   "discord.up": "Běžy",
   "discord.down": "Njeběžy",
-
   "window.minimize": "Miniměrowaś",
   "window.maximize": "Maksiměrowaś",
   "window.close": "Zacyniś",
-
   "tag.live": "Běžy",
   "tag.noExe": "žeden exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "startowaŕ",
-
   "lib.title": "Biblioteka",
   "lib.subtitle": "{n} graśow ze znatym procesom · zaktualizěrowane {date}",
   "lib.loading": "Datowa banka graśow se zacytujo…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "K favoritam pśidaś",
   "lib.empty.title": "Nic njenamakane",
   "lib.empty.text": "Wopytajśo druge mě abo zmóžniśo „Graśa bźez exe pokazaś“.",
-
   "fav.title": "Favority",
   "fav.count": "{n} graśow",
   "fav.hint": "Graśa z gwězku wóznamjeniś",
   "fav.empty.title": "How hyšći nic njejo",
   "fav.empty.text": "Tłocćo na gwězku pśi graśu, aby jen how pśidał.",
-
   "detail.process": "Proces",
   "detail.duration": "Kak dłujko wobchowaś",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorit",
   "detail.close": "Zacyniś",
   "detail.id": "ID {id}",
-
   "running.title": "Běžece",
   "running.count": "{n} aktiwnych decoyow",
   "running.none": "Tuchylu nic njeběžy",
@@ -70,14 +64,36 @@
   "running.stop": "Zastajiś",
   "running.empty.title": "Nic njeběžy",
   "running.empty.text": "Wócyńśo graśe w bibliotece a tłocćo na „Decoy startowaś“.",
-
   "settings.title": "Nastajenja",
   "settings.general": "Powšykne",
   "settings.language": "Rěc",
   "settings.language.desc": "Rěc pówjercha. Nowe rěcy pśidawaju se ako dataje do rědnika locales.",
   "settings.stubs": "Decoye",
   "settings.defaultTime": "Standardny cas traśa",
-  "settings.defaultTime.desc": "Kelu minutow ma proces běžać (Discord-nadawki zwětšego trjebaju 15).",
+  "settings.defaultTime.desc": "Wjele minutow ma proces běžać. Standardna gódnota jo 16, nic 15: nadawki w Discord pominaju 15 minutow graśa, ale Discord trjeba až do jadneje minuty, aby nowe graśe spóznał, togodla rowno 15 minutow njedosega.",
+  "settings.smartTimer": "Inteligentny casoměr",
+  "settings.smartTimer.desc": "Wótlicowanje zachopina se, gaž Discord jo decoy spóznał, nic gaž jen startujośo. Aby to zwěsćiła, cytajo aplikacija jano smužki wó běžecem graśu z lokalnego protokola Discord; nic se njeskładujo a nikam njesćelo.",
+  "settings.updates": "Aktualizacije",
+  "settings.checkNow": "Něnto pśeglědaś",
+  "settings.autoUpdate": "Awtomatiske aktualizacije",
+  "settings.autoUpdate.desc": "Pśeglědujśo GitHub pśi starśe a kužde 6 góźinow a ześěgujśo nowe wersije w slězyngu. Instalacija pśecej caka na wašo wobkšuśenje, a dataje se z digitalnym pódpismom pśeglěduju.",
+  "update.current": "Instalěrowana wersija {v}",
+  "update.checking": "Pśeglědujo se…",
+  "update.uptodate": "Maśo nejnowšu wersiju",
+  "update.available": "Wersija {v} jo k dispoziciji",
+  "update.downloading": "Wersija {v} se ześěgujo… {p}%",
+  "update.ready": "Wersija {v} jo gótowa k instalaciji",
+  "update.installing": "Instalěrujo se a znowego startujo…",
+  "update.download": "Ześěgnuś",
+  "update.restart": "Znowego startowaś a aktualizěrowaś",
+  "update.later": "Pózdźej",
+  "update.notes": "Co jo nowe",
+  "update.running": "Běžace decoye ({n}) se zastaje.",
+  "update.error": "Njejo se raźiło aktualizěrowaś: {e}",
+  "detail.waiting": "caka se na Discord",
+  "detail.waitingNote": "Discord trjeba až do jadneje minuty, aby graśe spóznał. Wótlicowanje zachopina se, gaž decoy wiźi.",
+  "detail.detected": "Discord jo decoy spóznał",
+  "detail.assumed": "Discord to njejo wobkšuśił, cas se wšo jadno licy.",
   "settings.autoStop": "Pó casoměrje zastajiś",
   "settings.autoStop.desc": "Decoy se sam wót sebie skóńcy, gaž cas wuběžy.",
   "settings.notify": "Pśi skóncenju k wěsći daś",
@@ -97,7 +113,6 @@
   "settings.files": "Dataje",
   "settings.open": "Wócyniś",
   "settings.legal": "Decoy njewužywa waš Discord-token a njeakceptěrujo nadawki za wás. Imitěrowanje procesa graśa móžo pśetergowaś pšawidła Discorda; wužywajśo jen na swójske riziko.",
-
   "toast.launched": "„{name}“ jo se startowało na {n} min. Discord měł jen za něźi 15 sekundow spóznaś.",
   "toast.stopped": "Decoy zastajony",
   "toast.allStopped": "Wšykne decoye zastajone",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} graśow jo dostało dataje exe: {names}",
   "toast.refreshAdded": "Datowa banka zaktualizěrowana: +{n} nowych graśow",
   "toast.refreshUpToDate": "Datowa banka jo južo aktualna",
-
   "nav.lab": "Laboratorij",
   "lab.title": "Laboratorij",
   "lab.subtitle": "Tajny rejtark: startujo wjele decoyow naraz.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} graśow startowaś",
   "lab.launching": "Startujo se {done} z {total}…",
   "lab.cancel": "Pśetergnuś",
-  "lab.warn": "Kuždy decoy jo samostatny proces z woknom. Wěcej ako 200–300 naraz móžo waš licak spomałyś, maksimum jo {max}.",
+  "lab.warn": "Kuždy decoy jo wósebny proces z woknom. Pśewjele naraz móžo waš licadło zamrozć: kuždy proces a wokno wužywa składowak, a pó někotarych tysac woknach móžo Windows pśestaś dalšne napóraś. Jolic Decoy zacynijośo, wšykne decoye se zastaje.",
+  "lab.all": "Wšykne ({n})",
+  "lab.estimate": "{n} decoyow buźo něźi {ram} RAM wužywaś.",
+  "lab.confirm": "Klikniśo znowego, aby {n} startował",
+  "lab.limit": "Windows jo pśestał nowe procese pó {n} startowaś: to jo systemowa granica.",
+  "running.more": "…a {n} dalšnych. Prědne 120 se pokazujo.",
   "lab.hide": "Toś ten rejtark schowaś",
   "toast.labUnlocked": "Tajny rejtark „Laboratorij“ wótwórjony",
   "toast.labHidden": "Rejtark schowany",
   "toast.labDone": "Startowane graśa: {n}",
-
   "tray.show": "Decoy wócyniś",
   "tray.stop": "Wšykne decoye zastajiś",
   "tray.quit": "Skóńcyś",
-
   "notify.title": "Cas jo wuběžał",
   "notify.body": "{name}: {n} min jo minuło."
 }

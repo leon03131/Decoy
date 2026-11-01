@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Română" },
-
+  "_meta": {
+    "name": "Română"
+  },
   "nav.library": "Bibliotecă",
   "nav.favorites": "Favorite",
   "nav.running": "În rulare",
   "nav.settings": "Setări",
-
   "discord.checking": "Se verifică…",
   "discord.up": "Rulează",
   "discord.down": "Nu rulează",
-
   "window.minimize": "Minimizare",
   "window.maximize": "Maximizare",
   "window.close": "Închidere",
-
   "tag.live": "Rulează",
   "tag.noExe": "fără exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "lansator",
-
   "lib.title": "Bibliotecă",
   "lib.subtitle": "{n} jocuri cu proces cunoscut · actualizat la {date}",
   "lib.loading": "Se încarcă baza de date cu jocuri…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Adaugă la favorite",
   "lib.empty.title": "Nimic găsit",
   "lib.empty.text": "Încearcă alt nume sau activează „Afișează jocurile fără exe”.",
-
   "fav.title": "Favorite",
   "fav.count": "{n} jocuri",
   "fav.hint": "Marchează jocurile cu o stea",
   "fav.empty.title": "Nimic aici încă",
   "fav.empty.text": "Apasă pe steaua de pe un joc pentru a-l adăuga aici.",
-
   "detail.process": "Proces",
   "detail.duration": "Cât timp să ruleze",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorit",
   "detail.close": "Închide",
   "detail.id": "ID {id}",
-
   "running.title": "În rulare",
   "running.count": "{n} decoy-uri active",
   "running.none": "Nimic nu rulează în acest moment",
@@ -70,14 +64,36 @@
   "running.stop": "Oprește",
   "running.empty.title": "Nimic nu rulează",
   "running.empty.text": "Deschide un joc din bibliotecă și apasă „Pornește decoy”.",
-
   "settings.title": "Setări",
   "settings.general": "Generale",
   "settings.language": "Limbă",
   "settings.language.desc": "Limba interfeței. Limbile noi se adaugă ca fișiere în folderul locales.",
   "settings.stubs": "Decoy-uri",
   "settings.defaultTime": "Durată implicită",
-  "settings.defaultTime.desc": "Câte minute să fie menținut procesul (misiunile Discord necesită de obicei 15).",
+  "settings.defaultTime.desc": "Câte minute să fie menținut procesul. Valoarea implicită este 16, nu 15: misiunile Discord cer 15 minute de joc, dar Discord are nevoie de până la un minut pentru a detecta un joc nou, așa că 15 fix nu ajunge.",
+  "settings.smartTimer": "Cronometru inteligent",
+  "settings.smartTimer.desc": "Numărătoarea inversă începe atunci când Discord a detectat decoy-ul, nu la pornirea acestuia. Pentru a ști asta, aplicația citește doar liniile despre jocul activ din jurnalul local Discord; nimic nu este stocat sau trimis undeva.",
+  "settings.updates": "Actualizări",
+  "settings.checkNow": "Verifică acum",
+  "settings.autoUpdate": "Actualizări automate",
+  "settings.autoUpdate.desc": "Verifică GitHub la pornire și la fiecare 6 ore și descarcă versiunile noi în fundal. Instalarea așteaptă întotdeauna confirmarea ta, iar fișierele sunt verificate prin semnătura lor digitală.",
+  "update.current": "Versiunea instalată {v}",
+  "update.checking": "Se verifică…",
+  "update.uptodate": "Ai deja cea mai recentă versiune",
+  "update.available": "Versiunea {v} este disponibilă",
+  "update.downloading": "Se descarcă versiunea {v}… {p}%",
+  "update.ready": "Versiunea {v} este gata de instalare",
+  "update.installing": "Se instalează și se repornește…",
+  "update.download": "Descarcă",
+  "update.restart": "Repornește și actualizează",
+  "update.later": "Mai târziu",
+  "update.notes": "Ce este nou",
+  "update.running": "Decoy-urile active ({n}) vor fi oprite.",
+  "update.error": "Actualizarea a eșuat: {e}",
+  "detail.waiting": "se așteaptă Discord",
+  "detail.waitingNote": "Discord are nevoie de până la un minut pentru a detecta jocul. Numărătoarea inversă începe când acesta vede decoy-ul.",
+  "detail.detected": "Discord a detectat decoy-ul",
+  "detail.assumed": "Discord nu a confirmat, dar timpul este contorizat oricum.",
   "settings.autoStop": "Oprire automată cu cronometru",
   "settings.autoStop.desc": "Procesul decoy se oprește automat când timpul a expirat.",
   "settings.notify": "Notificare la finalizare",
@@ -97,7 +113,6 @@
   "settings.files": "Fișiere",
   "settings.open": "Deschide",
   "settings.legal": "Decoy nu folosește tokenul tău Discord și nu acceptă misiuni în locul tău. Simularea unui proces de joc poate încălca regulile Discord, folosește-o pe propriul risc.",
-
   "toast.launched": "„{name}” a pornit pentru {n} min. Discord ar trebui să-l detecteze în aproximativ 15 secunde.",
   "toast.stopped": "Decoy oprit",
   "toast.allStopped": "Toate procesele decoy au fost oprite",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} jocuri au primit fișiere exe: {names}",
   "toast.refreshAdded": "Baza de date a fost actualizată: +{n} jocuri noi",
   "toast.refreshUpToDate": "Baza de date este deja la zi",
-
   "nav.lab": "Laborator",
   "lab.title": "Laborator",
   "lab.subtitle": "O filă secretă: pornește multe procese decoy deodată.",
@@ -115,16 +129,19 @@
   "lab.launch": "Pornește {n} jocuri",
   "lab.launching": "Se pornesc {done} din {total}…",
   "lab.cancel": "Anulează",
-  "lab.warn": "Fiecare decoy este un proces separat cu o fereastră. Peste 200–300 deodată pot încetini calculatorul, limita maximă este {max}.",
+  "lab.warn": "Fiecare decoy este un proces separat cu o fereastră. Prea multe în același timp pot bloca calculatorul: fiecare proces și fereastră consumă memorie, iar după câteva mii de ferestre Windows poate refuza să mai creeze altele. Dacă închizi Decoy, toate decoy-urile se opresc.",
+  "lab.all": "Toate ({n})",
+  "lab.estimate": "{n} decoy-uri vor folosi aproximativ {ram} de RAM.",
+  "lab.confirm": "Apasă din nou pentru a porni {n}",
+  "lab.limit": "Windows a oprit pornirea de procese noi după {n}: aceasta este limita sistemului.",
+  "running.more": "…și încă {n}. Sunt afișate primele 120.",
   "lab.hide": "Ascunde această filă",
   "toast.labUnlocked": "Fila secretă „Laborator” a fost deblocată",
   "toast.labHidden": "Filă ascunsă",
   "toast.labDone": "Jocuri pornite: {n}",
-
   "tray.show": "Deschide Decoy",
   "tray.stop": "Oprește toate procesele decoy",
   "tray.quit": "Ieșire",
-
   "notify.title": "Timpul a expirat",
   "notify.body": "{name}: au trecut {n} min."
 }

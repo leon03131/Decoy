@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Коми кыв" },
-
+  "_meta": {
+    "name": "Коми кыв"
+  },
   "nav.library": "Библиотека",
   "nav.favorites": "Медся мусаяс",
   "nav.running": "Заводитӧма",
   "nav.settings": "Лӧсьӧдӧмъяс",
-
   "discord.checking": "Кыскӧ…",
   "discord.up": "Уджалӧ",
   "discord.down": "Абу заводитӧма",
-
   "window.minimize": "Дженьдӧдны",
   "window.maximize": "Паськӧдны",
   "window.close": "Пӧдpath",
-
   "tag.live": "Уджалӧ",
   "tag.noExe": "exe абу",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "лаунчер",
-
   "lib.title": "Библиотека",
   "lib.subtitle": "Тӧдса процессъяса {n} ворсӧм · выльмӧдӧма {date}",
   "lib.loading": "Ворсӧмъяслӧн база кыскӧм…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Медся мусаясӧ",
   "lib.empty.title": "Нинӧм абу аддзӧма",
   "lib.empty.text": "Корсьӧй мӧд ним серти либӧ восьтӧй «Мыччывны exe-тӧг».",
-
   "fav.title": "Медся мусаяс",
   "fav.count": "{n} ворсӧм",
   "fav.hint": "Пасйӧй ворсӧмъяссӧ кодзувӧн",
   "fav.empty.title": "Тані на куш",
   "fav.empty.text": "Содтыны ворсӧмсӧ татчӧ верман кодзув вылӧ либӧмӧн.",
-
   "detail.process": "Процесс",
   "detail.duration": "Кымын кад кутны",
   "detail.minutes": "{n} гез.",
@@ -62,7 +57,6 @@
   "detail.favorite": "Медся муса",
   "detail.close": "Пӧдсавны",
   "detail.id": "ID {id}",
-
   "running.title": "Заводитӧма",
   "running.count": "{n} активнӧй заглушка",
   "running.none": "Ӧні нинӧм абу заводитӧма",
@@ -70,14 +64,36 @@
   "running.stop": "Сувтӧдны",
   "running.empty.title": "Нинӧм абу заводитӧма",
   "running.empty.text": "Восьтӧй ворсӧм библиотекаын да либӧй «Заводитны заглушка».",
-
   "settings.title": "Лӧсьӧдӧмъяс",
   "settings.general": "Общӧй",
   "settings.language": "Кыв",
   "settings.language.desc": "Интерфейслӧн кыв. Выль кывъяс содтысьӧны файлъясӧн locales папкаӧ.",
   "settings.stubs": "Заглушкаяс",
   "settings.defaultTime": "Стандарт кад",
-  "settings.defaultTime.desc": "Кымын минут кутны процесс (Discord заданиеясын овлывлӧ 15).",
+  "settings.defaultTime.desc": "Кымын минут видзны процесссӧ. Тшӧктӧм серти 16, абу 15: Discord уджъяс корӧны 15 минут ворсны, но Discord-лы колӧ минутозь дыр кад, медым аддзыны выль ворсӧм.",
+  "settings.smartTimer": "Семья таймер",
+  "settings.smartTimer.desc": "Кад лыддьӧм заводитчӧ, кор Discord казяліс заглушкасӧ, а абу заводитӧм дырйи. Тайӧ тӧдны вылӧ приложенньӧ лыддьӧ Discord локальнӧй журналсьыс сӧмын уджалысь ворсӧм йылысь визьяс; нинӧм оз видзсьы да оз мӧдӧдчы.",
+  "settings.updates": "Выльмӧдӧмъяс",
+  "settings.checkNow": "Видзӧдлыны ӧні",
+  "settings.autoUpdate": "Асьсӧ выльмӧдӧм",
+  "settings.autoUpdate.desc": "Видзӧдлыны GitHub заводитчигӧн да быд 6 час мысти, босьтны выль версиясӧ сайын. Пуктӧм коставӧ тіян пуктӧм вылӧ, файлъяс видзӧдлӧмаӧсь пас серти.",
+  "update.current": "Пуктӧма версия {v}",
+  "update.checking": "Видзӧдлӧм…",
+  "update.uptodate": "Тіянлӧн медбӧръя версия",
+  "update.available": "Версия {v} позьӧ босьтны",
+  "update.downloading": "Босьтӧ версия {v}… {p}%",
+  "update.ready": "Версия {v} дась пуктыны",
+  "update.installing": "Пуктӧ да выльысь заводитӧ…",
+  "update.download": "Босьтны",
+  "update.restart": "Выльысь заводитны да выльмӧдны",
+  "update.later": "Сёрӧнджык",
+  "update.notes": "Мый выль",
+  "update.running": "Уджалысь заглушкаяс ({n}) сувтӧдасны.",
+  "update.error": "Эз артмы выльмӧдны: {e}",
+  "detail.waiting": "висьӧм Discord вылӧ",
+  "detail.waitingNote": "Discord-лы колӧ минутозь дыр, медым казявны ворсӧм. Кад лыддьӧм заводитчӧ, кор сійӧ аддзас заглушкасӧ.",
+  "detail.detected": "Discord казяліс заглушкасӧ",
+  "detail.assumed": "Discord эз ёнмӧд, кад лыддьӧны сідз-тадз.",
   "settings.autoStop": "Таймер серти сувтӧдны",
   "settings.autoStop.desc": "Кор кад эновчас, заглушка асшӧрӧн помасьӧ.",
   "settings.notify": "Помасьӧм йылысь юӧр",
@@ -97,7 +113,6 @@
   "settings.files": "Файлъяс",
   "settings.open": "Восьтыны",
   "settings.legal": "Decoy оз вӧдитчы тіян Discord токенӧн да оз босьт заданиеяс тіян пыдди. Ворсӧм процесс имитируйтӧм вермас торкны Discord правилӧяс, вӧдитчӧй ас курччӧм серти.",
-
   "toast.launched": "«{name}» заводитӧма {n} гез. кежлӧ. Discord казялас сійӧс гӧгӧр 15 секунд мысти.",
   "toast.stopped": "Заглушка сувтӧдӧма",
   "toast.allStopped": "Став заглушка сувтӧдӧма",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} ворсӧмлӧн петісны exe-яс: {names}",
   "toast.refreshAdded": "База выльмӧдӧма: +{n} выль ворсӧм",
   "toast.refreshUpToDate": "База абу важмӧма",
-
   "nav.lab": "Лаборатория",
   "lab.title": "Лаборатория",
   "lab.subtitle": "Секретнӧй вкладка: заводитӧ уна заглушка ӧтчыдӧн.",
@@ -115,16 +129,19 @@
   "lab.launch": "Заводитны {n} ворсӧм",
   "lab.launching": "Заводитчӧ {done} татысь {total}…",
   "lab.cancel": "Шогчӧдны",
-  "lab.warn": "Быд заглушка тайӧ торъя ӧшиня процесс. 200–300-ысь унджык ӧтчыдӧн вермас ёнмӧдны компьютер, медся уна {max}.",
+  "lab.warn": "Быд заглушка — тайӧ торъя процесс ӧшинькӧд. Ёна уна ӧти кадӧ вермас сувтӧдны компьютер: быд процесс да ӧшинь босьтӧ память, а сюрс кымын ӧшинь бӧрын Windows вермас дугдыны вӧчны выльясӧс. Ті пӧдсалат Decoy кӧ, став заглушкаясыс сувтасны.",
+  "lab.all": "Став ({n})",
+  "lab.estimate": "{n} заглушка босьтас матын {ram} RAM.",
+  "lab.confirm": "Личкыштӧй выльысь, медым заводитны {n}",
+  "lab.limit": "Windows дугдіс лэдзны выль процессъяс {n} бӧрын: тайӧ системалӧн дор.",
+  "running.more": "…да на {n}. Мыччӧма медводдза 120.",
   "lab.hide": "Дзебны вкладка",
   "toast.labUnlocked": "«Лаборатория» секретнӧй вкладка восьтӧма",
   "toast.labHidden": "Вкладка дзебӧма",
   "toast.labDone": "Заводитӧм ворсӧм: {n}",
-
   "tray.show": "Восьтыны Decoy",
   "tray.stop": "Сувтӧдны став заглушка",
   "tray.quit": "Петны",
-
   "notify.title": "Кад эновчис",
   "notify.body": "{name}: муніс {n} гез."
 }

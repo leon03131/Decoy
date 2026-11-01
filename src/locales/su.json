@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Basa Sunda" },
-
+  "_meta": {
+    "name": "Basa Sunda"
+  },
   "nav.library": "Pustaka",
   "nav.favorites": "Paporit",
   "nav.running": "Jalan",
   "nav.settings": "Setélan",
-
   "discord.checking": "Mariksa…",
   "discord.up": "Jalan",
   "discord.down": "Teu jalan",
-
   "window.minimize": "Leutikkeun",
   "window.maximize": "Gedékeun",
   "window.close": "Tutup",
-
   "tag.live": "Jalan",
   "tag.noExe": "teu aya exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "paluncur",
-
   "lib.title": "Pustaka",
   "lib.subtitle": "{n} kaulinan kalawan prosés nu dipikanyaho · diropéa {date}",
   "lib.loading": "Ngamuat pangkalan data kaulinan…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Tambahkeun ka paporit",
   "lib.empty.title": "Teu aya nu kapendak",
   "lib.empty.text": "Cobi nami sanés atanapi hurungkeun “Témbongkeun kaulinan tanpa exe”.",
-
   "fav.title": "Paporit",
   "fav.count": "{n} kaulinan",
   "fav.hint": "Tandaan kaulinan ku béntang",
   "fav.empty.title": "Tacan aya nanaon di dieu",
   "fav.empty.text": "Pencét béntang dina kotak kaulinan pikeun nambihkeunana ka dieu.",
-
   "detail.process": "Prosés",
   "detail.duration": "Sabaraha lami disimpenna",
   "detail.minutes": "{n} mnt",
@@ -62,7 +57,6 @@
   "detail.favorite": "Paporit",
   "detail.close": "Tutup",
   "detail.id": "ID {id}",
-
   "running.title": "Jalan",
   "running.count": "{n} decoy aktip",
   "running.none": "Teu aya nu nuju jalan ayeuna",
@@ -70,14 +64,36 @@
   "running.stop": "Eureunkeun",
   "running.empty.title": "Teu aya nu nuju jalan",
   "running.empty.text": "Buka kaulinan di pustaka teras pencét “Mimitian decoy”.",
-
   "settings.title": "Setélan",
   "settings.general": "Umum",
   "settings.language": "Basa",
   "settings.language.desc": "Basa antarbeungeut. Basa anyar ditambihkeun minangka koropak dina polder locales.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "Lilana standar",
-  "settings.defaultTime.desc": "Sabaraha menit prosés dijaga (quest Discord biasana peryogi 15).",
+  "settings.defaultTime.desc": "Sabaraha menit pikeun nahan prosés. Standarna nyaéta 16, sanés 15: misi Discord nyuhunkeun 15 menit maén, tapi Discord peryogi dugi ka saménit pikeun ningali kaulinan énggal, janten 15 pas kirang cekap.",
+  "settings.smartTimer": "Pangétang waktos pinter",
+  "settings.smartTimer.desc": "Ngitung mundur dimimitian nalika Discord parantos ningali decoy, sanés nalika anjeun ngamimitian. Kanggo terang perkawis éta, aplikasi ngan ukur maca baris ngeunaan kaulinan anu nuju jalan tina log lokal Discord; teu aya anu disimpen atanapi dikintunkeun ka mana waé.",
+  "settings.updates": "Pembaruan",
+  "settings.checkNow": "Pariksa ayeuna",
+  "settings.autoUpdate": "Pembaruan otomatis",
+  "settings.autoUpdate.desc": "Pariksa GitHub nalika ngamimitian sareng unggal 6 jam sarta unduh vérsi énggal di latar tukang. Masang salawasna ngantosan konfirmasi anjeun, sareng berkas diverifikasi ku tanda tangan digitalna.",
+  "update.current": "Vérsi dipasang {v}",
+  "update.checking": "Mariksa…",
+  "update.uptodate": "Anjeun dina vérsi pangénggalna",
+  "update.available": "Vérsi {v} sayogi",
+  "update.downloading": "Ngunduh vérsi {v}… {p}%",
+  "update.ready": "Vérsi {v} parantos siap dipasang",
+  "update.installing": "Masang sareng ngamimitian deui…",
+  "update.download": "Unduh",
+  "update.restart": "Mimitian deui sareng perbarui",
+  "update.later": "Engké",
+  "update.notes": "Nu anyar",
+  "update.running": "Decoy anu nuju jalan ({n}) bakal eureun.",
+  "update.error": "Henteu tiasa ngamutahirkeun: {e}",
+  "detail.waiting": "ngantosan Discord",
+  "detail.waitingNote": "Discord peryogi dugi ka saménit pikeun ningali kaulinan. Ngitung mundur dimimitian nalika ningali decoy.",
+  "detail.detected": "Discord ningali decoy",
+  "detail.assumed": "Discord henteu mastikeun, waktos tetep diétang.",
   "settings.autoStop": "Eureun ku pangétang waktos",
   "settings.autoStop.desc": "Decoy eureun nyalira nalika waktosna séép.",
   "settings.notify": "Béré nyaho mun geus rengsé",
@@ -97,7 +113,6 @@
   "settings.files": "Koropak",
   "settings.open": "Buka",
   "settings.legal": "Decoy henteu nganggo token Discord anjeun sareng henteu nampi quest pikeun anjeun. Menitipkeun prosés kaulinan tiasa ngalanggar aturan Discord, anggo kalayan résiko anjeun nyalira.",
-
   "toast.launched": "“{name}” dimimitian salami {n} mnt. Discord sakuduna ningal dina waktos sakitar 15 detik.",
   "toast.stopped": "Decoy dieureunkeun",
   "toast.allStopped": "Sadaya decoy dieureunkeun",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} kaulinan kenging koropak exe: {names}",
   "toast.refreshAdded": "Pangkalan data diropéa: +{n} kaulinan anyar",
   "toast.refreshUpToDate": "Pangkalan data parantos panganyarna",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "Tab rusiah: ngamimitian seueur decoy sakaligus.",
@@ -115,16 +129,19 @@
   "lab.launch": "Mimitian {n} kaulinan",
   "lab.launching": "Ngamimitian {done} tina {total}…",
   "lab.cancel": "Bolay",
-  "lab.warn": "Unggal decoy mangrupikeun prosés anu misah kalayan jandéla. Langkung ti 200–300 sakaligus tiasa ngalaunan komputer anjeun, wates pangseueurna nyaéta {max}.",
+  "lab.warn": "Unggal decoy mangrupikeun prosés anu misah kalayan jandéla. Seueur teuing sakaligus tiasa ngabekukeun komputer anjeun: unggal prosés sareng jandéla nganggo mémori, sareng saatos sababaraha rébu jandéla Windows tiasa ngeureunkeun nyiptakeun anu sanés. Upami anjeun nutup Decoy, sadaya decoy bakal eureun.",
+  "lab.all": "Sadaya ({n})",
+  "lab.estimate": "{n} decoy bakal nganggo sakitar {ram} RAM.",
+  "lab.confirm": "Klik deui pikeun ngamimitian {n}",
+  "lab.limit": "Windows lirén ngamimitian prosés énggal saatos {n}: éta wates sistem.",
+  "running.more": "…sareng {n} deui. 120 anu munggaran ditingalikeun.",
   "lab.hide": "Sumputkeun tab ieu",
   "toast.labUnlocked": "Tab rusiah “Lab” kabuka",
   "toast.labHidden": "Tab disumputkeun",
   "toast.labDone": "Kaulinan dimimitian: {n}",
-
   "tray.show": "Buka Decoy",
   "tray.stop": "Eureunkeun sadaya decoy",
   "tray.quit": "Kaluar",
-
   "notify.title": "Waktosna séép",
   "notify.body": "{name}: {n} mnt parantos kalangkung."
 }

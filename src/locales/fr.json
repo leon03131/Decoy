@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Français" },
-
+  "_meta": {
+    "name": "Français"
+  },
   "nav.library": "Bibliothèque",
   "nav.favorites": "Favoris",
   "nav.running": "En cours",
   "nav.settings": "Paramètres",
-
   "discord.checking": "Vérification…",
   "discord.up": "Lancé",
   "discord.down": "Non lancé",
-
   "window.minimize": "Réduire",
   "window.maximize": "Agrandir",
   "window.close": "Fermer",
-
   "tag.live": "En cours",
   "tag.noExe": "sans exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "lanceur",
-
   "lib.title": "Bibliothèque",
   "lib.subtitle": "{n} jeux avec un processus connu · mis à jour : {date}",
   "lib.loading": "Chargement de la base de jeux…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Ajouter aux favoris",
   "lib.empty.title": "Aucun résultat",
   "lib.empty.text": "Essayez un autre nom ou activez « Afficher les jeux sans exe ».",
-
   "fav.title": "Favoris",
   "fav.count": "{n} jeux",
   "fav.hint": "Marquez les jeux avec une étoile",
   "fav.empty.title": "Rien pour le moment",
   "fav.empty.text": "Cliquez sur l'étoile d'un jeu pour l'ajouter ici.",
-
   "detail.process": "Processus",
   "detail.duration": "Combien de temps le garder",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favori",
   "detail.close": "Fermer",
   "detail.id": "ID {id}",
-
   "running.title": "En cours",
   "running.count": "{n} leurres actifs",
   "running.none": "Rien n'est en cours pour le moment",
@@ -70,14 +64,36 @@
   "running.stop": "Arrêter",
   "running.empty.title": "Rien n'est en cours",
   "running.empty.text": "Ouvrez un jeu dans la bibliothèque et cliquez sur « Lancer le leurre ».",
-
   "settings.title": "Paramètres",
   "settings.general": "Général",
   "settings.language": "Langue",
   "settings.language.desc": "Langue de l'interface. Les nouvelles langues s'ajoutent sous forme de fichiers dans le dossier locales.",
   "settings.stubs": "Leurres",
   "settings.defaultTime": "Durée par défaut",
-  "settings.defaultTime.desc": "Combien de minutes garder le processus (les quêtes Discord demandent généralement 15 min).",
+  "settings.defaultTime.desc": "Combien de minutes conserver le processus. La valeur par défaut est 16, pas 15 : les quêtes Discord demandent 15 minutes de jeu, mais Discord met jusqu’à une minute pour détecter un nouveau jeu, donc 15 tout pile ne suffit pas.",
+  "settings.smartTimer": "Minuteur intelligent",
+  "settings.smartTimer.desc": "Le compte à rebours commence quand Discord a détecté le leurre, pas au lancement. Pour cela, l’application lit uniquement les lignes relatives au jeu en cours dans le journal local de Discord ; rien n’est stocké ni envoyé.",
+  "settings.updates": "Mises à jour",
+  "settings.checkNow": "Vérifier maintenant",
+  "settings.autoUpdate": "Mises à jour automatiques",
+  "settings.autoUpdate.desc": "Vérifier GitHub au démarrage et toutes les 6 heures, et télécharger les nouvelles versions en arrière-plan. L’installation attend toujours votre confirmation, et les fichiers sont vérifiés par leur signature numérique.",
+  "update.current": "Version installée {v}",
+  "update.checking": "Vérification…",
+  "update.uptodate": "Vous utilisez la dernière version",
+  "update.available": "La version {v} est disponible",
+  "update.downloading": "Téléchargement de la version {v}… {p}%",
+  "update.ready": "La version {v} est prête à être installée",
+  "update.installing": "Installation et redémarrage…",
+  "update.download": "Télécharger",
+  "update.restart": "Redémarrer et mettre à jour",
+  "update.later": "Plus tard",
+  "update.notes": "Nouveautés",
+  "update.running": "Les leurres en cours ({n}) vont s’arrêter.",
+  "update.error": "Impossible de mettre à jour : {e}",
+  "detail.waiting": "en attente de Discord",
+  "detail.waitingNote": "Discord met jusqu’à une minute pour détecter un jeu. Le compte à rebours commence quand il voit le leurre.",
+  "detail.detected": "Discord a détecté le leurre",
+  "detail.assumed": "Discord n’a pas confirmé, le temps est compté quand même.",
   "settings.autoStop": "Arrêter selon le minuteur",
   "settings.autoStop.desc": "Le leurre s'arrête automatiquement lorsque le temps est écoulé.",
   "settings.notify": "Notifier à la fin",
@@ -97,7 +113,6 @@
   "settings.files": "Fichiers",
   "settings.open": "Ouvrir",
   "settings.legal": "Decoy n'utilise pas votre jeton Discord et n'accepte pas de quêtes pour vous. Simuler un processus de jeu peut enfreindre les règles de Discord, utilisez-le à vos risques et périls.",
-
   "toast.launched": "« {name} » lancé pour {n} min. Discord devrait le détecter d'ici 15 secondes environ.",
   "toast.stopped": "Leurre arrêté",
   "toast.allStopped": "Tous les leurres sont arrêtés",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} jeux ont désormais des fichiers exe : {names}",
   "toast.refreshAdded": "Base mise à jour : +{n} nouveaux jeux",
   "toast.refreshUpToDate": "La base de données est déjà à jour",
-
   "nav.lab": "Labo",
   "lab.title": "Labo",
   "lab.subtitle": "Un onglet secret : lance plusieurs leurres à la fois.",
@@ -115,16 +129,19 @@
   "lab.launch": "Lancer {n} jeux",
   "lab.launching": "Lancement de {done} sur {total}…",
   "lab.cancel": "Annuler",
-  "lab.warn": "Chaque leurre est un processus distinct doté d'une fenêtre. En lancer plus de 200 à 300 à la fois peut ralentir votre ordinateur, le maximum est de {max}.",
+  "lab.warn": "Chaque leurre est un processus distinct avec une fenêtre. En lancer trop à la fois peut bloquer votre ordinateur : chaque processus et fenêtre consomme de la mémoire, et après quelques milliers de fenêtres Windows peut refuser d’en créer davantage. Si vous fermez Decoy, tous les leurres s’arrêtent.",
+  "lab.all": "Tous ({n})",
+  "lab.estimate": "{n} leurres utiliseront environ {ram} de RAM.",
+  "lab.confirm": "Cliquez à nouveau pour lancer {n}",
+  "lab.limit": "Windows a cessé de lancer de nouveaux processus après {n} : c’est la limite du système.",
+  "running.more": "…et {n} de plus. Les 120 premiers sont affichés.",
   "lab.hide": "Masquer cet onglet",
   "toast.labUnlocked": "Onglet secret « Labo » déverrouillé",
   "toast.labHidden": "Onglet masqué",
   "toast.labDone": "Jeux lancés : {n}",
-
   "tray.show": "Ouvrir Decoy",
   "tray.stop": "Arrêter tous les leurres",
   "tray.quit": "Quitter",
-
   "notify.title": "Temps écoulé",
   "notify.body": "{name} : {n} min se sont écoulées."
 }

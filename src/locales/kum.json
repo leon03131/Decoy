@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Къумукъ тил" },
-
+  "_meta": {
+    "name": "Къумукъ тил"
+  },
   "nav.library": "Китапхана",
   "nav.favorites": "Сайлангъанлар",
   "nav.running": "Юрюле",
   "nav.settings": "Кюйлевлер",
-
   "discord.checking": "Тергеле…",
   "discord.up": "Юрюле",
   "discord.down": "Юрюлмей",
-
   "window.minimize": "Тюпге йыймакъ",
   "window.maximize": "Уллу этмек",
   "window.close": "Япмакъ",
-
   "tag.live": "Юрюле",
   "tag.noExe": "exe ёкъ",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "лаунчер",
-
   "lib.title": "Китапхана",
   "lib.subtitle": "Белгили процесси булан {n} оюн · янгыртылгъан {date}",
   "lib.loading": "Оюнланы базасы юклене…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Сайлангъанлагъа къошмакъ",
   "lib.empty.title": "Бир зат да табылмады",
   "lib.empty.text": "Башгъа ат язып къарагъыз яда «Exe ёкъланы да гёрсетмек» дегенни къошугъуз.",
-
   "fav.title": "Сайлангъанлар",
   "fav.count": "{n} оюн",
   "fav.hint": "Оюнланы юлдуз булан белгилегиз",
   "fav.empty.title": "Мунда гьалиге бош",
   "fav.empty.text": "Оюнну мунда къошмакъ учун ону плиткасындагъы юлдузгъа басыгъыз.",
-
   "detail.process": "Процесс",
   "detail.duration": "Нечакъы сакъламакъ",
   "detail.minutes": "{n} мин",
@@ -62,7 +57,6 @@
   "detail.favorite": "Сайлангъан",
   "detail.close": "Япмакъ",
   "detail.id": "ID {id}",
-
   "running.title": "Юрюле",
   "running.count": "{n} актив decoy",
   "running.none": "Гьали бир зат да юрюлмей",
@@ -70,14 +64,36 @@
   "running.stop": "Токътатмакъ",
   "running.empty.title": "Бир зат да юрюлмей",
   "running.empty.text": "Китапханадан бир оюн ачыгъыз ва «Decoy юрютмек» дегенге басыгъыз.",
-
   "settings.title": "Кюйлевлер",
   "settings.general": "Умуми",
   "settings.language": "Тил",
   "settings.language.desc": "Интерфейсни тили. Янгы тиллер locales папкагъа файллар салынып къошула.",
   "settings.stubs": "Decoy-лар",
   "settings.defaultTime": "Авузма-авуз заман",
-  "settings.defaultTime.desc": "Процесс нечакъы минут сакъланажакъ (Discord тапшурувларында адетде 15 минут герек).",
+  "settings.defaultTime.desc": "Процессни нече минут тутмагъа. Токъташдырылгъаны 15 тюгюл, 16 минут: Discord тапшурувлар 15 минут ойнамагъа сорай, амма Discord янгы оюнну эсгергенче бир минутгъа ювукъ заман герек бола.",
+  "settings.smartTimer": "Эсли таймер",
+  "settings.smartTimer.desc": "Санав Decoy башлангъанда тюгюл, Discord ону эсгергенде башлана. Ону билмек учун, къоллав къуру Discord-ну локал журналындан юрюлеген оюн гьакъында сатырланы охуй; бир зат да сакъланмай ва йиберилмей.",
+  "settings.updates": "Янгыртывлар",
+  "settings.checkNow": "Гьали тергемек",
+  "settings.autoUpdate": "Автомат янгыртыв",
+  "settings.autoUpdate.desc": "Ишлетегенде ва гьар 6 сагьатда GitHub-ну тергемек ва фонда янгы версияланы гийирмек. Салыв гьаманда сизин разилыгъыгъызны сакълай, файллар цифра хат булан тергеле.",
+  "update.current": "Салынгъан версия {v}",
+  "update.checking": "Тергеле…",
+  "update.uptodate": "Сизде эм янгы версия салынгъан",
+  "update.available": "Версия {v} бар",
+  "update.downloading": "Версия {v} гийириле… {p}%",
+  "update.ready": "Версия {v} салмагъа гьазир",
+  "update.installing": "Салына ва янгыдан юрюле…",
+  "update.download": "Гийирмек",
+  "update.restart": "Янгыдан юрютмек ва янгыртмакъ",
+  "update.later": "Сонгра",
+  "update.notes": "Не янгылыкъ бар",
+  "update.running": "Ишлейген Decoy-лар ({n}) токътаяжакъ.",
+  "update.error": "Янгыртмагъа болмады: {e}",
+  "detail.waiting": "Discord-ну сакълай",
+  "detail.waitingNote": "Discord оюнну эсгергенче бир минут чакълы заман гете. Санав Decoy-ну гёргенде башлана.",
+  "detail.detected": "Discord Decoy-ну эсгерди",
+  "detail.assumed": "Discord тастыкъламады, заман барыбир санала.",
   "settings.autoStop": "Таймер булан токътатмакъ",
   "settings.autoStop.desc": "Заман чыкъгъанда, decoy оьзю токътаяжакъ.",
   "settings.notify": "Битиши гьакъда билдирив",
@@ -97,7 +113,6 @@
   "settings.files": "Файллар",
   "settings.open": "Ачмакъ",
   "settings.legal": "Decoy сизин Discord токенигизни къолланмай ва сизин орнугъузгъа тапшурувланы къабул этмей. Оюнну процессин ошатып гёрсетмек Discord къайдаларына къаршы болмагъа ярай, оьз разилигигиз ва жавапчылыгъыгъыз булан къоллагъыз.",
-
   "toast.launched": "«{name}» {n} минутгъа юрюлдю. Discord ону 15 секундну ичинде гёрежек.",
   "toast.stopped": "Decoy токътатылды",
   "toast.allStopped": "Бары да decoy-лар токътатылды",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} оюнну exe файллары чыкъды: {names}",
   "toast.refreshAdded": "База янгыртылды: +{n} янгы оюн",
   "toast.refreshUpToDate": "База гьали де янгы",
-
   "nav.lab": "Лаборатория",
   "lab.title": "Лаборатория",
   "lab.subtitle": "Яшыртгъын вкладка: бир керенге кёп decoy юрюте.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} оюн юрютмек",
   "lab.launching": "{total} оюндан {done} юрюле…",
   "lab.cancel": "Гери урмакъ",
-  "lab.warn": "Гьар decoy — терезеси булан айры бир процесс. Бир керенге 200–300-ден артыкъ компьютерни акъайтмагъа ярай, кёбюси — {max}.",
+  "lab.warn": "Гьар Decoy терезеси булангъы айры процессдир. Бир керенге кёп болса компьютерни къатырып къоймагъа ярай: гьар процесс ва терезе эс къоллай, минглер булангъы терезеден сонг Windows янгыларын яратмай къоймагъа бола. Decoy-ну япсагъыз, бары да decoy-лар токътай.",
+  "lab.all": "Барысы да ({n})",
+  "lab.estimate": "{n} decoy чакълы бир {ram} RAM къоллар.",
+  "lab.confirm": "{n} башламакъ учун тагъы бир керен басгъыз",
+  "lab.limit": "Windows {n} процессден сонг янгыларын юрютмекни токътатды: бу системаны чегидир.",
+  "running.more": "…ва тагъы {n}. Башлапгъы 120-сы гёрсетиле.",
   "lab.hide": "Вкладканы яшырмакъ",
   "toast.labUnlocked": "«Лаборатория» яшыртгъын вкладка ачылды",
   "toast.labHidden": "Вкладка яшырылды",
   "toast.labDone": "Юрюлген оюнлар: {n}",
-
   "tray.show": "Decoy ачмакъ",
   "tray.stop": "Бары да decoy-ланы токътатмакъ",
   "tray.quit": "Чыкъмакъ",
-
   "notify.title": "Заман битди",
   "notify.body": "{name}: {n} мин гетди."
 }

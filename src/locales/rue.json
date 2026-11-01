@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Русиньскый" },
-
+  "_meta": {
+    "name": "Русиньскый"
+  },
   "nav.library": "Бібліотека",
   "nav.favorites": "Облиблены",
   "nav.running": "Запущено",
   "nav.settings": "Наставлїня",
-
   "discord.checking": "Провѣрька…",
   "discord.up": "Запущеный",
   "discord.down": "Не запущеный",
-
   "window.minimize": "Знизити",
   "window.maximize": "Збӯльшити",
   "window.close": "Заперти",
-
   "tag.live": "Запущено",
   "tag.noExe": "без exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "лаунчер",
-
   "lib.title": "Бібліотека",
   "lib.subtitle": "{n} бавок из знамым процесом · обновлено {date}",
   "lib.loading": "Начѐтованя базы бавок…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Придати до облибленых",
   "lib.empty.title": "Нїч ся ненашло",
   "lib.empty.text": "Спробуйте иншу назву або залучте «Указовати бавкы без exe».",
-
   "fav.title": "Облиблены",
   "fav.count": "{n} бавок",
   "fav.hint": "Означте бавкы звѣздочков",
   "fav.empty.title": "Гев щи нїч нїт",
   "fav.empty.text": "Кликнїть на звѣздочку на плитцї бавкы, обы ї придати гев.",
-
   "detail.process": "Процес",
   "detail.duration": "Кӯлько держати",
   "detail.minutes": "{n} мин",
@@ -62,7 +57,6 @@
   "detail.favorite": "Облиблена",
   "detail.close": "Заперти",
   "detail.id": "ID {id}",
-
   "running.title": "Запущено",
   "running.count": "{n} актівных decoys",
   "running.none": "Теперь нїч не бѣжыть",
@@ -70,14 +64,36 @@
   "running.stop": "Заставити",
   "running.empty.title": "Нїч не бѣжыть",
   "running.empty.text": "Отверьте бавку у бібліотецї и кликнїть «Запустити decoy».",
-
   "settings.title": "Наставлїня",
   "settings.general": "Общы",
   "settings.language": "Язык",
   "settings.language.desc": "Язык інтерфейсу. Новы языкы ся придавають файлами до папкы locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Протяглость подля зволїня",
-  "settings.defaultTime.desc": "Кӯлько минут держати процес (у задачах Discord зазвычай 15).",
+  "settings.defaultTime.desc": "Кӯлько минут тримати процес. Зазначено 16, а не 15: задачі Discord жадають 15 минут бавлїня, айбо Discord треба аж до минуты, жебы спостеречи нову бавку, тому рівно 15 не доста.",
+  "settings.smartTimer": "Мудрый таймер",
+  "settings.smartTimer.desc": "Одлікованя зачінать ся, коли Discord спостеріг decoy, а не в момент запуску. Жебы то знати, аплікація читає з локалного журналу Discord лише рядкы о біжучӯй бавці; нич ся не вергат і ниґде ся не посылать.",
+  "settings.updates": "Обновлїня",
+  "settings.checkNow": "Провѣрити тепер",
+  "settings.autoUpdate": "Автообновлїня",
+  "settings.autoUpdate.desc": "Провѣряти GitHub при зачатку і раз на 6 годин тай стяговати нові версії у фоні. Іншталація все чекать на ваше подтверджіня, а файлы ся провѣряють подля цифрованого підпису.",
+  "update.current": "Заіншталована версія {v}",
+  "update.checking": "Провѣрька…",
+  "update.uptodate": "Маєте майнову версію",
+  "update.available": "Версія {v} є доступна",
+  "update.downloading": "Стягованя версії {v}… {p}%",
+  "update.ready": "Версія {v} є готова ид іншталації",
+  "update.installing": "Іншталація тай рештарт…",
+  "update.download": "Стягнути",
+  "update.restart": "Рештарт і обновлїня",
+  "update.later": "Позднїйше",
+  "update.notes": "Што нового",
+  "update.running": "Біжучі decoy ({n}) ся заставлять.",
+  "update.error": "Не вдало ся обновити: {e}",
+  "detail.waiting": "чеканя на Discord",
+  "detail.waitingNote": "Discord треба аж до минуты, жебы спостеречи бавку. Одлікованя ся зачне, коли увідіть decoy.",
+  "detail.detected": "Discord спостеріг decoy",
+  "detail.assumed": "Discord не подтвердив, час ся рахує ай так.",
   "settings.autoStop": "Заставити подля таймера",
   "settings.autoStop.desc": "Decoy ся сам закончить, як выйде час.",
   "settings.notify": "Повѣдомити о закончѣню",
@@ -97,7 +113,6 @@
   "settings.files": "Файлы",
   "settings.open": "Отверти",
   "settings.legal": "Decoy непохоснує ваш токен Discord и неприймать задачі за вас. Фалошованя процесу бавкы може быти против правил Discord, хоснуйте на властне різіко.",
-
   "toast.launched": "«{name}» запущено на {n} мин. Discord бы го мав увидїти за даякых 15 секунд.",
   "toast.stopped": "Decoy заставленый",
   "toast.allStopped": "Вшыткы decoys заставлены",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "У {n} бавок ся зъявили файлы exe: {names}",
   "toast.refreshAdded": "База обновлена: +{n} новых бавок",
   "toast.refreshUpToDate": "База уж актуальна",
-
   "nav.lab": "Лабораторія",
   "lab.title": "Лабораторія",
   "lab.subtitle": "Тайна вкладка: запускать велё decoys нараз.",
@@ -115,16 +129,19 @@
   "lab.launch": "Запустити {n} бавок",
   "lab.launching": "Запусканя {done} из {total}…",
   "lab.cancel": "Зрушыти",
-  "lab.warn": "Каждый decoy є окремый процес из окном. Веце як 200–300 нараз може спомалити компютер, максімум є {max}.",
+  "lab.warn": "Кождый decoy є окремый процес из ворѣзком. Завельо нараз годно завісити компютер: на каждый процес і ворѣз іде памнять, а по пару тисячах ворѣзкӯв Windows годна перестати творити нові. Кідь заврете Decoy, вшыткы decoy ся заставлять.",
+  "lab.all": "Вшыткы ({n})",
+  "lab.estimate": "{n} decoy возьмуть дас {ram} RAM.",
+  "lab.confirm": "Кликнїть щи раз про запуск {n}",
+  "lab.limit": "Windows перестала запускати нові процесы по {n}: то є граніця сістемы.",
+  "running.more": "…і щи {n}. Показано першых 120.",
   "lab.hide": "Скрыти тоту вкладку",
   "toast.labUnlocked": "Тайна вкладка «Лабораторія» одперта",
   "toast.labHidden": "Вкладка скрыта",
   "toast.labDone": "Запущены бавкы: {n}",
-
   "tray.show": "Отверти Decoy",
   "tray.stop": "Заставити вшыткы decoys",
   "tray.quit": "Выйти",
-
   "notify.title": "Час вышов",
   "notify.body": "{name}: перейшло {n} мин."
 }

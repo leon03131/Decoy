@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Português (Brasil)" },
-
+  "_meta": {
+    "name": "Português (Brasil)"
+  },
   "nav.library": "Biblioteca",
   "nav.favorites": "Favoritos",
   "nav.running": "Em execução",
   "nav.settings": "Configurações",
-
   "discord.checking": "Verificando…",
   "discord.up": "Em execução",
   "discord.down": "Não está em execução",
-
   "window.minimize": "Minimizar",
   "window.maximize": "Maximizar",
   "window.close": "Fechar",
-
   "tag.live": "Em execução",
   "tag.noExe": "sem exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Biblioteca",
   "lib.subtitle": "{n} jogos com processo conhecido · atualizado em {date}",
   "lib.loading": "Carregando o banco de dados de jogos…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Adicionar aos favoritos",
   "lib.empty.title": "Nada encontrado",
   "lib.empty.text": "Tente outro nome ou ative “Mostrar jogos sem exe”.",
-
   "fav.title": "Favoritos",
   "fav.count": "{n} jogos",
   "fav.hint": "Marque jogos com uma estrela",
   "fav.empty.title": "Nada por aqui ainda",
   "fav.empty.text": "Clique na estrela no card de um jogo para adicioná-lo aqui.",
-
   "detail.process": "Processo",
   "detail.duration": "Quanto tempo manter",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorito",
   "detail.close": "Fechar",
   "detail.id": "ID {id}",
-
   "running.title": "Em execução",
   "running.count": "{n} decoys ativos",
   "running.none": "Nada em execução no momento",
@@ -70,14 +64,36 @@
   "running.stop": "Parar",
   "running.empty.title": "Nada em execução",
   "running.empty.text": "Abra um jogo na biblioteca e clique em “Iniciar decoy”.",
-
   "settings.title": "Configurações",
   "settings.general": "Geral",
   "settings.language": "Idioma",
   "settings.language.desc": "Idioma da interface. Novos idiomas são adicionados como arquivos na pasta locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Duração padrão",
-  "settings.defaultTime.desc": "Quantos minutos manter o processo (as missões do Discord geralmente exigem 15).",
+  "settings.defaultTime.desc": "Quantos minutos manter o processo. O padrão é 16, não 15: as missões do Discord pedem 15 minutos de jogo, mas o Discord precisa de até um minuto para detectar um novo jogo, portanto exatamente 15 não é suficiente.",
+  "settings.smartTimer": "Temporizador inteligente",
+  "settings.smartTimer.desc": "A contagem regressiva começa quando o Discord detecta o decoy, não quando você o inicia. Para isso, o aplicativo lê apenas as linhas sobre o jogo em execução no log local do Discord; nada é armazenado ou enviado.",
+  "settings.updates": "Atualizações",
+  "settings.checkNow": "Verificar agora",
+  "settings.autoUpdate": "Atualizações automáticas",
+  "settings.autoUpdate.desc": "Verificar o GitHub ao iniciar e a cada 6 horas e baixar novas versões em segundo plano. A instalação sempre aguarda sua confirmação, e os arquivos são verificados por assinatura digital.",
+  "update.current": "Versão instalada {v}",
+  "update.checking": "Verificando…",
+  "update.uptodate": "Você está na versão mais recente",
+  "update.available": "A versão {v} está disponível",
+  "update.downloading": "Baixando a versão {v}… {p}%",
+  "update.ready": "A versão {v} está pronta para instalar",
+  "update.installing": "Instalando e reiniciando…",
+  "update.download": "Baixar",
+  "update.restart": "Reiniciar e atualizar",
+  "update.later": "Mais tarde",
+  "update.notes": "Novidades",
+  "update.running": "Os decoys em execução ({n}) serão parados.",
+  "update.error": "Não foi possível atualizar: {e}",
+  "detail.waiting": "aguardando o Discord",
+  "detail.waitingNote": "O Discord precisa de até um minuto para detectar um jogo. A contagem regressiva começa quando ele vê o decoy.",
+  "detail.detected": "O Discord detectou o decoy",
+  "detail.assumed": "O Discord não confirmou, mas o tempo está sendo contado mesmo assim.",
   "settings.autoStop": "Parar pelo temporizador",
   "settings.autoStop.desc": "O decoy é encerrado sozinho quando o tempo acabar.",
   "settings.notify": "Notificar ao concluir",
@@ -97,7 +113,6 @@
   "settings.files": "Arquivos",
   "settings.open": "Abrir",
   "settings.legal": "O Decoy não usa o seu token do Discord e não aceita missões por você. Simular o processo de um jogo pode violar as regras do Discord; use por sua conta e risco.",
-
   "toast.launched": "“{name}” iniciado por {n} min. O Discord deve detectá-lo em cerca de 15 segundos.",
   "toast.stopped": "Decoy parado",
   "toast.allStopped": "Todos os decoys parados",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} jogos receberam arquivos exe: {names}",
   "toast.refreshAdded": "Banco de dados atualizado: +{n} novos jogos",
   "toast.refreshUpToDate": "O banco de dados já está atualizado",
-
   "nav.lab": "Laboratório",
   "lab.title": "Laboratório",
   "lab.subtitle": "Uma aba secreta: inicia vários decoys de uma vez.",
@@ -115,16 +129,19 @@
   "lab.launch": "Iniciar {n} jogos",
   "lab.launching": "Iniciando {done} de {total}…",
   "lab.cancel": "Cancelar",
-  "lab.warn": "Cada decoy é um processo separado com uma janela. Mais de 200–300 de uma vez pode deixar o computador lento; o limite máximo é {max}.",
+  "lab.warn": "Cada decoy é um processo separado com uma janela. Muitos ao mesmo tempo podem travar o computador: cada processo e janela consome memória e, após alguns milhares de janelas, o Windows pode parar de criar novas. Se você fechar o Decoy, todos os decoys serão parados.",
+  "lab.all": "Todos ({n})",
+  "lab.estimate": "{n} decoys usarão aproximadamente {ram} de RAM.",
+  "lab.confirm": "Clique novamente para iniciar {n}",
+  "lab.limit": "O Windows parou de iniciar novos processos após {n}: esse é o limite do sistema.",
+  "running.more": "…e mais {n}. Os primeiros 120 são mostrados.",
   "lab.hide": "Ocultar esta aba",
   "toast.labUnlocked": "Aba secreta “Laboratório” desbloqueada",
   "toast.labHidden": "Aba ocultada",
   "toast.labDone": "Jogos iniciados: {n}",
-
   "tray.show": "Abrir Decoy",
   "tray.stop": "Parar todos os decoys",
   "tray.quit": "Sair",
-
   "notify.title": "O tempo acabou",
   "notify.body": "{name}: se passaram {n} min."
 }

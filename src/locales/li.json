@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Limburgs" },
-
+  "_meta": {
+    "name": "Limburgs"
+  },
   "nav.library": "Bibliotheek",
   "nav.favorites": "Favoriete",
   "nav.running": "Loupent",
   "nav.settings": "Instèllinge",
-
   "discord.checking": "Controlere…",
   "discord.up": "Loupent",
   "discord.down": "Löp neet",
-
   "window.minimize": "Minimalisere",
   "window.maximize": "Maximalisere",
   "window.close": "Sloete",
-
   "tag.live": "Loupent",
   "tag.noExe": "gein exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Bibliotheek",
   "lib.subtitle": "{n} sjpölle mit e bekènd proces · biejgewirk {date}",
   "lib.loading": "Sjpölledatabase laaje…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Biej favoriete zètte",
   "lib.empty.title": "Niks gevónje",
   "lib.empty.text": "Perbeer 'ne angere naam of zèt “Toan sjpölle zónger exe” aan.",
-
   "fav.title": "Favoriete",
   "fav.count": "{n} sjpölle",
   "fav.hint": "Markeer sjpölle mit 'ne sjtèr",
   "fav.empty.title": "Hie is nog niks",
   "fav.empty.text": "Druk op de sjtèr biej e sjpöl óm 't hie bie te zètte.",
-
   "detail.process": "Proces",
   "detail.duration": "Wie lank laote loupe",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favoriet",
   "detail.close": "Sloete",
   "detail.id": "ID {id}",
-
   "running.title": "Loupent",
   "running.count": "{n} actieve decoys",
   "running.none": "D'r löp op 't memènt niks",
@@ -70,14 +64,36 @@
   "running.stop": "Sjtoppe",
   "running.empty.title": "D'r löp niks",
   "running.empty.text": "Aepel e sjpöl in de bibliotheek en druk op “Start decoy”.",
-
   "settings.title": "Instèllinge",
   "settings.general": "Algemein",
   "settings.language": "Taal",
   "settings.language.desc": "Interfacetaal. Nuuj tale waere toegevoog es besjtenj in de locales-map.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Sjtandaard doer",
-  "settings.defaultTime.desc": "Wieväöl minute 't proces gehawwe mót waere (Discord-quests vraoge meistal 15).",
+  "settings.defaultTime.desc": "Wie väöl menuut 't proces vasgehaje mót waere. De sjtandaard is 16, neet 15: Discord-opdrachte vraoge 15 menuut sjpäöle, mer Discord haet toet 'n menuut neuëdeg óm e nuuj sjpel op te mirke.",
+  "settings.smartTimer": "Sjterke timer",
+  "settings.smartTimer.desc": "D'n aaftèller begintj wen Discord de decoy haet gezeen, neet wen se 'm sjtarts. Óm det te weite leest de app allein de regele euver 't loupendj sjpel oet 't lokaal logbook van Discord; nieks weurt opgesjlage of versjtuurd.",
+  "settings.updates": "Updates",
+  "settings.checkNow": "Noe controlere",
+  "settings.autoUpdate": "Automatische updates",
+  "settings.autoUpdate.desc": "Controleer GitHub bie 't opsjtarten en eder 6 oer en download nuuj versies op d'n achtergróndj. Installasie wach ummer op dien bevestiging, en besjtande waere geverifieerd mèt häör digitaal handjteikening.",
+  "update.current": "Geïnstalleerde versie {v}",
+  "update.checking": "Controlere…",
+  "update.uptodate": "Geer höb de nuutste versie",
+  "update.available": "Versie {v} is besjikbaar",
+  "update.downloading": "Versie {v} downloade… {p}%",
+  "update.ready": "Versie {v} is klaor óm te installere",
+  "update.installing": "Installere en opnuuj sjtarten…",
+  "update.download": "Downloade",
+  "update.restart": "Opnuuj sjtarten en biejwirke",
+  "update.later": "Later",
+  "update.notes": "Wat is d'r nuuj",
+  "update.running": "Loupende decoys ({n}) zölle sjtoppe.",
+  "update.error": "Kós neet biejwirke: {e}",
+  "detail.waiting": "wachte op Discord",
+  "detail.waitingNote": "Discord haet toet 'n menuut neuëdeg óm e sjpel op te mirke. D'n aaftèller begintj wen d'r de decoy zuut.",
+  "detail.detected": "Discord haet de decoy opgemerk",
+  "detail.assumed": "Discord haet 't neet bevestig, de tied weurt toch getèld.",
   "settings.autoStop": "Sjtop op timer",
   "settings.autoStop.desc": "De decoy sjtop vanzelf es de tied óm is.",
   "settings.notify": "Melde es klaor is",
@@ -97,7 +113,6 @@
   "settings.files": "Besjtenj",
   "settings.open": "Äöpene",
   "settings.legal": "Decoy gebroek dien Discord-token neet en nump gein quests veur dich aan. 'T naoboetse van e sjpölproces kin ingaon taenge de regels van Discord, gebroek op eige risico.",
-
   "toast.launched": "“{name}” gesjtart veur {n} min. Discord zou 't euver zoe'n 15 seconde mótte opmerke.",
   "toast.stopped": "Decoy gesjtopt",
   "toast.allStopped": "Alle decoys gesjtopt",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} sjpölle höbbe exe-besjtenj gekrege: {names}",
   "toast.refreshAdded": "Database biejgewirk: +{n} nuuj sjpölle",
   "toast.refreshUpToDate": "De database is al gans biejgewirk",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "'N geheime tab: sjtart väöl decoys tegeliek.",
@@ -115,16 +129,19 @@
   "lab.launch": "Sjtart {n} sjpölle",
   "lab.launching": "Sjtarte van {done} van {total}…",
   "lab.cancel": "Annulere",
-  "lab.warn": "Edere decoy is e apaart proces mit e vinster. Meer es 200–300 tegeliek kin dien computer vertraoge, 't maximum is {max}.",
+  "lab.warn": "Eder decoy is 'n apaart proces mèt e vinster. Te väöl tegeliek kan dien computer laote vasloupe: eder proces en vinster gebroek geheuge, en nao e paar doezend vinster kan Windows sjtoppe mèt nuje make. Es se Decoy sjloets, sjtoppe alle decoys.",
+  "lab.all": "Alle ({n})",
+  "lab.estimate": "{n} decoys zölle óngevaer {ram} RAM gebroeke.",
+  "lab.confirm": "Klik nog 'ns óm {n} te sjtarten",
+  "lab.limit": "Windows is gesjtop mèt nuuj processe sjtarten nao {n}: det is de systeemlimiet.",
+  "running.more": "…en nag {n}. De ieëste 120 waere getuind.",
   "lab.hide": "Verberg dees tab",
   "toast.labUnlocked": "Geheime “Lab”-tab vriejgesjakeld",
   "toast.labHidden": "Tab verbórge",
   "toast.labDone": "Sjpölle gesjtart: {n}",
-
   "tray.show": "Decoy äöpene",
   "tray.stop": "Alle decoys sjtoppe",
   "tray.quit": "Aafsloete",
-
   "notify.title": "Tied is óm",
   "notify.body": "{name}: {n} min zeen verbi."
 }

@@ -1,24 +1,22 @@
 {
-  "_meta": { "name": "עברית", "rtl": true },
-
+  "_meta": {
+    "name": "עברית",
+    "rtl": true
+  },
   "nav.library": "ספרייה",
   "nav.favorites": "מועדפים",
   "nav.running": "פועל",
   "nav.settings": "הגדרות",
-
   "discord.checking": "בודק…",
   "discord.up": "פועל",
   "discord.down": "לא פועל",
-
   "window.minimize": "מזער",
   "window.maximize": "הגדל",
   "window.close": "סגור",
-
   "tag.live": "פועל",
   "tag.noExe": "ללא exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "משגר",
-
   "lib.title": "ספרייה",
   "lib.subtitle": "{n} משחקים עם תהליך מוכר · עודכן ב-{date}",
   "lib.loading": "טוען את מאגר המשחקים…",
@@ -36,13 +34,11 @@
   "lib.addFavorite": "הוסף למועדפים",
   "lib.empty.title": "לא נמצא דבר",
   "lib.empty.text": "נסה שם אחר או הפעל את ”הצג משחקים ללא exe“.",
-
   "fav.title": "מועדפים",
   "fav.count": "{n} משחקים",
   "fav.hint": "סמן משחקים בכוכב",
   "fav.empty.title": "אין כאן דבר עדיין",
   "fav.empty.text": "לחץ על הכוכב באריח המשחק כדי להוסיף אותו לכאן.",
-
   "detail.process": "תהליך",
   "detail.duration": "כמה זמן להשאיר",
   "detail.minutes": "{n} דק'",
@@ -62,7 +58,6 @@
   "detail.favorite": "מועדף",
   "detail.close": "סגור",
   "detail.id": "ID {id}",
-
   "running.title": "פועל",
   "running.count": "{n} תהליכי דמה פעילים",
   "running.none": "שום דבר אינו פועל כרגע",
@@ -70,14 +65,36 @@
   "running.stop": "עצור",
   "running.empty.title": "שום דבר אינו פועל",
   "running.empty.text": "פתח משחק בספרייה ולחץ על ”הפעל דמה“.",
-
   "settings.title": "הגדרות",
   "settings.general": "כללי",
   "settings.language": "שפה",
   "settings.language.desc": "שפת הממשק. שפות חדשות מתווספות כקבצים בתיקיית locales.",
   "settings.stubs": "תהליכי דמה",
   "settings.defaultTime": "משך ברירת מחדל",
-  "settings.defaultTime.desc": "כמה דקות להשאיר את התהליך (משימות Discord דורשות בדרך כלל 15).",
+  "settings.defaultTime.desc": "כמה דקות להשאיר את התהליך. ברירת המחדל היא 16, לא 15: משימות Discord דורשות 15 דקות משחק, אך ל-Discord לוקח עד דקה לזהות משחק חדש, כך שבדיוק 15 אינו מספיק.",
+  "settings.smartTimer": "טיימר חכם",
+  "settings.smartTimer.desc": "הספירה לאחור מתחילה כאשר Discord מזהה את הדמה, ולא בעת הפעלתה. כדי לדעת זאת, האפליקציה קוראת רק את השורות על המשחק הפעיל מיומן האירועים המקומי של Discord; דבר אינו נשמר או נשלח לשום מקום.",
+  "settings.updates": "עדכונים",
+  "settings.checkNow": "בדוק עכשיו",
+  "settings.autoUpdate": "עדכונים אוטומטיים",
+  "settings.autoUpdate.desc": "בדוק ב-GitHub בעת ההפעלה וכל 6 שעות והורד גרסאות חדשות ברקע. ההתקנה ממתינה תמיד לאישורך, והקבצים מאומתים באמצעות החתימה הדיגיטלית שלהם.",
+  "update.current": "גרסה מותקנת {v}",
+  "update.checking": "בודק…",
+  "update.uptodate": "אתה משתמש בגרסה העדכנית ביותר",
+  "update.available": "גרסה {v} זמינה",
+  "update.downloading": "מוריד גרסה {v}… {p}%",
+  "update.ready": "גרסה {v} מוכנה להתקנה",
+  "update.installing": "מתקין ומפעיל מחדש…",
+  "update.download": "הורדה",
+  "update.restart": "הפעל מחדש ועדכן",
+  "update.later": "מאוחר יותר",
+  "update.notes": "מה חדש",
+  "update.running": "תהליכי דמה פעילים ({n}) ייעצרו.",
+  "update.error": "לא ניתן לעדכן: {e}",
+  "detail.waiting": "ממתין ל-Discord",
+  "detail.waitingNote": "ל-Discord לוקח עד דקה לזהות משחק. הספירה לאחור מתחילה כשהוא מזהה את הדמה.",
+  "detail.detected": "Discord זיהה את הדמה",
+  "detail.assumed": "Discord לא אישר זאת, הזמן נספר בכל זאת.",
   "settings.autoStop": "עצירה לפי טיימר",
   "settings.autoStop.desc": "תהליך הדמה יסתיים מעצמו כאשר הזמן ייגמר.",
   "settings.notify": "הודעה בסיום",
@@ -97,7 +114,6 @@
   "settings.files": "קבצים",
   "settings.open": "פתח",
   "settings.legal": "Decoy אינו משתמש בטוקן ה-Discord שלך ואינו מקבל משימות עבורך. הדמיית תהליך משחק עשויה להפר את כללי Discord, השימוש על אחריותך בלבד.",
-
   "toast.launched": "”{name}“ הופעל למשך {n} דק'. Discord אמור לזהות אותו תוך כ-15 שניות.",
   "toast.stopped": "תהליך הדמה נעצר",
   "toast.allStopped": "כל תהליכי הדמה נעצרו",
@@ -105,7 +121,6 @@
   "toast.refreshGained": "ל-{n} משחקים נוספו קובצי exe: {names}",
   "toast.refreshAdded": "המאגר עודכן: {n}+ משחקים חדשים",
   "toast.refreshUpToDate": "המאגר כבר מעודכן",
-
   "nav.lab": "מעבדה",
   "lab.title": "מעבדה",
   "lab.subtitle": "לשונית סודית: מפעילה תהליכי דמה רבים בבת אחת.",
@@ -115,16 +130,19 @@
   "lab.launch": "הפעל {n} משחקים",
   "lab.launching": "מפעיל {done} מתוך {total}…",
   "lab.cancel": "ביטול",
-  "lab.warn": "כל תהליך דמה הוא תהליך נפרד עם חלון. יותר מ-200–300 בבת אחת עלולים להאט את המחשב, המקסימום הוא {max}.",
+  "lab.warn": "כל דמה היא תהליך נפרד עם חלון. מספר רב מדי בבת אחת עלול לתקוע את המחשב: כל תהליך וחלון צורכים זיכרון, ולאחר כמה אלפי חלונות Windows עשויה להפסיק ליצור חלונות נוספים. אם תסגור את Decoy, כל תהליכי הדמה ייעצרו.",
+  "lab.all": "הכל ({n})",
+  "lab.estimate": "{n} תהליכי דמה ישתמשו בכ-{ram} של RAM.",
+  "lab.confirm": "לחץ שוב כדי להפעיל {n}",
+  "lab.limit": "Windows הפסיקה להפעיל תהליכים חדשים לאחר {n}: זוהי מגבלת המערכת.",
+  "running.more": "…ועוד {n}. 120 הראשונים מוצגים.",
   "lab.hide": "הסתר לשונית זו",
   "toast.labUnlocked": "הלשונית הסודית ”מעבדה“ נפתחה",
   "toast.labHidden": "הלשונית הוסתרה",
   "toast.labDone": "משחקים שהופעלו: {n}",
-
   "tray.show": "פתח את Decoy",
   "tray.stop": "עצור את כל תהליכי הדמה",
   "tray.quit": "יציאה",
-
   "notify.title": "הזמן נגמר",
   "notify.body": "{name}: חלפו {n} דק'."
 }

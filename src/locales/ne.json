@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "नेपाली" },
-
+  "_meta": {
+    "name": "नेपाली"
+  },
   "nav.library": "लाइब्रेरी",
   "nav.favorites": "मनपर्ने",
   "nav.running": "चलिरहेको",
   "nav.settings": "सेटिङहरू",
-
   "discord.checking": "जाँच गर्दै…",
   "discord.up": "चलिरहेको छ",
   "discord.down": "चलिरहेको छैन",
-
   "window.minimize": "सानो बनाउनुहोस्",
   "window.maximize": "ठूलो बनाउनुहोस्",
   "window.close": "बन्द गर्नुहोस्",
-
   "tag.live": "चलिरहेको",
   "tag.noExe": "exe छैन",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "लन्चर",
-
   "lib.title": "लाइब्रेरी",
   "lib.subtitle": "ज्ञात प्रोसेस भएका {n} खेलहरू · अपडेट {date}",
   "lib.loading": "खेल डेटाबेस लोड हुँदैछ…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "मनपर्नेमा थप्नुहोस्",
   "lib.empty.title": "केही भेटिएन",
   "lib.empty.text": "अर्को नाम प्रयास गर्नुहोस् वा “exe नभएका खेलहरू देखाउनुहोस्” खोल्नुहोस्।",
-
   "fav.title": "मनपर्ने",
   "fav.count": "{n} खेलहरू",
   "fav.hint": "खेलहरूलाई तारा चिन्ह लगाउनुहोस्",
   "fav.empty.title": "यहाँ अझै केही छैन",
   "fav.empty.text": "यसलाई यहाँ थप्न खेल टायलमा रहेको तारामा थिच्नुहोस्।",
-
   "detail.process": "प्रोसेस",
   "detail.duration": "कति समयसम्म राख्ने",
   "detail.minutes": "{n} मिनेट",
@@ -62,7 +57,6 @@
   "detail.favorite": "मनपर्ने",
   "detail.close": "बन्द गर्नुहोस्",
   "detail.id": "ID {id}",
-
   "running.title": "चलिरहेको",
   "running.count": "{n} सक्रिय decoys",
   "running.none": "अहिले केही पनि चलिरहेको छैन",
@@ -70,14 +64,36 @@
   "running.stop": "रोक्नुहोस्",
   "running.empty.title": "केही पनि चलिरहेको छैन",
   "running.empty.text": "लाइब्रेरीमा कुनै खेल खोल्नुहोस् र “Decoy सुरु गर्नुहोस्” थिच्नुहोस्।",
-
   "settings.title": "सेटिङहरू",
   "settings.general": "सामान्य",
   "settings.language": "भाषा",
   "settings.language.desc": "इन्टरफेसको भाषा। नयाँ भाषाहरू locales फोल्डरमा फाइलहरूको रूपमा थपिन्छन्।",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "पूर्वनिर्धारित अवधि",
-  "settings.defaultTime.desc": "प्रोसेस कति मिनेट राख्ने (Discord क्वेस्टहरूका लागि सामान्यतया १५ आवश्यक हुन्छ)।",
+  "settings.defaultTime.desc": "प्रक्रिया कति मिनेट राख्ने। पूर्वनिर्धारित मान १५ होइन १६ हो: Discord खोजहरूले १५ मिनेट खेल्न माग्छन्, तर नयाँ खेल पत्ता लगाउन Discord लाई एक मिनेटसम्म लाग्न सक्छ।",
+  "settings.smartTimer": "स्मार्ट टाइमर",
+  "settings.smartTimer.desc": "तपाईंले सुरु गर्दा नभई Discord ले decoy देखेपछि काउन्टडाउन सुरु हुन्छ। यो जान्नको लागि, एपले Discord को स्थानीय लगबाट चलिरहेको खेल सम्बन्धी रेखाहरू मात्र पढ्छ; केही पनि भण्डारण वा कतै पठाइँदैन।",
+  "settings.updates": "अपडेटहरू",
+  "settings.checkNow": "अहिले जाँच गर्नुहोस्",
+  "settings.autoUpdate": "स्वचालित अपडेटहरू",
+  "settings.autoUpdate.desc": "सुरु गर्दा र प्रत्येक ६ घण्टामा GitHub जाँच गर्नुहोस् र पृष्ठभूमिमा नयाँ संस्करणहरू डाउनलोड गर्नुहोस्। स्थापनाले सधैं तपाईंको पुष्टिको प्रतीक्षा गर्दछ, र फाइलहरू डिजिटल हस्ताक्षरद्वारा प्रमाणित हुन्छन्।",
+  "update.current": "स्थापित संस्करण {v}",
+  "update.checking": "जाँच गर्दै…",
+  "update.uptodate": "तपाईं नवीनतम संस्करणमा हुनुहुन्छ",
+  "update.available": "संस्करण {v} उपलब्ध छ",
+  "update.downloading": "संस्करण {v} डाउनलोड हुँदैछ… {p}%",
+  "update.ready": "संस्करण {v} स्थापना गर्न तयार छ",
+  "update.installing": "स्थापना र पुनः सुरु हुँदैछ…",
+  "update.download": "डाउनलोड गर्नुहोस्",
+  "update.restart": "पुनः सुरु गर्नुहोस् र अपडेट गर्नुहोस्",
+  "update.later": "पछि",
+  "update.notes": "नयाँ के छ",
+  "update.running": "चलिरहेका decoys ({n}) बन्द हुनेछन्।",
+  "update.error": "अपडेट गर्न सकिएन: {e}",
+  "detail.waiting": "Discord को प्रतीक्षा गर्दै",
+  "detail.waitingNote": "खेल पत्ता लगाउन Discord लाई एक मिनेटसम्म लाग्न सक्छ। decoy देखेपछि काउन्टडाउन सुरु हुन्छ।",
+  "detail.detected": "Discord ले decoy पत्ता लगायो",
+  "detail.assumed": "Discord ले पुष्टि गरेको छैन, तापनि समय गणना भइरहेको छ।",
   "settings.autoStop": "टाइमरमा रोक्नुहोस्",
   "settings.autoStop.desc": "समय सकिएपछि decoy आफैं समाप्त हुन्छ।",
   "settings.notify": "सकिएपछि सूचना दिनुहोस्",
@@ -97,7 +113,6 @@
   "settings.files": "फाइलहरू",
   "settings.open": "खोल्नुहोस्",
   "settings.legal": "Decoy ले तपाईंको Discord टोकन प्रयोग गर्दैन र तपाईंको लागि क्वेस्टहरू स्वीकार गर्दैन। खेल प्रोसेस नक्कली बनाउनु Discord को नियमहरू विपरीत हुन सक्छ, यसलाई आफ्नै जोखिममा प्रयोग गर्नुहोस्।",
-
   "toast.launched": "“{name}” {n} मिनेटका लागि सुरु भयो। Discord ले यसलाई लगभग १५ सेकेन्डमा पत्ता लगाउनेछ।",
   "toast.stopped": "Decoy रोकियो",
   "toast.allStopped": "सबै decoys रोकिए",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} खेलहरूले exe फाइलहरू पाए: {names}",
   "toast.refreshAdded": "डेटाबेस अपडेट गरियो: +{n} नयाँ खेलहरू",
   "toast.refreshUpToDate": "डेटाबेस पहिले नै अप टु डेट छ",
-
   "nav.lab": "प्रयोगशाला",
   "lab.title": "प्रयोगशाला",
   "lab.subtitle": "एक गोप्य ट्याब: एकैचोटि धेरै decoys सुरु गर्छ।",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} खेलहरू सुरु गर्नुहोस्",
   "lab.launching": "{total} मध्ये {done} सुरु हुँदैछ…",
   "lab.cancel": "रद्द गर्नुहोस्",
-  "lab.warn": "प्रत्येक decoy विन्डो भएको छुट्टै प्रोसेस हो। एकैचोटि २००–३०० भन्दा बढीले तपाईंको कम्प्युटरलाई ढिलो बनाउन सक्छ, अधिकतम {max} हो।",
+  "lab.warn": "प्रत्येक decoy विन्डो भएको छुट्टै प्रक्रिया हो। एकै पटक धेरै खोल्दा कम्प्युटर ह्याङ्ग हुन सक्छ: प्रत्येक प्रक्रिया र विन्डोले मेमोरी प्रयोग गर्दछ, र केही हजार विन्डोपछि Windows ले नयाँ सिर्जना गर्न रोक्न सक्छ। यदि तपाईंले Decoy बन्द गर्नुभयो भने, सबै decoy बन्द हुन्छन्।",
+  "lab.all": "सबै ({n})",
+  "lab.estimate": "{n} decoys ले लगभग {ram} RAM प्रयोग गर्नेछ।",
+  "lab.confirm": "{n} सुरु गर्न फेरि क्लिक गर्नुहोस्",
+  "lab.limit": "Windows ले {n} पछि नयाँ प्रक्रियाहरू सुरु गर्न रोक्यो: त्यो प्रणालीको सीमा हो।",
+  "running.more": "…र अरू {n}। पहिलो १२० देखाइएका छन्।",
   "lab.hide": "यो ट्याब लुकाउनुहोस्",
   "toast.labUnlocked": "गोप्य “प्रयोगशाला” ट्याब अनलक गरियो",
   "toast.labHidden": "ट्याब लुकाइयो",
   "toast.labDone": "खेलहरू सुरु गरियो: {n}",
-
   "tray.show": "Decoy खोल्नुहोस्",
   "tray.stop": "सबै decoys रोक्नुहोस्",
   "tray.quit": "बन्द गर्नुहोस्",
-
   "notify.title": "समय समाप्त भयो",
   "notify.body": "{name}: {n} मिनेट बित्यो।"
 }

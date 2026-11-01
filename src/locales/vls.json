@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "West-Vlams" },
-
+  "_meta": {
+    "name": "West-Vlams"
+  },
   "nav.library": "Bibliotheek",
   "nav.favorites": "Favorietn",
   "nav.running": "Droit nu",
   "nav.settings": "Instelliengn",
-
   "discord.checking": "Controliern…",
   "discord.up": "Droit nu",
   "discord.down": "Droit nie",
-
   "window.minimize": "Verklynn",
   "window.maximize": "Vergrôotn",
   "window.close": "Sluutn",
-
   "tag.live": "Droit nu",
   "tag.noExe": "geen exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Bibliotheek",
   "lib.subtitle": "{n} spellekes me een gekend proces · bygewerkt {date}",
   "lib.loading": "Spelletjesdatabase loadn…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Bystekn by favorietn",
   "lib.empty.title": "Niks gevoendn",
   "lib.empty.text": "Probeert e twidde noame of zet “Toog spellekes zoender exe” an.",
-
   "fav.title": "Favorietn",
   "fav.count": "{n} spellekes",
   "fav.hint": "Zet e sterreke by de spellekes",
   "fav.empty.title": "Hieran stoat nog niks",
   "fav.empty.text": "Drukt up 't sterreke by e spel om 't hier by te steekn.",
-
   "detail.process": "Proces",
   "detail.duration": "Oe lange loatn droain",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favoriet",
   "detail.close": "Sluutn",
   "detail.id": "ID {id}",
-
   "running.title": "Droit nu",
   "running.count": "{n} actieve decoys",
   "running.none": "Der droit nu niks",
@@ -70,14 +64,36 @@
   "running.stop": "Stoppn",
   "running.empty.title": "Der droit niks",
   "running.empty.text": "Doet e spel oopn in de bibliotheek en drukt up “Decoy startn”.",
-
   "settings.title": "Instelliengn",
   "settings.general": "Algemêen",
   "settings.language": "Toale",
   "settings.language.desc": "Toale van de gebruikersinterface. Nieuwe toaln wordn bygevoegd lik bestikskes in de locales-map.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Standoarddeur",
-  "settings.defaultTime.desc": "Oevele menuutn 't proces moe droain (Discord-quests vroagn mêestol 15 minuutn).",
+  "settings.defaultTime.desc": "Oevoevele menuutn da 't proces moe bluuvn droain. De standoard es 16, gin 15: Discord-quests vroagn 15 menuutn te speeln, moa Discord eit toet een menuute nôdig vo 'n nieuw spel te ziene, dus juste 15 es te winnig.",
+  "settings.smartTimer": "Slimme timer",
+  "settings.smartTimer.desc": "Den afteller begunt o Discord den decoy eit geziene, nie o ge 't start. Om da te weetn leest d' app ollêne de rekskes over 't droaiende spel uut de lokoale log van Discord; der wordt niet upgesleegn of deuregestierd.",
+  "settings.updates": "Updates",
+  "settings.checkNow": "Nu controleern",
+  "settings.autoUpdate": "Automatische updates",
+  "settings.autoUpdate.desc": "Controleer GitHub by 't upstartn en om de 6 eurn en download de nieuwe versies in den achterground. Installeern wacht ossan up joun bevestigienge, en bestandn zyn geverifieerd me under digitoale andteekienge.",
+  "update.current": "G'installeerde versie {v}",
+  "update.checking": "Controleern…",
+  "update.uptodate": "Je droait de latste versie",
+  "update.available": "Versie {v} es beschikboar",
+  "update.downloading": "Versie {v} downloadn… {p}%",
+  "update.ready": "Versie {v} es gereed vo t' installeern",
+  "update.installing": "Installeern en herstartn…",
+  "update.download": "Downloadn",
+  "update.restart": "Herstartn en updatn",
+  "update.later": "Loater",
+  "update.notes": "Wat es 't er nieuw",
+  "update.running": "Lôpende decoys ({n}) goan stoppn.",
+  "update.error": "Kost nie updatn: {e}",
+  "detail.waiting": "wachtn up Discord",
+  "detail.waitingNote": "Discord eit toet een menuute nôdig vo 'n spel te ziene. Den afteller begunt o 't den decoy ziet.",
+  "detail.detected": "Discord eit den decoy gemerkt",
+  "detail.assumed": "Discord eit 't nie bevestigd, den tyd wordt toch geteld.",
   "settings.autoStop": "Stoppn up timer",
   "settings.autoStop.desc": "De decoy stopt vanzelve o de tyd verleedn is.",
   "settings.notify": "Verittig o 't gereed is",
@@ -97,7 +113,6 @@
   "settings.files": "Bestandn",
   "settings.open": "Oopndoen",
   "settings.legal": "Decoy goat joun Discord-token nie gebruukn en accepteert geen quests vo joen. E spelproces nabootsn kan teegn de regels van Discord goan, gebruuk 't up eigen risico.",
-
   "toast.launched": "“{name}” gestart vo {n} min. Discord goat da merk'n binn om en by 15 secondn.",
   "toast.stopped": "Decoy gestopt",
   "toast.allStopped": "Ol de decoys gestopt",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} spellekes en een exe gekreegn: {names}",
   "toast.refreshAdded": "Database bygewerkt: +{n} nieuwe spellekes",
   "toast.refreshUpToDate": "De database is ol helegans bygewerkt",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "E geheim tabblad: start vele decoys inêens.",
@@ -115,16 +129,19 @@
   "lab.launch": "Start {n} spellekes",
   "lab.launching": "Startn van {done} van {total}…",
   "lab.cancel": "Annuleern",
-  "lab.warn": "Iedre decoy is een apart proces me een veister. Mêer of 200–300 tegelyk kan joun computer vertroagn, 't maximum is {max}.",
+  "lab.warn": "Iederen decoy es een apart proces me een veister. Te vele teffren kan jounen computer doen vastepekk'n: ieder proces en veister pakt geheugn, en achter e poar duusd veisters kan Windows stoppn me nieuwe te moakn. O ge Decoy sluut, stoppn olle decoys.",
+  "lab.all": "Ollemoale ({n})",
+  "lab.estimate": "{n} decoys goan om en by de {ram} RAM gebruukn.",
+  "lab.confirm": "Klikt nog e ki vo {n} te startn",
+  "lab.limit": "Windows es gestopt me nieuwe processn te startn achter {n}: da's de grenze van 't systêem.",
+  "running.more": "…en nog {n} andere. D' êeste 120 wordn getoogd.",
   "lab.hide": "Versteek dit tabblad",
   "toast.labUnlocked": "Geheim “Lab”-tabblad ontgrendeld",
   "toast.labHidden": "Tabblad weggestoakn",
   "toast.labDone": "Spellekes gestart: {n}",
-
   "tray.show": "Decoy oopndoen",
   "tray.stop": "Ol de decoys stoppn",
   "tray.quit": "Uutgoan",
-
   "notify.title": "Tyd is verleedn",
   "notify.body": "{name}: {n} min zyn verleedn."
 }

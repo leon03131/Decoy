@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Монгол" },
-
+  "_meta": {
+    "name": "Монгол"
+  },
   "nav.library": "Сан",
   "nav.favorites": "Дуртай",
   "nav.running": "Ажиллаж буй",
   "nav.settings": "Тохиргоо",
-
   "discord.checking": "Шалгаж байна…",
   "discord.up": "Ажиллаж байна",
   "discord.down": "Ажиллаагүй байна",
-
   "window.minimize": "Буулгах",
   "window.maximize": "Томсгох",
   "window.close": "Хаах",
-
   "tag.live": "Ажиллаж буй",
   "tag.noExe": "exe байхгүй",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "эхлүүлэгч",
-
   "lib.title": "Сан",
   "lib.subtitle": "Мэдэгдэж буй процесстой {n} тоглоом · шинэчлэгдсэн: {date}",
   "lib.loading": "Тоглоомын өгөгдлийн санг ачаалж байна…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Дуртайд нэмэх",
   "lib.empty.title": "Юу ч олдсонгүй",
   "lib.empty.text": "Өөр нэр хайж үзэх эсвэл “exe-гүй тоглоомуудыг харуулах”-ыг сонгоно уу.",
-
   "fav.title": "Дуртай",
   "fav.count": "{n} тоглоом",
   "fav.hint": "Тоглоомуудыг одоор тэмдэглэнэ үү",
   "fav.empty.title": "Одоогоор хоосон байна",
   "fav.empty.text": "Энд нэмэхийн тулд тоглоомын карт дээрх одон дээр дарна уу.",
-
   "detail.process": "Процесс",
   "detail.duration": "Хэр удаан ажиллуулах",
   "detail.minutes": "{n} мин",
@@ -62,7 +57,6 @@
   "detail.favorite": "Дуртай",
   "detail.close": "Хаах",
   "detail.id": "ID {id}",
-
   "running.title": "Ажиллаж буй",
   "running.count": "{n} идэвхтэй decoy",
   "running.none": "Одоогоор юу ч ажиллаагүй байна",
@@ -70,14 +64,36 @@
   "running.stop": "Зогсоох",
   "running.empty.title": "Юу ч ажиллаагүй байна",
   "running.empty.text": "Сангаас тоглоом сонгоод “Decoy эхлүүлэх” дээр дарна уу.",
-
   "settings.title": "Тохиргоо",
   "settings.general": "Ерөнхий",
   "settings.language": "Хэл",
   "settings.language.desc": "Интерфэйсийн хэл. Шинэ хэлүүдийг locales хавтсанд файл хэлбэрээр нэмнэ.",
   "settings.stubs": "Decoy-ууд",
   "settings.defaultTime": "Үндсэн хугацаа",
-  "settings.defaultTime.desc": "Процессыг хэдэн минутын турш ажиллуулах (Discord даалгавруудад ихэвчлэн 15 минут хэрэгтэй).",
+  "settings.defaultTime.desc": "Процессыг хэдэн минут ажиллуулах вэ. Анхдагч утга нь 15 биш, 16 байна: Discord даалгаврууд 15 минут тоглохыг шаарддаг боловч Discord шинэ тоглоомыг илрүүлэхэд 1 минут хүртэл хугацаа зарцуулдаг.",
+  "settings.smartTimer": "Ухаалаг цаг хэмжигч",
+  "settings.smartTimer.desc": "Тоолуур таныг эхлүүлэх үед биш, харин Discord уг decoy-г илрүүлэх үед эхэлнэ. Үүнийг мэдэхийн тулд апп нь зөвхөн Discord-ийн локал бүртгэлээс ажиллаж буй тоглоомын мөрүүдийг л уншдаг бөгөөд юу ч хадгалагдахгүй, хаашаа ч илгээгдэхгүй.",
+  "settings.updates": "Шинэчлэлтүүд",
+  "settings.checkNow": "Одоо шалгах",
+  "settings.autoUpdate": "Автомат шинэчлэлт",
+  "settings.autoUpdate.desc": "Эхлүүлэх үед болон 6 цаг тутамд GitHub-ийг шалгаж, шинэ хувилбаруудыг далд татаж авах. Суулгалт үргэлж таны зөвшөөрлийг хүлээх бөгөөд файлуудыг дижитал гарын үсгээр баталгаажуулна.",
+  "update.current": "Суулгасан хувилбар {v}",
+  "update.checking": "Шалгаж байна…",
+  "update.uptodate": "Та хамгийн сүүлийн хувилбарыг ашиглаж байна",
+  "update.available": "Хувилбар {v} бэлэн байна",
+  "update.downloading": "Хувилбар {v}-г татаж байна… {p}%",
+  "update.ready": "Хувилбар {v} суулгахад бэлэн боллоо",
+  "update.installing": "Суулгаж, дахин ачаалж байна…",
+  "update.download": "Татах",
+  "update.restart": "Дахин эхлүүлж шинэчлэх",
+  "update.later": "Дараа",
+  "update.notes": "Шинэ мэдээ",
+  "update.running": "Ажиллаж байгаа decoy-ууд ({n}) зогсоно.",
+  "update.error": "Шинэчлэх боломжгүй: {e}",
+  "detail.waiting": "Discord-ийг хүлээж байна",
+  "detail.waitingNote": "Discord тоглоомыг илрүүлэхэд нэг минут хүртэл хугацаа шаардагдана. Decoy-г хармагц тоолол эхэлнэ.",
+  "detail.detected": "Discord уг decoy-г илрүүллээ",
+  "detail.assumed": "Discord баталгаажуулаагүй ч хугацааг тооцож байна.",
   "settings.autoStop": "Цаг хэмжигчээр зогсоох",
   "settings.autoStop.desc": "Цаг дуусмагц decoy өөрөө автоматаар зогсоно.",
   "settings.notify": "Дуусах үед мэдэгдэх",
@@ -97,7 +113,6 @@
   "settings.files": "Файлууд",
   "settings.open": "Нээх",
   "settings.legal": "Decoy нь таны Discord токен ашигладаггүй ба таны өмнөөс даалгавар хүлээн авдаггүй. Тоглоомын процессыг дуурайлгах нь Discord-ийн дүрмийг зөрчиж болзошгүй тул өөрийн эрсдэлээр ашиглана уу.",
-
   "toast.launched": "“{name}” {n} минутаар эхэллээ. Discord үүнийг ойролцоогоор 15 секундийн дараа илрүүлэх болно.",
   "toast.stopped": "Decoy зогслоо",
   "toast.allStopped": "Бүх decoy зогслоо",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} тоглоомд exe файл нэмэгдлээ: {names}",
   "toast.refreshAdded": "Өгөгдлийн сан шинэчлэгдлээ: +{n} шинэ тоглоом",
   "toast.refreshUpToDate": "Өгөгдлийн сан аль хэдийн хамгийн сүүлийн үеийнх байна",
-
   "nav.lab": "Лаборатори",
   "lab.title": "Лаборатори",
   "lab.subtitle": "Нууц цонх: нэг дор олон decoy зэрэг эхлүүлнэ.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} тоглоом эхлүүлэх",
   "lab.launching": "{done} / {total} эхлүүлж байна…",
   "lab.cancel": "Цуцлах",
-  "lab.warn": "Decoy бүр цонхтой тусдаа процесс юм. Нэг дор 200–300-аас олон байвал компьютерийг удаашруулж болзошгүй, дээд хязгаар нь {max}.",
+  "lab.warn": "Decoy бүр цонхтой тусдаа процесс юм. Хэт олон байвал компьютерыг гацааж болзошгүй: процесс болон цонх бүр санах ой ашигладаг бөгөөд хэдэн мянган цонхны дараа Windows шинийг үүсгэхээ больж магадгүй. Хэрэв та Decoy-г хаавал бүх decoy зогсоно.",
+  "lab.all": "Бүгд ({n})",
+  "lab.estimate": "{n} decoy нь ойролцоогоор {ram} RAM ашиглана.",
+  "lab.confirm": "{n}-г эхлүүлэхийн тулд дахин дарна уу",
+  "lab.limit": "Windows {n}-ийн дараа шинэ процесс эхлүүлэхээ зогсоосон: энэ нь системийн хязгаар юм.",
+  "running.more": "…болон дахин {n}. Эхний 120-г харуулав.",
   "lab.hide": "Энэ цонхыг нуух",
   "toast.labUnlocked": "Нууц “Лаборатори” цонх нээгдлээ",
   "toast.labHidden": "Цонхыг нуулаа",
   "toast.labDone": "Эхлүүлсэн тоглоом: {n}",
-
   "tray.show": "Decoy-г нээх",
   "tray.stop": "Бүх decoy-г зогсоох",
   "tray.quit": "Гарах",
-
   "notify.title": "Цаг дууслаа",
   "notify.body": "{name}: {n} минут өнгөрлөө."
 }

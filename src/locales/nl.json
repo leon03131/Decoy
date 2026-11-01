@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Nederlands" },
-
+  "_meta": {
+    "name": "Nederlands"
+  },
   "nav.library": "Bibliotheek",
   "nav.favorites": "Favorieten",
   "nav.running": "Actief",
   "nav.settings": "Instellingen",
-
   "discord.checking": "Controleren…",
   "discord.up": "Actief",
   "discord.down": "Niet actief",
-
   "window.minimize": "Minimaliseren",
   "window.maximize": "Maximaliseren",
   "window.close": "Sluiten",
-
   "tag.live": "Actief",
   "tag.noExe": "geen exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Bibliotheek",
   "lib.subtitle": "{n} games met een bekend proces · bijgewerkt {date}",
   "lib.loading": "Gamedatabase laden…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Aan favorieten toevoegen",
   "lib.empty.title": "Niets gevonden",
   "lib.empty.text": "Probeer een andere naam of schakel “Games zonder exe tonen” in.",
-
   "fav.title": "Favorieten",
   "fav.count": "{n} games",
   "fav.hint": "Markeer games met een ster",
   "fav.empty.title": "Hier is nog niets",
   "fav.empty.text": "Klik op de ster op een gametegel om deze hier toe te voegen.",
-
   "detail.process": "Proces",
   "detail.duration": "Hoe lang actief houden",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favoriet",
   "detail.close": "Sluiten",
   "detail.id": "ID {id}",
-
   "running.title": "Actief",
   "running.count": "{n} actieve decoys",
   "running.none": "Er is momenteel niets actief",
@@ -70,14 +64,36 @@
   "running.stop": "Stoppen",
   "running.empty.title": "Er is niets actief",
   "running.empty.text": "Open een game in de bibliotheek en klik op “Decoy starten”.",
-
   "settings.title": "Instellingen",
   "settings.general": "Algemeen",
   "settings.language": "Taal",
   "settings.language.desc": "Interfacetaal. Nieuwe talen worden toegevoegd als bestanden in de map locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Standaardduur",
-  "settings.defaultTime.desc": "Hoeveel minuten het proces actief blijft (Discord-quests vereisen meestal 15).",
+  "settings.defaultTime.desc": "Hoeveel minuten het proces actief blijft. De standaardwaarde is 16, niet 15: Discord-quests vereisen 15 minuten spelen, maar Discord heeft tot een minuut nodig om een nieuwe game op te merken, dus precies 15 schiet tekort.",
+  "settings.smartTimer": "Slimme timer",
+  "settings.smartTimer.desc": "Het aftellen begint wanneer Discord de decoy heeft opgemerkt, niet wanneer je hem start. Om dat te weten leest de app alleen de regels over de actieve game uit het lokale logboek van Discord; er wordt niets opgeslagen of verzonden.",
+  "settings.updates": "Updates",
+  "settings.checkNow": "Nu controleren",
+  "settings.autoUpdate": "Automatische updates",
+  "settings.autoUpdate.desc": "Controleer GitHub bij het opstarten en elke 6 uur en download nieuwe versies op de achtergrond. Installeren wacht altijd op je bevestiging, en bestanden worden geverifieerd via hun digitale handtekening.",
+  "update.current": "Geïnstalleerde versie {v}",
+  "update.checking": "Controleren…",
+  "update.uptodate": "Je gebruikt de nieuwste versie",
+  "update.available": "Versie {v} is beschikbaar",
+  "update.downloading": "Versie {v} downloaden… {p}%",
+  "update.ready": "Versie {v} is klaar om te installeren",
+  "update.installing": "Installeren en opnieuw opstarten…",
+  "update.download": "Downloaden",
+  "update.restart": "Opnieuw opstarten en bijwerken",
+  "update.later": "Later",
+  "update.notes": "Wat is er nieuw",
+  "update.running": "Actieve decoys ({n}) worden gestopt.",
+  "update.error": "Kon niet bijwerken: {e}",
+  "detail.waiting": "wachten op Discord",
+  "detail.waitingNote": "Discord heeft tot een minuut nodig om een game op te merken. Het aftellen begint zodra Discord de decoy ziet.",
+  "detail.detected": "Discord heeft de decoy opgemerkt",
+  "detail.assumed": "Discord heeft het niet bevestigd, de tijd wordt toch geteld.",
   "settings.autoStop": "Stoppen op timer",
   "settings.autoStop.desc": "De decoy stopt vanzelf wanneer de tijd om is.",
   "settings.notify": "Melden wanneer voltooid",
@@ -97,7 +113,6 @@
   "settings.files": "Bestanden",
   "settings.open": "Openen",
   "settings.legal": "Decoy gebruikt je Discord-token niet en accepteert geen quests voor je. Het nabootsen van een gameproces kan in strijd zijn met de regels van Discord, gebruik op eigen risico.",
-
   "toast.launched": "“{name}” gestart voor {n} min. Discord zou dit over ongeveer 15 seconden moeten opmerken.",
   "toast.stopped": "Decoy gestopt",
   "toast.allStopped": "Alle decoys gestopt",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} games hebben exe-bestanden gekregen: {names}",
   "toast.refreshAdded": "Database bijgewerkt: +{n} nieuwe games",
   "toast.refreshUpToDate": "De database is al up-to-date",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "Een geheim tabblad: start veel decoys tegelijk.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} games starten",
   "lab.launching": "{done} van {total} starten…",
   "lab.cancel": "Annuleren",
-  "lab.warn": "Elke decoy is een afzonderlijk proces met een venster. Meer dan 200–300 tegelijk kan je computer vertragen, het maximum is {max}.",
+  "lab.warn": "Elke decoy is een afzonderlijk proces met een venster. Te veel tegelijk kan je computer doen vastlopen: elk proces en venster gebruikt geheugen, en na enkele duizenden vensters kan Windows stoppen met nieuwe maken. Als je Decoy sluit, stoppen alle decoys.",
+  "lab.all": "Alle ({n})",
+  "lab.estimate": "{n} decoys gebruiken ongeveer {ram} aan RAM.",
+  "lab.confirm": "Klik nogmaals om er {n} te starten",
+  "lab.limit": "Windows is gestopt met nieuwe processen starten na {n}: dat is de systeemlimiet.",
+  "running.more": "…en nog {n}. De eerste 120 worden getoond.",
   "lab.hide": "Dit tabblad verbergen",
   "toast.labUnlocked": "Geheim tabblad “Lab” ontgrendeld",
   "toast.labHidden": "Tabblad verborgen",
   "toast.labDone": "Games gestart: {n}",
-
   "tray.show": "Decoy openen",
   "tray.stop": "Alle decoys stoppen",
   "tray.quit": "Afsluiten",
-
   "notify.title": "De tijd is om",
   "notify.body": "{name}: {n} min zijn verstreken."
 }

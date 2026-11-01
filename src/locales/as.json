@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "অসমীয়া" },
-
+  "_meta": {
+    "name": "অসমীয়া"
+  },
   "nav.library": "লাইব্ৰেৰী",
   "nav.favorites": "প্ৰিয়",
   "nav.running": "চলমান",
   "nav.settings": "ছেটিংছ",
-
   "discord.checking": "পৰীক্ষা কৰি থকা হৈছে…",
   "discord.up": "চলনশীল",
   "discord.down": "চলা নাই",
-
   "window.minimize": "ক্ষুদ্ৰাকাৰ কৰক",
   "window.maximize": "বৃহদাকাৰ কৰক",
   "window.close": "বন্ধ কৰক",
-
   "tag.live": "চলমান",
   "tag.noExe": "exe নাই",
   "tag.exeCount": "{n}টা exe",
   "tag.launcher": "লঞ্চাৰ",
-
   "lib.title": "লাইব্ৰেৰী",
   "lib.subtitle": "জ্ঞাত প্ৰক্ৰিয়াযুক্ত {n}টা গেম · আপডেট কৰা হৈছে {date}",
   "lib.loading": "গেম ডাটাবেছ লোড হৈ আছে…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "প্ৰিয় তালিকাত যোগ কৰক",
   "lib.empty.title": "একো পোৱা নগ'ল",
   "lib.empty.text": "অন্য এটা নাম চেষ্টা কৰক বা “exe নথকা গেমসমূহ দেখুৱাওক” অন কৰক।",
-
   "fav.title": "প্ৰিয়",
   "fav.count": "{n}টা গেম",
   "fav.hint": "তৰা চিহ্নৰে গেমসমূহ চিহ্নিত কৰক",
   "fav.empty.title": "ইয়াত এতিয়াও একো নাই",
   "fav.empty.text": "ইয়াত যোগ কৰিবলৈ গেমৰ টাইলত থকা তৰা চিহ্নত টিপক।",
-
   "detail.process": "প্ৰক্ৰিয়া",
   "detail.duration": "কিমান সময় চলাই ৰাখিব",
   "detail.minutes": "{n} মিনিট",
@@ -62,7 +57,6 @@
   "detail.favorite": "প্ৰিয়",
   "detail.close": "বন্ধ কৰক",
   "detail.id": "ID {id}",
-
   "running.title": "চলমান",
   "running.count": "{n}টা সক্ৰিয় Decoy",
   "running.none": "এই মুহূৰ্তত একো চলা নাই",
@@ -70,14 +64,36 @@
   "running.stop": "বন্ধ কৰক",
   "running.empty.title": "একো চলা নাই",
   "running.empty.text": "লাইব্ৰেৰীৰ পৰা এটা গেম খোলক আৰু “Decoy আৰম্ভ কৰক”-ত টিপক।",
-
   "settings.title": "ছেটিংছ",
   "settings.general": "সাধাৰণ",
   "settings.language": "ভাষা",
   "settings.language.desc": "ইণ্টাৰফেচৰ ভাষা। নতুন ভাষাসমূহ locales ফোল্ডাৰত ফাইল হিচাপে যোগ কৰা হয়।",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "ডিফল্ট সময়সীমা",
-  "settings.defaultTime.desc": "প্ৰক্ৰিয়াটো কিমান মিনিট চলাই ৰখা হ'ব (Discord কুৱেষ্টৰ বাবে সাধাৰণতে ১৫ মিনিট লাগে)।",
+  "settings.defaultTime.desc": "প্ৰক্ৰিয়াটো কিমান মিনিট চলাই ৰাখিব। ডিফল্ট হৈছে ১৬, ১৫ নহয়: Discord কুৱেষ্টসমূহত ১৫ মিনিট খেলাৰ প্ৰয়োজন হয়, কিন্তু এটা নতুন গেম চিনাক্ত কৰিবলৈ Discord-ক এক মিনিট পৰ্যন্ত সময় লাগিব পাৰে, সেয়েহে ঠিক ১৫ মিনিট সময় কম পৰিব পাৰে।",
+  "settings.smartTimer": "স্মাৰ্ট টাইমাৰ",
+  "settings.smartTimer.desc": "আপুনি আৰম্ভ কৰাৰ পৰিৱৰ্তে যেতিয়া Discord-এ decoy চিনাক্ত কৰে তেতিয়াহে কাউণ্টডাউন আৰম্ভ হয়। সেয়া জানিবলৈ, এপখনে কেৱল Discord-ৰ স্থানীয় লগৰ পৰা চলি থকা গেমৰ লাইনসমূহ পঢ়ে; একো সংৰক্ষণ বা ক'লৈকো প্ৰেৰণ কৰা নহয়।",
+  "settings.updates": "আপডেটসমূহ",
+  "settings.checkNow": "এতিয়াই পৰীক্ষা কৰক",
+  "settings.autoUpdate": "স্বয়ংক্ৰিয় আপডেট",
+  "settings.autoUpdate.desc": "ষ্টাৰ্টআপত আৰু প্ৰতি ৬ ঘণ্টাত GitHub পৰীক্ষা কৰক আৰু বেকগ্ৰাউণ্ডত নতুন সংস্কৰণ ডাউনল'ড কৰক। ইনষ্টল কৰাটোৱে সদায় আপোনাৰ নিশ্চিতকৰণৰ বাবে অপেক্ষা কৰে, আৰু ফাইলসমূহ ডিজিটেল স্বাক্ষৰ দ্বাৰা পৰীক্ষা কৰা হয়।",
+  "update.current": "ইনষ্টল কৰা সংস্কৰণ {v}",
+  "update.checking": "পৰীক্ষা কৰি থকা হৈছে…",
+  "update.uptodate": "আপুনি শেহতীয়া সংস্কৰণ ব্যৱহাৰ কৰি আছে",
+  "update.available": "সংস্কৰণ {v} উপলব্ধ",
+  "update.downloading": "সংস্কৰণ {v} ডাউনল'ড হৈ আছে… {p}%",
+  "update.ready": "সংস্কৰণ {v} ইনষ্টল কৰিবলৈ সাজু",
+  "update.installing": "ইনষ্টল আৰু পুনৰাৰম্ভ কৰা হৈছে…",
+  "update.download": "ডাউনল'ড কৰক",
+  "update.restart": "পুনৰাৰম্ভ আৰু আপডেট কৰক",
+  "update.later": "পিছত",
+  "update.notes": "নতুন কি আছে",
+  "update.running": "চলি থকা decoy ({n}) বন্ধ হৈ যাব।",
+  "update.error": "আপডেট কৰিব পৰা নগ'ল: {e}",
+  "detail.waiting": "Discord-ৰ বাবে অপেক্ষা কৰা হৈছে",
+  "detail.waitingNote": "এটা গেম চিনাক্ত কৰিবলৈ Discord-ক এক মিনিট পৰ্যন্ত সময়ৰ প্ৰয়োজন হয়। ই decoy দেখাৰ লগে লগে কাউণ্টডাউন আৰম্ভ হয়।",
+  "detail.detected": "Discord-এ decoy চিনাক্ত কৰিছে",
+  "detail.assumed": "Discord-এ নিশ্চিত কৰা নাই, তথাপিও সময় গণনা কৰা হৈছে।",
   "settings.autoStop": "টাইমাৰত বন্ধ কৰক",
   "settings.autoStop.desc": "সময় শেষ হ'লে Decoy নিজে নিজে বন্ধ হৈ যাব।",
   "settings.notify": "শেষ হ'লে জাননী দিয়ক",
@@ -97,7 +113,6 @@
   "settings.files": "ফাইলসমূহ",
   "settings.open": "খোলক",
   "settings.legal": "Decoy-এ আপোনাৰ Discord টোকেন ব্যৱহাৰ নকৰে আৰু আপোনাৰ হৈ কুৱেষ্ট গ্ৰহণ নকৰে। গেম প্ৰক্ৰিয়া নকল কৰাটো Discord-ৰ নীতিৰ বিৰুদ্ধ হ'ব পাৰে, নিজৰ দায়িত্বত ব্যৱহাৰ কৰক।",
-
   "toast.launched": "“{name}” {n} মিনিটৰ বাবে আৰম্ভ কৰা হৈছে। প্ৰায় ১৫ ছেকেণ্ডৰ ভিতৰত Discord-এ ইয়াক লক্ষ্য কৰিব লাগে।",
   "toast.stopped": "Decoy বন্ধ কৰা হৈছে",
   "toast.allStopped": "সকলো Decoy বন্ধ কৰা হৈছে",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n}টা গেমে exe ফাইল পালে: {names}",
   "toast.refreshAdded": "ডাটাবেছ আপডেট হ'ল: +{n}টা নতুন গেম",
   "toast.refreshUpToDate": "ডাটাবেছ ইতিমধ্যে আপ-টু-ডেট হৈ আছে",
-
   "nav.lab": "পৰীক্ষাগাৰ",
   "lab.title": "পৰীক্ষাগাৰ",
   "lab.subtitle": "এটা গোপন টেব: একেলগে বহুতো Decoy আৰম্ভ কৰে।",
@@ -115,16 +129,19 @@
   "lab.launch": "{n}টা গেম আৰম্ভ কৰক",
   "lab.launching": "{total}-ৰ ভিতৰত {done}টা আৰম্ভ হৈ আছে…",
   "lab.cancel": "বাতিল কৰক",
-  "lab.warn": "প্ৰতিটো Decoy হৈছে উইণ্ড'যুক্ত এটা সুকীয়া প্ৰক্ৰিয়া। একেলগে ২০০–৩০০তকৈ অধিক চলালে কম্পিউটাৰ লেহেমীয়া হ'ব পাৰে, সৰ্বোচ্চ সীমা {max}।",
+  "lab.warn": "প্ৰতিটো decoy হৈছে এটা উইণ্ড'সহ সুকীয়া প্ৰক্ৰিয়া। একেলগে বহুত চলোৱাৰ ফলত আপোনাৰ কম্পিউটাৰ হ্যাং হ'ব পাৰে: প্ৰতিটো প্ৰক্ৰিয়া আৰু উইণ্ড'ই মেমৰি ব্যৱহাৰ কৰে, আৰু কেইবা হেজাৰ উইণ্ড'ৰ পিছত Windows-এ নতুন উইণ্ড' তৈয়াৰ কৰা বন্ধ কৰিব পাৰে। যদি আপুনি Decoy বন্ধ কৰে, সকলো decoy বন্ধ হৈ যাব।",
+  "lab.all": "সকলো ({n})",
+  "lab.estimate": "{n}টা decoy-এ প্ৰায় {ram} RAM ব্যৱহাৰ কৰিব।",
+  "lab.confirm": "{n} আৰম্ভ কৰিবলৈ পুনৰ ক্লিক কৰক",
+  "lab.limit": "{n}-ৰ পিছত Windows-এ নতুন প্ৰক্ৰিয়া আৰম্ভ কৰা বন্ধ কৰিছে: এইটো ছিষ্টেমৰ সীমাবদ্ধতা।",
+  "running.more": "…আৰু {n}টা। প্ৰথম ১২০টা দেখুওৱা হৈছে।",
   "lab.hide": "এই টেবটো লুকুৱাওক",
   "toast.labUnlocked": "গোপন “পৰীক্ষাগাৰ” টেব আনলক কৰা হ'ল",
   "toast.labHidden": "টেব লুকুওৱা হ'ল",
   "toast.labDone": "আৰম্ভ কৰা গেম: {n}",
-
   "tray.show": "Decoy খোলক",
   "tray.stop": "সকলো Decoy বন্ধ কৰক",
   "tray.quit": "প্ৰস্থান কৰক",
-
   "notify.title": "সময় শেষ",
   "notify.body": "{name}: {n} মিনিট পাৰ হৈ গ'ল।"
 }

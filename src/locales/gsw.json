@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Schwyzerdütsch" },
-
+  "_meta": {
+    "name": "Schwyzerdütsch"
+  },
   "nav.library": "Bibliothek",
   "nav.favorites": "Favorite",
   "nav.running": "Laufend",
   "nav.settings": "Istellige",
-
   "discord.checking": "Wird prüeft…",
   "discord.up": "Lauft",
   "discord.down": "Lauft nöd",
-
   "window.minimize": "Minimiere",
   "window.maximize": "Maximiere",
   "window.close": "Schlüüsse",
-
   "tag.live": "Lauft",
   "tag.noExe": "kei exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "Launcher",
-
   "lib.title": "Bibliothek",
   "lib.subtitle": "{n} Spili mit bekanntem Prozess · aktualisiert am {date}",
   "lib.loading": "Spili-Datebank wird glade…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Zu de Favorite tue",
   "lib.empty.title": "Nüt gfunde",
   "lib.empty.text": "Probier en andere Name oder schalt „Spili ohni exe aazeige“ ii.",
-
   "fav.title": "Favorite",
   "fav.count": "{n} Spili",
   "fav.hint": "Spili mit emne Stern markiere",
   "fav.empty.title": "Da isch no nüt",
   "fav.empty.text": "Klick uf de Stern bi me Spil, zum s da dezuezfüege.",
-
   "detail.process": "Prozess",
   "detail.duration": "Laufziit",
   "detail.minutes": "{n} Min.",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorit",
   "detail.close": "Schlüüsse",
   "detail.id": "ID {id}",
-
   "running.title": "Laufend",
   "running.count": "{n} aktivi Decoys",
   "running.none": "Im Momänt lauft nüt",
@@ -70,14 +64,36 @@
   "running.stop": "Stoppe",
   "running.empty.title": "Es lauft nüt",
   "running.empty.text": "Mach es Spil i de Bibliothek uf und klick uf „Decoy starte“.",
-
   "settings.title": "Istellige",
   "settings.general": "Allgemein",
   "settings.language": "Sprach",
   "settings.language.desc": "Benutzeroberflächi-Sprach. Neui Sprache chönd eifach als Datei im locales-Ordner dezuegtue werde.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Standardduur",
-  "settings.defaultTime.desc": "Wie vill Minute de Prozess laufe söll (Discord-Quests bruched meistens 15).",
+  "settings.defaultTime.desc": "Wie vili Minute dr Prozess laufe söll. Standard isch 16, nid 15: Discord-Quests bruuche 15 Minute Spielziit, aber Discord bruucht bis zunere Minute zum es neus Spiel bemerke, drum isch genau 15 z'wenig.",
+  "settings.smartTimer": "Schlaue Timer",
+  "settings.smartTimer.desc": "Dr Countdown fangt a, wenn Discord s'Decoy bemerkt het, nid wenn du's startisch. Zum das wüsse, liist d'App nume d'Ziile über s'laufende Spiel us em lokale Log vo Discord; es wird nüt gspycheret oder irgendwohii gschickt.",
+  "settings.updates": "Updates",
+  "settings.checkNow": "Jetzt prüefe",
+  "settings.autoUpdate": "Automatischi Updates",
+  "settings.autoUpdate.desc": "GitHub bim Start und alli 6 Stund prüefe und neui Versione im Hindergrund abelade. D'Installation wartet immer uf dini Bestätigung, und Dateie wärdet dur ihri digitali Signatur überprüeft.",
+  "update.current": "Installierti Version {v}",
+  "update.checking": "Wird prüeft…",
+  "update.uptodate": "Du hesch die neuschti Version",
+  "update.available": "Version {v} isch verfügbar",
+  "update.downloading": "Lade Version {v} abe… {p}%",
+  "update.ready": "Version {v} isch parat zum Installiere",
+  "update.installing": "Wird installiert und neugstartet…",
+  "update.download": "Abelade",
+  "update.restart": "Neustarte und aktualisiere",
+  "update.later": "Spöter",
+  "update.notes": "Was neu isch",
+  "update.running": "Laufendi Decoys ({n}) wärdet gschtoppt.",
+  "update.error": "Het nid chönne aktualisiert wärde: {e}",
+  "detail.waiting": "wartet uf Discord",
+  "detail.waitingNote": "Discord bruucht bis zunere Minute zum es Spiel z'bemerke. Dr Countdown fangt a, wenn's s'Decoy gseht.",
+  "detail.detected": "Discord het s'Decoy bemerkt",
+  "detail.assumed": "Discord het's nid bestätigt, d'Ziit zellt trotzdem.",
   "settings.autoStop": "Per Timer stoppe",
   "settings.autoStop.desc": "S Decoy beendet sich vo selber, wenn d Ziit umme isch.",
   "settings.notify": "Benachrichtige wenn fertig",
@@ -97,7 +113,6 @@
   "settings.files": "Dateie",
   "settings.open": "Ufmache",
   "settings.legal": "Decoy brucht din Discord-Token nöd und nimmt kei Quests für dich aa. S Vortüsche vomene Spilprozess cha gäge d Richtlinie vo Discord verstosse – Benutzig uf eigni Gfohr.",
-
   "toast.launched": "„{name}“ für {n} Min. gstartet. Discord sött s in öppe 15 Sekunde merke.",
   "toast.stopped": "Decoy gschtoppt",
   "toast.allStopped": "Alli Decoys gschtoppt",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} Spili hend exe-Dateie übercho: {names}",
   "toast.refreshAdded": "Datebank aktualisiert: +{n} neui Spili",
   "toast.refreshUpToDate": "D Datebank isch scho uf em neuschte Stand",
-
   "nav.lab": "Labor",
   "lab.title": "Labor",
   "lab.subtitle": "En gheimne Tab: startet ganz vill Decoys ufs Mal.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} Spili starte",
   "lab.launching": "Starte {done} vo {total}…",
   "lab.cancel": "Abbräche",
-  "lab.warn": "Jedes Decoy isch en eigene Prozess mit emne Fenschter. Meh als 200–300 ufs Mal chönd de Computer verlangsame, s Maximum isch {max}.",
+  "lab.warn": "Jedes Decoy isch en eigene Prozess mit emene Fenschter. Z'vili uf eimol chönd de Computer iifrüüre: jede Prozess und jedes Fenschter bruucht Speicher, und noch e paar Tuusig Fenschter cha Windows ufhöre, neui z'erstelle. Wenn du Decoy schlüssisch, stoppid alli Decoys.",
+  "lab.all": "Alli ({n})",
+  "lab.estimate": "{n} Decoys bruuched öppe {ram} RAM.",
+  "lab.confirm": "Nomol klicke zum {n} starte",
+  "lab.limit": "Windows het ufghört neui Prozess z'starte noch {n}: das isch d'Systemgränze.",
+  "running.more": "…und no {n} meh. Die erschte 120 wärdet aazeigt.",
   "lab.hide": "Dä Tab verstecke",
   "toast.labUnlocked": "Gheimne Tab „Labor“ freigschaltet",
   "toast.labHidden": "Tab versteckt",
   "toast.labDone": "Spili gstartet: {n}",
-
   "tray.show": "Decoy ufmache",
   "tray.stop": "Alli Decoys stoppe",
   "tray.quit": "Beende",
-
   "notify.title": "D Ziit isch umme",
   "notify.body": "{name}: {n} Min. sind verbii."
 }

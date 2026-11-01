@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Suomi" },
-
+  "_meta": {
+    "name": "Suomi"
+  },
   "nav.library": "Kirjasto",
   "nav.favorites": "Suosikit",
   "nav.running": "Käynnissä",
   "nav.settings": "Asetukset",
-
   "discord.checking": "Tarkistetaan…",
   "discord.up": "Käynnissä",
   "discord.down": "Ei käynnissä",
-
   "window.minimize": "Pienennä",
   "window.maximize": "Suurenna",
   "window.close": "Sulje",
-
   "tag.live": "Käynnissä",
   "tag.noExe": "ei exeä",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "käynnistin",
-
   "lib.title": "Kirjasto",
   "lib.subtitle": "{n} peliä tunnetulla prosessilla · päivitetty {date}",
   "lib.loading": "Ladataan pelitietokantaa…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Lisää suosikkeihin",
   "lib.empty.title": "Mitään ei löytynyt",
   "lib.empty.text": "Kokeile toista nimeä tai ota käyttöön ”Näytä pelit ilman exeä”.",
-
   "fav.title": "Suosikit",
   "fav.count": "{n} peliä",
   "fav.hint": "Merkitse pelejä tähdellä",
   "fav.empty.title": "Täällä ei ole vielä mitään",
   "fav.empty.text": "Lisää peli tähän painamalla sen kortissa olevaa tähteä.",
-
   "detail.process": "Prosessi",
   "detail.duration": "Kuinka kauan pidetään",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Suosikki",
   "detail.close": "Sulje",
   "detail.id": "ID {id}",
-
   "running.title": "Käynnissä",
   "running.count": "{n} aktiivista valeprosessia",
   "running.none": "Mikään ei ole käynnissä tällä hetkellä",
@@ -70,14 +64,36 @@
   "running.stop": "Pysäytä",
   "running.empty.title": "Mikään ei ole käynnissä",
   "running.empty.text": "Avaa peli kirjastosta ja paina ”Käynnistä valeprosessi”.",
-
   "settings.title": "Asetukset",
   "settings.general": "Yleiset",
   "settings.language": "Kieli",
   "settings.language.desc": "Käyttöliittymän kieli. Uusia kieliä lisätään tiedostoina locales-kansioon.",
   "settings.stubs": "Valeprosessit",
   "settings.defaultTime": "Oletuskesto",
-  "settings.defaultTime.desc": "Kuinka monta minuuttia prosessia pidetään käynnissä (Discord-tehtävät vaativat yleensä 15 min).",
+  "settings.defaultTime.desc": "Kuinka monta minuuttia prosessi pidetään käynnissä. Oletus on 16, ei 15: Discord-tehtävät vaativat 15 minuuttia peliaikaa, mutta Discordilla voi kestää jopa minuutti uuden pelin huomaamiseen, joten tasan 15 ei riitä.",
+  "settings.smartTimer": "Älykäs ajastin",
+  "settings.smartTimer.desc": "Aikalaskenta alkaa, kun Discord on huomannut valeprosessin, ei silloin kun käynnistät sen. Tämän tietämiseksi sovellus lukee Discordin paikallisesta lokista vain käynnissä olevaa peliä koskevat rivit; mitään ei tallenneta tai lähetetä mihinkään.",
+  "settings.updates": "Päivitykset",
+  "settings.checkNow": "Tarkista nyt",
+  "settings.autoUpdate": "Automaattiset päivitykset",
+  "settings.autoUpdate.desc": "Tarkista GitHub käynnistyksen yhteydessä ja 6 tunnin välein ja lataa uudet versiot taustalla. Asennus odottaa aina vahvistustasi, ja tiedostojen aitous varmistetaan digitaalisella allekirjoituksella.",
+  "update.current": "Asennettu versio {v}",
+  "update.checking": "Tarkistetaan…",
+  "update.uptodate": "Käytössäsi on uusin versio",
+  "update.available": "Versio {v} on saatavilla",
+  "update.downloading": "Ladataan versiota {v}… {p} %",
+  "update.ready": "Versio {v} on valmis asennettavaksi",
+  "update.installing": "Asennetaan ja käynnistetään uudelleen…",
+  "update.download": "Lataa",
+  "update.restart": "Käynnistä uudelleen ja päivitä",
+  "update.later": "Myöhemmin",
+  "update.notes": "Mitä uutta",
+  "update.running": "Käynnissä olevat valeprosessit ({n}) pysäytetään.",
+  "update.error": "Päivitys epäonnistui: {e}",
+  "detail.waiting": "odotetaan Discordia",
+  "detail.waitingNote": "Discordilla voi kestää jopa minuutti pelin huomaamiseen. Aikalaskenta alkaa, kun se havaitsee valeprosessin.",
+  "detail.detected": "Discord huomasi valeprosessin",
+  "detail.assumed": "Discord ei ole vahvistanut sitä, aika lasketaan silti.",
   "settings.autoStop": "Pysäytä ajastimella",
   "settings.autoStop.desc": "Valeprosessi sulkeutuu automaattisesti, kun aika päättyy.",
   "settings.notify": "Ilmoita valmistumisesta",
@@ -97,7 +113,6 @@
   "settings.files": "Tiedostot",
   "settings.open": "Avaa",
   "settings.legal": "Decoy ei käytä Discord-tokeniasi eikä hyväksy tehtäviä puolestasi. Peliprosessin väärentäminen voi olla Discordin sääntöjen vastaista, käytä omalla vastuullasi.",
-
   "toast.launched": "”{name}” käynnistettiin {n} minuutiksi. Discord havaitsee sen noin 15 sekunnissa.",
   "toast.stopped": "Valeprosessi pysäytetty",
   "toast.allStopped": "Kaikki valeprosessit pysäytetty",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} peliä sai exe-tiedoston: {names}",
   "toast.refreshAdded": "Tietokanta päivitetty: +{n} uutta peliä",
   "toast.refreshUpToDate": "Tietokanta on jo ajan tasalla",
-
   "nav.lab": "Laboratorio",
   "lab.title": "Laboratorio",
   "lab.subtitle": "Salainen välilehti: käynnistää useita valeprosesseja kerralla.",
@@ -115,16 +129,19 @@
   "lab.launch": "Käynnistä {n} peliä",
   "lab.launching": "Käynnistetään {done}/{total}…",
   "lab.cancel": "Peruuta",
-  "lab.warn": "Jokainen valeprosessi on erillinen ikkunallinen prosessi. Yli 200–300 kerralla saattaa hidastaa tietokonetta, enimmäismäärä on {max}.",
+  "lab.warn": "Jokainen valeprosessi on erillinen prosessi omalla ikkunallaan. Liian moni yhtä aikaa voi jumiuttaa tietokoneesi: jokainen prosessi ja ikkuna vie muistia, ja muutaman tuhannen ikkunan jälkeen Windows saattaa lakata luomasta uusia. Jos suljet Decoyn, kaikki valeprosessit pysäytetään.",
+  "lab.all": "Kaikki ({n})",
+  "lab.estimate": "{n} valeprosessia käyttää noin {ram} RAM-muistia.",
+  "lab.confirm": "Napsauta uudelleen käynnistääksesi {n}",
+  "lab.limit": "Windows lakkasi käynnistämästä uusia prosesseja määrän {n} jälkeen: se on järjestelmän raja.",
+  "running.more": "…ja {n} lisää. Ensimmäiset 120 näytetään.",
   "lab.hide": "Piilota tämä välilehti",
   "toast.labUnlocked": "Salainen ”Laboratorio”-välilehti avattu",
   "toast.labHidden": "Välilehti piilotettu",
   "toast.labDone": "Pelejä käynnistetty: {n}",
-
   "tray.show": "Avaa Decoy",
   "tray.stop": "Pysäytä kaikki valeprosessit",
   "tray.quit": "Lopeta",
-
   "notify.title": "Aika päättyi",
   "notify.body": "{name}: {n} min on kulunut."
 }

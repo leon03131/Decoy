@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Crnogorski" },
-
+  "_meta": {
+    "name": "Crnogorski"
+  },
   "nav.library": "Biblioteka",
   "nav.favorites": "Favoriti",
   "nav.running": "Pokrenuto",
   "nav.settings": "Podešavanja",
-
   "discord.checking": "Provjera…",
   "discord.up": "Pokrenut",
   "discord.down": "Nije pokrenut",
-
   "window.minimize": "Umanji",
   "window.maximize": "Uvećaj",
   "window.close": "Zatvori",
-
   "tag.live": "Pokrenuto",
   "tag.noExe": "nema exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "pokretač",
-
   "lib.title": "Biblioteka",
   "lib.subtitle": "{n} igara sa poznatim procesom · ažurirano {date}",
   "lib.loading": "Učitavanje baze igara…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Dodaj u favorite",
   "lib.empty.title": "Ništa nije pronađeno",
   "lib.empty.text": "Pokušajte sa drugim nazivom ili uključite „Prikaži igre bez exe”.",
-
   "fav.title": "Favoriti",
   "fav.count": "{n} igara",
   "fav.hint": "Označite igre zvjezdicom",
   "fav.empty.title": "Ovdje još nema ničega",
   "fav.empty.text": "Pritisnite zvjezdicu na kartici igre da je dodate ovdje.",
-
   "detail.process": "Proces",
   "detail.duration": "Koliko dugo zadržati",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorit",
   "detail.close": "Zatvori",
   "detail.id": "ID {id}",
-
   "running.title": "Pokrenuto",
   "running.count": "{n} aktivnih decoy procesa",
   "running.none": "Trenutno ništa nije pokrenuto",
@@ -70,14 +64,36 @@
   "running.stop": "Zaustavi",
   "running.empty.title": "Ništa nije pokrenuto",
   "running.empty.text": "Otvorite igru u biblioteci i pritisnite „Pokreni decoy”.",
-
   "settings.title": "Podešavanja",
   "settings.general": "Opšte",
   "settings.language": "Jezik",
   "settings.language.desc": "Jezik interfejsa. Novi jezici se dodaju kao fajlovi u folder locales.",
   "settings.stubs": "Decoy procesi",
   "settings.defaultTime": "Podrazumijevano trajanje",
-  "settings.defaultTime.desc": "Koliko minuta zadržati proces (Discord zadaci obično traže 15).",
+  "settings.defaultTime.desc": "Koliko minuta držati proces pokrenutim. Podrazumijevano je 16, a ne 15: Discord zadaci traže 15 minuta igranja, ali Discordu treba do jednog minuta da primijeti novu igru, pa tačno 15 nije dovoljno.",
+  "settings.smartTimer": "Pametni tajmer",
+  "settings.smartTimer.desc": "Odbrojavanje počinje tek kada Discord primijeti decoy, a ne kada ga vi pokrenete. Da bi to znala, aplikacija čita samo redove o pokrenutoj igri iz lokalnog Discord dnevnika; ništa se ne čuva niti šalje.",
+  "settings.updates": "Ažuriranja",
+  "settings.checkNow": "Provjeri sada",
+  "settings.autoUpdate": "Automatska ažuriranja",
+  "settings.autoUpdate.desc": "Provjeri GitHub pri pokretanju i svakih 6 sati i preuzmi nove verzije u pozadini. Instalacija uvijek čeka vašu potvrdu, a fajlovi se provjeravaju digitalnim potpisom.",
+  "update.current": "Instalirana verzija {v}",
+  "update.checking": "Provjera…",
+  "update.uptodate": "Imate najnoviju verziju",
+  "update.available": "Dostupna je verzija {v}",
+  "update.downloading": "Preuzimanje verzije {v}… {p}%",
+  "update.ready": "Verzija {v} je spremna za instalaciju",
+  "update.installing": "Instalacija i ponovno pokretanje…",
+  "update.download": "Preuzmi",
+  "update.restart": "Ponovo pokreni i ažuriraj",
+  "update.later": "Kasnije",
+  "update.notes": "Šta je novo",
+  "update.running": "Aktivni decoy procesi ({n}) će se zaustaviti.",
+  "update.error": "Ažuriranje nije uspjelo: {e}",
+  "detail.waiting": "čeka se Discord",
+  "detail.waitingNote": "Discordu treba do jednog minuta da primijeti igru. Odbrojavanje počinje kada vidi decoy.",
+  "detail.detected": "Discord je primijetio decoy",
+  "detail.assumed": "Discord nije potvrdio, vrijeme se svejedno računa.",
   "settings.autoStop": "Zaustavi po tajmeru",
   "settings.autoStop.desc": "Decoy proces se sam završava kada vrijeme istekne.",
   "settings.notify": "Obavijesti po završetku",
@@ -97,7 +113,6 @@
   "settings.files": "Fajlovi",
   "settings.open": "Otvori",
   "settings.legal": "Decoy ne koristi vaš Discord token i ne prihvata zadatke umjesto vas. Lažiranje procesa igre može kršiti pravila Discorda, koristite na sopstveni rizik.",
-
   "toast.launched": "„{name}” pokrenut na {n} min. Discord bi trebalo da ga primijeti za oko 15 sekundi.",
   "toast.stopped": "Decoy zaustavljen",
   "toast.allStopped": "Svi decoy procesi zaustavljeni",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} igara je dobilo exe fajlove: {names}",
   "toast.refreshAdded": "Baza ažurirana: +{n} novih igara",
   "toast.refreshUpToDate": "Baza je već ažurna",
-
   "nav.lab": "Laboratorija",
   "lab.title": "Laboratorija",
   "lab.subtitle": "Tajna kartica: pokreće mnogo decoy procesa odjednom.",
@@ -115,16 +129,19 @@
   "lab.launch": "Pokreni {n} igara",
   "lab.launching": "Pokretanje {done} od {total}…",
   "lab.cancel": "Otkaži",
-  "lab.warn": "Svaki decoy je zaseban proces sa prozorom. Više od 200–300 odjednom može usporiti računar, maksimum je {max}.",
+  "lab.warn": "Svaki decoy je zaseban proces sa prozorom. Previše procesa odjednom može zamrznuti računar: svaki proces i prozor troše memoriju, a nakon nekoliko hiljada prozora Windows može prestati sa stvaranjem novih. Ako zatvorite Decoy, svi decoy procesi se zaustavljaju.",
+  "lab.all": "Sve ({n})",
+  "lab.estimate": "{n} decoy procesa koristiće otprilike {ram} RAM-a.",
+  "lab.confirm": "Kliknite ponovo za pokretanje {n}",
+  "lab.limit": "Windows je prestao da pokreće nove procese nakon {n}: to je sistemski limit.",
+  "running.more": "…i još {n}. Prikazuje se prvih 120.",
   "lab.hide": "Sakrij ovu karticu",
   "toast.labUnlocked": "Otključana tajna kartica „Laboratorija”",
   "toast.labHidden": "Kartica sakrivena",
   "toast.labDone": "Pokrenuto igara: {n}",
-
   "tray.show": "Otvori Decoy",
   "tray.stop": "Zaustavi sve decoy procese",
   "tray.quit": "Izađi",
-
   "notify.title": "Vrijeme je isteklo",
   "notify.body": "{name}: prošlo je {n} min."
 }

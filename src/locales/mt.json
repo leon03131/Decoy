@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Malti" },
-
+  "_meta": {
+    "name": "Malti"
+  },
   "nav.library": "Librerija",
   "nav.favorites": "Favoriti",
   "nav.running": "Għaddejjin",
   "nav.settings": "Settings",
-
   "discord.checking": "Qed jiċċekkja…",
   "discord.up": "Mixgħul",
   "discord.down": "Mitfi",
-
   "window.minimize": "Imminimizza",
   "window.maximize": "Immassimizza",
   "window.close": "Agħlaq",
-
   "tag.live": "Mixgħul",
   "tag.noExe": "ebda exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Librerija",
   "lib.subtitle": "{n} logħba bi proċess magħruf · aġġornat {date}",
   "lib.loading": "Qed titniżżel id-database tal-logħob…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Żid mal-favoriti",
   "lib.empty.title": "Ma nstab xejn",
   "lib.empty.text": "Ipprova fittex b'isem ieħor jew ixgħel “Uri logħob mingħajr exe”.",
-
   "fav.title": "Favoriti",
   "fav.count": "{n} logħba",
   "fav.hint": "Immarka l-logħob bi stilla",
   "fav.empty.title": "Għad m'hemm xejn hawn",
   "fav.empty.text": "Agħfas l-istilla fuq xi logħba biex iżżidha hawnhekk.",
-
   "detail.process": "Proċess",
   "detail.duration": "Kemm tridu jibqa' għaddej",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorit",
   "detail.close": "Agħlaq",
   "detail.id": "ID {id}",
-
   "running.title": "Għaddejjin",
   "running.count": "{n} decoy attiv",
   "running.none": "M'hemm xejn jaħdem bħalissa",
@@ -70,14 +64,36 @@
   "running.stop": "Waqqaf",
   "running.empty.title": "M'hemm xejn jaħdem",
   "running.empty.text": "Iftaħ xi logħba mil-librerija u agħfas “Ibda decoy”.",
-
   "settings.title": "Settings",
   "settings.general": "Ġenerali",
   "settings.language": "Lingwa",
   "settings.language.desc": "Il-lingwa tal-interface. Lingwi ġodda jiżdiedu bħala fajls fil-fowlder locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Tul ta' ħin prestabbilit",
-  "settings.defaultTime.desc": "Kemm-il minuta jinżamm il-proċess (il-quests ta' Discord normalment jirrikjedu 15).",
+  "settings.defaultTime.desc": "Kemm minuti għandu jinżamm il-proċess. L-inadempjenza hija 16, mhux 15: il-kwestjonijiet ta' Discord jitolbu 15-il minuta logħob, iżda Discord jieħu sa minuta biex jinnota logħba ġdida.",
+  "settings.smartTimer": "Kronometru intelliġenti",
+  "settings.smartTimer.desc": "Il-countdown jibda meta Discord jinnota d-decoy, mhux meta tibdih int. Biex tkun taf dan, l-app taqra biss il-linji dwar il-logħba li tkun għaddejja mil-log lokali ta' Discord; xejn ma jiġi maħżun jew mibgħut imkien.",
+  "settings.updates": "Aġġornamenti",
+  "settings.checkNow": "Iċċekkja issa",
+  "settings.autoUpdate": "Aġġornamenti awtomatiċi",
+  "settings.autoUpdate.desc": "Iċċekkja GitHub mal-ftuħ u kull 6 sigħat u niżżel verżjonijiet ġodda fl-isfond. L-installazzjoni dejjem tistenna l-konferma tiegħek, u l-fajls huma vverifikati bil-firma diġitali tagħhom.",
+  "update.current": "Verżjoni installata {v}",
+  "update.checking": "Qed jiċċekkja…",
+  "update.uptodate": "Għandek l-aħħar verżjoni",
+  "update.available": "Verżjoni {v} hija disponibbli",
+  "update.downloading": "Qed tniżżel il-verżjoni {v}… {p}%",
+  "update.ready": "Il-verżjoni {v} lesta biex tiġi installata",
+  "update.installing": "Qed tinstalla u terġa' tibda…",
+  "update.download": "Niżżel",
+  "update.restart": "Erġa' ibda u aġġorna",
+  "update.later": "Iktar 'il quddiem",
+  "update.notes": "X'hemm ġdid",
+  "update.running": "Id-decoys li qed jaħdmu ({n}) se jieqfu.",
+  "update.error": "Ma setax jiġi aġġornat: {e}",
+  "detail.waiting": "qed jistenna lil Discord",
+  "detail.waitingNote": "Discord jieħu sa minuta biex jinnota logħba. Il-ħin jibda jgħodd meta jara d-decoy.",
+  "detail.detected": "Discord innota d-decoy",
+  "detail.assumed": "Discord ma kkonfermax, il-ħin qed jingħadd xorta waħda.",
   "settings.autoStop": "Waqqaf bit-tajmer",
   "settings.autoStop.desc": "Id-decoy jieqaf waħdu malli jiskadi l-ħin.",
   "settings.notify": "Avża malli jkun lest",
@@ -97,7 +113,6 @@
   "settings.files": "Fajls",
   "settings.open": "Iftaħ",
   "settings.legal": "Decoy ma jużax it-token tiegħek ta' Discord u ma jaċċettax quests f'ismek. Li tiffalsifika proċess ta' logħba jista' jmur kontra r-regoli ta' Discord, użah għar-riskju tiegħek.",
-
   "toast.launched": "“{name}” inbeda għal {n} min. Discord għandu jinduna bih f'madwar 15-il sekonda.",
   "toast.stopped": "Decoy twaqqaf",
   "toast.allStopped": "Id-decoys kollha twaqqfu",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} logħba kisbu fajls exe: {names}",
   "toast.refreshAdded": "Database aġġornata: +{n} logħba ġdida",
   "toast.refreshUpToDate": "Id-database diġà hija aġġornata",
-
   "nav.lab": "Laboratorju",
   "lab.title": "Laboratorju",
   "lab.subtitle": "Tab sigriet: jibda ħafna decoys f'daqqa.",
@@ -115,16 +129,19 @@
   "lab.launch": "Ibda {n} logħba",
   "lab.launching": "Qed jibda {done} minn {total}…",
   "lab.cancel": "Ikkanċella",
-  "lab.warn": "Kull decoy huwa proċess separat b'tieqa. Aktar minn 200–300 f'daqqa jistgħu jnaqqsu l-veloċità tal-kompjuter tiegħek, il-massimu huwa {max}.",
+  "lab.warn": "Kull decoy huwa proċess separat b'tieqa. Wisq f'daqqa jistgħu jwaqqfu l-kompjuter tiegħek: kull proċess u tieqa jużaw il-memorja, u wara ftit eluf ta' twieqi Windows jista' jieqaf joħloq oħrajn ġodda. Jekk tagħlaq Decoy, id-decoys kollha jieqfu.",
+  "lab.all": "Kollha ({n})",
+  "lab.estimate": "{n} decoys se jużaw madwar {ram} ta' RAM.",
+  "lab.confirm": "Ikklikkja mill-ġdid biex tibda {n}",
+  "lab.limit": "Windows waqaf jibda proċessi ġodda wara {n}: dak huwa l-limitu tas-sistema.",
+  "running.more": "…u {n} oħra. L-ewwel 120 huma murija.",
   "lab.hide": "Aħbi dan it-tab",
   "toast.labUnlocked": "It-tab sigriet “Laboratorju” infetaħ",
   "toast.labHidden": "It-tab inħeba",
   "toast.labDone": "Logħob li nbeda: {n}",
-
   "tray.show": "Iftaħ Decoy",
   "tray.stop": "Waqqaf id-decoys kollha",
   "tray.quit": "Oħroġ",
-
   "notify.title": "Il-ħin għadda",
   "notify.body": "{name}: għaddew {n} min."
 }

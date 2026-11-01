@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Čeština" },
-
+  "_meta": {
+    "name": "Čeština"
+  },
   "nav.library": "Knihovna",
   "nav.favorites": "Oblíbené",
   "nav.running": "Běžící",
   "nav.settings": "Nastavení",
-
   "discord.checking": "Kontrola…",
   "discord.up": "Běží",
   "discord.down": "Neběží",
-
   "window.minimize": "Minimalizovat",
   "window.maximize": "Maximalizovat",
   "window.close": "Zavřít",
-
   "tag.live": "Běží",
   "tag.noExe": "bez exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "spouštěč",
-
   "lib.title": "Knihovna",
   "lib.subtitle": "{n} her se známým procesem · aktualizováno {date}",
   "lib.loading": "Načítání databáze her…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Přidat do oblíbených",
   "lib.empty.title": "Nic nenalezeno",
   "lib.empty.text": "Zkuste jiný název nebo zapněte „Zobrazit hry bez exe“.",
-
   "fav.title": "Oblíbené",
   "fav.count": "{n} her",
   "fav.hint": "Označte hry hvězdičkou",
   "fav.empty.title": "Zatím tu nic není",
   "fav.empty.text": "Kliknutím na hvězdičku na dlaždici hry ji přidáte sem.",
-
   "detail.process": "Proces",
   "detail.duration": "Jak dlouho udržovat",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Oblíbené",
   "detail.close": "Zavřít",
   "detail.id": "ID {id}",
-
   "running.title": "Běžící",
   "running.count": "{n} aktivních návnad",
   "running.none": "Právě nic neběží",
@@ -70,14 +64,36 @@
   "running.stop": "Zastavit",
   "running.empty.title": "Nic neběží",
   "running.empty.text": "Otevřete hru v knihovně a klikněte na „Spustit návnadu“.",
-
   "settings.title": "Nastavení",
   "settings.general": "Obecné",
   "settings.language": "Jazyk",
   "settings.language.desc": "Jazyk rozhraní. Nové jazyky se přidávají jako soubory do složky locales.",
   "settings.stubs": "Návnady",
   "settings.defaultTime": "Výchozí doba trvání",
-  "settings.defaultTime.desc": "Kolik minut udržovat proces spuštěný (úkoly v Discordu obvykle vyžadují 15).",
+  "settings.defaultTime.desc": "Kolik minut udržovat proces spuštěný. Výchozí hodnota je 16, nikoli 15: úkoly v Discordu vyžadují 15 minut hraní, ale Discord potřebuje až minutu na zaznamenání nové hry, takže přesně 15 minut nestačí.",
+  "settings.smartTimer": "Chytrý časovač",
+  "settings.smartTimer.desc": "Odpočet začíná ve chvíli, kdy Discord zaznamená návnadu, nikoli při jejím spuštění. Zjišťuje se to čtením řádků o běžící hře z místního protokolu Discordu; nic se neukládá ani nikam neodesílá.",
+  "settings.updates": "Aktualizace",
+  "settings.checkNow": "Zkontrolovat",
+  "settings.autoUpdate": "Automatické aktualizace",
+  "settings.autoUpdate.desc": "Kontrolovat GitHub při spuštění a každých 6 hodin a stahovat nové verze na pozadí. Instalace vždy čeká na vaše potvrzení a soubory jsou ověřeny digitálním podpisem.",
+  "update.current": "Nainstalovaná verze {v}",
+  "update.checking": "Kontrola…",
+  "update.uptodate": "Máte nejnovější verzi",
+  "update.available": "Je k dispozici verze {v}",
+  "update.downloading": "Stahování verze {v}… {p}%",
+  "update.ready": "Verze {v} je připravena k instalaci",
+  "update.installing": "Instalace a restartování…",
+  "update.download": "Stáhnout",
+  "update.restart": "Restartovat a aktualizovat",
+  "update.later": "Později",
+  "update.notes": "Co je nového",
+  "update.running": "Spuštěné návnady ({n}) se zastaví.",
+  "update.error": "Aktualizace se nezdařila: {e}",
+  "detail.waiting": "čekání na Discord",
+  "detail.waitingNote": "Discord potřebuje až minutu na zaznamenání hry. Odpočet začne, jakmile návnadu uvidí.",
+  "detail.detected": "Discord zaznamenal návnadu",
+  "detail.assumed": "Discord to nepotvrdil, čas se počítá i tak.",
   "settings.autoStop": "Zastavit podle časovače",
   "settings.autoStop.desc": "Po vypršení času se návnada automaticky ukončí.",
   "settings.notify": "Oznámení po dokončení",
@@ -97,7 +113,6 @@
   "settings.files": "Soubory",
   "settings.open": "Otevřít",
   "settings.legal": "Decoy nepoužívá váš Discord token ani za vás nepřijímá úkoly. Simulace herního procesu může porušovat podmínky Discordu, používejte aplikaci na vlastní riziko.",
-
   "toast.launched": "„{name}“ spuštěna na {n} min. Discord by ji měl zaznamenat přibližně za 15 sekund.",
   "toast.stopped": "Návnada zastavena",
   "toast.allStopped": "Všechny návnady zastaveny",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "U {n} her se objevily exe soubory: {names}",
   "toast.refreshAdded": "Databáze aktualizována: +{n} nových her",
   "toast.refreshUpToDate": "Databáze je již aktuální",
-
   "nav.lab": "Laboratoř",
   "lab.title": "Laboratoř",
   "lab.subtitle": "Tajná záložka: spustí mnoho návnad najednou.",
@@ -115,16 +129,19 @@
   "lab.launch": "Spustit {n} her",
   "lab.launching": "Spouštění {done} z {total}…",
   "lab.cancel": "Zrušit",
-  "lab.warn": "Každá návnada je samostatný proces s oknem. Více než 200–300 najednou může zpomalit počítač, maximum je {max}.",
+  "lab.warn": "Každá návnada je samostatný proces s oknem. Příliš mnoho návnad najednou může způsobit zamrznutí počítače: každý proces a okno využívá paměť a po několika tisících oken může systém Windows přestat vytvářet další. Pokud Decoy zavřete, všechny návnady se zastaví.",
+  "lab.all": "Vše ({n})",
+  "lab.estimate": "{n} návnad využije přibližně {ram} paměti RAM.",
+  "lab.confirm": "Dalším kliknutím spustíte {n}",
+  "lab.limit": "Systém Windows přestal spouštět nové procesy po {n}: to je systémový limit.",
+  "running.more": "…a dalších {n}. Zobrazeno je prvních 120.",
   "lab.hide": "Skrýt tuto záložku",
   "toast.labUnlocked": "Odemčena tajná záložka „Laboratoř“",
   "toast.labHidden": "Záložka skryta",
   "toast.labDone": "Spuštěno her: {n}",
-
   "tray.show": "Otevřít Decoy",
   "tray.stop": "Zastavit všechny návnady",
   "tray.quit": "Ukončit",
-
   "notify.title": "Čas vypršel",
   "notify.body": "{name}: uplynulo {n} min."
 }

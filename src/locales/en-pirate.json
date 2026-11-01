@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Pirate English" },
-
+  "_meta": {
+    "name": "Pirate English"
+  },
   "nav.library": "Ship's Log",
   "nav.favorites": "Treasure Chest",
   "nav.running": "Sailin'",
   "nav.settings": "Belay ye Adventure",
-
   "discord.checking": "Scoutin'…",
   "discord.up": "Sailin'",
   "discord.down": "Marooned",
-
   "window.minimize": "Stow away",
   "window.maximize": "Hoist high",
   "window.close": "Abandon ship",
-
   "tag.live": "Sailin'",
   "tag.noExe": "no exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Ship's Log",
   "lib.subtitle": "{n} plunder-games with a known process · logged {date}",
   "lib.loading": "Scoutin' the seven seas for games…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Stash in Treasure Chest",
   "lib.empty.title": "Nary a thing found",
   "lib.empty.text": "Seek under another moniker or toggle “Show games without exe”.",
-
   "fav.title": "Treasure Chest",
   "fav.count": "{n} fine treasures",
   "fav.hint": "Mark plunder with a star",
   "fav.empty.title": "Nary a doubloon here",
   "fav.empty.text": "Strike the star upon a game tile to stash it here.",
-
   "detail.process": "Process",
   "detail.duration": "Voyage length",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Treasure",
   "detail.close": "Stow away",
   "detail.id": "ID {id}",
-
   "running.title": "Sailin'",
   "running.count": "{n} active decoy vessels",
   "running.none": "No vessels sailin' the high seas",
@@ -70,14 +64,36 @@
   "running.stop": "Drop anchor!",
   "running.empty.title": "Nary a vessel sailin'",
   "running.empty.text": "Inspect a game in the Ship's Log and strike “Set sail!”.",
-
   "settings.title": "Belay ye Adventure",
   "settings.general": "Ship's Orders",
   "settings.language": "Tongue",
   "settings.language.desc": "Tongue of the crew. New tongues be stashed as scrolls in the locales chest.",
   "settings.stubs": "Decoy Vessels",
   "settings.defaultTime": "Default voyage",
-  "settings.defaultTime.desc": "How many glasses to keep sailin' (Discord quests usually ask for 15 min).",
+  "settings.defaultTime.desc": "How many bells to keep the vessel sailin'. Standard voyage is 16, not 15: Discord quests demand 15 bells o' play, but Discord needs up to a bell to spot a fresh vessel, so exactly 15 falls short of port.",
+  "settings.smartTimer": "Clever sandglass",
+  "settings.smartTimer.desc": "The countdown turns only when Discord spots yer vessel, not when ye hoist sail. To know that, the ship reads only the scrawls about the sailin' vessel from Discord's local ship log; not a parchment is stowed or sent to foreign ports.",
+  "settings.updates": "Ship refits",
+  "settings.checkNow": "Scout the horizon",
+  "settings.autoUpdate": "Automatic refits",
+  "settings.autoUpdate.desc": "Scout GitHub at anchor and every 6 bells, and haul aboard new gear in the hold. Rigging always waits for yer 'Aye', and cargo be inspected by the royal digital stamp.",
+  "update.current": "Current rig {v}",
+  "update.checking": "Scoutin'…",
+  "update.uptodate": "Ye've got the finest vessel afloat",
+  "update.available": "Fresh rig {v} spotted",
+  "update.downloading": "Haulin' aboard rig {v}… {p}%",
+  "update.ready": "Rig {v} be ready to hoist",
+  "update.installing": "Riggin' and turnin' the ship…",
+  "update.download": "Haul aboard",
+  "update.restart": "Turn ship and refit",
+  "update.later": "Another tide",
+  "update.notes": "Cap'n's log",
+  "update.running": "Sailin' decoy vessels ({n}) will drop anchor.",
+  "update.error": "Could not refit ship: {e}",
+  "detail.waiting": "waitin' for Discord",
+  "detail.waitingNote": "Discord needs up to a bell to spot a vessel. The sandglass turns when it spies yer decoy.",
+  "detail.detected": "Discord spied the decoy",
+  "detail.assumed": "Discord hasn't hailed us, but we count the bells anyway.",
   "settings.autoStop": "Drop anchor on sandglass",
   "settings.autoStop.desc": "The decoy strikes sails by itself when the sandglass empties.",
   "settings.notify": "Shout when voyage ends",
@@ -97,7 +113,6 @@
   "settings.files": "Scrolls",
   "settings.open": "Pry open",
   "settings.legal": "Decoy uses not yer Discord token and accepts no quests for ye. Fakin' a vessel process may cross Discord's pirate code, take the helm at yer own risk.",
-
   "toast.launched": "“{name}” set sail for {n} min. Discord shall spot the colors in roughly 15 seconds.",
   "toast.stopped": "Anchor dropped",
   "toast.allStopped": "All anchors dropped!",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} games seized exe scrolls: {names}",
   "toast.refreshAdded": "Charts updated: +{n} new plunder",
   "toast.refreshUpToDate": "The ship's charts be already up to date, Cap'n",
-
   "nav.lab": "Galley",
   "lab.title": "Galley",
   "lab.subtitle": "A hidden deck: hoists colors on an armada of decoys all at once.",
@@ -115,16 +129,19 @@
   "lab.launch": "Set sail with {n} vessels!",
   "lab.launching": "Launchin' {done} of {total}…",
   "lab.cancel": "Avast",
-  "lab.warn": "Every decoy vessel carries its own porthole window. More than 200–300 at once might rock yer riggin', the limit be {max}.",
+  "lab.warn": "Every decoy be a separate vessel with its own porthole. Too many in yer fleet will scuttle yer rig: each craft and porthole eats yer rations, and after a few thousand portholes Windows may refuse to launch more. If ye abandon Decoy, all decoy vessels drop anchor.",
+  "lab.all": "Full armada ({n})",
+  "lab.estimate": "{n} decoy vessels will devour roughly {ram} o' RAM.",
+  "lab.confirm": "Strike again to launch {n} vessels",
+  "lab.limit": "Windows refused to launch new craft after {n}: that be the admiral's limit.",
+  "running.more": "…and {n} more craft. Only the first 120 of the fleet be shown.",
   "lab.hide": "Batten down this hatch",
   "toast.labUnlocked": "Secret “Galley” hatch unlocked, Ahoy!",
   "toast.labHidden": "Hatch battened down",
   "toast.labDone": "Armada set sail: {n}",
-
   "tray.show": "Board Decoy",
   "tray.stop": "Drop all anchors!",
   "tray.quit": "Scuttle ship",
-
   "notify.title": "Sandglass emptied",
   "notify.body": "{name}: {n} min have passed, Cap'n."
 }

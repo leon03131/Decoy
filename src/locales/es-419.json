@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Español (Latinoamérica)" },
-
+  "_meta": {
+    "name": "Español (Latinoamérica)"
+  },
   "nav.library": "Biblioteca",
   "nav.favorites": "Favoritos",
   "nav.running": "En ejecución",
   "nav.settings": "Configuración",
-
   "discord.checking": "Comprobando…",
   "discord.up": "En ejecución",
   "discord.down": "No iniciado",
-
   "window.minimize": "Minimizar",
   "window.maximize": "Maximizar",
   "window.close": "Cerrar",
-
   "tag.live": "En ejecución",
   "tag.noExe": "sin exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "lanzador",
-
   "lib.title": "Biblioteca",
   "lib.subtitle": "{n} juegos con proceso conocido · actualizado el {date}",
   "lib.loading": "Cargando la base de datos de juegos…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Agregar a favoritos",
   "lib.empty.title": "No se encontró nada",
   "lib.empty.text": "Prueba con otro nombre o activa «Mostrar juegos sin exe».",
-
   "fav.title": "Favoritos",
   "fav.count": "{n} juegos",
   "fav.hint": "Marca juegos con una estrella",
   "fav.empty.title": "Aún no hay nada aquí",
   "fav.empty.text": "Presiona la estrella en la tarjeta de un juego para agregarlo aquí.",
-
   "detail.process": "Proceso",
   "detail.duration": "Cuánto tiempo mantenerlo",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorito",
   "detail.close": "Cerrar",
   "detail.id": "ID {id}",
-
   "running.title": "En ejecución",
   "running.count": "{n} señuelos activos",
   "running.none": "No hay nada en ejecución en este momento",
@@ -70,14 +64,36 @@
   "running.stop": "Detener",
   "running.empty.title": "No hay nada en ejecución",
   "running.empty.text": "Abre un juego en la biblioteca y presiona «Iniciar señuelo».",
-
   "settings.title": "Configuración",
   "settings.general": "General",
   "settings.language": "Idioma",
   "settings.language.desc": "Idioma de la interfaz. Los nuevos idiomas se agregan como archivos en la carpeta locales.",
   "settings.stubs": "Señuelos",
   "settings.defaultTime": "Duración predeterminada",
-  "settings.defaultTime.desc": "Cuántos minutos mantener el proceso (las misiones de Discord suelen requerir 15).",
+  "settings.defaultTime.desc": "Cuántos minutos mantener el proceso. El valor predeterminado es 16, no 15: las misiones de Discord piden 15 minutos de juego, pero Discord tarda hasta un minuto en detectar un juego nuevo, por lo que exactamente 15 minutos no alcanza.",
+  "settings.smartTimer": "Temporizador inteligente",
+  "settings.smartTimer.desc": "La cuenta regresiva comienza cuando Discord detecta el señuelo, no cuando lo inicias. Para saberlo, la aplicación solo lee las líneas sobre el juego en ejecución del registro local de Discord; no se guarda ni se envía nada a ningún sitio.",
+  "settings.updates": "Actualizaciones",
+  "settings.checkNow": "Comprobar ahora",
+  "settings.autoUpdate": "Actualizaciones automáticas",
+  "settings.autoUpdate.desc": "Comprobar GitHub al iniciar y cada 6 horas y descargar nuevas versiones en segundo plano. La instalación siempre espera tu confirmación y los archivos se verifican con su firma digital.",
+  "update.current": "Versión instalada {v}",
+  "update.checking": "Comprobando…",
+  "update.uptodate": "Tienes la versión más reciente",
+  "update.available": "La versión {v} está disponible",
+  "update.downloading": "Descargando versión {v}… {p}%",
+  "update.ready": "La versión {v} está lista para instalar",
+  "update.installing": "Instalando y reiniciando…",
+  "update.download": "Descargar",
+  "update.restart": "Reiniciar y actualizar",
+  "update.later": "Más tarde",
+  "update.notes": "Novedades",
+  "update.running": "Los señuelos en ejecución ({n}) se detendrán.",
+  "update.error": "No se pudo actualizar: {e}",
+  "detail.waiting": "esperando a Discord",
+  "detail.waitingNote": "Discord necesita hasta un minuto para detectar un juego. La cuenta regresiva comienza cuando ve el señuelo.",
+  "detail.detected": "Discord detectó el señuelo",
+  "detail.assumed": "Discord no lo ha confirmado, el tiempo se cuenta de todos modos.",
   "settings.autoStop": "Detener con temporizador",
   "settings.autoStop.desc": "El señuelo finaliza automáticamente cuando se acaba el tiempo.",
   "settings.notify": "Notificar al finalizar",
@@ -97,7 +113,6 @@
   "settings.files": "Archivos",
   "settings.open": "Abrir",
   "settings.legal": "Decoy no utiliza tu token de Discord ni acepta misiones por ti. Simular un proceso de juego puede infringir las normas de Discord, úsalo bajo tu propio riesgo.",
-
   "toast.launched": "«{name}» iniciado por {n} min. Discord debería detectarlo en unos 15 segundos.",
   "toast.stopped": "Señuelo detenido",
   "toast.allStopped": "Todos los señuelos detenidos",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} juegos recibieron archivos exe: {names}",
   "toast.refreshAdded": "Base de datos actualizada: +{n} juegos nuevos",
   "toast.refreshUpToDate": "La base de datos ya está actualizada",
-
   "nav.lab": "Laboratorio",
   "lab.title": "Laboratorio",
   "lab.subtitle": "Pestaña secreta: inicia muchos señuelos a la vez.",
@@ -115,16 +129,19 @@
   "lab.launch": "Iniciar {n} juegos",
   "lab.launching": "Iniciando {done} de {total}…",
   "lab.cancel": "Cancelar",
-  "lab.warn": "Cada señuelo es un proceso independiente con una ventana. Más de 200–300 a la vez puede ralentizar tu computadora, el máximo es {max}.",
+  "lab.warn": "Cada señuelo es un proceso independiente con ventana. Demasiados a la vez pueden congelar tu computadora: cada proceso y ventana consume memoria, y después de varios miles de ventanas Windows puede dejar de crear más. Si cierras Decoy, todos los señuelos se detendrán.",
+  "lab.all": "Todos ({n})",
+  "lab.estimate": "{n} señuelos usarán aproximadamente {ram} de RAM.",
+  "lab.confirm": "Haz clic de nuevo para iniciar {n}",
+  "lab.limit": "Windows dejó de iniciar nuevos procesos después de {n}: ese es el límite del sistema.",
+  "running.more": "…y {n} más. Se muestran los primeros 120.",
   "lab.hide": "Ocultar esta pestaña",
   "toast.labUnlocked": "Pestaña secreta «Laboratorio» desbloqueada",
   "toast.labHidden": "Pestaña oculta",
   "toast.labDone": "Juegos iniciados: {n}",
-
   "tray.show": "Abrir Decoy",
   "tray.stop": "Detener todos los señuelos",
   "tray.quit": "Salir",
-
   "notify.title": "Tiempo terminado",
   "notify.body": "{name}: han pasado {n} min."
 }

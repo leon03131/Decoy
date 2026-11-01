@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Türkçe" },
-
+  "_meta": {
+    "name": "Türkçe"
+  },
   "nav.library": "Kütüphane",
   "nav.favorites": "Favoriler",
   "nav.running": "Çalışanlar",
   "nav.settings": "Ayarlar",
-
   "discord.checking": "Kontrol ediliyor…",
   "discord.up": "Çalışıyor",
   "discord.down": "Çalışmıyor",
-
   "window.minimize": "Küçült",
   "window.maximize": "Büyüt",
   "window.close": "Kapat",
-
   "tag.live": "Çalışıyor",
   "tag.noExe": "exe yok",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "başlatıcı",
-
   "lib.title": "Kütüphane",
   "lib.subtitle": "İşlemi bilinen {n} oyun · güncellendi: {date}",
   "lib.loading": "Oyun veritabanı yükleniyor…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Favorilere ekle",
   "lib.empty.title": "Hiçbir şey bulunamadı",
   "lib.empty.text": "Başka bir ad deneyin veya “exe'si olmayan oyunları göster” seçeneğini açın.",
-
   "fav.title": "Favoriler",
   "fav.count": "{n} oyun",
   "fav.hint": "Oyunları yıldızla işaretleyin",
   "fav.empty.title": "Burada henüz bir şey yok",
   "fav.empty.text": "Buraya eklemek için oyun kutucuğundaki yıldıza tıklayın.",
-
   "detail.process": "İşlem",
   "detail.duration": "Çalışma süresi",
   "detail.minutes": "{n} dk",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favori",
   "detail.close": "Kapat",
   "detail.id": "ID {id}",
-
   "running.title": "Çalışanlar",
   "running.count": "{n} etkin decoy",
   "running.none": "Şu anda hiçbir şey çalışmıyor",
@@ -70,14 +64,36 @@
   "running.stop": "Durdur",
   "running.empty.title": "Hiçbir şey çalışmıyor",
   "running.empty.text": "Kütüphaneden bir oyun açın ve “Decoy başlat” düğmesine basın.",
-
   "settings.title": "Ayarlar",
   "settings.general": "Genel",
   "settings.language": "Dil",
   "settings.language.desc": "Arayüz dili. Yeni diller locales klasörüne dosya eklenerek eklenir.",
   "settings.stubs": "Decoy'lar",
   "settings.defaultTime": "Varsayılan süre",
-  "settings.defaultTime.desc": "İşlemin kaç dakika açık tutulacağı (Discord görevleri genelde 15 dakika gerektirir).",
+  "settings.defaultTime.desc": "İşlemin kaç dakika açık tutulacağı. Varsayılan 15 değil, 16'dır: Discord görevleri 15 dakika oyun oynanmasını ister, ancak Discord'un yeni oyunu fark etmesi bir dakikayı bulabilir, bu yüzden tam 15 dakika yetersiz kalır.",
+  "settings.smartTimer": "Akıllı zamanlayıcı",
+  "settings.smartTimer.desc": "Geri sayım, siz başlattığınızda değil, Discord decoy'u fark ettiğinde başlar. Bunu anlamak için uygulama, Discord'un yerel günlüğünden yalnızca çalışan oyunla ilgili satırları okur; hiçbir şey kaydedilmez veya bir yere gönderilmez.",
+  "settings.updates": "Güncellemeler",
+  "settings.checkNow": "Şimdi kontrol et",
+  "settings.autoUpdate": "Otomatik güncellemeler",
+  "settings.autoUpdate.desc": "Başlangıçta ve her 6 saatte bir GitHub'ı kontrol edin ve yeni sürümleri arka planda indirin. Yükleme her zaman onayınızı bekler ve dosyalar dijital imzalarıyla doğrulanır.",
+  "update.current": "Yüklü sürüm {v}",
+  "update.checking": "Kontrol ediliyor…",
+  "update.uptodate": "En son sürümü kullanıyorsunuz",
+  "update.available": "Sürüm {v} mevcut",
+  "update.downloading": "Sürüm {v} indiriliyor… {p}%",
+  "update.ready": "Sürüm {v} yüklemeye hazır",
+  "update.installing": "Yükleniyor ve yeniden başlatılıyor…",
+  "update.download": "İndir",
+  "update.restart": "Yeniden başlat ve güncelle",
+  "update.later": "Daha sonra",
+  "update.notes": "Yenilikler",
+  "update.running": "Çalışan decoy'lar ({n}) durdurulacak.",
+  "update.error": "Güncellenemedi: {e}",
+  "detail.waiting": "Discord bekleniyor",
+  "detail.waitingNote": "Discord'un bir oyunu fark etmesi bir dakikayı bulabilir. Geri sayım, decoy'u gördüğünde başlar.",
+  "detail.detected": "Discord decoy'u fark etti",
+  "detail.assumed": "Discord onaylamadı, yine de süre sayılıyor.",
   "settings.autoStop": "Zamanlayıcıyla durdur",
   "settings.autoStop.desc": "Süre dolduğunda decoy kendiliğinden kapanır.",
   "settings.notify": "Bittiğinde bildir",
@@ -97,7 +113,6 @@
   "settings.files": "Dosyalar",
   "settings.open": "Aç",
   "settings.legal": "Decoy, Discord tokeninizi kullanmaz ve sizin yerinize görev kabul etmez. Bir oyun sürecini taklit etmek Discord kurallarına aykırı olabilir; kullanım riski size aittir.",
-
   "toast.launched": "“{name}” {n} dk boyunca başlatıldı. Discord yaklaşık 15 saniye içinde fark edecektir.",
   "toast.stopped": "Decoy durduruldu",
   "toast.allStopped": "Tüm decoy'lar durduruldu",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} oyuna exe dosyası eklendi: {names}",
   "toast.refreshAdded": "Veritabanı güncellendi: +{n} yeni oyun",
   "toast.refreshUpToDate": "Veritabanı zaten güncel",
-
   "nav.lab": "Laboratuvar",
   "lab.title": "Laboratuvar",
   "lab.subtitle": "Gizli bir sekme: aynı anda birçok decoy başlatır.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} oyunu başlat",
   "lab.launching": "Başlatılıyor: {done} / {total}…",
   "lab.cancel": "İptal",
-  "lab.warn": "Her decoy, penceresi olan ayrı bir işlemdir. Aynı anda 200–300 taneden fazlası bilgisayarınızı yavaşlatabilir; üst sınır {max}.",
+  "lab.warn": "Her decoy pencereli ayrı bir işlemdir. Aynı anda çok fazlası bilgisayarınızı dondurabilir: her işlem ve pencere bellek tüketir ve birkaç bin pencereden sonra Windows yenilerini oluşturmayı durdurabilir. Decoy'u kapatırsanız, tüm decoy'lar durur.",
+  "lab.all": "Tümü ({n})",
+  "lab.estimate": "{n} decoy yaklaşık {ram} RAM kullanacaktır.",
+  "lab.confirm": "{n} başlatmak için tekrar tıklayın",
+  "lab.limit": "Windows {n} işlemden sonra yenilerini başlatmayı durdurdu: sistem sınırı bu kadardır.",
+  "running.more": "…ve {n} tane daha. İlk 120 gösteriliyor.",
   "lab.hide": "Bu sekmeyi gizle",
   "toast.labUnlocked": "Gizli “Laboratuvar” sekmesi açıldı",
   "toast.labHidden": "Sekme gizlendi",
   "toast.labDone": "Başlatılan oyun sayısı: {n}",
-
   "tray.show": "Decoy'u Aç",
   "tray.stop": "Tüm decoy'ları durdur",
   "tray.quit": "Çıkış",
-
   "notify.title": "Süre doldu",
   "notify.body": "{name}: {n} dk geçti."
 }

@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Asturianu" },
-
+  "_meta": {
+    "name": "Asturianu"
+  },
   "nav.library": "Biblioteca",
   "nav.favorites": "Favoritos",
   "nav.running": "N'execución",
   "nav.settings": "Axustes",
-
   "discord.checking": "Comprobando…",
   "discord.up": "N'execución",
   "discord.down": "Non aniciáu",
-
   "window.minimize": "Minimizar",
   "window.maximize": "Maximizar",
   "window.close": "Zarrar",
-
   "tag.live": "N'execución",
   "tag.noExe": "ensin exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "llanzador",
-
   "lib.title": "Biblioteca",
   "lib.subtitle": "{n} xuegos con procesu conocíu · anováu'l {date}",
   "lib.loading": "Cargando la base de datos de xuegos…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Amestar a favoritos",
   "lib.empty.title": "Nun s'atopó nada",
   "lib.empty.text": "Prueba con otru nome o activa «Amosar xuegos ensin exe».",
-
   "fav.title": "Favoritos",
   "fav.count": "{n} xuegos",
   "fav.hint": "Marca xuegos con una estrella",
   "fav.empty.title": "Tovía nun hai nada equí",
   "fav.empty.text": "Calca la estrella na tarxeta d'un xuegu p'amestalu equí.",
-
   "detail.process": "Procesu",
   "detail.duration": "Cuánto tiempu caltenelu",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favoritu",
   "detail.close": "Zarrar",
   "detail.id": "ID {id}",
-
   "running.title": "N'execución",
   "running.count": "{n} decoys activos",
   "running.none": "Nun hai nada n'execución agora mesmo",
@@ -70,14 +64,36 @@
   "running.stop": "Parar",
   "running.empty.title": "Nun hai nada n'execución",
   "running.empty.text": "Abre un xuegu na biblioteca y calca «Iniciar decoy».",
-
   "settings.title": "Axustes",
   "settings.general": "Xeneral",
   "settings.language": "Llingua",
   "settings.language.desc": "Llingua de la interfaz. Les llingües nueves amiéstense como ficheros na carpeta locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Duración predeterminada",
-  "settings.defaultTime.desc": "Cuántos minutos caltener el procesu (les misiones de Discord suelen necesitar 15).",
+  "settings.defaultTime.desc": "Cuántos minutos cal caltener el procesu. El valor predetermináu ye 16, non 15: les misiones de Discord piden 15 minutos de xuegu, pero Discord necesita hasta un minutu pa decatase d'un xuegu nuevu, asina qu'esautamente 15 quédase curtiu.",
+  "settings.smartTimer": "Temporizador intelixente",
+  "settings.smartTimer.desc": "La cuenta atrás entama cuando Discord decátase del decoy, non cuando lu anicies. Pa sabelo, l'aplicación namás llee les llinies sobre'l xuegu n'execución del rexistru llocal de Discord; nun se guarda nin s'unvia un res a nengún sitiu.",
+  "settings.updates": "Anovamientos",
+  "settings.checkNow": "Comprobar agora",
+  "settings.autoUpdate": "Anovamientos automáticos",
+  "settings.autoUpdate.desc": "Comprobar GitHub al aniciar y cada 6 hores y descargar nueves versiones en segundu planu. La instalación siempres espera pola to confirmación, y los ficheros verifíquense cola so robla dixital.",
+  "update.current": "Versión instalada {v}",
+  "update.checking": "Comprobando…",
+  "update.uptodate": "Tienes la versión más recién",
+  "update.available": "La versión {v} ta disponible",
+  "update.downloading": "Descargando versión {v}… {p}%",
+  "update.ready": "La versión {v} ta llista pa instalar",
+  "update.installing": "Instalando y reaniciando…",
+  "update.download": "Descargar",
+  "update.restart": "Reaniciar y anovar",
+  "update.later": "Más sero",
+  "update.notes": "Qué hai de nuevo",
+  "update.running": "Los decoys n'execución ({n}) van parase.",
+  "update.error": "Nun se pudo anovar: {e}",
+  "detail.waiting": "esperando per Discord",
+  "detail.waitingNote": "Discord necesita hasta un minutu pa decatase d'un xuegu. La cuenta atrás entama cuando ve'l decoy.",
+  "detail.detected": "Discord decatóse del decoy",
+  "detail.assumed": "Discord nun lu confirmó, el tiempu cúntase igual.",
   "settings.autoStop": "Parar col temporizador",
   "settings.autoStop.desc": "El decoy acaba por sigo mesmu cuando s'acaba'l tiempu.",
   "settings.notify": "Avisar cuando termine",
@@ -97,7 +113,6 @@
   "settings.files": "Ficheros",
   "settings.open": "Abrir",
   "settings.legal": "Decoy nun usa'l to token de Discord nin aceuta misiones por ti. Asonsañar un procesu de xuegu puede dir escontra les condiciones de serviciu de Discord; úsalu baxo la to propia responsabilidá.",
-
   "toast.launched": "«{name}» empecipiáu mientres {n} min. Discord debería deteutalu nunos 15 segundos.",
   "toast.stopped": "Decoy paráu",
   "toast.allStopped": "Paráronse tolos decoys",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} xuegos consiguieron ficheros exe: {names}",
   "toast.refreshAdded": "Base de datos anovada: +{n} xuegos nuevos",
   "toast.refreshUpToDate": "La base de datos yá ta al día",
-
   "nav.lab": "Llaboratoriu",
   "lab.title": "Llaboratoriu",
   "lab.subtitle": "Una llingüeta secreta: empecipia munchos decoys al empar.",
@@ -115,16 +129,19 @@
   "lab.launch": "Empecipiar {n} xuegos",
   "lab.launching": "Iniciando {done} de {total}…",
   "lab.cancel": "Cancelar",
-  "lab.warn": "Cada decoy ye un procesu independiente con una ventana. Más de 200–300 al empar puede ralentizar el to ordenador; el másimu ye {max}.",
+  "lab.warn": "Cada decoy ye un procesu separtáu con una ventana. Demasiaos al empar pueden conxelar el to ordenador: cada procesu y ventana usa memoria, y dempués d'unes poques miles de ventanes Windows puede dexar de crear más. Si zarres Decoy, tolos decoys pártense.",
+  "lab.all": "Toos ({n})",
+  "lab.estimate": "{n} decoys van usar aproximadamente {ram} de RAM.",
+  "lab.confirm": "Calca otra vegada pa empecipiar {n}",
+  "lab.limit": "Windows dexó d'aniciar nuevos procesos dempués de {n}: esi ye'l llímite del sistema.",
+  "running.more": "…y {n} más. Namás s'amuesen los primeros 120.",
   "lab.hide": "Anubrir esta llingüeta",
   "toast.labUnlocked": "Desbloquióse la llingüeta secreta «Llaboratoriu»",
   "toast.labHidden": "Llingüeta anubrida",
   "toast.labDone": "Xuegos empecipiaos: {n}",
-
   "tray.show": "Abrir Decoy",
   "tray.stop": "Parar tolos decoys",
   "tray.quit": "Colar",
-
   "notify.title": "Acabóse'l tiempu",
   "notify.body": "{name}: pasaron {n} min."
 }

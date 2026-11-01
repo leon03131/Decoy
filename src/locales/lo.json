@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "ລາວ" },
-
+  "_meta": {
+    "name": "ລາວ"
+  },
   "nav.library": "ຄັງເກມ",
   "nav.favorites": "ລາຍການໂປດ",
   "nav.running": "ກຳລັງເຮັດວຽກ",
   "nav.settings": "ການຕັ້ງຄ່າ",
-
   "discord.checking": "ກຳລັງກວດສອບ…",
   "discord.up": "ກຳລັງເຮັດວຽກ",
   "discord.down": "ບໍ່ໄດ້ເຮັດວຽກ",
-
   "window.minimize": "ຫຍໍ້ໜ້າຕ່າງ",
   "window.maximize": "ຂະຫຍາຍໜ້າຕ່າງ",
   "window.close": "ປິດ",
-
   "tag.live": "ກຳລັງເຮັດວຽກ",
   "tag.noExe": "ບໍ່ມີ exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "ລອນເຊີ",
-
   "lib.title": "ຄັງເກມ",
   "lib.subtitle": "{n} ເກມທີ່ຮູ້ຈັກໂປຣເຊສ · ອັບເດດ {date}",
   "lib.loading": "ກຳລັງໂຫລດຖານຂໍ້ມູນເກມ…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "ເພີ່ມໃສ່ລາຍການໂປດ",
   "lib.empty.title": "ບໍ່ພົບຂໍ້ມູນ",
   "lib.empty.text": "ລອງຊອກຫາດ້ວຍຊື່ອື່ນ ຫຼື ເປີດ “ສະແດງເກມທີ່ບໍ່ມີ exe”.",
-
   "fav.title": "ລາຍການໂປດ",
   "fav.count": "{n} ເກມ",
   "fav.hint": "ໝາຍດາວເກມທີ່ມັກ",
   "fav.empty.title": "ຍັງບໍ່ມີຫຍັງຢູ່ນີ້ເທື່ອ",
   "fav.empty.text": "ກົດຮູບດາວຢູ່ແຜ່ນເກມເພື່ອເພີ່ມເຂົ້າມາບ່ອນນີ້.",
-
   "detail.process": "ໂປຣເຊສ",
   "detail.duration": "ໄລຍະເວລາເຮັດວຽກ",
   "detail.minutes": "{n} ນາທີ",
@@ -62,7 +57,6 @@
   "detail.favorite": "ລາຍການໂປດ",
   "detail.close": "ປິດ",
   "detail.id": "ID {id}",
-
   "running.title": "ກຳລັງເຮັດວຽກ",
   "running.count": "{n} Decoy ທີ່ກຳລັງເຮັດວຽກ",
   "running.none": "ຕອນນີ້ບໍ່ມີຫຍັງກຳລັງເຮັດວຽກ",
@@ -70,14 +64,36 @@
   "running.stop": "ຢຸດ",
   "running.empty.title": "ບໍ່ມີຫຍັງກຳລັງເຮັດວຽກ",
   "running.empty.text": "ເປີດເກມໃນຄັງເກມ ແລ້ວກົດ “ເລີ່ມ Decoy”.",
-
   "settings.title": "ການຕັ້ງຄ່າ",
   "settings.general": "ທົ່ວໄປ",
   "settings.language": "ພາສາ",
   "settings.language.desc": "ພາສາອິນເຕີເຟສ. ສາມາດເພີ່ມພາສາໃໝ່ເປັນໄຟລ໌ໃນໂຟນເດີ locales.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "ໄລຍະເວລາເລີ່ມຕົ້ນ",
-  "settings.defaultTime.desc": "ຈຳນວນນາທີທີ່ຈະເປີດໂປຣເຊສໄວ້ (ເຄວສຂອງ Discord ສ່ວນຫຼາຍຕ້ອງການ 15 ນາທີ).",
+  "settings.defaultTime.desc": "ຈຳນວນນາທີທີ່ຈະຮັກສາໂປຣເຊສໄວ້. ຄ່າເລີ່ມຕົ້ນແມ່ນ 16 ບໍ່ແມ່ນ 15: ພາລະກິດ Discord ຕ້ອງການການຫຼິ້ນ 15 ນາທີ, ແຕ່ Discord ຕ້ອງໃຊ້ເວລາເຖິງໜຶ່ງນາທີເພື່ອຮັບຮູ້ເກມໃໝ່.",
+  "settings.smartTimer": "ໂມງຈັບເວລາອັດສະລິຍະ",
+  "settings.smartTimer.desc": "ການນັບຖອຍຫຼັງເລີ່ມຕົ້ນເມື່ອ Discord ກວດພົບ decoy, ບໍ່ແມ່ນຕອນທີ່ທ່ານເລີ່ມມັນ. ເພື່ອໃຫ້ຮູ້ສິ່ງນັ້ນ, ແອັບຈະອ່ານສະເພາະແຖວກ່ຽວກັບເກມທີ່ກຳລັງເຮັດວຽກຈາກບັນທຶກທ້ອງຖິ່ນຂອງ Discord ເທົ່ານັ້ນ; ບໍ່ມີການບັນທຶກ ຫຼື ສົ່ງຂໍ້ມູນໄປໃສເລີຍ.",
+  "settings.updates": "ການອັບເດດ",
+  "settings.checkNow": "ກວດສອບຕອນນີ້",
+  "settings.autoUpdate": "ອັບເດດອັດຕະໂນມັດ",
+  "settings.autoUpdate.desc": "ກວດສອບ GitHub ເມື່ອເລີ່ມຕົ້ນ ແລະ ທຸກໆ 6 ຊົ່ວໂມງ ພ້ອມດາວໂຫຼດເວີຊັນໃໝ່ໃນພື້ນຫຼັງ. ການຕິດຕັ້ງຈະລໍຖ້າການຢືນຢັນຈາກທ່ານສະເໝີ ແລະ ໄຟລ໌ໄດ້ຮັບການກວດສອບດ້ວຍລາຍເຊັນດິຈິຕອນ.",
+  "update.current": "ເວີຊັນທີ່ຕິດຕັ້ງແລ້ວ {v}",
+  "update.checking": "ກຳລັງກວດສອບ…",
+  "update.uptodate": "ທ່ານກຳລັງໃຊ້ເວີຊັນຫຼ້າສຸດແລ້ວ",
+  "update.available": "ມີເວີຊັນ {v} ໃຫ້ໃຊ້ແລ້ວ",
+  "update.downloading": "ກຳລັງດາວໂຫຼດເວີຊັນ {v}… {p}%",
+  "update.ready": "ເວີຊັນ {v} ພ້ອມຕິດຕັ້ງແລ້ວ",
+  "update.installing": "ກຳລັງຕິດຕັ້ງ ແລະ ເລີ່ມລະບົບໃໝ່…",
+  "update.download": "ດາວໂຫຼດ",
+  "update.restart": "ເລີ່ມລະບົບໃໝ່ ແລະ ອັບເດດ",
+  "update.later": "ພາຍຫຼັງ",
+  "update.notes": "ມີຫຍັງໃໝ່",
+  "update.running": "Decoy ທີ່ກຳລັງເຮັດວຽກ ({n}) ຈະຢຸດລົງ.",
+  "update.error": "ບໍ່ສາມາດອັບເດດໄດ້: {e}",
+  "detail.waiting": "ກຳລັງລໍຖ້າ Discord",
+  "detail.waitingNote": "Discord ຕ້ອງໃຊ້ເວລາເຖິງໜຶ່ງນາທີເພື່ອຮັບຮູ້ເກມ. ການນັບຖອຍຫຼັງຈະເລີ່ມຕົ້ນເມື່ອມັນເຫັນ decoy.",
+  "detail.detected": "Discord ກວດພົບ decoy ແລ້ວ",
+  "detail.assumed": "Discord ຍັງບໍ່ໄດ້ຢືນຢັນ, ແຕ່ເວລາກໍຍັງຖືກນັບຢູ່.",
   "settings.autoStop": "ຢຸດຕາມເວລາ",
   "settings.autoStop.desc": "Decoy ຈະຢຸດເຮັດວຽກເອງໂດຍອັດຕະໂນມັດເມື່ອໝົດເວລາ.",
   "settings.notify": "ແຈ້ງເຕືອນເມື່ອສຳເລັດ",
@@ -97,7 +113,6 @@
   "settings.files": "ໄຟລ໌",
   "settings.open": "ເປີດ",
   "settings.legal": "Decoy ບໍ່ໄດ້ໃຊ້ໂທເຄັນ Discord ຂອງທ່ານ ແລະ ບໍ່ໄດ້ກົດຮັບເຄວສແທນທ່ານ. ການຈຳລອງໂປຣເຊສເກມອາດຂັດຕໍ່ກົດຂອງ Discord, ໂປຣດໃຊ້ງານດ້ວຍຄວາມສ່ຽງຂອງທ່ານເອງ.",
-
   "toast.launched": "ເລີ່ມ “{name}” ເປັນເວລາ {n} ນາທີແລ້ວ. Discord ຄວນຈະກວດພົບພາຍໃນປະມານ 15 ວິນາທີ.",
   "toast.stopped": "ຢຸດ Decoy ແລ້ວ",
   "toast.allStopped": "ຢຸດ Decoy ທັງໝົດແລ້ວ",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} ເກມໄດ້ຮັບໄຟລ໌ exe: {names}",
   "toast.refreshAdded": "ອັບເດດຖານຂໍ້ມູນແລ້ວ: +{n} ເກມໃໝ່",
   "toast.refreshUpToDate": "ຖານຂໍ້ມູນເປັນເວີຊັນຫຼ້າສຸດແລ້ວ",
-
   "nav.lab": "ຫ້ອງທົດລອງ",
   "lab.title": "ຫ້ອງທົດລອງ",
   "lab.subtitle": "ແຖບລັບ: ເປີດ Decoy ຫຼາຍໆຕົວພ້ອມກັນໃນບາດດຽວ.",
@@ -115,16 +129,19 @@
   "lab.launch": "ເລີ່ມ {n} ເກມ",
   "lab.launching": "ກຳລັງເລີ່ມ {done} ຈາກ {total}…",
   "lab.cancel": "ຍົກເລີກ",
-  "lab.warn": "ແຕ່ລະ Decoy ແມ່ນໂປຣເຊສແຍກຕ່າງຫາກທີ່ມີໜ້າຕ່າງ. ການເປີດຫຼາຍກວ່າ 200–300 ຕົວພ້ອມກັນອາດເຮັດໃຫ້ຄອມພິວເຕີຂອງທ່ານຊ້າລົງ, ສູງສຸດແມ່ນ {max}.",
+  "lab.warn": "ແຕ່ລະ decoy ແມ່ນໂປຣເຊສແຍກຕ່າງຫາກທີ່ມີໜ້າຕ່າງ. ການເປີດຫຼາຍເກີນໄປໃນເວລາດຽວກັນອາດເຮັດໃຫ້ຄອມພິວເຕີຄ້າງ: ທຸກໆໂປຣເຊສ ແລະ ໜ້າຕ່າງໃຊ້ໜ່ວຍຄວາມຈຳ, ແລະ ຫຼັງຈາກຫຼາຍພັນໜ້າຕ່າງ Windows ອາດຈະຢຸດການສ້າງເພີ່ມ. ຖ້າທ່ານປິດ Decoy, decoy ທັງໝົດກໍຈະຢຸດ.",
+  "lab.all": "ທັງໝົດ ({n})",
+  "lab.estimate": "{n} decoy ຈະໃຊ້ RAM ປະມານ {ram}.",
+  "lab.confirm": "ຄລິກອີກຄັ້ງເພື່ອເລີ່ມ {n}",
+  "lab.limit": "Windows ຢຸດການເລີ່ມໂປຣເຊສໃໝ່ຫຼັງຈາກ {n}: ນັ້ນແມ່ນຂີດຈຳກັດຂອງລະບົບ.",
+  "running.more": "…ແລະ ອີກ {n} ລາຍການ. ສະແດງສະເພາະ 120 ລາຍການທຳອິດ.",
   "lab.hide": "ເຊື່ອງແຖບນີ້",
   "toast.labUnlocked": "ປົດລັອກແຖບລັບ “ຫ້ອງທົດລອງ” ແລ້ວ",
   "toast.labHidden": "ເຊື່ອງແຖບແລ້ວ",
   "toast.labDone": "ເກມທີ່ເລີ່ມແລ້ວ: {n}",
-
   "tray.show": "ເປີດ Decoy",
   "tray.stop": "ຢຸດ Decoy ທັງໝົດ",
   "tray.quit": "ອອກຈາກໂປຣແກຣມ",
-
   "notify.title": "ໝົດເວລາແລ້ວ",
   "notify.body": "{name}: ຜ່ານໄປ {n} ນາທີແລ້ວ."
 }

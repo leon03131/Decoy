@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Sesotho" },
-
+  "_meta": {
+    "name": "Sesotho"
+  },
   "nav.library": "Laeborari",
   "nav.favorites": "Tse ratwang",
   "nav.running": "Tse sebetsang",
   "nav.settings": "Dipehelo",
-
   "discord.checking": "E ntse e hlahloba…",
   "discord.up": "E ea sebetsa",
   "discord.down": "Ha e sebetse",
-
   "window.minimize": "Nyenyefatsa",
   "window.maximize": "Hodisa",
   "window.close": "Kwala",
-
   "tag.live": "E ea sebetsa",
   "tag.noExe": "ha ho exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "sehlohlelletsi",
-
   "lib.title": "Laeborari",
   "lib.subtitle": "Dipapadi tse {n} tse nang le tshebetso e tsebahalang · e ntjhafaditswe ka {date}",
   "lib.loading": "E kenya database ya dipapadi…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Kenya ho tse ratwang",
   "lib.empty.title": "Ha ho letho le fumanweng",
   "lib.empty.text": "Leka lebitso le leng kapa o bule “Bontsha dipapadi tse se nang exe”.",
-
   "fav.title": "Tse ratwang",
   "fav.count": "Dipapadi tse {n}",
   "fav.hint": "Tshwaya dipapadi ka naledi",
   "fav.empty.title": "Ha ho letho mona hajwale",
   "fav.empty.text": "Tobetsa naledi karateng ya papadi ho e kenya mona.",
-
   "detail.process": "Tshebetso",
   "detail.duration": "E bolokwe nako e kae",
   "detail.minutes": "metsotso e {n}",
@@ -62,7 +57,6 @@
   "detail.favorite": "E ratwang",
   "detail.close": "Kwala",
   "detail.id": "ID {id}",
-
   "running.title": "Tse sebetsang",
   "running.count": "di-decoy tse sebetsang tse {n}",
   "running.none": "Ha ho letho le sebetsang hajwale",
@@ -70,14 +64,36 @@
   "running.stop": "Emisa",
   "running.empty.title": "Ha ho letho le sebetsang",
   "running.empty.text": "Bula papadi ka laeboraring mme o tobetse “Qala decoy”.",
-
   "settings.title": "Dipehelo",
   "settings.general": "Kakaretso",
   "settings.language": "Puo",
   "settings.language.desc": "Puo ya sebopeho. Dipuo tse ntjha di eketswa e le difaele foldareng ya locales.",
   "settings.stubs": "Di-decoy",
   "settings.defaultTime": "Nako e tlwaelehileng",
-  "settings.defaultTime.desc": "Ke metsotso e makae e bolokang tshebetso (mesebetsi ya Discord hangata e hloka 15).",
+  "settings.defaultTime.desc": "Ke metsotso e kae e lokelang ho boloka tshebetso. E tlwaelehileng ke 16, eseng 15: dikopo tsa Discord di kopa metsotso e 15 ya ho bapala, empa Discord e hloka ho fihla motsotso ho hlokomela papadi e ntjha, kahoo hantle 15 ha e a lekana.",
+  "settings.smartTimer": "Sebali-nako se bohlale",
+  "settings.smartTimer.desc": "Ho bala ho qala ha Discord e se e hlokometse decoy, eseng ha o e qala. Ho tseba seo, tshebediso e bala feela mela e mabapi le papadi e ntseng e sebetsa ho tswa ho log ya lehae ya Discord; ha ho letho le bolokwang kapa le romelwang kae kapa kae.",
+  "settings.updates": "Dintlafatso",
+  "settings.checkNow": "Hlahloba jwale",
+  "settings.autoUpdate": "Dintlafatso tse iketsang",
+  "settings.autoUpdate.desc": "Hlahloba GitHub ha o qala le kamora dihora tse ding le tse ding tse 6 mme o jarolle mefuta e metjha ka morao. Ho kenya kamehla ho emela tiisetso ya hao, mme difaele di netefatswa ka mosaeno wa tsona wa dijithale.",
+  "update.current": "Mofuta o kentsweng {v}",
+  "update.checking": "E ntse e hlahloba…",
+  "update.uptodate": "O mofuteng wa morao-rao",
+  "update.available": "Mofuta wa {v} o teng",
+  "update.downloading": "E jarolla mofuta wa {v}… {p}%",
+  "update.ready": "Mofuta wa {v} o se o loketse ho kentswa",
+  "update.installing": "E kenya ebile e qala hape…",
+  "update.download": "Jarolla",
+  "update.restart": "Qala hape mme o ntlafatse",
+  "update.later": "Hamorao",
+  "update.notes": "Tse ntjha",
+  "update.running": "Decoy tse sebetsang ({n}) di tla ema.",
+  "update.error": "Ha e a kgona ho ntlafatsa: {e}",
+  "detail.waiting": "e emetse Discord",
+  "detail.waitingNote": "Discord e hloka ho fihla motsotso ho hlokomela papadi. Ho bala ho qala ha e bona decoy.",
+  "detail.detected": "Discord e hlokometse decoy",
+  "detail.assumed": "Discord ha e a tiisa, nako e ntse e balwa leha ho le jwalo.",
   "settings.autoStop": "Emisa ka sebali-nako",
   "settings.autoStop.desc": "Decoy e ikemela ha nako e fela.",
   "settings.notify": "Tsebisa ha e qetile",
@@ -97,7 +113,6 @@
   "settings.files": "Difaele",
   "settings.open": "Bula",
   "settings.legal": "Decoy ha e sebedise token ya hao ya Discord mme ha e amohele maeto bakeng sa hao. Ho etsa tshebetso ya bohata ya papadi ho ka hanana le melao ya Discord, e sebedise ka kotsi ya hao.",
-
   "toast.launched": "“{name}” e qalile metsotso e {n}. Discord e lokela ho e lemoha ka metsotsoana e ka bang 15.",
   "toast.stopped": "Decoy e emisitswe",
   "toast.allStopped": "Di-decoy tsohle di emisitswe",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "Dipapadi tse {n} di fumane difaele tsa exe: {names}",
   "toast.refreshAdded": "Database e ntjhafaditswe: +{n} dipapadi tse ntjha",
   "toast.refreshUpToDate": "Database e se e ntse e le nakong",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "Tab ya lekunutu: e qala di-decoy tse ngata ka nako e le nngwe.",
@@ -115,16 +129,19 @@
   "lab.launch": "Qala dipapadi tse {n}",
   "lab.launching": "E qala {done} ho tse {total}…",
   "lab.cancel": "Hlakola",
-  "lab.warn": "Decoy e nngwe le e nngwe ke tshebetso e arohaneng e nang le fensetere. Tse fetang 200–300 ka nako e le nngwe di ka fokotsa lebelo la khomphutha ya hao, boholo ke {max}.",
+  "lab.warn": "Decoy e nngwe le e nngwe ke tshebetso e ikemetseng e nang le fensetere. Tse ngata haholo hang di ka emisa komporo ya hao: tshebetso le fensetere ka nngwe di sebedisa memori, mme kamora difensetere tse dikete tse mmalwa Windows e ka emisa ho etsa tse ding. Ha o kwala Decoy, decoy tsohle di a ema.",
+  "lab.all": "Tsohle ({n})",
+  "lab.estimate": "Decoy tse {n} di tla sebedisa e ka bang {ram} ya RAM.",
+  "lab.confirm": "Tobetsa hape ho qala {n}",
+  "lab.limit": "Windows e emisitse ho qala ditshebetso tse ntjha kamora {n}: oo ke moedi wa sistimi.",
+  "running.more": "…le tse ding tse {n}. Ho bontshitswe tse 120 tsa pele.",
   "lab.hide": "Pata tab ena",
   "toast.labUnlocked": "Tab ya lekunutu ya “Lab” e butswe",
   "toast.labHidden": "Tab e patilwe",
   "toast.labDone": "Dipapadi tse qalileng: {n}",
-
   "tray.show": "Bula Decoy",
   "tray.stop": "Emisa di-decoy tsohle",
   "tray.quit": "Tswa",
-
   "notify.title": "Nako e fedile",
   "notify.body": "{name}: metsotso e {n} e fetile."
 }

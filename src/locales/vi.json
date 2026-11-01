@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Tiếng Việt" },
-
+  "_meta": {
+    "name": "Tiếng Việt"
+  },
   "nav.library": "Thư viện",
   "nav.favorites": "Yêu thích",
   "nav.running": "Đang chạy",
   "nav.settings": "Cài đặt",
-
   "discord.checking": "Đang kiểm tra…",
   "discord.up": "Đang chạy",
   "discord.down": "Không chạy",
-
   "window.minimize": "Thu nhỏ",
   "window.maximize": "Phóng to",
   "window.close": "Đóng",
-
   "tag.live": "Đang chạy",
   "tag.noExe": "không có exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "trình khởi chạy",
-
   "lib.title": "Thư viện",
   "lib.subtitle": "{n} trò chơi có tiến trình đã biết · cập nhật {date}",
   "lib.loading": "Đang tải cơ sở dữ liệu trò chơi…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Thêm vào yêu thích",
   "lib.empty.title": "Không tìm thấy kết quả",
   "lib.empty.text": "Thử tên khác hoặc bật “Hiện trò chơi không có exe”.",
-
   "fav.title": "Yêu thích",
   "fav.count": "{n} trò chơi",
   "fav.hint": "Đánh dấu trò chơi bằng ngôi sao",
   "fav.empty.title": "Chưa có gì ở đây",
   "fav.empty.text": "Nhấn vào ngôi sao trên thẻ trò chơi để thêm vào đây.",
-
   "detail.process": "Tiến trình",
   "detail.duration": "Thời gian duy trì",
   "detail.minutes": "{n} phút",
@@ -62,7 +57,6 @@
   "detail.favorite": "Yêu thích",
   "detail.close": "Đóng",
   "detail.id": "ID {id}",
-
   "running.title": "Đang chạy",
   "running.count": "{n} decoy đang chạy",
   "running.none": "Hiện không có gì đang chạy",
@@ -70,14 +64,36 @@
   "running.stop": "Dừng",
   "running.empty.title": "Không có gì đang chạy",
   "running.empty.text": "Mở một trò chơi trong thư viện và nhấn “Bắt đầu decoy”.",
-
   "settings.title": "Cài đặt",
   "settings.general": "Chung",
   "settings.language": "Ngôn ngữ",
   "settings.language.desc": "Ngôn ngữ giao diện. Thêm ngôn ngữ mới dưới dạng tệp trong thư mục locales.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "Thời lượng mặc định",
-  "settings.defaultTime.desc": "Số phút duy trì tiến trình (nhiệm vụ Discord thường cần 15).",
+  "settings.defaultTime.desc": "Số phút duy trì tiến trình. Mặc định là 16 chứ không phải 15: nhiệm vụ Discord yêu cầu 15 phút chơi, nhưng Discord cần tới một phút để nhận diện trò chơi mới, nên đúng 15 phút là không đủ.",
+  "settings.smartTimer": "Bộ hẹn giờ thông minh",
+  "settings.smartTimer.desc": "Đếm ngược bắt đầu khi Discord đã nhận diện decoy, chứ không phải lúc bạn khởi chạy. Để biết điều đó, ứng dụng chỉ đọc các dòng về trò chơi đang chạy từ nhật ký cục bộ của Discord; không có gì được lưu trữ hay gửi đi đâu.",
+  "settings.updates": "Cập nhật",
+  "settings.checkNow": "Kiểm tra ngay",
+  "settings.autoUpdate": "Tự động cập nhật",
+  "settings.autoUpdate.desc": "Kiểm tra GitHub khi khởi động và mỗi 6 giờ, đồng thời tải về phiên bản mới trong nền. Quá trình cài đặt luôn chờ bạn xác nhận và các tệp được xác minh bằng chữ ký số.",
+  "update.current": "Phiên bản đã cài đặt {v}",
+  "update.checking": "Đang kiểm tra…",
+  "update.uptodate": "Bạn đang dùng phiên bản mới nhất",
+  "update.available": "Đã có phiên bản {v}",
+  "update.downloading": "Đang tải xuống phiên bản {v}… {p}%",
+  "update.ready": "Phiên bản {v} đã sẵn sàng để cài đặt",
+  "update.installing": "Đang cài đặt và khởi động lại…",
+  "update.download": "Tải xuống",
+  "update.restart": "Khởi động lại và cập nhật",
+  "update.later": "Để sau",
+  "update.notes": "Có gì mới",
+  "update.running": "Các decoy đang chạy ({n}) sẽ dừng lại.",
+  "update.error": "Không thể cập nhật: {e}",
+  "detail.waiting": "đang đợi Discord",
+  "detail.waitingNote": "Discord cần tới một phút để nhận diện trò chơi. Đếm ngược bắt đầu khi nó thấy decoy.",
+  "detail.detected": "Discord đã nhận diện decoy",
+  "detail.assumed": "Discord chưa xác nhận, thời gian vẫn được tính.",
   "settings.autoStop": "Dừng theo hẹn giờ",
   "settings.autoStop.desc": "Decoy sẽ tự động kết thúc khi hết giờ.",
   "settings.notify": "Thông báo khi hoàn tất",
@@ -97,7 +113,6 @@
   "settings.files": "Tệp",
   "settings.open": "Mở",
   "settings.legal": "Decoy không sử dụng token Discord của bạn và không tự nhận nhiệm vụ thay bạn. Việc giả lập tiến trình trò chơi có thể trái với quy tắc của Discord, hãy tự chịu rủi ro khi sử dụng.",
-
   "toast.launched": "Đã khởi chạy “{name}” trong {n} phút. Discord sẽ nhận diện sau khoảng 15 giây.",
   "toast.stopped": "Đã dừng decoy",
   "toast.allStopped": "Đã dừng tất cả decoy",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} trò chơi đã có tệp exe: {names}",
   "toast.refreshAdded": "Đã cập nhật cơ sở dữ liệu: +{n} trò chơi mới",
   "toast.refreshUpToDate": "Cơ sở dữ liệu đã ở bản mới nhất",
-
   "nav.lab": "Phòng thí nghiệm",
   "lab.title": "Phòng thí nghiệm",
   "lab.subtitle": "Tab bí mật: khởi chạy nhiều decoy cùng một lúc.",
@@ -115,16 +129,19 @@
   "lab.launch": "Chạy {n} trò chơi",
   "lab.launching": "Đang chạy {done}/{total}…",
   "lab.cancel": "Hủy",
-  "lab.warn": "Mỗi decoy là một tiến trình riêng biệt có cửa sổ. Khởi chạy hơn 200–300 cùng lúc có thể làm chậm máy tính của bạn, tối đa là {max}.",
+  "lab.warn": "Mỗi decoy là một tiến trình riêng biệt có cửa sổ. Mở quá nhiều cùng lúc có thể làm treo máy tính: mỗi tiến trình và cửa sổ đều tốn bộ nhớ, và sau vài nghìn cửa sổ Windows có thể ngừng tạo thêm. Nếu bạn đóng Decoy, mọi decoy sẽ dừng lại.",
+  "lab.all": "Tất cả ({n})",
+  "lab.estimate": "{n} decoy sẽ sử dụng khoảng {ram} RAM.",
+  "lab.confirm": "Nhấp lần nữa để chạy {n}",
+  "lab.limit": "Windows đã ngừng khởi chạy các tiến trình mới sau {n}: đó là giới hạn của hệ thống.",
+  "running.more": "…và thêm {n} trò chơi khác. Đang hiển thị 120 mục đầu tiên.",
   "lab.hide": "Ẩn tab này",
   "toast.labUnlocked": "Đã mở khóa tab bí mật “Phòng thí nghiệm”",
   "toast.labHidden": "Đã ẩn tab",
   "toast.labDone": "Số trò chơi đã khởi chạy: {n}",
-
   "tray.show": "Mở Decoy",
   "tray.stop": "Dừng tất cả decoy",
   "tray.quit": "Thoát",
-
   "notify.title": "Đã hết giờ",
   "notify.body": "{name}: đã trôi qua {n} phút."
 }

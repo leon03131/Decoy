@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "ትግርኛ" },
-
+  "_meta": {
+    "name": "ትግርኛ"
+  },
   "nav.library": "ቤተ-መጽሓፍ",
   "nav.favorites": "ዝተመረጹ",
   "nav.running": "ዝሰርሑ ዘለዉ",
   "nav.settings": "ቅጥዕታት",
-
   "discord.checking": "ይምርምር ኣሎ…",
   "discord.up": "ይሰርሕ ኣሎ",
   "discord.down": "ኣይሰርሕን ዘሎ",
-
   "window.minimize": "ኣንእስ",
   "window.maximize": "ኣዕቢ",
   "window.close": "ዕጾ",
-
   "tag.live": "ይሰርሕ ኣሎ",
   "tag.noExe": "exe የለን",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "መበገሲ",
-
   "lib.title": "ቤተ-መጽሓፍ",
   "lib.subtitle": "{n} ፍሉጥ መስርሕ ዘለዎም ጸወታታት · እዋናዊ ዝኾነሉ {date}",
   "lib.loading": "መዝገብ ጸወታታት ይጽዕን ኣሎ…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "ናብ ዝተመረጹ ወስኽ",
   "lib.empty.title": "ዝተረኽበ ነገር የለን",
   "lib.empty.text": "ካልእ ስም ፈትን ወይ “exe ዘይብሎም ጸወታታት ኣርኢ” ኣበርክቶ።",
-
   "fav.title": "ዝተመረጹ",
   "fav.count": "{n} ጸወታታት",
   "fav.hint": "ንጸወታታት ብኮኾብ ምልክት ግበረሎም",
   "fav.empty.title": "ክሳብ ሕጂ ዋላ ሓደ የለን",
   "fav.empty.text": "ኣብዚ ንምውሳኽ ኣብ ሰሌዳ ጸወታ ዘላ ኮኾብ ጠውቕ።",
-
   "detail.process": "መስርሕ",
   "detail.duration": "ክንደይ ዝኣክል ግዜ ክጸንሕ ከም ዘለዎ",
   "detail.minutes": "{n} ደቒቕ",
@@ -62,7 +57,6 @@
   "detail.favorite": "ዝተመረጸ",
   "detail.close": "ዕጾ",
   "detail.id": "ID {id}",
-
   "running.title": "ዝሰርሑ ዘለዉ",
   "running.count": "{n} ንጡፋት decoys",
   "running.none": "ሕጂ ዋላ ሓደ ዝሰርሕ የለን",
@@ -70,14 +64,36 @@
   "running.stop": "ጠጥው",
   "running.empty.title": "ዝሰርሕ ዘሎ የለን",
   "running.empty.text": "ኣብ ቤተ-መጽሓፍ ጸወታ ክፈት እሞ “Decoy ጀምር” ጠውቕ።",
-
   "settings.title": "ቅጥዕታት",
   "settings.general": "ሓፈሻዊ",
   "settings.language": "ቋንቋ",
   "settings.language.desc": "ቋንቋ መተሓላለፊ። ሓደስቲ ቋንቋታት ኣብ locales ዝበሃል ፎልደር ከም ፋይላት ይውሰኹ።",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "ቀዳማይ ምርጫ ዝኾነ ግዜ",
-  "settings.defaultTime.desc": "ነቲ መስርሕ ክንደይ ደቓይቕ ከም ዝጸንሕ (ናይ Discord ዕማማት መብዛሕትኡ ግዜ 15 ደቒቕ የድልዮም)።",
+  "settings.defaultTime.desc": "እቲ ከይዲ ንክንደይ ደቓይቕ ክጸንሕ ከም ዘለዎ። ቀዳማይ ምርጫ 16 ደቒቕ እዩ፣ 15 ኣይኮነን: ናይ Discord ዕማማት 15 ደቒቕ ምጽዋት ይሓቱ፣ ግን Discord ሓድሽ ጸወታ ንምፍላጥ ክሳብ ሓደ ደቒቕ የድልዮ፣ ስለዚ ልክዕ 15 ምግባር ኣየኻልእን እዩ።",
+  "settings.smartTimer": "ብልሒ ዘለዎ ግዜ ቆጻሪ",
+  "settings.smartTimer.desc": "ቆጸራ ዝጅምር Discord ነቲ decoy ምስ ኣስተውዓለሉ እዩ፣ ንስኻ ምስ ኣጀመርካዮ ኣይኮነን። ነዚ ንምፍላጥ፣ እቲ ኣፕ ካብቲ ናይ Discord ናይ ከባቢ መዝገብ (log) ብዛዕባቲ ዝሰርሕ ዘሎ ጸወታ ጥራይ መስመራት የንብብ፤ ምንም ነገር ኣይዕቀብን ወይ ናብ ካልእ ኣይስደድን እዩ።",
+  "settings.updates": "ሓደሽቲ ዜናታት",
+  "settings.checkNow": "ሕጂ መርምር",
+  "settings.autoUpdate": "ባዕሉ ዝሰርሕ ሓደሽቲ ምትእትታው",
+  "settings.autoUpdate.desc": "ኣብ ምጅማርን ኣብ ነፍሲ ወከፍ 6 ሰዓታትን GitHub ምፍታሽ፣ ሓደሽቲ ሕታማት ከኣ ኣብ ድሕሪት ምውራድ። ምጽዓን ኩሉ ግዜ ናትካ ምርግጋጽ ይጽበ፣ ፋይላት ድማ ብዲጂታል ፊርማኦም ይረጋገጹ።",
+  "update.current": "ዝተጻዕነ ሕታም {v}",
+  "update.checking": "ይምርምር ኣሎ…",
+  "update.uptodate": "ኣብቲ ዝሓደሸ ሕታም ኣለኻ",
+  "update.available": "ሕታም {v} ኣሎ",
+  "update.downloading": "ሕታም {v} ይወርድ ኣሎ… {p}%",
+  "update.ready": "ሕታም {v} ንምጽዓን ድሉው ኮይኑ ኣሎ",
+  "update.installing": "ይጽዕንን ዳግማይ ይጅምርን ኣሎ…",
+  "update.download": "ኣውርድ",
+  "update.restart": "ዳግማይ ብምጅማር ኣሐድስ",
+  "update.later": "ጸኒሕካ",
+  "update.notes": "እንታይ ሓድሽ ኣሎ",
+  "update.running": "ዝሰርሑ ዘለዉ decoy ({n}) ደው ክብሉ እዮም።",
+  "update.error": "ምሕዳስ ኣይተኻእለን: {e}",
+  "detail.waiting": "ንDiscord ይጽበ ኣሎ",
+  "detail.waitingNote": "Discord ጸወታ ንምፍላጥ ክሳብ ሓደ ደቒቕ የድልዮ። ቆጸራ ዝጅምር decoy ምስ ረኣየ እዩ።",
+  "detail.detected": "Discord ነቲ decoy ኣስተውዒልዎ",
+  "detail.assumed": "Discord ኣየረጋገጸን፣ ግዜ ግን ይቑጸር ኣሎ።",
   "settings.autoStop": "ብግዜ ቆጻሪ ጠጥው",
   "settings.autoStop.desc": "እቲ ግዜ ምስ ተወድአ እቲ decoy ባዕሉ ይውዳእ።",
   "settings.notify": "ምስ ተወድአ ኣፍልጥ",
@@ -97,7 +113,6 @@
   "settings.files": "ፋይላት",
   "settings.open": "ክፈት",
   "settings.legal": "Decoy ናትካ Discord token ኣይጥቀምን እዩ፣ ዕማማት ድማ ንዓኻ ተኪኡ ኣይቅበልን እዩ። መስርሕ ጸወታ ምምሳል ምስ ደንብታት Discord ክጋጮ ይኽእል እዩ፣ ኣብ ናትካ ሓላፍነት ጥራይ ተጠቐመሉ።",
-
   "toast.launched": "“{name}” ን {n} ደቒቕ ተጀሚሩ። Discord ኣብ ውሽጢ 15 ካልኢት ከስተውዕለሉ ይግባእ።",
   "toast.stopped": "Decoy ጠጠው ኢሉ",
   "toast.allStopped": "ኩሎም decoys ጠጠው ኢሎም",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} ጸወታታት ናይ exe ፋይላት ረኺቦም: {names}",
   "toast.refreshAdded": "መዝገብ ተሓዲሱ: +{n} ሓደስቲ ጸወታታት",
   "toast.refreshUpToDate": "እቲ መዝገብ ድሮ እዋናዊ እዩ ዘሎ",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "ስዉር ክፍሊ: ብዙሓት decoys ብሓንሳብ የብግስ።",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} ጸወታታት ጀምር",
   "lab.launching": "ካብ {total} እተን {done} ይጅምር ኣሎ…",
   "lab.cancel": "ሰርዝ",
-  "lab.warn": "ነፍሲ ወከፍ decoy ናይ ባዕሉ መስኮት ዘለዎ ፍሉይ መስርሕ እዩ። ብሓንሳብ ልዕሊ 200–300 ምጅማር ንኮምፒውተርካ ከደናጉዮ ይኽእል እዩ፣ ዝለዓለ ደረት {max} እዩ።",
+  "lab.warn": "ነፍሲ ወከፍ decoy መስኮት ዘለዎ ናይ ባዕሉ ከይዲ እዩ። ብሓንሳብ ብዙሕ ምኽፋት ንኮምፒውተርካ ከዐግቶ ይኽእል: ነፍሲ ወከፍ ከይድን መስኮትን ዝኽሪ ይጥቀም፣ ድሕሪ ኣሽሓት መስኮታት ድማ Windows ተወሳኺ ምፍጣር ደው ከብል ይኽእል እዩ። Decoy እንተዓጺኻዮ፣ ኩሎም decoyታት ደው ክብሉ እዮም።",
+  "lab.all": "ኩሎም ({n})",
+  "lab.estimate": "{n} decoy ዳርጋ {ram} RAM ክጥቀሙ እዮም።",
+  "lab.confirm": "{n} ንምጅማር እንደገና ጠውቕ",
+  "lab.limit": "Windows ድሕሪ {n} ሓደሽቲ ከይድታት ምጅማር ደው ኣቢልዎ: እዚ ናይቲ ስርዓት ደረት እዩ።",
+  "running.more": "…ተወሳኺ ድማ {n}። እቶም ቀዳሞት 120 ተራእዮም ኣለዉ።",
   "lab.hide": "ነዚ ክፍሊ ሕባእ",
   "toast.labUnlocked": "ስዉር ክፍሊ “Lab” ተኸፊቱ",
   "toast.labHidden": "እቲ ክፍሊ ተሓቢኡ",
   "toast.labDone": "ዝተጀመሩ ጸወታታት: {n}",
-
   "tray.show": "Decoy ክፈት",
   "tray.stop": "ኩሎም decoys ጠጥው",
   "tray.quit": "ውጻእ",
-
   "notify.title": "ግዜ ተወዲኡ",
   "notify.body": "{name}: {n} ደቒቕ ሓሊፉ።"
 }

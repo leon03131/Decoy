@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Davvisámegiella" },
-
+  "_meta": {
+    "name": "Davvisámegiella"
+  },
   "nav.library": "Girjerájus",
   "nav.favorites": "Ovddit",
   "nav.running": "Jođus",
   "nav.settings": "Heivehusat",
-
   "discord.checking": "Dárkkistuvvo…",
   "discord.up": "Jođus",
   "discord.down": "Ii leat jođus",
-
   "window.minimize": "Unnit",
   "window.maximize": "Stuorrit",
   "window.close": "Gidde",
-
   "tag.live": "Jođus",
   "tag.noExe": "ii exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "álggaheaddji",
-
   "lib.title": "Girjerájus",
   "lib.subtitle": "{n} spealu oahpes proseassain · ođasmahttojuvvon {date}",
   "lib.loading": "Speallodiehtovuođđu luđejuvvo…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Lasit ovddiide",
   "lib.empty.title": "Ii gávdnon mihkkege",
   "lib.empty.text": "Geahččal eará nama dahje čális “Čájet spealuid main ii leat exe”.",
-
   "fav.title": "Ovddit",
   "fav.count": "{n} spealu",
   "fav.hint": "Mearkkes spealuid násttiin",
   "fav.empty.title": "Dás ii leat vel mihkkege",
   "fav.empty.text": "Deaddil nástti speallolahtus lasihan dihte dan deike.",
-
   "detail.process": "Proseassa",
   "detail.duration": "Man guhká bisuhit",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Ovdit",
   "detail.close": "Gidde",
   "detail.id": "ID {id}",
-
   "running.title": "Jođus",
   "running.count": "{n} aktiiva decoy",
   "running.none": "Mihkkege ii leat jođus dál",
@@ -70,14 +64,36 @@
   "running.stop": "Bissehit",
   "running.empty.title": "Mihkkege ii leat jođus",
   "running.empty.text": "Raba spealu girjerájusis ja deaddil “Álggat decoy”.",
-
   "settings.title": "Heivehusat",
   "settings.general": "Oppalaš",
   "settings.language": "Giella",
   "settings.language.desc": "Kavssiid giella. Ođđa gielat lasihuvvojit fiilan locales-máhppii.",
   "settings.stubs": "Decoyat",
   "settings.defaultTime": "Standárda bistu",
-  "settings.defaultTime.desc": "Galle minuhta bisuhit proseassa (Discord-questat dárbbašit dábálaččat 15).",
+  "settings.defaultTime.desc": "Galle minuhta proseassa galgá bisuhuvvot. Standárda lea 16, ii 15: Discord questat gáibidit 15 minuhta speallama, muhto Discord dárbbaša gitta ovtta minuhttii ođđa spealu fuomášit, nu ahte juste 15 ii leat doarvái.",
+  "settings.smartTimer": "Jierpmálaš áigebeavdi",
+  "settings.smartTimer.desc": "Áigerehkenastin álgá dalle go Discord lea fuomášan decoy, ii dalle go álggahat dan. Dan diehtit appa lohká dušše dán spealu gullevaš linnjáid Discorda báikkálaš loggas; mihkkege ii vurkejuvvo iige sáddejuvvo gosa ge.",
+  "settings.updates": "Ođastusat",
+  "settings.checkNow": "Dárkkis dál",
+  "settings.autoUpdate": "Automáhtalaš ođastusat",
+  "settings.autoUpdate.desc": "Dárkkis GitHub álggahettiin ja juohke 6 diimmu maŋŋá, ja viečča ođđa veršuvnnaid duogážis. Sajáiduhttin vuordá álo du nannehusa, ja fiillat dárkkistuvvojit digitála vuolláičállagiin.",
+  "update.current": "Sajáiduhtton veršuvdna {v}",
+  "update.checking": "Dárkkistuvvo…",
+  "update.uptodate": "Dus lea ođđaseamos veršuvdna",
+  "update.available": "Veršuvdna {v} lea olámuttos",
+  "update.downloading": "Viežžá veršuvnna {v}… {p}%",
+  "update.ready": "Veršuvdna {v} lea gárvvis sajáiduhttit",
+  "update.installing": "Sajáiduhttá ja álggaha ođđasit…",
+  "update.download": "Viečča",
+  "update.restart": "Álggat ođđasit ja ođasmuhte",
+  "update.later": "Maŋŋelis",
+  "update.notes": "Mii lea ođas",
+  "update.running": "Jođus leahkki decoyat ({n}) bissehuvvojit.",
+  "update.error": "Ii sáhttán ođasmahttit: {e}",
+  "detail.waiting": "vuordá Discorda",
+  "detail.waitingNote": "Discord dárbbaša gitta ovtta minuhttii spealu fuomášit. Áigerehkenastin álgá go oaidná decoy.",
+  "detail.detected": "Discord fuomášii decoy",
+  "detail.assumed": "Discord ii leat nannen, áigi rehkenastojuvvo goitge.",
   "settings.autoStop": "Bissehit áigebeavddi mielde",
   "settings.autoStop.desc": "Decoy nohká iešalddis go áigi lea dievvan.",
   "settings.notify": "Dieđit go lea gárvvis",
@@ -97,7 +113,6 @@
   "settings.files": "Fiillat",
   "settings.open": "Raba",
   "settings.legal": "Decoy ii geavat du Discord-tokena iige dohkket questaid du beales. Spealloproseassa giellásiid dahkan sáhttá rihkkut Discorda njuolggadusaid, geavahus lea du iežat ovddasvástádus.",
-
   "toast.launched": "“{name}” álggahuvvui {n} minuhttii. Discord berre fuomášit dan sullii 15 sekundda geažes.",
   "toast.stopped": "Decoy bissehuvvui",
   "toast.allStopped": "Buot decoyat bissehuvvojedje",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} spealu ožžo exe-fiillaid: {names}",
   "toast.refreshAdded": "Diehtovuođđu ođasmahttojuvvon: +{n} ođđa spealu",
   "toast.refreshUpToDate": "Diehtovuođđu lea dál juo áigeguovdil",
-
   "nav.lab": "Laboratoria",
   "lab.title": "Laboratoria",
   "lab.subtitle": "Čiegus gaskaballu: álggaha máŋga decoy oktanaga.",
@@ -115,16 +129,19 @@
   "lab.launch": "Álggat {n} spealu",
   "lab.launching": "Álggahuvvo {done} / {total}…",
   "lab.cancel": "Gaskkalduhte",
-  "lab.warn": "Juohke decoy lea sierra proseassa oktan lásiin. Eambbo go 200–300 oktanaga sáhttá njoazudit dihtora, eanemus lea {max}.",
+  "lab.warn": "Juohke decoy lea sierra proseassa oktan lásiin. Menddo ollu oktanaga sáhttá jikŋahit dihtora: juohke proseassa ja lásii manná muitu, ja moadde duhát lási maŋŋá Windows sáhttá heaitit ođđasiid ráhkadeames. Jos giddet Decoy, buot decoyat bissehuvvojit.",
+  "lab.all": "Buot ({n})",
+  "lab.estimate": "{n} decoy geavahit sullii {ram} RAM.",
+  "lab.confirm": "Deaddil oktii vel álggahit {n}",
+  "lab.limit": "Windows heittii ođđa proseassaid álggaheames {n} maŋŋá: dat lea vuogádaga rádji.",
+  "running.more": "…ja {n} vel. Vuosttaš 120 čájehuvvojit.",
   "lab.hide": "Čiega dán gaskabalu",
   "toast.labUnlocked": "Čiegus “Laboratoria”-gaskaballu rahpasii",
   "toast.labHidden": "Gaskaballu čiggojuvvon",
   "toast.labDone": "Spealut álggahuvvon: {n}",
-
   "tray.show": "Raba Decoy",
   "tray.stop": "Bissehit buot decoyaid",
   "tray.quit": "Heaitte",
-
   "notify.title": "Áigi lea nohkan",
   "notify.body": "{name}: {n} min leat gollan."
 }

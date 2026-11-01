@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Kaszëbsczi" },
-
+  "_meta": {
+    "name": "Kaszëbsczi"
+  },
   "nav.library": "Biblioteka",
   "nav.favorites": "Lubòtné",
   "nav.running": "Zrëszoné",
   "nav.settings": "Nastôwë",
-
   "discord.checking": "Sprôwdzanié…",
   "discord.up": "Dzejô",
   "discord.down": "Nie dzejô",
-
   "window.minimize": "Zminimalizëjë",
   "window.maximize": "Zmaksymalizëjë",
   "window.close": "Zamkni",
-
   "tag.live": "Dzejô",
   "tag.noExe": "felënk exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "starter",
-
   "lib.title": "Biblioteka",
   "lib.subtitle": "{n} grë ze znónym procesã · zaktualnioné {date}",
   "lib.loading": "Ladowanié bazy grów…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Dodôj do lubòtnëch",
   "lib.empty.title": "Nic nie nalezono",
   "lib.empty.text": "Spróbùjë jiné miono abò włączë „Pòkôżë grë bez exe”.",
-
   "fav.title": "Lubòtné",
   "fav.count": "{n} grë",
   "fav.hint": "Òznaczë grë gwiôzdką",
   "fav.empty.title": "Jeszcze nic tu ni ma",
   "fav.empty.text": "Klëkni gwiôzdkã na kaflu grë, bë jã tu dodac.",
-
   "detail.process": "Proces",
   "detail.duration": "Jak długò trzëmac",
   "detail.minutes": "{n} min.",
@@ -62,7 +57,6 @@
   "detail.favorite": "Lubòtné",
   "detail.close": "Zamkni",
   "detail.id": "ID {id}",
-
   "running.title": "Zrëszoné",
   "running.count": "{n} aktiwnëch decoyów",
   "running.none": "Nic terô nie dzejô",
@@ -70,14 +64,36 @@
   "running.stop": "Zatrzëmôj",
   "running.empty.title": "Nic nie dzejô",
   "running.empty.text": "Òtemkni grã w bibliotece i klëkni „Zrëszë decoy”.",
-
   "settings.title": "Nastôwë",
   "settings.general": "Òglowé",
   "settings.language": "Jãzëk",
   "settings.language.desc": "Jãzëk interfejsu. Nowé jãzëczi są dodôwóné jakno lopczi w katalogù locales.",
   "settings.stubs": "Decoyë",
   "settings.defaultTime": "Domëszlny czas",
-  "settings.defaultTime.desc": "Wiela minutów trzëmac proces (zadania Discorda zazwëczaj brëkùją 15).",
+  "settings.defaultTime.desc": "Wielë minutów trzimac proces. Domëszlnô wôrtosc to 16, a nie 15: misje Discorda wëmôgają 15 minutów grë, ale Discord pòtrzebùje do jedny minùtë, abë zaregistrowac nową grã, temù równo 15 to za mało.",
+  "settings.smartTimer": "Mądri czasomérz",
+  "settings.smartTimer.desc": "Òdliczëwanié rëszô, czedë Discord zatrakwi decoy, a nie czedë gò zrëszysz. Żebë to wiedzec, aplikacjô czëtô blós régsczi ò robiony grze z môlowégò dziennika Discorda; nic nie je zôsanié ani nigdze wësëłóné.",
+  "settings.updates": "Aktualizacje",
+  "settings.checkNow": "Sprôwdzë terô",
+  "settings.autoUpdate": "Aùtomatné aktualizacje",
+  "settings.autoUpdate.desc": "Sprôwdzë GitHub przë zrëszeniu i co 6 gòdzinów oraz zladëjë nowé wersje w spódkù. Instalacjô wiedno żdże na Twòje pòtwierdzenié, a lopczi są sprôwdzané cyfrowim pòdpisã.",
+  "update.current": "Zainstalowónô wersjô {v}",
+  "update.checking": "Sprôwdzanié…",
+  "update.uptodate": "Môsz nônowszą wersjã",
+  "update.available": "Wersjô {v} je przëstãpnô",
+  "update.downloading": "Zladënk wersje {v}… {p}%",
+  "update.ready": "Wersjô {v} je parłãczonô do instalacje",
+  "update.installing": "Instalowanié i zrëszanié znowa…",
+  "update.download": "Zladëjë",
+  "update.restart": "Zrëszë znowa i zaktualnëjë",
+  "update.later": "Pózni",
+  "update.notes": "Co nowégò",
+  "update.running": "Aktiwné decoye ({n}) zostaną zatrzëmané.",
+  "update.error": "Nie dało sã zaktualnic: {e}",
+  "detail.waiting": "żdrzenié na Discord",
+  "detail.waitingNote": "Discord pòtrzebùje do minùtë, abë zatrakwic grã. Òdliczëwanié rëszô, czedë zatrakwi decoy.",
+  "detail.detected": "Discord zatrakwił decoy",
+  "detail.assumed": "Discord tego nie pòtwierdzëł, czas je lëczony mimo to.",
   "settings.autoStop": "Zatrzëmôj pò czase",
   "settings.autoStop.desc": "Decoy kùńczy dzejanié samòstójnie, cziej czas minie.",
   "settings.notify": "Wiadło pò zakùńczeniu",
@@ -97,7 +113,6 @@
   "settings.files": "Lopczi",
   "settings.open": "Òtemkni",
   "settings.legal": "Decoy nie ùżëwô Twòjégò tokena Discorda ani nie przëjimô misjów za Cebe. Falszowanié procesu grë mòże naruszac prawidła Discorda, brëkùjesz na swòją òdpòwiédzalnosc.",
-
   "toast.launched": "„{name}” zrëszoné na {n} min. Discord pòwinien to zauwôżëc za kòl 15 sekùnd.",
   "toast.stopped": "Decoy zatrzëmóny",
   "toast.allStopped": "Wszëtczé decoyë zatrzëmóné",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} grë dostałë lopczi exe: {names}",
   "toast.refreshAdded": "Baza zaktualnionô: +{n} nowëch grów",
   "toast.refreshUpToDate": "Baza je ju zaktualnionô",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "Tajemnô kôrta: zrëszywô wiele decoyów narôz.",
@@ -115,16 +129,19 @@
   "lab.launch": "Zrëszë {n} grów",
   "lab.launching": "Zrëszanié {done} z {total}…",
   "lab.cancel": "Òceanij",
-  "lab.warn": "Kòżdi decoy to òsoblëwi proces z òknã. Wiãcy jak 200–300 narôz mòże spòwòlnic Twój kòmpùter, maksyma to {max}.",
+  "lab.warn": "Kòżdi decoy to je òsóbny proces z òknã. Za wielë narôz mòże zawiesëc kòmpùter: kòżdi proces i òkno bierze pamiãc, a pò czile tësącach òcen Windows mòże przestac twòrzëc nowé. Jak zamkniesz Decoy, wszëtczé decoye sã zatrzëmają.",
+  "lab.all": "Wszëtczé ({n})",
+  "lab.estimate": "{n} decoyów zazdrzi kòl {ram} RAM.",
+  "lab.confirm": "Klëkni znowa, abë zrëszyc {n}",
+  "lab.limit": "Windows przestał zrëszac nowé procesë pò {n}: to je systemòwô grańca.",
+  "running.more": "…i jesz {n}. Pòkôzóno pierszé 120.",
   "lab.hide": "Schòwôj tã kôrtã",
   "toast.labUnlocked": "Tajemnô kôrta „Lab” òdblokòwónô",
   "toast.labHidden": "Kôrta schòwónô",
   "toast.labDone": "Zrëszoné grë: {n}",
-
   "tray.show": "Òtemkni Decoy",
   "tray.stop": "Zatrzëmôj wszëtczé decoyë",
   "tray.quit": "Zakùńczë",
-
   "notify.title": "Czas minął",
   "notify.body": "{name}: minãło {n} min."
 }

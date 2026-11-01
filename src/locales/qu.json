@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Runasimi" },
-
+  "_meta": {
+    "name": "Runasimi"
+  },
   "nav.library": "Taqi",
   "nav.favorites": "Munasqakuna",
   "nav.running": "Purichkan",
   "nav.settings": "Allichanakuna",
-
   "discord.checking": "Qhawachkan…",
   "discord.up": "Purichkan",
   "discord.down": "Mana purichkanchu",
-
   "window.minimize": "Huch'uyyachiy",
   "window.maximize": "Hatunyachiy",
   "window.close": "Wichq'ay",
-
   "tag.live": "Purichkan",
   "tag.noExe": "mana exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "qallariq",
-
   "lib.title": "Taqi",
   "lib.subtitle": "{n} pukllaykuna riqsisqa ruwayniyuq · kunanchasqa {date}",
   "lib.loading": "Pukllaykunap willakuyninta chaqnamuchkan…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Munasqakunaman yapay",
   "lib.empty.title": "Manam imapas tarisqachu",
   "lib.empty.text": "Huk sutita qillqay utaq «Mana exe-niyuq pukllaykunata rikuchiy» nisqata kichay.",
-
   "fav.title": "Munasqakuna",
   "fav.count": "{n} pukllaykuna",
   "fav.hint": "Pukllaykunata quyllurwan unanchay",
   "fav.empty.title": "Ch'usaqraqmi kaypiqa",
   "fav.empty.text": "Pukllaypa k'atunpi quyllurta ñit'iy kayman yapaypaq.",
-
   "detail.process": "Ruway",
   "detail.duration": "Hayk'a pacha waqaychana",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Munasqa",
   "detail.close": "Wichq'ay",
   "detail.id": "ID {id}",
-
   "running.title": "Purichkan",
   "running.count": "{n} decoy llamk'achkaq",
   "running.none": "Kunanqa manam imapas purichkanchu",
@@ -70,14 +64,36 @@
   "running.stop": "Sayachiy",
   "running.empty.title": "Manam imapas purichkanchu",
   "running.empty.text": "Taqipi huk pukllayta kichay hinaspa «Decoy qallariy» ñit'iy.",
-
   "settings.title": "Allichanakuna",
   "settings.general": "Tukuypaq",
   "settings.language": "Simi",
   "settings.language.desc": "Llikacha simi. Musuq simikunaqa locales k'itillipi willañiqikunahina yapakun.",
   "settings.stubs": "Decoykuna",
   "settings.defaultTime": "Kikinmanta mit'a",
-  "settings.defaultTime.desc": "Hayk'a minutochá ruwayta waqaychana (Discord questkunaqa yaqa 15 munanku).",
+  "settings.defaultTime.desc": "Hayk'a minutota ruwayta waqaychana. Kikinmantaqa 16, manam 15: Discord quests nisqaqa 15 minuto pukllaytam munan, ichaqa Discord musuq pukllayta riqsinanpaq huk minutokamata munan, chaymi 15 mana aypanchu.",
+  "settings.smartTimer": "Yachaysapa pachaqhawachiq",
+  "settings.smartTimer.desc": "Pacha yupayqa qallarin Discord decoy nisqata riqsiptinmi, manam qallariptiykichu. Chayta yachanapaqqa, appqa Discord-pa sapan logninmanta pukllay purichkaq siq'illatam ñawirin; manam imapas waqaychasqachu nitaq maymanpas apachisqachu.",
+  "settings.updates": "Musuqyachiykuna",
+  "settings.checkNow": "Kunan qhaway",
+  "settings.autoUpdate": "Kikillanmanta musuqyachiy",
+  "settings.autoUpdate.desc": "Qallariypi sapa 6 horapipas GitHub nisqata qhaway, musuq rikch'aqkunata qhipapi uraykachiy. Tiyachiyqa sapa kutim qampata takyachiyniykita suyan, willañiqikunataq digital sutiyuq kasqanwan chiqanchasqa kanku.",
+  "update.current": "Tiyachisqa rikch'aq {v}",
+  "update.checking": "Qhawachkan…",
+  "update.uptodate": "Qhipa kaq rikch'aqpim kachkanki",
+  "update.available": "Rikch'aq {v} kachkanñam",
+  "update.downloading": "Rikch'aq {v} uraykuchkan… {p}%",
+  "update.ready": "Rikch'aq {v} tiyachinapaq wakisqañam",
+  "update.installing": "Tiyachichkan musuqmanta qallarichkantaq…",
+  "update.download": "Uraykachiy",
+  "update.restart": "Kutichiy hinaspa musuqyachiy",
+  "update.later": "Qhipata",
+  "update.notes": "Musuq kaqkuna",
+  "update.running": "Purichkaq decoykuna ({n}) sayapunqa.",
+  "update.error": "Manam musuqyachiyta atikunchu: {e}",
+  "detail.waiting": "Discord-ta suyachkan",
+  "detail.waitingNote": "Discord pukllayta riqsinanpaq huk minutokamata munan. Pacha yupayqa qallarin decoy nisqata rikuptinmi.",
+  "detail.detected": "Discord decoy nisqata rikurun",
+  "detail.assumed": "Discord manam takyachinchu, chaywanpas pacha yupasqam.",
   "settings.autoStop": "Pachawan sayachiy",
   "settings.autoStop.desc": "Pacha tukukuptin kikinmanta decoy puchukanqa.",
   "settings.notify": "Tukukuptin willay",
@@ -97,7 +113,6 @@
   "settings.files": "Willañiqikuna",
   "settings.open": "Kichariy",
   "settings.legal": "Decoyqa manam Discord token nisqaykita llamk'achinchu, manataqmi questkunata qampaq chaskinchu. Pukllay ruwayta pantachiyqa Discord kamachiykunata p'akiyta atinmanmi, qam kikiypa saqillaykiman hinam llamk'achinki.",
-
   "toast.launched": "«{name}» qallarisqa {n} min pachapaq. Discord 15 chinllihina kachkaptin riqsinqa.",
   "toast.stopped": "Decoy sayachisqa",
   "toast.allStopped": "Tukuy decoykuna sayachisqa",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} pukllaykuna exe willañiqiyuq kapunku: {names}",
   "toast.refreshAdded": "Willakuykuna kunanchasqa: +{n} musuq pukllaykuna",
   "toast.refreshUpToDate": "Willakuykunaqa kunanchasqañam kachkan",
-
   "nav.lab": "Llamk'ana wasi",
   "lab.title": "Llamk'ana wasi",
   "lab.subtitle": "Pakasqa k'iti: achka decoykunata hukllapiraq qallarin.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} pukllaykunata qallariy",
   "lab.launching": "{done} kaymanta {total} qallarichkan…",
   "lab.cancel": "Tatichiy",
-  "lab.warn": "Sapa decoyqa huk kikin ruwaymi ventanayuq. 200–300 nisqamanta aswanqa antañiqiykita allimllachiyta atinmanmi, lliwmanta aswanqa {max} kachkan.",
+  "lab.warn": "Sapa decoyqa ventanayuq sapaq ruwaymi. Huk kutillapi nisyu kaptinqa antañiqiykita chukruchiyta atinman: sapa ruwaypas ventanapas yuyaytam llamk'achin, waranqantin ventanakuna qhipamantaq Windows manapaschá musuqkunata ruwayta atinqachu. Decoy wisq'aptiykiqa, llapan decoykunam sayanqa.",
+  "lab.all": "Llapan ({n})",
+  "lab.estimate": "{n} decoyqa yaqa {ram} RAM nisqatam llamk'achinqa.",
+  "lab.confirm": "Kutiy ñit'iy {n} qallarinaykipaq",
+  "lab.limit": "Windows {n} qhipata musuq ruwaykuna qallariymanta sayarun: chaymi llikacha limite.",
+  "running.more": "…hinaspa {n} aswanraq. Ñawpaq 120 rikuchisqa.",
   "lab.hide": "Kay k'itita pakay",
   "toast.labUnlocked": "Pakasqa «Llamk'ana wasi» k'iti kicharisqa",
   "toast.labHidden": "K'iti pakasqa",
   "toast.labDone": "Pukllaykuna qallarisqa: {n}",
-
   "tray.show": "Decoy kichariy",
   "tray.stop": "Tukuy decoykunata sayachiy",
   "tray.quit": "Lluqsiy",
-
   "notify.title": "Pacha tukukunñam",
   "notify.body": "{name}: {n} min pacha yallisqaña."
 }

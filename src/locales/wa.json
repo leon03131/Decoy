@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Walon" },
-
+  "_meta": {
+    "name": "Walon"
+  },
   "nav.library": "Sicrijhaedjes",
   "nav.favorites": "Colåds",
   "nav.running": "En alaedje",
   "nav.settings": "Apontiaedjes",
-
   "discord.checking": "Verifiaedje…",
   "discord.up": "En alaedje",
   "discord.down": "Nén en alaedje",
-
   "window.minimize": "Raptiti",
   "window.maximize": "Ragrandi",
   "window.close": "Clôre",
-
   "tag.live": "En alaedje",
   "tag.noExe": "pont d’ exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "enondeu",
-
   "lib.title": "Sicrijhaedjes",
   "lib.subtitle": "{n} djoûs avou on processus kinoxhu · metaedje a djoû li {date}",
   "lib.loading": "Tchedjaedje del båze di dnêyes des djoûs…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Radjouter ås colåds",
   "lib.empty.title": "Rén di trovou",
   "lib.empty.text": "Sayîz èn ôte no ou mete en alaedje « Môstrer les djoûs sins exe ».",
-
   "fav.title": "Colåds",
   "fav.count": "{n} djoûs",
   "fav.hint": "Marker les djoûs avou ene sitoele",
   "fav.empty.title": "I gn a rén chal pol moumint",
   "fav.empty.text": "Tchôkîz so li stoele d’ on djoû por lu vni chal.",
-
   "detail.process": "Processus",
   "detail.duration": "Tins k' i fåt l' wårder",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Colåd",
   "detail.close": "Clôre",
   "detail.id": "ID {id}",
-
   "running.title": "En alaedje",
   "running.count": "{n} Decoys en alaedje",
   "running.none": "I gn a rén en alaedje pol moumint",
@@ -70,14 +64,36 @@
   "running.stop": "Arester",
   "running.empty.title": "I gn a rén en alaedje",
   "running.empty.text": "Drovîz on djoû el biblioteke eyet tchôkîz so « Enonder Decoy ».",
-
   "settings.title": "Apontiaedjes",
   "settings.general": "Djenerå",
   "settings.language": "Lingaedje",
   "settings.language.desc": "Lingaedje di l' eterface. Les noûs lingaedjes sont radjoutés come fitchîs dins l' ridant des locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Tins d' prémetowe valeur",
-  "settings.defaultTime.desc": "Comint d' munutes k' i fåt wårder l' processus (les cwesses Discord ont sovint mezåjhe di 15).",
+  "settings.defaultTime.desc": "Combin d' munutes i fåt wårder l' processus. Li prémetowe valeur c' est 16, nén 15: les cwesses Discord dimandèt 15 munutes di djoû, mins Discord a mezåjhe d' disk' a ene munute po vey on novea djoû, do côp djusse 15 c' est trop court.",
+  "settings.smartTimer": "Sayeus minutreye",
+  "settings.smartTimer.desc": "Li contowe a rviers cmince cwand Discord a rimårkî l' decoy, nén cwand vos l' enondez. Po savoer çoula, l' aplicåcion lét seulmint les royes sol djoû en alaedje dins l' djournå locå di Discord; rén n' est wårdé ni evoyî nolle pårt.",
+  "settings.updates": "Mimes a djoû",
+  "settings.checkNow": "Verifyî asteure",
+  "settings.autoUpdate": "Mimes a djoû otomatikes",
+  "settings.autoUpdate.desc": "Verifyî GitHub a l' enondaedje eyet totes les 6 eures eyet aberweter les noveles modêyes e fond d' ecran. L' astalaedje rawåde todi vosse confiyance, eyet les fitchîs sont rwaitîs pa leu sinateure limerike.",
+  "update.current": "Modêye astalêye {v}",
+  "update.checking": "Verifiaedje…",
+  "update.uptodate": "Vos avoz l' dierinne modêye",
+  "update.available": "Li modêye {v} est disponibe",
+  "update.downloading": "Aberwetaedje del modêye {v}… {p}%",
+  "update.ready": "Li modêye {v} est prêste a astaler",
+  "update.installing": "Astalaedje eyet renondaedje…",
+  "update.download": "Aberweter",
+  "update.restart": "Renonder eyet mete a djoû",
+  "update.later": "Pus tård",
+  "update.notes": "Cwè k' i gn a d' novea",
+  "update.running": "Les Decoys en alaedje ({n}) vont djoker.",
+  "update.error": "Dji n' a savou mete a djoû: {e}",
+  "detail.waiting": "e rawårdant Discord",
+  "detail.waitingNote": "Discord a mezåjhe d' disk' a ene munute po rimårker on djoû. Li contowe a rviers cmince cwand i voet l' decoy.",
+  "detail.detected": "Discord a rimårkî l' decoy",
+  "detail.assumed": "Discord n' a nén aferté, l' tins est conté tot l' minme.",
   "settings.autoStop": "Arester a l' ôrlodje",
   "settings.autoStop.desc": "Decoy s' aresteye d' lu-minme cwand l' tins est houte.",
   "settings.notify": "Notifyî cwand c' est fwait",
@@ -97,7 +113,6 @@
   "settings.files": "Fitchîs",
   "settings.open": "Drovi",
   "settings.legal": "Decoy n' eploye nén vosse djton Discord eyet n' riçût nén les cwesses por vos. Fé cwere k' on processus d' djoû toûne pout aler siconte des rîles di Discord, vos l' eployîz a vos risques.",
-
   "toast.launched": "« {name} » enondé po {n} min. Discord divreut l' rimårker d' chal 15 sigondes.",
   "toast.stopped": "Decoy aresté",
   "toast.allStopped": "Tos les Decoys sont-st arestés",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} djoûs ont yeu des fitchîs exe: {names}",
   "toast.refreshAdded": "Båze di dnêyes metowe a djoû: +{n} noûs djoûs",
   "toast.refreshUpToDate": "Li båze di dnêyes est ddja a djoû",
-
   "nav.lab": "Labo",
   "lab.title": "Labo",
   "lab.subtitle": "On sekret linwete: enonde bråmint d' Decoys d' on côp.",
@@ -115,16 +129,19 @@
   "lab.launch": "Enonder {n} djoûs",
   "lab.launching": "Enondaedje di {done} so {total}…",
   "lab.cancel": "Rinoncî",
-  "lab.warn": "Tchaeke Decoy est on processus a pårt avou on purnea. Pus d' 200–300 a l' feye pout rlasti vosse copiutrece, li macsimom est {max}.",
+  "lab.warn": "Tchaeke decoy c' est on processus a pårt avou ene purnea. Trop d' côp a l' feye pout djaler vosse copiutrece: tchaeke processus eyet purnea eploye del memwere, eyet après sacwants meyes di purneas Windows pout djoker d' endé fé d' pus. Si vos cloyoz Decoy, tos les decoys s' arètèt.",
+  "lab.all": "Tertos ({n})",
+  "lab.estimate": "{n} decoys vont eployî a pô près {ram} di RAM.",
+  "lab.confirm": "Clitchîz co on côp po-z enonder {n}",
+  "lab.limit": "Windows a djoké d' enonder des noveas processus après {n}: c' est l' limite do sistinme.",
+  "running.more": "…eyet co {n}. Les 120 prumîs sont håynés.",
   "lab.hide": "Cotiper cisse linwete chal",
   "toast.labUnlocked": "Sekret linwete « Labo » distapaedje fwait",
   "toast.labHidden": "Linwete cotipêye",
   "toast.labDone": "Djoûs enondés: {n}",
-
   "tray.show": "Drovi Decoy",
   "tray.stop": "Arester tos les Decoys",
   "tray.quit": "Cwiter",
-
   "notify.title": "Li tins est houte",
   "notify.body": "{name}: {n} min sont houte."
 }

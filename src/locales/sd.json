@@ -1,24 +1,22 @@
 {
-  "_meta": { "name": "سنڌي", "rtl": true },
-
+  "_meta": {
+    "name": "سنڌي",
+    "rtl": true
+  },
   "nav.library": "لائبريري",
   "nav.favorites": "پسنديده",
   "nav.running": "هلندڙ",
   "nav.settings": "ترتيبون",
-
   "discord.checking": "چڪاس ڪري رهيو آهي…",
   "discord.up": "هلندڙ آهي",
   "discord.down": "هلندڙ ناهي",
-
   "window.minimize": "گھٽايو",
   "window.maximize": "وڌايو",
   "window.close": "بند ڪريو",
-
   "tag.live": "هلندڙ",
   "tag.noExe": "ڪو exe ناهي",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "لانچر",
-
   "lib.title": "لائبريري",
   "lib.subtitle": "ڄاتل پروسيس سان {n} رانديون · اپڊيٽ ڪيل {date}",
   "lib.loading": "راندين جو ڊيٽابيس لوڊ ٿي رهيو آهي…",
@@ -36,13 +34,11 @@
   "lib.addFavorite": "پسنديده ۾ شامل ڪريو",
   "lib.empty.title": "ڪجھ به نه مليو",
   "lib.empty.text": "ڪو ٻيو نالو آزمائي ڏسو يا “بغير exe واريون رانديون ڏيکاريو” کي آن ڪريو.",
-
   "fav.title": "پسنديده",
   "fav.count": "{n} رانديون",
   "fav.hint": "راندين تي تارو لڳايو",
   "fav.empty.title": "هتي اڃا ڪجھ به ناهي",
   "fav.empty.text": "هتي شامل ڪرڻ لاءِ راند واري ٽائل تي تاري تي ڪلڪ ڪريو.",
-
   "detail.process": "پروسيس",
   "detail.duration": "ڪيترو وقت هلائڻو آهي",
   "detail.minutes": "{n} منٽ",
@@ -62,7 +58,6 @@
   "detail.favorite": "پسنديده",
   "detail.close": "بند ڪريو",
   "detail.id": "ID {id}",
-
   "running.title": "هلندڙ",
   "running.count": "{n} سرگرم decoys",
   "running.none": "هن وقت ڪجھ به نه پيو هلي",
@@ -70,14 +65,36 @@
   "running.stop": "روڪيو",
   "running.empty.title": "ڪجھ به نه پيو هلي",
   "running.empty.text": "لائبريري مان ڪا راند کوليو ۽ “Decoy شروع ڪريو” دٻايو.",
-
   "settings.title": "ترتيبون",
   "settings.general": "عام",
   "settings.language": "ٻولي",
   "settings.language.desc": "انٽرفيس جي ٻولي. نيون ٻوليون locales فولڊر ۾ فائلن طور شامل ڪيون وينديون آهن.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "طئي ٿيل مدو",
-  "settings.defaultTime.desc": "پروسيس کي ڪيترا منٽ هلائڻو آهي (Discord ڪوئسٽس لاءِ عام طور 15 گهربل آهن).",
+  "settings.defaultTime.desc": "پروسيس کي ڪيترا منٽ هلائڻو آهي. طئي ٿيل 16 آهي، 15 نه: Discord ڪوئسٽ 15 منٽ راند جي گهرج ڪن ٿا، پر Discord کي نئين راند سڃاڻڻ لاءِ هڪ منٽ لڳي سگهي ٿو، تنهنڪري پوري 15 منٽ گهٽ ٿي وڃن ٿا.",
+  "settings.smartTimer": "سمارٽ ٽائيمر",
+  "settings.smartTimer.desc": "ڳڻپ تڏهن شروع ٿيندي آهي جڏهن Discord ڊيڪوئي (decoy) کي نوٽ ڪري، نه ته جڏهن توهان ان کي شروع ڪريو. اهو ڄاڻڻ لاءِ، ايپ Discord جي مقامي لاگ مان صرف هلي رهيل راند واريون سٽون پڙهي ٿي؛ ڪجهه به ذخيرو يا ٻئي هنڌ نٿو موڪليو وڃي.",
+  "settings.updates": "اپڊيٽس",
+  "settings.checkNow": "هاڻي چڪاسيو",
+  "settings.autoUpdate": "خودڪار اپڊيٽس",
+  "settings.autoUpdate.desc": "شروعات ۾ ۽ هر 6 ڪلاڪن بعد GitHub چڪاسيو ۽ پٺ منظر ۾ نوان ورزن ڊائون لوڊ ڪريو. انسٽاليشن هميشه توهان جي تصديق جي منتظر رهي ٿي، ۽ فائيل ڊجيٽل صحيح سان تصديق ٿيل آهن.",
+  "update.current": "انسٽال ٿيل ورزن {v}",
+  "update.checking": "چڪاس ڪري رهيو آهي…",
+  "update.uptodate": "توهان جديد ورزن تي آهيو",
+  "update.available": "ورزن {v} دستياب آهي",
+  "update.downloading": "ورزن {v} ڊائون لوڊ ٿي رهيو آهي… {p}%",
+  "update.ready": "ورزن {v} انسٽال ٿيڻ لاءِ تيار آهي",
+  "update.installing": "انسٽال ۽ ٻيهر شروع ٿي رهيو آهي…",
+  "update.download": "ڊائون لوڊ",
+  "update.restart": "ٻيهر شروع ڪريو ۽ اپڊيٽ ڪريو",
+  "update.later": "پوءِ",
+  "update.notes": "ڇا نئون آهي",
+  "update.running": "هلندڙ ڊيڪوئي ({n}) روڪيا ويندا.",
+  "update.error": "اپڊيٽ نه ٿي سگهيو: {e}",
+  "detail.waiting": "Discord جو انتظار آهي",
+  "detail.waitingNote": "Discord کي ڪنهن راند کي نوٽ ڪرڻ ۾ هڪ منٽ تائين لڳي سگهي ٿو. ڳڻپ تڏهن شروع ٿئي ٿي جڏهن اهو decoy کي ڏسي.",
+  "detail.detected": "Discord پاران decoy سڃاڻجي ويو",
+  "detail.assumed": "Discord تصديق نه ڪئي، تڏهن به وقت شمار ڪيو پيو وڃي.",
   "settings.autoStop": "ٽائيمر تي روڪيو",
   "settings.autoStop.desc": "وقت پورو ٿيڻ تي decoy پاڻمرادو بند ٿي ويندو آهي.",
   "settings.notify": "مڪمل ٿيڻ تي اطلاع ڏيو",
@@ -97,7 +114,6 @@
   "settings.files": "فائلون",
   "settings.open": "کوليو",
   "settings.legal": "Decoy توهان جو Discord ٽوڪن استعمال نٿو ڪري ۽ توهان جي پاران ڪوئسٽ قبول نٿو ڪري. راند جي پروسيس جي نقالي ڪرڻ Discord جي قاعدن جي خلاف ٿي سگهي ٿو، ان کي پنهنجي خطري تي استعمال ڪريو.",
-
   "toast.launched": "“{name}” کي {n} منٽن لاءِ شروع ڪيو ويو. Discord لڳ ڀڳ 15 سيڪنڊن ۾ ان جي سڃاڻپ ڪندو.",
   "toast.stopped": "Decoy روڪيو ويو",
   "toast.allStopped": "سمورا decoys روڪيا ويا",
@@ -105,7 +121,6 @@
   "toast.refreshGained": "{n} راندين کي exe فائلون ملي ويون: {names}",
   "toast.refreshAdded": "ڊيٽابيس اپڊيٽ ٿي ويو: +{n} نيون رانديون",
   "toast.refreshUpToDate": "ڊيٽابيس اڳ ئي اپڊيٽ ٿيل آهي",
-
   "nav.lab": "ليب",
   "lab.title": "ليب",
   "lab.subtitle": "هڪ ڳجهو ٽئب: هڪ ئي وقت ڪيترائي decoys شروع ڪري ٿو.",
@@ -115,16 +130,19 @@
   "lab.launch": "{n} رانديون شروع ڪريو",
   "lab.launching": "{total} مان {done} شروع ٿي رهيون آهن…",
   "lab.cancel": "منسوخ ڪريو",
-  "lab.warn": "هر هڪ decoy هڪ الڳ پروسيس آهي جنهن جي پنهنجي ونڊو آهي. هڪ وقت ۾ 200–300 کان وڌيڪ ڪمپيوٽر کي سست ڪري سگهن ٿا، وڌ ۾ وڌ حد {max} آهي.",
+  "lab.warn": "هر هڪ decoy هڪ ونڊو سان ڌار پروسيس آهي. هڪ ئي وقت تمام گهڻا پروسيس توهان جي ڪمپيوٽر کي فريز ڪري سگهن ٿا: هر پروسيس ۽ ونڊو ميموري استعمال ڪري ٿي، ۽ ڪجهه هزار ونڊوز کانپوءِ Windows وڌيڪ ونڊوز ٺاهڻ بند ڪري سگهي ٿو. جيڪڏهن توهان Decoy بند ڪيو ٿا ته سمورا decoy روڪجي ويندا.",
+  "lab.all": "سڀ ({n})",
+  "lab.estimate": "{n} ڊيڪوئي لڳ ڀڳ {ram} ريم (RAM) استعمال ڪندا.",
+  "lab.confirm": "{n} شروع ڪرڻ لاءِ ٻيهر ڪلڪ ڪريو",
+  "lab.limit": "Windows پاران {n} کانپوءِ نوان پروسيس شروع ڪرڻ بند ڪيا ويا: اهو سسٽم جو لمٽ آهي.",
+  "running.more": "…۽ ٻيا {n}. پهرين 120 ڏيکاريل آهن.",
   "lab.hide": "هي ٽئب لڪايو",
   "toast.labUnlocked": "ڳجهو “ليب” ٽئب کلي ويو",
   "toast.labHidden": "ٽئب لڪايو ويو",
   "toast.labDone": "شروع ڪيل رانديون: {n}",
-
   "tray.show": "Decoy کوليو",
   "tray.stop": "سمورا decoys روڪيو",
   "tray.quit": "بند ڪريو",
-
   "notify.title": "وقت پورو ٿي ويو",
   "notify.body": "{name}: {n} منٽ گذري چڪا آهن."
 }

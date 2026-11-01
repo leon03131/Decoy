@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Ирон" },
-
+  "_meta": {
+    "name": "Ирон"
+  },
   "nav.library": "Библиотекæ",
   "nav.favorites": "Æвзæрст",
   "nav.running": "Кусы",
   "nav.settings": "Уагæвæрдтæ",
-
   "discord.checking": "Бæрæг кæны…",
   "discord.up": "Кусы",
   "discord.down": "Нæ кусы",
-
   "window.minimize": "Гæххæтт кæнын",
   "window.maximize": "Стыр кæнын",
   "window.close": "Сæхгæнын",
-
   "tag.live": "Кусы",
   "tag.noExe": "exe нæй",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "лаунчер",
-
   "lib.title": "Библиотекæ",
   "lib.subtitle": "{n} хъазты бæрæг процессæй · ноггонд {date}",
   "lib.loading": "Хъæзты базæ æрбавгæны…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Æвзæрстмæ баххæст кæнын",
   "lib.empty.title": "Ницы ссардæуыд",
   "lib.empty.text": "Фæлвар æндæр ном кæнæ баиу кæн «Æнæ exe æвдисын».",
-
   "fav.title": "Æвзæрст",
   "fav.count": "{n} хъазты",
   "fav.hint": "Хъæзтытæ стъалыимæ бæрæг кæн",
   "fav.empty.title": "Ам нырма афтид у",
   "fav.empty.text": "Хъазты плиткæйыл стъалыйыл æрхæц, цæмæй ам бавæрай.",
-
   "detail.process": "Процесс",
   "detail.duration": "Цас фæдард уа",
   "detail.minutes": "{n} мин",
@@ -62,7 +57,6 @@
   "detail.favorite": "Æвзæрст",
   "detail.close": "Сæхгæнын",
   "detail.id": "ID {id}",
-
   "running.title": "Кусы",
   "running.count": "{n} активон decoy",
   "running.none": "Ныртæккæ ницы кусы",
@@ -70,14 +64,36 @@
   "running.stop": "Уромын",
   "running.empty.title": "Ницы кусы",
   "running.empty.text": "Байгом кæн хъазт библиотекæйы æмæ æрхæц «Decoy райдайын».",
-
   "settings.title": "Уагæвæрдтæ",
   "settings.general": "Иумæйаг",
   "settings.language": "Æвзаг",
   "settings.language.desc": "Интерфейсы æвзаг. Ног æвзæгтæ баххæст кæнынц файлтæй locales папкæмæ.",
   "settings.stubs": "Decoy-тæ",
   "settings.defaultTime": "Рæстæг æвæрдæй",
-  "settings.defaultTime.desc": "Цас минут фæдард уа процесс (Discord хæстæм арæх 15 хъæуы).",
+  "settings.defaultTime.desc": "Процесс цал минуты дарын хъæуы. Стандарт у 16, 15 нæ: Discord-ы фæрстытæ домынц 15 минуты хъазт, фæлæ Discord-æн ног хъазт бафиппайынæн хъæуы минутмæ æввахс рæстæг.",
+  "settings.smartTimer": "Зондджын таймер",
+  "settings.smartTimer.desc": "Рæстæг нымайын райдайы, Decoy кусын кæй райдыдта, уæд нæ, фæлæ йæ Discord куы бафиппайы, уæд. Уый базонынæн æфтуан Discord-ы бынæттон журналæй кæсы æрмæстдæр кусæг хъазты рæнхъытæ; ницы æвæрд кæнæ арвыст цæуы.",
+  "settings.updates": "Ноггæнæнтæ",
+  "settings.checkNow": "Ныр басгарын",
+  "settings.autoUpdate": "Автоматон ноггæнынад",
+  "settings.autoUpdate.desc": "GitHub сгарæн кусын райдайгæйæ æмæ алкæцы 6 сахаты фæстæ, ног верситæ та фæстæгæй æрбавгæнын. Сæвæрынад алкæддæр æнхъæлмæ кæсы дæ сæрмагонд разыйагмæ, æмæ файлтæ бæрæг цæуынц сæ цифрон къухфыстæй.",
+  "update.current": "Сæвæрд верси {v}",
+  "update.checking": "Бæрæггæнæн…",
+  "update.uptodate": "Дæумæ ис фæстаг верси",
+  "update.available": "Верси {v} æрцæттæ",
+  "update.downloading": "Верси {v} æрбайсгæ… {p}%",
+  "update.ready": "Верси {v} сæвæрынæн цæттæ у",
+  "update.installing": "Сæвæрын æмæ ногæй райдайын…",
+  "update.download": "Æрбавгæнын",
+  "update.restart": "Ногæй райдайын æмæ ног кæнын",
+  "update.later": "Фæстæдæр",
+  "update.notes": "Цы ис ногæй",
+  "update.running": "Кусæг decoy-тæ ({n}) æрлæудзысты.",
+  "update.error": "Ног кæнын нæ бантыст: {e}",
+  "detail.waiting": "Discord-мæ æнхъæлмæ кæсын",
+  "detail.waitingNote": "Discord-æн ног хъазт бафиппайынæн минутмæ æввахс рæстæг хъæуы. Нымайын райдайы, Decoy-йы куы фендзæнис, уæд.",
+  "detail.detected": "Discord бафиппыдта decoy",
+  "detail.assumed": "Discord нæ бафидар кодта, рæстæг уæддæр нымад цæуы.",
   "settings.autoStop": "Таймерæй уромын",
   "settings.autoStop.desc": "Рæстæг куы ахицæн уа, decoy йæхæдæг фæуыдзæн.",
   "settings.notify": "Хицæн куы уа, хъусын кæнын",
@@ -97,7 +113,6 @@
   "settings.files": "Файлтæ",
   "settings.open": "Байгом кæнын",
   "settings.legal": "Decoy дæ Discord токенæй нæ пайда кæны æмæ дæ бæсты хæстæ нæ исы. Хъазты процесс имитаци кæнын гæнæн ис Discord-ы домæнтæм ныхмæ уа, пайда кæн дæхи бæрныл.",
-
   "toast.launched": "«{name}» кусын райдыдта {n} мин. Discord æй 15 секундмæ сбæрæг кæндзæн.",
   "toast.stopped": "Decoy урæд æрцыд",
   "toast.allStopped": "Иууылдæр decoy-тæ урæд æрцыдысты",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} хъазтæн фæзындысты exe: {names}",
   "toast.refreshAdded": "Базæ ноггонд æрцыд: +{n} ног хъазты",
   "toast.refreshUpToDate": "Базæ ныридæгæн активон у",
-
   "nav.lab": "Лаборатори",
   "lab.title": "Лаборатори",
   "lab.subtitle": "Сусæг вкладкæ: иу хаттæй бирæ decoy-тæ райдайы.",
@@ -115,16 +129,19 @@
   "lab.launch": "Райдайын {n} хъазты",
   "lab.launching": "Райдайы {done} / {total}…",
   "lab.cancel": "Ныууадзын",
-  "lab.warn": "Алкæцы decoy хицæн процесс у рудзынгимæ. 200–300-йæ фылдæр иу хаттæй компьютер ссабыр кæндзæн, максималон у {max}.",
+  "lab.warn": "Алкæцы decoy у хицæн процесс рудзгуимæ. Иу хаттæй хæрз бирæ куы уа, уæд компьютер баурæдзæн: алкæцы процесс æмæ рудзгуы хæрынц хъуыды, æмæ мингай рудзгуыты фæстæ Windows сæ аразынæй æрлæудзæн. Decoy куы сæхгæнай, уæд се ппæт decoy-тæ дæр æрлæудзысты.",
+  "lab.all": "Алцыдæр ({n})",
+  "lab.estimate": "{n} decoy фæхæрдзысты æввахс {ram} RAM.",
+  "lab.confirm": "Ногæй æрхæц, цæмæй райдайай {n}",
+  "lab.limit": "Windows {n} процессы фæстæ ногтæ кусын кæнын нал райдыдта: уый у системæйы арæн.",
+  "running.more": "…æмæ ма {n}. Фыццаг 120 æвдыст сты.",
   "lab.hide": "Вкладкæ сæмбæрхсын",
   "toast.labUnlocked": "Сусæг вкладкæ «Лаборатори» гом æрцыд",
   "toast.labHidden": "Вкладкæ æмбæрхст æрцыд",
   "toast.labDone": "Райдыдтой хъæзтытæ: {n}",
-
   "tray.show": "Decoy байгом кæнын",
   "tray.stop": "Иууылдæр decoy-тæ уромын",
   "tray.quit": "Рахизын",
-
   "notify.title": "Рæстæг ахицæн",
   "notify.body": "{name}: рацыд {n} мин."
 }

@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Zeêuws" },
-
+  "_meta": {
+    "name": "Zeêuws"
+  },
   "nav.library": "Bibliotheek",
   "nav.favorites": "Favorieten",
   "nav.running": "Draoit nu",
   "nav.settings": "Instelliengen",
-
   "discord.checking": "Controleren…",
   "discord.up": "Draoit nu",
   "discord.down": "Draoit nie",
-
   "window.minimize": "Verkleene",
   "window.maximize": "Vergroôte",
   "window.close": "Slute",
-
   "tag.live": "Draoit nu",
   "tag.noExe": "geên exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Bibliotheek",
   "lib.subtitle": "{n} games mie een bekend proces · biehewerkt {date}",
   "lib.loading": "Gamedatabase laeie…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Bie favorieten zette",
   "lib.empty.title": "Niks evonden",
   "lib.empty.text": "Probeer 'n aore naem of zet “Games zonder exe toône” an.",
-
   "fav.title": "Favorieten",
   "fav.count": "{n} games",
   "fav.hint": "Zet 'n sterretje bie games",
   "fav.empty.title": "Hier is nog niks",
   "fav.empty.text": "Klik op 't sterretje op 'n gametegel om 'm hier bie te zette.",
-
   "detail.process": "Proces",
   "detail.duration": "Oô lange laete draoie",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favoriet",
   "detail.close": "Slute",
   "detail.id": "ID {id}",
-
   "running.title": "Draoit nu",
   "running.count": "{n} actieve decoys",
   "running.none": "D'r draoit op 't moment niks",
@@ -70,14 +64,36 @@
   "running.stop": "Stoppe",
   "running.empty.title": "D'r draoit niks",
   "running.empty.text": "Oôpen 'n game in de bibliotheek en druk op “Decoy starte”.",
-
   "settings.title": "Instelliengen",
   "settings.general": "Algemeên",
   "settings.language": "Taele",
   "settings.language.desc": "Interfacetaele. Nieuwe taelen worre toegevoegd as bestanden in de map locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Standaardtied",
-  "settings.defaultTime.desc": "Oôveêl menuutn 't proces draoit (Discord-quests è meêstentieds 15 nôdig).",
+  "settings.defaultTime.desc": "Oveul menuten 't proces moe bluven draoie. Standaard is 16, gin 15: Discord-quests vraege 15 menuten spele, mae Discord ei toet 'n menuut nôdig om 'n nuuwt spel op te merke, dus krek 15 is te weinig.",
+  "settings.smartTimer": "Slimme timer",
+  "settings.smartTimer.desc": "D'n afteller begint as Discord de decoy ei opgemerkt, nie as je 'm start. Om dat te weten leest de app allene de regels over 't lopende spel uut de loakale log van Discord; d'r wor niks opgesloge of ergens naetoe estierd.",
+  "settings.updates": "Updates",
+  "settings.checkNow": "Nu controleêre",
+  "settings.autoUpdate": "Automatische updates",
+  "settings.autoUpdate.desc": "Controleêr GitHub bie 't opstarten en om de 6 euren en download nuuwe versies op d'n achtergrond. Installeren wacht aoltied op je bevestigieng, en bestan'n ore gecontroleerd mie d'r digitoale andteêkenienge.",
+  "update.current": "Geïnstalleerde versie {v}",
+  "update.checking": "Controleêre…",
+  "update.uptodate": "Je eit de leste versie",
+  "update.available": "Versie {v} is beschikbaar",
+  "update.downloading": "Versie {v} downloade… {p}%",
+  "update.ready": "Versie {v} is klaer om te installeren",
+  "update.installing": "Installeren en herstarte…",
+  "update.download": "Downloade",
+  "update.restart": "Herstarte en bie-werke",
+  "update.later": "Laeter",
+  "update.notes": "Wat is d'r nuuw",
+  "update.running": "Lopende decoys ({n}) zulle stoppe.",
+  "update.error": "Kon nie bie-werke: {e}",
+  "detail.waiting": "wachte op Discord",
+  "detail.waitingNote": "Discord ei toet 'n menuut nôdig om 'n spel op te merke. D'n afteller begint as 't de decoy ziet.",
+  "detail.detected": "Discord ei de decoy opgemerkt",
+  "detail.assumed": "Discord ei 't nie bevestigd, d'n tied wor toch eteld.",
   "settings.autoStop": "Stoppe op timer",
   "settings.autoStop.desc": "De decoy stopt vanzelf as d'n tied omme is.",
   "settings.notify": "Melde as 't klaer is",
@@ -97,7 +113,6 @@
   "settings.files": "Bestanden",
   "settings.open": "Oôpene",
   "settings.legal": "Decoy gebruukt je Discord-token nie en accepteert geên quests vò je. 't Naebootsen van 'n gameproces kan tehen de regels van Discord weze, gebruuk op eihen risico.",
-
   "toast.launched": "“{name}” estart vò {n} min. Discord zou dit over zo'n 15 seconjen motte merke.",
   "toast.stopped": "Decoy estopt",
   "toast.allStopped": "Aolle decoys estopt",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} games è exe-bestanden ekehe: {names}",
   "toast.refreshAdded": "Database biehewerkt: +{n} nieuwe games",
   "toast.refreshUpToDate": "De database is aol glad bie de tied",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "'n Geheime tab: start veêl decoys tegeliek.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} games starte",
   "lab.launching": "{done} van {total} starte…",
   "lab.cancel": "Annulere",
-  "lab.warn": "Iedre decoy is 'n apart proces mie 'n venster. Meêr as 200–300 tegeliek kan je computer vertraege, 't maximum is {max}.",
+  "lab.warn": "Elke decoy is 'n ampart proces mie 'n venster. Teveul tegelieke kan je computer laete vaschtlope: elk proces en venster gebruukt geheugen, en nae 'n paer duuzend vensters kan Windows stoppe mie nuuwe maeke. As je Decoy sluut, stoppe aolle decoys.",
+  "lab.all": "Aollemaele ({n})",
+  "lab.estimate": "{n} decoys zulle onheveer {ram} an RAM gebruuke.",
+  "lab.confirm": "Klik nog 'n keêr om {n} te starte",
+  "lab.limit": "Windows is estopt mie nuuwe processen starte nae {n}: dat is de grenze van 't systeem.",
+  "running.more": "…en nog {n} aondere. D' eêste 120 worre getoônd.",
   "lab.hide": "Deêze tab verberhe",
   "toast.labUnlocked": "Geheime tab “Lab” ontgrendeld",
   "toast.labHidden": "Tab verborhe",
   "toast.labDone": "Games estart: {n}",
-
   "tray.show": "Decoy oôpene",
   "tray.stop": "Aolle decoys stoppe",
   "tray.quit": "Ofslute",
-
   "notify.title": "D'n tied is omme",
   "notify.body": "{name}: {n} min bin verstreke."
 }

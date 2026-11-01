@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Scots" },
-
+  "_meta": {
+    "name": "Scots"
+  },
   "nav.library": "Leebrar",
   "nav.favorites": "Favourits",
   "nav.running": "Rinnin",
   "nav.settings": "Settins",
-
   "discord.checking": "Checkin…",
   "discord.up": "Rinnin",
   "discord.down": "No rinnin",
-
   "window.minimize": "Nip doun",
   "window.maximize": "Makk muckle",
   "window.close": "Steek",
-
   "tag.live": "Rinnin",
   "tag.noExe": "nae exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Leebrar",
   "lib.subtitle": "{n} gemms wi a kent process · eikit {date}",
   "lib.loading": "Laidin the gemm database…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Eik tae favourits",
   "lib.empty.title": "Nocht funn",
   "lib.empty.text": "Gie anither name a go or turn on “Shaw gemms athoot exe”.",
-
   "fav.title": "Favourits",
   "fav.count": "{n} gemms",
   "fav.hint": "Mairk gemms wi a starn",
   "fav.empty.title": "Nocht heer yet",
   "fav.empty.text": "Dunt the starn on a gemm trunsher tae eik it heer.",
-
   "detail.process": "Process",
   "detail.duration": "Hou lang tae haud it",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favourit",
   "detail.close": "Steek",
   "detail.id": "ID {id}",
-
   "running.title": "Rinnin",
   "running.count": "{n} active decoys",
   "running.none": "Nocht is rinnin richt nou",
@@ -70,14 +64,36 @@
   "running.stop": "Haud",
   "running.empty.title": "Nocht is rinnin",
   "running.empty.text": "Apen a gemm in the leebrar an dunt “Stairt decoy”.",
-
   "settings.title": "Settins",
   "settings.general": "General",
   "settings.language": "Leid",
   "settings.language.desc": "Interface leid. New leids are eikit as files in the locales fauder.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Stannin duration",
-  "settings.defaultTime.desc": "Hou monie minutes tae haud the process (Discord quests maistly need 15).",
+  "settings.defaultTime.desc": "Hou mony meenits tae keep the process. The stannin duration is 16, no 15: Discord quests speir for 15 meenits o play, but Discord needs up tae a meenit tae notice a new gemm, sae exackly 15 faws short.",
+  "settings.smartTimer": "Smairt timer",
+  "settings.smartTimer.desc": "The coontdoun stairts whan Discord has noticed the decoy, no whan ye stairt it. Tae ken that, the app reads anerly the lines anent the rinnin gemm frae Discord's local log; nocht is stored or sent oniewhaur.",
+  "settings.updates": "Updates",
+  "settings.checkNow": "Check nou",
+  "settings.autoUpdate": "Automatic updates",
+  "settings.autoUpdate.desc": "Check GitHub at stairtup an ilka 6 oors an dounlaid new versions in the backgrund. Installin aye bides for yer confirm, an files are checkit bi their deegital seegnatur.",
+  "update.current": "Instawed version {v}",
+  "update.checking": "Checkin…",
+  "update.uptodate": "Ye ar on the newest version",
+  "update.available": "Version {v} is handy",
+  "update.downloading": "Dounlaidin version {v}… {p}%",
+  "update.ready": "Version {v} is ready tae instaw",
+  "update.installing": "Instawin an restairtin…",
+  "update.download": "Dounlaid",
+  "update.restart": "Restairt an update",
+  "update.later": "Latter",
+  "update.notes": "Whit’s new",
+  "update.running": "Rinnin decoys ({n}) will haud.",
+  "update.error": "Coudna update: {e}",
+  "detail.waiting": "bidin on Discord",
+  "detail.waitingNote": "Discord needs up tae a meenit tae notice a gemm. The coontdoun stairts whan it sees the decoy.",
+  "detail.detected": "Discord noticed the decoy",
+  "detail.assumed": "Discord hasna confirmed it, the time is coontit oniewey.",
   "settings.autoStop": "Haud on timer",
   "settings.autoStop.desc": "The decoy ends bi itsel whan the time is up.",
   "settings.notify": "Tell whan dune",
@@ -97,7 +113,6 @@
   "settings.files": "Files",
   "settings.open": "Apen",
   "settings.legal": "Decoy disna uise yer Discord token an disna takk on quests for ye. Fakin a gemm process micht gang agane Discord’s rules, uise it at yer ain risk.",
-
   "toast.launched": "“{name}” stairtit for {n} min. Discord shoud notice it in aboot 15 seconds.",
   "toast.stopped": "Decoy haudit",
   "toast.allStopped": "Aw decoys haudit",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} gemms gat exe files: {names}",
   "toast.refreshAdded": "Database eikit: +{n} new gemms",
   "toast.refreshUpToDate": "The database is awready up tae date",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "A derne tab: stairts monie decoys at aince.",
@@ -115,16 +129,19 @@
   "lab.launch": "Stairt {n} gemms",
   "lab.launching": "Stairtin {done} o {total}…",
   "lab.cancel": "Cancel",
-  "lab.warn": "Ilka decoy is a sindry process wi a windae. Mair nor 200–300 at aince micht slaw yer computer doun, the maist is {max}.",
+  "lab.warn": "Ilka decoy is a sindry process wi a windae. Ower mony at ance can freeze yer computer: ilka process an windae uises mynd, an efter a puckle thoosand windaes Windows micht stop makin mair. Gin ye steek Decoy, aw decoys haud.",
+  "lab.all": "Aw ({n})",
+  "lab.estimate": "{n} decoys will uise rochly {ram} o RAM.",
+  "lab.confirm": "Clack again tae stairt {n}",
+  "lab.limit": "Windows stoppit stairtin new processes efter {n}: that is the seestem leemit.",
+  "running.more": "…an {n} mair. The first 120 are shawn.",
   "lab.hide": "Hide this tab",
   "toast.labUnlocked": "Derne “Lab” tab unsteekit",
   "toast.labHidden": "Tab hid",
   "toast.labDone": "Gemms stairtit: {n}",
-
   "tray.show": "Apen Decoy",
   "tray.stop": "Haud aw decoys",
   "tray.quit": "Quit",
-
   "notify.title": "Time is up",
   "notify.body": "{name}: {n} min hae past."
 }

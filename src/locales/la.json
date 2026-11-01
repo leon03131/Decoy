@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Latina" },
-
+  "_meta": {
+    "name": "Latina"
+  },
   "nav.library": "Bibliotheca",
   "nav.favorites": "Praedilecta",
   "nav.running": "Currentia",
   "nav.settings": "Optiones",
-
   "discord.checking": "Probatur…",
   "discord.up": "Currit",
   "discord.down": "Non currit",
-
   "window.minimize": "Minimifacere",
   "window.maximize": "Maximifacere",
   "window.close": "Claudere",
-
   "tag.live": "Currit",
   "tag.noExe": "sine exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "inceptor",
-
   "lib.title": "Bibliotheca",
   "lib.subtitle": "{n} ludi cum processu noto · renovatum {date}",
   "lib.loading": "Index ludorum oneratur…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Inter praedilecta addere",
   "lib.empty.title": "Nihil inventum",
   "lib.empty.text": "Aliud nomen tenta aut “Monstrare sine exe” activa.",
-
   "fav.title": "Praedilecta",
   "fav.count": "{n} ludi",
   "fav.hint": "Signa ludos stella",
   "fav.empty.title": "Hic nihil adhuc est",
   "fav.empty.text": "Preme stellam in latere ludi ut hic addatur.",
-
   "detail.process": "Processus",
   "detail.duration": "Tempus currendi",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Praedilectum",
   "detail.close": "Claudere",
   "detail.id": "ID {id}",
-
   "running.title": "Currentia",
   "running.count": "{n} decoy activa",
   "running.none": "Nihil nunc currit",
@@ -70,14 +64,36 @@
   "running.stop": "Sistere",
   "running.empty.title": "Nihil currit",
   "running.empty.text": "Aperi ludum in bibliotheca et preme “Incipere decoy”.",
-
   "settings.title": "Optiones",
   "settings.general": "Generalia",
   "settings.language": "Lingua",
   "settings.language.desc": "Lingua usoris. Novae linguae ut fasciculi in capsam locales adduntur.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "Tempus praestitutum",
-  "settings.defaultTime.desc": "Quot minuta processum retinere (quaestiones Discord plerumque 15 poscunt).",
+  "settings.defaultTime.desc": "Quot minuta processus servandus sit. Praestabilitum est 16, non 15: Discord munera 15 minuta ludi postulant, sed Discord usque ad unum minutum ad novum ludum animadvertendum eget.",
+  "settings.smartTimer": "Temporizator callidus",
+  "settings.smartTimer.desc": "Computatio incipit cum Discord decoy animadvertit, non cum id incipis. Ad hoc sciendum, programma solum lineas de ludo currente ex indice Discord locali legit; nihil servatur vel mittitur.",
+  "settings.updates": "Novitates",
+  "settings.checkNow": "Nunc inspicere",
+  "settings.autoUpdate": "Automata renovatio",
+  "settings.autoUpdate.desc": "GitHub initio et post sex horas inspicere atque novas versiones in curriculo deponere. Institutio confirmationem tuam semper expectat, et fasciculi per subscriptionem digitalem comprobantur.",
+  "update.current": "Versio instituta {v}",
+  "update.checking": "Inspicitur…",
+  "update.uptodate": "Novissimam versionem habes",
+  "update.available": "Versio {v} praesto est",
+  "update.downloading": "Depromens versionem {v}… {p}%",
+  "update.ready": "Versio {v} ad instituendum parata est",
+  "update.installing": "Instituitur et rursus incipitur…",
+  "update.download": "Depromere",
+  "update.restart": "Rursus incipere et renovare",
+  "update.later": "Postea",
+  "update.notes": "Quid novi sit",
+  "update.running": "Decoy currentia ({n}) desistent.",
+  "update.error": "Renovari non potuit: {e}",
+  "detail.waiting": "Discord expectatur",
+  "detail.waitingNote": "Discord usque ad unum minutum eget ad ludum animadvertendum. Computatio incipit cum decoy videt.",
+  "detail.detected": "Discord decoy animadvertit",
+  "detail.assumed": "Discord non confirmavit, tempus tamen computatur.",
   "settings.autoStop": "Sistere per indicem temporis",
   "settings.autoStop.desc": "Decoy sponte terminatur tempore transacto.",
   "settings.notify": "Nuntiare cum confectum sit",
@@ -97,7 +113,6 @@
   "settings.files": "Fasciculi",
   "settings.open": "Aperire",
   "settings.legal": "Decoy tessera tua Discord non utitur nec quaestiones pro te accipit. Simulatio processus ludorum regulis Discord repugnare potest; tuo proprio periculo utere.",
-
   "toast.launched": "“{name}” coeptum est pro {n} min. Discord id circiter 15 secundis animadvertere debet.",
   "toast.stopped": "Decoy constitit",
   "toast.allStopped": "Omnia decoy constiterunt",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} ludi fasciculos exe acceperunt: {names}",
   "toast.refreshAdded": "Index renovatus: +{n} novi ludi",
   "toast.refreshUpToDate": "Index iam ad diem renovatus est",
-
   "nav.lab": "Laboratorium",
   "lab.title": "Laboratorium",
   "lab.subtitle": "Tabula secreta: multa decoy uno tempore incipit.",
@@ -115,16 +129,19 @@
   "lab.launch": "Incipere {n} ludos",
   "lab.launching": "Incipitur {done} ex {total}…",
   "lab.cancel": "Abrogare",
-  "lab.warn": "Omne decoy processus discretus cum fenestra est. Plus quam 200–300 uno tempore computatrum tuum tardare possunt; maximus numerus est {max}.",
+  "lab.warn": "Unumquodque decoy est processus discretus cum fenestra. Nimis multa simul computatrum gelare possunt: quisque processus et fenestra memoriam adhibet, et post aliquot milia fenestrarum Windows alias creare desinere potest. Si Decoy claudis, omnia decoy desinent.",
+  "lab.all": "Omnia ({n})",
+  "lab.estimate": "{n} decoy circiter {ram} RAM adhibebunt.",
+  "lab.confirm": "Iterum preme ut incipias {n}",
+  "lab.limit": "Windows novos processus incipere desiit post {n}: id est modus systematis.",
+  "running.more": "…et {n} amplius. Prima 120 demonstrantur.",
   "lab.hide": "Hanc tabulam occultare",
   "toast.labUnlocked": "Tabula secreta “Laboratorium” reclusa",
   "toast.labHidden": "Tabula occultata",
   "toast.labDone": "Ludi coepti: {n}",
-
   "tray.show": "Aperire Decoy",
   "tray.stop": "Omnia decoy sistere",
   "tray.quit": "Exire",
-
   "notify.title": "Tempus praeteriit",
   "notify.body": "{name}: {n} min praeterierunt."
 }

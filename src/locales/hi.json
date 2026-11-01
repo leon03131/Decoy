@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "हिन्दी" },
-
+  "_meta": {
+    "name": "हिन्दी"
+  },
   "nav.library": "लाइब्रेरी",
   "nav.favorites": "पसंदीदा",
   "nav.running": "चालू",
   "nav.settings": "सेटिंग्स",
-
   "discord.checking": "जाँच जारी है…",
   "discord.up": "चालू",
   "discord.down": "बंद",
-
   "window.minimize": "छोटा करें",
   "window.maximize": "बड़ा करें",
   "window.close": "बंद करें",
-
   "tag.live": "चालू",
   "tag.noExe": "कोई exe नहीं",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "लॉन्चर",
-
   "lib.title": "लाइब्रेरी",
   "lib.subtitle": "ज्ञात प्रोसेस वाले {n} गेम · {date} को अपडेट किया गया",
   "lib.loading": "गेम डेटाबेस लोड हो रहा है…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "पसंदीदा में जोड़ें",
   "lib.empty.title": "कुछ नहीं मिला",
   "lib.empty.text": "कोई अन्य नाम आज़माएं या “बिना exe वाले गेम दिखाएं” चालू करें।",
-
   "fav.title": "पसंदीदा",
   "fav.count": "{n} गेम",
   "fav.hint": "गेम को स्टार से चिह्नित करें",
   "fav.empty.title": "यहाँ अभी कुछ नहीं है",
   "fav.empty.text": "यहाँ जोड़ने के लिए गेम टाइल पर स्टार दबाएं।",
-
   "detail.process": "प्रोसेस",
   "detail.duration": "कितनी देर चालू रखना है",
   "detail.minutes": "{n} मिनट",
@@ -62,7 +57,6 @@
   "detail.favorite": "पसंदीदा",
   "detail.close": "बंद करें",
   "detail.id": "ID {id}",
-
   "running.title": "चालू",
   "running.count": "{n} सक्रिय Decoy",
   "running.none": "अभी कुछ भी चालू नहीं है",
@@ -70,14 +64,36 @@
   "running.stop": "रोकें",
   "running.empty.title": "कुछ भी चालू नहीं है",
   "running.empty.text": "लाइब्रेरी में कोई गेम खोलें और “Decoy शुरू करें” दबाएं।",
-
   "settings.title": "सेटिंग्स",
   "settings.general": "सामान्य",
   "settings.language": "भाषा",
   "settings.language.desc": "इंटरफ़ेस की भाषा। नई भाषाएं locales फ़ोल्डर में फ़ाइलों के रूप में जोड़ी जाती हैं।",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "डिफ़ॉल्ट अवधि",
-  "settings.defaultTime.desc": "प्रोसेस को कितने मिनट तक चालू रखना है (Discord क्वेस्ट के लिए आमतौर पर 15 मिनट चाहिए)।",
+  "settings.defaultTime.desc": "प्रक्रिया को कितने मिनट तक चालू रखना है। डिफ़ॉल्ट 16 है, 15 नहीं: Discord खोज (quests) 15 मिनट खेलने के लिए कहती हैं, लेकिन Discord को किसी नए गेम को पहचानने में एक मिनट तक का समय लग सकता है, इसलिए ठीक 15 कम पड़ जाता है।",
+  "settings.smartTimer": "स्मार्ट टाइमर",
+  "settings.smartTimer.desc": "उलटी गिनती तब शुरू होती है जब Discord ने decoy को पहचान लिया हो, न कि जब आप इसे शुरू करते हैं। यह जानने के लिए, ऐप Discord के स्थानीय लॉग से केवल चल रहे गेम के बारे में पंक्तियाँ पढ़ता है; कुछ भी संग्रहीत या कहीं भेजा नहीं जाता है।",
+  "settings.updates": "अपडेट",
+  "settings.checkNow": "अभी जांचें",
+  "settings.autoUpdate": "स्वचालित अपडेट",
+  "settings.autoUpdate.desc": "स्टार्टअप पर और हर 6 घंटे में GitHub की जांच करें और पृष्ठभूमि में नए संस्करण डाउनलोड करें। स्थापना हमेशा आपकी पुष्टि की प्रतीक्षा करती है, और फ़ाइलों को उनके डिजिटल हस्ताक्षर द्वारा सत्यापित किया जाता है।",
+  "update.current": "स्थापित संस्करण {v}",
+  "update.checking": "जाँच हो रही है…",
+  "update.uptodate": "आप नवीनतम संस्करण पर हैं",
+  "update.available": "संस्करण {v} उपलब्ध है",
+  "update.downloading": "संस्करण {v} डाउनलोड हो रहा है… {p}%",
+  "update.ready": "संस्करण {v} स्थापित करने के लिए तैयार है",
+  "update.installing": "स्थापित और पुनरारंभ हो रहा है…",
+  "update.download": "डाउनलोड करें",
+  "update.restart": "पुनरारंभ करें और अपडेट करें",
+  "update.later": "बाद में",
+  "update.notes": "नया क्या है",
+  "update.running": "चल रहे Decoy ({n}) बंद हो जाएंगे।",
+  "update.error": "अपडेट नहीं हो सका: {e}",
+  "detail.waiting": "Discord की प्रतीक्षा की जा रही है",
+  "detail.waitingNote": "Discord को किसी गेम को पहचानने में एक मिनट तक का समय लगता है। उलटी गिनती तब शुरू होती है जब वह decoy को देख लेता है।",
+  "detail.detected": "Discord ने decoy को पहचान लिया",
+  "detail.assumed": "Discord ने इसकी पुष्टि नहीं की है, समय की गणना वैसे भी की जाती है।",
   "settings.autoStop": "टाइमर पर रोकें",
   "settings.autoStop.desc": "समय समाप्त होने पर Decoy अपने आप बंद हो जाता है।",
   "settings.notify": "पूरा होने पर सूचित करें",
@@ -97,7 +113,6 @@
   "settings.files": "फ़ाइलें",
   "settings.open": "खोलें",
   "settings.legal": "Decoy आपके Discord टोकन का उपयोग नहीं करता है और आपके लिए क्वेस्ट स्वीकार नहीं करता है। किसी गेम प्रोसेस की नकल करना Discord के नियमों के विरुद्ध हो सकता है, इसे अपने जोखिम पर उपयोग करें।",
-
   "toast.launched": "“{name}” {n} मिनट के लिए शुरू किया गया। Discord को लगभग 15 सेकंड में इसका पता चल जाना चाहिए।",
   "toast.stopped": "Decoy रोका गया",
   "toast.allStopped": "सभी Decoy रोके गए",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} गेम में exe फ़ाइलें जोड़ी गईं: {names}",
   "toast.refreshAdded": "डेटाबेस अपडेट हुआ: +{n} नए गेम",
   "toast.refreshUpToDate": "डेटाबेस पहले से ही अप-टू-डेट है",
-
   "nav.lab": "लैब",
   "lab.title": "लैब",
   "lab.subtitle": "एक गुप्त टैब: एक साथ कई Decoy शुरू करता है।",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} गेम शुरू करें",
   "lab.launching": "{total} में से {done} शुरू हो रहा है…",
   "lab.cancel": "रद्द करें",
-  "lab.warn": "प्रत्येक Decoy विंडो के साथ एक अलग प्रोसेस है। एक साथ 200–300 से अधिक आपके कंप्यूटर को धीमा कर सकते हैं, अधिकतम सीमा {max} है।",
+  "lab.warn": "प्रत्येक decoy एक विंडो के साथ एक अलग प्रक्रिया है। एक साथ बहुत सारे आपके कंप्यूटर को फ़्रीज़ कर सकते हैं: प्रत्येक प्रक्रिया और विंडो मेमोरी का उपयोग करती है, और कुछ हज़ार विंडो के बाद Windows और अधिक बनाना बंद कर सकता है। यदि आप Decoy बंद करते हैं, तो सभी decoy बंद हो जाते हैं।",
+  "lab.all": "सभी ({n})",
+  "lab.estimate": "{n} decoy लगभग {ram} RAM का उपयोग करेंगे।",
+  "lab.confirm": "{n} शुरू करने के लिए फिर से क्लिक करें",
+  "lab.limit": "Windows ने {n} के बाद नई प्रक्रियाएं शुरू करना बंद कर दिया: यह सिस्टम की सीमा है।",
+  "running.more": "…और {n} अन्य। पहले 120 दिखाए गए हैं।",
   "lab.hide": "इस टैब को छिपाएं",
   "toast.labUnlocked": "गुप्त “लैब” टैब अनलॉक हो गया",
   "toast.labHidden": "टैब छिपा दिया गया",
   "toast.labDone": "शुरू किए गए गेम: {n}",
-
   "tray.show": "Decoy खोलें",
   "tray.stop": "सभी Decoy रोकें",
   "tray.quit": "बाहर निकलें",
-
   "notify.title": "समय समाप्त",
   "notify.body": "{name}: {n} मिनट पूरे हो गए हैं।"
 }

@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Romani čhib" },
-
+  "_meta": {
+    "name": "Romani čhib"
+  },
   "nav.library": "Biblioteka",
   "nav.favorites": "Preferirime",
   "nav.running": "Phaćardo",
   "nav.settings": "Ajusturură",
-
   "discord.checking": "Rodindoj…",
   "discord.up": "Phaćardo",
   "discord.down": "Na-i phaćardo",
-
   "window.minimize": "Bithov tele",
   "window.maximize": "Vazde opre",
   "window.close": "Phand",
-
   "tag.live": "Phaćardo",
   "tag.noExe": "nane exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Biblioteka",
   "lib.subtitle": "{n} khelematǎ prinžarde procesosa · nevočharindoj {date}",
   "lib.loading": "Lidžandola bază le khelematengi…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Thov ande preferirime",
   "lib.empty.title": "Khańik na arakhadilo",
   "lib.empty.text": "Zurav kaver anav vaj phrav “Sikav khelematǎ bi-exe”.",
-
   "fav.title": "Preferirime",
   "fav.count": "{n} khelematǎ",
   "fav.hint": "Semnosar khelematǎ stelarăsa",
   "fav.empty.title": "Akana nane khańik kathe",
   "fav.empty.text": "Dikh thov telal e stelica pe khelipen te thoves les kathe.",
-
   "detail.process": "Proceso",
   "detail.duration": "Sode vrama te aćhel",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Preferirime",
   "detail.close": "Phand",
   "detail.id": "ID {id}",
-
   "running.title": "Phaćardo",
   "running.count": "{n} aktive decoy-ură",
   "running.none": "Khańik na butǎrel akana",
@@ -70,14 +64,36 @@
   "running.stop": "Aćhav",
   "running.empty.title": "Khańik na phaćardo",
   "running.empty.text": "Phrav jekh khelipen andi biblioteka thaj de pe “Phaćar decoy”.",
-
   "settings.title": "Ajusturură",
   "settings.general": "Generalo",
   "settings.language": "Čhib",
   "settings.language.desc": "Interfazoski čhib. Neve čhibă si thovde sar dokumentură ando dosari locales.",
   "settings.stubs": "Decoy-ură",
   "settings.defaultTime": "Prestabilime vrama",
-  "settings.defaultTime.desc": "Kecika minutură te del o proceso (Discord misionură trubun de buter 15).",
+  "settings.defaultTime.desc": "Keci minutură te avel džiuvdi i procèsa. Prestabilime si 16, na 15: Discord misie roden 15 minutură khelipnasqo, numa Discord trebul dži k-jekh minuto te dikhel nevo kheliben, pala ada 15 cira si.",
+  "settings.smartTimer": "Godyaver timer",
+  "settings.smartTimer.desc": "Gindipen astarel kana Discord dikhlă o decoy, na kana tu phaćares les. Te džanel adava, i aplikàcia ginel numa le rândură pa le džiuvde khelipnasqo ando Discord-osqo lokalno žurnalo; khanchi na thovel pe vaj bićhalel pe aver thane.",
+  "settings.updates": "Nevimata",
+  "settings.checkNow": "Rode akana",
+  "settings.autoUpdate": "Korkorutne nevimata",
+  "settings.autoUpdate.desc": "Dikh pe GitHub kana astares thaj sako 6 ore thaj le tele neve versiuni palal. Instalàcia ažukärel sajekh ćiri pativ, thaj le failură si verifikime le elektronike semnosanca.",
+  "update.current": "Instalime versia {v}",
+  "update.checking": "Rodindoj…",
+  "update.uptodate": "Si tut i maj nevi versiùna",
+  "update.available": "I versiùna {v} si goti",
+  "update.downloading": "Lel tele versiùna {v}… {p}%",
+  "update.ready": "Versiùna {v} si goti te ovel instalime",
+  "update.installing": "Instalil pe thaj phaćarel pe pale…",
+  "update.download": "Le tele",
+  "update.restart": "Phaćar pale thaj nevar",
+  "update.later": "Maj palal",
+  "update.notes": "So si nevo",
+  "update.running": "Džiuvde decoy ({n}) ka aćhon.",
+  "update.error": "Nashtisardam te nevaras: {e}",
+  "detail.waiting": "ažukärel Discord",
+  "detail.waitingNote": "Discord trebul dži k-jekh minuto te dikhel o kheliben. O vakto astarel kana dikhel o decoy.",
+  "detail.detected": "Discord dikhlă o decoy",
+  "detail.assumed": "Discord na phendă mišto, o vakto ginel pe sajekh.",
   "settings.autoStop": "Aćhav pe timer",
   "settings.autoStop.desc": "O decoy gata korkoro kana nakhel e vrama.",
   "settings.notify": "Ašun kana gata",
@@ -97,7 +113,6 @@
   "settings.files": "Dokumentură",
   "settings.open": "Phrav",
   "settings.legal": "Decoy na utilizuil ćiro Discord token thaj na prandel misionură vaš tuqe. Te mukhaves proceso šaj si kontra le zakonen Discordeske, utilizisar pe ćiro riziko.",
-
   "toast.launched": "“{name}” phaćardo vaš {n} min. Discord trobul te dikhel les ande 15 sekunde.",
   "toast.stopped": "Decoy aćhavdo",
   "toast.allStopped": "Sā decoy-ură aćhavde",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} khelematǎ lile exe dokumentură: {names}",
   "toast.refreshAdded": "Bază nevočhardo: +{n} neve khelematǎ",
   "toast.refreshUpToDate": "E bază si akana savoro nevo",
-
   "nav.lab": "Laboratori",
   "lab.title": "Laboratori",
   "lab.subtitle": "Jekh garavdi riga: phaćarel but decoy-ură jekhatar.",
@@ -115,16 +129,19 @@
   "lab.launch": "Phaćar {n} khelematǎ",
   "lab.launching": "Phaćardoj {done} andar {total}…",
   "lab.cancel": "Mukh",
-  "lab.warn": "Sako decoy si alaver proceso feliastrasa. Buter sar 200–300 šaj lokhǎrel ćiro komputeri, o maksimalo si {max}.",
+  "lab.warn": "Sako decoy si jekh aversutno procèso ferestrasa. But kethane šaj te astarel ćiro komputèro: sako procèso thaj ferèstra xal memòria, thaj pala but mija ferestre o Windows šaj te na mai kerel avere. Te phandavesa o Decoy, sa le decoy ka aćhon.",
+  "lab.all": "Sa ({n})",
+  "lab.estimate": "{n} decoy ka xan pašal {ram} RAM.",
+  "lab.confirm": "Thov klick pale te phaćares {n}",
+  "lab.limit": "Windows na mai phaćardă neve procèsurä pala {n}: adava si o limiti le sistemasko.",
+  "running.more": "…thaj maj {n}. Pervutne 120 si sikavde.",
   "lab.hide": "Garav kadaja riga",
   "toast.labUnlocked": "Garavdi riga “Laboratori” puterdi",
   "toast.labHidden": "Riga garavdi",
   "toast.labDone": "Phaćarde khelematǎ: {n}",
-
   "tray.show": "Phrav Decoy",
   "tray.stop": "Aćhav savorre decoy-ură",
   "tray.quit": "Iklǒv",
-
   "notify.title": "E vrama nakhli",
   "notify.body": "{name}: {n} min nakhle."
 }

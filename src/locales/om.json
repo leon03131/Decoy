@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Afaan Oromoo" },
-
+  "_meta": {
+    "name": "Afaan Oromoo"
+  },
   "nav.library": "Kuusaa",
   "nav.favorites": "Filatamoo",
   "nav.running": "Hojjechaa jira",
   "nav.settings": "Qindaa'inoota",
-
   "discord.checking": "Mirkaneessaa jira…",
   "discord.up": "Hojjechaa jira",
   "discord.down": "Hojjechaa hin jiru",
-
   "window.minimize": "Gadi xinneessi",
   "window.maximize": "Guddisi",
   "window.close": "Cufi",
-
   "tag.live": "Hojjechaa jira",
   "tag.noExe": "exe hin qabu",
   "tag.exeCount": "exe {n}",
   "tag.launcher": "kaastuu",
-
   "lib.title": "Kuusaa",
   "lib.subtitle": "Taphawwan adeemsa beekamaa qaban {n} · haaromfame {date}",
   "lib.loading": "Kuusaa daataa taphootaa fe'aa jira…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Gara filatamootti dabali",
   "lib.empty.title": "Wanti argame hin jiru",
   "lib.empty.text": "Maqaa biraatiin yaali ykn “Taphoota exe hin qabne agarsiisi” banaa.",
-
   "fav.title": "Filatamoo",
   "fav.count": "taphoota {n}",
   "fav.hint": "Taphoota urjiidhaan mallatteessi",
   "fav.empty.title": "Hammamtiyyuu as hin jiru",
   "fav.empty.text": "Asitti dabalachuuf urjii taayilii taphaa irratti argamu cuqqaasaa.",
-
   "detail.process": "Adeemsa",
   "detail.duration": "Hanga yoomiitti akka turu",
   "detail.minutes": "daqiiqaa {n}",
@@ -62,7 +57,6 @@
   "detail.favorite": "Filatamaa",
   "detail.close": "Cufi",
   "detail.id": "ID {id}",
-
   "running.title": "Hojjechaa jira",
   "running.count": "decoywwan hojjechaa jiran {n}",
   "running.none": "Amma wanti hojjechaa jiru hin jiru",
@@ -70,14 +64,36 @@
   "running.stop": "Dhaabi",
   "running.empty.title": "Wanti hojjechaa jiru hin jiru",
   "running.empty.text": "Kuusaa keessaa tapha tokko banaatii “Decoy jalqabi” cuqqaasaa.",
-
   "settings.title": "Qindaa'inoota",
   "settings.general": "Waliigala",
   "settings.language": "Afaan",
   "settings.language.desc": "Afaan agarsiiftuu. Afaanonni haaraan galmee locales keessatti akka faayilootaatti dabalamu.",
   "settings.stubs": "Decoywwan",
   "settings.defaultTime": "Turtii dursee murtaa'e",
-  "settings.defaultTime.desc": "Adeemsichi daqiiqaa meeqaaf akka turu (hojiiwwan Discord yeroo baay'ee daqiiqaa 15 barbaadu).",
+  "settings.defaultTime.desc": "Adeemsichi daqiiqaa meeqa akka turu. Durtii 16 dha, 15 miti: gaaffileen Discord tapha daqiiqaa 15 gaafatu, garuu Discord tapha haaraa hubachuuf hanga daqiiqaa tokkoo fudhata.",
+  "settings.smartTimer": "Safartuu yeroo qaraa",
+  "settings.smartTimer.desc": "Lakkoofsi duubatti kan jalqabu yeroo Discord decoy argu malee yeroo ati eegaltu miti. Kana baruuf, appichi galmee naannoo Discord irraa sarara tapha hojjetu qofa dubbisa; homtuu hin kuufamu yookiin hin ergamu.",
+  "settings.updates": "Haaromsoota",
+  "settings.checkNow": "Amma qori",
+  "settings.autoUpdate": "Haaromsa ofumaa",
+  "settings.autoUpdate.desc": "Yeroo ka'umsaa fi sa'aatii 6 kessatti yeroo tokko GitHub sakatta'iiti gulantaalee haaraa duubaan buusi. Fe'iinsi yeroo hunda mirkaneessa kee eega, faayiloonni mallattoo dijiitaalaatiin mirkanaa'u.",
+  "update.current": "Gulaalaa fe'ame {v}",
+  "update.checking": "Qorachaa jira…",
+  "update.uptodate": "Gulaalaa dhumara irra jirta",
+  "update.available": "Gulaalaan {v} ni jiraata",
+  "update.downloading": "Gulaalaa {v} buusaa jira… {p}%",
+  "update.ready": "Gulaalaan {v} fe'amuuf qophii dha",
+  "update.installing": "Fe'aa fi irra deebiin kaasaa jira…",
+  "update.download": "Buusi",
+  "update.restart": "Irra deebiin eegaliit haaromsi",
+  "update.later": "Booda",
+  "update.notes": "Maaltu haaraa jira",
+  "update.running": "Decoywwan hojjetan ({n}) ni dhaabbatu.",
+  "update.error": "Haaromsuu hin dandeenye: {e}",
+  "detail.waiting": "Discord eegaa jira",
+  "detail.waitingNote": "Discord tapha hubachuuf hanga daqiiqaa tokkoo fudhata. Lakkoofsi yeroo inni decoy argu jalqaba.",
+  "detail.detected": "Discord decoy argeera",
+  "detail.assumed": "Discord hin mirkaneessine, yeroon ammayyuu lakkaa'amaa jira.",
   "settings.autoStop": "Tiyimeriidhaan dhaabi",
   "settings.autoStop.desc": "Yeroon yemmuu xumuramu decoy ofiin of dhaaba.",
   "settings.notify": "Yoo xumurame beeksisi",
@@ -97,7 +113,6 @@
   "settings.files": "Faayiloota",
   "settings.open": "Bani",
   "settings.legal": "Decoy'n tookenii Discord kee hin fayyadamu, sirraas ta'ee hojiiwwan hin fudhatu. Adeemsa taphaa sobsiisuun seera Discord cabsuu danda'a, itti fayyadama keetiif ofumaa itti gaafatamta.",
-
   "toast.launched": "“{name}” daqiiqaa {n}f jalqabameera. Discord seekondii 15 keessatti beekuu qaba.",
   "toast.stopped": "Decoy dhaabbateera",
   "toast.allStopped": "Decoywwan hundi dhaabbatan",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "Taphoonni {n} faayiloota exe argataniiru: {names}",
   "toast.refreshAdded": "Kuusaan daataa haaromfameera: taphoota haaraa +{n}",
   "toast.refreshUpToDate": "Kuusaan daataa kanaan dura haaromfameera",
-
   "nav.lab": "Laabii",
   "lab.title": "Laabii",
   "lab.subtitle": "Tabii iccitiiti: decoywwan baay'ee al-tokkotti jalqaba.",
@@ -115,16 +129,19 @@
   "lab.launch": "Taphoota {n} jalqabi",
   "lab.launching": "{total} keessaa {done} jalqabaa jira…",
   "lab.cancel": "Dhiisi",
-  "lab.warn": "Decoy tokkoon tokkoon adeemsa addaa foddaa qabudha. Al-tokkotti 200–300 ol kompiitara kee suutessuu danda'a, guddaan danda'amu {max}.",
+  "lab.warn": "Decoy tokkoon tokkoon adeemsa addaa foddaa qabudha. Yeroo tokkotti baay'ee ta'uun kompiitara kee gubu danda'a: adeemsi fi foddaan hundi yaadannoo fayyadamu, foddaawwan kuma muraasa booda Windows haaraa uumuu dhiisu danda'a. Yoo Decoy cufte, decoywwan hundi ni dhaabbatu.",
+  "lab.all": "Hunda ({n})",
+  "lab.estimate": "Decoywwan {n} tilmaamaan {ram} RAM fayyadamu.",
+  "lab.confirm": "{n} jalqabuuf ammas cuqi",
+  "lab.limit": "Windows {n} booda adeemsa haaraa jalqabuu dhaabeera: kun daangaa sirnaati.",
+  "running.more": "…fi kanneen biroo {n}. 120n jalqabaa agarsiifamaniiru.",
   "lab.hide": "Tabii kana dhoksi",
   "toast.labUnlocked": "Tabiin iccitii “Laabii” banameera",
   "toast.labHidden": "Tabiin dhokfameera",
   "toast.labDone": "Taphoonni jalqabaman: {n}",
-
   "tray.show": "Decoy bani",
   "tray.stop": "Decoywwan hundumaa dhaabi",
   "tray.quit": "Bahi",
-
   "notify.title": "Yeroon dhumateera",
   "notify.body": "{name}: daqiiqaan {n} darbeera."
 }

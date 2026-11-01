@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Gàidhlig" },
-
+  "_meta": {
+    "name": "Gàidhlig"
+  },
   "nav.library": "Leabharlann",
   "nav.favorites": "Annsachdan",
   "nav.running": "A' ruith",
   "nav.settings": "Roghainnean",
-
   "discord.checking": "A' sgrùdadh…",
   "discord.up": "A' ruith",
   "discord.down": "Chan eil a' ruith",
-
   "window.minimize": "Lùghdaich",
   "window.maximize": "Meudaich",
   "window.close": "Dùin",
-
   "tag.live": "A' ruith",
   "tag.noExe": "gun exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "lannsair",
-
   "lib.title": "Leabharlann",
   "lib.subtitle": "{n} geamannan le pròiseas aithnichte · air ùrachadh {date}",
   "lib.loading": "A' luchdachadh stòr-dàta nan geamannan…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Cuir ris na h-annsachdan",
   "lib.empty.title": "Cha deach dad a lorg",
   "lib.empty.text": "Feuch ainm eile no cuir air “Seall geamannan gun exe”.",
-
   "fav.title": "Annsachdan",
   "fav.count": "{n} geamannan",
   "fav.hint": "Comharraich geamannan le rionnag",
   "fav.empty.title": "Chan eil dad an seo fhathast",
   "fav.empty.text": "Brùth air an rionnag air leacag geama gus a chur an seo.",
-
   "detail.process": "Pròiseas",
   "detail.duration": "Dè cho fad ri a chumail",
   "detail.minutes": "{n} mion",
@@ -62,7 +57,6 @@
   "detail.favorite": "Annsachd",
   "detail.close": "Dùin",
   "detail.id": "ID {id}",
-
   "running.title": "A' ruith",
   "running.count": "{n} decoys gnìomhach",
   "running.none": "Chan eil dad a' ruith an-dràsta",
@@ -70,14 +64,36 @@
   "running.stop": "Cuir stad air",
   "running.empty.title": "Chan eil dad a' ruith",
   "running.empty.text": "Fosgail geama san leabharlann agus brùth air “Tòisich Decoy”.",
-
   "settings.title": "Roghainnean",
   "settings.general": "Coitcheann",
   "settings.language": "Cànan",
   "settings.language.desc": "Cànan an eadar-aghaidh. Thèid cànanan ùra a chur ris mar fhaidhlichean ann am pasgan nan cànan (locales).",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Faid bhunaiteach",
-  "settings.defaultTime.desc": "Cia mheud mionaid a thèid am pròiseas a chumail (mar as trice feumaidh ceistean Discord 15).",
+  "settings.defaultTime.desc": "Cia mheud mionaid a thèid am pròiseas a chumail. 'S e 16 an roghainn bhunaiteach, chan e 15: tha iarrtasan Discord ag iarraidh 15 mionaidean de chluich, ach feumaidh Discord suas ri mionaid gus geama ùr a thoirt an aire, mar sin tha dìreach 15 ro ghoirid.",
+  "settings.smartTimer": "Tìmeir tapaidh",
+  "settings.smartTimer.desc": "Tòisichidh an cunntadh sìos nuair a chì Discord an Decoy, chan ann nuair a thòisicheas tu e. Gus seo a lorg, chan eil an aplacaid a' leughadh ach na loidhnichean mun gheama a tha a' ruith à loga ionadail Discord; chan eil dad air a stòradh no air a chur an àite sam bith.",
+  "settings.updates": "Ùrachaidhean",
+  "settings.checkNow": "Thoir sùil a-nis",
+  "settings.autoUpdate": "Ùrachaidhean fèin-obrachail",
+  "settings.autoUpdate.desc": "Thoir sùil air GitHub nuair a thòisicheas e agus gach 6 uairean a thìde agus luchdaich a-nuas tionndaidhean ùra air a' chùlaibh. Bidh stàladh an-còmhnaidh a' feitheamh ris a' dhearbhadh agad, agus tha faidhlichean air an dearbhadh leis an ainm-sgrìobhte didseatach aca.",
+  "update.current": "Tionndadh stàlaichte {v}",
+  "update.checking": "A' sgrùdadh…",
+  "update.uptodate": "Tha an tionndadh as ùire agad",
+  "update.available": "Tha tionndadh {v} ri fhaighinn",
+  "update.downloading": "A' luchdachadh a-nuas tionndadh {v}… {p}%",
+  "update.ready": "Tha tionndadh {v} deiseil airson a stàladh",
+  "update.installing": "A' stàladh agus ag ath-thòiseachadh…",
+  "update.download": "Luchdaich a-nuas",
+  "update.restart": "Ath-thòisich agus ùraich",
+  "update.later": "Uair eile",
+  "update.notes": "Dè tha ùr",
+  "update.running": "Stadaidh Decoy a tha a' ruith ({n}).",
+  "update.error": "Cha b' urrainn ùrachadh: {e}",
+  "detail.waiting": "a' feitheamh ri Discord",
+  "detail.waitingNote": "Feumaidh Discord suas ri mionaid gus geama a thoirt an aire. Tòisichidh an cunntadh sìos nuair a chì e an Decoy.",
+  "detail.detected": "Thug Discord an Decoy an aire",
+  "detail.assumed": "Cha do dhearbh Discord e, tha an ùine ga cunntadh co-dhiù.",
   "settings.autoStop": "Cuir stad leis an tìmear",
   "settings.autoStop.desc": "Bidh Decoy a' stad leis fhèin nuair a bhios an ùine seachad.",
   "settings.notify": "Cuir fios nuair a bhios e deiseil",
@@ -97,7 +113,6 @@
   "settings.files": "Faidhlichean",
   "settings.open": "Fosgail",
   "settings.legal": "Chan eil Decoy a' cleachdadh an tòcan Discord agad agus cha ghabh e ri ceistean às do leth. Dh'fhaodadh gun tèid mealladh phròiseasan geama an aghaidh riaghailtean Discord; cleachd e air do chunnart fhèin.",
-
   "toast.launched": "Chaidh “{name}” a thòiseachadh fad {n} mion. Bu chòir do Discord a mhothachadh an ceann timcheall air 15 diogan.",
   "toast.stopped": "Chaidh stad a chur air Decoy",
   "toast.allStopped": "Chaidh stad a chur air a h-uile Decoy",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "Fhuair {n} geamannan faidhlichean exe: {names}",
   "toast.refreshAdded": "Chaidh an stòr-dàta ùrachadh: +{n} geamannan ùra",
   "toast.refreshUpToDate": "Tha an stòr-dàta mar-thà cho ùr 's a ghabhas",
-
   "nav.lab": "Obair-lann",
   "lab.title": "Obair-lann",
   "lab.subtitle": "Taba dìomhair: a' tòiseachadh mòran decoys aig an aon àm.",
@@ -115,16 +129,19 @@
   "lab.launch": "Tòisich {n} geamannan",
   "lab.launching": "A' tòiseachadh {done} à {total}…",
   "lab.cancel": "Sguir dheth",
-  "lab.warn": "Tha gach decoy 'na phròiseas fa leth le uinneag. Ma bhios barrachd air 200–300 ann aig an aon àm, dh'fhaodadh gun cuir sin maill air a' choimpiutair agad, 's e {max} an ìre as motha.",
+  "lab.warn": "Tha gach Decoy na phròiseas fa leth le uinneag. Faodaidh cus dhiubh aig an aon àm an coimpiutair agad a reothadh: bidh gach pròiseas agus uinneag a' cleachdadh cuimhne, agus às dèidh beagan mhìltean de dh'uinneagan faodaidh Windows stad a chuir air feadhainn eile a chruthachadh. Ma dhùineas tu Decoy, stadaidh a h-uile Decoy.",
+  "lab.all": "A h-uile ({n})",
+  "lab.estimate": "Cleachdaidh {n} Decoy mu {ram} de RAM.",
+  "lab.confirm": "Cliog a-rithist gus {n} a thòiseachadh",
+  "lab.limit": "Sguir Windows de phròiseasan ùra a thòiseachadh às dèidh {n}: 's e sin crìoch an t-siostaim.",
+  "running.more": "…agus {n} a bharrachd. Tha a' chiad 120 air an sealltainn.",
   "lab.hide": "Falaich an taba seo",
   "toast.labUnlocked": "Chaidh an taba dìomhair “Obair-lann” fhuasgladh",
   "toast.labHidden": "Chaidh an taba fhalach",
   "toast.labDone": "Geamannan air an tòiseachadh: {n}",
-
   "tray.show": "Fosgail Decoy",
   "tray.stop": "Cuir stad air a h-uile decoy",
   "tray.quit": "Fàg an-seo",
-
   "notify.title": "Tha an ùine seachad",
   "notify.body": "{name}: Tha {n} mion air a dhol seachad."
 }

@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Euskara" },
-
+  "_meta": {
+    "name": "Euskara"
+  },
   "nav.library": "Liburutegia",
   "nav.favorites": "Gogokoak",
   "nav.running": "Martxan",
   "nav.settings": "Ezarpenak",
-
   "discord.checking": "Egiaztatzen…",
   "discord.up": "Martxan",
   "discord.down": "Ez dago martxan",
-
   "window.minimize": "Minimizatu",
   "window.maximize": "Maximizatu",
   "window.close": "Itxi",
-
   "tag.live": "Martxan",
   "tag.noExe": "exe gabe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "abiarazlea",
-
   "lib.title": "Liburutegia",
   "lib.subtitle": "Prozesu ezaguna duten {n} joko · eguneratua: {date}",
   "lib.loading": "Jokoen datu-basea kargatzen…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Gehitu gogokoetara",
   "lib.empty.title": "Ez da ezer aurkitu",
   "lib.empty.text": "Saiatu beste izen batekin edo gaitu «Erakutsi exe gabeko jokoak».",
-
   "fav.title": "Gogokoak",
   "fav.count": "{n} joko",
   "fav.hint": "Markatu jokoak izar batekin",
   "fav.empty.title": "Hemen ez dago ezer oraindik",
   "fav.empty.text": "Sakatu izarra jokoaren lauzan hona gehitzeko.",
-
   "detail.process": "Prozesua",
   "detail.duration": "Zenbat denboraz mantendu",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Gogokoa",
   "detail.close": "Itxi",
   "detail.id": "ID {id}",
-
   "running.title": "Martxan",
   "running.count": "{n} Decoy aktibo",
   "running.none": "Ez dago ezer martxan une honetan",
@@ -70,14 +64,36 @@
   "running.stop": "Gelditu",
   "running.empty.title": "Ez dago ezer martxan",
   "running.empty.text": "Ireki joko bat liburutegian eta sakatu «Hasi Decoy».",
-
   "settings.title": "Ezarpenak",
   "settings.general": "Orokorra",
   "settings.language": "Hizkuntza",
   "settings.language.desc": "Interfazearen hizkuntza. Hizkuntza berriak locales karpetan fitxategi gisa gehitzen dira.",
   "settings.stubs": "Decoy-ak",
   "settings.defaultTime": "Iraupen lehenetsia",
-  "settings.defaultTime.desc": "Zenbat minutuz mantendu prozesua (Discord misioek 15 behar izaten dituzte).",
+  "settings.defaultTime.desc": "Zenbat minutuz mantendu prozesua martxan. Lehenetsia 16 da, ez 15: Discord-eko misioek 15 minutuko partida eskatzen dute, baina Discord-ek minutu bat arte behar du joko berri batez ohartzeko; beraz, zehazki 15 motz geratzen da.",
+  "settings.smartTimer": "Tenporizadore adimenduna",
+  "settings.smartTimer.desc": "Atzerako kontaketa Discord-ek Decoy hautematean hasten da, ez zuk abiaraztean. Hori jakiteko, aplikazioak Discord-en erregistro lokaletik martxan dagoen jokoari buruzko lerroak soilik irakurtzen ditu; ez da ezer gordetzen ezta inora bidaltzen ere.",
+  "settings.updates": "Eguneraketak",
+  "settings.checkNow": "Egiaztatu orain",
+  "settings.autoUpdate": "Eguneraketa automatikoak",
+  "settings.autoUpdate.desc": "Egiaztatu GitHub abioan eta 6 orduz behin, eta deskargatu bertsio berriak atzeko planoan. Instalatzeak beti zure berrespena itxaroten du, eta fitxategiak sinadura digitalaren bidez egiaztatzen dira.",
+  "update.current": "Instalatutako bertsioa {v}",
+  "update.checking": "Egiaztatzen…",
+  "update.uptodate": "Azken bertsioa daukazu",
+  "update.available": "{v} bertsioa eskuragarri dago",
+  "update.downloading": "{v} bertsioa deskargatzen… {p}%",
+  "update.ready": "{v} bertsioa instalatzeko prest dago",
+  "update.installing": "Instalatzen eta berrabiarazten…",
+  "update.download": "Deskargatu",
+  "update.restart": "Berrabiarazi eta eguneratu",
+  "update.later": "Geroago",
+  "update.notes": "Zer da berria",
+  "update.running": "Martxan dauden Decoy-ak ({n}) gelditu egingo dira.",
+  "update.error": "Ezin izan da eguneratu: {e}",
+  "detail.waiting": "Discord-en zain",
+  "detail.waitingNote": "Discord-ek minutu bat arte behar du joko batez ohartzeko. Atzerako kontaketa Decoy ikusten duenean hasten da.",
+  "detail.detected": "Discord-ek Decoy hauteman du",
+  "detail.assumed": "Discord-ek ez du baieztatu, denbora hala ere zenbatzen da.",
   "settings.autoStop": "Gelditu tenporizadorearekin",
   "settings.autoStop.desc": "Decoy-a bere kabuz amaitzen da denbora bukatzean.",
   "settings.notify": "Jakinarazi amaitutakoan",
@@ -97,7 +113,6 @@
   "settings.files": "Fitxategiak",
   "settings.open": "Ireki",
   "settings.legal": "Decoy-k ez du zure Discord tokena erabiltzen eta ez ditu misioak zure ordez onartzen. Joko-prozesu bat simulatzeak Discord-en arauak urratu ditzake, erabili zure ardurapean.",
-
   "toast.launched": "«{name}» abiarazi da {n} minuturako. Discord-ek 15 segundo inguru barru antzeman beharko luke.",
   "toast.stopped": "Decoy geldituta",
   "toast.allStopped": "Decoy guztiak gelditu dira",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} jokok exe fitxategiak lortu dituzte: {names}",
   "toast.refreshAdded": "Datu-basea eguneratuta: +{n} joko berri",
   "toast.refreshUpToDate": "Datu-basea egunean dago jada",
-
   "nav.lab": "Laborategia",
   "lab.title": "Laborategia",
   "lab.subtitle": "Fitxa sekretua: Decoy asko abiarazten ditu aldi berean.",
@@ -115,16 +129,19 @@
   "lab.launch": "Abiarazi {n} joko",
   "lab.launching": "{done} / {total} abiarazten…",
   "lab.cancel": "Utzi",
-  "lab.warn": "Decoy bakoitza leihodun prozesu bereizi bat da. 200–300 baino gehiagok aldi berean ordenagailua moteldu dezakete, gehienezkoa {max} da.",
+  "lab.warn": "Decoy bakoitza leihodun prozesu bereizia da. Gehiegi batera abiarazteak ordenagailua izoztu dezake: prozesu eta leiho bakoitzak memoria erabiltzen du, eta milaka leiho batzuen ondoren Windows-ek berriak sortzeari utz diezaioke. Decoy ixten baduzu, Decoy guztiak geldituko dira.",
+  "lab.all": "Guztiak ({n})",
+  "lab.estimate": "{n} Decoy-k gutxi gorabehera {ram} RAM erabiliko dute.",
+  "lab.confirm": "Egin klik berriro {n} abiarazteko",
+  "lab.limit": "Windows-ek prozesu berriak abiarazteari utzi dio {n} eta gero: hori da sistemaren muga.",
+  "running.more": "…eta beste {n}. Lehenengo 120ak erakusten dira.",
   "lab.hide": "Ezkutatu fitxa hau",
   "toast.labUnlocked": "«Laborategia» fitxa sekretua desblokeatu da",
   "toast.labHidden": "Fitxa ezkutatuta",
   "toast.labDone": "Abiarazitako jokoak: {n}",
-
   "tray.show": "Ireki Decoy",
   "tray.stop": "Gelditu Decoy guztiak",
   "tray.quit": "Irten",
-
   "notify.title": "Denbora amaitu da",
   "notify.body": "{name}: {n} minutu igaro dira."
 }

@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "chiShona" },
-
+  "_meta": {
+    "name": "chiShona"
+  },
   "nav.library": "Raibhurari",
   "nav.favorites": "Zvinodiwa",
   "nav.running": "Zvirikushanda",
   "nav.settings": "Zvirongwa",
-
   "discord.checking": "Kutarisa…",
   "discord.up": "Irikushanda",
   "discord.down": "Haisi kushanda",
-
   "window.minimize": "Deredza",
   "window.maximize": "Kudza",
   "window.close": "Vhara",
-
   "tag.live": "Irikushanda",
   "tag.noExe": "hapana exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "chivhura",
-
   "lib.title": "Raibhurari",
   "lib.subtitle": "Mitambo {n} ine process inozivikanwa · yakagadziridzwa {date}",
   "lib.loading": "Kurodha database yemitambo…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Isa kune zvinodiwa",
   "lib.empty.title": "Hapana chawanikwa",
   "lib.empty.text": "Edza rimwe zita kana batidza “Ratidza mitambo isina exe”.",
-
   "fav.title": "Zvinodiwa",
   "fav.count": "Mitambo {n}",
   "fav.hint": "Maka mitambo nenyeredzi",
   "fav.empty.title": "Hapasati pane chinhu pano",
   "fav.empty.text": "Dzvanya nyeredzi pane kadhi remutambo kuti riuye pano.",
-
   "detail.process": "Process",
   "detail.duration": "Nguva yekuchengeta ichimhanya",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Zvinodiwa",
   "detail.close": "Vhara",
   "detail.id": "ID {id}",
-
   "running.title": "Zvirikushanda",
   "running.count": "Ma-decoy {n} arikushanda",
   "running.none": "Hapana chirikushanda panguva ino",
@@ -70,14 +64,36 @@
   "running.stop": "Misa",
   "running.empty.title": "Hapana chirikushanda",
   "running.empty.text": "Vhura mutambo mu-raibhurari wotsikirira “Tanga decoy”.",
-
   "settings.title": "Zvirongwa",
   "settings.general": "Zvakajairika",
   "settings.language": "Mutauro",
   "settings.language.desc": "Mutauro we-interface. Mitauro mitsva inoiswa semafaira mufolda ye-locales.",
   "settings.stubs": "Ma-decoy",
   "settings.defaultTime": "Nguva yakasarudzwa",
-  "settings.defaultTime.desc": "Maminitsi mangani ekuchengeta process ichimhanya (ma-quest eDiscord anowanzoda 15).",
+  "settings.defaultTime.desc": "Maminitsi mangani ekuchengeta muitiro. Yakasarudzwa i16, kwete 15: ma-quest eDiscord anokumbira maminitsi 15 ekutamba, asi Discord inoda kusvika kuminiti kuti ione mutambo mutsva, saka 15 chaiyo haikwani.",
+  "settings.smartTimer": "Nguva yakangwara (smart timer)",
+  "settings.smartTimer.desc": "Kuverenga nguva kunotanga kana Discord yaona decoy, kwete paunoitanga. Kuti izive izvozvo, purogiramu inoverenga mitsara chete pamusoro pemutambo uri kumhanya kubva mu-log yeDiscord yepakombiyuta yako; hapana chinochengetwa kana kutumirwa kumwe.",
+  "settings.updates": "Zvigadziriso zvitsva",
+  "settings.checkNow": "Tarisa izvozvi",
+  "settings.autoUpdate": "Zvigadziriso zvinozvaitika",
+  "settings.autoUpdate.desc": "Tarisa GitHub pakutanga uye maawa 6 ega ega wotora shanduro itsva kumashure. Kuisa kunomirira mvumo yako nguva dzose, uye mafaira anotsigirwa nesiginecha yadzo yedhijitari.",
+  "update.current": "Shanduro yakaiswa {v}",
+  "update.checking": "Kutarisa…",
+  "update.uptodate": "Urikushandisa shanduro yazvino",
+  "update.available": "Shanduro {v} yavepo",
+  "update.downloading": "Kutora shanduro {v}… {p}%",
+  "update.ready": "Shanduro {v} yagadzirira kuiswa",
+  "update.installing": "Kuisa nekutangazve…",
+  "update.download": "Tora",
+  "update.restart": "Tangazve uye gadzirisa",
+  "update.later": "Gare gare",
+  "update.notes": "Zvitsva",
+  "update.running": "Decoy dziri kushanda ({n}) dzichamiswa.",
+  "update.error": "Haikwanise kugadzirisa: {e}",
+  "detail.waiting": "kumirira Discord",
+  "detail.waitingNote": "Discord inoda kusvika kuminiti kuti ione mutambo. Kuverenga nguva kunotanga kana yaona decoy.",
+  "detail.detected": "Discord yaona decoy",
+  "detail.assumed": "Discord haina kusimbisa, asi nguva inoverengwa zvakadaro.",
   "settings.autoStop": "Misa pachishandiswa nguva",
   "settings.autoStop.desc": "Decoy inozvimisa yega kana nguva yapera.",
   "settings.notify": "Zivisa kana zvapera",
@@ -97,7 +113,6 @@
   "settings.files": "Mafaira",
   "settings.open": "Vhura",
   "settings.legal": "Decoy haishandise token yako yeDiscord uye haigamuchire ma-quest panzvimbo pako. Kutevedzera process yemutambo kunogona kupesana nemitemo yeDiscord, shandisa uchiziva ngozi dzacho.",
-
   "toast.launched": "“{name}” yatanga kwemaminitsi {n}. Discord inofanira kuiona mukati memasekonzi anenge 15.",
   "toast.stopped": "Decoy yamiswa",
   "toast.allStopped": "Ma-decoy ese amiswa",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "Mitambo {n} yawana mafaira e-exe: {names}",
   "toast.refreshAdded": "Database yagadziridzwa: +{n} mitambo mitsva",
   "toast.refreshUpToDate": "Database yakatogadziridzwa kare",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "Tebhu yakavanzika: inotanga ma-decoy akawanda kamwe chete.",
@@ -115,16 +129,19 @@
   "lab.launch": "Tanga mitambo {n}",
   "lab.launching": "Kutanga {done} pa-{total}…",
   "lab.cancel": "Kanzura",
-  "lab.warn": "Decoy yega yega i-process yakazvimirira ine hwindo. Kupfuura 200–300 kamwe chete kunogona kunonotsa kombiyuta yako, huwandu hwepamusoro ndi-{max}.",
+  "lab.warn": "Decoy yega yega inzira yakazvimirira ine hwindo rayo. Dzawandisa panguva imwe zvinogona kumisa komputa yako kushanda: nzira nehwindo rega rega zvinoshandisa ndangariro (memory), uye mushure mezviuru zvehwindo Windows inogona kurega kugadzira mamwe. Ukavhara Decoy, decoy dzese dzinomira.",
+  "lab.all": "Dzese ({n})",
+  "lab.estimate": "Ma-decoy {n} achashandisa anenge {ram} yeRAM.",
+  "lab.confirm": "Dzvanya zvakare kuti utange {n}",
+  "lab.limit": "Windows yamira kutanga nzira itsva mushure me-{n}: ndiwo muganhu we-system.",
+  "running.more": "…uye mamwe {n}. 120 yekutanga inoratidzwa.",
   "lab.hide": "Vanza tebhu iyi",
   "toast.labUnlocked": "Tebhu yakavanzika ye“Lab” yavhurwa",
   "toast.labHidden": "Tebhu yavanziwa",
   "toast.labDone": "Mitambo yatanga: {n}",
-
   "tray.show": "Vhura Decoy",
   "tray.stop": "Misa ma-decoy ese",
   "tray.quit": "Buda",
-
   "notify.title": "Nguva yapera",
   "notify.body": "{name}: maminitsi {n} apfuura."
 }

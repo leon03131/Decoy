@@ -34,12 +34,30 @@ export interface RunInfo {
   pid: number;
   startedMs: number;
   durationS: number;
+  /** When the countdown began; null while a smart decoy is still waiting for Discord to notice it. */
+  countingFromMs: number | null;
+  /** Discord confirmed that it saw the decoy. */
+  detected: boolean;
+  /** The countdown waits for Discord's confirmation. */
+  smart: boolean;
+}
+
+export interface UpdateInfo {
+  version: string;
+  current: string;
+  notes: string | null;
+  /** the files are already downloaded and verified */
+  ready: boolean;
 }
 
 export const api = {
   getGames: () => invoke<GamesPayload>("get_games"),
   refreshGames: () => invoke<GamesPayload>("refresh_games"),
-  launch: (a: { gameId: string; gameName: string; exe: string; minutes: number; autoStop: boolean; notify: boolean; notifyTitle: string; notifyBody: string }) =>
+  checkUpdate: () => invoke<UpdateInfo | null>("check_update"),
+  downloadUpdate: () => invoke<void>("download_update"),
+  installUpdate: () => invoke<void>("install_update"),
+  openUrl: (url: string) => invoke<void>("open_url", { url }),
+  launch: (a: { gameId: string; gameName: string; exe: string; minutes: number; autoStop: boolean; notify: boolean; smart: boolean; notifyTitle: string; notifyBody: string }) =>
     invoke<RunInfo>("launch", a),
   stop: (key: string) => invoke<void>("stop", { key }),
   stopAll: () => invoke<void>("stop_all"),

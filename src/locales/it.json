@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Italiano" },
-
+  "_meta": {
+    "name": "Italiano"
+  },
   "nav.library": "Libreria",
   "nav.favorites": "Preferiti",
   "nav.running": "In esecuzione",
   "nav.settings": "Impostazioni",
-
   "discord.checking": "Controllo…",
   "discord.up": "In esecuzione",
   "discord.down": "Non in esecuzione",
-
   "window.minimize": "Riduci a icona",
   "window.maximize": "Ingrandisci",
   "window.close": "Chiudi",
-
   "tag.live": "In esecuzione",
   "tag.noExe": "senza exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Libreria",
   "lib.subtitle": "{n} giochi con processo noto · aggiornato il {date}",
   "lib.loading": "Caricamento del database dei giochi…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Aggiungi ai preferiti",
   "lib.empty.title": "Nessun risultato trovato",
   "lib.empty.text": "Prova con un altro nome o attiva «Mostra giochi senza exe».",
-
   "fav.title": "Preferiti",
   "fav.count": "{n} giochi",
   "fav.hint": "Contrassegna i giochi con una stella",
   "fav.empty.title": "Non c'è ancora nulla qui",
   "fav.empty.text": "Premi la stella nel riquadro di un gioco per aggiungerlo qui.",
-
   "detail.process": "Processo",
   "detail.duration": "Quanto tempo mantenerlo",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Preferito",
   "detail.close": "Chiudi",
   "detail.id": "ID {id}",
-
   "running.title": "In esecuzione",
   "running.count": "{n} esche attive",
   "running.none": "Al momento non c'è nulla in esecuzione",
@@ -70,14 +64,36 @@
   "running.stop": "Ferma",
   "running.empty.title": "Nulla in esecuzione",
   "running.empty.text": "Apri un gioco nella libreria e premi «Avvia esca».",
-
   "settings.title": "Impostazioni",
   "settings.general": "Generale",
   "settings.language": "Lingua",
   "settings.language.desc": "Lingua dell'interfaccia. Le nuove lingue vengono aggiunte come file nella cartella locales.",
   "settings.stubs": "Esche",
   "settings.defaultTime": "Durata predefinita",
-  "settings.defaultTime.desc": "Per quanti minuti mantenere il processo (le missioni di Discord di solito ne richiedono 15).",
+  "settings.defaultTime.desc": "Quanti minuti mantenere il processo. Il valore predefinito è 16, non 15: le missioni di Discord richiedono 15 minuti di gioco, ma a Discord serve fino a un minuto per rilevare un nuovo gioco, quindi esattamente 15 non basta.",
+  "settings.smartTimer": "Timer smart",
+  "settings.smartTimer.desc": "Il conto alla rovescia inizia quando Discord ha rilevato l'esca, non all'avvio. Per saperlo, l'app legge solo le righe sul gioco in esecuzione dal registro locale di Discord; nulla viene salvato o inviato da nessuna parte.",
+  "settings.updates": "Aggiornamenti",
+  "settings.checkNow": "Verifica ora",
+  "settings.autoUpdate": "Aggiornamenti automatici",
+  "settings.autoUpdate.desc": "Controlla GitHub all'avvio e ogni 6 ore e scarica le nuove versioni in background. L'installazione attende sempre la tua conferma e i file sono verificati tramite la loro firma digitale.",
+  "update.current": "Versione installata {v}",
+  "update.checking": "Controllo in corso…",
+  "update.uptodate": "Stai usando l'ultima versione",
+  "update.available": "È disponibile la versione {v}",
+  "update.downloading": "Download della versione {v}… {p}%",
+  "update.ready": "La versione {v} è pronta per l'installazione",
+  "update.installing": "Installazione e riavvio in corso…",
+  "update.download": "Scarica",
+  "update.restart": "Riavvia e aggiorna",
+  "update.later": "Più tardi",
+  "update.notes": "Novità",
+  "update.running": "Le esche in esecuzione ({n}) verranno arrestate.",
+  "update.error": "Impossibile aggiornare: {e}",
+  "detail.waiting": "in attesa di Discord",
+  "detail.waitingNote": "A Discord serve fino a un minuto per rilevare un gioco. Il conto alla rovescia inizia quando rileva l'esca.",
+  "detail.detected": "Discord ha rilevato l'esca",
+  "detail.assumed": "Discord non ha confermato, il tempo viene comunque conteggiato.",
   "settings.autoStop": "Ferma con timer",
   "settings.autoStop.desc": "L'esca termina automaticamente allo scadere del tempo.",
   "settings.notify": "Notifica al termine",
@@ -97,7 +113,6 @@
   "settings.files": "File",
   "settings.open": "Apri",
   "settings.legal": "Decoy non usa il tuo token di Discord e non accetta missioni al posto tuo. Simulare il processo di un gioco potrebbe violare le regole di Discord, usalo a tuo rischio e pericolo.",
-
   "toast.launched": "«{name}» avviato per {n} min. Discord dovrebbe rilevarlo tra circa 15 secondi.",
   "toast.stopped": "Esca fermata",
   "toast.allStopped": "Tutte le esche fermate",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} giochi hanno ottenuto file exe: {names}",
   "toast.refreshAdded": "Database aggiornato: +{n} nuovi giochi",
   "toast.refreshUpToDate": "Il database è già aggiornato",
-
   "nav.lab": "Laboratorio",
   "lab.title": "Laboratorio",
   "lab.subtitle": "Una scheda segreta: avvia molte esche contemporaneamente.",
@@ -115,16 +129,19 @@
   "lab.launch": "Avvia {n} giochi",
   "lab.launching": "Avvio di {done} su {total}…",
   "lab.cancel": "Annulla",
-  "lab.warn": "Ogni esca è un processo separato con una finestra. Più di 200–300 contemporaneamente potrebbero rallentare il computer, il limite massimo è {max}.",
+  "lab.warn": "Ogni esca è un processo separato con una finestra. Troppe contemporaneamente possono bloccare il computer: ogni processo e finestra consuma memoria e dopo alcune migliaia di finestre Windows potrebbe smettere di crearne altre. Se chiudi Decoy, tutte le esche si fermeranno.",
+  "lab.all": "Tutti ({n})",
+  "lab.estimate": "{n} esche utilizzeranno circa {ram} di RAM.",
+  "lab.confirm": "Fai nuovamente clic per avviare {n}",
+  "lab.limit": "Windows ha smesso di avviare nuovi processi dopo {n}: questo è il limite del sistema.",
+  "running.more": "…e altri {n}. Vengono mostrati i primi 120.",
   "lab.hide": "Nascondi questa scheda",
   "toast.labUnlocked": "Scheda segreta «Laboratorio» sbloccata",
   "toast.labHidden": "Scheda nascosta",
   "toast.labDone": "Giochi avviati: {n}",
-
   "tray.show": "Apri Decoy",
   "tray.stop": "Ferma tutte le esche",
   "tray.quit": "Esci",
-
   "notify.title": "Tempo scaduto",
   "notify.body": "{name}: sono passati {n} min."
 }

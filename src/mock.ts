@@ -41,10 +41,35 @@ export async function mockInvoke(cmd: string, args: any = {}): Promise<any> {
     case "refresh_games":
       return { games, fetchedMs: Date.now() - 3600_000, addedCount: 0, added: [], gained: [] } satisfies GamesPayload;
     case "launch": {
-      const info: RunInfo = { key: `${args.gameId}|${args.exe}`, gameId: args.gameId, gameName: args.gameName, exe: args.exe, pid: 4242 + running.length, startedMs: Date.now(), durationS: args.minutes * 60 };
+      const started = Date.now();
+      const info: RunInfo = {
+        key: `${args.gameId}|${args.exe}`,
+        gameId: args.gameId,
+        gameName: args.gameName,
+        exe: args.exe,
+        pid: 4242 + running.length,
+        startedMs: started,
+        durationS: args.minutes * 60,
+        countingFromMs: args.smart ? null : started,
+        detected: false,
+        smart: !!args.smart,
+      };
       running = [...running.filter((r) => r.key !== info.key), info];
+      // pretend Discord notices a smart decoy after a few seconds
+      if (args.smart) {
+        setTimeout(() => {
+          running = running.map((r) => (r.key === info.key ? { ...r, detected: true, countingFromMs: Date.now() } : r));
+        }, 8000);
+      }
       return info;
     }
+    case "check_update":
+      // preview the banner in a plain browser: localStorage.setItem('mockUpdate', '1')
+      return localStorage.getItem("mockUpdate") ? { version: "9.9.9", current: "dev", notes: "Preview", ready: false } : null;
+    case "download_update":
+    case "install_update":
+    case "open_url":
+      return;
     case "stop":
       running = running.filter((r) => r.key !== args.key);
       return;

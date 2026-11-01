@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "සිංහල" },
-
+  "_meta": {
+    "name": "සිංහල"
+  },
   "nav.library": "පුස්තකාලය",
   "nav.favorites": "ප්‍රියතම",
   "nav.running": "ධාවනය වන",
   "nav.settings": "සැකසුම්",
-
   "discord.checking": "පරීක්ෂා කරමින්…",
   "discord.up": "ධාවනය වේ",
   "discord.down": "ධාවනය නොවේ",
-
   "window.minimize": "හකුළන්න",
   "window.maximize": "විශාල කරන්න",
   "window.close": "වසන්න",
-
   "tag.live": "ධාවනය වේ",
   "tag.noExe": "exe නැත",
   "tag.exeCount": "exe {n}",
   "tag.launcher": "දියත්කාරකය",
-
   "lib.title": "පුස්තකාලය",
   "lib.subtitle": "හඳුනාගත් ක්‍රියාවලි සහිත ක්‍රීඩා {n} ක් · යාවත්කාලීන කළේ {date}",
   "lib.loading": "ක්‍රීඩා දත්ත සමුදාය පූරණය වෙමින් පවතී…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "ප්‍රියතමයන්ට එක් කරන්න",
   "lib.empty.title": "කිසිවක් හමු නොවීය",
   "lib.empty.text": "වෙනත් නමක් උත්සාහ කරන්න හෝ “exe නොමැති ක්‍රීඩා පෙන්වන්න” ක්‍රියාත්මක කරන්න.",
-
   "fav.title": "ප්‍රියතම",
   "fav.count": "ක්‍රීඩා {n}",
   "fav.hint": "තරු ලකුණෙන් ක්‍රීඩා සලකුණු කරන්න",
   "fav.empty.title": "තවමත් කිසිවක් නැත",
   "fav.empty.text": "ක්‍රීඩාවක් මෙහි එක් කිරීමට එහි ඇති තරුව මත ක්ලික් කරන්න.",
-
   "detail.process": "ක්‍රියාවලිය",
   "detail.duration": "කොපමණ වේලාවක් තබා ගත යුතුද",
   "detail.minutes": "මිනිත්තු {n}",
@@ -62,7 +57,6 @@
   "detail.favorite": "ප්‍රියතම",
   "detail.close": "වසන්න",
   "detail.id": "ID {id}",
-
   "running.title": "ධාවනය වන",
   "running.count": "සක්‍රිය decoy {n}",
   "running.none": "දැනට කිසිවක් ධාවනය නොවේ",
@@ -70,14 +64,36 @@
   "running.stop": "නවත්වන්න",
   "running.empty.title": "කිසිවක් ධාවනය නොවේ",
   "running.empty.text": "පුස්තකාලයෙන් ක්‍රීඩාවක් විවෘත කර “Decoy අරඹන්න” ඔබන්න.",
-
   "settings.title": "සැකසුම්",
   "settings.general": "පොදු",
   "settings.language": "භාෂාව",
   "settings.language.desc": "අතුරුමුහුණත් භාෂාව. locales ෆෝල්ඩරයට ගොනු එක් කිරීමෙන් නව භාෂා එකතු කළ හැක.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "පෙරනිමි කාල සීමාව",
-  "settings.defaultTime.desc": "ක්‍රියාවලිය කොපමණ මිනිත්තු ගණනක් තබා ගත යුතුද යන්න (Discord quests සඳහා සාමාන්‍යයෙන් 15 ක් අවශ්‍ය වේ).",
+  "settings.defaultTime.desc": "ක්‍රියාවලිය කොපමණ මිනිත්තු ගණනක් තබා ගත යුතුද යන්න. පෙරනිමිය 15 නොව 16 වේ: Discord quests මිනිත්තු 15 ක ක්‍රීඩා කාලයක් ඉල්ලයි, නමුත් නව ක්‍රීඩාවක් හඳුනා ගැනීමට Discord හට මිනිත්තුවක් දක්වා අවශ්‍ය විය හැක, එබැවින් හරියටම 15 ප්‍රමාණවත් නොවේ.",
+  "settings.smartTimer": "ස්මාර්ට් ටයිමරය",
+  "settings.smartTimer.desc": "ගණන් කිරීම ආරම්භ වන්නේ ඔබ decoy ආරම්භ කරන විට නොව, Discord එය හඳුනාගත් පසුවය. එය දැන ගැනීම සඳහා, යෙදුම Discord හි දේශීය ලඝු-සටහනෙන් ක්‍රියාත්මක වන ක්‍රීඩාව පිළිබඳ පේළි පමණක් කියවයි; කිසිවක් ගබඩා කිරීම හෝ කොහේවත් යැවීම සිදු නොවේ.",
+  "settings.updates": "යාවත්කාලීන කිරීම්",
+  "settings.checkNow": "දැන් පරීක්ෂා කරන්න",
+  "settings.autoUpdate": "ස්වයංක්‍රීය යාවත්කාලීන කිරීම්",
+  "settings.autoUpdate.desc": "ආරම්භයේදී සහ සෑම පැය 6 කට වරක්ම GitHub පරීක්ෂා කර පසුබිමෙන් නව අනුවාද බාගන්න. ස්ථාපනය කිරීම සැමවිටම ඔබගේ තහවුරු කිරීම අපේක්ෂා කරන අතර, ගොනු ඒවායේ ඩිජිටල් අත්සන මඟින් සත්‍යාපනය කෙරේ.",
+  "update.current": "ස්ථාපිත අනුවාදය {v}",
+  "update.checking": "පරීක්ෂා කරමින්…",
+  "update.uptodate": "ඔබ සිටින්නේ නවතම අනුවාදයේ ය",
+  "update.available": "අනුවාදය {v} ලබා ගත හැකිය",
+  "update.downloading": "අනුවාදය {v} බාගනිමින්… {p}%",
+  "update.ready": "අනුවාදය {v} ස්ථාපනය කිරීමට සූදානම්",
+  "update.installing": "ස්ථාපනය කර නැවත අරඹමින්…",
+  "update.download": "බාගන්න",
+  "update.restart": "නැවත අරඹා යාවත්කාලීන කරන්න",
+  "update.later": "පසුව",
+  "update.notes": "අලුත් මොනවාද",
+  "update.running": "ධාවනය වන decoy ({n}) නතර වනු ඇත.",
+  "update.error": "යාවත්කාලීන කිරීමට නොහැකි විය: {e}",
+  "detail.waiting": "Discord සඳහා රැඳී සිටියි",
+  "detail.waitingNote": "ක්‍රීඩාවක් හඳුනා ගැනීමට Discord හට මිනිත්තුවක් පමණ ගත විය හැක. Decoy දුටු විගස ගණන් කිරීම ආරම්භ වේ.",
+  "detail.detected": "Discord විසින් decoy හඳුනා ගන්නා ලදී",
+  "detail.assumed": "Discord තහවුරු කර නැත, කෙසේ වෙතත් කාලය ගණනය කෙරේ.",
   "settings.autoStop": "ටයිමරය අනුව නවත්වන්න",
   "settings.autoStop.desc": "කාලය අවසන් වූ විට decoy ඉබේම අවසන් වේ.",
   "settings.notify": "අවසන් වූ විට දැනුම් දෙන්න",
@@ -97,7 +113,6 @@
   "settings.files": "ගොනු",
   "settings.open": "විවෘත කරන්න",
   "settings.legal": "Decoy ඔබගේ Discord token භාවිතා නොකරන අතර ඔබ වෙනුවෙන් quests භාර නොගනී. ක්‍රීඩා ක්‍රියාවලියක් අනුකරණය කිරීම Discord නීතිවලට පටහැනි විය හැක, ඔබේම අවදානමෙන් භාවිතා කරන්න.",
-
   "toast.launched": "“{name}” මිනිත්තු {n} කට ආරම්භ විය. තත්පර 15 කින් පමණ Discord එය හඳුනාගනු ඇත.",
   "toast.stopped": "Decoy නතර විය",
   "toast.allStopped": "සියලු decoys නතර විය",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "ක්‍රීඩා {n} කට exe ගොනු ලැබුණි: {names}",
   "toast.refreshAdded": "දත්ත සමුදාය යාවත්කාලීන විය: නව ක්‍රීඩා +{n}",
   "toast.refreshUpToDate": "දත්ත සමුදාය දැනටමත් යාවත්කාලීනයි",
-
   "nav.lab": "විද්‍යාගාරය",
   "lab.title": "විද්‍යාගාරය",
   "lab.subtitle": "රහස් ටැබ් එකක්: එකවර decoys බොහෝ ප්‍රමාණයක් අරඹයි.",
@@ -115,16 +129,19 @@
   "lab.launch": "ක්‍රීඩා {n} ක් අරඹන්න",
   "lab.launching": "{total} න් {done} ක් ආරම්භ වෙමින්…",
   "lab.cancel": "අවලංගු කරන්න",
-  "lab.warn": "සෑම decoy එකක්ම කවුළුවක් සහිත වෙනම ක්‍රියාවලියකි. එකවර 200–300 ට වඩා ධාවනය කිරීම ඔබේ පරිගණකය මන්දගාමී කළ හැක, උපරිමය {max} කි.",
+  "lab.warn": "සෑම decoy එකක්ම කවුළුවක් සහිත වෙනම ක්‍රියාවලියකි. එකවර ඕනෑවට වඩා තිබීම ඔබේ පරිගණකය අක්‍රිය (freeze) කළ හැක: සෑම ක්‍රියාවලියක් සහ කවුළුවක්ම මතකය භාවිතා කරන අතර කවුළු දහස් ගණනකට පසු Windows නව ඒවා සෑදීම නැවැත්විය හැක. ඔබ Decoy වැසුවහොත් සියලුම decoys නතර වේ.",
+  "lab.all": "සියල්ල ({n})",
+  "lab.estimate": "Decoy {n} ක් දළ වශයෙන් {ram} RAM ප්‍රමාණයක් භාවිතා කරනු ඇත.",
+  "lab.confirm": "{n} ආරම්භ කිරීමට නැවත ක්ලික් කරන්න",
+  "lab.limit": "{n} න් පසු Windows නව ක්‍රියාවලි ආරම්භ කිරීම නැවැත්වීය: එය පද්ධතියේ උපරිම සීමාවයි.",
+  "running.more": "…සහ තවත් {n} ක්. පළමු 120 පෙන්වයි.",
   "lab.hide": "මෙම ටැබය සඟවන්න",
   "toast.labUnlocked": "රහස් “විද්‍යාගාරය” ටැබය අගුළු හැරිණි",
   "toast.labHidden": "ටැබය සඟවන ලදී",
   "toast.labDone": "ආරම්භ කළ ක්‍රීඩා ගණන: {n}",
-
   "tray.show": "Decoy විවෘත කරන්න",
   "tray.stop": "සියලු decoys නවත්වන්න",
   "tray.quit": "ඉවත් වන්න",
-
   "notify.title": "කාලය අවසන්",
   "notify.body": "{name}: මිනිත්තු {n} ක් ගතවී ඇත."
 }

@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Eesti" },
-
+  "_meta": {
+    "name": "Eesti"
+  },
   "nav.library": "Teek",
   "nav.favorites": "Lemmikud",
   "nav.running": "Töös",
   "nav.settings": "Seaded",
-
   "discord.checking": "Kontrollin…",
   "discord.up": "Töötab",
   "discord.down": "Ei tööta",
-
   "window.minimize": "Minimeeri",
   "window.maximize": "Maksimeeri",
   "window.close": "Sulge",
-
   "tag.live": "Töös",
   "tag.noExe": "exe puudub",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "käivitaja",
-
   "lib.title": "Teek",
   "lib.subtitle": "{n} teadaoleva protsessiga mängu · uuendatud {date}",
   "lib.loading": "Mängude andmebaasi laadimine…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Lisa lemmikutesse",
   "lib.empty.title": "Midagi ei leitud",
   "lib.empty.text": "Proovi teist nime või lülita sisse „Kuva ilma exe-ta mängud“.",
-
   "fav.title": "Lemmikud",
   "fav.count": "{n} mängu",
   "fav.hint": "Märgi mänge tähekesega",
   "fav.empty.title": "Siin pole veel midagi",
   "fav.empty.text": "Mängu siia lisamiseks klõpsa selle paanil olevale tähekesele.",
-
   "detail.process": "Protsess",
   "detail.duration": "Kui kaua käigus hoida",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Lemmik",
   "detail.close": "Sulge",
   "detail.id": "ID {id}",
-
   "running.title": "Töös",
   "running.count": "{n} aktiivset Decoy protsessi",
   "running.none": "Praegu midagi ei tööta",
@@ -70,14 +64,36 @@
   "running.stop": "Peata",
   "running.empty.title": "Midagi ei tööta",
   "running.empty.text": "Ava mäng teegis ja klõpsa „Käivita Decoy“.",
-
   "settings.title": "Seaded",
   "settings.general": "Üldine",
   "settings.language": "Keel",
   "settings.language.desc": "Kasutajaliidese keel. Uusi keeli lisatakse failidena kausta locales.",
   "settings.stubs": "Decoy protsessid",
   "settings.defaultTime": "Vaikimisi kestus",
-  "settings.defaultTime.desc": "Mitu minutit protsessi töös hoida (Discordi ülesanded vajavad tavaliselt 15).",
+  "settings.defaultTime.desc": "Mitu minutit protsessi töös hoida. Vaikimisi on 16, mitte 15: Discordi ülesanded nõuavad 15 minutit mängimist, kuid Discord vajab uue mängu märkamiseks kuni minutit, seega täpselt 15 minutist ei piisa.",
+  "settings.smartTimer": "Nutikas taimer",
+  "settings.smartTimer.desc": "Pöördloendus algab siis, kui Discord on Decoy protsessi märganud, mitte selle käivitamisel. Selle teadasaamiseks loeb rakendus Discordi kohalikust logist ainult ridu töötava mängu kohta; midagi ei salvestata ega saadeta kuhugi.",
+  "settings.updates": "Uuendused",
+  "settings.checkNow": "Kontrolli kohe",
+  "settings.autoUpdate": "Automaatsed uuendused",
+  "settings.autoUpdate.desc": "Kontrolli GitHubi käivitamisel ja iga 6 tunni järel ning laadi uued versioonid taustal alla. Paigaldamine ootab alati sinu kinnitust ja failid verifitseeritakse nende digiallkirjaga.",
+  "update.current": "Paigaldatud versioon {v}",
+  "update.checking": "Kontrollin…",
+  "update.uptodate": "Kasutad uusimat versiooni",
+  "update.available": "Versioon {v} on saadaval",
+  "update.downloading": "Versiooni {v} allalaadimine… {p}%",
+  "update.ready": "Versioon {v} on paigaldamiseks valmis",
+  "update.installing": "Paigaldamine ja taaskäivitamine…",
+  "update.download": "Laadi alla",
+  "update.restart": "Taaskäivita ja uuenda",
+  "update.later": "Hiljem",
+  "update.notes": "Mis on uut",
+  "update.running": "Töötavad Decoy protsessid ({n}) peatatakse.",
+  "update.error": "Uuendamine ebaõnnestus: {e}",
+  "detail.waiting": "Discordi ootamine",
+  "detail.waitingNote": "Discord vajab mängu märkamiseks kuni minutit. Pöördloendus algab siis, kui see näeb Decoy protsessi.",
+  "detail.detected": "Discord märkas Decoy protsessi",
+  "detail.assumed": "Discord ei kinnitanud seda, aega arvestatakse ikkagi.",
   "settings.autoStop": "Peata taimeriga",
   "settings.autoStop.desc": "Decoy sulgub ise, kui aeg saab läbi.",
   "settings.notify": "Teavita lõpetamisel",
@@ -97,7 +113,6 @@
   "settings.files": "Failid",
   "settings.open": "Ava",
   "settings.legal": "Decoy ei kasuta sinu Discordi pääsutõendit ega võta sinu eest ülesandeid vastu. Mänguprotsessi matkimine võib rikkuda Discordi reegleid, kasuta omal vastutusel.",
-
   "toast.launched": "„{name}“ käivitati {n} minutiks. Discord peaks seda märkama umbes 15 sekundi pärast.",
   "toast.stopped": "Decoy peatatud",
   "toast.allStopped": "Kõik Decoy protsessid peatatud",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} mängule lisandusid exe-failid: {names}",
   "toast.refreshAdded": "Andmebaas uuendatud: +{n} uut mängu",
   "toast.refreshUpToDate": "Andmebaas on juba ajakohane",
-
   "nav.lab": "Labor",
   "lab.title": "Labor",
   "lab.subtitle": "Salajane vahekaart: käivitab korraga palju Decoy protsesse.",
@@ -115,16 +129,19 @@
   "lab.launch": "Käivita {n} mängu",
   "lab.launching": "Käivitan {done} / {total}…",
   "lab.cancel": "Tühista",
-  "lab.warn": "Iga Decoy on eraldi aknaga protsess. Rohkem kui 200–300 korraga võib arvutit aeglustada, maksimum on {max}.",
+  "lab.warn": "Iga Decoy on aknaga eraldi protsess. Liiga palju korraga võib arvuti hanguma panna: iga protsess ja aken kasutab mälu ning pärast paari tuhandet akent võib Windows lõpetada uute loomise. Kui sulged Decoy, peatuvad kõik Decoy protsessid.",
+  "lab.all": "Kõik ({n})",
+  "lab.estimate": "{n} Decoy protsessi kasutavad umbes {ram} RAM-i.",
+  "lab.confirm": "Klõpsa uuesti, et käivitada {n}",
+  "lab.limit": "Windows lõpetas pärast {n} uute protsesside käivitamise: see on süsteemi piirang.",
+  "running.more": "…ja veel {n}. Kuvatakse esimesed 120.",
   "lab.hide": "Peida see vahekaart",
   "toast.labUnlocked": "Salajane vahekaart „Labor“ on avatud",
   "toast.labHidden": "Vahekaart on peidetud",
   "toast.labDone": "Käivitatud mänge: {n}",
-
   "tray.show": "Ava Decoy",
   "tray.stop": "Peata kõik Decoy protsessid",
   "tray.quit": "Välju",
-
   "notify.title": "Aeg sai läbi",
   "notify.body": "{name}: möödas on {n} min."
 }

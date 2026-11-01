@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Српски" },
-
+  "_meta": {
+    "name": "Српски"
+  },
   "nav.library": "Библиотека",
   "nav.favorites": "Омиљено",
   "nav.running": "Покренуто",
   "nav.settings": "Подешавања",
-
   "discord.checking": "Проверавам…",
   "discord.up": "Покренут",
   "discord.down": "Није покренут",
-
   "window.minimize": "Умањи",
   "window.maximize": "Увећај",
   "window.close": "Затвори",
-
   "tag.live": "Покренуто",
   "tag.noExe": "нема exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "покретач",
-
   "lib.title": "Библиотека",
   "lib.subtitle": "{n} игара са познатим процесом · ажурирано {date}",
   "lib.loading": "Учитавање базе игара…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Додај у омиљено",
   "lib.empty.title": "Ништа није пронађено",
   "lib.empty.text": "Пробајте други назив или укључите „Прикажи игре без exe”.",
-
   "fav.title": "Омиљено",
   "fav.count": "{n} игара",
   "fav.hint": "Означите игре звездицом",
   "fav.empty.title": "Овде још нема ничега",
   "fav.empty.text": "Притисните звездицу на картици игре да је додате овде.",
-
   "detail.process": "Процес",
   "detail.duration": "Колико дуго да траје",
   "detail.minutes": "{n} мин",
@@ -62,7 +57,6 @@
   "detail.favorite": "Омиљено",
   "detail.close": "Затвори",
   "detail.id": "ID {id}",
-
   "running.title": "Покренуто",
   "running.count": "{n} активних лажњака",
   "running.none": "Тренутно ништа није покренуто",
@@ -70,14 +64,36 @@
   "running.stop": "Заустави",
   "running.empty.title": "Ништа није покренуто",
   "running.empty.text": "Отворите игру у библиотеци и притисните „Покрени лажњак”.",
-
   "settings.title": "Подешавања",
   "settings.general": "Опште",
   "settings.language": "Језик",
   "settings.language.desc": "Језик интерфејса. Нови језици се додају као датотеке у фасциклу locales.",
   "settings.stubs": "Лажњаци",
   "settings.defaultTime": "Подразумевано трајање",
-  "settings.defaultTime.desc": "Колико минута држати процес (Discord задаци обично траже 15).",
+  "settings.defaultTime.desc": "Колико минута задржати процес. Подразумевано је 16, а не 15: задаци на Discord-у траже 15 минута игре, али Discord-у треба до минут да примети нову игру, па тачно 15 није довољно.",
+  "settings.smartTimer": "Паметни тајмер",
+  "settings.smartTimer.desc": "Одбројавање почиње када Discord примети лажњак, а не када га покренете. Да би то знао, програм чита само редове о покренутој игри из локалног дневника Discord-а; ништа се не чува нити шаље било где.",
+  "settings.updates": "Ажурирања",
+  "settings.checkNow": "Провери сада",
+  "settings.autoUpdate": "Аутоматска ажурирања",
+  "settings.autoUpdate.desc": "Проверава GitHub при покретању и сваких 6 сати и преузима нове верзије у позадини. Инсталација увек чека вашу потврду, а датотеке се проверавају дигиталним потписом.",
+  "update.current": "Инсталирана верзија {v}",
+  "update.checking": "Проверавам…",
+  "update.uptodate": "Имате најновију верзију",
+  "update.available": "Верзија {v} је доступна",
+  "update.downloading": "Преузимање верзије {v}… {p}%",
+  "update.ready": "Верзија {v} је спремна за инсталацију",
+  "update.installing": "Инсталирање и поновно покретање…",
+  "update.download": "Преузми",
+  "update.restart": "Поново покрени и ажурирај",
+  "update.later": "Касније",
+  "update.notes": "Шта је ново",
+  "update.running": "Покренути лажњаци ({n}) ће се зауставити.",
+  "update.error": "Ажурирање није успело: {e}",
+  "detail.waiting": "чека се Discord",
+  "detail.waitingNote": "Discord-у треба до минут да примети игру. Одбројавање почиње када види лажњак.",
+  "detail.detected": "Discord је приметио лажњак",
+  "detail.assumed": "Discord није потврдио, време се свеједно рачуна.",
   "settings.autoStop": "Заустави по тајмеру",
   "settings.autoStop.desc": "Лажњак се сам зауставља када време истекне.",
   "settings.notify": "Обавести по завршетку",
@@ -97,7 +113,6 @@
   "settings.files": "Датотеке",
   "settings.open": "Отвори",
   "settings.legal": "Decoy не користи ваш Discord токен и не прихвата задатке уместо вас. Лажирање процеса игре може бити противно правилима сервиса Discord, користите на сопствени ризик.",
-
   "toast.launched": "„{name}” покренут на {n} мин. Discord би требало да га примети за око 15 секунди.",
   "toast.stopped": "Лажњак је заустављен",
   "toast.allStopped": "Сви лажњаци су заустављени",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} игара је добило exe датотеке: {names}",
   "toast.refreshAdded": "База ажурирана: +{n} нових игара",
   "toast.refreshUpToDate": "База је већ ажурна",
-
   "nav.lab": "Лабораторија",
   "lab.title": "Лабораторија",
   "lab.subtitle": "Тајна картица: покреће много лажњака одједном.",
@@ -115,16 +129,19 @@
   "lab.launch": "Покрени {n} игара",
   "lab.launching": "Покретање {done} од {total}…",
   "lab.cancel": "Откажи",
-  "lab.warn": "Сваки лажњак је засебан процес са прозором. Више од 200–300 одједном може успорити рачунар, максимум је {max}.",
+  "lab.warn": "Сваки лажњак је засебан процес са прозором. Превише одједном може замрзнути рачунар: сваки процес и прозор користи меморију, а после неколико хиљада прозора Windows може престати да их ствара. Ако затворите Decoy, сви лажњаци се заустављају.",
+  "lab.all": "Све ({n})",
+  "lab.estimate": "{n} лажњака ће заузети око {ram} RAM меморије.",
+  "lab.confirm": "Кликните поново да покренете {n}",
+  "lab.limit": "Windows је престао да покреће нове процесе након {n}: то је системско ограничење.",
+  "running.more": "…и још {n}. Приказано је првих 120.",
   "lab.hide": "Сакриј ову картицу",
   "toast.labUnlocked": "Откључана је тајна картица „Лабораторија”",
   "toast.labHidden": "Картица је сакривена",
   "toast.labDone": "Покренуто игара: {n}",
-
   "tray.show": "Отвори Decoy",
   "tray.stop": "Заустави све лажњаке",
   "tray.quit": "Изађи",
-
   "notify.title": "Време је истекло",
   "notify.body": "{name}: прошло је {n} мин."
 }

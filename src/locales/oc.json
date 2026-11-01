@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Occitan" },
-
+  "_meta": {
+    "name": "Occitan"
+  },
   "nav.library": "Bibliotèca",
   "nav.favorites": "Favorits",
   "nav.running": "En cors",
   "nav.settings": "Paramètres",
-
   "discord.checking": "Verificacion…",
   "discord.up": "En cors",
   "discord.down": "Pas aviat",
-
   "window.minimize": "Reduire",
   "window.maximize": "Agrandir",
   "window.close": "Tampar",
-
   "tag.live": "En cors",
   "tag.noExe": "sens exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "aviador",
-
   "lib.title": "Bibliotèca",
   "lib.subtitle": "{n} jòcs amb un processus conegut · mes a jorn lo {date}",
   "lib.loading": "Cargament de la basa de donadas de jòcs…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Apondre als favorits",
   "lib.empty.title": "Pas cap de resultat trobat",
   "lib.empty.text": "Ensajatz amb un autre nom o activatz «Afichar los jòcs sens exe».",
-
   "fav.title": "Favorits",
   "fav.count": "{n} jòcs",
   "fav.hint": "Marcatz los jòcs amb una estèla",
   "fav.empty.title": "Pas res aicí pel moment",
   "fav.empty.text": "Quichatz sus l'estèla sus la vinheta d'un jòc per l'apondre aicí.",
-
   "detail.process": "Processus",
   "detail.duration": "Quant de temps o gardar",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorit",
   "detail.close": "Tampar",
   "detail.id": "ID {id}",
-
   "running.title": "En cors",
   "running.count": "{n} decoys actius",
   "running.none": "Pas res s'executa pas a l'ora d'ara",
@@ -70,14 +64,36 @@
   "running.stop": "Arrestar",
   "running.empty.title": "Pas res s'executa pas",
   "running.empty.text": "Dobritz un jòc dins la bibliotèca e quichatz sus «Aviar lo decoy».",
-
   "settings.title": "Paramètres",
   "settings.general": "General",
   "settings.language": "Lenga",
   "settings.language.desc": "Lenga de l'interfàcia. Las lengas novèlas son apondudas coma de fichièrs dins lo dorsièr locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Durada per defaut",
-  "settings.defaultTime.desc": "Quant de minutas gardar lo processus (las quistas Discord an generalament besonh de 15).",
+  "settings.defaultTime.desc": "Quant de minutas gardar lo processus. La valor per defaut es 16, pas 15: las quistas de Discord demandan 15 minutas de jòc, mas Discord a besonh d'un delai d'una minuta per remarcar un jòc novèl.",
+  "settings.smartTimer": "Minutari intelligent",
+  "settings.smartTimer.desc": "Lo compte a rebors comença quand Discord a remarcat lo decoy, pas quand l'aviatz. Per o saber, l'aplicacion legís pas que las linhas sul jòc en cors a partir del jornal local de Discord; ren es pas servat nimai mandat enlòc.",
+  "settings.updates": "Mesas a jorn",
+  "settings.checkNow": "Verificar ara",
+  "settings.autoUpdate": "Mesas a jorn automaticas",
+  "settings.autoUpdate.desc": "Verificar GitHub a l'aviada e cada 6 oras e telecargar las versions novèlas en rèireplan. L'installacion espèra totjorn vòstra confirmacion, e los fichièrs son verificats per lor signatura numerica.",
+  "update.current": "Version installada {v}",
+  "update.checking": "Verificacion…",
+  "update.uptodate": "Avètz la darrièra version",
+  "update.available": "La version {v} es disponibla",
+  "update.downloading": "Telecargament de la version {v}… {p}%",
+  "update.ready": "La version {v} es prèsta a installar",
+  "update.installing": "Installacion e reaviada…",
+  "update.download": "Telecargar",
+  "update.restart": "Reaviar e metre a jorn",
+  "update.later": "Mai tard",
+  "update.notes": "De qué i a de nòu",
+  "update.running": "Los decoys en cors ({n}) s'arrestaràn.",
+  "update.error": "Impossible de metre a jorn: {e}",
+  "detail.waiting": "en espèra de Discord",
+  "detail.waitingNote": "Discord a besonh de fins a una minuta per remarcar un jòc. Lo compte a rebors comença quand vei lo decoy.",
+  "detail.detected": "Discord a remarcat lo decoy",
+  "detail.assumed": "Discord a pas confirmat, lo temps es comptat parièr.",
   "settings.autoStop": "Arrestar al temporizaire",
   "settings.autoStop.desc": "Lo decoy s'arrèsta d'esperel quand lo temps es passat.",
   "settings.notify": "Avisar quand es acabat",
@@ -97,7 +113,6 @@
   "settings.files": "Fichièrs",
   "settings.open": "Dobrir",
   "settings.legal": "Decoy utiliza pas vòstre jfet Discord e accèpta pas de quistas per vos. Simular un processus de jòc pòt anar contra las règlas de Discord, utilizatz-o a vòstres pròpris riscs.",
-
   "toast.launched": "«{name}» aviat per {n} min. Discord o deuriá remarcar d'aquí aperaquí 15 segondas.",
   "toast.stopped": "Decoy arrestat",
   "toast.allStopped": "Totes los decoys son arrestats",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} jòcs an recebut de fichièrs exe: {names}",
   "toast.refreshAdded": "Basa de donadas mesa a jorn: +{n} jòcs novèls",
   "toast.refreshUpToDate": "La basa de donadas es ja a jorn",
-
   "nav.lab": "Laboratòri",
   "lab.title": "Laboratòri",
   "lab.subtitle": "Un onglet secrèt: avia mantun decoy a l'encòp.",
@@ -115,16 +129,19 @@
   "lab.launch": "Aviar {n} jòcs",
   "lab.launching": "Aviada de {done} sus {total}…",
   "lab.cancel": "Anullar",
-  "lab.warn": "Cada decoy es un processus separat amb una fenèstra. Mai de 200–300 a l'encòp pòt ralentir vòstre ordenador, lo maximum es {max}.",
+  "lab.warn": "Cada decoy es un processus separat amb una fenèstra. Un tròp grand nombre a l'encòp pòt blocar vòstre ordenador: cada processus e fenèstra utiliza de memòria, e aprèp de milièrs de fenèstras Windows pòt arrestar de ne crear mai. Se tampatz Decoy, totes los decoys s'arrèstan.",
+  "lab.all": "Totes ({n})",
+  "lab.estimate": "{n} decoys utilizaràn aperaquí {ram} de RAM.",
+  "lab.confirm": "Clicatz encara un còp per aviar {n}",
+  "lab.limit": "Windows a arrestat d'aviar de processus novèls aprèp {n}: aquò es lo limit del sistèma.",
+  "running.more": "…e {n} de mai. Los 120 primièrs son afichats.",
   "lab.hide": "Amagar aqueste onglet",
   "toast.labUnlocked": "Onglet secrèt «Laboratòri» desblocat",
   "toast.labHidden": "Onglet amagat",
   "toast.labDone": "Jòcs aviats: {n}",
-
   "tray.show": "Dobrir Decoy",
   "tray.stop": "Arrestar totes los decoys",
   "tray.quit": "Quitar",
-
   "notify.title": "Lo temps es passat",
   "notify.body": "{name}: {n} min son passadas."
 }

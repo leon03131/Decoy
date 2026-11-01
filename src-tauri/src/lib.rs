@@ -13,9 +13,13 @@ use tauri::tray::{MouseButton, MouseButtonState, TrayIconBuilder, TrayIconEvent}
 use tauri::{AppHandle, Emitter, Manager, RunEvent, State, WindowEvent};
 use tauri_plugin_notification::NotificationExt;
 
+mod update;
+
 const STUB: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/stub.exe"));
 const DETECTABLE_URL: &str = "https://discord.com/api/v9/applications/detectable";
 const CREATE_NO_WINDOW: u32 = 0x0800_0000;
+/// How long a "smart" decoy waits for Discord to notice it before the countdown starts anyway.
+const DETECT_TIMEOUT_MS: u64 = 90_000;
 
 // ---------------------------------------------------------------- types
 
@@ -84,6 +88,12 @@ struct RunInfo {
     pid: u32,
     started_ms: u64,
     duration_s: u64,
+    /// When the countdown began. `None` while a smart decoy is still waiting for Discord to notice it.
+    counting_from_ms: Option<u64>,
+    /// Discord confirmed that it saw this decoy.
+    detected: bool,
+    /// The countdown waits for Discord's confirmation (read from Discord's local log).
+    smart: bool,
 }
 
 struct Running {
@@ -91,6 +101,8 @@ struct Running {
     child: Child,
     /// the decoy exe on disk; removed again as soon as the process ends
     path: PathBuf,
+    /// lower-case `a/b/c.exe`, how Discord's log names this decoy (matched after `/stubs/`)
+    rel_key: String,
 }
 
 struct AppState {
@@ -108,7 +120,7 @@ fn now_ms() -> u64 {
 
 /// Portable mode: a file named `portable` or `portable.txt` next to decoy.exe keeps ALL data (game list, settings,
 /// WebView cache) in `<exe folder>\data` instead of the user profile.
-fn portable_root() -> Option<&'static PathBuf> {
+pub(crate) fn portable_root() -> Option<&'static PathBuf> {
     static ROOT: OnceLock<Option<PathBuf>> = OnceLock::new();
     ROOT.get_or_init(|| {
         let dir = std::env::current_exe().ok()?.parent()?.to_path_buf();
@@ -209,9 +221,133 @@ fn make_job() -> usize {
     }
 }
 
+// ---------------------------------------------------------------- processes (ToolHelp / Win32)
+
+/// All running processes as (pid, exe file name).
+fn list_processes() -> Vec<(u32, String)> {
+    use windows_sys::Win32::Foundation::{CloseHandle, INVALID_HANDLE_VALUE};
+    use windows_sys::Win32::System::Diagnostics::ToolHelp::*;
+    let mut out = Vec::new();
+    unsafe {
+        let snap = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
+        if snap == INVALID_HANDLE_VALUE {
+            return out;
+        }
+        let mut entry: PROCESSENTRY32W = std::mem::zeroed();
+        entry.dwSize = std::mem::size_of::<PROCESSENTRY32W>() as u32;
+        if Process32FirstW(snap, &mut entry) != 0 {
+            loop {
+                let len = entry.szExeFile.iter().position(|&c| c == 0).unwrap_or(entry.szExeFile.len());
+                out.push((entry.th32ProcessID, String::from_utf16_lossy(&entry.szExeFile[..len])));
+                if Process32NextW(snap, &mut entry) == 0 {
+                    break;
+                }
+            }
+        }
+        CloseHandle(snap);
+    }
+    out
+}
+
+/// Full path of a process' exe (None when it cannot be opened, e.g. system processes).
+fn process_image(pid: u32) -> Option<String> {
+    use windows_sys::Win32::Foundation::CloseHandle;
+    use windows_sys::Win32::System::Threading::{OpenProcess, QueryFullProcessImageNameW, PROCESS_QUERY_LIMITED_INFORMATION};
+    unsafe {
+        let h = OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, 0, pid);
+        if h.is_null() {
+            return None;
+        }
+        let mut buf = [0u16; 1024];
+        let mut len = buf.len() as u32;
+        let ok = QueryFullProcessImageNameW(h, 0, buf.as_mut_ptr(), &mut len);
+        CloseHandle(h);
+        (ok != 0).then(|| String::from_utf16_lossy(&buf[..len as usize]))
+    }
+}
+
+/// Terminates a process and waits (briefly) until it is really gone, so its exe can be deleted right after.
+fn kill_pid(pid: u32) {
+    use windows_sys::Win32::Foundation::CloseHandle;
+    use windows_sys::Win32::System::Threading::{OpenProcess, TerminateProcess, WaitForSingleObject, PROCESS_SYNCHRONIZE, PROCESS_TERMINATE};
+    unsafe {
+        let h = OpenProcess(PROCESS_TERMINATE | PROCESS_SYNCHRONIZE, 0, pid);
+        if !h.is_null() {
+            TerminateProcess(h, 1);
+            WaitForSingleObject(h, 2000);
+            CloseHandle(h);
+        }
+    }
+}
+
+/// Kills every process that was started from inside `dir`: decoys left behind by a crashed or killed Decoy, or by an
+/// older version that had no watchdog. Only exes below the decoy folder are touched.
+fn sweep_leftover_stubs(dir: &Path) -> usize {
+    let prefix = dir.to_string_lossy().to_lowercase().replace('/', "\\");
+    if prefix.is_empty() {
+        return 0;
+    }
+    // Windows reports a *virtualised* path for apps with a redirected AppData (MSIX/sandboxed launchers), so an
+    // installed copy also matches by its own folder name. A portable copy matches by its exact folder only.
+    let by_name = portable_root().is_none().then_some("\\app.decoy.desktop\\stubs\\");
+    let me = std::process::id();
+    let mut killed = 0;
+    for (pid, _) in list_processes() {
+        if pid <= 4 || pid == me {
+            continue;
+        }
+        if let Some(img) = process_image(pid) {
+            let img = img.to_lowercase();
+            if img.starts_with(&prefix) || by_name.map(|n| img.contains(n)).unwrap_or(false) {
+                kill_pid(pid);
+                killed += 1;
+            }
+        }
+    }
+    killed
+}
+
+/// Blocks until the process with this pid has exited (or `ms` passed). Used after an in-place update.
+fn wait_for_exit(pid: u32, ms: u32) {
+    use windows_sys::Win32::Foundation::CloseHandle;
+    use windows_sys::Win32::System::Threading::{OpenProcess, WaitForSingleObject, PROCESS_SYNCHRONIZE};
+    unsafe {
+        let h = OpenProcess(PROCESS_SYNCHRONIZE, 0, pid);
+        if !h.is_null() {
+            WaitForSingleObject(h, ms);
+            CloseHandle(h);
+        }
+    }
+}
+
+// ---------------------------------------------------------------- decoy files
+
+/// Puts the decoy exe at `path`. The first copy is written once as `.stub`; every decoy is a hard link to it, so
+/// thousands of decoys cost no extra disk space or write time (falls back to copying where links are impossible).
+fn place_stub(app: &AppHandle, path: &Path) -> Result<(), String> {
+    if path.exists() {
+        return Ok(()); // same session, same version (the folder is wiped at every start)
+    }
+    let dir = stubs_dir(app)?;
+    fs::create_dir_all(&dir).map_err(|e| e.to_string())?;
+    let master = dir.join(".stub");
+    if fs::metadata(&master).map(|m| m.len() != STUB.len() as u64).unwrap_or(true) {
+        fs::write(&master, STUB).map_err(|e| e.to_string())?;
+    }
+    fs::create_dir_all(path.parent().ok_or("Некорректный путь")?).map_err(|e| e.to_string())?;
+    if fs::hard_link(&master, path).is_err() {
+        fs::copy(&master, path).map_err(|e| e.to_string())?;
+    }
+    Ok(())
+}
+
 /// Deletes a decoy exe (and any folders that became empty) once nothing is running from it any more.
 fn cleanup_stub(app: &AppHandle, path: &Path) {
-    let still_used = app.state::<AppState>().running.lock().unwrap().values().any(|r| r.path == path);
+    let state = app.state::<AppState>();
+    let (still_used, nothing_running) = {
+        let map = state.running.lock().unwrap();
+        (map.values().any(|r| r.path == path), map.is_empty())
+    };
     if still_used {
         return;
     }
@@ -229,6 +365,11 @@ fn cleanup_stub(app: &AppHandle, path: &Path) {
             }
             dir = d.parent();
         }
+        if nothing_running {
+            // last decoy gone: remove the shared copy and the folder too
+            let _ = fs::remove_file(root.join(".stub"));
+            let _ = fs::remove_dir(&root);
+        }
     }
 }
 
@@ -238,9 +379,13 @@ fn end_run(app: &AppHandle, mut r: Running) {
     cleanup_stub(app, &r.path);
 }
 
-fn kill_all(app: &AppHandle) {
+/// Stops every decoy. Two passes (terminate all, then wait and clean up), so thousands of decoys end quickly.
+pub(crate) fn kill_all(app: &AppHandle) {
     let state = app.state::<AppState>();
-    let drained: Vec<Running> = state.running.lock().unwrap().drain().map(|(_, v)| v).collect();
+    let mut drained: Vec<Running> = state.running.lock().unwrap().drain().map(|(_, v)| v).collect();
+    for r in drained.iter_mut() {
+        let _ = r.child.kill();
+    }
     for r in drained {
         end_run(app, r);
     }
@@ -338,7 +483,7 @@ async fn refresh_games(app: AppHandle) -> Result<GamesPayload, String> {
 
 #[tauri::command]
 #[allow(clippy::too_many_arguments)]
-fn launch(
+async fn launch(
     app: AppHandle,
     game_id: String,
     game_name: String,
@@ -346,10 +491,14 @@ fn launch(
     minutes: u64,
     auto_stop: bool,
     notify: bool,
+    smart: bool,
     notify_title: String,
     notify_body: String,
 ) -> Result<RunInfo, String> {
-    launch_inner(&app, game_id, game_name, exe, minutes, auto_stop, notify, notify_title, notify_body)
+    // off the UI thread: starting a process takes a few milliseconds, thousands of times in a row in the Lab
+    tauri::async_runtime::spawn_blocking(move || launch_inner(&app, game_id, game_name, exe, minutes, auto_stop, notify, smart, notify_title, notify_body))
+        .await
+        .map_err(|e| e.to_string())?
 }
 
 #[allow(clippy::too_many_arguments)]
@@ -361,6 +510,7 @@ fn launch_inner(
     minutes: u64,
     auto_stop: bool,
     notify: bool,
+    smart: bool,
     notify_title: String,
     notify_body: String,
 ) -> Result<RunInfo, String> {
@@ -372,33 +522,60 @@ fn launch_inner(
 
     let rel = rel_path(&exe).ok_or("Некорректное имя exe")?;
     let path = stubs_dir(app)?.join(&rel);
-    fs::create_dir_all(path.parent().ok_or("Некорректный путь")?).map_err(|e| e.to_string())?;
-    let up_to_date = fs::read(&path).map(|b| b == STUB).unwrap_or(false);
-    if !up_to_date {
-        // ignore errors: the file may be locked by a copy that is already running
-        let _ = fs::write(&path, STUB);
-    }
+    place_stub(app, &path)?;
 
+    // `--parent`: the decoy exits by itself when this process ends, however it ends
     let mut cmd = Command::new(&path);
-    hide_cmd(&mut cmd).current_dir(path.parent().unwrap());
+    hide_cmd(&mut cmd).current_dir(path.parent().unwrap()).arg("--parent").arg(std::process::id().to_string());
     let child = cmd.spawn().map_err(|e| format!("Не удалось запустить заглушку: {e}"))?;
     assign_to_job(state.job, &child);
 
+    // a smart decoy needs Discord's log to know when the game was noticed; without it, fall back to a plain timer
+    let smart = smart && !discord_logs().is_empty();
+    let started_ms = now_ms();
     let info = RunInfo {
         key: key.clone(),
         game_id,
         game_name: game_name.clone(),
         exe,
         pid: child.id(),
-        started_ms: now_ms(),
+        started_ms,
         duration_s: minutes.max(1) * 60,
+        counting_from_ms: if smart { None } else { Some(started_ms) },
+        detected: false,
+        smart,
     };
-    state.running.lock().unwrap().insert(key.clone(), Running { info: info.clone(), child, path: path.clone() });
+    let rel_key = rel.to_string_lossy().to_lowercase().replace('\\', "/");
+    state.running.lock().unwrap().insert(key.clone(), Running { info: info.clone(), child, path: path.clone(), rel_key });
 
     let (h, k, pid, secs) = (app.clone(), key, info.pid, info.duration_s);
     tauri::async_runtime::spawn(async move {
-        tokio::time::sleep(Duration::from_secs(secs)).await;
         let st = h.state::<AppState>();
+        // 1) a smart decoy waits for Discord to notice it, then 2) the countdown runs from that moment
+        loop {
+            let from = {
+                let map = st.running.lock().unwrap();
+                match map.get(&k) {
+                    Some(r) if r.info.pid == pid => r.info.counting_from_ms,
+                    _ => return, // stopped meanwhile
+                }
+            };
+            if let Some(from) = from {
+                let end = from + secs * 1000;
+                let now = now_ms();
+                if end > now {
+                    tokio::time::sleep(Duration::from_millis(end - now)).await;
+                }
+                break;
+            }
+            tokio::time::sleep(Duration::from_millis(500)).await;
+            let mut map = st.running.lock().unwrap();
+            if let Some(r) = map.get_mut(&k) {
+                if r.info.pid == pid && r.info.counting_from_ms.is_none() && now_ms().saturating_sub(r.info.started_ms) > DETECT_TIMEOUT_MS {
+                    r.info.counting_from_ms = Some(now_ms()); // Discord never confirmed: count anyway
+                }
+            }
+        }
         let still = st.running.lock().unwrap().get(&k).map(|r| r.info.pid == pid).unwrap_or(false);
         if !still {
             return;
@@ -420,47 +597,130 @@ fn launch_inner(
 }
 
 #[tauri::command]
-fn stop(app: AppHandle, state: State<AppState>, key: String) {
-    let removed = state.running.lock().unwrap().remove(&key);
-    if let Some(r) = removed {
-        end_run(&app, r);
-    }
+async fn stop(app: AppHandle, key: String) -> Result<(), String> {
+    tauri::async_runtime::spawn_blocking(move || {
+        let removed = {
+            let state = app.state::<AppState>();
+            let mut map = state.running.lock().unwrap();
+            map.remove(&key)
+        };
+        if let Some(r) = removed {
+            end_run(&app, r);
+        }
+    })
+    .await
+    .map_err(|e| e.to_string())
 }
 
 #[tauri::command]
-fn stop_all(app: AppHandle) {
-    kill_all(&app);
+async fn stop_all(app: AppHandle) -> Result<(), String> {
+    tauri::async_runtime::spawn_blocking(move || kill_all(&app)).await.map_err(|e| e.to_string())
 }
 
 #[tauri::command]
-fn list_running(app: AppHandle, state: State<AppState>) -> Vec<RunInfo> {
-    let (mut v, dead) = {
-        let mut map = state.running.lock().unwrap();
-        let dead_keys: Vec<String> = map
-            .iter_mut()
-            .filter_map(|(k, r)| if matches!(r.child.try_wait(), Ok(None)) { None } else { Some(k.clone()) })
-            .collect();
-        let dead: Vec<Running> = dead_keys.iter().filter_map(|k| map.remove(k)).collect();
-        (map.values().map(|r| r.info.clone()).collect::<Vec<RunInfo>>(), dead)
-    };
-    for r in dead {
-        end_run(&app, r); // process already gone: just removes its file
-    }
-    v.sort_by_key(|r| r.started_ms);
-    v
+async fn list_running(app: AppHandle) -> Result<Vec<RunInfo>, String> {
+    tauri::async_runtime::spawn_blocking(move || {
+        let (mut v, dead) = {
+            let state = app.state::<AppState>();
+            let mut map = state.running.lock().unwrap();
+            let dead_keys: Vec<String> = map
+                .iter_mut()
+                .filter_map(|(k, r)| if matches!(r.child.try_wait(), Ok(None)) { None } else { Some(k.clone()) })
+                .collect();
+            let dead: Vec<Running> = dead_keys.iter().filter_map(|k| map.remove(k)).collect();
+            (map.values().map(|r| r.info.clone()).collect::<Vec<RunInfo>>(), dead)
+        };
+        for r in dead {
+            end_run(&app, r); // process already gone: just removes its file
+        }
+        v.sort_by_key(|r| r.started_ms);
+        v
+    })
+    .await
+    .map_err(|e| e.to_string())
 }
 
 #[tauri::command]
 fn discord_running() -> bool {
-    let mut cmd = Command::new("tasklist");
-    let out = hide_cmd(cmd.args(["/FO", "CSV", "/NH"])).output();
-    match out {
-        Ok(o) => {
-            let s = String::from_utf8_lossy(&o.stdout).to_lowercase();
-            ["discord.exe", "discordptb.exe", "discordcanary.exe"].iter().any(|n| s.contains(n))
+    list_processes().iter().any(|(_, name)| {
+        let n = name.to_lowercase();
+        n == "discord.exe" || n == "discordptb.exe" || n == "discordcanary.exe"
+    })
+}
+
+// ---------------------------------------------------------------- Discord notices a decoy
+
+/// Discord's renderer logs (stable, PTB, Canary). Only the lines about the game that Discord shows as
+/// "playing" are looked at, to learn the moment it noticed a decoy. Nothing from the file is stored or sent.
+fn discord_logs() -> Vec<PathBuf> {
+    let Ok(appdata) = std::env::var("APPDATA") else { return vec![] };
+    ["discord", "discordptb", "discordcanary"]
+        .iter()
+        .map(|d| Path::new(&appdata).join(d).join("logs").join("renderer_js.log"))
+        .filter(|p| p.is_file())
+        .collect()
+}
+
+/// Background thread: tails Discord's log and marks waiting ("smart") decoys as detected when Discord reports the
+/// decoy's exe as the visible game, which starts their countdown.
+fn start_discord_watcher(app: AppHandle) {
+    use std::io::{Read, Seek, SeekFrom};
+    std::thread::spawn(move || {
+        let mut offsets: HashMap<PathBuf, u64> = HashMap::new();
+        loop {
+            std::thread::sleep(Duration::from_millis(1000));
+            let state = app.state::<AppState>();
+            let waiting: Vec<(String, String)> = {
+                let map = state.running.lock().unwrap();
+                map.values()
+                    .filter(|r| r.info.smart && r.info.counting_from_ms.is_none())
+                    .map(|r| (r.info.key.clone(), format!("/stubs/{}", r.rel_key)))
+                    .collect()
+            };
+            for log in discord_logs() {
+                let Ok(meta) = fs::metadata(&log) else { continue };
+                let len = meta.len();
+                // first sight of a log: start at its end, history is irrelevant
+                let offset = offsets.entry(log.clone()).or_insert(len);
+                if len < *offset {
+                    *offset = 0; // Discord restarted and truncated it
+                }
+                if len == *offset {
+                    continue;
+                }
+                let from = (*offset).max(len.saturating_sub(4 * 1024 * 1024));
+                *offset = len;
+                if waiting.is_empty() {
+                    continue;
+                }
+                let Ok(mut f) = fs::File::open(&log) else { continue };
+                let mut buf = Vec::with_capacity((len - from) as usize);
+                if f.seek(SeekFrom::Start(from)).is_err() || f.take(len - from).read_to_end(&mut buf).is_err() {
+                    continue;
+                }
+                let text = String::from_utf8_lossy(&buf);
+                for line in text.lines() {
+                    if !line.contains("visibleGame=") || line.contains("visibleGame=null") {
+                        continue;
+                    }
+                    let line = line.to_lowercase();
+                    for (key, needle) in &waiting {
+                        if !line.contains(needle.as_str()) {
+                            continue;
+                        }
+                        let mut map = state.running.lock().unwrap();
+                        if let Some(r) = map.get_mut(key) {
+                            if r.info.counting_from_ms.is_none() {
+                                r.info.detected = true;
+                                r.info.counting_from_ms = Some(now_ms());
+                                let _ = app.emit("run-detected", key);
+                            }
+                        }
+                    }
+                }
+            }
         }
-        Err(_) => false,
-    }
+    });
 }
 
 #[tauri::command]
@@ -615,12 +875,34 @@ async fn find_installed(exes: Vec<String>) -> Option<String> {
 
 // ---------------------------------------------------------------- app
 
+/// Opens a link from the project's GitHub repository in the default browser (nothing else is allowed).
+#[tauri::command]
+fn open_url(url: String) -> Result<(), String> {
+    if !url.starts_with("https://github.com/leon03131/Decoy") {
+        return Err("only links to the project repository can be opened".into());
+    }
+    Command::new("explorer.exe").arg(url).spawn().map(|_| ()).map_err(|e| e.to_string())
+}
+
 pub fn run() {
+    // After an in-place update the previous process may still be shutting down: wait for it before touching the
+    // single-instance lock and the WebView2 data folder.
+    let args: Vec<String> = std::env::args().collect();
+    if let Some(pid) = args.iter().position(|a| a == "--wait-pid").and_then(|i| args.get(i + 1)).and_then(|p| p.parse::<u32>().ok()) {
+        wait_for_exit(pid, 20_000);
+    }
+
     let app = tauri::Builder::default()
         .plugin(tauri_plugin_single_instance::init(|app, _, _| show_main(app)))
         .plugin(tauri_plugin_notification::init())
+        .plugin(tauri_plugin_updater::Builder::new().build())
+        .manage(update::UpdateState::default())
         .manage(AppState { running: Mutex::new(HashMap::new()), job: make_job(), close_to_tray: AtomicBool::new(true), tray_items: Mutex::new(None) })
         .invoke_handler(tauri::generate_handler![
+            update::check_update,
+            update::download_update,
+            update::install_update,
+            open_url,
             get_games,
             refresh_games,
             launch,
@@ -681,17 +963,27 @@ pub fn run() {
                 })
                 .build(app)?;
 
-            // leftovers from a crash or kill: decoys only exist while they run
+            // Leftovers from a crash, a kill or an older version: decoys only exist while Decoy runs. Kill any decoy
+            // process still alive below the decoy folder (the decoys' own watchdog and the job object normally
+            // make that impossible; this is the third layer), then wipe the folder.
             if let Ok(dir) = stubs_dir(app.handle()) {
+                sweep_leftover_stubs(&dir);
                 let _ = fs::remove_dir_all(dir);
             }
+            // files left by an in-place portable update
+            if let Ok(exe) = std::env::current_exe() {
+                for ext in ["exe.old", "exe.new"] {
+                    let _ = fs::remove_file(exe.with_extension(ext));
+                }
+            }
+            start_discord_watcher(app.handle().clone());
 
             // `decoy.exe --launch <exe path> [minutes]` starts a decoy right away (handy for scripts and tests)
             let args: Vec<String> = std::env::args().collect();
             if let Some(i) = args.iter().position(|a| a == "--launch") {
                 if let Some(exe) = args.get(i + 1) {
                     let minutes = args.get(i + 2).and_then(|m| m.parse().ok()).unwrap_or(15);
-                    let _ = launch_inner(app.handle(), "cli".into(), exe.clone(), exe.clone(), minutes, true, false, String::new(), String::new());
+                    let _ = launch_inner(app.handle(), "cli".into(), exe.clone(), exe.clone(), minutes, true, false, false, String::new(), String::new());
                 }
             }
             Ok(())

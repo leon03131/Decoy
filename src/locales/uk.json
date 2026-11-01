@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Українська" },
-
+  "_meta": {
+    "name": "Українська"
+  },
   "nav.library": "Бібліотека",
   "nav.favorites": "Обране",
   "nav.running": "Запущено",
   "nav.settings": "Налаштування",
-
   "discord.checking": "Перевіряю…",
   "discord.up": "Запущений",
   "discord.down": "Не запущений",
-
   "window.minimize": "Згорнути",
   "window.maximize": "Розгорнути",
   "window.close": "Закрити",
-
   "tag.live": "Запущено",
   "tag.noExe": "немає exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "лаунчер",
-
   "lib.title": "Бібліотека",
   "lib.subtitle": "{n} ігор з відомим процесом · оновлено {date}",
   "lib.loading": "Завантажую базу ігор…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "До обраного",
   "lib.empty.title": "Нічого не знайдено",
   "lib.empty.text": "Спробуйте іншу назву або увімкніть «Показувати без exe».",
-
   "fav.title": "Обране",
   "fav.count": "{n} ігор",
   "fav.hint": "Позначайте ігри зірочкою",
   "fav.empty.title": "Тут поки що порожньо",
   "fav.empty.text": "Натисніть зірочку на плитці гри, щоб додати її сюди.",
-
   "detail.process": "Процес",
   "detail.duration": "Скільки тримати",
   "detail.minutes": "{n} хв",
@@ -62,7 +57,6 @@
   "detail.favorite": "Обране",
   "detail.close": "Закрити",
   "detail.id": "ID {id}",
-
   "running.title": "Запущено",
   "running.count": "{n} активних заглушок",
   "running.none": "Зараз нічого не запущено",
@@ -70,14 +64,36 @@
   "running.stop": "Зупинити",
   "running.empty.title": "Нічого не запущено",
   "running.empty.text": "Відкрийте гру в бібліотеці та натисніть «Запустити заглушку».",
-
   "settings.title": "Налаштування",
   "settings.general": "Загальні",
   "settings.language": "Мова",
   "settings.language.desc": "Мова інтерфейсу. Нові мови додаються файлами в папку locales.",
   "settings.stubs": "Заглушки",
   "settings.defaultTime": "Час за замовчуванням",
-  "settings.defaultTime.desc": "Скільки хвилин тримати процес (у завданнях Discord зазвичай 15).",
+  "settings.defaultTime.desc": "Скільки хвилин тримати процес. За замовчуванням 16, а не 15: завдання Discord вимагають 15 хвилин гри, але Discord помічає нову гру не відразу (до хвилини), тому рівно 15 хвилин не вистачає.",
+  "settings.smartTimer": "Розумний таймер",
+  "settings.smartTimer.desc": "Відлік починається, коли Discord помітив заглушку, а не в момент запуску. Для цього програма читає з локального журналу Discord лише рядки про запущену гру; нічого не зберігається і нікуди не надсилається.",
+  "settings.updates": "Оновлення",
+  "settings.checkNow": "Перевірити",
+  "settings.autoUpdate": "Автоматичне оновлення",
+  "settings.autoUpdate.desc": "Перевіряти GitHub під час запуску та кожні 6 годин і завантажувати нові версії у фоновому режимі. Встановлення завжди очікує на ваше підтвердження, а файли перевіряються цифровим підписом.",
+  "update.current": "Встановлена версія {v}",
+  "update.checking": "Перевірка…",
+  "update.uptodate": "У вас найновіша версія",
+  "update.available": "Доступна версія {v}",
+  "update.downloading": "Завантаження версії {v}… {p}%",
+  "update.ready": "Версія {v} готова до встановлення",
+  "update.installing": "Встановлення та перезапуск…",
+  "update.download": "Завантажити",
+  "update.restart": "Перезапустити й оновити",
+  "update.later": "Пізніше",
+  "update.notes": "Що нового",
+  "update.running": "Запущені заглушки ({n}) зупиняться.",
+  "update.error": "Не вдалося оновити: {e}",
+  "detail.waiting": "очікуємо на Discord",
+  "detail.waitingNote": "Discord помічає гру не відразу, до хвилини. Відлік почнеться, коли він побачить заглушку.",
+  "detail.detected": "Discord помітив заглушку",
+  "detail.assumed": "Discord не підтвердив, час усе одно рахується.",
   "settings.autoStop": "Зупиняти за таймером",
   "settings.autoStop.desc": "Коли час вийде, заглушка завершиться сама.",
   "settings.notify": "Сповіщення про завершення",
@@ -97,7 +113,6 @@
   "settings.files": "Файли",
   "settings.open": "Відкрити",
   "settings.legal": "Decoy не використовує ваш токен Discord і не приймає завдання за вас. Імітація процесу гри може суперечити правилам Discord, використовуйте на власний ризик.",
-
   "toast.launched": "«{name}» запущено на {n} хв. Discord помітить її приблизно через 15 секунд.",
   "toast.stopped": "Заглушку зупинено",
   "toast.allStopped": "Усі заглушки зупинено",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "У {n} ігор з'явилися exe: {names}",
   "toast.refreshAdded": "Базу оновлено: +{n} нових ігор",
   "toast.refreshUpToDate": "База вже актуальна",
-
   "nav.lab": "Лабораторія",
   "lab.title": "Лабораторія",
   "lab.subtitle": "Секретна вкладка: запускає багато заглушок за один раз.",
@@ -115,16 +129,19 @@
   "lab.launch": "Запустити {n} ігор",
   "lab.launching": "Запускаю {done} з {total}…",
   "lab.cancel": "Скасувати",
-  "lab.warn": "Кожна заглушка — це окремий процес із вікном. Понад 200–300 за раз може уповільнити роботу комп'ютера, максимум {max}.",
+  "lab.warn": "Кожна заглушка — це окремий процес із вікном. Забагато процесів одночасно можуть заморозити компʼютер: кожен процес і вікно споживають памʼять, а після кількох тисяч вікон Windows може припинити їх створення. Якщо закрити Decoy, усі заглушки зупиняться.",
+  "lab.all": "Усі ({n})",
+  "lab.estimate": "{n} заглушок використають приблизно {ram} RAM.",
+  "lab.confirm": "Натисніть ще раз, щоб запустити {n}",
+  "lab.limit": "Windows припинила запуск нових процесів після {n}: це обмеження системи.",
+  "running.more": "…і ще {n}. Показано перші 120.",
   "lab.hide": "Сховати вкладку",
   "toast.labUnlocked": "Відкрито секретну вкладку «Лабораторія»",
   "toast.labHidden": "Вкладку сховано",
   "toast.labDone": "Запущено ігор: {n}",
-
   "tray.show": "Відкрити Decoy",
   "tray.stop": "Зупинити всі заглушки",
   "tray.quit": "Вийти",
-
   "notify.title": "Час вийшов",
   "notify.body": "{name}: минуло {n} хв."
 }

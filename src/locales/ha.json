@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Hausa" },
-
+  "_meta": {
+    "name": "Hausa"
+  },
   "nav.library": "Laburare",
   "nav.favorites": "Wadanda aka fi so",
   "nav.running": "Yana aiki",
   "nav.settings": "Saituna",
-
   "discord.checking": "Ana dubawa…",
   "discord.up": "Yana aiki",
   "discord.down": "Baya aiki",
-
   "window.minimize": "Kankance",
   "window.maximize": "Fadada",
   "window.close": "Rufe",
-
   "tag.live": "Yana aiki",
   "tag.noExe": "babu exe",
   "tag.exeCount": "exe {n}",
   "tag.launcher": "mai kaddamarwa",
-
   "lib.title": "Laburare",
   "lib.subtitle": "Wasanni {n} masu tsarin aiki da aka sani · an sabunta {date}",
   "lib.loading": "Ana loda bayanan wasanni…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Saka a wadanda aka fi so",
   "lib.empty.title": "Ba a sami komai ba",
   "lib.empty.text": "Gwada wani suna ko kunna “Nuna wasannin da ba su da exe”.",
-
   "fav.title": "Wadanda aka fi so",
   "fav.count": "Wasanni {n}",
   "fav.hint": "Sanya tauraro a kan wasanni",
   "fav.empty.title": "Babu komai a nan tukuna",
   "fav.empty.text": "Danna tauraron da ke kan wasa don saka shi a nan.",
-
   "detail.process": "Tsarin aiki",
   "detail.duration": "Tsawon lokacin da za a bar shi",
   "detail.minutes": "minti {n}",
@@ -62,7 +57,6 @@
   "detail.favorite": "Wanda aka fi so",
   "detail.close": "Rufe",
   "detail.id": "ID {id}",
-
   "running.title": "Yana aiki",
   "running.count": "masu aiki na decoy {n}",
   "running.none": "Babu abin da ke aiki a yanzu",
@@ -70,14 +64,36 @@
   "running.stop": "Tsaya",
   "running.empty.title": "Babu abin da ke aiki",
   "running.empty.text": "Bude wasa a cikin laburare sannan danna “Fara decoy”.",
-
   "settings.title": "Saituna",
   "settings.general": "Gaba daya",
   "settings.language": "Harshe",
   "settings.language.desc": "Harshen manhaja. Ana kara sabbin harsuna a matsayin fayiloli a cikin jakar locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Tsawon lokaci na asali",
-  "settings.defaultTime.desc": "Minti nawa za a bar tsarin yana aiki (ayyukan Discord sukan bukaci 15).",
+  "settings.defaultTime.desc": "Minti nawa za a ci gaba da tafiyar da aikin. Na asali shine 16, ba 15 ba: ayyukan Discord suna buƙatar minti 15 na wasa, amma Discord yana buƙatar har zuwa minti ɗaya don lura da sabon wasa, don haka daidai 15 bai isa ba.",
+  "settings.smartTimer": "Mai ƙidayar lokaci mai wayo",
+  "settings.smartTimer.desc": "Ƙididdigar tana farawa ne lokacin da Discord ya lura da decoy, ba lokacin da kuka fara shi ba. Don sanin hakan, manhajar tana karanta layukan da suka shafi wasan da ake ciki ne kawai daga bayanan Discord na gida; ba a adana komai ko aika shi ko'ina.",
+  "settings.updates": "Sabuntawa",
+  "settings.checkNow": "Duba yanzu",
+  "settings.autoUpdate": "Sabuntawa ta atomatik",
+  "settings.autoUpdate.desc": "Duba GitHub yayin kunnawa da kowane sa'o'i 6 kuma saukar da sabbin juzu'ai a bango. Shigarwa koyaushe yana jiran tabbacinku, kuma ana bincika fayiloli ta sa hannunsu na dijital.",
+  "update.current": "Sigar da aka shigar {v}",
+  "update.checking": "Ana dubawa…",
+  "update.uptodate": "Kuna kan sabuwar siga",
+  "update.available": "Ana samun sigar {v}",
+  "update.downloading": "Ana saukar da sigar {v}… {p}%",
+  "update.ready": "Sigar {v} a shirye take don shigarwa",
+  "update.installing": "Ana shigarwa da sake kunnawa…",
+  "update.download": "Saukarwa",
+  "update.restart": "Sake kunnawa da sabuntawa",
+  "update.later": "Daga baya",
+  "update.notes": "Abubuwan da ke sabo",
+  "update.running": "Decoy da ke aiki ({n}) za su tsaya.",
+  "update.error": "Ba a iya sabuntawa ba: {e}",
+  "detail.waiting": "ana jiran Discord",
+  "detail.waitingNote": "Discord yana buƙatar har zuwa minti ɗaya don lura da wasa. Ƙididdigar tana farawa lokacin da ya ga decoy.",
+  "detail.detected": "Discord ya lura da decoy",
+  "detail.assumed": "Discord bai tabbatar da shi ba, ana lissafin lokacin duk da haka.",
   "settings.autoStop": "Tsayar da kansa bisa lokaci",
   "settings.autoStop.desc": "Decoy zai tsaya da kansa idan lokaci ya cika.",
   "settings.notify": "Sanar idan an gama",
@@ -97,7 +113,6 @@
   "settings.files": "Fayiloli",
   "settings.open": "Bude",
   "settings.legal": "Decoy baya amfani da alamar Discord dinku kuma baya karbar ayyuka a madadinku. Yin kwaikwayon tsarin wasa na iya saba wa dokokin Discord, kuyi amfani da shi da alhakin kanku.",
-
   "toast.launched": "An fara “{name}” na tsawon minti {n}. Discord zai lura da shi cikin kusan dakiku 15.",
   "toast.stopped": "An tsayar da Decoy",
   "toast.allStopped": "An tsayar da duk decoy",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "Wasanni {n} sun sami fayilolin exe: {names}",
   "toast.refreshAdded": "An sabunta bayanan bayanai: +{n} sabbin wasanni",
   "toast.refreshUpToDate": "Bayanan bayanai sun riga sun zama na zamani",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "Tebur na sirri: yana fara decoys da yawa a lokaci guda.",
@@ -115,16 +129,19 @@
   "lab.launch": "Fara wasanni {n}",
   "lab.launching": "Ana fara {done} cikin {total}…",
   "lab.cancel": "Soke",
-  "lab.warn": "Kowane decoy wani tsari ne na daban mai taga. Fiye da 200–300 a lokaci guda na iya sa kwamfutarku yin nauyi, matsakaicin iyaka shine {max}.",
+  "lab.warn": "Kowane decoy tsari ne daban mai taga. Da yawa a lokaci guda na iya daskarar da kwamfutarka: kowane tsari da taga yana amfani da ƙwaƙwalwa, kuma bayan dubban tagogi Windows na iya daina ƙirƙirar ƙari. Idan ka rufe Decoy, duk decoy zai tsaya.",
+  "lab.all": "Duka ({n})",
+  "lab.estimate": "{n} decoy zai yi amfani da kusan {ram} na RAM.",
+  "lab.confirm": "Danna kuma don fara {n}",
+  "lab.limit": "Windows ya daina fara sabbin matakai bayan {n}: wannan shine iyakar tsarin.",
+  "running.more": "…da ƙarin {n}. Ana nuna 120 na farko.",
   "lab.hide": "Boye wannan tebur",
   "toast.labUnlocked": "An bude teburin sirri na “Lab”",
   "toast.labHidden": "An boye tebur",
   "toast.labDone": "Wasannin da aka fara: {n}",
-
   "tray.show": "Bude Decoy",
   "tray.stop": "Tsayar da duk decoys",
   "tray.quit": "Fita",
-
   "notify.title": "Lokaci ya cika",
   "notify.body": "{name}: minti {n} sun wuce."
 }

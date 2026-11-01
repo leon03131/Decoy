@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Ligure" },
-
+  "_meta": {
+    "name": "Ligure"
+  },
   "nav.library": "Bibbiutêca",
   "nav.favorites": "Preferîi",
   "nav.running": "In ezecuçion",
   "nav.settings": "Inpostaçioin",
-
   "discord.checking": "Contròllo…",
   "discord.up": "In ezecuçion",
   "discord.down": "Færma",
-
   "window.minimize": "Minimizza",
   "window.maximize": "Massimizza",
   "window.close": "Særa",
-
   "tag.live": "In ezecuçion",
   "tag.noExe": "sensa exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Bibbiutêca",
   "lib.subtitle": "{n} zeughi con un procèsso conosciûo · agiornòu o {date}",
   "lib.loading": "Caregamento da baze dæti di zeughi…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Azonzi a-i preferîi",
   "lib.empty.title": "Ninte trovòu",
   "lib.empty.text": "Prêuva con n'âtro nómme ò atîva “Móstra i zeughi sensa exe”.",
-
   "fav.title": "Preferîi",
   "fav.count": "{n} zeughi",
   "fav.hint": "Màrca i zeughi con 'na stélla",
   "fav.empty.title": "Ninte chi ancón",
   "fav.empty.text": "Sgnàcca a stélla in sciâ ciælla de 'n zeugo pe azónzilo chi.",
-
   "detail.process": "Procèsso",
   "detail.duration": "Quànto mantegnîlo",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Preferîo",
   "detail.close": "Særa",
   "detail.id": "ID {id}",
-
   "running.title": "In ezecuçion",
   "running.count": "{n} decoy atîvi",
   "running.none": "Ninte in ezecuçion a-o moménto",
@@ -70,14 +64,36 @@
   "running.stop": "Fèrma",
   "running.empty.title": "Ninte in ezecuçion",
   "running.empty.text": "Àrvi un zeugo inta bibbiutêca e sgnàcca “Avia decoy”.",
-
   "settings.title": "Inpostaçioin",
   "settings.general": "Generâle",
   "settings.language": "Léngoa",
   "settings.language.desc": "Léngoa de l'interfàccia. E nêuve léngoe vêgnan azónte cómme file inta cartélla locales.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "Duerâ predefinîa",
-  "settings.defaultTime.desc": "Quànti menûti mantegnî o procèsso (de sòlito e quest de Discord domàndan 15 min).",
+  "settings.defaultTime.desc": "Quanti menuti tegnî o procèsso. O valô predefinîo o l'é 16, no 15: e quest de Discord domàndan 15 menuti de zeugo, ma Discord o peu pigiâ scin a 'n menuto pe acorzise d'un nêuvo zeugo.",
+  "settings.smartTimer": "Timer inteligénte",
+  "settings.smartTimer.desc": "O cónto a rébórso o coménsa quànde Discord o s'acòrze do decoy, no quànde ti l'avii. Pe savéilo, l'app a leze sôlo e righe in sciô zeugo in córso da-o regìstro locâle de Discord; nìnte o vêgne sarvòu ò mandòu da quarche pàrte.",
+  "settings.updates": "Agiornaménti",
+  "settings.checkNow": "Contròlla òua",
+  "settings.autoUpdate": "Agiornaménti aotomàtichi",
+  "settings.autoUpdate.desc": "Contròlla GitHub a l'avîo e ògni 6 ôe e descarega e nêuve verscioìn in baccàn. L'instalaçión a spêta sénpre a teu confèrma, e i file son verificæ co-a fìrma digitâle.",
+  "update.current": "Versción instalâ {v}",
+  "update.checking": "Contròllo…",
+  "update.uptodate": "Ti gh'æ za l'ùrtima versción",
+  "update.available": "A versción {v} a l'é disponìbile",
+  "update.downloading": "Descaregamento da versción {v}… {p}%",
+  "update.ready": "A versción {v} a l'é prónta da instalâ",
+  "update.installing": "Instalaçión e riavîo…",
+  "update.download": "Descàrega",
+  "update.restart": "Riavîa e agiorna",
+  "update.later": "Dòppo",
+  "update.notes": "Cöse gh'é de nêuvo",
+  "update.running": "I decoy in córso ({n}) se fermiàn.",
+  "update.error": "Inposscìbile agiornâ: {e}",
+  "detail.waiting": "in atéiza de Discord",
+  "detail.waitingNote": "Discord o peu pigiâ scin a 'n menuto pe acorzise d'un zeugo. O cónto o coménsa quànde o védde o decoy.",
+  "detail.detected": "Discord o s'é acòrto do decoy",
+  "detail.assumed": "Discord o no l'à confermòu, o ténpo o vêgne contòu comonque.",
   "settings.autoStop": "Fèrma a-o timer",
   "settings.autoStop.desc": "O decoy o finìsce da lê quànde o ténpo o l'é scadûo.",
   "settings.notify": "Avîsa a-a fin",
@@ -97,7 +113,6 @@
   "settings.files": "File",
   "settings.open": "Àrvi",
   "settings.legal": "Decoy o no dêuvia o teu token de Discord e o no l'acètta e quest pe ti. Simulâ un procèsso de 'n zeugo o pêu anâ cóntra e régole de Discord, adêuvialo a teu réizego.",
-
   "toast.launched": "“{name}” aviòu pe {n} min. Discord o doviæ rilevâlo in ciù ò mêno 15 segóndi.",
   "toast.stopped": "Decoy fermòu",
   "toast.allStopped": "Tùtti i decoy són stæti fermæ",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} zeughi àn òtegnûo di file exe: {names}",
   "toast.refreshAdded": "Baze dæti agiornâ: +{n} nêuvi zeughi",
   "toast.refreshUpToDate": "A baze dæti a l'é za a-o giórno",
-
   "nav.lab": "Laboratöio",
   "lab.title": "Laboratöio",
   "lab.subtitle": "Un féuggio segrêto: o lancia tànti decoy insemme.",
@@ -115,16 +129,19 @@
   "lab.launch": "Avia {n} zeughi",
   "lab.launching": "Inviamento de {done} de {total}…",
   "lab.cancel": "Anùlla",
-  "lab.warn": "Ògni decoy o l'é un procèsso separòu con un barcon. Ciù de 200–300 insemme pêuan ralentâ o computer, o màscimo o l'é {max}.",
+  "lab.warn": "Ògni decoy o l'é un procèsso separòu con 'n barcón. Tròppi insémme pêuan blocâ o teu computer: ògni procèsso e barcón o conssùmma memöia, e dòppo quàrche mîa de barcoìn Windows o peu smétte de creâne de nêuvi. Se ti særi Decoy, tùtti i decoy se fèrman.",
+  "lab.all": "Tùtti ({n})",
+  "lab.estimate": "{n} decoy consumiàn ciù ò mêno {ram} de RAM.",
+  "lab.confirm": "Scciàcca tórna pe aviâ {n}",
+  "lab.limit": "Windows o s'é fermòu da aviâ nêuvi procèsci dòppo {n}: quésto o l'é o lìmite do scistêma.",
+  "running.more": "…e âtri {n}. Vêgnan mostræ i prìmmi 120.",
   "lab.hide": "Ascondi sto féuggio",
   "toast.labUnlocked": "Féuggio segrêto “Laboratöio” sblocòu",
   "toast.labHidden": "Féuggio ascôzo",
   "toast.labDone": "Zeughi aviæ: {n}",
-
   "tray.show": "Àrvi Decoy",
   "tray.stop": "Fèrma tùtti i decoy",
   "tray.quit": "Sciòrti",
-
   "notify.title": "O ténpo o l'é scadûo",
   "notify.body": "{name}: són pasæ {n} min."
 }

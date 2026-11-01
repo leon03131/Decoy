@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Corsu" },
-
+  "_meta": {
+    "name": "Corsu"
+  },
   "nav.library": "Bibbiuteca",
   "nav.favorites": "Preferiti",
   "nav.running": "In corsu",
   "nav.settings": "Preferenze",
-
   "discord.checking": "Verificazione…",
   "discord.up": "In corsu",
   "discord.down": "Micca in corsu",
-
   "window.minimize": "Minimizà",
   "window.maximize": "Massimizà",
   "window.close": "Chjode",
-
   "tag.live": "In corsu",
   "tag.noExe": "senza exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "lanciatore",
-
   "lib.title": "Bibbiuteca",
   "lib.subtitle": "{n} ghjochi cù un prucessu cunnisciutu · aghjurnatu u {date}",
   "lib.loading": "Caricamentu di a basa di dati di i ghjochi…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Aghjunghje à i preferiti",
   "lib.empty.title": "Nulla trovu",
   "lib.empty.text": "Pruvate un altru nome o attivate «Mustrà i ghjochi senza exe».",
-
   "fav.title": "Preferiti",
   "fav.count": "{n} ghjochi",
   "fav.hint": "Marcate i ghjochi cù una stella",
   "fav.empty.title": "Ancora nulla quì",
   "fav.empty.text": "Appughjate nant'à a stella d'un ghjocu per aghjunghje lu quì.",
-
   "detail.process": "Prucessu",
   "detail.duration": "Quantu tempu mantene lu",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Preferitu",
   "detail.close": "Chjode",
   "detail.id": "ID {id}",
-
   "running.title": "In corsu",
   "running.count": "{n} decoy attivi",
   "running.none": "Nulla hè in corsu per avà",
@@ -70,14 +64,36 @@
   "running.stop": "Fermà",
   "running.empty.title": "Nulla hè in corsu",
   "running.empty.text": "Aprite un ghjocu in a bibbiuteca è appughjate nant'à «Lancià u decoy».",
-
   "settings.title": "Preferenze",
   "settings.general": "Generale",
   "settings.language": "Lingua",
   "settings.language.desc": "Lingua di l'interfaccia. E lingue nove sò aghjunte cum'è schedarii in u cartulare locales.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "Durata predefinita",
-  "settings.defaultTime.desc": "Quanti minuti mantene u prucessu (e missioni Discord richiedenu di regula 15).",
+  "settings.defaultTime.desc": "Quanti minuti tene u prucessu attivu. U valore predefinitu hè 16, micca 15: e missione di Discord dumandanu 15 minuti di ghjocu, ma Discord hà bisognu sin'à un minutu per rimarcà un novu ghjocu, dunque esattamente 15 ùn basta micca.",
+  "settings.smartTimer": "Timer intelligente",
+  "settings.smartTimer.desc": "U contu à l'arritrosa principia quandu Discord hà rimarcatu u decoy, micca quandu u lanciate voi. Per sapelu, l'applicazione leghje solu e ligne nant'à u ghjocu attivu da u registru lucale di Discord; nunda ùn hè salvatu o inviatu in altrò.",
+  "settings.updates": "Aghjurnamenti",
+  "settings.checkNow": "Verificà avà",
+  "settings.autoUpdate": "Aghjurnamenti automatichi",
+  "settings.autoUpdate.desc": "Verificà GitHub à l'iniziu è ogni 6 ore è scaricà e nove versioni in fondu. L'installazione aspetta sempre a vostra cunferma, è i schedarii sò verificati da a so firma digitale.",
+  "update.current": "Versione stallata {v}",
+  "update.checking": "Verificazione…",
+  "update.uptodate": "Avete l'ultima versione",
+  "update.available": "A versione {v} hè dispunibule",
+  "update.downloading": "Scaricamentu di a versione {v}… {p}%",
+  "update.ready": "A versione {v} hè pronta per l'installazione",
+  "update.installing": "Installazione è riavviu…",
+  "update.download": "Scaricà",
+  "update.restart": "Riavvià è aghjurnà",
+  "update.later": "Più tardi",
+  "update.notes": "Chì ci hè di novu",
+  "update.running": "I decoy attivi ({n}) si fermeranu.",
+  "update.error": "Ùn si pò aghjurnà: {e}",
+  "detail.waiting": "in aspettu di Discord",
+  "detail.waitingNote": "Discord hà bisognu sin'à un minutu per rimarcà un ghjocu. U contu à l'arritrosa principia quandu vede u decoy.",
+  "detail.detected": "Discord hà rimarcatu u decoy",
+  "detail.assumed": "Discord ùn hà micca cunfirmatu, u tempu hè cuntatu quantunque.",
   "settings.autoStop": "Fermà cù u timer",
   "settings.autoStop.desc": "U decoy si chjode da per ellu quandu u tempu hè finitu.",
   "settings.notify": "Avisà à a fine",
@@ -97,7 +113,6 @@
   "settings.files": "Schedarii",
   "settings.open": "Apre",
   "settings.legal": "Decoy ùn usa micca u vostru gettone Discord è ùn accetta micca e missioni per voi. Simulà un prucessu di ghjocu pò andà contru à e regule di Discord, aduprate lu à u vostru risicu.",
-
   "toast.launched": "«{name}» lanciatu per {n} min. Discord duveria rimarcà lu in circa 15 seconde.",
   "toast.stopped": "Decoy fermatu",
   "toast.allStopped": "Tutti i decoy fermati",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} ghjochi anu ricevutu schedarii exe: {names}",
   "toast.refreshAdded": "Basa di dati aghjurnata: +{n} ghjochi novi",
   "toast.refreshUpToDate": "A basa di dati hè dighjà aghjurnata",
-
   "nav.lab": "Laburariu",
   "lab.title": "Laburariu",
   "lab.subtitle": "Un listellu secretu: lancia parechji decoy à tempu.",
@@ -115,16 +129,19 @@
   "lab.launch": "Lancià {n} ghjochi",
   "lab.launching": "Lanciu di {done} nant'à {total}…",
   "lab.cancel": "Abbandunà",
-  "lab.warn": "Ogni decoy hè un prucessu distintu cù una finestra. Più di 200–300 à tempu ponu rallentà u vostru urdinatore, u massimu hè {max}.",
+  "lab.warn": "Ogni decoy hè un prucessu separatu cù una finestra. Troppi à tempu ponu bluccà u vostru urdinatore: ogni prucessu è finestra usa memoria, è dopu à qualchì millaie di finestre Windows pò piantà di creanne di più. Sè vo chjudite Decoy, tutti i decoy si fermanu.",
+  "lab.all": "Tutti ({n})",
+  "lab.estimate": "{n} decoy utteneranu circa {ram} di RAM.",
+  "lab.confirm": "Cliccate torna per lancià {n}",
+  "lab.limit": "Windows hà piantatu di lancià novi prucessi dopu à {n}: hè u limitu di u sistema.",
+  "running.more": "…è altri {n}. I primi 120 sò affissati.",
   "lab.hide": "Piattà stu listellu",
   "toast.labUnlocked": "Listellu secretu «Laburariu» sbluccatu",
   "toast.labHidden": "Listellu piattatu",
   "toast.labDone": "Ghjochi lanciati: {n}",
-
   "tray.show": "Apre Decoy",
   "tray.stop": "Fermà tutti i decoy",
   "tray.quit": "Chittà",
-
   "notify.title": "U tempu hè passatu",
   "notify.body": "{name}: {n} min sò passati."
 }

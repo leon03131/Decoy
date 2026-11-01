@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Esperanto" },
-
+  "_meta": {
+    "name": "Esperanto"
+  },
   "nav.library": "Biblioteko",
   "nav.favorites": "Favoratoj",
   "nav.running": "Rulanta",
   "nav.settings": "Agordoj",
-
   "discord.checking": "Kontrolante…",
   "discord.up": "Rulanta",
   "discord.down": "Ne rulanta",
-
   "window.minimize": "Plejetigi",
   "window.maximize": "Plejgrandigi",
   "window.close": "Fermi",
-
   "tag.live": "Rulanta",
   "tag.noExe": "sen exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "lanĉilo",
-
   "lib.title": "Biblioteko",
   "lib.subtitle": "{n} ludoj kun konata procezo · ĝisdatigita {date}",
   "lib.loading": "Ŝargante la luddumbazon…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Aldoni al favoratoj",
   "lib.empty.title": "Nenio trovita",
   "lib.empty.text": "Provu alian nomon aŭ ebligu «Montri ludojn sen exe».",
-
   "fav.title": "Favoratoj",
   "fav.count": "{n} ludoj",
   "fav.hint": "Marku ludojn per stelo",
   "fav.empty.title": "Ĉi tie ankoraŭ estas malplene",
   "fav.empty.text": "Premu la stelon sur luda kahelo por aldoni ĝin ĉi tien.",
-
   "detail.process": "Procezo",
   "detail.duration": "Kiom longe ruli",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorato",
   "detail.close": "Fermi",
   "detail.id": "ID {id}",
-
   "running.title": "Rulanta",
   "running.count": "{n} aktivaj decoy-oj",
   "running.none": "Nenio rulas nun",
@@ -70,14 +64,36 @@
   "running.stop": "Haltigi",
   "running.empty.title": "Nenio rulas",
   "running.empty.text": "Malfermu ludon en la biblioteko kaj premu «Lanĉi decoy».",
-
   "settings.title": "Agordoj",
   "settings.general": "Ĝenerale",
   "settings.language": "Lingvo",
   "settings.language.desc": "Fasada lingvo. Novaj lingvoj estas aldonataj kiel dosieroj en la dosierujo locales.",
   "settings.stubs": "Decoy-oj",
   "settings.defaultTime": "Defaŭlta daŭro",
-  "settings.defaultTime.desc": "Kiom da minutoj konservi la procezon (Discord-serĉoj kutime bezonas 15).",
+  "settings.defaultTime.desc": "Kiom da minutoj daŭrigi la procezon. La defaŭlta estas 16, ne 15: serĉoj de Discord petas 15 minutojn da ludo, sed Discord bezonas ĝis unu minuton por rimarki novan ludon, do ekzakte 15 ne sufiĉas.",
+  "settings.smartTimer": "Saĝa tempigilo",
+  "settings.smartTimer.desc": "La retrokalkulo komenciĝas kiam Discord rimarkas la decoy-on, ne kiam vi lanĉas ĝin. Por scii tion, la aplikaĵo legas nur la liniojn pri la rulanta ludo el la loka protokolo de Discord; nenio estas konservata aŭ sendata ien ajn.",
+  "settings.updates": "Ĝisdatigoj",
+  "settings.checkNow": "Kontroli nun",
+  "settings.autoUpdate": "Aŭtomataj ĝisdatigoj",
+  "settings.autoUpdate.desc": "Kontroli GitHub-on ĉe lanĉo kaj ĉiun 6 horojn kaj elŝuti novajn versiojn fone. Instalado ĉiam atendas vian konfirmon, kaj dosieroj estas kontrolitaj per sia cifereca subskribo.",
+  "update.current": "Instalita versio {v}",
+  "update.checking": "Kontrolante…",
+  "update.uptodate": "Vi havas la plej novan version",
+  "update.available": "Versio {v} estas disponebla",
+  "update.downloading": "Elŝutante version {v}… {p}%",
+  "update.ready": "Versio {v} estas preta por instalado",
+  "update.installing": "Instalante kaj restartigante…",
+  "update.download": "Elŝuti",
+  "update.restart": "Restartigi kaj ĝisdatigi",
+  "update.later": "Poste",
+  "update.notes": "Kio novas",
+  "update.running": "Rulantaj decoy-oj ({n}) haltiĝos.",
+  "update.error": "Ne eblis ĝisdatigi: {e}",
+  "detail.waiting": "atendante Discord",
+  "detail.waitingNote": "Discord bezonas ĝis unu minuton por rimarki ludon. La retrokalkulo komenciĝas kiam ĝi vidas la decoy-on.",
+  "detail.detected": "Discord rimarkis la decoy-on",
+  "detail.assumed": "Discord ne konfirmis ĝin, la tempo tamen estas kalkulata.",
   "settings.autoStop": "Haltigi laŭ tempigilo",
   "settings.autoStop.desc": "Decoy finiĝas per si mem kiam la tempo finiĝas.",
   "settings.notify": "Sciigi kiam finite",
@@ -97,7 +113,6 @@
   "settings.files": "Dosieroj",
   "settings.open": "Malfermi",
   "settings.legal": "Decoy ne uzas vian Discord-ĵetonon kaj ne akceptas serĉojn por vi. Imiti ludan procezon povas kontraŭi la regulojn de Discord, uzu ĝin je via propra risko.",
-
   "toast.launched": "«{name}» lanĉita por {n} min. Discord devus rimarki ĝin post ĉirkaŭ 15 sekundoj.",
   "toast.stopped": "Decoy haltigita",
   "toast.allStopped": "Ĉiuj decoy-oj haltigitaj",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} ludoj ricevis exe-dosierojn: {names}",
   "toast.refreshAdded": "Datumbazo ĝisdatigita: +{n} novaj ludoj",
   "toast.refreshUpToDate": "La datumbazo jam estas ĝisdata",
-
   "nav.lab": "Laboratorio",
   "lab.title": "Laboratorio",
   "lab.subtitle": "Sekreta langeto: lanĉas multajn decoy-ojn samtempe.",
@@ -115,16 +129,19 @@
   "lab.launch": "Lanĉi {n} ludojn",
   "lab.launching": "Lanĉante {done} el {total}…",
   "lab.cancel": "Nuligi",
-  "lab.warn": "Ĉiu decoy estas aparta procezo kun fenestro. Pli ol 200–300 samtempe povas malrapidigi vian komputilon, la maksimumo estas {max}.",
+  "lab.warn": "Ĉiu decoy estas aparta procezo kun fenestro. Tro multaj samtempe povas frostigi vian komputilon: ĉiu procezo kaj fenestro uzas memoron, kaj post kelkmil fenestroj Windows povas ĉesi krei pliajn. Se vi fermas Decoy, ĉiuj decoy-oj haltos.",
+  "lab.all": "Ĉiuj ({n})",
+  "lab.estimate": "{n} decoy-oj uzos proksimume {ram} da RAM.",
+  "lab.confirm": "Alklaku denove por lanĉi {n}",
+  "lab.limit": "Windows ĉesis lanĉi novajn procezojn post {n}: tio estas la sistema limo.",
+  "running.more": "…kaj ankoraŭ {n}. La unuaj 120 estas montrataj.",
   "lab.hide": "Kaŝi ĉi tiun langeton",
   "toast.labUnlocked": "Sekreta langeto «Laboratorio» malŝlosita",
   "toast.labHidden": "Langeto kaŝita",
   "toast.labDone": "Ludoj lanĉitaj: {n}",
-
   "tray.show": "Malfermi Decoy",
   "tray.stop": "Haltigi ĉiujn decoy-ojn",
   "tray.quit": "Eliri",
-
   "notify.title": "Tempo finiĝis",
   "notify.body": "{name}: {n} min pasis."
 }

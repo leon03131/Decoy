@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Te Reo Māori" },
-
+  "_meta": {
+    "name": "Te Reo Māori"
+  },
   "nav.library": "Pātengi Kēmu",
   "nav.favorites": "Kēmu Makau",
   "nav.running": "E rere ana",
   "nav.settings": "Tautuhinga",
-
   "discord.checking": "Whakatūturu ana…",
   "discord.up": "E rere ana",
   "discord.down": "Kāore e rere ana",
-
   "window.minimize": "Whakaparahatia",
   "window.maximize": "Whakanuia",
   "window.close": "Katia",
-
   "tag.live": "E rere ana",
   "tag.noExe": "kāore he exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "kaiwhakarewa",
-
   "lib.title": "Pātengi Kēmu",
   "lib.subtitle": "{n} ngā kēmu he hōtaka mōhiotia · whakahoutia {date}",
   "lib.loading": "Tukuatu ana i te pātengi raraunga kēmu…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Tāpiri ki ngā makau",
   "lib.empty.title": "Kāore he mea i kitea",
   "lib.empty.text": "Whakamātauhia he ingoa kē, whakakāngia rānei te “Whakaaturia ngā kēmu kāore he exe”.",
-
   "fav.title": "Kēmu Makau",
   "fav.count": "{n} ngā kēmu",
   "fav.hint": "Tohua ngā kēmu ki te whetū",
   "fav.empty.title": "Kāore he mea i konei i tēnei wā",
   "fav.empty.text": "Pēhia te whetū i runga i te pouaka kēmu hei tāpiri mai ki konei.",
-
   "detail.process": "Hōtaka",
   "detail.duration": "Kia pēhea te roa o te pupuri",
   "detail.minutes": "{n} men",
@@ -62,7 +57,6 @@
   "detail.favorite": "Makau",
   "detail.close": "Katia",
   "detail.id": "ID {id}",
-
   "running.title": "E rere ana",
   "running.count": "{n} ngā decoy hohe",
   "running.none": "Kāore he mea e rere ana i tēnei wā",
@@ -70,14 +64,36 @@
   "running.stop": "Kati",
   "running.empty.title": "Kāore he mea e rere ana",
   "running.empty.text": "Huakina he kēmu i te pātengi kēmu ka pēhi i te “Tīmata decoy”.",
-
   "settings.title": "Tautuhinga",
   "settings.general": "Whānui",
   "settings.language": "Reo",
   "settings.language.desc": "Reo atanga. Kua tāpirihia ngā reo hōu hei kōnae ki te kōpaki locales.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "Roa taunoa",
-  "settings.defaultTime.desc": "E hia ngā meneti hei pupuri i te hōtaka (ko ngā whainga Discord he 15 meneti te nuinga).",
+  "settings.defaultTime.desc": "Kia hia ngā mēneti hei pupuri i te hōtaka. Ko te 16 te taunoa, ehara i te 15: he 15 mēneti tākaro te tono a ngā rapunga Discord, engari me tae ki te kotahi mēneti kia kitea ai he kēmu hou e Discord.",
+  "settings.smartTimer": "Mātāwā whakaaro nui",
+  "settings.smartTimer.desc": "Ka tīmata te tatau whakamuri ina kitea te decoy e Discord, ehara i te wā ka tīmata koe. Hei mōhio i tērā, ka pānui noa te taupānga i ngā rārangi mō te kēmu e rere ana mai i te rangitaki ā-rohe o Discord; kāore he mea e tiakina, e tukuna rānei.",
+  "settings.updates": "Whakahōutanga",
+  "settings.checkNow": "Tirohia ināianei",
+  "settings.autoUpdate": "Whakahōu aunoa",
+  "settings.autoUpdate.desc": "Tirohia a GitHub i te orokohanga me ia 6 hāora, ka tikiake i ngā putanga hou ki muri. Ka tatari tonu te tāutanga ki tō whakaaetanga, ā, ka whakamanahia ngā kōnae e tō rātou waitohu mamati.",
+  "update.current": "Putanga kua tāutatia {v}",
+  "update.checking": "Tirotiro ana…",
+  "update.uptodate": "Kei runga koe i te putanga hou rawa",
+  "update.available": "Kei te wātea te putanga {v}",
+  "update.downloading": "Tikiake ana i te putanga {v}… {p}%",
+  "update.ready": "Kua rite te putanga {v} mō te tāuta",
+  "update.installing": "Tāuta ana me te whakaara anō…",
+  "update.download": "Tikiake",
+  "update.restart": "Whakaara anō ka whakahōu",
+  "update.later": "Ā muri atu",
+  "update.notes": "Ngā kōrero hou",
+  "update.running": "Ka mutu ngā decoy e rere ana ({n}).",
+  "update.error": "Kāore i taea te whakahōu: {e}",
+  "detail.waiting": "tatari ana ki a Discord",
+  "detail.waitingNote": "Ka tae pea ki te mēneti kia kitea ai he kēmu e Discord. Ka tīmata te tatau ina kitea te decoy.",
+  "detail.detected": "Kua kitea e Discord te decoy",
+  "detail.assumed": "Kāore i whakapūmautia e Discord, engari kei te tatauria tonutia te wā.",
   "settings.autoStop": "Kati i te taima",
   "settings.autoStop.desc": "Ka mutu aunoa te decoy ina mutu te wā.",
   "settings.notify": "Whakamōhio mai ina mutu",
@@ -97,7 +113,6 @@
   "settings.files": "Ngā kōnae",
   "settings.open": "Huaki",
   "settings.legal": "Kāore a Decoy e whakamahi i tō tohu Discord, ā, kāore hoki e whakaae ki ngā whainga māu. Tērā pea ka takahi te whaiwhakaaro i tētahi hōtaka kēmu i ngā ture a Discord, nō reira kei a koe tonu te tūponotanga.",
-
   "toast.launched": "Kua tīmata a “{name}” mō te {n} men. Me kite e Discord i roto i te 15 hēkona pea.",
   "toast.stopped": "Kua whakamutua te decoy",
   "toast.allStopped": "Kua whakamutua ngā decoy katoa",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "Kua whiwhi kōnae exe ngā kēmu e {n}: {names}",
   "toast.refreshAdded": "Kua whakahoutia te pātengi raraunga: +{n} ngā kēmu hōu",
   "toast.refreshUpToDate": "Kua whakahoutia kē te pātengi raraunga",
-
   "nav.lab": "Tātai Rangahau",
   "lab.title": "Tātai Rangahau",
   "lab.subtitle": "He ripa muna: ka whakarewa i ngā decoy maha i te wā kotahi.",
@@ -115,16 +129,19 @@
   "lab.launch": "Tīmata {n} ngā kēmu",
   "lab.launching": "Whakarewa ana {done} o te {total}…",
   "lab.cancel": "Whakakore",
-  "lab.warn": "He hōtaka motuhake me te matapihi tō ia decoy. Ka pōturi pea tō rorohiko ki te neke atu i te 200–300 i te wā kotahi, ko te mōrahi ko te {max}.",
+  "lab.warn": "He hōtaka motuhake ia decoy me tōna matapihi. Ki te nui rawa i te wā kotahi, ka whakatio pea i tō rorohiko: ka whakamahi mahara ia hōtaka me ia matapihi, ā, i muri i ētahi mano matapihi, ka mutu pea te waihanga a Windows i ētahi atu. Ki te katia e koe a Decoy, ka tū katoa ngā decoy.",
+  "lab.all": "Katoa ({n})",
+  "lab.estimate": "Ka whakamahi ngā decoy e {n} i te tata ki te {ram} o te RAM.",
+  "lab.confirm": "Pāwhiritia anō kia tīmata te {n}",
+  "lab.limit": "Kua mutu te kōkiri a Windows i ngā hōtaka hou i muri i te {n}: koirā te rohenga pūnaha.",
+  "running.more": "…ā, he {n} anō. E whakaaturia ana te 120 tuatahi.",
   "lab.hide": "Hunaia tēnei ripa",
   "toast.labUnlocked": "Kua tuwhera te ripa muna “Tātai Rangahau”",
   "toast.labHidden": "Kua hunaia te ripa",
   "toast.labDone": "Kua whakarewahia ngā kēmu: {n}",
-
   "tray.show": "Huaki Decoy",
   "tray.stop": "Whakamutua ngā decoy katoa",
   "tray.quit": "Puta",
-
   "notify.title": "Kua pau te wā",
   "notify.body": "{name}: kua hipa ngā meneti e {n}."
 }

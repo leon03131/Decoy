@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Qaraqalpaq tili" },
-
+  "_meta": {
+    "name": "Qaraqalpaq tili"
+  },
   "nav.library": "Kitapxana",
   "nav.favorites": "Saylandılar",
   "nav.running": "Islep atırǵanlar",
   "nav.settings": "Sazlawlar",
-
   "discord.checking": "Tekserilmekte…",
   "discord.up": "Islep tur",
   "discord.down": "Islemey tur",
-
   "window.minimize": "Kishireytiw",
   "window.maximize": "Úlkeytiw",
   "window.close": "Jabıw",
-
   "tag.live": "Islep tur",
   "tag.noExe": "exe joq",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Kitapxana",
   "lib.subtitle": "Belgili procesi bar {n} oyın · jańalanǵan waqtı: {date}",
   "lib.loading": "Oyınlar bazası júklenbekte…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Saylandılarǵa qosıw",
   "lib.empty.title": "Hesh nárse tabılmadı",
   "lib.empty.text": "Basqa atamanı jazıp kóriń yamasa “exe faylı joq oyınlardı kórsetiw”di qosıń.",
-
   "fav.title": "Saylandılar",
   "fav.count": "{n} oyın",
   "fav.hint": "Oyınlardı juldızsha menen belgileń",
   "fav.empty.title": "Bul jerde házirshe hesh nárse joq",
   "fav.empty.text": "Oyındı bul jerge qosıw ushın onıń katagindegi juldızshanı basıń.",
-
   "detail.process": "Proces",
   "detail.duration": "Qansha waqıt uslap turıw kerek",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Saylandı",
   "detail.close": "Jabıw",
   "detail.id": "ID {id}",
-
   "running.title": "Islep atırǵanlar",
   "running.count": "{n} belsendi decoy",
   "running.none": "Házir hesh nárse islep turǵan joq",
@@ -70,14 +64,36 @@
   "running.stop": "Toqtatıw",
   "running.empty.title": "Hesh nárse islep turǵan joq",
   "running.empty.text": "Kitapxanadan oyındı ashıń hám “Decoydı iske túsiriw”di basıń.",
-
   "settings.title": "Sazlawlar",
   "settings.general": "Ulıwma",
   "settings.language": "Til",
   "settings.language.desc": "Interfeys tili. Jańa tiller locales papkasına fayllar retinde qosıladı.",
   "settings.stubs": "Decoylar",
   "settings.defaultTime": "Bastalǵı múddeti",
-  "settings.defaultTime.desc": "Proces qansha minut uslap turılıwı kerek (Discord tapsırmaları ushın ádette 15 minut kerek).",
+  "settings.defaultTime.desc": "Processti neshe minut uslap turıw kerek. Bastalǵısı 16, 15 emes: Discord tapsırmaları 15 minut oyındı talap etedi, biraq Discord jańa oyındı bayqawı ushın bir minutqa shekem waqıt kerek boladı, sol sebepli dál 15 jetpey qaladı.",
+  "settings.smartTimer": "Aqıllı taymer",
+  "settings.smartTimer.desc": "Keri sanaw siz baslaǵanda emes, Discord decoydı bayqaǵanda baslanadı. Bunı biliw ushın qosımsha Discord jergilikli jurnalınan tek islep turǵan oyın haqqındaǵı qatarlardı oqıydı; hesh nárse saqlanbaydı yamasa hesh qayaqqa jiberilmeydi.",
+  "settings.updates": "Jańalanıwlar",
+  "settings.checkNow": "Házir tekseriw",
+  "settings.autoUpdate": "Avtomatikalıq jańalawlar",
+  "settings.autoUpdate.desc": "İske qosqanda hám hár 6 saatta GitHub-tı tekserip, arqa fonda jańa versiyalardı júklep alıw. Ornatıw bárhama sizdiń tastıyıqlawıńızdı kútedi hám fayllar sanlı qol qoyıwı arqalı tekseriledi.",
+  "update.current": "Ornatılǵan versiya {v}",
+  "update.checking": "Tekserilmekte…",
+  "update.uptodate": "Siz eń sońǵı versiyadasız",
+  "update.available": "Versiya {v} qoljetimli",
+  "update.downloading": "Versiya {v} júklenbekte… {p}%",
+  "update.ready": "Versiya {v} ornatıwǵa tayın",
+  "update.installing": "Ornatılmaqta hám qayta iske túsirilmekte…",
+  "update.download": "Júklep alıw",
+  "update.restart": "Qayta iske túsiriw hám jańalaw",
+  "update.later": "Keyinirek",
+  "update.notes": "Jańalıqlar",
+  "update.running": "İslewatırǵan decoylar ({n}) toqtatıladı.",
+  "update.error": "Jańalaw ámelge aspadı: {e}",
+  "detail.waiting": "Discord kútilmekte",
+  "detail.waitingNote": "Discord oyındı bayqawı ushın bir minutqa shekem waqıt kerek. Keri sanaw decoydı kórgen waqıtta baslanadı.",
+  "detail.detected": "Discord decoydı bayqadı",
+  "detail.assumed": "Discord tastıyıqlamadı, waqıt báribir esaplanadı.",
   "settings.autoStop": "Taymer boyınsha toqtatıw",
   "settings.autoStop.desc": "Waqıt tawısılǵanda decoy óz-ózinen toqtaydı.",
   "settings.notify": "Juwmaqlaǵanda bildiriw",
@@ -97,7 +113,6 @@
   "settings.files": "Fayllar",
   "settings.open": "Ashıw",
   "settings.legal": "Decoy sizdiń Discord tokenińizdi paydalanbaydı hám sizdiń atıńızdan tapsırmalardı qabıl etpeydi. Oyın procesin jasama túrde kórsetiw Discord qaǵıydalarına qarsı keliwi múmkin, óz táwekeleńizge qaray paydalanıń.",
-
   "toast.launched": "“{name}” {n} min. iske túsirildi. Discord onı shama menen 15 sekundta bayqaydı.",
   "toast.stopped": "Decoy toqtatıldı",
   "toast.allStopped": "Barlıq decoylar toqtatıldı",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} oyında exe faylları payda boldı: {names}",
   "toast.refreshAdded": "Baza jańalandı: +{n} jańa oyın",
   "toast.refreshUpToDate": "Baza qázirdiń ózinde eń sońǵı jaǵdayda",
-
   "nav.lab": "Laboratoriya",
   "lab.title": "Laboratoriya",
   "lab.subtitle": "Jasırın bólim: bir waqıtta kóp decoydı iske túsiredi.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} oyındı iske túsiriw",
   "lab.launching": "{total} dan {done} iske túsirilmekte…",
   "lab.cancel": "Biykar etiw",
-  "lab.warn": "Hár bir decoy — aynası bar bólek proces. Bir waqıtta 200–300 den kóp bolıwı kompyuterdi ásteletip qoyıwı múmkin, maksimal: {max}.",
+  "lab.warn": "Hár bir decoy aynası bar bólek process esaplanadı. Bir waqıtta júdá kóbi kompyuterińizdi qatırıp qoyıwı múmkin: hár bir process penen ayna yad qollanadı, hám birneshe mıń aynadan keyin Windows jańaların jaratıwdı toqtatıwı múmkin. Eger Decoydı japsańız, barlıq decoylar toqtatıladı.",
+  "lab.all": "Barlıǵı ({n})",
+  "lab.estimate": "{n} decoy shama menen {ram} RAM qollanadı.",
+  "lab.confirm": "{n} oyındı iske túsiriw ushın jáne basıń",
+  "lab.limit": "Windows {n} processten keyin jańaların iske túsiriwdi toqtattı: bul sistemanıń shegi.",
+  "running.more": "…hám jáne {n}. Dáslepki 120 kórsetilgen.",
   "lab.hide": "Bul bólimdi jasırıw",
   "toast.labUnlocked": "Jasırın “Laboratoriya” bólimi ashıldı",
   "toast.labHidden": "Bólim jasırıldı",
   "toast.labDone": "Iske túsirilgen oyınlar: {n}",
-
   "tray.show": "Decoydı ashıw",
   "tray.stop": "Barlıq decoylardı toqtatıw",
   "tray.quit": "Shıǵıw",
-
   "notify.title": "Waqıt tawısıldı",
   "notify.body": "{name}: {n} min ótti."
 }

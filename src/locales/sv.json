@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Svenska" },
-
+  "_meta": {
+    "name": "Svenska"
+  },
   "nav.library": "Bibliotek",
   "nav.favorites": "Favoriter",
   "nav.running": "Körs",
   "nav.settings": "Inställningar",
-
   "discord.checking": "Kontrollerar…",
   "discord.up": "Körs",
   "discord.down": "Körs inte",
-
   "window.minimize": "Minimera",
   "window.maximize": "Maximera",
   "window.close": "Stäng",
-
   "tag.live": "Körs",
   "tag.noExe": "ingen exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "startprogram",
-
   "lib.title": "Bibliotek",
   "lib.subtitle": "{n} spel med känd process · uppdaterad {date}",
   "lib.loading": "Laddar speldatabasen…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Lägg till i favoriter",
   "lib.empty.title": "Inget hittades",
   "lib.empty.text": "Prova ett annat namn eller aktivera ”Visa spel utan exe”.",
-
   "fav.title": "Favoriter",
   "fav.count": "{n} spel",
   "fav.hint": "Markera spel med en stjärna",
   "fav.empty.title": "Inget här ännu",
   "fav.empty.text": "Tryck på stjärnan på ett spel för att lägga till det här.",
-
   "detail.process": "Process",
   "detail.duration": "Hur länge den ska köras",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorit",
   "detail.close": "Stäng",
   "detail.id": "ID {id}",
-
   "running.title": "Körs",
   "running.count": "{n} aktiva decoys",
   "running.none": "Inget körs just nu",
@@ -70,14 +64,36 @@
   "running.stop": "Stoppa",
   "running.empty.title": "Inget körs",
   "running.empty.text": "Öppna ett spel i biblioteket och tryck på ”Starta decoy”.",
-
   "settings.title": "Inställningar",
   "settings.general": "Allmänt",
   "settings.language": "Språk",
   "settings.language.desc": "Gränssnittsspråk. Nya språk läggs till som filer i mappen locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Standardtid",
-  "settings.defaultTime.desc": "Hur många minuter processen ska köras (Discord-uppdrag kräver oftast 15).",
+  "settings.defaultTime.desc": "Hur många minuter processen ska hållas igång. Standard är 16, inte 15: Discord-uppdrag kräver 15 minuters speltid, men Discord behöver upp till en minut för att upptäcka ett nytt spel, så exakt 15 räcker inte till.",
+  "settings.smartTimer": "Smart timer",
+  "settings.smartTimer.desc": "Nedräkningen startar när Discord har upptäckt din decoy, inte när du startar den. För att avgöra det läser appen endast raderna om det aktiva spelet från Discords lokala logg; ingenting sparas eller skickas någonstans.",
+  "settings.updates": "Uppdateringar",
+  "settings.checkNow": "Sök nu",
+  "settings.autoUpdate": "Automatiska uppdateringar",
+  "settings.autoUpdate.desc": "Sök på GitHub vid start och var sjätte timme och ladda ner nya versioner i bakgrunden. Installation kräver alltid din bekräftelse, och filer verifieras med sin digitala signatur.",
+  "update.current": "Installerad version {v}",
+  "update.checking": "Söker…",
+  "update.uptodate": "Du har den senaste versionen",
+  "update.available": "Version {v} finns tillgänglig",
+  "update.downloading": "Laddar ner version {v}… {p}%",
+  "update.ready": "Version {v} är redo att installeras",
+  "update.installing": "Installerar och startar om…",
+  "update.download": "Ladda ner",
+  "update.restart": "Starta om och uppdatera",
+  "update.later": "Senare",
+  "update.notes": "Nyheter",
+  "update.running": "Aktiva decoys ({n}) kommer att avslutas.",
+  "update.error": "Kunde inte uppdatera: {e}",
+  "detail.waiting": "väntar på Discord",
+  "detail.waitingNote": "Discord behöver upp till en minut för att upptäcka ett spel. Nedräkningen startar så fort Discord ser din decoy.",
+  "detail.detected": "Discord har upptäckt din decoy",
+  "detail.assumed": "Discord har inte bekräftat, tiden räknas ändå.",
   "settings.autoStop": "Stoppa med timer",
   "settings.autoStop.desc": "Decoyen avslutas automatiskt när tiden är ute.",
   "settings.notify": "Avisera när den är klar",
@@ -97,7 +113,6 @@
   "settings.files": "Filer",
   "settings.open": "Öppna",
   "settings.legal": "Decoy använder inte din Discord-token och accepterar inte uppdrag åt dig. Att simulera en spelprocess kan strida mot Discords regler, använd på egen risk.",
-
   "toast.launched": "”{name}” startades i {n} min. Discord bör märka det om cirka 15 sekunder.",
   "toast.stopped": "Decoy stoppad",
   "toast.allStopped": "Alla decoys stoppades",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} spel fick exe-filer: {names}",
   "toast.refreshAdded": "Databasen uppdaterad: +{n} nya spel",
   "toast.refreshUpToDate": "Databasen är redan uppdaterad",
-
   "nav.lab": "Labb",
   "lab.title": "Labb",
   "lab.subtitle": "En hemlig flik: startar många decoys samtidigt.",
@@ -115,16 +129,19 @@
   "lab.launch": "Starta {n} spel",
   "lab.launching": "Startar {done} av {total}…",
   "lab.cancel": "Avbryt",
-  "lab.warn": "Varje decoy är en separat process med ett fönster. Fler än 200–300 samtidigt kan göra datorn långsam, max är {max}.",
+  "lab.warn": "Varje decoy är en separat process med ett fönster. För många samtidigt kan hänga datorn: varje process och fönster förbrukar minne, och efter några tusen fönster kan Windows sluta skapa nya. Om du stänger Decoy stoppas alla decoys.",
+  "lab.all": "Alla ({n})",
+  "lab.estimate": "{n} decoys kommer att förbruka ungefär {ram} RAM.",
+  "lab.confirm": "Klicka igen för att starta {n}",
+  "lab.limit": "Windows slutade starta nya processer efter {n}: det är systemets gräns.",
+  "running.more": "…och {n} till. De första 120 visas.",
   "lab.hide": "Dölj denna flik",
   "toast.labUnlocked": "Hemliga fliken ”Labb” har låsts upp",
   "toast.labHidden": "Flik dold",
   "toast.labDone": "Spel startade: {n}",
-
   "tray.show": "Öppna Decoy",
   "tray.stop": "Stoppa alla decoys",
   "tray.quit": "Avsluta",
-
   "notify.title": "Tiden är ute",
   "notify.body": "{name}: {n} min har gått."
 }

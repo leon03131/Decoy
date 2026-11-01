@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Lëtzebuergesch" },
-
+  "_meta": {
+    "name": "Lëtzebuergesch"
+  },
   "nav.library": "Bibliothéik",
   "nav.favorites": "Favoritten",
   "nav.running": "Am Lafen",
   "nav.settings": "Astellungen",
-
   "discord.checking": "Iwwerpréiwen…",
   "discord.up": "Am Lafen",
   "discord.down": "Leeft net",
-
   "window.minimize": "Miniméieren",
   "window.maximize": "Maximéieren",
   "window.close": "Zoumaachen",
-
   "tag.live": "Am Lafen",
   "tag.noExe": "kee exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "Launcher",
-
   "lib.title": "Bibliothéik",
   "lib.subtitle": "{n} Spiller mat engem bekannte Prozess · aktualiséiert {date}",
   "lib.loading": "Spilldatebank gëtt gelueden…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Bei d'Favoritten derbäisetzen",
   "lib.empty.title": "Näischt fonnt",
   "lib.empty.text": "Probéiert en aneren Numm oder aktivéiert „Spiller ouni exe weisen“.",
-
   "fav.title": "Favoritten",
   "fav.count": "{n} Spiller",
   "fav.hint": "Spiller mat engem Stär markéieren",
   "fav.empty.title": "Hei ass nach näischt",
   "fav.empty.text": "Klickt op de Stär op enger Spillkachel, fir et hei derbäizesetzen.",
-
   "detail.process": "Prozess",
   "detail.duration": "Wéi laang halen",
   "detail.minutes": "{n} Min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorit",
   "detail.close": "Zoumaachen",
   "detail.id": "ID {id}",
-
   "running.title": "Am Lafen",
   "running.count": "{n} aktiv Decoeyen",
   "running.none": "Am Moment leeft näischt",
@@ -70,14 +64,36 @@
   "running.stop": "Stoppen",
   "running.empty.title": "Näischt leeft",
   "running.empty.text": "Maacht e Spill an der Bibliothéik op a klickt op „Decoy starten“.",
-
   "settings.title": "Astellungen",
   "settings.general": "Allgemeng",
   "settings.language": "Sprooch",
   "settings.language.desc": "Sprooch vum Interface. Nei Sprooche ginn als Dateien am locales-Uerdner derbäigesat.",
   "settings.stubs": "Decoeyen",
   "settings.defaultTime": "Standarddauer",
-  "settings.defaultTime.desc": "Wéi vill Minutten de Prozess gehale gëtt (Discord-Quests brauche meeschtens 15).",
+  "settings.defaultTime.desc": "Wéi vill Minutten de Prozess behale soll ginn. De Standardwäert ass 16, net 15: Discord-Queste verlaangen 15 Minutte Spillzäit, mee Discord brauch bis zu enger Minutt fir en neit Spill ze bemierken.",
+  "settings.smartTimer": "Intelligente Minuteur",
+  "settings.smartTimer.desc": "De Countdown fänkt un, wann Discord den Decoy bemierkt huet, net wann Dir en start. Fir dat gewuer ze ginn, liest d'App nëmmen d'Zeilen iwwer d'Spill aus dem lokale Log vun Discord; näischt gëtt gespäichert oder verschéckt.",
+  "settings.updates": "Aktualiséierungen",
+  "settings.checkNow": "Elo iwwerpréiwen",
+  "settings.autoUpdate": "Automatesch Aktualiséierungen",
+  "settings.autoUpdate.desc": "Beim Start an all 6 Stonnen op GitHub nozekucken an nei Versiounen am Hannergrond eroflueden. D'Installatioun waart ëmmer op Är Bestätegung, an d'Dateie gi mat hirer digitaler Ënnerschrëft verifizéiert.",
+  "update.current": "Installéiert Versioun {v}",
+  "update.checking": "Iwwerpréiwen…",
+  "update.uptodate": "Dir hutt déi neiste Versioun",
+  "update.available": "Versioun {v} ass verfügbar",
+  "update.downloading": "Versioun {v} gëtt erofgelueden… {p}%",
+  "update.ready": "Versioun {v} ass prett fir z'installéieren",
+  "update.installing": "Installéieren an nei starten…",
+  "update.download": "Eroflueden",
+  "update.restart": "Nei starten an aktualiséieren",
+  "update.later": "Méi spéit",
+  "update.notes": "Wat gëtt et Neies",
+  "update.running": "Lafend Decoeyen ({n}) ginn gestoppt.",
+  "update.error": "Konnt net aktualiséiert ginn: {e}",
+  "detail.waiting": "waart op Discord",
+  "detail.waitingNote": "Discord brauch bis zu enger Minutt fir e Spill ze bemierken. De Countdown fänkt un, wann et den Decoy gesäit.",
+  "detail.detected": "Discord huet den Decoy bemierkt",
+  "detail.assumed": "Discord huet et net confirméiert, d'Zäit gëtt trotzdem gezielt.",
   "settings.autoStop": "Automatesch stoppen",
   "settings.autoStop.desc": "Den Decoy hält automatesch op, wann d'Zäit ëm ass.",
   "settings.notify": "Matdeelen wann fäerdeg",
@@ -97,7 +113,6 @@
   "settings.files": "Dateien",
   "settings.open": "Opmaachen",
   "settings.legal": "Decoy benotzt Ären Discord-Token net an akzeptéiert keng Quests fir Iech. D'Vortäusche vun engem Spillprozess kann géint d'Reegele vun Discord verstoussen, d'Notzung ass op eegen Gefor.",
-
   "toast.launched": "„{name}“ fir {n} Min gestart. Discord sollt et a ronn 15 Sekonne bemierken.",
   "toast.stopped": "Decoy gestoppt",
   "toast.allStopped": "All Decoeye gestoppt",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} Spiller hu exe-Dateie kritt: {names}",
   "toast.refreshAdded": "Datebank aktualiséiert: +{n} nei Spiller",
   "toast.refreshUpToDate": "D'Datebank ass schonn aktuell",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "En heemlechen Tab: start vill Decoeyen op eemol.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} Spiller starten",
   "lab.launching": "{done} vun {total} gi gestart…",
   "lab.cancel": "Ofbriechen",
-  "lab.warn": "Jiddwer Decoy ass e separate Prozess mat enger Fënster. Méi wéi 200–300 op eemol kënnen Äre Computer verlangsamen, de Maximum ass {max}.",
+  "lab.warn": "All Decoy ass en eegene Prozess mat enger Fënster. Ze vill op eemol kënnen Äre Computer blockéieren: all Prozess a Fënster brauch Späicher, an no e puer dausend Fënstere kann Windows ophale weider ze kreéieren. Wann Dir Decoy zoumaacht, stoppen all Decoeyen.",
+  "lab.all": "All ({n})",
+  "lab.estimate": "{n} Decoeyen verbrauchen ongeféier {ram} RAM.",
+  "lab.confirm": "Klickt nach eng Kéier fir {n} ze starten",
+  "lab.limit": "Windows huet opgehalen nei Prozesser no {n} ze starten: dat ass d'Systemlimit.",
+  "running.more": "…an nach {n}. Déi éischt 120 ginn ugewisen.",
   "lab.hide": "Dësen Tab verstoppen",
   "toast.labUnlocked": "Geheimen „Lab“-Tab fräigeschalt",
   "toast.labHidden": "Tab verstoppt",
   "toast.labDone": "Spiller gestart: {n}",
-
   "tray.show": "Decoy opmaachen",
   "tray.stop": "All Decoeye stoppen",
   "tray.quit": "Verloossen",
-
   "notify.title": "D'Zäit ass ëm",
   "notify.body": "{name}: {n} Min si vergaangen."
 }

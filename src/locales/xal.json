@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Хальмг келн" },
-
+  "_meta": {
+    "name": "Хальмг келн"
+  },
   "nav.library": "Номин саң",
   "nav.favorites": "Дурта",
   "nav.running": "Көдлҗәнә",
   "nav.settings": "Келг-эндүр",
-
   "discord.checking": "Шүүҗәнә…",
   "discord.up": "Көдлҗәнә",
   "discord.down": "Көдлхш",
-
   "window.minimize": "Баһсхлһн",
   "window.maximize": "Икдхлһн",
   "window.close": "Хаах",
-
   "tag.live": "Көдлҗәнә",
   "tag.noExe": "exe уга",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "лаунчер",
-
   "lib.title": "Номин саң",
   "lib.subtitle": "Медгдсн процесстә {n} наадн · шинрүлгдсн: {date}",
   "lib.loading": "Нааддын сан орулҗана…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Дуртад немх",
   "lib.empty.title": "Юн чигн олдсн уга",
   "lib.empty.text": "Талдан нерн хәәҗ хәләтн аль «exe уга наадд үзклх» талтн.",
-
   "fav.title": "Дурта",
   "fav.count": "{n} наадн",
   "fav.hint": "Нааддыг одхар темдглтн",
   "fav.empty.title": "Энд одахар хоосн",
   "fav.empty.text": "Энд немхин төлә наадна хавтха деерки одн деер дартн.",
-
   "detail.process": "Процесс",
   "detail.duration": "Кедү гиҗ бәрх",
   "detail.minutes": "{n} мин",
@@ -62,7 +57,6 @@
   "detail.favorite": "Дурта",
   "detail.close": "Хаах",
   "detail.id": "ID {id}",
-
   "running.title": "Көдлҗәнә",
   "running.count": "{n} көдлҗәх decoy",
   "running.none": "Ода юн чигн көдлҗәхш",
@@ -70,14 +64,36 @@
   "running.stop": "Зогсах",
   "running.empty.title": "Юн чигн көдлҗәхш",
   "running.empty.text": "Номин саңгас наад секәд «Decoy эклүлх» дартн.",
-
   "settings.title": "Келг-эндүр",
   "settings.general": "Ниит",
   "settings.language": "Келн",
   "settings.language.desc": "Интерфейсин келн. Шин келн locales хавтаст файл болҗ немгднә.",
   "settings.stubs": "Decoy-муд",
   "settings.defaultTime": "Кевәр бәәх цаг",
-  "settings.defaultTime.desc": "Процессыг кедү минут бәрх (Discord даалһврт болвза 15 мин).",
+  "settings.defaultTime.desc": "Процессиг кезнә минут бәрх. Кевәр 16 бәәнә, 15 биш: Discord-ин даалһвр 15 минут наадахыг сурна, болв Discord шин наадиг хамгин утдан нег минутад меднә, тиигәд чик 15 хүврәд уга.",
+  "settings.smartTimer": "Ухата таймер",
+  "settings.smartTimer.desc": "Цаг тоолвр decoy эклх цагт биш, харин Discord эниг медсн цагт эклнә. Эниг медхин төлә түлкүр Discord-ин һазрин журналын һанцхн көдлҗәх наадна мөрүдиг умшна; юн чигн хадһлгдхш, аль тал руу оч очхш.",
+  "settings.updates": "Шинрүлврмүд",
+  "settings.checkNow": "Ода шүүх",
+  "settings.autoUpdate": "Автомат шинрүлвр",
+  "settings.autoUpdate.desc": "Эклхд болын һарсн 6 цаг тутам GitHub-иг шүүх, шин янз ард талд татҗ авх. Суулһх цагт даңгин тана зөвшәрл хүләнә, болв файлын тохрлһнь тоон темдгәр лавлгдна.",
+  "update.current": "Суулһсн янз {v}",
+  "update.checking": "Шүүҗәнә…",
+  "update.uptodate": "Та хамгин сүүлчн янз дээр бәәнәт",
+  "update.available": "Янз {v} бәәнә",
+  "update.downloading": "Янз {v} татҗ авчана… {p}%",
+  "update.ready": "Янз {v} суулһхад бэлн болв",
+  "update.installing": "Суулһҗ дахн эклүлҗәнә…",
+  "update.download": "Татҗ авх",
+  "update.restart": "Дахн эклҗ шинрүлх",
+  "update.later": "Хөөн",
+  "update.notes": "Юн шин байна",
+  "update.running": "Көдлҗәх decoy-д ({n}) зогсх.",
+  "update.error": "Шинрүлҗ чадсн уга: {e}",
+  "detail.waiting": "Discord-иг хүлээҗәнә",
+  "detail.waitingNote": "Discord наадиг медхдән нег минут күртл авна. Decoy-иг үзсн цагт тоолвр эклнә.",
+  "detail.detected": "Discord decoy-иг медв",
+  "detail.assumed": "Discord лавласн уга, болв цаг тоолгдҗана.",
   "settings.autoStop": "Таймерар зогсах",
   "settings.autoStop.desc": "Цаг төгсхлә, decoy эврән зогсх.",
   "settings.notify": "Төгсхин зәңг",
@@ -97,7 +113,6 @@
   "settings.files": "Файлуд",
   "settings.open": "Секх",
   "settings.legal": "Decoy тана Discord токен олзлхш болн тана ормд даалһвр авхш. Наадна процесс дуран кезән Discord дүрим эвдҗ болх, эврән сэрмҗәр олзлтн.",
-
   "toast.launched": "«{name}» {n} минутад эклв. Discord эниг 15 секунд шаху медх.",
   "toast.stopped": "Decoy зогсв",
   "toast.allStopped": "Цуг decoy зогсв",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} наадад exe бэлн болв: {names}",
   "toast.refreshAdded": "Саң шинрүлгдв: +{n} шин наадд",
   "toast.refreshUpToDate": "Саң ода чигн шинәр бәәнә",
-
   "nav.lab": "Лаборатор",
   "lab.title": "Лаборатор",
   "lab.subtitle": "Нууц хавтха: нег дәкәд дала decoy эклүлнә.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} наад эклүлх",
   "lab.launching": "{total}-с {done} эклҗәнә…",
   "lab.cancel": "Уурх",
-  "lab.warn": "Decoy болһн цонхта әәмг процесс болна. Нег дәкәд 200–300-с үлү компютериг удашрулҗ болх, ик хязһр {max}.",
+  "lab.warn": "Decoy болһн өөрән терзтә тусда процесс юм. Нег дор дала бәәхлә компьютер царцаҗ болзшго: процесс болһн терз тоолвр авад, хэдн миңһн терз хаҗас Windows шиниг бүтәхән зогсаҗ болн. Decoy хаахла, цусн decoy зогсх.",
+  "lab.all": "Цугта ({n})",
+  "lab.estimate": "{n} decoy шаху {ram} RAM олзлх.",
+  "lab.confirm": "{n} эклүлхин төлә дәкәд дарах",
+  "lab.limit": "Windows {n} давулад шин процесс эклүлхән зогсав: эн болв системиин көгҗлт.",
+  "running.more": "…болн талдан {n}. Түрүн 120-г үзүлв.",
   "lab.hide": "Хавтха нуух",
   "toast.labUnlocked": "Нууц «Лаборатор» хавтха секгдв",
   "toast.labHidden": "Хавтха нуугдв",
   "toast.labDone": "Эклсн наадд: {n}",
-
   "tray.show": "Decoy секх",
   "tray.stop": "Цуг decoy зогсах",
   "tray.quit": "Һарх",
-
   "notify.title": "Цаг төгсв",
   "notify.body": "{name}: {n} мин давв."
 }

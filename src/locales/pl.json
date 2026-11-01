@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Polski" },
-
+  "_meta": {
+    "name": "Polski"
+  },
   "nav.library": "Biblioteka",
   "nav.favorites": "Ulubione",
   "nav.running": "Uruchomione",
   "nav.settings": "Ustawienia",
-
   "discord.checking": "Sprawdzanie…",
   "discord.up": "Uruchomiony",
   "discord.down": "Nieuruchomiony",
-
   "window.minimize": "Minimalizuj",
   "window.maximize": "Maksymalizuj",
   "window.close": "Zamknij",
-
   "tag.live": "Uruchomione",
   "tag.noExe": "brak exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Biblioteka",
   "lib.subtitle": "{n} gier ze znanym procesem · zaktualizowano {date}",
   "lib.loading": "Wczytywanie bazy gier…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Dodaj do ulubionych",
   "lib.empty.title": "Nic nie znaleziono",
   "lib.empty.text": "Spróbuj innej nazwy lub włącz „Pokaż gry bez exe”.",
-
   "fav.title": "Ulubione",
   "fav.count": "{n} gier",
   "fav.hint": "Oznaczaj gry gwiazdką",
   "fav.empty.title": "Jeszcze nic tu nie ma",
   "fav.empty.text": "Kliknij gwiazdkę na kafelku gry, aby dodać ją tutaj.",
-
   "detail.process": "Proces",
   "detail.duration": "Jak długo utrzymywać",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Ulubione",
   "detail.close": "Zamknij",
   "detail.id": "ID {id}",
-
   "running.title": "Uruchomione",
   "running.count": "{n} aktywnych atrap",
   "running.none": "Nic nie jest teraz uruchomione",
@@ -70,14 +64,36 @@
   "running.stop": "Zatrzymaj",
   "running.empty.title": "Nic nie jest uruchomione",
   "running.empty.text": "Otwórz grę w bibliotece i kliknij „Uruchom atrapę”.",
-
   "settings.title": "Ustawienia",
   "settings.general": "Ogólne",
   "settings.language": "Język",
   "settings.language.desc": "Język interfejsu. Nowe języki dodaje się jako pliki w folderze locales.",
   "settings.stubs": "Atrapy",
   "settings.defaultTime": "Domyślny czas trwania",
-  "settings.defaultTime.desc": "Ile minut utrzymywać proces (zadania w Discord zwykle wymagają 15).",
+  "settings.defaultTime.desc": "Ile minut utrzymywać proces. Domyślnie 16, a nie 15: zadania Discord wymagają 15 minut gry, ale Discord potrzebuje do minuty, aby zauważyć nową grę, więc dokładnie 15 to za mało.",
+  "settings.smartTimer": "Inteligentny minutnik",
+  "settings.smartTimer.desc": "Odliczanie rozpoczyna się, gdy Discord zauważy atrapę, a nie w momencie jej uruchomienia. Aby to ustalić, aplikacja czyta z lokalnego dziennika Discord tylko linie dotyczące uruchomionej gry; nic nie jest zapisywane ani wysyłane.",
+  "settings.updates": "Aktualizacje",
+  "settings.checkNow": "Sprawdź teraz",
+  "settings.autoUpdate": "Automatyczne aktualizacje",
+  "settings.autoUpdate.desc": "Sprawdzaj GitHub przy uruchomieniu i co 6 godzin oraz pobieraj nowe wersje w tle. Instalacja zawsze czeka na Twoje potwierdzenie, a pliki są weryfikowane podpisem cyfrowym.",
+  "update.current": "Zainstalowana wersja {v}",
+  "update.checking": "Sprawdzanie…",
+  "update.uptodate": "Masz najnowszą wersję",
+  "update.available": "Wersja {v} jest dostępna",
+  "update.downloading": "Pobieranie wersji {v}… {p}%",
+  "update.ready": "Wersja {v} jest gotowa do instalacji",
+  "update.installing": "Instalowanie i restartowanie…",
+  "update.download": "Pobierz",
+  "update.restart": "Uruchom ponownie i zaktualizuj",
+  "update.later": "Później",
+  "update.notes": "Co nowego",
+  "update.running": "Uruchomione atrapy ({n}) zostaną zatrzymane.",
+  "update.error": "Nie udało się zaktualizować: {e}",
+  "detail.waiting": "oczekiwanie na Discord",
+  "detail.waitingNote": "Discord potrzebuje do minuty, aby zauważyć grę. Odliczanie rozpoczyna się, gdy zauważy atrapę.",
+  "detail.detected": "Discord zauważył atrapę",
+  "detail.assumed": "Discord nie potwierdził, czas jest naliczany mimo to.",
   "settings.autoStop": "Zatrzymuj po upływie czasu",
   "settings.autoStop.desc": "Gdy czas minie, atrapa zakończy działanie sama.",
   "settings.notify": "Powiadomienie o zakończeniu",
@@ -97,7 +113,6 @@
   "settings.files": "Pliki",
   "settings.open": "Otwórz",
   "settings.legal": "Decoy nie używa Twojego tokenu Discord i nie przyjmuje zadań za Ciebie. Symulowanie procesu gry może naruszać zasady Discord, używasz na własne ryzyko.",
-
   "toast.launched": "„{name}” uruchomiono na {n} min. Discord powinien to zauważyć po około 15 sekundach.",
   "toast.stopped": "Atrapa zatrzymana",
   "toast.allStopped": "Wszystkie atrapy zatrzymane",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} gier otrzymało pliki exe: {names}",
   "toast.refreshAdded": "Baza zaktualizowana: +{n} nowych gier",
   "toast.refreshUpToDate": "Baza jest już aktualna",
-
   "nav.lab": "Laboratorium",
   "lab.title": "Laboratorium",
   "lab.subtitle": "Ukryta zakładka: uruchamia wiele atrap jednocześnie.",
@@ -115,16 +129,19 @@
   "lab.launch": "Uruchom {n} gier",
   "lab.launching": "Uruchamianie {done} z {total}…",
   "lab.cancel": "Anuluj",
-  "lab.warn": "Każda atrapa to osobny proces z oknem. Ponad 200–300 jednocześnie może spowolnić komputer, limit to {max}.",
+  "lab.warn": "Każda atrapa to osobny proces z oknem. Zbyt wiele naraz może zawiesić komputer: każdy proces i okno zużywa pamięć, a po kilku tysiącach okien Windows może przestać tworzyć kolejne. Jeśli zamkniesz Decoy, wszystkie atrapy zostaną zatrzymane.",
+  "lab.all": "Wszystkie ({n})",
+  "lab.estimate": "{n} atrap zużyje około {ram} pamięci RAM.",
+  "lab.confirm": "Kliknij ponownie, aby uruchomić {n}",
+  "lab.limit": "Windows przestał uruchamiać nowe procesy po {n}: to limit systemu.",
+  "running.more": "…i jeszcze {n}. Wyświetlono pierwsze 120.",
   "lab.hide": "Ukryj tę zakładkę",
   "toast.labUnlocked": "Odblokowano ukrytą zakładkę „Laboratorium”",
   "toast.labHidden": "Zakładka ukryta",
   "toast.labDone": "Uruchomiono gier: {n}",
-
   "tray.show": "Otwórz Decoy",
   "tray.stop": "Zatrzymaj wszystkie atrapy",
   "tray.quit": "Zakończ",
-
   "notify.title": "Czas minął",
   "notify.body": "{name}: minęło {n} min."
 }

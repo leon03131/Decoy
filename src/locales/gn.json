@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Avañe'ẽ" },
-
+  "_meta": {
+    "name": "Avañe'ẽ"
+  },
   "nav.library": "Mba'ehechaha",
   "nav.favorites": "Oñemboheravéva",
   "nav.running": "Oikóva hína",
   "nav.settings": "Mohendaha",
-
   "discord.checking": "Ohechajey hína…",
   "discord.up": "Oiko hína",
   "discord.down": "Noikói hína",
-
   "window.minimize": "Momichĩ",
   "window.maximize": "Mbotuicha",
   "window.close": "Mboty",
-
   "tag.live": "Oiko hína",
   "tag.noExe": "ndaipóri exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "myasãihára",
-
   "lib.title": "Mba'ehechaha",
   "lib.subtitle": "{n} ñembosarái oñekuaáva hembiapo · oñembopyahu {date}",
   "lib.loading": "Omyenyhẽ hína ñembosarái ryru…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Mbojuaju oñemboheravévape",
   "lib.empty.title": "Ndojejuhúi mba'eve",
   "lib.empty.text": "Eheka ambue téra reheve térã emohenda “Hechauka ñembosarái ndorekóiva exe”.",
-
   "fav.title": "Oñemboheravéva",
   "fav.count": "{n} ñembosarái",
   "fav.hint": "Emongurusu ñembosarái peteĩ mbyja reheve",
   "fav.empty.title": "Ndaipóri mba'eve ko'ápe gueteri",
   "fav.empty.text": "Eikutu mbyja ñembosarái ta'angápe emoĩ hag̃ua ko'ápe.",
-
   "detail.process": "Mba'apo",
   "detail.duration": "Mboýpa oñeñongatúta",
   "detail.minutes": "{n} aravo'i",
@@ -62,7 +57,6 @@
   "detail.favorite": "Oñemboheravéva",
   "detail.close": "Mboty",
   "detail.id": "ID {id}",
-
   "running.title": "Oikóva hína",
   "running.count": "{n} decoy omba'apóva",
   "running.none": "Ndaipóri mba'eve oikóva ko'ág̃a",
@@ -70,14 +64,36 @@
   "running.stop": "Mombota",
   "running.empty.title": "Ndaipóri mba'eve oikóva",
   "running.empty.text": "Epe'a peteĩ ñembosarái mba'ehechahápe ha eikutu “Moñepyrũ decoy”.",
-
   "settings.title": "Mohendaha",
   "settings.general": "Opavave mba'éva",
   "settings.language": "Ñe'ẽ",
   "settings.language.desc": "Mba'ehecha ñe'ẽ. Ñe'ẽ pyahu oñemoinge marandurenda ramo locales ryrupýpe.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Aravo jepigua",
-  "settings.defaultTime.desc": "Mboy aravo'ípa oñeñongatúta mba'apo (Discord tembiaporã py'ỹinte ojerure 15).",
+  "settings.defaultTime.desc": "Mboýpa aravo'i oñeñongatúta tembiapo. Jepigua ha'e 16, ndaha'éi 15: umi Discord tembiaporã ojerure 15 aravo'i ñembosarái, hákatu Discord oikotevẽ peteĩ aravo'i peve ohechakuaa hag̃ua ñembosarái pyahu, upévare 15 mante ndohupytýi.",
+  "settings.smartTimer": "Aravo papaha arandu",
+  "settings.smartTimer.desc": "Pe papaha oñepyrũ Discord ohechakuaa vove decoy, ndaha'éi emboheñói jave. Oikuaa hag̃ua upéva, tembipuru omoñe'ẽ umi líña ñembosarái rehegua Discord marandurenda rendagui mante; mba'eve noñeñongatúi ha noñemondói mamove.",
+  "settings.updates": "Ñembopyahu kuéra",
+  "settings.checkNow": "Ehechajey ko'ág̃a",
+  "settings.autoUpdate": "Ñembopyahu ijeheguíva",
+  "settings.autoUpdate.desc": "Ehechajey GitHub oñepyrũvo ha káda 6 aravo ha emboguejy umi mba'e pyahu tapykuépe. Ñemohenda katuete oha'arõ nde moneĩ, ha umi mba'eheñói oñemoañete heraguapy rupive.",
+  "update.current": "Mba'e pyahu oñemohendáva {v}",
+  "update.checking": "Ohechajey hína…",
+  "update.uptodate": "Reguereko pe mba'e pyahuvéva",
+  "update.available": "Pe versión {v} oĩma",
+  "update.downloading": "Oñemboguejy hína versión {v}… {p}%",
+  "update.ready": "Pe versión {v} oĩmbáma oñemohenda hag̃ua",
+  "update.installing": "Oñemohenda ha oñepyrũjey hína…",
+  "update.download": "Mboguejy",
+  "update.restart": "Moñepyrũjey ha mbopyahu",
+  "update.later": "Upéi",
+  "update.notes": "Mba'e pyahu",
+  "update.running": "Umi decoy ombováváva ({n}) opytáta.",
+  "update.error": "Ndaikatúi oñembopyahu: {e}",
+  "detail.waiting": "oha'arõ hína Discord-pe",
+  "detail.waitingNote": "Discord oikotevẽ peteĩ aravo'i peve ohechakuaa hag̃ua ñembosarái. Pe papaha oñepyrũ ohecha vove pe decoy.",
+  "detail.detected": "Discord ohechakuaa pe decoy",
+  "detail.assumed": "Discord ndohechaukái, pe aravo oñepapa mante.",
   "settings.autoStop": "Mombota aravo opávo",
   "settings.autoStop.desc": "Decoy opata ijehegui voi aravo opávo.",
   "settings.notify": "Marandu opávo",
@@ -97,7 +113,6 @@
   "settings.files": "Marandurendakuéra",
   "settings.open": "Epe'a",
   "settings.legal": "Decoy ndoipurúi ne Discord token ha ndojapói tembiapo nderehehápe. Ñembosarái mba'apo mbotavy ikatu oñemoĩ Discord léi rehe, eipuru nde jehegui.",
-
   "toast.launched": "“{name}” oñepyrũ {n} aravo'ípe g̃uarã. Discord ohecháta amo 15 aravo'ipukúpe.",
   "toast.stopped": "Decoy oñembota",
   "toast.allStopped": "Opaite decoys oñembota",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} ñembosarái ohupyty exe marandurenda: {names}",
   "toast.refreshAdded": "Ñembosarái ryru oñembopyahu: +{n} ñembosarái pyahu",
   "toast.refreshUpToDate": "Ñembosarái ryru oĩmbáma ára reheve",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "Tendayke kañymby: omoñepyrũ heta decoys peteĩ jey.",
@@ -115,16 +129,19 @@
   "lab.launch": "Moñepyrũ {n} ñembosarái",
   "lab.launching": "Omoñepyrũ hína {done} ko {total}-gui…",
   "lab.cancel": "Mbotove",
-  "lab.warn": "Peteĩteĩ decoy ha'e peteĩ mba'apo ijehegui oventánava reheve. Hetavéramo 200–300-gui peteĩ jey ikatu ombomeg̃ua ne mohendahára, tuichavéva ikatu ha'e {max}.",
+  "lab.warn": "Káda decoy ha'e peteĩ tembiapo iñambuéva orevéva oventána. Hetaiterei peteĩ jave ikatu omombyta ne mohendaha: káda tembiapo ha oventána oipuru apytu'ũ, ha heta mil oventána rire Windows ikatu ndojapovéi hetave. Embotýramo Decoy, opaite decoy opytáta.",
+  "lab.all": "Opaite ({n})",
+  "lab.estimate": "{n} decoy oipurúta haimete {ram} RAM.",
+  "lab.confirm": "Ejopy jey emoñepyrũ hag̃ua {n}",
+  "lab.limit": "Windows nomboheñoivéima tembiapo pyahu {n} rire: péva ha'e pe límite sistema pegua.",
+  "running.more": "…ha {n} hetave. Umi 120 ñepyrũgua ojehechauka.",
   "lab.hide": "Mokañy ko tendayke",
   "toast.labUnlocked": "Tendayke kañymby “Lab” ojepe'a",
   "toast.labHidden": "Tendayke oñemokañy",
   "toast.labDone": "Ñembosaráikuéra oñemoñepyrũva: {n}",
-
   "tray.show": "Epe'a Decoy",
   "tray.stop": "Mombota opaite decoys",
   "tray.quit": "Sẽ",
-
   "notify.title": "Opa ára",
   "notify.body": "{name}: ohasa {n} aravo'i."
 }

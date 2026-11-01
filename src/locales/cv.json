@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Чӑвашла" },
-
+  "_meta": {
+    "name": "Чӑвашла"
+  },
   "nav.library": "Библиотека",
   "nav.favorites": "Юратнисем",
   "nav.running": "Ӗҫлекенсем",
   "nav.settings": "Ӗҫлӗхсем",
-
   "discord.checking": "Тӗрӗслетпӗр…",
   "discord.up": "Ӗҫлет",
   "discord.down": "Ӗҫлемест",
-
   "window.minimize": "Пӗчӗклет",
   "window.maximize": "Пысӑклат",
   "window.close": "Хуп",
-
   "tag.live": "Ӗҫлет",
   "tag.noExe": "exe ҫук",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "лаунчер",
-
   "lib.title": "Библиотека",
   "lib.subtitle": "Паллӑ процесслӑ {n} вӑйӑ · ҫӗнетнӗ: {date}",
   "lib.loading": "Вӑйӑсен базине тиетпӗр…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Юратнисен шутне хуш",
   "lib.empty.title": "Нимиҫе те тупӑнмарӗ",
   "lib.empty.text": "Урӑх ятпа шыраса пӑхӑр е «exe ҫуккисене те кӑтарт» ҫӗре ҫыхӑнтартӑр.",
-
   "fav.title": "Юратнисем",
   "fav.count": "{n} вӑйӑ",
   "fav.hint": "Вӑйӑсене ҫӑлтӑрпа палӑртӑр",
   "fav.empty.title": "Кунта халлӗхе пушӑ",
   "fav.empty.text": "Вӑйӑ плитки ҫинчи ҫӑлтӑра пусса ӑна кунта хушӑр.",
-
   "detail.process": "Процесс",
   "detail.duration": "Миҫе минут тытмалла",
   "detail.minutes": "{n} мин",
@@ -62,7 +57,6 @@
   "detail.favorite": "Юратнисем",
   "detail.close": "Хуп",
   "detail.id": "ID {id}",
-
   "running.title": "Ӗҫлекенсем",
   "running.count": "{n} ӗҫлекен decoy",
   "running.none": "Халӗ нимӗн те ӗҫлемест",
@@ -70,14 +64,36 @@
   "running.stop": "Чар",
   "running.empty.title": "Нимӗн те ӗҫлемест",
   "running.empty.text": "Библиотекӑри вӑййа уҫӑр та «Decoy яруне пуҫла» пусӑр.",
-
   "settings.title": "Ӗҫлӗхсем",
   "settings.general": "Пӗтӗмӗшле",
   "settings.language": "Чӗлхе",
   "settings.language.desc": "Интерфейс чӗлхи. Ҫӗнӗ чӗлхесене locales папкине файлсем хушса кӗртеҫҫӗ.",
   "settings.stubs": "Decoyсем",
   "settings.defaultTime": "Малтанхи вӑхӑт",
-  "settings.defaultTime.desc": "Процесса миҫе минут тытмалли (Discord квечӗсенче яланхилле 15 минут кирлӗ).",
+  "settings.defaultTime.desc": "Процеса миҫе минут тытмалли. Малтанхи вӑхӑт 15 мар, 16 минут: Discord квесчӗсем 15 минут выляма ыйтаҫҫӗ, анчах Discord ҫӗнӗ вӑййа асӑрхама пӗр минут таран вӑхӑт кирлӗ, ҫавӑнпа шӑп 15 минут ҫитмест.",
+  "settings.smartTimer": "Ӑслӑ таймер",
+  "settings.smartTimer.desc": "Вӑхӑт шутласси эсир яруне пуҫласан мар, Discord decoy-а асӑрхасан тин пуҫланать. Ҫакна пӗлмешкӗн программа Discord-ӑн вырӑнти журналӗнчен ӗҫлекен вӑйӑ ҫинчен калакан йӗрсене ҫеҫ вулать; нимӗн те упранмасть тата ҫӗр ҫине янӑ мар.",
+  "settings.updates": "Ҫӗнетӳсем",
+  "settings.checkNow": "Халӗ тӗрӗсле",
+  "settings.autoUpdate": "Хӑйне хӑй ҫӗнетни",
+  "settings.autoUpdate.desc": "Программа пуҫланнӑ чухне тата кашни 6 сехетре GitHub тӗрӗсле тата кайри плане ҫӗнӗ версисене тиесе ил. Вырнаҫтару яланах сирӗн ҫирӗплетӗве кӗтет, файлсене вара цифрӑллӑ алӑ пуснипе тӗрӗслеҫҫӗ.",
+  "update.current": "Лартнӑ верси {v}",
+  "update.checking": "Тӗрӗслетпӗр…",
+  "update.uptodate": "Сирӗн патра чи ҫӗнӗ верси",
+  "update.available": "Верси {v} пур",
+  "update.downloading": "Верси {v} тиелет… {p}%",
+  "update.ready": "Верси {v} вырнаҫтарма хатӗр",
+  "update.installing": "Вырнаҫтатпӑр та ҫӗнӗрен яратпӑр…",
+  "update.download": "Тиесе ил",
+  "update.restart": "Ҫӗнӗрен яра та ҫӗнет",
+  "update.later": "Каярах",
+  "update.notes": "Мӗн ҫӗнни пур",
+  "update.running": "Ӗҫлекен decoy-сем ({n}) чарӑнӗҫ.",
+  "update.error": "Ҫӗнетме май килмерӗ: {e}",
+  "detail.waiting": "Discord кӗтетпӗр",
+  "detail.waitingNote": "Discord-а вӑййа асӑрхама пӗр минут таран вӑхӑт кирлӗ. Шутлав вӑл decoy-а курсан пуҫланать.",
+  "detail.detected": "Discord decoy-а асӑрхарӗ",
+  "detail.assumed": "Discord ҫирӗплетмерӗ, анчах вӑхӑт шутланса пырать.",
   "settings.autoStop": "Таймерпа чар",
   "settings.autoStop.desc": "Вӑхӑт тулсан decoy хӑй тӗллӗн чарӑнать.",
   "settings.notify": "Вӗҫленни ҫинчен пӗлтер",
@@ -97,7 +113,6 @@
   "settings.files": "Файлсем",
   "settings.open": "Уҫ",
   "settings.legal": "Decoy сирӗн Discord токенне усӑ курмасть тата сирӗн вырӑнтан квестсене йышӑнмасть. Вӑйӑ процесне улталани Discord йӗркисене пӑсма пултарать, хӑвӑр яваплӑхпа усӑ курӑр.",
-
   "toast.launched": "«{name}» {n} мин ӗҫлеме пуҫларӗ. Discord ӑна 15 ҫеккунт хушшинче асӑрхӗ.",
   "toast.stopped": "Decoy чарӑнчӗ",
   "toast.allStopped": "Пӗтӗм decoy чарӑнчӗ",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} вӑйӑн exe тупӑнчӗ: {names}",
   "toast.refreshAdded": "База ҫӗнелчӗ: +{n} ҫӗнӗ вӑйӑ",
   "toast.refreshUpToDate": "База хальхи вӑхӑтра чи ҫӗнни",
-
   "nav.lab": "Лаборатори",
   "lab.title": "Лаборатори",
   "lab.subtitle": "Вӑрттӑн вкладка: пӗр харӑс нумай decoy пуҫлать.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} вӑйӑ пуҫла",
   "lab.launching": "{total} шутӗнчен {done} пуҫлатпӑр…",
   "lab.cancel": "Пӑрахӑҫла",
-  "lab.warn": "Кашни decoy — чӳречеллӗ уйрӑм процесс. Пӗр харӑс 200–300 ытла пуҫласан компьютер лашама пултарать, чи нумаййи {max}.",
+  "lab.warn": "Кашни decoy вӑл чӳречеллӗ уйрӑм процесс. Пӗр харӑс ытла нумай яни компьютера хытса ларма пултарать: кашни процесс тата чӳрече ас усӑ курать, темиҫе пин чӳрече хыҫҫӑн Windows ҫӗннисене тума пӑрахма пултарать. Decoy хупсан пӗтӗм decoy чарӑнать.",
+  "lab.all": "Пӗтӗмпех ({n})",
+  "lab.estimate": "{n} decoy яхӑн {ram} RAM вырӑн йышӑнӗ.",
+  "lab.confirm": "{n} яма тепӗр хут пусӑр",
+  "lab.limit": "Windows {n} хыҫҫӑн ҫӗнӗ процессене яма пӑрахрӗ: ку система чикки.",
+  "running.more": "…тата урӑх {n}. Малтанхи 120-не кӑтартнӑ.",
   "lab.hide": "Ку вкладкана пытар",
   "toast.labUnlocked": "Вӑрттӑн «Лаборатори» вкладки уҫӑлчӗ",
   "toast.labHidden": "Вкладкана пытарнӑ",
   "toast.labDone": "Пуҫланӑ вӑйӑсем: {n}",
-
   "tray.show": "Decoy уҫ",
   "tray.stop": "Пӗтӗм decoy чар",
   "tray.quit": "Тух",
-
   "notify.title": "Вӑхӑт тулчӗ",
   "notify.body": "{name}: {n} мин иртрӗ."
 }

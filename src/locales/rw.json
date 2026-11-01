@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Ikinyarwanda" },
-
+  "_meta": {
+    "name": "Ikinyarwanda"
+  },
   "nav.library": "Isomero",
   "nav.favorites": "Ibyatoranyijwe",
   "nav.running": "Ibikora",
   "nav.settings": "Igenamiterere",
-
   "discord.checking": "Kugenzura…",
   "discord.up": "Irakora",
   "discord.down": "Ntiri gukora",
-
   "window.minimize": "Kugabanya",
   "window.maximize": "Kwagura",
   "window.close": "Gufunga",
-
   "tag.live": "Irakora",
   "tag.noExe": "nta exe",
   "tag.exeCount": "exe {n}",
   "tag.launcher": "itangiza",
-
   "lib.title": "Isomero",
   "lib.subtitle": "Imikino {n} ifite porogaramu izwi · ivuguruwe {date}",
   "lib.loading": "Gufungura ububikoshingiro bw'imikino…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Shyira mu byatoranyijwe",
   "lib.empty.title": "Nta cyabonetse",
   "lib.empty.text": "Gerageza irindi zina cyangwa wemeze “Erekana imikino idafite exe”.",
-
   "fav.title": "Ibyatoranyijwe",
   "fav.count": "Imikino {n}",
   "fav.hint": "Shyiraho inyenyeri ku mikino",
   "fav.empty.title": "Nta kintu kirabonekamo",
   "fav.empty.text": "Kanda ku nyenyeri ku gakadiri k'umukino kugira ngo uwushyire hano.",
-
   "detail.process": "Porogaramu",
   "detail.duration": "Igihe imara ikora",
   "detail.minutes": "Imin {n}",
@@ -62,7 +57,6 @@
   "detail.favorite": "Ibyatoranyijwe",
   "detail.close": "Funga",
   "detail.id": "ID {id}",
-
   "running.title": "Ibikora",
   "running.count": "decoy {n} zikora",
   "running.none": "Nta kintu kiri gukora ubu",
@@ -70,14 +64,36 @@
   "running.stop": "Hagarika",
   "running.empty.title": "Nta kintu kiri gukora",
   "running.empty.text": "Fungura umukino mu isomero hanyuma ukande “Tangiza decoy”.",
-
   "settings.title": "Igenamiterere",
   "settings.general": "Rusange",
   "settings.language": "Ururimi",
   "settings.language.desc": "Ururimi rw'ibanze. Indimi nshya zongerwamo nk'amadosiye mu bubiko bwa locales.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "Igihe gisanzwe",
-  "settings.defaultTime.desc": "Iminota ingahe yo kugumisha porogaramu ikora (imikoro ya Discord isanzwe isaba 15).",
+  "settings.defaultTime.desc": "Iminota yo kugumana inzira (process). Ibisanzwe ni 16, si 15: ubutumwa bwa Discord busaba iminota 15 yo gukina, ariko Discord ikenera kugera ku munota umwe kugira ngo ibone umukino mushya, bityo 15 nyirizina ntiyaba ihagije.",
+  "settings.smartTimer": "Ibarira-gihe ry'ubwenge",
+  "settings.smartTimer.desc": "Ibarira-gihe ritangira igihe Discord yamaze kubona decoy, aho kuba igihe uyitangirije. Kugira ngo ibimenye, porogaramu isoma gusa imirongo yerekeye umukino urimo gukina muri log ya Discord yo kuri mudasobwa; nta kintu kibikwa cyangwa cyoherezwa ahandi.",
+  "settings.updates": "Ivugurura",
+  "settings.checkNow": "Genyura ubu",
+  "settings.autoUpdate": "Kuvugurura byikora",
+  "settings.autoUpdate.desc": "Kugenzura GitHub mu ntangiriro no muri buri masaha 6 hanyuma ugakuramo verisiyo nshya mu mfuruka. Gushyiramo bihora bitegereza kwemeza kwawe, kandi dosiye zigenzurwa n'umukono wazo wa gisivile (digital signature).",
+  "update.current": "Verisiyo yashyizwemo {v}",
+  "update.checking": "Kugenzura…",
+  "update.uptodate": "Ufite verisiyo igezweho",
+  "update.available": "Verisiyo {v} irahari",
+  "update.downloading": "Gukuramo verisiyo {v}… {p}%",
+  "update.ready": "Verisiyo {v} yiteguye gushyirwamo",
+  "update.installing": "Kuyishyiramo no kongera gutangiza…",
+  "update.download": "Kuramo",
+  "update.restart": "Ongera utangize kandi uvugurure",
+  "update.later": "Hanyuma",
+  "update.notes": "Ibishya",
+  "update.running": "Decoy zirimo gukora ({n}) zizahagarara.",
+  "update.error": "Ntibyashobotse kuvugurura: {e}",
+  "detail.waiting": "gutegereza Discord",
+  "detail.waitingNote": "Discord ikenera kugera ku munota umwe kugira ngo ibone umukino. Ibarira-gihe ritangira igihe ibonye decoy.",
+  "detail.detected": "Discord yabonye decoy",
+  "detail.assumed": "Discord ntiyabyemeje, igihe kirimo kubarwa uko byagenda kose.",
   "settings.autoStop": "Hagarara ku ibarira-gihe",
   "settings.autoStop.desc": "Decoy yizimya ubwayo igihe cyagenwe kigeze.",
   "settings.notify": "Tanga integuza nisoza",
@@ -97,7 +113,6 @@
   "settings.files": "Amadosiye",
   "settings.open": "Fungura",
   "settings.legal": "Decoy ntikoresha ikimenyetso cyawe cya Discord (token) kandi ntiyakira imikoro mu izina ryawe. Kwigana porogaramu y'umukino bishobora kunyuranya n'amategeko ya Discord, bikoreshe ku ngaruka zawe bwite.",
-
   "toast.launched": "“{name}” itangijwe mu gihe cy'imin {n}. Discord igomba kuyibona mu masegonda nka 15.",
   "toast.stopped": "Decoy yahagaritswe",
   "toast.allStopped": "Decoy zose zahagaritswe",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "Imikino {n} yabonye amadosiye ya exe: {names}",
   "toast.refreshAdded": "Ububikoshingiro bwavuguruwe: +{n} imikino mishya",
   "toast.refreshUpToDate": "Ububikoshingiro buravuguruye busanzwe",
-
   "nav.lab": "Laboratwari",
   "lab.title": "Laboratwari",
   "lab.subtitle": "Ahadusanzwe hihishe: hatangiza decoy nyinshi icyarimwe.",
@@ -115,16 +129,19 @@
   "lab.launch": "Tangiza imikino {n}",
   "lab.launching": "Gutangiza {done} kuri {total}…",
   "lab.cancel": "Kureka",
-  "lab.warn": "Buri decoy ni porogaramu yihariye ifite idirishya ryayo. Kurenza 200–300 icyarimwe bishobora kugabanya umuvuduko wa mudasobwa yawe, umubare ntarengwa ni {max}.",
+  "lab.warn": "Buri decoy ni inzira itandukanye ifite idirishya. Nyinshi icyarimwe zishobora gufata mudasobwa yawe: buri nzira n'idirishya bikoresha ububiko (memory), kandi nyuma y'amadirishya ibihumbi runaka Windows ishobora guhagarika kurema andi mashya. Nufunga Decoy, decoy zose zirahagarara.",
+  "lab.all": "Zose ({n})",
+  "lab.estimate": "Decoy {n} zizakoresha hafi {ram} ya RAM.",
+  "lab.confirm": "Kanda nanone kugira ngo utangize {n}",
+  "lab.limit": "Windows yahagaritse gutangiza inzira nshya nyuma ya {n}: iyo ni imbibi za sisitemu.",
+  "running.more": "…na {n} zindi. 120 za mbere zirerekanwa.",
   "lab.hide": "Hisha aka gace",
   "toast.labUnlocked": "Agace kihishe ka “Laboratwari” gakuruwe",
   "toast.labHidden": "Agace kahishwe",
   "toast.labDone": "Imikino yatangijwe: {n}",
-
   "tray.show": "Fungura Decoy",
   "tray.stop": "Hagarika decoy zose",
   "tray.quit": "Gusohoka",
-
   "notify.title": "Igihe cyageze",
   "notify.body": "{name}: Iminota {n} irashize."
 }

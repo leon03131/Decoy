@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Bahasa Melayu" },
-
+  "_meta": {
+    "name": "Bahasa Melayu"
+  },
   "nav.library": "Pustaka",
   "nav.favorites": "Kegemaran",
   "nav.running": "Berjalan",
   "nav.settings": "Tetapan",
-
   "discord.checking": "Memeriksa…",
   "discord.up": "Berjalan",
   "discord.down": "Tidak berjalan",
-
   "window.minimize": "Kecilkan",
   "window.maximize": "Besarkan",
   "window.close": "Tutup",
-
   "tag.live": "Berjalan",
   "tag.noExe": "tiada exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "pelancar",
-
   "lib.title": "Pustaka",
   "lib.subtitle": "{n} permainan dengan proses diketahui · dikemas kini {date}",
   "lib.loading": "Memuatkan pangkalan data permainan…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Tambah ke kegemaran",
   "lib.empty.title": "Tiada apa-apa ditemui",
   "lib.empty.text": "Cuba nama lain atau hidupkan “Tunjukkan permainan tanpa exe”.",
-
   "fav.title": "Kegemaran",
   "fav.count": "{n} permainan",
   "fav.hint": "Tandakan permainan dengan bintang",
   "fav.empty.title": "Tiada apa-apa di sini lagi",
   "fav.empty.text": "Tekan bintang pada jubin permainan untuk menambahkannya di sini.",
-
   "detail.process": "Proses",
   "detail.duration": "Berapa lama hendak dikekalkan",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Kegemaran",
   "detail.close": "Tutup",
   "detail.id": "ID {id}",
-
   "running.title": "Berjalan",
   "running.count": "{n} decoy aktif",
   "running.none": "Tiada apa-apa yang berjalan sekarang",
@@ -70,14 +64,36 @@
   "running.stop": "Hentikan",
   "running.empty.title": "Tiada apa-apa yang berjalan",
   "running.empty.text": "Buka permainan dalam pustaka dan tekan “Mula decoy”.",
-
   "settings.title": "Tetapan",
   "settings.general": "Umum",
   "settings.language": "Bahasa",
   "settings.language.desc": "Bahasa antara muka. Bahasa baharu ditambah sebagai fail dalam folder locales.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "Tempoh lalai",
-  "settings.defaultTime.desc": "Berapa minit untuk mengekalkan proses (pencarian Discord biasanya memerlukan 15).",
+  "settings.defaultTime.desc": "Berapa minit proses dikekalkan. Lalai ialah 16, bukan 15: misi Discord meminta 15 minit permainan, tetapi Discord memerlukan masa sehingga satu minit untuk mengesan permainan baharu.",
+  "settings.smartTimer": "Pemasa pintar",
+  "settings.smartTimer.desc": "Unduran masa bermula apabila Discord mengesan decoy, bukan apabila anda memulakannya. Untuk mengetahuinya, aplikasi hanya membaca baris tentang permainan yang sedang berjalan daripada log setempat Discord; tiada apa yang disimpan atau dihantar.",
+  "settings.updates": "Kemas kini",
+  "settings.checkNow": "Semak sekarang",
+  "settings.autoUpdate": "Kemas kini automatik",
+  "settings.autoUpdate.desc": "Semak GitHub semasa memulakan dan setiap 6 jam serta muat turun versi baharu di latar belakang. Pemasangan sentiasa menunggu pengesahan anda, dan fail disahkan dengan tandatangan digital.",
+  "update.current": "Versi dipasang {v}",
+  "update.checking": "Menyemak…",
+  "update.uptodate": "Anda menggunakan versi terkini",
+  "update.available": "Versi {v} tersedia",
+  "update.downloading": "Memuat turun versi {v}… {p}%",
+  "update.ready": "Versi {v} sedia untuk dipasang",
+  "update.installing": "Memasang dan memulakan semula…",
+  "update.download": "Muat turun",
+  "update.restart": "Mula semula dan kemas kini",
+  "update.later": "Kemudian",
+  "update.notes": "Apa yang baharu",
+  "update.running": "Decoy yang berjalan ({n}) akan dihentikan.",
+  "update.error": "Tidak dapat mengemas kini: {e}",
+  "detail.waiting": "menunggu Discord",
+  "detail.waitingNote": "Discord memerlukan sehingga satu minit untuk mengesan permainan. Kiraan bermula apabila ia melihat decoy.",
+  "detail.detected": "Discord telah mengesan decoy",
+  "detail.assumed": "Discord belum mengesahkannya, masa tetap dikira.",
   "settings.autoStop": "Henti automatik dengan pemasa",
   "settings.autoStop.desc": "Decoy tamat dengan sendiri apabila masa habis.",
   "settings.notify": "Beritahu apabila selesai",
@@ -97,7 +113,6 @@
   "settings.files": "Fail",
   "settings.open": "Buka",
   "settings.legal": "Decoy tidak menggunakan token Discord anda dan tidak menerima pencarian untuk anda. Memalsukan proses permainan mungkin melanggar peraturan Discord, gunakannya atas risiko anda sendiri.",
-
   "toast.launched": "“{name}” dimulakan untuk {n} min. Discord sepatutnya mengesannya dalam kira-kira 15 saat.",
   "toast.stopped": "Decoy dihentikan",
   "toast.allStopped": "Semua decoy dihentikan",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} permainan mendapat fail exe: {names}",
   "toast.refreshAdded": "Pangkalan data dikemas kini: +{n} permainan baharu",
   "toast.refreshUpToDate": "Pangkalan data sudah terkini",
-
   "nav.lab": "Makmal",
   "lab.title": "Makmal",
   "lab.subtitle": "Tab rahsia: memulakan banyak decoy sekaligus.",
@@ -115,16 +129,19 @@
   "lab.launch": "Mula {n} permainan",
   "lab.launching": "Memulakan {done} daripada {total}…",
   "lab.cancel": "Batal",
-  "lab.warn": "Setiap decoy ialah proses berasingan dengan tetingkap. Lebih daripada 200–300 sekaligus boleh memperlahankan komputer anda, had maksimum ialah {max}.",
+  "lab.warn": "Setiap decoy adalah proses berasingan dengan tetingkap. Terlalu banyak serentak boleh membekukan komputer anda: setiap proses dan tetingkap menggunakan ingatan, dan selepas beberapa ribu tetingkap Windows mungkin berhenti mencipta lagi. Jika anda menutup Decoy, semua decoy akan berhenti.",
+  "lab.all": "Semua ({n})",
+  "lab.estimate": "{n} decoy akan menggunakan kira-kira {ram} RAM.",
+  "lab.confirm": "Klik sekali lagi untuk memulakan {n}",
+  "lab.limit": "Windows berhenti memulakan proses baharu selepas {n}: itulah had sistem.",
+  "running.more": "…dan {n} lagi. 120 yang pertama dipaparkan.",
   "lab.hide": "Sembunyikan tab ini",
   "toast.labUnlocked": "Tab rahsia “Makmal” dibuka kuncinya",
   "toast.labHidden": "Tab disembunyikan",
   "toast.labDone": "Permainan dimulakan: {n}",
-
   "tray.show": "Buka Decoy",
   "tray.stop": "Hentikan semua decoy",
   "tray.quit": "Keluar",
-
   "notify.title": "Masa tamat",
   "notify.body": "{name}: {n} min telah berlalu."
 }

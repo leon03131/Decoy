@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Slovenščina" },
-
+  "_meta": {
+    "name": "Slovenščina"
+  },
   "nav.library": "Knjižnica",
   "nav.favorites": "Priljubljene",
   "nav.running": "V teku",
   "nav.settings": "Nastavitve",
-
   "discord.checking": "Preverjanje…",
   "discord.up": "Se izvaja",
   "discord.down": "Se ne izvaja",
-
   "window.minimize": "Pomanjšaj",
   "window.maximize": "Povečaj",
   "window.close": "Zapri",
-
   "tag.live": "Se izvaja",
   "tag.noExe": "brez exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "zaganjalnik",
-
   "lib.title": "Knjižnica",
   "lib.subtitle": "{n} iger z znanim procesom · posodobljeno {date}",
   "lib.loading": "Nalaganje zbirke iger…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Dodaj med priljubljene",
   "lib.empty.title": "Nič ni bilo najdeno",
   "lib.empty.text": "Poskusite z drugim imenom ali vklopite »Prikaži igre brez exe«.",
-
   "fav.title": "Priljubljene",
   "fav.count": "{n} iger",
   "fav.hint": "Označi igre z zvezdico",
   "fav.empty.title": "Tukaj še ni ničesar",
   "fav.empty.text": "Kliknite zvezdico na ploščici igre, da jo dodate sem.",
-
   "detail.process": "Proces",
   "detail.duration": "Čas izvajanja",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Priljubljeno",
   "detail.close": "Zapri",
   "detail.id": "ID {id}",
-
   "running.title": "V teku",
   "running.count": "{n} aktivnih vab",
   "running.none": "Trenutno se nič ne izvaja",
@@ -70,14 +64,36 @@
   "running.stop": "Ustavi",
   "running.empty.title": "Nič se ne izvaja",
   "running.empty.text": "Odpri igro v knjižnici in klikni »Zaženi vabo«.",
-
   "settings.title": "Nastavitve",
   "settings.general": "Splošno",
   "settings.language": "Jezik",
   "settings.language.desc": "Jezik vmesnika. Novi jeziki se dodajo kot datoteke v mapo locales.",
   "settings.stubs": "Vabe",
   "settings.defaultTime": "Privzeto trajanje",
-  "settings.defaultTime.desc": "Koliko minut naj proces teče (zahteve za Discord naloge običajno trajajo 15).",
+  "settings.defaultTime.desc": "Koliko minut naj bo proces aktiven. Privzeta vrednost je 16 in ne 15: naloge Discorda zahtevajo 15 minut igranja, vendar Discord potrebuje do ene minute, da zazna novo igro, zato točno 15 minut ni dovolj.",
+  "settings.smartTimer": "Pametni časovnik",
+  "settings.smartTimer.desc": "Odštevanje se začne, ko Discord zazna vabo, ne pa takrat, ko jo zaženete. Aplikacija za to prebere le vrstice o zagnani igri iz lokalnega dnevnika Discorda; nič se ne shrani ali pošlje kamorkoli.",
+  "settings.updates": "Posodobitve",
+  "settings.checkNow": "Preveri zdaj",
+  "settings.autoUpdate": "Samodejne posodobitve",
+  "settings.autoUpdate.desc": "Preveri GitHub ob zagonu in vsakih 6 ur ter prenese nove različice v ozadju. Namestitev vedno čaka na vašo potrditev, datoteke pa so preverjene z digitalnim podpisom.",
+  "update.current": "Nameščena različica {v}",
+  "update.checking": "Preverjanje…",
+  "update.uptodate": "Uporabljate najnovejšo različico",
+  "update.available": "Na voljo je različica {v}",
+  "update.downloading": "Prenašanje različice {v}… {p}%",
+  "update.ready": "Različica {v} je pripravljena za namestitev",
+  "update.installing": "Nameščanje in ponovni zagon…",
+  "update.download": "Prenesi",
+  "update.restart": "Ponovno zaženi in posodobi",
+  "update.later": "Pozneje",
+  "update.notes": "Kaj je novega",
+  "update.running": "Aktivne vabe ({n}) se bodo ustavile.",
+  "update.error": "Posodobitev ni uspela: {e}",
+  "detail.waiting": "čakanje na Discord",
+  "detail.waitingNote": "Discord potrebuje do ene minute, da zazna igro. Odštevanje se začne, ko opazi vabo.",
+  "detail.detected": "Discord je zaznal vabo",
+  "detail.assumed": "Discord ni potrdil zaznave, vendar se čas vseeno šteje.",
   "settings.autoStop": "Ustavi po časovniku",
   "settings.autoStop.desc": "Vaba se samodejno zaključi, ko čas poteče.",
   "settings.notify": "Obvesti ob zaključku",
@@ -97,7 +113,6 @@
   "settings.files": "Datoteke",
   "settings.open": "Odpri",
   "settings.legal": "Decoy ne uporablja vašega Discord žetona in ne sprejema nalog namesto vas. Simuliranje procesa igre je morda v nasprotju s pravili Discorda, uporabljajte na lastno odgovornost.",
-
   "toast.launched": "»{name}« se je zagnal za {n} min. Discord bi moral zaznati v približno 15 sekundah.",
   "toast.stopped": "Vaba ustavljena",
   "toast.allStopped": "Vse vabe ustavljene",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} iger je pridobilo exe datoteke: {names}",
   "toast.refreshAdded": "Zbirka posodobljena: +{n} novih iger",
   "toast.refreshUpToDate": "Zbirka je že posodobljena",
-
   "nav.lab": "Laboratorij",
   "lab.title": "Laboratorij",
   "lab.subtitle": "Skrivni zavihek: zažene več vab hkrati.",
@@ -115,16 +129,19 @@
   "lab.launch": "Zaženi {n} iger",
   "lab.launching": "Zagon {done} od {total}…",
   "lab.cancel": "Prekliči",
-  "lab.warn": "Vsaka vaba je ločen proces z oknom. Več kot 200–300 hkrati lahko upočasni vaš računalnik, največ je {max}.",
+  "lab.warn": "Vsaka vaba je ločen proces z lastnim oknom. Preveč procesov naenkrat lahko zamrzne računalnik: vsak proces in okno porablja pomnilnik, po nekaj tisoč oknih pa lahko Windows preneha ustvarjati nova. Če zaprete Decoy, se bodo ustavile vse vabe.",
+  "lab.all": "Vse ({n})",
+  "lab.estimate": "{n} vab bo porabilo približno {ram} RAM-a.",
+  "lab.confirm": "Kliknite znova za zagon {n}",
+  "lab.limit": "Windows je po {n} procesih prenehal zaganjati nove: to je sistemska omejitev.",
+  "running.more": "…in še {n}. Prikazanih je prvih 120.",
   "lab.hide": "Skrij ta zavihek",
   "toast.labUnlocked": "Skrivni zavihek »Laboratorij« odklenjen",
   "toast.labHidden": "Zavihek skrit",
   "toast.labDone": "Zagnanih iger: {n}",
-
   "tray.show": "Odpri Decoy",
   "tray.stop": "Ustavi vse vabe",
   "tray.quit": "Izhod",
-
   "notify.title": "Čas je potekel",
   "notify.body": "{name}: preteklo je {n} min."
 }

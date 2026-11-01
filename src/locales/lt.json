@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Lietuvių" },
-
+  "_meta": {
+    "name": "Lietuvių"
+  },
   "nav.library": "Biblioteka",
   "nav.favorites": "Mėgstamiausi",
   "nav.running": "Vykdomi",
   "nav.settings": "Nustatymai",
-
   "discord.checking": "Tikrinama…",
   "discord.up": "Paleistas",
   "discord.down": "Nepaleistas",
-
   "window.minimize": "Suskleisti",
   "window.maximize": "Išskleisti",
   "window.close": "Užverti",
-
   "tag.live": "Vykdomas",
   "tag.noExe": "nėra exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "leistukas",
-
   "lib.title": "Biblioteka",
   "lib.subtitle": "{n} žaidimų su žinomu procesu · atnaujinta {date}",
   "lib.loading": "Įkeliama žaidimų duomenų bazė…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Pridėti prie mėgstamiausių",
   "lib.empty.title": "Nieko nerasta",
   "lib.empty.text": "Bandykite kitą pavadinimą arba įjunkite „Rodyti be exe failų“.",
-
   "fav.title": "Mėgstamiausi",
   "fav.count": "{n} žaidimų",
   "fav.hint": "Pažymėkite žaidimus žvaigždute",
   "fav.empty.title": "Čia kol kas tuščia",
   "fav.empty.text": "Spustelėkite žvaigždutę ant žaidimo kortelės, kad pridėtumėte čia.",
-
   "detail.process": "Procesas",
   "detail.duration": "Kiek laiko palaikyti",
   "detail.minutes": "{n} min.",
@@ -62,7 +57,6 @@
   "detail.favorite": "Mėgstamas",
   "detail.close": "Užverti",
   "detail.id": "ID {id}",
-
   "running.title": "Vykdomi",
   "running.count": "{n} aktyvių imitacijų",
   "running.none": "Šiuo metu nieko nevykdoma",
@@ -70,14 +64,36 @@
   "running.stop": "Sustabdyti",
   "running.empty.title": "Nieko nevykdoma",
   "running.empty.text": "Atverkite žaidimą bibliotekoje ir spustelėkite „Paleisti imitaciją“.",
-
   "settings.title": "Nustatymai",
   "settings.general": "Bendrieji",
   "settings.language": "Kalba",
   "settings.language.desc": "Sąsajos kalba. Naujos kalbos pridedamos kaip failai „locales“ aplanke.",
   "settings.stubs": "Imitacijos",
   "settings.defaultTime": "Numatytoji trukmė",
-  "settings.defaultTime.desc": "Kiek minučių palaikyti procesą (Discord užduotims paprastai reikia 15).",
+  "settings.defaultTime.desc": "Kiek minučių išlaikyti procesą. Numatytoji reikšmė yra 16, o ne 15: Discord užduotys prašo žaisti 15 minučių, bet Discord gali užtrukti iki minutės, kol pastebi naują žaidimą.",
+  "settings.smartTimer": "Išmanusis laikmatis",
+  "settings.smartTimer.desc": "Atgalinis laiko skaičiavimas prasideda tada, kai Discord pastebi imitaciją, o ne ją paleidus. Tam programa skaito tik veikiančio žaidimo eilutes iš vietinio Discord žurnalo; niekas nėra išsaugoma ar siunčiama.",
+  "settings.updates": "Atnaujinimai",
+  "settings.checkNow": "Tikrinti dabar",
+  "settings.autoUpdate": "Automatiniai atnaujinimai",
+  "settings.autoUpdate.desc": "Tikrinti GitHub paleidžiant ir kas 6 valandas bei atsisiųsti naujas versijas fone. Diegimui visada reikia jūsų patvirtinimo, o failai patvirtinami skaitmeniniu parašu.",
+  "update.current": "Įdiegta versija {v}",
+  "update.checking": "Tikrinama…",
+  "update.uptodate": "Naudojate naujausią versiją",
+  "update.available": "Yra prieinama versija {v}",
+  "update.downloading": "Atsisiunčiama versija {v}… {p}%",
+  "update.ready": "Versija {v} paruošta diegti",
+  "update.installing": "Diegiama ir paleidžiama iš naujo…",
+  "update.download": "Atsisiųsti",
+  "update.restart": "Paleisti iš naujo ir atnaujinti",
+  "update.later": "Vėliau",
+  "update.notes": "Kas naujo",
+  "update.running": "Veikiančios imitacijos ({n}) bus sustabdytos.",
+  "update.error": "Nepavyko atnaujinti: {e}",
+  "detail.waiting": "laukiama Discord",
+  "detail.waitingNote": "Discord gali užtrukti iki minutės, kol pastebės žaidimą. Skaičiavimas prasideda, kai pamatoma imitacija.",
+  "detail.detected": "Discord pastebėjo imitaciją",
+  "detail.assumed": "Discord nepatvirtino, bet laikas vis tiek skaičiuojamas.",
   "settings.autoStop": "Sustabdyti pagal laikmatį",
   "settings.autoStop.desc": "Pasibaigus laikui imitacija sustabdoma automatiškai.",
   "settings.notify": "Pranešti baigus",
@@ -97,7 +113,6 @@
   "settings.files": "Failai",
   "settings.open": "Atverti",
   "settings.legal": "Decoy nenaudoja jūsų Discord prieigos rakto ir nepriima užduočių už jus. Žaidimo proceso imitavimas gali pažeisti Discord taisykles, naudokite savo rizika.",
-
   "toast.launched": "„{name}“ paleistas {n} min. Discord turėtų jį pastebėti maždaug po 15 sekundžių.",
   "toast.stopped": "Imitacija sustabdyta",
   "toast.allStopped": "Visos imitacijos sustabdytos",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} žaidimų gavo exe failus: {names}",
   "toast.refreshAdded": "Duomenų bazė atnaujinta: +{n} naujų žaidimų",
   "toast.refreshUpToDate": "Duomenų bazė jau yra naujausios versijos",
-
   "nav.lab": "Laboratorija",
   "lab.title": "Laboratorija",
   "lab.subtitle": "Slapta kortelė: paleidžia daug imitacijų vienu metu.",
@@ -115,16 +129,19 @@
   "lab.launch": "Paleisti {n} žaidimų",
   "lab.launching": "Paleidžiama {done} iš {total}…",
   "lab.cancel": "Atšaukti",
-  "lab.warn": "Kiekviena imitacija yra atskiras procesas su langu. Daugiau nei 200–300 vienu metu gali sulėtinti kompiuterį, didžiausias leistinas skaičius yra {max}.",
+  "lab.warn": "Kiekviena imitacija yra atskiras procesas su langu. Per daug vienu metu gali užšaldyti kompiuterį: kiekvienas procesas ir langas naudoja atmintį, o po kelių tūkstančių langų Windows gali nustoti kurti naujus. Užvėrus Decoy, visos imitacijos sustabdomos.",
+  "lab.all": "Visi ({n})",
+  "lab.estimate": "{n} imitacijų naudos maždaug {ram} RAM.",
+  "lab.confirm": "Spustelėkite dar kartą, kad paleistumėte {n}",
+  "lab.limit": "Windows sustabdė naujų procesų paleidimą ties {n}: tai sistemos riba.",
+  "running.more": "…ir dar {n}. Rodomi pirmieji 120.",
   "lab.hide": "Slėpti šią kortelę",
   "toast.labUnlocked": "Atrakinta slapta „Laboratorijos“ kortelė",
   "toast.labHidden": "Kortelė paslėpta",
   "toast.labDone": "Paleista žaidimų: {n}",
-
   "tray.show": "Atverti Decoy",
   "tray.stop": "Sustabdyti visas imitacijas",
   "tray.quit": "Išeiti",
-
   "notify.title": "Laikas baigėsi",
   "notify.body": "{name}: praėjo {n} min."
 }

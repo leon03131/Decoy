@@ -4,9 +4,10 @@ import { api, sortedExes } from "../api";
 import { isRtl } from "../i18n-core";
 import { useT } from "../i18n";
 import { useStore } from "../store";
-import { Cover, fmtTime, GameIcon, I, Ring, useNow } from "./ui";
+import { Cover, fmtTime, GameIcon, I, Ring, runClock, useNow } from "./ui";
 
-const PRESETS = [5, 15, 30, 60];
+// 16 is the default: quests ask for 15 minutes and Discord needs up to a minute to notice a new game
+const PRESETS = [10, 16, 30, 60];
 
 export default function DetailPanel({ gameId }: { gameId: string }) {
   const t = useT();
@@ -36,9 +37,11 @@ export default function DetailPanel({ gameId }: { gameId: string }) {
   const fav = favorites.includes(game.id);
   const run = running.find((r) => r.gameId === game.id && r.exe === exe);
   const anyRun = running.find((r) => r.gameId === game.id);
-  const left = run ? run.durationS - (now - run.startedMs) / 1000 : 0;
-  const progress = run ? 1 - left / run.durationS : 0;
-  const done = !!run && left <= 0;
+  const clock = run ? runClock(run, now) : null;
+  const left = clock?.left ?? 0;
+  const progress = clock?.progress ?? 0;
+  const waiting = clock?.phase === "waiting";
+  const done = clock?.phase === "done";
 
   const start = async () => {
     if (!exe) return;
@@ -51,6 +54,7 @@ export default function DetailPanel({ gameId }: { gameId: string }) {
         minutes,
         autoStop: settings.autoStop,
         notify: settings.notify,
+        smart: settings.smartTimer,
         notifyTitle: t("notify.title"),
         notifyBody: t("notify.body", { name: game.name, n: minutes }),
       });
@@ -139,10 +143,24 @@ export default function DetailPanel({ gameId }: { gameId: string }) {
 
               {run && (
                 <div className="run-box">
-                  <Ring progress={progress}>
-                    <div className="ring-time">{done ? t("detail.done") : fmtTime(left)}</div>
-                    <div className="ring-cap">{done ? t("detail.timeUp") : t("detail.left")}</div>
+                  <Ring progress={progress} waiting={waiting}>
+                    {waiting ? (
+                      <>
+                        <div className="ring-time">{fmtTime(clock!.waited)}</div>
+                        <div className="ring-cap">{t("detail.waiting")}</div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="ring-time">{done ? t("detail.done") : fmtTime(left)}</div>
+                        <div className="ring-cap">{done ? t("detail.timeUp") : t("detail.left")}</div>
+                      </>
+                    )}
                   </Ring>
+                  {run.smart && (
+                    <div className={"detect-note" + (run.detected ? " ok" : "")}>
+                      {waiting ? t("detail.waitingNote") : run.detected ? <><I.check size={13} />{t("detail.detected")}</> : t("detail.assumed")}
+                    </div>
+                  )}
                   <div className="run-note">{done ? t("detail.noteDone") : t("detail.noteRunning")}</div>
                 </div>
               )}

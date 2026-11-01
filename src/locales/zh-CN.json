@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "简体中文" },
-
+  "_meta": {
+    "name": "简体中文"
+  },
   "nav.library": "游戏库",
   "nav.favorites": "收藏",
   "nav.running": "运行中",
   "nav.settings": "设置",
-
   "discord.checking": "检查中…",
   "discord.up": "运行中",
   "discord.down": "未运行",
-
   "window.minimize": "最小化",
   "window.maximize": "最大化",
   "window.close": "关闭",
-
   "tag.live": "运行中",
   "tag.noExe": "无 exe",
   "tag.exeCount": "{n} 个 exe",
   "tag.launcher": "启动器",
-
   "lib.title": "游戏库",
   "lib.subtitle": "{n} 款已知进程的游戏 · 更新于 {date}",
   "lib.loading": "正在加载游戏数据库…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "加入收藏",
   "lib.empty.title": "未找到结果",
   "lib.empty.text": "尝试其他名称，或开启“显示无 exe 的游戏”。",
-
   "fav.title": "收藏",
   "fav.count": "{n} 款游戏",
   "fav.hint": "点击星标标记游戏",
   "fav.empty.title": "此处暂无内容",
   "fav.empty.text": "点击游戏卡片上的星标即可添加到此处。",
-
   "detail.process": "进程",
   "detail.duration": "保持时长",
   "detail.minutes": "{n} 分钟",
@@ -62,7 +57,6 @@
   "detail.favorite": "收藏",
   "detail.close": "关闭",
   "detail.id": "ID {id}",
-
   "running.title": "运行中",
   "running.count": "{n} 个运行中的替身",
   "running.none": "当前没有任何运行内容",
@@ -70,14 +64,36 @@
   "running.stop": "停止",
   "running.empty.title": "没有正在运行的内容",
   "running.empty.text": "在游戏库中打开一款游戏，然后点击“启动替身”。",
-
   "settings.title": "设置",
   "settings.general": "通用",
   "settings.language": "语言",
   "settings.language.desc": "界面语言。可通过在 locales 文件夹中添加文件来增加新语言。",
   "settings.stubs": "替身进程",
   "settings.defaultTime": "默认时长",
-  "settings.defaultTime.desc": "保持进程运行的分钟数（Discord 任务通常需要 15 分钟）。",
+  "settings.defaultTime.desc": "保持进程运行的分钟数。默认为 16 而非 15：Discord 任务要求游戏运行 15 分钟，但 Discord 最多需要一分钟才能检测到新游戏，因此恰好 15 分钟可能会时间不足。",
+  "settings.smartTimer": "智能定时器",
+  "settings.smartTimer.desc": "倒计时将在 Discord 检测到替身时开始，而非启动时。为此，应用仅会从 Discord 本地日志中读取与运行中游戏相关的行；不会存储或向任何地方发送数据。",
+  "settings.updates": "更新",
+  "settings.checkNow": "立即检查",
+  "settings.autoUpdate": "自动更新",
+  "settings.autoUpdate.desc": "在启动时及每隔 6 小时检查 GitHub，并在后台下载新版本。安装始终需要您的确认，且文件均经过数字签名验证。",
+  "update.current": "当前安装版本 {v}",
+  "update.checking": "正在检查…",
+  "update.uptodate": "已是最新版本",
+  "update.available": "版本 {v} 可用",
+  "update.downloading": "正在下载版本 {v}… {p}%",
+  "update.ready": "版本 {v} 已准备好安装",
+  "update.installing": "正在安装并重启…",
+  "update.download": "下载",
+  "update.restart": "重启并更新",
+  "update.later": "稍后",
+  "update.notes": "更新日志",
+  "update.running": "运行中的替身（{n}）将会停止。",
+  "update.error": "无法更新：{e}",
+  "detail.waiting": "等待 Discord",
+  "detail.waitingNote": "Discord 最多需要一分钟来检测游戏。倒计时将在其识别到替身时开始。",
+  "detail.detected": "Discord 已检测到替身",
+  "detail.assumed": "Discord 尚未确认，时间仍会继续计算。",
   "settings.autoStop": "定时停止",
   "settings.autoStop.desc": "时间到达后替身会自动结束运行。",
   "settings.notify": "完成后通知",
@@ -97,7 +113,6 @@
   "settings.files": "文件",
   "settings.open": "打开",
   "settings.legal": "Decoy 不会使用你的 Discord Token，也不会替你接受任务。伪造游戏进程可能违反 Discord 的规则，请自行承担风险。",
-
   "toast.launched": "“{name}”已启动，时长 {n} 分钟。Discord 应该会在约 15 秒内检测到。",
   "toast.stopped": "替身已停止",
   "toast.allStopped": "所有替身已停止",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} 款游戏获得了 exe 文件：{names}",
   "toast.refreshAdded": "数据库已更新：+{n} 款新游戏",
   "toast.refreshUpToDate": "数据库已是最新版本",
-
   "nav.lab": "实验室",
   "lab.title": "实验室",
   "lab.subtitle": "秘密标签页：可一次性启动多个替身。",
@@ -115,16 +129,19 @@
   "lab.launch": "启动 {n} 款游戏",
   "lab.launching": "正在启动 {done} / {total}…",
   "lab.cancel": "取消",
-  "lab.warn": "每个替身都是一个带有窗口的独立进程。同时启动超过 200–300 个可能会拖慢电脑速度，上限为 {max} 个。",
+  "lab.warn": "每个替身都是带有独立窗口的进程。一次开启过多可能会导致电脑卡死：每个进程和窗口都会占用内存，且在达到数千个窗口后 Windows 可能会停止创建新窗口。如果关闭 Decoy，所有替身都会停止。",
+  "lab.all": "全部（{n}）",
+  "lab.estimate": "{n} 个替身大约将占用 {ram} 内存。",
+  "lab.confirm": "再次点击以启动 {n}",
+  "lab.limit": "达到 {n} 后 Windows 停止启动新进程：这是系统上限。",
+  "running.more": "…还有另外 {n} 个。仅显示前 120 个。",
   "lab.hide": "隐藏此标签页",
   "toast.labUnlocked": "已解锁秘密“实验室”标签页",
   "toast.labHidden": "标签页已隐藏",
   "toast.labDone": "已启动游戏：{n}",
-
   "tray.show": "打开 Decoy",
   "tray.stop": "停止所有替身",
   "tray.quit": "退出",
-
   "notify.title": "时间到",
   "notify.body": "{name}：已过去 {n} 分钟。"
 }

@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Frysk" },
-
+  "_meta": {
+    "name": "Frysk"
+  },
   "nav.library": "Biblioteek",
   "nav.favorites": "Favoriten",
   "nav.running": "Rint",
   "nav.settings": "Ynstellings",
-
   "discord.checking": "Kontrolearje…",
   "discord.up": "Rint",
   "discord.down": "Rint net",
-
   "window.minimize": "Minimalisearje",
   "window.maximize": "Maksimalisearje",
   "window.close": "Slute",
-
   "tag.live": "Rint",
   "tag.noExe": "gjin exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "startprogramma",
-
   "lib.title": "Biblioteek",
   "lib.subtitle": "{n} spultsjes mei in bekend proses · bywurke op {date}",
   "lib.loading": "Spultsjedatabase lade…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Oan favoriten tafoegje",
   "lib.empty.title": "Neat fûn",
   "lib.empty.text": "Probearje in oare namme of skeakelje “Lit spultsjes sûnder exe sjen” yn.",
-
   "fav.title": "Favoriten",
   "fav.count": "{n} spultsjes",
   "fav.hint": "Markearje spultsjes mei in stjer",
   "fav.empty.title": "Hjir is noch neat",
   "fav.empty.text": "Druk op de stjer op in spultegel om it hjir ta te foegjen.",
-
   "detail.process": "Proses",
   "detail.duration": "Hoe lang oan te hâlden",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favoriet",
   "detail.close": "Slute",
   "detail.id": "ID {id}",
-
   "running.title": "Rint",
   "running.count": "{n} aktive decoys",
   "running.none": "Der rint no neat",
@@ -70,14 +64,36 @@
   "running.stop": "Stopje",
   "running.empty.title": "Der rint neat",
   "running.empty.text": "Iepenje in spultsje yn de biblioteek en druk op “Decoy starte”.",
-
   "settings.title": "Ynstellings",
   "settings.general": "Algemien",
   "settings.language": "Taal",
   "settings.language.desc": "Ynterfacetaal. Nije talen wurde tafoege as bestannen yn de map locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Standerttiidsdoer",
-  "settings.defaultTime.desc": "Hoefolle minuten it proses oanholden wurde moat (Discord-quests freegje meastentiids 15).",
+  "settings.defaultTime.desc": "Hoefolle minuten it proses oanholden wurde moat. De standert is 16, net 15: Discord-quests freegje 15 minuten spyltiid, mar Discord hat oant in minút nedich om in nij spultsje op te merken, dat krekt 15 is te min.",
+  "settings.smartTimer": "Slimme timer",
+  "settings.smartTimer.desc": "It ôftellen begjint wannear't Discord it decoy opmurken hat, net wannear't jo it starte. Om dat te witten, lêst de app allinnich de rigels oer it rinnende spultsje út it lokale logboek fan Discord; der wurdt neat opslein of ferstjoerd.",
+  "settings.updates": "Updates",
+  "settings.checkNow": "No kontrolearje",
+  "settings.autoUpdate": "Automatyske updates",
+  "settings.autoUpdate.desc": "Kontrolearje GitHub by it opstarten en elke 6 oeren en download nije ferzjes op 'e eftergrûn. Ynstallearjen wachtet altyd op jo befêstiging, en bestannen wurde ferifiearre troch har digitale hantekening.",
+  "update.current": "Ynstallearre ferzje {v}",
+  "update.checking": "Kontrolearje…",
+  "update.uptodate": "Jo hawwe de nijste ferzje",
+  "update.available": "Ferzje {v} is beskikber",
+  "update.downloading": "Ferzje {v} downloade… {p}%",
+  "update.ready": "Ferzje {v} is klear om te ynstallearjen",
+  "update.installing": "Ynstallearje en op 'e nij starte…",
+  "update.download": "Downloade",
+  "update.restart": "Op 'e nij starte en bywurkje",
+  "update.later": "Letter",
+  "update.notes": "Wat is nij",
+  "update.running": "Rinnende decoys ({n}) sille stopje.",
+  "update.error": "Koe net bywurkje: {e}",
+  "detail.waiting": "wachtsje op Discord",
+  "detail.waitingNote": "Discord hat oant in minút nedich om in spultsje op te merken. It ôftellen begjint wannear't it it decoy sjocht.",
+  "detail.detected": "Discord hat it decoy opmurken",
+  "detail.assumed": "Discord hat it net befêstige, de tiid wurdt dochs teld.",
   "settings.autoStop": "Stopje op timer",
   "settings.autoStop.desc": "De decoy hâldt fan himsels op as de tiid om is.",
   "settings.notify": "Melde as it klear is",
@@ -97,7 +113,6 @@
   "settings.files": "Bestannen",
   "settings.open": "Iepenje",
   "settings.legal": "Decoy brûkt dyn Discord-token net en akseptearret gjin quests foar dy. It neidwaan fan in spultsjeproses kin ynstriid wêze mei de regels fan Discord; brûk it op eigen risiko.",
-
   "toast.launched": "“{name}” start foar {n} min. Discord soe it oer sa'n 15 sekonden opmerke moatte.",
   "toast.stopped": "Decoy stoppe",
   "toast.allStopped": "Alle decoys stoppe",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} spultsjes krigen exe-bestannen: {names}",
   "toast.refreshAdded": "Database bywurke: +{n} nije spultsjes",
   "toast.refreshUpToDate": "De database is al by de tiid",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "In geheime ljepper: start in soad decoys tagelyk.",
@@ -115,16 +129,19 @@
   "lab.launch": "Start {n} spultsjes",
   "lab.launching": "Dwaande mei starten fan {done} fan {total}…",
   "lab.cancel": "Annulearje",
-  "lab.warn": "Elke decoy is in apart proses mei in finster. Mear as 200–300 tagelyk kin dyn kompjûter fertrage, it maksimum is {max}.",
+  "lab.warn": "Elts decoy is in apart proses mei in finster. Te folle yn ien kear kin jo kompjûter fêstrinne litte: elk proses en finster brûkt ûnthâld, en nei in pear tûzen finsters kin Windows stopje mei it oanmeitsjen fan mear. As jo Decoy slute, stopje alle decoys.",
+  "lab.all": "Alle ({n})",
+  "lab.estimate": "{n} decoys sille sawat {ram} RAM brûke.",
+  "lab.confirm": "Klik nochris om {n} te starten",
+  "lab.limit": "Windows is stoppe mei it starten fan nije prosessen nei {n}: dat is de limyt fan it systeem.",
+  "running.more": "…en noch {n}. De earste 120 wurde toand.",
   "lab.hide": "Ferspylje dizze ljepper",
   "toast.labUnlocked": "Geheime ljepper “Lab” ûntskoattele",
   "toast.labHidden": "Ljepper ferstoppe",
   "toast.labDone": "Spultsjes starten: {n}",
-
   "tray.show": "Decoy iepenje",
   "tray.stop": "Alle decoys stopje",
   "tray.quit": "Ofslute",
-
   "notify.title": "De tiid is om",
   "notify.body": "{name}: {n} min binne foarby."
 }

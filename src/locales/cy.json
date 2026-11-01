@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Cymraeg" },
-
+  "_meta": {
+    "name": "Cymraeg"
+  },
   "nav.library": "Llyfrgell",
   "nav.favorites": "Ffefrynnau",
   "nav.running": "Yn rhedeg",
   "nav.settings": "Gosodiadau",
-
   "discord.checking": "Wrthi'n gwirio…",
   "discord.up": "Yn rhedeg",
   "discord.down": "Ddim yn rhedeg",
-
   "window.minimize": "Lleihau",
   "window.maximize": "Ehangu",
   "window.close": "Cau",
-
   "tag.live": "Yn rhedeg",
   "tag.noExe": "dim exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "lansydd",
-
   "lib.title": "Llyfrgell",
   "lib.subtitle": "{n} gêm gyda phroses hysbys · diweddarwyd {date}",
   "lib.loading": "Wrthi'n llwytho cronfa ddata'r gemau…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Ychwanegu at ffefrynnau",
   "lib.empty.title": "Heb ganfod dim",
   "lib.empty.text": "Rhowch gynnig ar enw arall neu trowch “Dangos gemau heb exe” ymlaen.",
-
   "fav.title": "Ffefrynnau",
   "fav.count": "{n} gêm",
   "fav.hint": "Marciwch gemau gyda seren",
   "fav.empty.title": "Dim byd yma eto",
   "fav.empty.text": "Pwyswch y seren ar deilsen gêm i'w hychwanegu yma.",
-
   "detail.process": "Proses",
   "detail.duration": "Pa mor hir i'w gadw",
   "detail.minutes": "{n} mun",
@@ -62,7 +57,6 @@
   "detail.favorite": "Ffefryn",
   "detail.close": "Cau",
   "detail.id": "ID {id}",
-
   "running.title": "Yn rhedeg",
   "running.count": "{n} decoy gweithredol",
   "running.none": "Nid oes dim yn rhedeg ar hyn o bryd",
@@ -70,14 +64,36 @@
   "running.stop": "Stopio",
   "running.empty.title": "Nid oes dim yn rhedeg",
   "running.empty.text": "Agorwch gêm yn y llyfrgell a phwyswch “Cychwyn decoy”.",
-
   "settings.title": "Gosodiadau",
   "settings.general": "Cyffredinol",
   "settings.language": "Iaith",
   "settings.language.desc": "Iaith y rhyngwyneb. Caiff ieithoedd newydd eu hychwanegu fel ffeiliau yn y ffolder locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Hyd rhagosodedig",
-  "settings.defaultTime.desc": "Sawl munud i gadw'r broses (fel arfer mae angen 15 ar gwestiau Discord).",
+  "settings.defaultTime.desc": "Sawl munud i gadw'r broses i fynd. Y rhagosodiad yw 16, nid 15: mae quests Discord yn gofyn am 15 munud o chwarae, ond mae Discord angen hyd at funud i sylwi ar gêm newydd, felly nid yw 15 yn union yn ddigon.",
+  "settings.smartTimer": "Amserydd clyfar",
+  "settings.smartTimer.desc": "Mae'r cyfrif i lawr yn cychwyn pan fydd Discord wedi sylwi ar y decoy, nid pan fyddwch chi'n ei gychwyn. I wybod hynny, dim ond y llinellau am y gêm sy'n rhedeg y mae'r ap yn eu darllen o log lleol Discord; ni chaiff dim ei storio na'i anfon i unrhyw le.",
+  "settings.updates": "Diweddariadau",
+  "settings.checkNow": "Gwirio nawr",
+  "settings.autoUpdate": "Diweddariadau awtomatig",
+  "settings.autoUpdate.desc": "Gwirio GitHub wrth gychwyn a phob 6 awr a lawrlwytho fersiynau newydd yn y cefndir. Mae gosod bob amser yn aros am eich cadarnhad, ac mae ffeiliau'n cael eu gwirio gan eu llofnod digidol.",
+  "update.current": "Fersiwn wedi'i osod {v}",
+  "update.checking": "Wrthi'n gwirio…",
+  "update.uptodate": "Rydych chi ar y fersiwn ddiweddaraf",
+  "update.available": "Mae fersiwn {v} ar gael",
+  "update.downloading": "Wrthi'n lawrlwytho fersiwn {v}… {p}%",
+  "update.ready": "Mae fersiwn {v} yn barod i'w gosod",
+  "update.installing": "Wrthi'n gosod ac yn ailgychwyn…",
+  "update.download": "Lawrlwytho",
+  "update.restart": "Ailgychwyn a diweddaru",
+  "update.later": "Yn ddiweddarach",
+  "update.notes": "Beth sy'n newydd",
+  "update.running": "Bydd decoys sy'n rhedeg ({n}) yn dod i ben.",
+  "update.error": "Methwyd â diweddaru: {e}",
+  "detail.waiting": "aros am Discord",
+  "detail.waitingNote": "Mae Discord angen hyd at funud i sylwi ar gêm. Mae'r cyfrif i lawr yn cychwyn pan fydd yn gweld y decoy.",
+  "detail.detected": "Sylwodd Discord ar y decoy",
+  "detail.assumed": "Nid yw Discord wedi'i gadarnhau, mae'r amser yn cael ei gyfrif beth bynnag.",
   "settings.autoStop": "Stopio ar amserydd",
   "settings.autoStop.desc": "Mae'r decoy yn dod i ben ar ei ben ei hun pan fydd yr amser ar ben.",
   "settings.notify": "Hysbysu pan fydd wedi gorffen",
@@ -97,7 +113,6 @@
   "settings.files": "Ffeiliau",
   "settings.open": "Agor",
   "settings.legal": "Nid yw Decoy yn defnyddio eich tocyn Discord ac nid yw'n derbyn cwestiau ar eich rhan. Gall ffugio proses gêm fynd yn groes i reolau Discord, defnyddiwch ar eich risg eich hun.",
-
   "toast.launched": "Cychwynnwyd “{name}” am {n} mun. Dylai Discord ei sylwi mewn tua 15 eiliad.",
   "toast.stopped": "Stopiwyd y decoy",
   "toast.allStopped": "Stopiwyd pob decoy",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "Cafodd {n} gêm ffeiliau exe: {names}",
   "toast.refreshAdded": "Diweddarwyd y gronfa ddata: +{n} gêm newydd",
   "toast.refreshUpToDate": "Mae'r gronfa ddata eisoes yn gyfredol",
-
   "nav.lab": "Labordy",
   "lab.title": "Labordy",
   "lab.subtitle": "Tab cyfrinachol: yn cychwyn llawer o ddecoys ar unwaith.",
@@ -115,16 +129,19 @@
   "lab.launch": "Cychwyn {n} gêm",
   "lab.launching": "Wrthi'n cychwyn {done} o {total}…",
   "lab.cancel": "Canslo",
-  "lab.warn": "Mae pob decoy yn broses ar wahân gyda ffenestr. Gall mwy na 200–300 ar unwaith arafu eich cyfrifiadur, y mwyafswm yw {max}.",
+  "lab.warn": "Mae pob decoy yn broses ar wahân gyda ffenestr. Gall gormod ar unwaith rewi eich cyfrifiadur: mae pob proses a ffenestr yn defnyddio cof, ac ar ôl ychydig filoedd o ffenestri efallai y bydd Windows yn peidio â chreu mwy. Os byddwch yn cau Decoy, bydd pob decoy yn stopio.",
+  "lab.all": "Pob un ({n})",
+  "lab.estimate": "Bydd {n} decoy yn defnyddio tua {ram} o RAM.",
+  "lab.confirm": "Cliciwch eto i gychwyn {n}",
+  "lab.limit": "Fe wnaeth Windows roi'r gorau i gychwyn prosesau newydd ar ôl {n}: dyna derfyn y system.",
+  "running.more": "…a {n} arall. Dangosir y 120 cyntaf.",
   "lab.hide": "Cuddio'r tab hwn",
   "toast.labUnlocked": "Datgloiwyd tab cyfrinachol y “Labordy”",
   "toast.labHidden": "Tab wedi'i guddio",
   "toast.labDone": "Gemau wedi'u cychwyn: {n}",
-
   "tray.show": "Agor Decoy",
   "tray.stop": "Stopio pob decoy",
   "tray.quit": "Gadael",
-
   "notify.title": "Mae'r amser ar ben",
   "notify.body": "{name}: mae {n} mun wedi mynd heibio."
 }

@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Azərbaycan" },
-
+  "_meta": {
+    "name": "Azərbaycan"
+  },
   "nav.library": "Kitabxana",
   "nav.favorites": "Seçilmişlər",
   "nav.running": "İşləyənlər",
   "nav.settings": "Tənzimləmələr",
-
   "discord.checking": "Yoxlanılır…",
   "discord.up": "İşləyir",
   "discord.down": "İşləmir",
-
   "window.minimize": "Bük",
   "window.maximize": "Böyüt",
   "window.close": "Bağla",
-
   "tag.live": "İşləyir",
   "tag.noExe": "exe yoxdur",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "başladıcı",
-
   "lib.title": "Kitabxana",
   "lib.subtitle": "Məlum prosesi olan {n} oyun · yenilənib: {date}",
   "lib.loading": "Oyun məlumat bazası yüklənir…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Seçilmişlərə əlavə et",
   "lib.empty.title": "Heç nə tapılmadı",
   "lib.empty.text": "Başqa bir ad sınayın və ya “exe-si olmayan oyunları göstər” seçimini aktivləşdirin.",
-
   "fav.title": "Seçilmişlər",
   "fav.count": "{n} oyun",
   "fav.hint": "Oyunları ulduzla işarələyin",
   "fav.empty.title": "Hələlik burada heç nə yoxdur",
   "fav.empty.text": "Buraya əlavə etmək üçün oyun plitəsindəki ulduza klikləyin.",
-
   "detail.process": "Proses",
   "detail.duration": "Nə qədər saxlanılsın",
   "detail.minutes": "{n} dəq",
@@ -62,7 +57,6 @@
   "detail.favorite": "Seçilmiş",
   "detail.close": "Bağla",
   "detail.id": "ID {id}",
-
   "running.title": "İşləyənlər",
   "running.count": "{n} aktiv decoy",
   "running.none": "Hazırda heç nə işləmir",
@@ -70,14 +64,36 @@
   "running.stop": "Dayandır",
   "running.empty.title": "Heç nə işləmir",
   "running.empty.text": "Kitabxanada oyunu açın və “Decoy başlat” düyməsinə klikləyin.",
-
   "settings.title": "Tənzimləmələr",
   "settings.general": "Ümumi",
   "settings.language": "Dil",
   "settings.language.desc": "İnterfeys dili. Yeni dillər locales qovluğuna fayl kimi əlavə olunur.",
   "settings.stubs": "Decoy-lar",
   "settings.defaultTime": "Defolt müddət",
-  "settings.defaultTime.desc": "Proses neçə dəqiqə saxlanılsın (Discord tapşırıqları adətən 15 dəqiqə tələb edir).",
+  "settings.defaultTime.desc": "Prosesin neçə dəqiqə saxlanılacağı. Defolt olaraq 15 deyil, 16 dəqiqədir: Discord tapşırıqları 15 dəqiqə oyun tələb edir, lakin Discord-un yeni oyunu görməsi 1 dəqiqəyə qədər çəkə bilər, ona görə də dəqiq 15 dəqiqə kifayət etmir.",
+  "settings.smartTimer": "Ağıllı taymer",
+  "settings.smartTimer.desc": "Geri sayım siz işə saldıqda deyil, Discord decoy-u aşkar etdikdə başlayır. Bunu bilmək üçün tətbiq Discord-un yerli jurnalından yalnız işləyən oyun haqqında olan sətirləri oxuyur; heç nə saxlanılmır və heç yerə göndərilmir.",
+  "settings.updates": "Yeniləmələr",
+  "settings.checkNow": "İndi yoxla",
+  "settings.autoUpdate": "Avtomatik yeniləmələr",
+  "settings.autoUpdate.desc": "Açılışda və hər 6 saatdan bir GitHub-ı yoxlayın və yeni versiyaları arxa planda endirin. Quraşdırma həmişə sizin təsdiqinizi gözləyir və fayllar rəqəmsal imzaları ilə yoxlanılır.",
+  "update.current": "Quraşdırılmış versiya {v}",
+  "update.checking": "Yoxlanılır…",
+  "update.uptodate": "Siz ən son versiyadasınız",
+  "update.available": "Versiya {v} mövcuddur",
+  "update.downloading": "Versiya {v} endirilir… {p}%",
+  "update.ready": "Versiya {v} quraşdırılmağa hazırdır",
+  "update.installing": "Quraşdırılır və yenidən başladılır…",
+  "update.download": "Endir",
+  "update.restart": "Yenidən başlat və yenilə",
+  "update.later": "Sonra",
+  "update.notes": "Yeniliklər",
+  "update.running": "İşləyən decoy-lar ({n}) dayanacaq.",
+  "update.error": "Yeniləmək mümkün olmadı: {e}",
+  "detail.waiting": "Discord gözlənilir",
+  "detail.waitingNote": "Discord-un oyunu görməsi bir dəqiqəyə qədər vaxt apara bilər. Geri sayım o, decoy-u gördükdə başlayır.",
+  "detail.detected": "Discord decoy-u aşkar etdi",
+  "detail.assumed": "Discord bunu təsdiqləmədi, vaxt hər halda sayılır.",
   "settings.autoStop": "Taymerlə dayandır",
   "settings.autoStop.desc": "Vaxt bitdikdə decoy avtomatik dayanır.",
   "settings.notify": "Bitdikdə bildiriş göstər",
@@ -97,7 +113,6 @@
   "settings.files": "Fayllar",
   "settings.open": "Aç",
   "settings.legal": "Decoy sizin Discord tokeninizdən istifadə etmir və sizin yerinizə tapşırıqları qəbul etmir. Oyun prosesini saxtalaşdırmaq Discord qaydalarına zidd ola bilər, risk sizin üzərinizdədir.",
-
   "toast.launched": "“{name}” {n} dəqiqəliyə başladıldı. Discord təxminən 15 saniyə sonra bunu aşkar edəcək.",
   "toast.stopped": "Decoy dayandırıldı",
   "toast.allStopped": "Bütün decoy-lar dayandırıldı",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} oyun exe faylı əldə etdi: {names}",
   "toast.refreshAdded": "Baza yeniləndi: +{n} yeni oyun",
   "toast.refreshUpToDate": "Baza artıq ən son versiyadadır",
-
   "nav.lab": "Laboratoriya",
   "lab.title": "Laboratoriya",
   "lab.subtitle": "Gizli bölmə: eyni anda bir çox decoy başladır.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} oyun başlat",
   "lab.launching": "{done} / {total} başladılır…",
   "lab.cancel": "Ləğv et",
-  "lab.warn": "Hər decoy pəncərəsi olan ayrıca bir prosesdir. Eyni anda 200–300-dən çoxu kompüteri ləngidə bilər, maksimum: {max}.",
+  "lab.warn": "Hər bir decoy pəncərəsi olan ayrı bir prosesdir. Eyni anda çox sayda proses kompüterinizi dondura bilər: hər bir proses və pəncərə yaddaş istifadə edir və bir neçə min pəncərədən sonra Windows yenilərini yaratmağı dayandıra bilər. Decoy-u bağlasanız, bütün decoy-lar dayanır.",
+  "lab.all": "Hamısı ({n})",
+  "lab.estimate": "{n} decoy təxminən {ram} RAM istifadə edəcək.",
+  "lab.confirm": "{n} başlatmaq üçün yenidən klikləyin",
+  "lab.limit": "Windows {n} prosesdən sonra yenilərini başlatmağı dayandırdı: bu, sistem limitidir.",
+  "running.more": "…və daha {n}. İlk 120-si göstərilir.",
   "lab.hide": "Bu bölməni gizlət",
   "toast.labUnlocked": "Gizli “Laboratoriya” bölməsi açıldı",
   "toast.labHidden": "Bölmə gizlədildi",
   "toast.labDone": "Başladılmış oyunlar: {n}",
-
   "tray.show": "Decoy tətbiqini aç",
   "tray.stop": "Bütün decoy-ları dayandır",
   "tray.quit": "Çıx",
-
   "notify.title": "Vaxt bitdi",
   "notify.body": "{name}: {n} dəqiqə keçdi."
 }

@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Български" },
-
+  "_meta": {
+    "name": "Български"
+  },
   "nav.library": "Библиотека",
   "nav.favorites": "Любими",
   "nav.running": "Стартирани",
   "nav.settings": "Настройки",
-
   "discord.checking": "Проверка…",
   "discord.up": "Работи",
   "discord.down": "Не работи",
-
   "window.minimize": "Минимизиране",
   "window.maximize": "Максимизиране",
   "window.close": "Затваряне",
-
   "tag.live": "Работи",
   "tag.noExe": "няма exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "лаунчър",
-
   "lib.title": "Библиотека",
   "lib.subtitle": "{n} игри с известен процес · обновено на {date}",
   "lib.loading": "Зареждане на базата с игри…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Добавяне в любими",
   "lib.empty.title": "Нищо не е намерено",
   "lib.empty.text": "Опитайте с друго име или включете „Показване на игри без exe“.",
-
   "fav.title": "Любими",
   "fav.count": "{n} игри",
   "fav.hint": "Маркирайте игри със звезда",
   "fav.empty.title": "Тук все още няма нищо",
   "fav.empty.text": "Натиснете звездата върху плочката на игра, за да я добавите тук.",
-
   "detail.process": "Процес",
   "detail.duration": "Продължителност",
   "detail.minutes": "{n} мин",
@@ -62,7 +57,6 @@
   "detail.favorite": "Любими",
   "detail.close": "Затваряне",
   "detail.id": "ID {id}",
-
   "running.title": "Стартирани",
   "running.count": "{n} активни decoys",
   "running.none": "В момента нищо не работи",
@@ -70,14 +64,36 @@
   "running.stop": "Спиране",
   "running.empty.title": "Нищо не работи",
   "running.empty.text": "Отворете игра от библиотеката и натиснете „Стартиране на decoy“.",
-
   "settings.title": "Настройки",
   "settings.general": "Общи",
   "settings.language": "Език",
   "settings.language.desc": "Език на интерфейса. Нови езици се добавят като файлове в папката locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Време по подразбиране",
-  "settings.defaultTime.desc": "Колко минути да се поддържа процесът (за куестовете в Discord обикновено са нужни 15).",
+  "settings.defaultTime.desc": "Колко минути да се поддържа процесът. По подразбиране е 16, а не 15: куестовете на Discord изискват 15 минути игра, но на Discord му трябва до минута, за да забележи новата игра, така че точно 15 не достигат.",
+  "settings.smartTimer": "Интелигентен таймер",
+  "settings.smartTimer.desc": "Обратното броене започва, когато Discord забележи decoy, а не при стартирането му. За да разбере това, приложението чете само редовете за работещата игра от локалния журнал на Discord; нищо не се съхранява или изпраща никъде.",
+  "settings.updates": "Актуализации",
+  "settings.checkNow": "Провери сега",
+  "settings.autoUpdate": "Автоматични актуализации",
+  "settings.autoUpdate.desc": "Проверява GitHub при стартиране и на всеки 6 часа и изтегля нови версии във фонов режим. Инсталирането винаги чака вашето потвърждение, а файловете се проверяват чрез цифров подпис.",
+  "update.current": "Инсталирана версия {v}",
+  "update.checking": "Проверка…",
+  "update.uptodate": "Използвате най-новата версия",
+  "update.available": "Налична е версия {v}",
+  "update.downloading": "Изтегляне на версия {v}… {p}%",
+  "update.ready": "Версия {v} е готова за инсталиране",
+  "update.installing": "Инсталиране и рестартиране…",
+  "update.download": "Изтегляне",
+  "update.restart": "Рестартиране и актуализиране",
+  "update.later": "По-късно",
+  "update.notes": "Какво ново",
+  "update.running": "Работещите decoys ({n}) ще спрат.",
+  "update.error": "Неуспешна актуализация: {e}",
+  "detail.waiting": "изчакване на Discord",
+  "detail.waitingNote": "На Discord му трябва до минута, за да забележи игра. Обратното броене започва, когато види decoy.",
+  "detail.detected": "Discord забеляза decoy",
+  "detail.assumed": "Discord не потвърди, времето се отчита въпреки това.",
   "settings.autoStop": "Спиране по таймер",
   "settings.autoStop.desc": "Decoy спира автоматично, след като времето изтече.",
   "settings.notify": "Известие при приключване",
@@ -97,7 +113,6 @@
   "settings.files": "Файлове",
   "settings.open": "Отваряне",
   "settings.legal": "Decoy не използва вашия Discord токен и не приема куестове вместо вас. Симулирането на игрален процес може да нарушава правилата на Discord, използвайте на свой собствен риск.",
-
   "toast.launched": "„{name}“ е стартирана за {n} мин. Discord би трябвало да я засече след около 15 секунди.",
   "toast.stopped": "Decoy е спрян",
   "toast.allStopped": "Всички decoys са спрени",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} игри получиха exe файлове: {names}",
   "toast.refreshAdded": "Базата е обновена: +{n} нови игри",
   "toast.refreshUpToDate": "Базата вече е актуална",
-
   "nav.lab": "Лаборатория",
   "lab.title": "Лаборатория",
   "lab.subtitle": "Таен раздел: стартира много decoys едновременно.",
@@ -115,16 +129,19 @@
   "lab.launch": "Стартиране на {n} игри",
   "lab.launching": "Стартиране на {done} от {total}…",
   "lab.cancel": "Отказ",
-  "lab.warn": "Всеки decoy е отделен процес с прозорец. Повече от 200–300 наведнъж може да забавят компютъра ви, максимумът е {max}.",
+  "lab.warn": "Всеки decoy е отделен процес с прозорец. Твърде много наведнъж могат да блокират компютъра: всеки процес и прозорец ползва памет, а след няколко хиляди прозореца Windows може да спре да създава нови. Ако затворите Decoy, всички decoys спират.",
+  "lab.all": "Всички ({n})",
+  "lab.estimate": "{n} decoys ще заемат приблизително {ram} RAM.",
+  "lab.confirm": "Кликнете отново за стартиране на {n}",
+  "lab.limit": "Windows спря стартирането на нови процеси след {n}: това е системното ограничение.",
+  "running.more": "…и още {n}. Показват се първите 120.",
   "lab.hide": "Скриване на този раздел",
   "toast.labUnlocked": "Тайният раздел „Лаборатория“ е отключен",
   "toast.labHidden": "Разделът е скрит",
   "toast.labDone": "Стартирани игри: {n}",
-
   "tray.show": "Отваряне на Decoy",
   "tray.stop": "Спиране на всички decoys",
   "tray.quit": "Изход",
-
   "notify.title": "Времето изтече",
   "notify.body": "{name}: изминаха {n} мин."
 }

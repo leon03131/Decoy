@@ -1,24 +1,22 @@
 {
-  "_meta": { "name": "پښتو", "rtl": true },
-
+  "_meta": {
+    "name": "پښتو",
+    "rtl": true
+  },
   "nav.library": "کتابتون",
   "nav.favorites": "خوښ شوي",
   "nav.running": "په کار بوخت",
   "nav.settings": "امستنې",
-
   "discord.checking": "څېړل کېږي…",
   "discord.up": "فعال دی",
   "discord.down": "فعال نه دی",
-
   "window.minimize": "راټولول",
   "window.maximize": "لویول",
   "window.close": "بندول",
-
   "tag.live": "فعال",
   "tag.noExe": "بې exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "لانچر",
-
   "lib.title": "کتابتون",
   "lib.subtitle": "{n} لوبې له پېژندل شوې پروسې سره · تازه شوی په {date}",
   "lib.loading": "د لوبو ډیټابیس بارېږي…",
@@ -36,13 +34,11 @@
   "lib.addFavorite": "خوښ شوو کې زیاتول",
   "lib.empty.title": "څه ونه موندل شول",
   "lib.empty.text": "بل نوم وپلټئ یا «هغه لوبې ښودل چې بې exe دي» فعال کړئ.",
-
   "fav.title": "خوښ شوي",
   "fav.count": "{n} لوبې",
   "fav.hint": "لوبې په ستوري سره په نښه کړئ",
   "fav.empty.title": "دلته لا څه نشته",
   "fav.empty.text": "د لوبې په ټایل کې پر ستوري کلیک وکړئ ترڅو دلته اضافه شي.",
-
   "detail.process": "پروسه",
   "detail.duration": "څومره وخت وساتل شي",
   "detail.minutes": "{n} دقیقې",
@@ -62,7 +58,6 @@
   "detail.favorite": "خوښ شوی",
   "detail.close": "بندول",
   "detail.id": "ID {id}",
-
   "running.title": "په کار بوخت",
   "running.count": "{n} فعال decoy",
   "running.none": "اوس مهال هېڅ څه فعال نه دي",
@@ -70,14 +65,36 @@
   "running.stop": "درول",
   "running.empty.title": "هېڅ څه فعال نه دي",
   "running.empty.text": "په کتابتون کې یوه لوبه پرانیزئ او «Decoy پیل کول» ووهئ.",
-
   "settings.title": "امستنې",
   "settings.general": "عمومي",
   "settings.language": "ژبه",
   "settings.language.desc": "د کارن مخ ژبه. نوې ژبې د locales په پوښۍ کې د فایلونو په توګه ورزیاتېږي.",
   "settings.stubs": "Decoyګانې",
   "settings.defaultTime": "تلوالیزه موده",
-  "settings.defaultTime.desc": "پروسه څو دقیقې وساتل شي (د Discord کویسټونه معمولاً ۱۵ دقیقو ته اړتیا لري).",
+  "settings.defaultTime.desc": "پروسه څو دقیقې وساتل شي. تلوالیز ارزښت 16 دی، نه 15: د Discord کویسټونه 15 دقیقې لوبه غواړي، خو Discord د نوې لوبې پېژندلو لپاره تر یوې دقیقې وخت ته اړتیا لري، نو پوره 15 کافي نه وي.",
+  "settings.smartTimer": "ځیرک ټایمر",
+  "settings.smartTimer.desc": "شمېرنه هغه وخت پیلېږي کله چې Discord ډیکوی (decoy) وپېژني، نه په هغه شیبه چې تاسو یې پیل کړئ. د دې معلومولو لپاره، ایپ یوازې د روانې لوبې اړوند کرښې د Discord له محلي لاګ څخه لولي؛ هیڅ شی نه خوندي کېږي او نه بل چیرې لېږل کېږي.",
+  "settings.updates": "تازه‌کاري",
+  "settings.checkNow": "اوس وګورئ",
+  "settings.autoUpdate": "خپلسرې تازه‌کاري",
+  "settings.autoUpdate.desc": "په پیل او هر 6 ساعته کې GitHub وګورئ او نوې نسخې په شالید کې ډاونلوډ کړئ. لګول تل ستاسو تایید ته انتظار باسي، او فایلونه د دوی ډیجیټل لاسلیک له مخې تاییدېږي.",
+  "update.current": "لګول شوې نسخه {v}",
+  "update.checking": "څېړل کېږي…",
+  "update.uptodate": "تاسو ترټولو نوې نسخه لرئ",
+  "update.available": "نسخه {v} شتون لري",
+  "update.downloading": "د {v} نسخې ډاونلوډ روان دی… {p}%",
+  "update.ready": "نسخه {v} لګولو ته چمتو ده",
+  "update.installing": "لګول او بیا پیلول روان دي…",
+  "update.download": "ډاونلوډ",
+  "update.restart": "بیا پیل او تازه کړئ",
+  "update.later": "وروسته",
+  "update.notes": "څه نوي دي",
+  "update.running": "روان ډیکویونه ({n}) به ودرېږي.",
+  "update.error": "تازه نشو: {e}",
+  "detail.waiting": "Discord ته په تمه",
+  "detail.waitingNote": "Discord د لوبې پېژندلو لپاره تر یوې دقیقې پورې وخت ته اړتیا لري. کله چې ډیکوی وویني، نو د وخت شمېرنه پیلېږي.",
+  "detail.detected": "Discord ډیکوی ولید",
+  "detail.assumed": "Discord تایید نه کړ، وخت بیا هم حسابېږي.",
   "settings.autoStop": "په ټایمر باندې درول",
   "settings.autoStop.desc": "کله چې وخت پوره شي، decoy په خپله پای ته رسېږي.",
   "settings.notify": "د بشپړېدو خبرتیا",
@@ -97,7 +114,6 @@
   "settings.files": "فایلونه",
   "settings.open": "پرانیستل",
   "settings.legal": "Decoy ستاسو د Discord ټوکن نه کاروي او ستاسو پر ځای کویسټونه نه مني. د لوبې د پروسې جعل کول ممکن د Discord د اصولو خلاف وي، په خپل مسؤلیت یې وکاروئ.",
-
   "toast.launched": "«{name}» د {n} دقیقو لپاره پیل شوه. Discord به یې شاوخوا په ۱۵ ثانیو کې ومومي.",
   "toast.stopped": "Decoy ودرول شوه",
   "toast.allStopped": "ټولې decoyګانې ودرول شوې",
@@ -105,7 +121,6 @@
   "toast.refreshGained": "{n} لوبو د exe فایلونه ترلاسه کړل: {names}",
   "toast.refreshAdded": "ډیټابیس تازه شو: +{n} نوې لوبې",
   "toast.refreshUpToDate": "ډیټابیس لا دمخه تازه دی",
-
   "nav.lab": "لابراتوار",
   "lab.title": "لابراتوار",
   "lab.subtitle": "یو پټ ټب: په یو وخت کې ډېرې decoyګانې پیل کوي.",
@@ -115,16 +130,19 @@
   "lab.launch": "{n} لوبې پیل کول",
   "lab.launching": "د {total} څخه {done} پیلېږي…",
   "lab.cancel": "لغوه کول",
-  "lab.warn": "هره decoy یوه جلا پروسه له یوې کړکۍ سره ده. په یو وار له ۲۰۰–۳۰۰ ډېرې ښايي ستاسو کمپیوټر ورو کړي، تر ټولو ډېر حد یې {max} دی.",
+  "lab.warn": "هر ډیکوی له یوې کړکۍ سره جلا پروسه ده. په یوځل ډېر شمېر کولی شي کمپیوټر بند کړي: هره پروسه او کړکۍ حافظه کاروي، او له څو زرو کړکیو وروسته ممکن Windows د نویو جوړول بند کړي. که Decoy وتړئ، ټول ډیکویونه به ودرېږي.",
+  "lab.all": "ټول ({n})",
+  "lab.estimate": "{n} ډیکوی به نږدې {ram} د RAM حافظه وکاروي.",
+  "lab.confirm": "د {n} د پیل لپاره بیا کلیک وکړئ",
+  "lab.limit": "Windows له {n} وروسته د نویو پروسو پیل بند کړ: دا د سیسټم وروستی حد دی.",
+  "running.more": "…او {n} نور. لومړني 120 ښودل شوي.",
   "lab.hide": "دا ټب پټول",
   "toast.labUnlocked": "د «لابراتوار» پټ ټب پرانیستل شو",
   "toast.labHidden": "ټب پټ شو",
   "toast.labDone": "پیل شوې لوبې: {n}",
-
   "tray.show": "Decoy پرانیستل",
   "tray.stop": "ټولې decoyګانې درول",
   "tray.quit": "وتل",
-
   "notify.title": "وخت پوره شو",
   "notify.body": "{name}: {n} دقیقې تېرې شوې."
 }

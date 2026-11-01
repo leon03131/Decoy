@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Нохчийн" },
-
+  "_meta": {
+    "name": "Нохчийн"
+  },
   "nav.library": "Библиотека",
   "nav.favorites": "Хаьржинарш",
   "nav.running": "Латийна",
   "nav.settings": "ГӀирсаш",
-
   "discord.checking": "ТулгӀуш ду…",
   "discord.up": "Латийна ду",
   "discord.down": "Латийна дац",
-
   "window.minimize": "КӀелхьардаккха",
   "window.maximize": "Шордан",
   "window.close": "ДӀакъовла",
-
   "tag.live": "Латийна",
   "tag.noExe": "exe йац",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "лаунчер",
-
   "lib.title": "Библиотека",
   "lib.subtitle": "Йевза процесс йолу {n} ловзар · керладаьккхина {date}",
   "lib.loading": "Ловзарийн база схьаюьллуш йу…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Хаьржинчарна тӀетоха",
   "lib.empty.title": "Карийна хӀума дац",
   "lib.empty.text": "Кхин цӀе йазйе йа «Exe йоцу ловзарш гайта» латаде.",
-
   "fav.title": "Хаьржинарш",
   "fav.count": "{n} ловзар",
   "fav.hint": "Ловзаршна седа билла",
   "fav.empty.title": "Кхузахь хӀинца а яьсса йу",
   "fav.empty.text": "Ловзаран уьн тӀера седан тӀетаӀаде, иза кхуза тӀетоха.",
-
   "detail.process": "Процесс",
   "detail.duration": "Маца доллац латто деза",
   "detail.minutes": "{n} минот",
@@ -62,7 +57,6 @@
   "detail.favorite": "Хаьржинарг",
   "detail.close": "ДӀакъовла",
   "detail.id": "ID {id}",
-
   "running.title": "Латийна",
   "running.count": "{n} жигар Decoy",
   "running.none": "ХӀинца латийна хӀумма а дац",
@@ -70,14 +64,36 @@
   "running.stop": "Сецо",
   "running.empty.title": "Латийна хӀумма а дац",
   "running.empty.text": "Библиотекехь ловзар схьаделла, тӀаккха «Decoy лато» тӀетаӀаде.",
-
   "settings.title": "ГӀирсаш",
   "settings.general": "Йукъара",
   "settings.language": "Мотт",
   "settings.language.desc": "Интерфейсан мотт. Керла меттанаш locales папка чу файл санна тӀетуху.",
   "settings.stubs": "Decoy-ш",
   "settings.defaultTime": "Ӏадйитинчу кепара хан",
-  "settings.defaultTime.desc": "Процесс мел миноташкахь латто йеза (Discord-ан квесташна дукха хьолахь 15 оьшу).",
+  "settings.defaultTime.desc": "Масся минотехь процесс латто йеза. Ӏадйитинчу кепара 16 йу, 15 йац: Discord квесташа 15 минотехь ловзар доьху, амма Discord-на керла ловзар дӀахаа цхьа минот гергга хан оьшу, цундела нийсса 15 минот кхача ца ло.",
+  "settings.smartTimer": "Хьекъалла таймер",
+  "settings.smartTimer.desc": "Хан лара йолало ахьа латийначу хенахь йац, Discord-на decoy гича йу. Иза хаа Ӏалашонца программино Discord-ан меттигерчу тептар чуьра схьаоьцу деккъа латийначу ловзарах лаьцна могӀанаш; хӀумма а Ӏалаш ца до йа цхьанхьа а ца дохьуьйту.",
+  "settings.updates": "Керлайахарш",
+  "settings.checkNow": "ХӀинца талла",
+  "settings.autoUpdate": "Ша-шеха керлайаккхар",
+  "settings.autoUpdate.desc": "Йолалуш а, хӀора 6 сахьтехь а GitHub талла а, керла версеш тӀехьалонна чуйаха а. ДӀахӀотторо даиман а хьан тӀечӀагӀдаре хьоьжу, ткъа файлаш цифрийн куьйга йаздинчуьнца толлу.",
+  "update.current": "ХӀоттийна верси {v}",
+  "update.checking": "ТулгӀуш ду…",
+  "update.uptodate": "Хьо уггар керлачу верси тӀехь ву",
+  "update.available": "Верси {v} карийна",
+  "update.downloading": "Верси {v} чуйолуш йу… {p}%",
+  "update.ready": "Верси {v} дӀахӀотто хьазийна йу",
+  "update.installing": "ДӀахӀоттош а, йухалатош а йу…",
+  "update.download": "Чуйаккха",
+  "update.restart": "Йухалато а, керлайаккха а",
+  "update.later": "ТӀаьхьо",
+  "update.notes": "Керланиг хӀун ду",
+  "update.running": "Латийна йолу decoy ({n}) сецор йу.",
+  "update.error": "Керлайаккха ца йелира: {e}",
+  "detail.waiting": "Discord-га хьоьжуш ду",
+  "detail.waitingNote": "Discord-на ловзар хаа цхьа минот гергга хан оьшу. Хан лара йолало цунна decoy гича.",
+  "detail.detected": "Discord-на decoy гира",
+  "detail.assumed": "Discord-о тӀечӀагӀ ца дира, хан муххале а лоруш йу.",
   "settings.autoStop": "Таймерца сацо",
   "settings.autoStop.desc": "Хан чекхйаьлча Decoy шен чоьтах сацар ду.",
   "settings.notify": "Чекхдалар хаийтар",
@@ -97,7 +113,6 @@
   "settings.files": "Файлаш",
   "settings.open": "Схьаделла",
   "settings.legal": "Decoy-с хьан Discord токен ца лелайо, хьан метта квесташ тӀе а ца оьцу. Ловзаран процесс харц латор Discord низамашца догӀуш ца хила тарло, хьайн лаамехь леладе.",
-
   "toast.launched": "«{name}» {n} минотана латийна. Discord-на иза 15 секундехь гур йу.",
   "toast.stopped": "Decoy сецийна",
   "toast.allStopped": "Массо Decoy сецийна",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} ловзаран exe файлаш гучуевлира: {names}",
   "toast.refreshAdded": "База керлайаьккхина: +{n} керла ловзар",
   "toast.refreshUpToDate": "База хӀинцале а керла йу",
-
   "nav.lab": "Лаборатори",
   "lab.title": "Лаборатори",
   "lab.subtitle": "Къайлаха вкладка: цхьаьна минотехь дуккха а Decoy латадо.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} ловзар лато",
   "lab.launching": "{total}-х {done} латош ду…",
   "lab.cancel": "Йухадаккха",
-  "lab.warn": "ХӀора Decoy кор долу ша къаьстина процесс йу. Цхьаьна 200–300 сов латор компьютер меллаша йан тарло, уггар дукха {max} йу.",
+  "lab.warn": "ХӀора decoy — коранца йолу ша къаьстина процесс йу. Цхьаьна могӀа дукха латоро компьютер сацо тарло: хӀора процессо а, коро а эс леладо, ткъа масийтта эзар коран тӀаьхьа Windows-о керланаш кхолла ца тарло. Нагахь ахьа Decoy дӀакъовлахь, массо decoy соцур йу.",
+  "lab.all": "Массо ({n})",
+  "lab.estimate": "{n} decoy-с герггарчу хьесапехь {ram} RAM эшайо.",
+  "lab.confirm": "{n} лато йуха а тӀетаӀаде",
+  "lab.limit": "{n} тӀаьхьа Windows-о керла процессаш латор сацийра: иза системан барам бу.",
+  "running.more": "…кхин а {n}. Хьалхара 120 гойтуш йу.",
   "lab.hide": "ХӀокху вкладка къайлайаккха",
   "toast.labUnlocked": "Къайлаха «Лаборатори» вкладка схьайеллина",
   "toast.labHidden": "Вкладка къайлайаьккхина",
   "toast.labDone": "Латийна ловзарш: {n}",
-
   "tray.show": "Decoy схьаелла",
   "tray.stop": "Массо Decoy сецо",
   "tray.quit": "Арадовла",
-
   "notify.title": "Хан чекхйаьлла",
   "notify.body": "{name}: {n} минот йаьлла."
 }

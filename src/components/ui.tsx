@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { coverUrl, Game, iconUrl } from "../api";
+import { coverUrl, Game, iconUrl, RunInfo } from "../api";
 
 export function useNow(interval = 1000): number {
   const [now, setNow] = useState(Date.now());
@@ -8,6 +8,24 @@ export function useNow(interval = 1000): number {
     return () => clearInterval(t);
   }, [interval]);
   return now;
+}
+
+/** Where a decoy's countdown stands. A "smart" decoy first waits until Discord has noticed it. */
+export interface Clock {
+  phase: "waiting" | "counting" | "done";
+  /** seconds left of the countdown (the full duration while waiting) */
+  left: number;
+  progress: number;
+  /** seconds spent waiting for Discord (waiting phase only) */
+  waited: number;
+}
+
+export function runClock(r: RunInfo, now: number): Clock {
+  if (r.countingFromMs == null) {
+    return { phase: "waiting", left: r.durationS, progress: 0, waited: Math.max(0, (now - r.startedMs) / 1000) };
+  }
+  const left = r.durationS - (now - r.countingFromMs) / 1000;
+  return { phase: left <= 0 ? "done" : "counting", left, progress: 1 - left / r.durationS, waited: 0 };
 }
 
 export const fmtTime = (secs: number) => {
@@ -57,7 +75,7 @@ export function Cover({ game, className = "" }: { game: G; className?: string })
   );
 }
 
-export function Ring({ progress, size = 132, stroke = 8, children }: { progress: number; size?: number; stroke?: number; children?: React.ReactNode }) {
+export function Ring({ progress, size = 132, stroke = 8, waiting = false, children }: { progress: number; size?: number; stroke?: number; waiting?: boolean; children?: React.ReactNode }) {
   const r = (size - stroke) / 2;
   const c = 2 * Math.PI * r;
   const p = Math.min(1, Math.max(0, progress));
@@ -65,6 +83,12 @@ export function Ring({ progress, size = 132, stroke = 8, children }: { progress:
     <div className="ring" style={{ width: size, height: size }}>
       <svg width={size} height={size}>
         <circle cx={size / 2} cy={size / 2} r={r} className="ring-bg" strokeWidth={stroke} fill="none" />
+        {waiting ? (
+          // indeterminate: a short arc that keeps turning while Discord has not noticed the decoy yet
+          <g className="ring-wait" style={{ transformOrigin: "50% 50%" }}>
+            <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="var(--accent)" strokeWidth={stroke} strokeLinecap="round" strokeDasharray={`${c * 0.22} ${c}`} transform={`rotate(-90 ${size / 2} ${size / 2})`} />
+          </g>
+        ) : (
         <circle
           cx={size / 2}
           cy={size / 2}
@@ -78,6 +102,7 @@ export function Ring({ progress, size = 132, stroke = 8, children }: { progress:
           transform={`rotate(-90 ${size / 2} ${size / 2})`}
           style={{ transition: "stroke-dashoffset .9s linear" }}
         />
+        )}
       </svg>
       <div className="ring-inner">{children}</div>
     </div>
@@ -101,6 +126,7 @@ export const I = {
   close: (p: P) => (<svg {...base(p.size)}><path d="M6 6l12 12M18 6 6 18" /></svg>),
   min: (p: P) => (<svg {...base(p.size)}><path d="M5 12h14" /></svg>),
   max: (p: P) => (<svg {...base(p.size)}><rect x="5.5" y="5.5" width="13" height="13" rx="2" /></svg>),
+  download: (p: P) => (<svg {...base(p.size)}><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19h14" /></svg>),
   flask: (p: P) => (<svg {...base(p.size)}><path d="M9 3h6M10 3v6.2L4.6 18.4A2 2 0 0 0 6.3 21.5h11.4a2 2 0 0 0 1.7-3.1L14 9.2V3" /><path d="M7.5 15h9" /></svg>),
   chevron: (p: P) => (<svg {...base(p.size)}><path d="m6 9 6 6 6-6" /></svg>),
   gamepad: (p: P) => (<svg {...base(p.size)}><path d="M6 8h12a4 4 0 0 1 3.9 4.9l-.7 3.4a2.4 2.4 0 0 1-4.1 1.2L15 15H9l-2.1 2.5a2.4 2.4 0 0 1-4.1-1.2l-.7-3.4A4 4 0 0 1 6 8z" /><path d="M8 10.5v3M6.5 12h3M15.5 11.2h.01M17.5 12.8h.01" /></svg>),

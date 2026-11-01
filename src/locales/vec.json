@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Vèneto" },
-
+  "_meta": {
+    "name": "Vèneto"
+  },
   "nav.library": "Librarìa",
   "nav.favorites": "Preferìi",
   "nav.running": "In esecusion",
   "nav.settings": "Inpostasion",
-
   "discord.checking": "Controło…",
   "discord.up": "In esecusion",
   "discord.down": "No in esecusion",
-
   "window.minimize": "Reduzi a icona",
   "window.maximize": "Igrandisi",
   "window.close": "Sara",
-
   "tag.live": "In esecusion",
   "tag.noExe": "sensa exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Librarìa",
   "lib.subtitle": "{n} zoghi co un proceso conosùo · azornà el {date}",
   "lib.loading": "Drio cargar el database dei zoghi…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Zonta ai preferìi",
   "lib.empty.title": "No ze stà catà gnente",
   "lib.empty.text": "Prova co un altro nome o ativa “Mostra zoghi sensa exe”.",
-
   "fav.title": "Preferìi",
   "fav.count": "{n} zoghi",
   "fav.hint": "Segna i zoghi co na steła",
   "fav.empty.title": "Gnente cuà par deso",
   "fav.empty.text": "Schicia ła steła so un cubełeto de zogo par zontarlo cuà.",
-
   "detail.process": "Proceso",
   "detail.duration": "Cuanto tegnirlo ativo",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Preferìo",
   "detail.close": "Sara",
   "detail.id": "ID {id}",
-
   "running.title": "In esecusion",
   "running.count": "{n} decoy ativi",
   "running.none": "No ghe ze gnente in esecusion deso",
@@ -70,14 +64,36 @@
   "running.stop": "Ferma",
   "running.empty.title": "No ghe ze gnente in esecusion",
   "running.empty.text": "Verzi un zogo inte ła librarìa e schicia “Fai partir el decoy”.",
-
   "settings.title": "Inpostasion",
   "settings.general": "Zenerałe",
   "settings.language": "Łéngua",
   "settings.language.desc": "Łéngua de l'intarfasa. Nove łéngue łe vien zontà cofà file inte ła cartèła locales.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "Durada predefinìa",
-  "settings.defaultTime.desc": "Cuanti menuti tegnir el proceso (łe mision de Discord de sołito łe ciama 15).",
+  "settings.defaultTime.desc": "Cuanti menuti tegner el proceso. El vałore predefinìo el ze 16, mìa 15: łe mision de Discord łe domanda 15 menuti de zogo, ma Discord el ga bezogno fin a un menuto par notar un zogo novo, cuindi propio 15 no i basta.",
+  "settings.smartTimer": "Timer intełijente",
+  "settings.smartTimer.desc": "El conto a ła roversa el scuminsia co Discord el ga notà el decoy, mìa co te ło avi. Par saverlo, l'aplicasion ła leze soło che łe righe sol zogo in ezecusion dal registro łocałe de Discord; gnente vien salvà o mandà da nisuna parte.",
+  "settings.updates": "Ajornameinti",
+  "settings.checkNow": "Verìfega dèso",
+  "settings.autoUpdate": "Ajornameinti automàteghi",
+  "settings.autoUpdate.desc": "Controła GitHub a l'avìo e onji 6 ore e descarghe łe nove version in background. L'instałasion ła speta senpre ła to confarma, e i file i ze verifegai co ła só firma dizitałe.",
+  "update.current": "Version instałà {v}",
+  "update.checking": "Drio verifegar…",
+  "update.uptodate": "Te sì drio doparar l'ùltema version",
+  "update.available": "La version {v} ła ze disponìbiłe",
+  "update.downloading": "Drio descargar ła version {v}… {p}%",
+  "update.ready": "La version {v} ła ze pronta da instałar",
+  "update.installing": "Drio instałar e reaviar…",
+  "update.download": "Descarga",
+  "update.restart": "Reavia e ajorna",
+  "update.later": "Pì vanti",
+  "update.notes": "Cosa ghe ze de novo",
+  "update.running": "I decoy in ezecusion ({n}) i se fermarà.",
+  "update.error": "Inpusìbiłe ajornar: {e}",
+  "detail.waiting": "drio spetar Discord",
+  "detail.waitingNote": "Discord el ga bezogno fin a un menuto par notar un zogo. El conto a ła roversa el scuminsia co 'l vede el decoy.",
+  "detail.detected": "Discord el ga notà el decoy",
+  "detail.assumed": "Discord no 'l ga confarmà, el tenpo vien contà el steso.",
   "settings.autoStop": "Ferma sol timer",
   "settings.autoStop.desc": "El decoy el finise da soło co scasca el tenpo.",
   "settings.notify": "Notìfega co 'l ga finìo",
@@ -97,7 +113,6 @@
   "settings.files": "File",
   "settings.open": "Verzi",
   "settings.legal": "Decoy no 'l dopara el to token de Discord e no 'l aceta łe mision par ti. Simułar un proceso de zogo pol ndar contro i regołaminti de Discord, dopàrelo a to ris-cio e perìcoło.",
-
   "toast.launched": "“{name}” avià par {n} min. Discord el dovarìa notarlo entro sì e nò 15 segondi.",
   "toast.stopped": "Decoy fermà",
   "toast.allStopped": "Tuti i decoy fermài",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} zoghi i ga vuo file exe: {names}",
   "toast.refreshAdded": "Database azornà: +{n} novi zoghi",
   "toast.refreshUpToDate": "El database el ze za azornà",
-
   "nav.lab": "Laboratorio",
   "lab.title": "Laboratorio",
   "lab.subtitle": "Un scheło segreto: el fa partir tanti decoy inte na volta.",
@@ -115,16 +129,19 @@
   "lab.launch": "Fai partir {n} zoghi",
   "lab.launching": "Drio far partir {done} de {total}…",
   "lab.cancel": "Anuła",
-  "lab.warn": "Ogni decoy el ze un proceso separà co na fenèstra. Pì de 200–300 inte na volta i podarìa rałentar el to computer, el màsimo el ze {max}.",
+  "lab.warn": "Onji decoy el ze un proceso separà co na fenestra. Masa insieme i pol blocher el computer: onji proceso e fenestra el dòpara memòria, e dopo calche miljar de fenestre Windows el pol smeter de crearne altre. Se te seri Decoy, tuti i decoy i se ferma.",
+  "lab.all": "Tuti ({n})",
+  "lab.estimate": "{n} decoy i dopararà a ocio {ram} de RAM.",
+  "lab.confirm": "Schicia da novo par far partir {n}",
+  "lab.limit": "Windows el ga smeso de far partir novi procesi dopo {n}: cuesto el ze el łìmite del sistema.",
+  "running.more": "…e altri {n}. Ze mostrà i primi 120.",
   "lab.hide": "Scondi sto scheło",
   "toast.labUnlocked": "Scheło segreto “Laboratorio” sblocà",
   "toast.labHidden": "Scheło scondùo",
   "toast.labDone": "Zoghi aviài: {n}",
-
   "tray.show": "Verzi Decoy",
   "tray.stop": "Ferma tuti i decoy",
   "tray.quit": "Vien fora",
-
   "notify.title": "El tenpo el ze scadùo",
   "notify.body": "{name}: ze pasà {n} min."
 }

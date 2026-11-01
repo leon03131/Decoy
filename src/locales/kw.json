@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Kernowek" },
-
+  "_meta": {
+    "name": "Kernowek"
+  },
   "nav.library": "Lyverva",
   "nav.favorites": "Kevnidheg",
   "nav.running": "Ow resek",
   "nav.settings": "Settyansow",
-
   "discord.checking": "Ow checkya…",
   "discord.up": "Ow resek",
   "discord.down": "Ny resek",
-
   "window.minimize": "Byhana",
   "window.maximize": "Megyha",
   "window.close": "Degea",
-
   "tag.live": "Ow resek",
   "tag.noExe": "exe vyth",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "dalgher",
-
   "lib.title": "Lyverva",
   "lib.subtitle": "{n} gwari gans argerdh aswonys · nowedhhes {date}",
   "lib.loading": "Ow karga sel-data an gwariow…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Kevrenna dhe gevnidheg",
   "lib.empty.title": "Travyth kevys",
   "lib.empty.text": "Assayow hanow aral po gweythresow “Diskwedhes gwariow heb exe”.",
-
   "fav.title": "Kevnidheg",
   "fav.count": "{n} gwari",
   "fav.hint": "Merkya gwariow gans steren",
   "fav.empty.title": "Travyth omma hwath",
   "fav.empty.text": "Gweskow an steren war deylen gwari rag y geworra omma.",
-
   "detail.process": "Argerdh",
   "detail.duration": "Pandr'a hydh y synsi",
   "detail.minutes": "{n} myn",
@@ -62,7 +57,6 @@
   "detail.favorite": "Kevnidhek",
   "detail.close": "Degea",
   "detail.id": "ID {id}",
-
   "running.title": "Ow resek",
   "running.count": "{n} decoy gweythresek",
   "running.none": "Travyth ow resek lemmyn",
@@ -70,14 +64,36 @@
   "running.stop": "Hedhi",
   "running.empty.title": "Travyth ow resek",
   "running.empty.text": "Ygor gwari y'n lyverva ha gweskow “Dalleth decoy”.",
-
   "settings.title": "Settyansow",
   "settings.general": "Ollgemmyn",
   "settings.language": "Yeth",
   "settings.language.desc": "Yeth an ynterfas. Yethow nowydh yw keworrys avel restrow y'n folder locales.",
   "settings.stubs": "Decoyow",
   "settings.defaultTime": "Prys savonek",
-  "settings.defaultTime.desc": "Kemmys a vynysennow dhe synsi an argerdh (questow Discord a berdh 15 yn fenowgh).",
+  "settings.defaultTime.desc": "Py lies mynysen dhe synsi an argerdh. An defowt yw 16, a-der 15: rekwisytow Discord a wovyn 15 mynysen a wari, mes res yw dhe Discord bys dhe unn vynysen rag gweles gwari nowydh.",
+  "settings.smartTimer": "Prysyer skentel",
+  "settings.smartTimer.desc": "An raglyver a dhalleth pan vo Discord re welas an decoy, a-der pan y'n dallethowgh. Rag godhvos henna, an towlenn a lenn hepken an linennow a-dro dhe'n gwari ow resek dhyworth kovnodh leel Discord; ny vydh travyth gwithys po danvenys.",
+  "settings.updates": "Nowedhansow",
+  "settings.checkNow": "Checkya lemmyn",
+  "settings.autoUpdate": "Nowedhans awtomatek",
+  "settings.autoUpdate.desc": "Checkya GitHub orth dalleth ha pub 6 eur, ha karga versyons nowydh y'n gilva. Ystalla a wort pub prys agas afydhyans, ha restrennow yw gwiryes gans sinans bysiel.",
+  "update.current": "Versyon ystallys {v}",
+  "update.checking": "Ow checkya…",
+  "update.uptodate": "Yma an versyon diwettha dhywgh",
+  "update.available": "Versyon {v} yw kavadow",
+  "update.downloading": "Ow karga versyon {v}… {p}%",
+  "update.ready": "Versyon {v} yw parys dhe ystalla",
+  "update.installing": "Owdstalla hag ow tastalleth…",
+  "update.download": "Karga",
+  "update.restart": "Dastalleth ha nowedhhe",
+  "update.later": "Diwettha",
+  "update.notes": "Pandr'yw nowydh",
+  "update.running": "Decoyow ow resek ({n}) a wra hedhi.",
+  "update.error": "Ny yllis nowedhhe: {e}",
+  "detail.waiting": "ow gortos Discord",
+  "detail.waitingNote": "Res yw dhe Discord bys dhe unn vynysen rag gweles gwari. An amser a dhalleth pan welo an decoy.",
+  "detail.detected": "Discord a welas an decoy",
+  "detail.assumed": "Ny afydhyas Discord, yma'n amser ow resek byttegyns.",
   "settings.autoStop": "Hedhi dre amseryer",
   "settings.autoStop.desc": "An decoy a dhiwedh y honan pan vo an prys leun.",
   "settings.notify": "Gysya pan vo gorfennys",
@@ -97,7 +113,6 @@
   "settings.files": "Restrow",
   "settings.open": "Igeri",
   "settings.legal": "Ny wra Decoy devnydhya agas token Discord ha ny wra degemeres questow rannowgh. Falsya argerdh gwari a yll bos erbynn rewlys Discord, y devnydhyowgh war agas peryl agas honan.",
-
   "toast.launched": "“{name}” dalghes rag {n} myn. Discord a dal lia y notya a-berth 15 eylen.",
   "toast.stopped": "Decoy hedhys",
   "toast.allStopped": "Pub decoy hedhys",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} gwari a gafas restrow exe: {names}",
   "toast.refreshAdded": "Sel-data nowedhhes: +{n} gwari nowydh",
   "toast.refreshUpToDate": "An sel-data yw nowedhhes dres eghen dija",
-
   "nav.lab": "Arbrovva",
   "lab.title": "Arbrovva",
   "lab.subtitle": "Tavlen gehelys: a dhalleth lies decoy war-barth.",
@@ -115,16 +129,19 @@
   "lab.launch": "Dalleth {n} gwari",
   "lab.launching": "Ow talleth {done} a {total}…",
   "lab.cancel": "Gwalha",
-  "lab.warn": "Pub decoy yw argerdh dibarow gans fenester. Moy ages 200–300 war-barth a yll lenthe agas jynn-amontya, an moyha yw {max}.",
+  "lab.warn": "Pub decoy yw argerdh dibarow gans fenester. Re vras a niver a yll rewi agas jynn-amontya: pub argerdh ha fenester a wra devnydhya kov, ha wosa nebes milyow a fenestri Windows a yll hedhi gul moy. Mars ewgh dhe dhea Decoy, pub decoy a hedh.",
+  "lab.all": "Oll ({n})",
+  "lab.estimate": "{n} decoy a wra devnydhya a-dro dhe {ram} a RAM.",
+  "lab.confirm": "Klyckyewgh arta rag dalleth {n}",
+  "lab.limit": "Windows a hedhas dalleth argerdhow nowydh wosa {n}: henna yw amal an kevreyth.",
+  "running.more": "…ha {n} moy. An kensa 120 yw diskwedhys.",
   "lab.hide": "Kudha an davlen ma",
   "toast.labUnlocked": "Tavlen gehelys “Arbrovva” digelmys",
   "toast.labHidden": "Tavlen kudhys",
   "toast.labDone": "Gwariow dalghes: {n}",
-
   "tray.show": "Igeri Decoy",
   "tray.stop": "Hedhi pub decoy",
   "tray.quit": "Kwytya",
-
   "notify.title": "An eur yw diwedhys",
   "notify.body": "{name}: {n} myn re dremenas."
 }

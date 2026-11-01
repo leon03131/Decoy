@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Gaelg" },
-
+  "_meta": {
+    "name": "Gaelg"
+  },
   "nav.library": "Lioarlan",
   "nav.favorites": "Reihyn",
   "nav.running": "Goll",
   "nav.settings": "Reaghaghyn",
-
   "discord.checking": "Jeeaghyn…",
   "discord.up": "Goll",
   "discord.down": "Cha nel goll",
-
   "window.minimize": "Jean sloo",
   "window.maximize": "Jean smoo",
   "window.close": "Doon",
-
   "tag.live": "Goll",
   "tag.noExe": "gyn exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "foshleyder",
-
   "lib.title": "Lioarlan",
   "lib.subtitle": "{n} gamanyn lesh obbraghey er fys · noait {date}",
   "lib.loading": "Laadey bun-chooish y ghamman…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Cur rish reihyn",
   "lib.empty.title": "Veg er ny gheddyn",
   "lib.empty.text": "Prow ennym elley ny lhig da “Taishbynee gamanyn gyn exe”.",
-
   "fav.title": "Reihyn",
   "fav.count": "{n} gamanyn",
   "fav.hint": "Cowraghey gamanyn lesh rollage",
   "fav.empty.title": "Veg ayns shoh foast",
   "fav.empty.text": "Broo yn rollage er leacag gamman dy chur ayns shoh eh.",
-
   "detail.process": "Obbraghey",
   "detail.duration": "Kead cha liauyr dy reayll eh",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Reih",
   "detail.close": "Doon",
   "detail.id": "ID {id}",
-
   "running.title": "Goll",
   "running.count": "{n} decoy bio",
   "running.none": "Cha nel veg goll kiart nish",
@@ -70,14 +64,36 @@
   "running.stop": "Stad",
   "running.empty.title": "Cha nel veg goll",
   "running.empty.text": "Foshil gamman 'sy lioarlan as broo “Cur er bun decoy”.",
-
   "settings.title": "Reaghaghyn",
   "settings.general": "Cadjin",
   "settings.language": "Çhengey",
   "settings.language.desc": "Çhengey eddyr-eaghtyr. Ta çhengaghyn noa currit rish myr coadanyn 'sy choodagh locales.",
   "settings.stubs": "Decoyn",
   "settings.defaultTime": "Faid cadjin",
-  "settings.defaultTime.desc": "Kead cha liauyr dy vinnidyn dy reayll yn obbraghey (ta quests Discord shirrey 15 dy mennick).",
+  "settings.defaultTime.desc": "Kwoad dy villidyn dy reayll y pròiseas. She 16 yn bun-reaghys, cha nel 15: ta cuirraghyn Discord shirrey 15 minnid dy chloie, agh ta Discord feme seose gys minnid dy chronnaghey cloie noa, myr shen ta 15 dy jeeragh ro ghiare.",
+  "settings.smartTimer": "Traa-reihder crouwagh",
+  "settings.smartTimer.desc": "Ta'n coontey sheese toshiaghey tra ta Discord er chronnaghey y decoy, cha nel tra t'ou toshiaghey eh. Dy hoiggal shen, cha nel yn app lhaih agh ny linaghyn bentyn rish y chloie ta roie ass lioar-chooishyn ynnydagh Discord; cha nel veg tashtit ny currit gys boayl erbee.",
+  "settings.updates": "Lhiassaghyn",
+  "settings.checkNow": "Jeeagh er nish",
+  "settings.autoUpdate": "Lhiassaghyn seyr-obbragh",
+  "settings.autoUpdate.desc": "Jeeagh er GitHub ec toshiaght as dagh 6 ooryn as laadey neose lhiegganyn noa 'sy chooylrey. Ta cur stiagh feitheamh er dty hickyraghey dy kinjagh, as ta feeraghey jeant er coadanyn lesh nyn saie-screeuyn bun-earrooagh.",
+  "update.current": "Lhieggan currit stiagh {v}",
+  "update.checking": "Jeeaghyn…",
+  "update.uptodate": "T'ou er y lhieggan s'noa",
+  "update.available": "Ta lhieggan {v} ry-gheddyn",
+  "update.downloading": "Laadey neose lhieggan {v}… {p}%",
+  "update.ready": "Ta lhieggan {v} aarloo dy chur stiagh",
+  "update.installing": "Cur stiagh as aatoshiaghey…",
+  "update.download": "Laad neose",
+  "update.restart": "Aatoshiee as lhiassaee",
+  "update.later": "Ny s'anmey",
+  "update.notes": "C'red ta noa",
+  "update.running": "Nee decoys ta roie ({n}) scuirr.",
+  "update.error": "Cha dod lhiassaghey: {e}",
+  "detail.waiting": "feitheamh er Discord",
+  "detail.waitingNote": "Ta Discord feme seose gys minnid dy chronnaghey cloie. Ta'n coontey sheese toshiaghey tra t'eh fakin y decoy.",
+  "detail.detected": "Honnick Discord y decoy",
+  "detail.assumed": "Cha nel Discord er hickyraghey eh, ta'n traa goll er coontey co-ordagh.",
   "settings.autoStop": "Stad er traa-reilleyder",
   "settings.autoStop.desc": "Ta'n decoy kioneaghey liorish hene tra ta'n traa seose.",
   "settings.notify": "Cur fys tra ta jeant",
@@ -97,7 +113,6 @@
   "settings.files": "Coadanyn",
   "settings.open": "Foshil",
   "settings.legal": "Cha nel Decoy jannoo ymmyd jeh'n token Discord ayd as cha nel eh goaill rish quests er dty hon. Foddys brynneraghey obbraghey gamman goll noi reillyn Discord, jean ymmyd jeh er dty gaue hene.",
-
   "toast.launched": "Ta “{name}” er ny chur er bun son {n} min. Lhisagh Discord cur tastey da ayns mysh 15 shallidyn.",
   "toast.stopped": "Decoy er ny stad",
   "toast.allStopped": "Dagh ooilley decoy er ny stad",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} gamanyn hooar coadanyn exe: {names}",
   "toast.refreshAdded": "Bun-fysseree noait: +{n} gamanyn noa",
   "toast.refreshUpToDate": "Ta'n bun-fysseree ass y noa hannah",
-
   "nav.lab": "Prowaltys",
   "lab.title": "Prowaltys",
   "lab.subtitle": "Dullag follit: cur er bun ram decoyn ec un cheayrt.",
@@ -115,16 +129,19 @@
   "lab.launch": "Cur er bun {n} gamanyn",
   "lab.launching": "Cur er bun {done} ass {total}…",
   "lab.cancel": "Scuirr",
-  "lab.warn": "Ta dagh decoy ny obbraghey er lheh lesh uinnag. Foddys ny smoo na 200–300 ec un cheayrt cur moandys er dty cho-earrooder, y mooad smoo shen {max}.",
+  "lab.warn": "Ta dagh decoy ny phròiseas er lheh lesh uinnag. Oddys ro-vooar ec yn un traa cur dty cho-earrooder er riojey: ta dagh pròiseas as uinnag jannoo ymmyd jeh cooinaghtyn, as lurg kuse dy villaghyn dy uinnagyn foddee Windows scuirr jeh croo tooilley. My vel oo dooney Decoy, nee dagh decoy scuirr.",
+  "lab.all": "Dagh ooilley ({n})",
+  "lab.estimate": "Nee {n} decoy jannoo ymmyd jeh mysh {ram} dy RAM.",
+  "lab.confirm": "Crig reesht dy hoshee {n}",
+  "lab.limit": "Scuirr Windows jeh toshiaghey pròiseasyn noa lurg {n}: shen kagliagh y chorys.",
+  "running.more": "…as {n} elley. Ta'n chied 120 goll er taishbyney.",
   "lab.hide": "Follaghey yn dullag shoh",
   "toast.labUnlocked": "Dullag follit “Prowaltys” er ny foshley",
   "toast.labHidden": "Dullag er ny follaghey",
   "toast.labDone": "Gamanyn currit er bun: {n}",
-
   "tray.show": "Foshil Decoy",
   "tray.stop": "Stad dagh ooilley decoy",
   "tray.quit": "Faag",
-
   "notify.title": "Ta'n traa seose",
   "notify.body": "{name}: ta {n} min er n'gholl shaghey."
 }

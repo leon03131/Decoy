@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "ʻŌlelo Hawaiʻi" },
-
+  "_meta": {
+    "name": "ʻŌlelo Hawaiʻi"
+  },
   "nav.library": "Waihona pāʻani",
   "nav.favorites": "Punahele",
   "nav.running": "Ke holo nei",
   "nav.settings": "Nā Makemake",
-
   "discord.checking": "Ke nānā nei…",
   "discord.up": "Ke holo nei",
   "discord.down": "ʻAʻole e holo nei",
-
   "window.minimize": "Hoʻēmi",
   "window.maximize": "Hoʻonui",
   "window.close": "Pani",
-
   "tag.live": "Ke holo nei",
   "tag.noExe": "ʻaʻohe exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "mea hoʻomaka",
-
   "lib.title": "Waihona pāʻani",
   "lib.subtitle": "{n} pāʻani me ka polokalamu i ʻike ʻia · hoʻoponopono hou ʻia {date}",
   "lib.loading": "Ke hoʻouka nei i ka hōkeo ʻikepili pāʻani…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Hoʻohui i nā punahele",
   "lib.empty.title": "ʻAʻohe mea i loaʻa",
   "lib.empty.text": "E hoʻāʻo me kekahi inoa ʻē a i ʻole e hoʻā i ka “Hōʻike i nā pāʻani me ka ʻole o ka exe”.",
-
   "fav.title": "Punahele",
   "fav.count": "{n} pāʻani",
   "fav.hint": "Kaha i nā pāʻani me ka hōkū",
   "fav.empty.title": "ʻAʻohe mea ma ʻaneʻi i kēia manawa",
   "fav.empty.text": "Kāomi i ka hōkū ma luna o kekahi kiʻi pāʻani e hoʻohui ma ʻaneʻi.",
-
   "detail.process": "Polokalamu",
   "detail.duration": "Pehea ka lōʻihi e hoʻomau ai",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Punahele",
   "detail.close": "Pani",
   "detail.id": "ID {id}",
-
   "running.title": "Ke holo nei",
   "running.count": "{n} decoy e hana nei",
   "running.none": "ʻAʻohe mea e holo nei i kēia manawa",
@@ -70,14 +64,36 @@
   "running.stop": "Hoʻopau",
   "running.empty.title": "ʻAʻohe mea e holo nei",
   "running.empty.text": "E wehe i kekahi pāʻani ma ka waihona pāʻani a kāomi iā “Hoʻomaka i ka decoy”.",
-
   "settings.title": "Nā Makemake",
   "settings.general": "Laulaha",
   "settings.language": "ʻŌlelo",
   "settings.language.desc": "ʻŌlelo o ka nānaina. Hoʻohui ʻia nā ʻōlelo hou ma ke ʻano he waihona ma ka waihona locales.",
   "settings.stubs": "Nā Decoy",
   "settings.defaultTime": "Manawa paʻamau",
-  "settings.defaultTime.desc": "ʻEhia minuke e mālama ai i ka polokalamu (pono pinepine nā quest Discord i 15).",
+  "settings.defaultTime.desc": "ʻEhia mau minuke e mālama ai i ke kaʻina hana. ʻO 16 ka paʻamau, ʻaʻole 15: noi nā mikiona Discord i 15 mau minuke pāʻani, akā pono ʻo Discord a hiki i hoʻokahi minuke e ʻike ai i kahi pāʻani hou, no laila ʻaʻole lawa ka 15 pololei.",
+  "settings.smartTimer": "Uaki akamai",
+  "settings.smartTimer.desc": "Hoʻomaka ka helu hoʻēmi i ka wā i ʻike ai ʻo Discord i ka decoy, ʻaʻole i ka wā e hoʻomaka ai ʻoe. No ka ʻike ʻana i kēlā, heluhelu wale ka polokalamu i nā laina e pili ana i ka pāʻani e holo nei mai ka mo moʻolelo kūloko o Discord; ʻaʻohe mea i mālama ʻia a hoʻouna ʻia i kēlā me kēia wahi.",
+  "settings.updates": "Nā hōʻano hou",
+  "settings.checkNow": "Nānā i kēia manawa",
+  "settings.autoUpdate": "Nā hōʻano hou maʻalahi",
+  "settings.autoUpdate.desc": "E nānā iā GitHub i ka hoʻomaka ʻana a me kēlā me kēia 6 hola a hoʻoiho i nā mana hou ma ke kua. Ke kali mau nei ka hoʻokomo ʻana i kāu hōʻoia, a ua hōʻoia ʻia nā waihona e kā lākou pūlima uila.",
+  "update.current": "Mana i hoʻokomo ʻia {v}",
+  "update.checking": "Ke nānā nei…",
+  "update.uptodate": "Aia ʻoe ma ka mana hou loa",
+  "update.available": "Loaʻa ka mana {v}",
+  "update.downloading": "Ke hoʻoiho nei i ka mana {v}… {p}%",
+  "update.ready": "Mākaukau ka mana {v} e hoʻokomo",
+  "update.installing": "Ke hoʻokomo nei a hoʻomaka hou…",
+  "update.download": "Hoʻoiho",
+  "update.restart": "Hoʻomaka hou a hōʻano hou",
+  "update.later": "Ma hope",
+  "update.notes": "Nā mea hou",
+  "update.running": "E kū nā decoy e holo nei ({n}).",
+  "update.error": "ʻAʻole hiki ke hōʻano hou: {e}",
+  "detail.waiting": "ke kali nei no Discord",
+  "detail.waitingNote": "Pono ʻo Discord a hiki i hoʻokahi minuke e ʻike ai i kahi pāʻani. Hoʻomaka ka helu hoʻēmi ke ʻike ʻo ia i ka decoy.",
+  "detail.detected": "Ua ʻike ʻo Discord i ka decoy",
+  "detail.assumed": "ʻAʻole i hōʻoia ʻo Discord iā ia, helu ʻia ka manawa.",
   "settings.autoStop": "Hoʻopau me ka manawa",
   "settings.autoStop.desc": "Pau wale nō ka decoy iā ia iho ke pau ka manawa.",
   "settings.notify": "Hoʻomaopopo ke pau",
@@ -97,7 +113,6 @@
   "settings.files": "Nā Waihona",
   "settings.open": "Wehe",
   "settings.legal": "ʻAʻole hoʻohana ʻo Decoy i kāu token Discord a ʻaʻole hoʻi e ʻae i nā quest nou. He kūʻē paha ke kuhihewa ʻana i ka polokalamu pāʻani i nā kānāwai o Discord, e hoʻohana ma kou pilikia ponoʻī.",
-
   "toast.launched": "Ua hoʻomaka ʻia ʻo “{name}” no {n} min. E ʻike paha ʻo Discord iā ia i loko o 15 kekona.",
   "toast.stopped": "Ua hoʻopau ʻia ka decoy",
   "toast.allStopped": "Ua hoʻopau ʻia nā decoy a pau",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "Ua loaʻa nā waihona exe i nā pāʻani he {n}: {names}",
   "toast.refreshAdded": "Ua hoʻoponopono ʻia ka hōkeo ʻikepili: +{n} pāʻani hou",
   "toast.refreshUpToDate": "Ua mākaukau a hou ka hōkeo ʻikepili",
-
   "nav.lab": "Keʻena noiʻi",
   "lab.title": "Keʻena noiʻi",
   "lab.subtitle": "He pākaukau hūnā: hoʻomaka i nā decoy he nui i ka manawa hoʻokahi.",
@@ -115,16 +129,19 @@
   "lab.launch": "Hoʻomaka {n} pāʻani",
   "lab.launching": "Ke hoʻomaka nei {done} o {total}…",
   "lab.cancel": "Hoʻopau",
-  "lab.warn": "He polokalamu kaʻawale me ka pukaaniani ponoʻī kēlā me kēia decoy. Hiki i nā mea he 200–300 a ʻoi paha ke hoʻolōʻihi i kāu kamepiula, ʻo {max} ka palena kiʻekiʻe.",
+  "lab.warn": "He kaʻina hana kaʻawale kēlā me kēia decoy me ka puka makani. Hiki i ka nui loa i ka manawa hoʻokahi ke hoʻopaʻa i kāu kamepiula: hoʻohana kēlā me kēia kaʻina hana a me ka puka makani i ka hoʻomanaʻo, a ma hope o kekahi mau tausani puka makani e hoʻōki paha ʻo Windows i ka hana ʻana i mea hou aku. Inā pani ʻoe iā Decoy, e pau nā decoy a pau.",
+  "lab.all": "Nā mea a pau ({n})",
+  "lab.estimate": "E hoʻohana ana nā decoy {n} ma kahi o {ram} o RAM.",
+  "lab.confirm": "Kaomi hou e hoʻomaka i {n}",
+  "lab.limit": "Ua hoʻōki ʻo Windows i ka hoʻomaka ʻana i nā kaʻina hana hou ma hope o {n}: ʻo ia ka palena o ka ʻōnaehana.",
+  "running.more": "…a me {n} hou aku. Hōʻike ʻia nā 120 mua.",
   "lab.hide": "Hūnā i kēia pākaukau",
   "toast.labUnlocked": "Ua wehe ʻia ke pākaukau hūnā “Keʻena noiʻi”",
   "toast.labHidden": "Ua hūnā ʻia ke pākaukau",
   "toast.labDone": "Nā pāʻani i hoʻomaka ʻia: {n}",
-
   "tray.show": "Wehe iā Decoy",
   "tray.stop": "Hoʻopau i nā decoy a pau",
   "tray.quit": "Puka",
-
   "notify.title": "Ua pau ka manawa",
   "notify.body": "{name}: ua hala he {n} min."
 }

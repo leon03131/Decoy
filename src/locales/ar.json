@@ -1,24 +1,22 @@
 {
-  "_meta": { "name": "العربية", "rtl": true },
-
+  "_meta": {
+    "name": "العربية",
+    "rtl": true
+  },
   "nav.library": "المكتبة",
   "nav.favorites": "المفضلة",
   "nav.running": "قيد التشغيل",
   "nav.settings": "الإعدادات",
-
   "discord.checking": "جارٍ التحقق…",
   "discord.up": "يعمل",
   "discord.down": "لا يعمل",
-
   "window.minimize": "تصغير",
   "window.maximize": "تكبير",
   "window.close": "إغلاق",
-
   "tag.live": "قيد التشغيل",
   "tag.noExe": "بدون exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "مشغّل",
-
   "lib.title": "المكتبة",
   "lib.subtitle": "{n} لعبة ذات عملية معروفة · تم التحديث في {date}",
   "lib.loading": "جارٍ تحميل قاعدة بيانات الألعاب…",
@@ -36,13 +34,11 @@
   "lib.addFavorite": "إضافة إلى المفضلة",
   "lib.empty.title": "لم يتم العثور على شيء",
   "lib.empty.text": "جرّب اسمًا آخر أو فعّل «إظهار الألعاب بدون exe».",
-
   "fav.title": "المفضلة",
   "fav.count": "{n} لعبة",
   "fav.hint": "ميّز الألعاب بنجمة",
   "fav.empty.title": "لا يوجد شيء هنا بعد",
   "fav.empty.text": "اضغط على النجمة في بطاقة اللعبة لإضافتها إلى هنا.",
-
   "detail.process": "العملية",
   "detail.duration": "مدة التشغيل",
   "detail.minutes": "{n} دقيقة",
@@ -62,7 +58,6 @@
   "detail.favorite": "المفضلة",
   "detail.close": "إغلاق",
   "detail.id": "ID {id}",
-
   "running.title": "قيد التشغيل",
   "running.count": "{n} تمويه نشط",
   "running.none": "لا شيء قيد التشغيل حاليًا",
@@ -70,14 +65,36 @@
   "running.stop": "إيقاف",
   "running.empty.title": "لا يوجد شيء قيد التشغيل",
   "running.empty.text": "افتح لعبة في المكتبة واضغط على «بدء التمويه».",
-
   "settings.title": "الإعدادات",
   "settings.general": "عام",
   "settings.language": "اللغة",
   "settings.language.desc": "لغة الواجهة. تتم إضافة لغات جديدة كملفات في مجلد locales.",
   "settings.stubs": "عمليات التمويه",
   "settings.defaultTime": "المدة الافتراضية",
-  "settings.defaultTime.desc": "عدد دقائق تشغيل العملية (تتطلب مهام Discord عادةً 15 دقيقة).",
+  "settings.defaultTime.desc": "عدد الدقائق لإبقاء العملية قيد التشغيل. القيمة الافتراضية هي 16 وليست 15: تتطلب مهام Discord اللعب لمدة 15 دقيقة، لكن Discord يستغرق ما يصل إلى دقيقة لملاحظة اللعبة الجديدة، لذا فإن 15 دقيقة بالضبط غير كافية.",
+  "settings.smartTimer": "مؤقت ذكي",
+  "settings.smartTimer.desc": "يبدأ العد التنازلي عندما يلاحظ Discord عملية التمويه، وليس عند بدئها. لمعرفة ذلك، يقرأ التطبيق فقط الأسطر المتعلقة باللعبة المشغلة من سجل Discord المحلي؛ ولا يتم تخزين أو إرسال أي شيء إلى أي مكان.",
+  "settings.updates": "التحديثات",
+  "settings.checkNow": "التحقق الآن",
+  "settings.autoUpdate": "التحديثات التلقائية",
+  "settings.autoUpdate.desc": "التحقق من GitHub عند بدء التشغيل وكل 6 ساعات وتنزيل الإصدارات الجديدة في الخلفية. ينتظر التثبيت دائمًا تأكيدك، ويتم التحقق من الملفات عبر توقيعها الرقمي.",
+  "update.current": "الإصدار المثبت {v}",
+  "update.checking": "جارٍ التحقق…",
+  "update.uptodate": "أنت تستخدم أحدث إصدار",
+  "update.available": "الإصدار {v} متاح",
+  "update.downloading": "جارٍ تنزيل الإصدار {v}… {p}%",
+  "update.ready": "الإصدار {v} جاهز للتثبيت",
+  "update.installing": "جارٍ التثبيت وإعادة التشغيل…",
+  "update.download": "تنزيل",
+  "update.restart": "إعادة التشغيل والتحديث",
+  "update.later": "لاحقًا",
+  "update.notes": "ما الجديد",
+  "update.running": "عمليات التمويه قيد التشغيل ({n}) ستتوقف.",
+  "update.error": "تعذر التحديث: {e}",
+  "detail.waiting": "في انتظار Discord",
+  "detail.waitingNote": "يحتاج Discord إلى مدة تصل إلى دقيقة لملاحظة اللعبة. يبدأ العد التنازلي عندما يرى التمويه.",
+  "detail.detected": "لاحظ Discord عملية التمويه",
+  "detail.assumed": "لم يؤكد Discord ذلك، ويتم احتساب الوقت على أي حال.",
   "settings.autoStop": "إيقاف بالمؤقت",
   "settings.autoStop.desc": "ينتهي التمويه تلقائيًا عند انتهاء الوقت.",
   "settings.notify": "إشعار عند الانتهاء",
@@ -97,7 +114,6 @@
   "settings.files": "الملفات",
   "settings.open": "فتح",
   "settings.legal": "لا يستخدم Decoy رمز Discord الخاص بك ولا يقبل المهام نيابة عنك. قد يتعارض تزييف عملية اللعبة مع قواعد Discord، استخدمه على مسؤوليتك الخاصة.",
-
   "toast.launched": "تم تشغيل «{name}» لمدة {n} دقيقة. من المفترض أن يلاحظ Discord ذلك خلال 15 ثانية تقريبًا.",
   "toast.stopped": "تم إيقاف التمويه",
   "toast.allStopped": "تم إيقاف جميع التمويهات",
@@ -105,7 +121,6 @@
   "toast.refreshGained": "حصلت {n} لعبة على ملفات exe: {names}",
   "toast.refreshAdded": "تم تحديث قاعدة البيانات: +{n} لعبة جديدة",
   "toast.refreshUpToDate": "قاعدة البيانات محدّثة بالفعل",
-
   "nav.lab": "المختبر",
   "lab.title": "المختبر",
   "lab.subtitle": "تبويب سري: يشغّل العديد من عمليات التمويه دفعة واحدة.",
@@ -115,16 +130,19 @@
   "lab.launch": "تشغيل {n} لعبة",
   "lab.launching": "جارٍ تشغيل {done} من أصل {total}…",
   "lab.cancel": "إلغاء",
-  "lab.warn": "كل تمويه هو عملية منفصلة ذات نافذة. تشغيل أكثر من 200–300 في وقت واحد قد يؤدي إلى إبطاء جهاز الكمبيوتر، الحد الأقصى هو {max}.",
+  "lab.warn": "كل تمويه هو عملية منفصلة لها نافذة خاصة بها. تشغيل عدد كبير جدًا في وقت واحد قد يجمد حاسوبك: تستهلك كل عملية ونافذة ذاكرة، وبعد بضعة آلاف من النوافذ قد يتوقف Windows عن إنشاء المزيد. إذا أغلقت Decoy، فستتوقف جميع عمليات التمويه.",
+  "lab.all": "الكل ({n})",
+  "lab.estimate": "سيستخدم {n} تمويه حوالي {ram} من ذاكرة RAM.",
+  "lab.confirm": "انقر مرة أخرى لبدء {n}",
+  "lab.limit": "توقف Windows عن بدء عمليات جديدة بعد {n}: هذا هو حد النظام.",
+  "running.more": "…و {n} إضافية. يتم عرض أول 120 فقط.",
   "lab.hide": "إخفاء هذا التبويب",
   "toast.labUnlocked": "تم إلغاء قفل تبويب «المختبر» السري",
   "toast.labHidden": "تم إخفاء التبويب",
   "toast.labDone": "الألعاب التي تم تشغيلها: {n}",
-
   "tray.show": "فتح Decoy",
   "tray.stop": "إيقاف جميع التمويهات",
   "tray.quit": "إنهاء",
-
   "notify.title": "انتهى الوقت",
   "notify.body": "{name}: مرت {n} دقيقة."
 }

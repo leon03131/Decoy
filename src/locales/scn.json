@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Sicilianu" },
-
+  "_meta": {
+    "name": "Sicilianu"
+  },
   "nav.library": "Bibbiuteca",
   "nav.favorites": "Prifiriti",
   "nav.running": "In esecuzzioni",
   "nav.settings": "Mpustazzioni",
-
   "discord.checking": "Cuntrollu…",
   "discord.up": "In esecuzzioni",
   "discord.down": "Nun in esecuzzioni",
-
   "window.minimize": "Minimizza",
   "window.maximize": "Massimizza",
   "window.close": "Chiudi",
-
   "tag.live": "In corsu",
   "tag.noExe": "senza exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Bibbiuteca",
   "lib.subtitle": "{n} jòcura cu nu prucessu canusciutu · aggiurnatu {date}",
   "lib.loading": "Caricamentu dâ basa di dati dî jòcura…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Metti nnê prifiriti",
   "lib.empty.title": "Nun si truvau nenti",
   "lib.empty.text": "Prova cu n'àutru nomu o attiva “Ammustra jòcura senza exe”.",
-
   "fav.title": "Prifiriti",
   "fav.count": "{n} jòcura",
   "fav.hint": "Signa li jòcura cu na stidda",
   "fav.empty.title": "Nenti ccà pi станции",
   "fav.empty.text": "Fricca la stidda supra la màscidda di nu jocu pi mittìrilu ccà.",
-
   "detail.process": "Prucessu",
   "detail.duration": "Quantu tempu mantèniri",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Prifiritu",
   "detail.close": "Chiudi",
   "detail.id": "ID {id}",
-
   "running.title": "In esecuzzioni",
   "running.count": "{n} decoy attivi",
   "running.none": "Nenti è 'n cursu ora",
@@ -70,14 +64,36 @@
   "running.stop": "Firma",
   "running.empty.title": "Nenti è 'n esecuzzioni",
   "running.empty.text": "Grapi nu jocu nnâ bibbiuteca e fìmmina “Fai partiri lu decoy”.",
-
   "settings.title": "Mpustazzioni",
   "settings.general": "Ginarali",
   "settings.language": "Lingua",
   "settings.language.desc": "Lingua di l'interfaccia. Li novi lingui si junciunu comu file nnâ cartella locales.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "Durata pridifinita",
-  "settings.defaultTime.desc": "Quanti minuti tèniri lu prucessu (li quest di Discord di sòlitu n'hannu bisognu di 15).",
+  "settings.defaultTime.desc": "Quanti minuti tèniri lu prucessu. La durata pridifinita è 16, no 15: li quest di Discord addìmànnanu 15 minuti di jocu, ma a Discord cci voli nzinu a un minutu pi vìdiri un jocu novu, dunchi 15 giusti nun abbàstanu.",
+  "settings.smartTimer": "Timer ntilliggenti",
+  "settings.smartTimer.desc": "Lu cuntu â riversa accumenza quannu Discord vitti lu decoy, no quannu tu lu fai partiri. Pi sapìrilu, l'app leggi sulu li linii supra lu jocu 'n esecuzzioni dû riggistru lucali di Discord; nenti veni sarvatu o mannaty a nudda banna.",
+  "settings.updates": "Aggiornamenti",
+  "settings.checkNow": "Cuntrolla ora",
+  "settings.autoUpdate": "Aggiornamenti automàtici",
+  "settings.autoUpdate.desc": "Cuntrolla GitHub quannu parti e ogni 6 uri e scarica li virsioni novi 'n suttasfunnu. L'installazzioni aspetta sempri la tò cunferma, e li file sunnu virificati cû sò signu diggitali.",
+  "update.current": "Virsioni nstallata {v}",
+  "update.checking": "Cuntrollu…",
+  "update.uptodate": "Hai l'ùrtima virsioni",
+  "update.available": "La virsioni {v} è dispunìbbili",
+  "update.downloading": "Scaricamentu dâ virsioni {v}… {p}%",
+  "update.ready": "La virsioni {v} è pronta pi èssiri nstallata",
+  "update.installing": "Nstallazzioni e riavviu…",
+  "update.download": "Scarica",
+  "update.restart": "Riavvia e aggiorna",
+  "update.later": "Cchiù tardi",
+  "update.notes": "Novità",
+  "update.running": "Li decoy 'n cursu ({n}) si firmaranu.",
+  "update.error": "Mpussìbbili aggiornari: {e}",
+  "detail.waiting": "aspittannu a Discord",
+  "detail.waitingNote": "A Discord cci voli nzinu a un minutu pi vìdiri un jocu. Lu cuntu accumenza quannu vidi lu decoy.",
+  "detail.detected": "Discord vitti lu decoy",
+  "detail.assumed": "Discord nun cunfirmau, lu tempu veni cuntatu lu stissu.",
   "settings.autoStop": "Firma cû timer",
   "settings.autoStop.desc": "Lu decoy si ferma di sulu quannu finisci lu tempu.",
   "settings.notify": "Manna na nutìfica quannu finisci",
@@ -97,7 +113,6 @@
   "settings.files": "File",
   "settings.open": "Grapi",
   "settings.legal": "Decoy nun usa lu tò token di Discord e nun accetta quest pi tia. Fàciri finta di girari nu prucessu di jocu pò èssiri contra li règuli di Discord, ùsalu a tò rìsicu.",
-
   "toast.launched": "“{name}” avviatu pi {n} min. Discord avissi a nutàrilu nta circa 15 secunni.",
   "toast.stopped": "Decoy firmatu",
   "toast.allStopped": "Tutti li decoy firmati",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} jòcura àppiru file exe: {names}",
   "toast.refreshAdded": "Basa di dati aggiurnata: +{n} novi jòcura",
   "toast.refreshUpToDate": "La basa di dati è già aggiurnata",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "Na scheda sicreta: fa partiri assai decoy nzèmmula.",
@@ -115,16 +129,19 @@
   "lab.launch": "Fai partiri {n} jòcura",
   "lab.launching": "Avviu di {done} di {total}…",
   "lab.cancel": "Annulla",
-  "lab.warn": "Ogni decoy è nu prucessu siparatu cu na finestra. Cchiù di 200–300 nzèmmula ponnu rallintari lu computer, lu màssimu è {max}.",
+  "lab.warn": "Ogni decoy è un prucessu siparatu cu na finestra. Troppi nzèmmula ponnu bluccari lu computer: ogni prucessu e finestra consuma mimoria, e doppu quarchi mìagghiu di finestri Windows pò finiri di criàrinni autri. Si chiudi Decoy, tutti li decoy si fèrmanu.",
+  "lab.all": "Tutti ({n})",
+  "lab.estimate": "{n} decoy usaranu circa {ram} di RAM.",
+  "lab.confirm": "Clicca n'àutra vota pi fari partiri {n}",
+  "lab.limit": "Windows si firmau di fari partiri novi prucessi doppu {n}: chistu è lu lìmiti dû sistema.",
+  "running.more": "…e àutri {n}. Si vìdinu li primi 120.",
   "lab.hide": "Ammuccia sta scheda",
   "toast.labUnlocked": "Scheda sicreta “Lab” sbluccata",
   "toast.labHidden": "Scheda ammucciata",
   "toast.labDone": "Jòcura avviati: {n}",
-
   "tray.show": "Grapi Decoy",
   "tray.stop": "Firma tutti li decoy",
   "tray.quit": "Nesci",
-
   "notify.title": "Lu tempu finìu",
   "notify.body": "{name}: {n} min passaru."
 }

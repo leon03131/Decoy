@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Bahasa Indonesia" },
-
+  "_meta": {
+    "name": "Bahasa Indonesia"
+  },
   "nav.library": "Pustaka",
   "nav.favorites": "Favorit",
   "nav.running": "Berjalan",
   "nav.settings": "Pengaturan",
-
   "discord.checking": "Memeriksa…",
   "discord.up": "Berjalan",
   "discord.down": "Tidak berjalan",
-
   "window.minimize": "Minimalkan",
   "window.maximize": "Maksimalkan",
   "window.close": "Tutup",
-
   "tag.live": "Berjalan",
   "tag.noExe": "tanpa exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "peluncur",
-
   "lib.title": "Pustaka",
   "lib.subtitle": "{n} game dengan proses yang diketahui · diperbarui {date}",
   "lib.loading": "Memuat database game…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Tambah ke favorit",
   "lib.empty.title": "Tidak ada hasil",
   "lib.empty.text": "Coba nama lain atau aktifkan “Tampilkan game tanpa exe”.",
-
   "fav.title": "Favorit",
   "fav.count": "{n} game",
   "fav.hint": "Tandai game dengan bintang",
   "fav.empty.title": "Belum ada apa pun di sini",
   "fav.empty.text": "Klik tanda bintang pada ubin game untuk menambahkannya ke sini.",
-
   "detail.process": "Proses",
   "detail.duration": "Lama berjalan",
   "detail.minutes": "{n} mnt",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorit",
   "detail.close": "Tutup",
   "detail.id": "ID {id}",
-
   "running.title": "Berjalan",
   "running.count": "{n} decoy aktif",
   "running.none": "Tidak ada yang berjalan saat ini",
@@ -70,14 +64,36 @@
   "running.stop": "Hentikan",
   "running.empty.title": "Tidak ada yang berjalan",
   "running.empty.text": "Buka game di pustaka lalu klik “Jalankan decoy”.",
-
   "settings.title": "Pengaturan",
   "settings.general": "Umum",
   "settings.language": "Bahasa",
   "settings.language.desc": "Bahasa antarmuka. Bahasa baru ditambahkan sebagai file di folder locales.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "Durasi default",
-  "settings.defaultTime.desc": "Berapa menit proses dijalankan (quest Discord biasanya membutuhkan 15).",
+  "settings.defaultTime.desc": "Berapa menit untuk mempertahankan proses. Defaultnya adalah 16, bukan 15: misi Discord memerlukan 15 menit bermain, tetapi Discord membutuhkan waktu hingga satu menit untuk mendeteksi game baru, jadi tepat 15 menit tidak cukup.",
+  "settings.smartTimer": "Timer pintar",
+  "settings.smartTimer.desc": "Hitung mundur dimulai saat Discord mendeteksi decoy, bukan saat Anda memulainya. Untuk mengetahuinya, aplikasi hanya membaca baris tentang game yang sedang berjalan dari log lokal Discord; tidak ada yang disimpan atau dikirim ke mana pun.",
+  "settings.updates": "Pembaruan",
+  "settings.checkNow": "Periksa sekarang",
+  "settings.autoUpdate": "Pembaruan otomatis",
+  "settings.autoUpdate.desc": "Periksa GitHub saat memulai dan setiap 6 jam serta unduh versi baru di latar belakang. Pemasangan selalu menunggu konfirmasi Anda, dan file diverifikasi melalui tanda tangan digitalnya.",
+  "update.current": "Versi terpasang {v}",
+  "update.checking": "Memeriksa…",
+  "update.uptodate": "Anda menggunakan versi terbaru",
+  "update.available": "Versi {v} tersedia",
+  "update.downloading": "Mengunduh versi {v}… {p}%",
+  "update.ready": "Versi {v} siap dipasang",
+  "update.installing": "Memasang dan memulai ulang…",
+  "update.download": "Unduh",
+  "update.restart": "Mulai ulang dan perbarui",
+  "update.later": "Nanti",
+  "update.notes": "Apa yang baru",
+  "update.running": "Decoy yang berjalan ({n}) akan dihentikan.",
+  "update.error": "Tidak dapat memperbarui: {e}",
+  "detail.waiting": "menunggu Discord",
+  "detail.waitingNote": "Discord membutuhkan waktu hingga satu menit untuk mendeteksi game. Hitung mundur dimulai saat Discord mendeteksi decoy.",
+  "detail.detected": "Discord mendeteksi decoy",
+  "detail.assumed": "Discord belum mengonfirmasinya, waktu tetap dihitung.",
   "settings.autoStop": "Hentikan dengan timer",
   "settings.autoStop.desc": "Decoy berhenti secara otomatis saat waktu habis.",
   "settings.notify": "Beri tahu saat selesai",
@@ -97,7 +113,6 @@
   "settings.files": "File",
   "settings.open": "Buka",
   "settings.legal": "Decoy tidak menggunakan token Discord Anda dan tidak menerima quest untuk Anda. Meniru proses game mungkin bertentangan dengan ketentuan Discord, gunakan dengan risiko Anda sendiri.",
-
   "toast.launched": "“{name}” dijalankan selama {n} mnt. Discord semestinya mendeteksinya dalam waktu sekitar 15 detik.",
   "toast.stopped": "Decoy dihentikan",
   "toast.allStopped": "Semua decoy dihentikan",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} game mendapatkan file exe: {names}",
   "toast.refreshAdded": "Database diperbarui: +{n} game baru",
   "toast.refreshUpToDate": "Database sudah yang terbaru",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "Tab rahasia: menjalankan banyak decoy sekaligus.",
@@ -115,16 +129,19 @@
   "lab.launch": "Jalankan {n} game",
   "lab.launching": "Menjalankan {done} dari {total}…",
   "lab.cancel": "Batal",
-  "lab.warn": "Setiap decoy adalah proses terpisah dengan jendela. Lebih dari 200–300 sekaligus dapat memperlambat komputer Anda, batas maksimum adalah {max}.",
+  "lab.warn": "Setiap decoy adalah proses terpisah dengan sebuah jendela. Terlalu banyak sekaligus dapat membekukan komputer Anda: setiap proses dan jendela menggunakan memori, dan setelah beberapa ribu jendela Windows mungkin berhenti membuat jendela baru. Jika Anda menutup Decoy, semua decoy akan berhenti.",
+  "lab.all": "Semua ({n})",
+  "lab.estimate": "{n} decoy akan menggunakan sekitar {ram} RAM.",
+  "lab.confirm": "Klik lagi untuk menjalankan {n}",
+  "lab.limit": "Windows berhenti memulai proses baru setelah {n}: itu adalah batas sistem.",
+  "running.more": "…dan {n} lainnya. 120 pertama ditampilkan.",
   "lab.hide": "Sembunyikan tab ini",
   "toast.labUnlocked": "Tab rahasia “Lab” terbuka",
   "toast.labHidden": "Tab disembunyikan",
   "toast.labDone": "Game dijalankan: {n}",
-
   "tray.show": "Buka Decoy",
   "tray.stop": "Hentikan semua decoy",
   "tray.quit": "Keluar",
-
   "notify.title": "Waktu habis",
   "notify.body": "{name}: {n} mnt telah berlalu."
 }

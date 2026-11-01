@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Català" },
-
+  "_meta": {
+    "name": "Català"
+  },
   "nav.library": "Biblioteca",
   "nav.favorites": "Preferits",
   "nav.running": "En execució",
   "nav.settings": "Configuració",
-
   "discord.checking": "Comprovant…",
   "discord.up": "En execució",
   "discord.down": "Aturat",
-
   "window.minimize": "Minimitza",
   "window.maximize": "Maximitza",
   "window.close": "Tanca",
-
   "tag.live": "En execució",
   "tag.noExe": "sense exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "llançador",
-
   "lib.title": "Biblioteca",
   "lib.subtitle": "{n} jocs amb procés conegut · actualitzat el {date}",
   "lib.loading": "Carregant la base de dades de jocs…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Afegeix als preferits",
   "lib.empty.title": "No s'ha trobat res",
   "lib.empty.text": "Proveu amb un altre nom o activeu «Mostra jocs sense exe».",
-
   "fav.title": "Preferits",
   "fav.count": "{n} jocs",
   "fav.hint": "Marca jocs amb una estrella",
   "fav.empty.title": "Encara no hi ha res aquí",
   "fav.empty.text": "Feu clic a l'estrella a la targeta d'un joc per afegir-lo aquí.",
-
   "detail.process": "Procés",
   "detail.duration": "Quant de temps mantenir-lo",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Preferit",
   "detail.close": "Tanca",
   "detail.id": "ID {id}",
-
   "running.title": "En execució",
   "running.count": "{n} esquers actius",
   "running.none": "No hi ha res en execució ara mateix",
@@ -70,14 +64,36 @@
   "running.stop": "Atura",
   "running.empty.title": "No hi ha res en execució",
   "running.empty.text": "Obriu un joc a la biblioteca i feu clic a «Inicia l'esquer».",
-
   "settings.title": "Configuració",
   "settings.general": "General",
   "settings.language": "Idioma",
   "settings.language.desc": "Idioma de la interfície. Els nous idiomes s'afegeixen com a fitxers a la carpeta locales.",
   "settings.stubs": "Esquers",
   "settings.defaultTime": "Durada per defecte",
-  "settings.defaultTime.desc": "Quants minuts mantenir el procés (les missions de Discord solen necessitar-ne 15).",
+  "settings.defaultTime.desc": "Quants minuts s'ha de mantenir el procés. El valor per defecte és 16, no 15: les missions de Discord requereixen 15 minuts de joc, però Discord necessita fins a un minut per detectar un joc nou, de manera que exactament 15 minuts no són suficients.",
+  "settings.smartTimer": "Temporitzador intel·ligent",
+  "settings.smartTimer.desc": "El compte enrere comença quan Discord detecta l'esquer, no quan l'inicies tu. Per saber-ho, l'aplicació només llegeix del registre local de Discord les línies relacionades amb el joc en execució; no s'emmagatzema ni s'envia res enlloc.",
+  "settings.updates": "Actualitzacions",
+  "settings.checkNow": "Comprova ara",
+  "settings.autoUpdate": "Actualitzacions automàtiques",
+  "settings.autoUpdate.desc": "Comprova GitHub en iniciar i cada 6 hores i baixa les noves versions en segon pla. La instal·lació sempre espera la teva confirmació i els fitxers es verifiquen mitjançant la seva signatura digital.",
+  "update.current": "Versió instal·lada {v}",
+  "update.checking": "Comprovant…",
+  "update.uptodate": "Teniu la darrera versió",
+  "update.available": "La versió {v} està disponible",
+  "update.downloading": "Baixant la versió {v}… {p}%",
+  "update.ready": "La versió {v} està a punt per instal·lar",
+  "update.installing": "Instal·lant i reiniciant…",
+  "update.download": "Baixa",
+  "update.restart": "Reinicia i actualitza",
+  "update.later": "Més tard",
+  "update.notes": "Novetats",
+  "update.running": "Els esquers en execució ({n}) s'aturaran.",
+  "update.error": "No s'ha pogut actualitzar: {e}",
+  "detail.waiting": "esperant Discord",
+  "detail.waitingNote": "Discord triga fins a un minut a detectar un joc. El compte enrere comença quan veu l'esquer.",
+  "detail.detected": "Discord ha detectat l'esquer",
+  "detail.assumed": "Discord no ho ha confirmat, el temps es compta igualment.",
   "settings.autoStop": "Atura amb temporitzador",
   "settings.autoStop.desc": "L'esquer finalitza automàticament quan s'acaba el temps.",
   "settings.notify": "Notifica en acabar",
@@ -97,7 +113,6 @@
   "settings.files": "Fitxers",
   "settings.open": "Obre",
   "settings.legal": "Decoy no utilitza el vostre testimoni de Discord ni accepta missions per vosaltres. Simular un procés de joc pot anar en contra de les normes de Discord; feu-ho sota la vostra responsabilitat.",
-
   "toast.launched": "S'ha iniciat «{name}» durant {n} min. Discord hauria de detectar-lo en uns 15 segons.",
   "toast.stopped": "Esquer aturat",
   "toast.allStopped": "Tots els esquers s'han aturat",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} jocs han obtingut fitxers exe: {names}",
   "toast.refreshAdded": "Base de dades actualitzada: +{n} jocs nous",
   "toast.refreshUpToDate": "La base de dades ja està actualitzada",
-
   "nav.lab": "Laboratori",
   "lab.title": "Laboratori",
   "lab.subtitle": "Pestanya secreta: inicia molts esquers alhora.",
@@ -115,16 +129,19 @@
   "lab.launch": "Inicia {n} jocs",
   "lab.launching": "Iniciant {done} de {total}…",
   "lab.cancel": "Cancel·la",
-  "lab.warn": "Cada esquer és un procés separat amb una finestra. Més de 200–300 a la vegada pot alentir l'ordinador; el màxim és {max}.",
+  "lab.warn": "Cada esquer és un procés independent amb finestra. Obrir-ne massa a la vegada pot congelar el vostre ordinador: cada procés i finestra consumeix memòria, i després d'uns quants milers de finestres Windows pot deixar de crear-ne més. Si tanqueu Decoy, tots els esquers s'aturaran.",
+  "lab.all": "Tots ({n})",
+  "lab.estimate": "{n} esquers utilitzaran aproximadament {ram} de RAM.",
+  "lab.confirm": "Feu clic de nou per iniciar {n}",
+  "lab.limit": "Windows ha deixat d'iniciar processos nous després de {n}: aquest és el límit del sistema.",
+  "running.more": "…i {n} més. Es mostren els primers 120.",
   "lab.hide": "Amaga aquesta pestanya",
   "toast.labUnlocked": "Pestanya secreta «Laboratori» desbloquejada",
   "toast.labHidden": "Pestanya amagada",
   "toast.labDone": "Jocs iniciats: {n}",
-
   "tray.show": "Obre Decoy",
   "tray.stop": "Atura tots els esquers",
   "tray.quit": "Surt",
-
   "notify.title": "S'ha acabat el temps",
   "notify.body": "{name}: han passat {n} min."
 }

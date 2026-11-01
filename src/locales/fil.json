@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Filipino" },
-
+  "_meta": {
+    "name": "Filipino"
+  },
   "nav.library": "Library",
   "nav.favorites": "Mga Paborito",
   "nav.running": "Tumatakbo",
   "nav.settings": "Mga Setting",
-
   "discord.checking": "Sinusuri…",
   "discord.up": "Tumatakbo",
   "discord.down": "Hindi tumatakbo",
-
   "window.minimize": "I-minimize",
   "window.maximize": "I-maximize",
   "window.close": "Isara",
-
   "tag.live": "Tumatakbo",
   "tag.noExe": "walang exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Library",
   "lib.subtitle": "{n} laro na may kilalang proseso · na-update noong {date}",
   "lib.loading": "Ikinakarga ang database ng laro…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Idagdag sa mga paborito",
   "lib.empty.title": "Walang nahanap",
   "lib.empty.text": "Subukan ang ibang pangalan o i-on ang “Ipakita ang mga larong walang exe”.",
-
   "fav.title": "Mga Paborito",
   "fav.count": "{n} laro",
   "fav.hint": "Markahan ang mga laro gamit ang bituin",
   "fav.empty.title": "Wala pa rito",
   "fav.empty.text": "Pindutin ang bituin sa tile ng laro para idagdag ito rito.",
-
   "detail.process": "Proseso",
   "detail.duration": "Gaano katagal pananatilihin",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Paborito",
   "detail.close": "Isara",
   "detail.id": "ID {id}",
-
   "running.title": "Tumatakbo",
   "running.count": "{n} aktibong decoy",
   "running.none": "Walang tumatakbo ngayon",
@@ -70,14 +64,36 @@
   "running.stop": "Ihinto",
   "running.empty.title": "Walang tumatakbo",
   "running.empty.text": "Magbukas ng laro sa library at pindutin ang “Simulan ang decoy”.",
-
   "settings.title": "Mga Setting",
   "settings.general": "Pangkalahatan",
   "settings.language": "Wika",
   "settings.language.desc": "Wika ng interface. Ang mga bagong wika ay idinaragdag bilang mga file sa folder ng locales.",
   "settings.stubs": "Mga Decoy",
   "settings.defaultTime": "Default na tagal",
-  "settings.defaultTime.desc": "Ilang minuto pananatilihin ang proseso (kadalasan ay kailangan ng 15 minuto sa mga Discord quest).",
+  "settings.defaultTime.desc": "Ilang minuto pananatilihin ang proseso. Ang default ay 16, hindi 15: humihingi ang mga Discord quest ng 15 minutong paglalaro, ngunit kailangan ng Discord nang hanggang isang minuto para mapansin ang bagong laro, kaya kulang ang eksaktong 15.",
+  "settings.smartTimer": "Smart timer",
+  "settings.smartTimer.desc": "Magsisimula ang countdown kapag napansin na ng Discord ang decoy, hindi kapag sinimulan mo ito. Upang malaman iyon, binabasa lamang ng app ang mga linya tungkol sa tumatakbong laro mula sa lokal na log ng Discord; walang iniimbak o ipinapadala kahit saan.",
+  "settings.updates": "Mga Update",
+  "settings.checkNow": "Suriin ngayon",
+  "settings.autoUpdate": "Awtomatikong mga update",
+  "settings.autoUpdate.desc": "Suriin ang GitHub sa pag-startup at bawat 6 na oras at mag-download ng mga bagong bersyon sa background. Palaging naghihintay ang pag-install ng iyong kumpirmasyon, at nabe-verify ang mga file sa pamamagitan ng kanilang digital signature.",
+  "update.current": "Naka-install na bersyon {v}",
+  "update.checking": "Sinusuri…",
+  "update.uptodate": "Nasa pinakabagong bersyon ka na",
+  "update.available": "Available ang bersyon {v}",
+  "update.downloading": "Dina-download ang bersyon {v}… {p}%",
+  "update.ready": "Handa nang i-install ang bersyon {v}",
+  "update.installing": "Inii-install at muling sinisimulan…",
+  "update.download": "I-download",
+  "update.restart": "I-restart at i-update",
+  "update.later": "Mamaya",
+  "update.notes": "Mga bago",
+  "update.running": "Hihinto ang mga tumatakbong decoy ({n}).",
+  "update.error": "Hindi ma-update: {e}",
+  "detail.waiting": "naghihintay sa Discord",
+  "detail.waitingNote": "Kailangan ng Discord nang hanggang isang minuto para mapansin ang laro. Magsisimula ang countdown kapag nakita nito ang decoy.",
+  "detail.detected": "Napansin ng Discord ang decoy",
+  "detail.assumed": "Hindi ito kinumpirma ng Discord, binibilang pa rin ang oras.",
   "settings.autoStop": "Ihinto ayon sa timer",
   "settings.autoStop.desc": "Kusang hihinto ang decoy kapag tapos na ang oras.",
   "settings.notify": "Mag-abiso kapag tapos na",
@@ -97,7 +113,6 @@
   "settings.files": "Mga File",
   "settings.open": "Buksan",
   "settings.legal": "Hindi ginagamit ng Decoy ang iyong Discord token at hindi tumatanggap ng mga quest para sa iyo. Ang pagpeke ng proseso ng laro ay maaaring lumabag sa mga panuntunan ng Discord, gamitin ito sa iyong sariling peligro.",
-
   "toast.launched": "Sinimulan ang “{name}” nang {n} min. Dapat itong mapansin ng Discord sa loob ng humigit-kumulang 15 segundo.",
   "toast.stopped": "Naihinto ang decoy",
   "toast.allStopped": "Naihinto ang lahat ng decoy",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} laro ang nagkaroon ng mga exe file: {names}",
   "toast.refreshAdded": "Na-update ang database: +{n} bagong laro",
   "toast.refreshUpToDate": "Bago at updated na ang database",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "Isang lihim na tab: nagsisimula ng maraming decoy nang sabay-sabay.",
@@ -115,16 +129,19 @@
   "lab.launch": "Simulan ang {n} laro",
   "lab.launching": "Sinisimulan ang {done} sa {total}…",
   "lab.cancel": "Kanselahin",
-  "lab.warn": "Bawat decoy ay isang hiwalay na proseso na may window. Ang higit sa 200–300 nang sabay-sabay ay maaaring magpabagal sa iyong computer, ang maximum ay {max}.",
+  "lab.warn": "Bawat decoy ay isang hiwalay na proseso na may window. Ang masyadong marami nang sabay-sabay ay maaaring mag-freeze sa iyong computer: gumagamit ng memory ang bawat proseso at window, at pagkatapos ng ilang libong window ay maaaring huminto ang Windows sa paggawa ng higit pa. Kung isasara mo ang Decoy, hihinto ang lahat ng decoy.",
+  "lab.all": "Lahat ({n})",
+  "lab.estimate": "Gagamit ang {n} decoy ng humigit-kumulang {ram} ng RAM.",
+  "lab.confirm": "I-click muli upang simulan ang {n}",
+  "lab.limit": "Huminto ang Windows sa pagsisimula ng mga bagong proseso pagkatapos ng {n}: iyon ang limitasyon ng system.",
+  "running.more": "…at {n} pa. Ang unang 120 ang ipinapakita.",
   "lab.hide": "Itago ang tab na ito",
   "toast.labUnlocked": "Na-unlock ang lihim na tab na “Lab”",
   "toast.labHidden": "Naitago ang tab",
   "toast.labDone": "Mga larong nasimulan: {n}",
-
   "tray.show": "Buksan ang Decoy",
   "tray.stop": "Ihinto ang lahat ng decoy",
   "tray.quit": "Lumabas",
-
   "notify.title": "Tapos na ang oras",
   "notify.body": "{name}: lumipas na ang {n} min."
 }

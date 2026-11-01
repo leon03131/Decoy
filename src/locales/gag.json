@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Gagauz dili" },
-
+  "_meta": {
+    "name": "Gagauz dili"
+  },
   "nav.library": "Biblioteka",
   "nav.favorites": "Biyenilänner",
   "nav.running": "İşleyän",
   "nav.settings": "Kurulumnar",
-
   "discord.checking": "Yoklanêr…",
   "discord.up": "İşleyär",
   "discord.down": "İşlemeer",
-
   "window.minimize": "Küçültmää",
   "window.maximize": "Büütmää",
   "window.close": "Kapatmaa",
-
   "tag.live": "İşleyär",
   "tag.noExe": "exe yok",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "fırlatıcı",
-
   "lib.title": "Biblioteka",
   "lib.subtitle": "Belli proțessli {n} oyun · enilendi {date}",
   "lib.loading": "Oyun bazası yüklener…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Biyenilännere koymaa",
   "lib.empty.title": "Hiç bir şey bulunmadı",
   "lib.empty.text": "Başka ad deneyin yaki “Exe-siz oyunnarı göstermää” açın.",
-
   "fav.title": "Biyenilänner",
   "fav.count": "{n} oyun",
   "fav.hint": "Oyunnarı yıldızlan nışannayın",
   "fav.empty.title": "Burdur şindilik boş",
   "fav.empty.text": "Oyun plitkasına yıldızı basıp burayı ekleyin.",
-
   "detail.process": "Proțess",
   "detail.duration": "Ne kadar tutmaa",
   "detail.minutes": "{n} dk",
@@ -62,7 +57,6 @@
   "detail.favorite": "Biyenilän",
   "detail.close": "Kapatmaa",
   "detail.id": "ID {id}",
-
   "running.title": "İşleyän",
   "running.count": "{n} aktiv decoy",
   "running.none": "Şindi hiçbir şey işlemeer",
@@ -70,14 +64,36 @@
   "running.stop": "Durdurmaa",
   "running.empty.title": "Hiçbir şey işlemeer",
   "running.empty.text": "Bibliotekada bir oyun açın hem “Decoy başlatmaa” basın.",
-
   "settings.title": "Kurulumnar",
   "settings.general": "Genel",
   "settings.language": "Dil",
   "settings.language.desc": "İnterfeys dili. Eni diller locales klasörünä fayl olarak eklener.",
   "settings.stubs": "Decoy-lar",
   "settings.defaultTime": "Adetteki vakit",
-  "settings.defaultTime.desc": "Proțessi kaç minuta tutmaa (Discord görevleri adettä 15 istär).",
+  "settings.defaultTime.desc": "Prosesi ne kadar minut tutmaa. Adetteki 16-dır, 15 diil: Discord görevleri 15 minut oyun isteer, ama Discord eni oyunu görmää deyni bir minuda kadar vakıt lääzım, onun için tam 15 yetmeer.",
+  "settings.smartTimer": "Akıllı sayıcı",
+  "settings.smartTimer.desc": "Geri sayım Discord decoy-u gördüynän başlêêr, siz başlattıynan diil. Bunu bilmää deyni uygulama Discord-un lokal jurnalından sade çalışan oyun için sıraları okuyêr; hiçbir şey saklanmêêr hem heç bir erä yollanmêêr.",
+  "settings.updates": "Enilemälär",
+  "settings.checkNow": "Şindi yokla",
+  "settings.autoUpdate": "Avtomatik enilemälär",
+  "settings.autoUpdate.desc": "Açılışta hem her 6 saatta GitHub-ı yokla hem art planda eni versiyaları indir. Kurulum herzaman sizin onayınızı bekleer hem dosyalar sansız imzasınnan kabletiler.",
+  "update.current": "Kurulu versiya {v}",
+  "update.checking": "Yoklanêr…",
+  "update.uptodate": "Siz en son versiyadasınız",
+  "update.available": "Versiya {v} var",
+  "update.downloading": "Versiya {v} indirilêr… {p}%",
+  "update.ready": "Versiya {v} kurulmaa hazır",
+  "update.installing": "Kurulêr hem enidän başlatılêr…",
+  "update.download": "İndir",
+  "update.restart": "Enidän başlat hem enile",
+  "update.later": "Soora",
+  "update.notes": "Ne var eni",
+  "update.running": "Çalışan decoy-lar ({n}) durdurulacek.",
+  "update.error": "Enilenämedi: {e}",
+  "detail.waiting": "Discord-u bekleer",
+  "detail.waitingNote": "Discord oyunu görmää deyni bir minuda kadar vakıt lääzım. Geri sayım decoy-u gördüynän başlêêr.",
+  "detail.detected": "Discord decoy-u gördü",
+  "detail.assumed": "Discord onaylamadı, vakıt gene da sayılêr.",
   "settings.autoStop": "Taymerlän durdurmaa",
   "settings.autoStop.desc": "Vakit bitincä decoy kendiliğindän duracek.",
   "settings.notify": "Bitmäk için bildirmää",
@@ -97,7 +113,6 @@
   "settings.files": "Fayllar",
   "settings.open": "Açmaa",
   "settings.legal": "Decoy sizin Discord tokeninizi kullanmêêr hem sizin yerinizä görevleri kabul etmeer. Oyun proțessini taklit etmää Discord kurallarına karşı gelebilir, kendi riskinizä kullanın.",
-
   "toast.launched": "“{name}” {n} dk başladı. Discord onu yakında 15 saniyedä görer.",
   "toast.stopped": "Decoy durduruldu",
   "toast.allStopped": "Hepsi decoy-lar durduruldu",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} oyun exe faylı kazandı: {names}",
   "toast.refreshAdded": "Baza enilendi: +{n} eni oyun",
   "toast.refreshUpToDate": "Baza şindi da eni",
-
   "nav.lab": "Laboratoriya",
   "lab.title": "Laboratoriya",
   "lab.subtitle": "Saklı vkladka: bir kerettä çok decoy başlatêr.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} oyun başlatmaa",
   "lab.launching": "Başlêêr {done} / {total}…",
   "lab.cancel": "Vazgeçmää",
-  "lab.warn": "Herbir decoy pencereli ayırı bir proțess. Bir kerettä 200–300-dän çok kompyuteri yavaşladabilir, maksimum {max}.",
+  "lab.warn": "Her decoy penceresi olan ayrı bir proses. Bir keredä çok fazlası kompyuteri dondurabilir: her proses hem pencere bellek harcêêr, hem birkaç bin penceredän sora Windows daa fazlasını yaratmamaa başlayabilir. Decoy-u kapatsanız, hepsi decoy-lar durdurulêr.",
+  "lab.all": "Hepsi ({n})",
+  "lab.estimate": "{n} decoy tahminen {ram} RAM harcayacek.",
+  "lab.confirm": "{n} başlatmaa deyni gene basın",
+  "lab.limit": "Windows {n} prosesindän sora eni prosesleri başlatmamaa başladı: sistemin sınırı bu.",
+  "running.more": "…hem daa {n}. İlk 120 gösteriler.",
   "lab.hide": "Bu vkladkayı saklamaa",
   "toast.labUnlocked": "Saklı “Laboratoriya” vkladkası açıldı",
   "toast.labHidden": "Vkladka saklandı",
   "toast.labDone": "Başlatılmış oyunnar: {n}",
-
   "tray.show": "Decoy açmaa",
   "tray.stop": "Hepsi decoy-ları durdurmaa",
   "tray.quit": "Çıkmaa",
-
   "notify.title": "Vakit bitti",
   "notify.body": "{name}: {n} dk geçti."
 }

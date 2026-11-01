@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Ślůnski" },
-
+  "_meta": {
+    "name": "Ślůnski"
+  },
   "nav.library": "Bibliytyka",
   "nav.favorites": "Ulybjůne",
   "nav.running": "Włůnczůne",
   "nav.settings": "Nasztalowańa",
-
   "discord.checking": "Průbowaniy…",
   "discord.up": "Dźoło",
   "discord.down": "Ńy dźoło",
-
   "window.minimize": "Zmiyńsz",
   "window.maximize": "Zwiynksz",
   "window.close": "Zawrzij",
-
   "tag.live": "Włůnczůne",
   "tag.noExe": "brak exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Bibliytyka",
   "lib.subtitle": "{n} szpilůw ze znanym procesym · zaktualizowano {date}",
   "lib.loading": "Wczytywańy bazy szpilůw…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Dodej do ulybjůnych",
   "lib.empty.title": "Ńic niy ma znejdźůne",
   "lib.empty.text": "Sprůbuj inkszygo mjana abo włůncz „Pokoż szpile bez exe”.",
-
   "fav.title": "Ulybjůne",
   "fav.count": "{n} szpilůw",
   "fav.hint": "Znojdź i uoznocz szpile gwoźdźiczkům",
   "fav.empty.title": "Sam jeszcze ńic ńy ma",
   "fav.empty.text": "Wciśnij gwoźdźiczkã na kaflu szpilu, coby go sam dodać.",
-
   "detail.process": "Proces",
   "detail.duration": "Wjela mo trwać",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Ulybjůne",
   "detail.close": "Zawrzij",
   "detail.id": "ID {id}",
-
   "running.title": "Włůnczůne",
   "running.count": "{n} aktywnych atrap",
   "running.none": "Teraz nic ńy dźoło",
@@ -70,14 +64,36 @@
   "running.stop": "Zastow",
   "running.empty.title": "Nic ńy dźoło",
   "running.empty.text": "Uotwůrz szpil we bibliytice i wciśnij „Włůncz atrapa”.",
-
   "settings.title": "Nasztalowańa",
   "settings.general": "Uogůlne",
   "settings.language": "Godka",
   "settings.language.desc": "Godka interfejsu. Nowe godki sům dodowane kej pliki we folderze locales.",
   "settings.stubs": "Atrapy",
   "settings.defaultTime": "Domyślny czas",
-  "settings.defaultTime.desc": "Wjela minut utrzimywać proces (questy Discorda nojczyńśćij potrzebujům 15).",
+  "settings.defaultTime.desc": "Wiela minut trzimać proces. Domyślńy czas to 16, a ńy 15: misyje Discord wymogajům 15 minut szpila, nale Discord potrzebuje aże do minuty, coby zauważyć nowy szpil, bez tůż růwno 15 to za mało.",
+  "settings.smartTimer": "Můndry timer",
+  "settings.smartTimer.desc": "Uodliczaniy sztartuje, jak Discord zauważy atrapa, a ńy w můmynće jeij włůnczyńo. Coby to wjedźeć, aplikacyjo czyto ze lokalnygo loga Discord ino linijki uo aktywnym szpilu; ńic sam śe ńy zapisuje a ńikaj ńy wysyło.",
+  "settings.updates": "Aktualizacyje",
+  "settings.checkNow": "Sprowdź teroz",
+  "settings.autoUpdate": "Autůmatyczne aktualizacyje",
+  "settings.autoUpdate.desc": "Sprowdzej GitHub przi sztarće a co 6 godźin i pobjyrej nowe wersyje we tle. Instalacyjo zawdy czeko na Twoje potwjerdzyńy, a pliki sům weryfikowane bez cyfrowy podpis.",
+  "update.current": "Zainstalowano wersyjo {v}",
+  "update.checking": "Průbowaniy…",
+  "update.uptodate": "Mosz nojnowszõ wersyjõ",
+  "update.available": "Wersyjo {v} je dostympno",
+  "update.downloading": "Pobjyrańy wersyje {v}… {p}%",
+  "update.ready": "Wersyjo {v} je rychtich do instalacyje",
+  "update.installing": "Instalowańy a restart…",
+  "update.download": "Pobjer",
+  "update.restart": "Zrestartuj a zaktualizuj",
+  "update.later": "Niskorzyj",
+  "update.notes": "Co nowego",
+  "update.running": "Dźołajůnce atrapy ({n}) uostanům zatrzimane.",
+  "update.error": "Ńy szło zaktualizować: {e}",
+  "detail.waiting": "czekańy na Discord",
+  "detail.waitingNote": "Discord potrzebuje aże do minuty, coby zauważyć szpil. Uodliczaniy sztartuje, jak uoboczy atrapa.",
+  "detail.detected": "Discord zauważył atrapa",
+  "detail.assumed": "Discord ńy potwjerdźił, czas leći mimo to.",
   "settings.autoStop": "Zatrzimej po czaśe",
   "settings.autoStop.desc": "Atrapa zakůńczy dźołać sama, kej czas minie.",
   "settings.notify": "Dowej znać po zakůńczyniu",
@@ -97,7 +113,6 @@
   "settings.files": "Pliki",
   "settings.open": "Uotwůrz",
   "settings.legal": "Decoy ńy używo Twojigo tokena Discord i ńy przijmuje questůw za Cbiy. Falszowańy procesu szpilu może być sprzeczne ze regulamiyn tym Discorda, używosz na własne ryzyko.",
-
   "toast.launched": "„{name}” włůnczůne na {n} min. Discord powińyn to zauważyć po jakichś 15 sekundach.",
   "toast.stopped": "Atrapa zastawjůno",
   "toast.allStopped": "Wszyske atrapy zastawjůne",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} szpilůw dostało pliki exe: {names}",
   "toast.refreshAdded": "Baza zaktualizowano: +{n} nowych szpilůw",
   "toast.refreshUpToDate": "Baza je już aktualno",
-
   "nav.lab": "Laboraturyjům",
   "lab.title": "Laboraturyjům",
   "lab.subtitle": "Skrity załodek: sztartuje mocka atrap na roz.",
@@ -115,16 +129,19 @@
   "lab.launch": "Włůncz {n} szpilůw",
   "lab.launching": "Włůnczańy {done} ze {total}…",
   "lab.cancel": "Pociep",
-  "lab.warn": "Kożdo atrapa to je uosobny proces ze uoknym. Wiyncyj jak 200–300 na roz może spowolnić kůmputer, maksymům to {max}.",
+  "lab.warn": "Kożdo atrapa to uosobny proces ze uoknym. Za wjela naroz może zawjeśić kůmputer: kożdy proces a uokno bjere pamjyńć, a po poru tyśůncach uokiyn Windows może prześtać tworzić nowe. Jak zawrzesz Decoy, wszyjske atrapy śe zatrzimjům.",
+  "lab.all": "Wszyjske ({n})",
+  "lab.estimate": "{n} atrap weźmje koło {ram} pamjyńći RAM.",
+  "lab.confirm": "Kliknij jeszcze roz, coby włůnczyć {n}",
+  "lab.limit": "Windows przestoł uodpalać nowe procesy po {n}: to je limit systymowy.",
+  "running.more": "…a dali {n}. Pokozano pjyrsze 120.",
   "lab.hide": "Skryj tyn załodek",
   "toast.labUnlocked": "Skrity załodek „Laboraturyjům” uodblokowany",
   "toast.labHidden": "Załodek skryty",
   "toast.labDone": "Włůnczůnych szpilůw: {n}",
-
   "tray.show": "Uotwůrz Decoy",
   "tray.stop": "Zastow wszyndźe atrapy",
   "tray.quit": "Zawrzij",
-
   "notify.title": "Czas minůł",
   "notify.body": "{name}: minyło {n} min."
 }

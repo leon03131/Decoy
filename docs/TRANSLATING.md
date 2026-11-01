@@ -60,6 +60,42 @@ JSON:
 - `_meta.rtl` is `true` for right-to-left languages (Arabic, Hebrew, Persian, ...).
 - Placeholders such as `{n}` must be kept as they are; you may move them inside the sentence.
 
+### New or changed strings (keeping 170+ languages up to date)
+
+When the app gets new text, only `ru.json` and `en.json` are written by hand. Every other language shows the English text
+for the missing keys until it is translated, so nothing breaks. `npm run check-locales` prints how many strings each
+language is missing (it only fails on real errors; add `--strict` to fail on missing keys too).
+
+To translate just the missing strings, for all languages at once:
+
+```bash
+node scripts/locale-tools.mjs delta               # writes locale-delta/batch-1.json, batch-2.json, ... (git-ignored)
+# send each batch to Gemini with the prompt below, save the answers as answer-1.json, ...
+node scripts/locale-tools.mjs apply answer-1.json # merges them in, checking every {placeholder}
+npm run check-locales
+```
+
+Use `--langs de,fr` to limit it to some languages and `--max 15` for smaller batches (shorter answers).
+
+```
+Translate the English texts under "strings" into every language listed under "languages" (code -> its own name) for a
+desktop app UI (Decoy, a small Windows tool that keeps a stand-in game process running so Discord shows a game as
+being played; a "decoy" is a harmless stand-in program).
+
+For every language, translate exactly the keys listed for it under "needs".
+
+Rules:
+- Answer with ONLY valid JSON, no markdown fences: { "<language code>": { "<key>": "<translation>", ... }, ... }
+- Do NOT change {placeholders} such as {n}, {v}, {p}, {e}, {ram}, {done}, {total}; you may move them inside the sentence.
+- Keep "exe", "ID", "Discord", "Windows", "Decoy", "GitHub", "RAM" untranslated; keep the strings short.
+
+JSON:
+<paste locale-delta/batch-N.json here>
+```
+
+If you change the *meaning* of an existing English/Russian string, remove its old translations so they are not shown
+stale, then run the delta again: `node scripts/locale-tools.mjs invalidate <key> [<key> ...]`.
+
 ## 2. The README
 
 Translated READMEs live in `docs/i18n/README.<code>.md`. Every README starts with a language bar between the

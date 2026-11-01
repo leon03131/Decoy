@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Hornjoserbšćina" },
-
+  "_meta": {
+    "name": "Hornjoserbšćina"
+  },
   "nav.library": "Biblioteka",
   "nav.favorites": "Favority",
   "nav.running": "Běžace",
   "nav.settings": "Nastajenja",
-
   "discord.checking": "Pruwuje so…",
   "discord.up": "Běži",
   "discord.down": "Njeběži",
-
   "window.minimize": "Miniměrować",
   "window.maximize": "Maksiměrować",
   "window.close": "Začinić",
-
   "tag.live": "Běži",
   "tag.noExe": "žadyn exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "startowak",
-
   "lib.title": "Biblioteka",
   "lib.subtitle": "{n} hrow ze znatym procesom · zaktualizowano {date}",
   "lib.loading": "Hrajna datowa banka so začituje…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "K favoritam přidać",
   "lib.empty.title": "Ničo njenamakane",
   "lib.empty.text": "Wupruwujće druhe mjeno abo zmóžńće „Hry bjez exe pokazać“.",
-
   "fav.title": "Favority",
   "fav.count": "{n} hrow",
   "fav.hint": "Hry ze hwěžku markěrować",
   "fav.empty.title": "Tu hišće ničo njeje",
   "fav.empty.text": "Klikńće na hwěžku na hrajnym kachlu, zo byšće ju tu přidali.",
-
   "detail.process": "Proces",
   "detail.duration": "Kak dołho ma so wobchować",
   "detail.minutes": "{n} mjeń",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorit",
   "detail.close": "Začinić",
   "detail.id": "ID {id}",
-
   "running.title": "Běžace",
   "running.count": "{n} aktiwnych decoyow",
   "running.none": "Tuchwilu ničo njeběži",
@@ -70,14 +64,36 @@
   "running.stop": "Zastajić",
   "running.empty.title": "Ničo njeběži",
   "running.empty.text": "Wočińće hru w bibliotece a klikńće na „Decoy startować“.",
-
   "settings.title": "Nastajenja",
   "settings.general": "Powšitkowne",
   "settings.language": "Rěč",
   "settings.language.desc": "Rěč powjercha. Nowe rěče přidawaja so jako dataje do rjadowaka locales.",
   "settings.stubs": "Decoye",
   "settings.defaultTime": "Standardna doba",
-  "settings.defaultTime.desc": "Kelko mjeńšin ma proces wobstać (Discord-questy zwjetša 15 trjebaja).",
+  "settings.defaultTime.desc": "Kelko mjeńšin ma so proces wobchować. Standard je 16, nic 15: nadawki w Discordźe žadaja 15 mjeńšin hry, ale Discord trjeba hač do mjeńšiny, zo by nowu hru pytnył, tohodla runje 15 njesaha.",
+  "settings.smartTimer": "Inteligentny časoměrak",
+  "settings.smartTimer.desc": "Wotličowanje započina, hdyž je Discord decoy pytnył, nic hdyž jón startujeće. Zo by to wědźała, čita aplikacija jenož linki wo běžacej hrje z lokalneho protokola Discorda; ničo so njeskładuje ani nikam njesćele.",
+  "settings.updates": "Aktualizacije",
+  "settings.checkNow": "Nětko přepruwować",
+  "settings.autoUpdate": "Awtomatiske aktualizacije",
+  "settings.autoUpdate.desc": "GitHub při startowanju a kóžde 6 hodźin přepruwować a nowe wersije w pozadku sćahnyć. Instalacija přeco na waše wobkrutźenje čaka, a dataje so přez jich digitalny signatur přepruwuja.",
+  "update.current": "Instalowana wersija {v}",
+  "update.checking": "Přepruwuje so…",
+  "update.uptodate": "Mace najnowšu wersiju",
+  "update.available": "Wersija {v} je k dispoziciji",
+  "update.downloading": "Wersija {v} so sćahuje… {p}%",
+  "update.ready": "Wersija {v} je hotowa za instalaciju",
+  "update.installing": "Instaluje so a znowa startuje…",
+  "update.download": "Sćahnyć",
+  "update.restart": "Znowa startować a aktualizować",
+  "update.later": "Pozdźišo",
+  "update.notes": "Štož je nowe",
+  "update.running": "Běžace decoys ({n}) so zastaja.",
+  "update.error": "Njemóžeše so aktualizować: {e}",
+  "detail.waiting": "čaka so na Discord",
+  "detail.waitingNote": "Discord trjeba hač do mjeńšiny, zo by hru pytnył. Wotličowanje započina, hdyž decoy widźi.",
+  "detail.detected": "Discord je decoy pytnył",
+  "detail.assumed": "Discord to njeje wobkrutźił, čas so tola liči.",
   "settings.autoStop": "Přez časoměr zastajić",
   "settings.autoStop.desc": "Decoy so sam kónči, hdyž čas spadnje.",
   "settings.notify": "Zdźělić při skónčenju",
@@ -97,7 +113,6 @@
   "settings.files": "Dataje",
   "settings.open": "Wočinić",
   "settings.legal": "Decoy waš token Discorda njewužiwa a questy za was njepřijima. Falšowanje hrajneho procesa móže přećiwo prawidłam Discorda přeńć, wužiwajće jón na swójske riziko.",
-
   "toast.launched": "„{name}“ startowane za {n} mjeń. Discord měł to za něhdźe 15 sekundow spóznać.",
   "toast.stopped": "Decoy zastajeny",
   "toast.allStopped": "Wšě decoye zastajene",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} hrow je exe-dataje dóstało: {names}",
   "toast.refreshAdded": "Datowa banka zaktualizowana: +{n} nowych hrow",
   "toast.refreshUpToDate": "Datowa banka je hižo aktualna",
-
   "nav.lab": "Labor",
   "lab.title": "Labor",
   "lab.subtitle": "Potajny rajtark: startuje wjele decoyow naraz.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} hrow startować",
   "lab.launching": "Startuje so {done} z {total}…",
   "lab.cancel": "Přetorhnyć",
-  "lab.warn": "Kóždy decoy je samostatny proces z woknom. Wjace hač 200–300 naraz móže waš ličak spomalić, maksimum je {max}.",
+  "lab.warn": "Kóždy decoy je wosebity proces z woknom. Přewjele naraz móže waš ličak zatwarić: kóždy proces a wokno wužiwa skład, a po někotrych tysac woknach móže Windows přestać dalše wutworić. Jeli Decoy začinite, so wšě decoys zastaja.",
+  "lab.all": "Wšě ({n})",
+  "lab.estimate": "{n} decoys budźe něhdźe {ram} RAM wužiwać.",
+  "lab.confirm": "Klikńće znowa, zo byšće {n} startował",
+  "lab.limit": "Windows je přestał nowe procesy po {n} startować: to je systemowy limit.",
+  "running.more": "…a {n} dalšich. Prěnich 120 so pokazuje.",
   "lab.hide": "Tutón rajtark schować",
   "toast.labUnlocked": "Potajny rajtark „Labor“ wotewrjeny",
   "toast.labHidden": "Rajtark schowany",
   "toast.labDone": "Startowane hry: {n}",
-
   "tray.show": "Decoy wočinić",
   "tray.stop": "Wšě decoye zastajić",
   "tray.quit": "Skónčić",
-
   "notify.title": "Čas je spadnył",
   "notify.body": "{name}: {n} mjeń je zašło."
 }

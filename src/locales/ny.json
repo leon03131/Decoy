@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Chichewa" },
-
+  "_meta": {
+    "name": "Chichewa"
+  },
   "nav.library": "Laibulale",
   "nav.favorites": "Zomwe Mumakonda",
   "nav.running": "Zikuyenda",
   "nav.settings": "Zokonda",
-
   "discord.checking": "Kuyang'ana…",
   "discord.up": "Ikuyenda",
   "discord.down": "Sikuyenda",
-
   "window.minimize": "Chepetsa",
   "window.maximize": "Kulitsa",
   "window.close": "Tsekani",
-
   "tag.live": "Ikuyenda",
   "tag.noExe": "palibe exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "choyambitsira",
-
   "lib.title": "Laibulale",
   "lib.subtitle": "Masewera {n} okhala ndi ndondomeko yodziwika · zasinthidwa {date}",
   "lib.loading": "Kukopera mndandanda wa masewera…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Ikani pazomwe mumakonda",
   "lib.empty.title": "Palibe chomwe chapezeka",
   "lib.empty.text": "Yesani dzina lina kapena yatsani “Onetsani masewera opanda exe”.",
-
   "fav.title": "Zomwe Mumakonda",
   "fav.count": "Masewera {n}",
   "fav.hint": "Chongani masewera ndi nyenyezi",
   "fav.empty.title": "Palibe chilichonse pano pano",
   "fav.empty.text": "Dinani nyenyezi pa tailosi ya masewera kuti muwonjezere pano.",
-
   "detail.process": "Ndondomeko",
   "detail.duration": "Nthawi yosunga",
   "detail.minutes": "Mphindi {n}",
@@ -62,7 +57,6 @@
   "detail.favorite": "Zomwe Mumakonda",
   "detail.close": "Tsekani",
   "detail.id": "ID {id}",
-
   "running.title": "Zikuyenda",
   "running.count": "Ma decoy {n} omwe akugwira ntchito",
   "running.none": "Palibe chomwe chikuyenda pakadali pano",
@@ -70,14 +64,36 @@
   "running.stop": "Imitsani",
   "running.empty.title": "Palibe chomwe chikuyenda",
   "running.empty.text": "Tsegulani masewera mu laibulale ndikudina “Yambitsani decoy”.",
-
   "settings.title": "Zokonda",
   "settings.general": "Zonse",
   "settings.language": "Chilankhulo",
   "settings.language.desc": "Chilankhulo cha mawonekedwe. Zilankhulo zatsopano zimawonjezedwa ngati mafayilo mufoda ya locales.",
   "settings.stubs": "Ma Decoy",
   "settings.defaultTime": "Nthawi yokhazikika",
-  "settings.defaultTime.desc": "Mphindi zingati zosungira ndondomekoyi (ntchito za Discord nthawi zambiri zimafuna 15).",
+  "settings.defaultTime.desc": "Ndi mphindi zingati zosungira ndondomeko. Zokhazikika ndi 16, osati 15: mafunso a Discord amafuna mphindi 15 zosewerera, koma Discord imafunika mpaka mphindi imodzi kuti izindikire masewera atsopano.",
+  "settings.smartTimer": "Wowerengera wanzeru",
+  "settings.smartTimer.desc": "Kuwerengera kumayamba pamene Discord yazindikira decoy, osati pamene mukuiyambitsa. Kuti idziwe zimenezi, pulogalamuyi imawerenga mizere yokhudza masewera omwe akuyenda kuchokera mu chipika chapafupi cha Discord; palibe chomwe chimasungidwa kapena kutumizidwa kulikonse.",
+  "settings.updates": "Zosintha",
+  "settings.checkNow": "Onani tsopano",
+  "settings.autoUpdate": "Zosintha zokha",
+  "settings.autoUpdate.desc": "Onani GitHub poyambitsa komanso pakapita maola 6 aliwonse ndipo koperani mitundu yatsopano kumbuyo. Kukhazikitsa kumadikirira nthawi zonse chitsimikizo chanu, ndipo mafayilo amatsimikiziridwa ndi siginecha yawo ya digito.",
+  "update.current": "Mtundu wokhazikitsidwa {v}",
+  "update.checking": "Kuyang'ana…",
+  "update.uptodate": "Muli pa mtundu waposachedwa kwambiri",
+  "update.available": "Mtundu {v} ulipo",
+  "update.downloading": "Kutsitsa mtundu {v}… {p}%",
+  "update.ready": "Mtundu {v} wakonzeka kukhazikitsidwa",
+  "update.installing": "Kukhazikitsa ndikuyambitsanso…",
+  "update.download": "Koperani",
+  "update.restart": "Yambitsaninso ndikusintha",
+  "update.later": "Pambuyo pake",
+  "update.notes": "Zatsopano",
+  "update.running": "Ma decoy omwe akuyenda ({n}) ayima.",
+  "update.error": "Zalephera kusintha: {e}",
+  "detail.waiting": "kudikira Discord",
+  "detail.waitingNote": "Discord imafunika mpaka mphindi imodzi kuti izindikire masewera. Kuwerengera kumayamba ikawona decoy.",
+  "detail.detected": "Discord yazindikira decoy",
+  "detail.assumed": "Discord sinatsimikizire, nthawi ikuwerengedwabe.",
   "settings.autoStop": "Imitsani pa tayala",
   "settings.autoStop.desc": "Decoy imadzithetsa yokha nthawi ikakwana.",
   "settings.notify": "Dziwitsani mukamaliza",
@@ -97,7 +113,6 @@
   "settings.files": "Mafayilo",
   "settings.open": "Tsegulani",
   "settings.legal": "Decoy siigwiritsa ntchito tokeni yanu ya Discord ndipo silandira ma quest m'malo mwanu. Kutengera ndondomeko ya masewera kungakhale kusemphana ndi malamulo a Discord, gwiritsani ntchito mwakufuna kwanu.",
-
   "toast.launched": "“{name}” yayambitsidwa kwa mphindi {n}. Discord iyenera kuzindikira pakadutsa pafupifupi masekondi 15.",
   "toast.stopped": "Decoy yaimitsidwa",
   "toast.allStopped": "Ma decoy onse aimitsidwa",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "Masewera {n} apeza mafayilo a exe: {names}",
   "toast.refreshAdded": "Nkhokwe yasinthidwa: +masewera {n} atsopano",
   "toast.refreshUpToDate": "Nkhokwe ya deta ndi yatsopano kale",
-
   "nav.lab": "Labu",
   "lab.title": "Labu",
   "lab.subtitle": "Tabu yachinsinsi: imayambitsa ma decoy ambiri nthawi imodzi.",
@@ -115,16 +129,19 @@
   "lab.launch": "Yambitsani masewera {n}",
   "lab.launching": "Kuyambitsa {done} mwa {total}…",
   "lab.cancel": "Letsani",
-  "lab.warn": "Decoy iliyonse ndi ndondomeko yosiyana yokhala ndi zenera. Kupitilira 200–300 nthawi imodzi kungachepetse liwiro la kompyuta yanu, malire ndi {max}.",
+  "lab.warn": "Decoy iliyonse ndi ndondomeko yosiyana yokhala ndi zenera. Zochulukirapo nthawi imodzi zitha kuimitsa kompyuta yanu: ndondomeko iliyonse ndi zenera zimagwiritsa ntchito kukumbukira, ndipo pambuyo pa mawindo masauzande owerengeka Windows ikhoza kusiya kupanga ena. Mukatseka Decoy, ma decoy onse amaima.",
+  "lab.all": "Zonse ({n})",
+  "lab.estimate": "Ma decoy {n} adzagwiritsa ntchito pafupifupi {ram} ya RAM.",
+  "lab.confirm": "Dinani kachiwiri kuti muyambitse {n}",
+  "lab.limit": "Windows idasiya kuyambitsa njira zatsopano pambuyo pa {n}: umenewo ndi malire a dongosolo.",
+  "running.more": "…ndi zina {n}. Zoyamba 120 zikuwonetsedwa.",
   "lab.hide": "Bisani tabu iyi",
   "toast.labUnlocked": "Tabu yachinsinsi ya “Labu” yatsegulidwa",
   "toast.labHidden": "Tabu yabedwa",
   "toast.labDone": "Masewera oyambitsidwa: {n}",
-
   "tray.show": "Tsegulani Decoy",
   "tray.stop": "Imitsani ma decoy onse",
   "tray.quit": "Tulukani",
-
   "notify.title": "Nthawi yatha",
   "notify.body": "{name}: mphindi {n} zadutsa."
 }

@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Олык марий" },
-
+  "_meta": {
+    "name": "Олык марий"
+  },
   "nav.library": "Библиотеке",
   "nav.favorites": "Йӧратыме",
   "nav.running": "Тӱҥалтыме",
   "nav.settings": "Келыштарымаш",
-
   "discord.checking": "Тергем…",
   "discord.up": "Тӱҥалтыме",
   "discord.down": "Тӱҥалтыме огыл",
-
   "window.minimize": "Изиемдаш",
   "window.maximize": "Кугемдаш",
   "window.close": "Петыраш",
-
   "tag.live": "Тӱҥалтыме",
   "tag.noExe": "exe уке",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "лаунчер",
-
   "lib.title": "Библиотеке",
   "lib.subtitle": "Палыме процесс дене {n} модмаш · уэмдыме {date}",
   "lib.loading": "Модмаш базным погем…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Йӧратымыш пурташ",
   "lib.empty.title": "Нимат ок мучалтыш",
   "lib.empty.text": "Весе лӱмым ончал але «Exe деч посна ончыкташ» ойыпны чӱктӧ.",
-
   "fav.title": "Йӧратыме",
   "fav.count": "{n} модмаш",
   "fav.hint": "Модмашым шӱдыр дене палемде",
   "fav.empty.title": "Тиште эше нимат уке",
   "fav.empty.text": "Модмашым тиде верыш ешараш манын, плиткин шӱдыржым темдал.",
-
   "detail.process": "Процесс",
   "detail.duration": "Мыняр шуйнышаш",
   "detail.minutes": "{n} мин",
@@ -62,7 +57,6 @@
   "detail.favorite": "Йӧратыме",
   "detail.close": "Петыраш",
   "detail.id": "ID {id}",
-
   "running.title": "Тӱҥалтыме",
   "running.count": "{n} чолга заглушка",
   "running.none": "Кызыт нимат тӱҥалтыме огыл",
@@ -70,14 +64,36 @@
   "running.stop": "Шогалташ",
   "running.empty.title": "Нимат тӱҥалтыме огыл",
   "running.empty.text": "Библиотекыште модмашым поч да «Заглушкым тӱҥалаш» темдал.",
-
   "settings.title": "Келыштарымаш",
   "settings.general": "Тӱҥ",
   "settings.language": "Йылме",
   "settings.language.desc": "Интерфейс йылме. У йылме-влак locales папкыш файл семын ешаралтыт.",
   "settings.stubs": "Заглушка-влак",
   "settings.defaultTime": "Палемдыме жап",
-  "settings.defaultTime.desc": "Процессым мыняр минут кучаш (Discord квестыште чӱчкыдын 15).",
+  "settings.defaultTime.desc": "Мыняр минут процессым шындаш. Тӱҥ шотышто 16, 15 огыл: Discord-со бу бурыс-влак 15 минут модмым йодыт, но Discord-лан у модышым ужаш ик минуткат кӱлеш.",
+  "settings.smartTimer": "Ушан таймер",
+  "settings.smartTimer.desc": "Шотыш налмаш заглушкым тӱҥалтыме годым огыл, а Discord заглушкым ужмеке тӱҥалеш. Тидым палашлан приложений Discord-ын верысе журналже гыч модеш модыш нерген веле корным лудеш; нимомат огыт арале да нигушкат огыт колто.",
+  "settings.updates": "Уэмдымаш-влак",
+  "settings.checkNow": "Кызыт тергымаш",
+  "settings.autoUpdate": "Шкежак уэмдалтмаш",
+  "settings.autoUpdate.desc": "Тӱҥалтыме годым да кажне 6 шагат эртымеке GitHub-ым тергымаш, у версийым шеҥгелне вигак налаш. Шындымаш эреак тыланда пеҥгыдемдаш вуча, а файл-влак цифран кидпале дене тергалтыт.",
+  "update.current": "Шындыме версий {v}",
+  "update.checking": "Тергалтмаш…",
+  "update.uptodate": "Тыланда эн пытартыш версий шындыме",
+  "update.available": "Версий {v} уло",
+  "update.downloading": "Версий {v} налалтеш… {p}%",
+  "update.ready": "Версий {v} шындаш ямде",
+  "update.installing": "Шындалтеш да уэш тӱҥалеш…",
+  "update.download": "Волен налаш",
+  "update.restart": "Угыч тӱҥалаш да уэмдаш",
+  "update.later": "Варарак",
+  "update.notes": "Мо у",
+  "update.running": "Пашам ыштыше заглушка-влак ({n}) шогалтаралтыт.",
+  "update.error": "Уэмдаш ыш лий: {e}",
+  "detail.waiting": "Discord-ым вучымаш",
+  "detail.waitingNote": "Discord модышым ужаш ик минут марте жапым пога. Шотлымаш заглушкым ужмеке тӱҥалеш.",
+  "detail.detected": "Discord заглушкым ужо",
+  "detail.assumed": "Discord ыш пеҥгыдемде, жап барыбир шотлалтеш.",
   "settings.autoStop": "Таймер почеш шогалташ",
   "settings.autoStop.desc": "Жап эртымеке, заглушка шкеак кораҥеш.",
   "settings.notify": "Мучашталтме нерген шижтарымаш",
@@ -97,7 +113,6 @@
   "settings.files": "Файл-влак",
   "settings.open": "Почаш",
   "settings.legal": "Decoy тыйын Discord токенет дене ок пайдалане да тыйын верчет квестым ок нал. Модмаш процессым ончыктымаш Discord правил дене келшен толде кертеш, шке ӱшанет почеш пайдалане.",
-
   "toast.launched": "«{name}» {n} мин пашалан тӱҥалтыме. Discord тудым 15 секунд гыч шижеш.",
   "toast.stopped": "Заглушка шогалтыме",
   "toast.allStopped": "Чыла заглушка шогалтыме",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} модмашыште exe файл лекте: {names}",
   "toast.refreshAdded": "Базе уэмдалтын: +{n} у модмаш",
   "toast.refreshUpToDate": "Базе кызытат у улеш",
-
   "nav.lab": "Лабораторий",
   "lab.title": "Лабораторий",
   "lab.subtitle": "Шылтыме вкладке: иканаште шуко заглушкым тӱҥалеш.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} модмашым тӱҥалаш",
   "lab.launching": "{total} гыч {done} тӱҥалам…",
   "lab.cancel": "Чараш",
-  "lab.warn": "Кажне заглушка — тиде шке тӧздыран посна процесс. Иканаште 200–300 деч шукырак компьютер пашам вашкалтарын кертеш, эн кугу мардеж: {max}.",
+  "lab.warn": "Кажне заглушка — окан посна процесс. Ик жапыште шуко лийын кертеш компьютер чытыде кертеш: кажне процесс ден окно шарнымашым кучылтеш, а тӱжем дене окна деч вара Windows уым ышташ чарнен кертеш. Эскерт: Decoy-ым петырет гын, чыла заглушка-влак чарнат.",
+  "lab.all": "Чыла ({n})",
+  "lab.estimate": "{n} заглушка якте {ram} RAM эше кучылтеш.",
+  "lab.confirm": "{n} тӱҥалаш манын эше ик гана темдал",
+  "lab.limit": "Windows {n} деч вара у процесслам тӱҥалаш чарныш: тиде системын чекше.",
+  "running.more": "…да эше {n}. Икымше 120 ончыкталтын.",
   "lab.hide": "Вкладкым шылташ",
   "toast.labUnlocked": "«Лабораторий» шылтыме вкладке почылтын",
   "toast.labHidden": "Вкладке шылтыме",
   "toast.labDone": "Тӱҥалтыме модмаш: {n}",
-
   "tray.show": "Decoy-м почаш",
   "tray.stop": "Чыла заглушкым шогалташ",
   "tray.quit": "Лекташ",
-
   "notify.title": "Жап эртыш",
   "notify.body": "{name}: {n} мин эртыш."
 }

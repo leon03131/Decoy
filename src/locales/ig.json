@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Asụsụ Igbo" },
-
+  "_meta": {
+    "name": "Asụsụ Igbo"
+  },
   "nav.library": "Ọ́bá akwụkwọ",
   "nav.favorites": "Ndị kacha amasị",
   "nav.running": "Na-agba ọsọ",
   "nav.settings": "Ntọala",
-
   "discord.checking": "Na-enyocha…",
   "discord.up": "Na-agba ọsọ",
   "discord.down": "Anaghị agba ọsọ",
-
   "window.minimize": "Mkpọtụkọta",
   "window.maximize": "Mepee nke ukwuu",
   "window.close": "Mechie",
-
   "tag.live": "Na-agba ọsọ",
   "tag.noExe": "ọ dịghị exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "onye mmalite",
-
   "lib.title": "Ọ́bá akwụkwọ",
   "lib.subtitle": "{n} egwuregwu nwere usoro a maara · emelitere na {date}",
   "lib.loading": "Na-ebudata nchekwa data egwuregwu…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Tinye na ndị kacha amasị",
   "lib.empty.title": "Ọ dịghị ihe a hụrụ",
   "lib.empty.text": "Nwalee aha ọzọ ma ọ bụ gbanye “Gosi egwuregwu na-enweghị exe”.",
-
   "fav.title": "Ndị kacha amasị",
   "fav.count": "{n} egwuregwu",
   "fav.hint": "Jiri kpakpando akara egwuregwu",
   "fav.empty.title": "Ọ dịghị ihe dị ebe a ugbu a",
   "fav.empty.text": "Kpatụ kpakpando dị na taịlị egwuregwu iji tinye ya ebe a.",
-
   "detail.process": "Usoro",
   "detail.duration": "Ogologo oge a ga-edobe ya",
   "detail.minutes": "{n} nkeji",
@@ -62,7 +57,6 @@
   "detail.favorite": "Kacha amasị",
   "detail.close": "Mechie",
   "detail.id": "ID {id}",
-
   "running.title": "Na-agba ọsọ",
   "running.count": "{n} decoy na-arụ ọrụ",
   "running.none": "Ọ dịghị ihe na-agba ugbu a",
@@ -70,14 +64,36 @@
   "running.stop": "Kwụsị",
   "running.empty.title": "Ọ dịghị ihe na-agba ọsọ",
   "running.empty.text": "Mepee egwuregwu dị n'ọ́bá akwụkwọ ma pịa “Malite decoy”.",
-
   "settings.title": "Ntọala",
   "settings.general": "General",
   "settings.language": "Asụsụ",
   "settings.language.desc": "Asụsụ interface. A na-agbakwunye asụsụ ọhụrụ dị ka faịlụ n'ime folda locales.",
   "settings.stubs": "Decoy dị iche iche",
   "settings.defaultTime": "Oge ndabara",
-  "settings.defaultTime.desc": "Nkeji ole a ga-edobe usoro ahụ (Discord quest na-achọkarị 15).",
+  "settings.defaultTime.desc": "Nkeji ole a ga-eji nọgide na-arụ ọrụ ahụ. Nke ndabara bụ 16, ọ bụghị 15: ọrụ Discord chọrọ nkeji 15 nke egwuregwu, mana Discord chọrọ ihe ruru otu nkeji iji hụ egwuregwu ọhụrụ, yabụ kpọmkwem 15 ezughị.",
+  "settings.smartTimer": "Oge elekere mara mma",
+  "settings.smartTimer.desc": "Ọgụgụ na-amalite mgbe Discord chọpụtara decoy, ọ bụghị mgbe ị malitere ya. Iji mara nke ahụ, ngwa ahụ na-agụ naanị ahịrị gbasara egwuregwu na-agba ọsọ site na ndekọ mpaghara Discord; ọ dịghị ihe a na-echekwa ma ọ bụ ziga ebe ọ bụla.",
+  "settings.updates": "Mmelite",
+  "settings.checkNow": "Lelee ugbua",
+  "settings.autoUpdate": "Mmelite akpaaka",
+  "settings.autoUpdate.desc": "Lelee GitHub na mbido na kwa awa 6 wee budata ụdị ọhụrụ na ndabere. Ntinye na-eche nkwenye gị mgbe niile, a na-enyochakwa faịlụ site na mbinye aka dijitalụ ha.",
+  "update.current": "Ụdị arụnyere {v}",
+  "update.checking": "Na-enyocha…",
+  "update.uptodate": "Ị nọ na ụdị kachasị ọhụrụ",
+  "update.available": "Ụdị {v} dị",
+  "update.downloading": "Na-ebudata ụdị {v}… {p}%",
+  "update.ready": "Ụdị {v} adịla njikere ịwụnye",
+  "update.installing": "Na-awụnye ma na-amalitegharị…",
+  "update.download": "Budata",
+  "update.restart": "Malitegharịa ma melite",
+  "update.later": "Mechaa",
+  "update.notes": "Ihe dị ọhụrụ",
+  "update.running": "Decoy na-agba ọsọ ({n}) ga-akwụsị.",
+  "update.error": "Enweghị ike imelite: {e}",
+  "detail.waiting": "na-eche Discord",
+  "detail.waitingNote": "Discord chọrọ ihe ruru otu nkeji iji hụ egwuregwu. Ọgụgụ na-amalite mgbe ọ hụrụ decoy.",
+  "detail.detected": "Discord chọpụtara decoy",
+  "detail.assumed": "Discord ekwenyebeghị ya, a ka na-agụ oge ahụ.",
   "settings.autoStop": "Kwụsị na ngụkọ oge",
   "settings.autoStop.desc": "Decoy na-akwụsị n'onwe ya mgbe oge ruru.",
   "settings.notify": "Mee mara mgbe emechara",
@@ -97,7 +113,6 @@
   "settings.files": "Faịlụ dị iche iche",
   "settings.open": "Mepee",
   "settings.legal": "Decoy anaghị eji token Discord gị ma ọ naghị anabata quest maka gị. Ime ka à ga-asị na usoro egwuregwu na-agba nwere ike megidere iwu Discord, jiri ya n'ihe ize ndụ nke gị.",
-
   "toast.launched": "Amalitere “{name}” maka {n} nkeji. Discord kwesịrị ịhụ ya n'ihe dị ka sekọnd 15.",
   "toast.stopped": "A kwụsịrị decoy",
   "toast.allStopped": "A kwụsịrị decoy niile",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} egwuregwu nwetara faịlụ exe: {names}",
   "toast.refreshAdded": "Emelitere nchekwa data: +{n} egwuregwu ọhụrụ",
   "toast.refreshUpToDate": "Nchekwa data adịlarị ọhụrụ",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "Taabụ nzuzo: na-amalite ọtụtụ decoy n'otu oge.",
@@ -115,16 +129,19 @@
   "lab.launch": "Malite {n} egwuregwu",
   "lab.launching": "Na-amalite {done} n'ime {total}…",
   "lab.cancel": "Kagbuo",
-  "lab.warn": "Decoy ọ bụla bụ usoro dị iche nwere windo. Karịa 200–300 n'otu oge nwere ike ime ka kọmputa gị nwayọọ, oke ya bụ {max}.",
+  "lab.warn": "Decoy ọ bụla bụ usoro dị iche nwere windo. Ọtụtụ n'otu oge nwere ike ime ka kọmputa gị kwụsị: usoro ọ bụla na windo na-eji ebe nchekwa, ma mgbe puku windo ole na ole gachara Windows nwere ike ịkwụsị ịmepụta ndị ọzọ. Ọ bụrụ na ị mechie Decoy, decoy niile na-akwụsị.",
+  "lab.all": "Niile ({n})",
+  "lab.estimate": "{n} decoy ga-eji ihe dị ka {ram} nke RAM.",
+  "lab.confirm": "Pịa ọzọ iji malite {n}",
+  "lab.limit": "Windows kwụsịrị ịmalite usoro ọhụrụ mgbe {n} gachara: nke ahụ bụ oke usoro.",
+  "running.more": "…na {n} ndị ọzọ. E gosipụtara 120 nke mbụ.",
   "lab.hide": "Zobe taabụ a",
   "toast.labUnlocked": "Emepere taabụ nzuzo “Lab”",
   "toast.labHidden": "Ezoro taabụ",
   "toast.labDone": "Egwuregwu amalitere: {n}",
-
   "tray.show": "Mepee Decoy",
   "tray.stop": "Kwụsị decoy niile",
   "tray.quit": "Pụọ",
-
   "notify.title": "Oge agwụla",
   "notify.body": "{name}: {n} nkeji agafeela."
 }

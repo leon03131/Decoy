@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Føroyskt" },
-
+  "_meta": {
+    "name": "Føroyskt"
+  },
   "nav.library": "Savn",
   "nav.favorites": "Yndi",
   "nav.running": "Koyrir",
   "nav.settings": "Stillingar",
-
   "discord.checking": "Kannar…",
   "discord.up": "Koyrir",
   "discord.down": "Koyrir ikki",
-
   "window.minimize": "Lágmarka",
   "window.maximize": "Hámarka",
   "window.close": "Lat aftur",
-
   "tag.live": "Koyrir",
   "tag.noExe": "ongin exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "ræsir",
-
   "lib.title": "Savn",
   "lib.subtitle": "{n} spøl við kendari prosess · dagført {date}",
   "lib.loading": "Heintar spæladátugrunnin…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Legg aftrat yndisspølum",
   "lib.empty.title": "Einki fannst",
   "lib.empty.text": "Royn eitt annað navn ella tendra fyri „Vís spøl uttan exe“.",
-
   "fav.title": "Yndi",
   "fav.count": "{n} spøl",
   "fav.hint": "Merk spøl við einari stjørnu",
   "fav.empty.title": "Einki her enn",
   "fav.empty.text": "Trýst á stjørnuna á einari spælaflís fyri at leggja tað aftrat her.",
-
   "detail.process": "Prosess",
   "detail.duration": "Hvussu leingi skal tað haldast",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Yndi",
   "detail.close": "Lat aftur",
   "detail.id": "ID {id}",
-
   "running.title": "Koyrir",
   "running.count": "{n} virkin decoy",
   "running.none": "Einki koyrir í løtuni",
@@ -70,14 +64,36 @@
   "running.stop": "Steðga",
   "running.empty.title": "Einki koyrir",
   "running.empty.text": "Lat eitt spæl upp í savninum og trýst á „Byrja decoy“.",
-
   "settings.title": "Stillingar",
   "settings.general": "Alment",
   "settings.language": "Mál",
   "settings.language.desc": "Mál í brúkaramótinum. Nýggj mál verða løgd aftrat sum fílur í locales-mappuni.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "Sjálvvald tíðarlongd",
-  "settings.defaultTime.desc": "Hvussu nógvar minuttir prosessið skal haldast (Discord-uppgávur krevja vanliga 15).",
+  "settings.defaultTime.desc": "Hvussu nógvir minuttir tilgongdin skal koyra. Sjálvvalda talið er 16, ikki 15: Discord-uppgávur krevja 15 minuttir av spæli, men Discord brúkar upp í ein minutt at varnast eitt nýtt spæl, so akkurát 15 er ov lítið.",
+  "settings.smartTimer": "Snildur tímateljari",
+  "settings.smartTimer.desc": "Niðurteljingin byrjar tá Discord hevur varnast hetta decoy, ikki tá tú byrjar tað. Fyri at vita hetta, lesur forritið bert reglurnar um koyrandi spælið úr lokala logginum hjá Discord; einki verður goymt ella sent nakran veg.",
+  "settings.updates": "Dagføringar",
+  "settings.checkNow": "Kanna nú",
+  "settings.autoUpdate": "Sjálvvirkandi dagføringar",
+  "settings.autoUpdate.desc": "Kanna GitHub tá byrjað verður og hvønn 6. tíma og tak niður nýggjar útgávur í bakgrundini. Innlegging bíðar altíð eftir tínari váttan, og fílur verða váttaðar við talgildari undirskrift teirra.",
+  "update.current": "Innløgd útgáva {v}",
+  "update.checking": "Kannar…",
+  "update.uptodate": "Tú hevur nýggjastu útgávuna",
+  "update.available": "Útgáva {v} er tøk",
+  "update.downloading": "Tekur niður útgávu {v}… {p}%",
+  "update.ready": "Útgáva {v} er klár at leggja inn",
+  "update.installing": "Leggur inn og byrjar av nýggjum…",
+  "update.download": "Tak niður",
+  "update.restart": "Byrja av nýggjum og dagfør",
+  "update.later": "Seinni",
+  "update.notes": "Hvat er nýtt",
+  "update.running": "Koyrandi decoy ({n}) steðga.",
+  "update.error": "Kundi ikki dagføra: {e}",
+  "detail.waiting": "bíðar eftir Discord",
+  "detail.waitingNote": "Discord brúkar upp í ein minutt at varnast eitt spæl. Niðurteljingin byrjar tá tað sær hetta decoy.",
+  "detail.detected": "Discord varnaðist hetta decoy",
+  "detail.assumed": "Discord hevur ikki váttað tað, tíðin verður tald allíkavæl.",
   "settings.autoStop": "Steðga við tíðarteljara",
   "settings.autoStop.desc": "Decoy steðgar av sær sjálvum, tá tíðin er úti.",
   "settings.notify": "Boða frá tá liðugt er",
@@ -97,7 +113,6 @@
   "settings.files": "Fílur",
   "settings.open": "Lat upp",
   "settings.legal": "Decoy brúkar ikki títt Discord-token og tekur ikki ímóti uppgávum fyri teg. At herma eftir einum spælaprosessi kann stríða ímóti reglum hjá Discord, brúka tað á egna ábyrgd.",
-
   "toast.launched": "„{name}“ byrjað í {n} min. Discord átti at sæð tað umleið 15 sekund seinni.",
   "toast.stopped": "Decoy steðgað",
   "toast.allStopped": "Øll decoy steðgað",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} spøl fingu exe-fílur: {names}",
   "toast.refreshAdded": "Dátugrunnur dagførdur: +{n} nýggj spøl",
   "toast.refreshUpToDate": "Dátugrunnurin er longu dagførdur",
-
   "nav.lab": "Royndarstova",
   "lab.title": "Royndarstova",
   "lab.subtitle": "Ein loyniligur fani: byrjar nógv decoy í senn.",
@@ -115,16 +129,19 @@
   "lab.launch": "Byrja {n} spøl",
   "lab.launching": "Byrjar {done} av {total}…",
   "lab.cancel": "Avbrýt",
-  "lab.warn": "Hvert decoy er ein serstøk prosess við glugga. Fleiri enn 200–300 í senn kunnu seinka telduni, hámarkið er {max}.",
+  "lab.warn": "Hvørt decoy er ein serstøk tilgongd við einum glugga. Ov nógv í senn kunnu frysta tína teldu: hvør tilgongd og gluggi brúkar minni, og eftir nøkur túsund gluggar kann Windows steðga við at stovna fleiri. Um tú letur Decoy aftur, steðga øll decoy.",
+  "lab.all": "Øll ({n})",
+  "lab.estimate": "{n} decoy fara at brúka umleið {ram} av RAM.",
+  "lab.confirm": "Trýst aftur fyri at byrja {n}",
+  "lab.limit": "Windows steðgaði við at byrja nýggjar tilgongdir eftir {n}: tað er markið hjá skipanini.",
+  "running.more": "…og {n} afturat. Tey fyrstu 120 verða víst.",
   "lab.hide": "Fjal henda fanan",
   "toast.labUnlocked": "Loyniligi fanin „Royndarstova“ er latin upp",
   "toast.labHidden": "Fanin fjalst",
   "toast.labDone": "Spøl byrjað: {n}",
-
   "tray.show": "Lat Decoy upp",
   "tray.stop": "Steðga øllum decoy",
   "tray.quit": "Sløkk",
-
   "notify.title": "Tíðin er úti",
   "notify.body": "{name}: {n} min eru liðnir."
 }

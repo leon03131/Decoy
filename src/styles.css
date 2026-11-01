@@ -266,6 +266,29 @@ h1 { font-size: 26px; font-weight: 650; letter-spacing: -0.03em; line-height: 1.
 .toggle.on span { transform: translateX(17px); }
 .legal { font-size: 12px; color: var(--faint); line-height: 1.6; max-width: 620px; padding-bottom: 8px; }
 
+/* update banner */
+.update-banner { flex: none; overflow: hidden; border-bottom: 1px solid var(--border); background: linear-gradient(90deg, rgba(124, 108, 246, 0.16), rgba(124, 108, 246, 0.05)); }
+.update-row { display: flex; align-items: center; gap: 14px; padding: 11px 24px 11px 28px; }
+.update-ico { width: 32px; height: 32px; flex: none; border-radius: 10px; display: grid; place-items: center; background: var(--accent-weak); color: var(--accent-hi); }
+.update-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; font-size: 13px; }
+.update-text small { font-size: 12px; color: var(--muted); }
+.update-actions { display: flex; gap: 8px; flex: none; }
+.update-bar { height: 3px; background: rgba(255, 255, 255, 0.06); }
+.update-bar i { display: block; height: 100%; background: var(--accent); transition: width 0.25s linear; }
+
+/* decoy waiting for Discord */
+.ring-wait { animation: spin 1.1s linear infinite; }
+.detect-note { display: flex; align-items: center; justify-content: center; gap: 6px; text-align: center; font-size: 12.5px; line-height: 1.45; color: var(--muted); max-width: 300px; }
+.detect-note.ok { color: #8cf0c3; }
+.run-more { font-size: 12.5px; color: var(--muted); text-align: center; padding: 6px 0 0; }
+
+/* lab: memory estimate and typed count */
+.lab-estimate { display: flex; align-items: center; gap: 10px; margin: 4px 0 14px; padding: 10px 13px; border-radius: 10px; font-size: 12.5px; line-height: 1.4; color: var(--muted); background: var(--surface); border: 1px solid var(--border); }
+.lab-estimate svg { flex: none; }
+.lab-estimate.hot { color: #f6d490; background: rgba(240, 184, 74, 0.08); border-color: rgba(240, 184, 74, 0.35); }
+.stepper input.num { width: 76px; height: 100%; text-align: center; font-weight: 650; font-size: 13px; background: none; border: 0; outline: 0; appearance: textfield; -moz-appearance: textfield; user-select: text; }
+.stepper input.num::-webkit-outer-spin-button, .stepper input.num::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
 /* secret lab tab */
 .nav-item.lab .nav-ico { color: var(--warn); }
 .nav-item.lab.active .nav-ico { color: var(--warn); }

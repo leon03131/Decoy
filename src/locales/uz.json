@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "O‘zbekcha" },
-
+  "_meta": {
+    "name": "O‘zbekcha"
+  },
   "nav.library": "Kutubxona",
   "nav.favorites": "Sevimlilar",
   "nav.running": "Ishlayotganlar",
   "nav.settings": "Sozlamalar",
-
   "discord.checking": "Tekshirilmoqda…",
   "discord.up": "Ishlayapti",
   "discord.down": "Ishlamayapti",
-
   "window.minimize": "Kichraytirish",
   "window.maximize": "Kattalashtirish",
   "window.close": "Yopish",
-
   "tag.live": "Ishlayapti",
   "tag.noExe": "exe yo‘q",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Kutubxona",
   "lib.subtitle": "Jarayoni ma’lum {n} ta o‘yin · yangilangan vaqti: {date}",
   "lib.loading": "O‘yinlar bazasi yuklanmoqda…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Sevimlilarga qo‘shish",
   "lib.empty.title": "Hech narsa topilmadi",
   "lib.empty.text": "Boshqa nom bilan qidirib ko‘ring yoki “exe faylsiz o‘yinlarni ko‘rsatish”ni yoqing.",
-
   "fav.title": "Sevimlilar",
   "fav.count": "{n} ta o‘yin",
   "fav.hint": "O‘yinlarni yulduzcha bilan belgilang",
   "fav.empty.title": "Bu yerda hali hech narsa yo‘q",
   "fav.empty.text": "O‘yinni bu yerga qo‘shish uchun uning katagidagi yulduzchani bosing.",
-
   "detail.process": "Jarayon",
   "detail.duration": "Qancha vaqt ushlab turish kerak",
   "detail.minutes": "{n} daqiqa",
@@ -62,7 +57,6 @@
   "detail.favorite": "Sevimli",
   "detail.close": "Yopish",
   "detail.id": "ID {id}",
-
   "running.title": "Ishlayotganlar",
   "running.count": "{n} ta faol decoy",
   "running.none": "Hozir hech narsa ishlamayapti",
@@ -70,14 +64,36 @@
   "running.stop": "To‘xtatish",
   "running.empty.title": "Hech narsa ishlamayapti",
   "running.empty.text": "Kutubxonadan biror o‘yinni oching va “Decoy’ni ishga tushirish”ni bosing.",
-
   "settings.title": "Sozlamalar",
   "settings.general": "Umumiy",
   "settings.language": "Til",
   "settings.language.desc": "Interfeys tili. Yangi tillar locales papkasiga fayl sifatida qo‘shiladi.",
   "settings.stubs": "Decoy’lar",
   "settings.defaultTime": "Standart davomiylik",
-  "settings.defaultTime.desc": "Jarayon necha daqiqa ushlab turilishi (Discord kvestlari uchun odatda 15 daqiqa kerak).",
+  "settings.defaultTime.desc": "Jarayon necha daqiqa ushlab turilishi. Standart qiymat 15 emas, 16: Discord topshiriqlari 15 daqiqa o‘ynashni talab qiladi, biroq Discord yangi o‘yinni payqashi uchun bir daqiqagacha vaqt ketadi, shuning uchun roppa-rosa 15 daqiqa yetmay qoladi.",
+  "settings.smartTimer": "Aqlli taymer",
+  "settings.smartTimer.desc": "Ortga hisoblash siz ishga tushirgan paytda emas, balki Discord decoy’ni payqaganida boshlanadi. Buni bilish uchun ilova Discord mahalliy jurnalidan faqat ishlayotgan o‘yinga oid satrlarni o‘qiydi; hech narsa saqlanmaydi yoki boshqa joyga yuborilmaydi.",
+  "settings.updates": "Yangilanishlar",
+  "settings.checkNow": "Hozir tekshirish",
+  "settings.autoUpdate": "Avtomatik yangilanishlar",
+  "settings.autoUpdate.desc": "Ishga tushganda va har 6 soatda GitHub’ni tekshirish hamda fonda yangi versiyalarni yuklab olish. O‘rnatish doimo tasdig‘ingizni kutadi va fayllar raqamli imzosi orqali tekshiriladi.",
+  "update.current": "O‘rnatilgan versiya: {v}",
+  "update.checking": "Tekshirilmoqda…",
+  "update.uptodate": "Sizda eng so‘nggi versiya o‘rnatilgan",
+  "update.available": "Versiya {v} mavjud",
+  "update.downloading": "Versiya {v} yuklab olinmoqda… {p}%",
+  "update.ready": "Versiya {v} o‘rnatishga tayyor",
+  "update.installing": "O‘rnatilmoqda va qayta ishga tushirilmoqda…",
+  "update.download": "Yuklab olish",
+  "update.restart": "Qayta ishga tushirish va yangilash",
+  "update.later": "Keyinroq",
+  "update.notes": "Nimalar yangi",
+  "update.running": "Ishlayotgan decoy’lar ({n}) to‘xtatiladi.",
+  "update.error": "Yangilab bo‘lmadi: {e}",
+  "detail.waiting": "Discord kutilmoqda",
+  "detail.waitingNote": "Discord o‘yinni payqashi uchun bir daqiqagacha vaqt ketadi. Ortga hisoblash u decoy’ni ko‘rganida boshlanadi.",
+  "detail.detected": "Discord decoy’ni payqadi",
+  "detail.assumed": "Discord tasdiqlamadi, shunga qaramay vaqt hisoblanmoqda.",
   "settings.autoStop": "Taymer bo‘yicha to‘xtatish",
   "settings.autoStop.desc": "Vaqt tugagach, decoy avtomatik ravishda to‘xtaydi.",
   "settings.notify": "Tugaganda bildirishnoma berish",
@@ -97,7 +113,6 @@
   "settings.files": "Fayllar",
   "settings.open": "Ochish",
   "settings.legal": "Decoy sizning Discord tokeningizdan foydalanmaydi va sizning nomingizdan kvestlarni qabul qilmaydi. O‘yin jarayonini soxtalashtirish Discord qoidalariga zid bo‘lishi mumkin, o‘z xavf-xataringiz ostida foydalaning.",
-
   "toast.launched": "“{name}” {n} daqiqaga ishga tushirildi. Discord buni taxminan 15 soniyada payqaydi.",
   "toast.stopped": "Decoy to‘xtatildi",
   "toast.allStopped": "Barcha decoy’lar to‘xtatildi",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} ta o‘yinga exe fayllar qo‘shildi: {names}",
   "toast.refreshAdded": "Baza yangilandi: +{n} ta yangi o‘yin",
   "toast.refreshUpToDate": "Baza allaqachon eng so‘nggi holatda",
-
   "nav.lab": "Laboratoriya",
   "lab.title": "Laboratoriya",
   "lab.subtitle": "Yashirin bo‘lim: bir vaqtning o‘zida ko‘plab decoy’larni ishga tushiradi.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} ta o‘yinni ishga tushirish",
   "lab.launching": "{total} tadan {done} tasi ishga tushirilmoqda…",
   "lab.cancel": "Bekor qilish",
-  "lab.warn": "Har bir decoy — oynali alohida jarayondir. Bir vaqtning o‘zida 200–300 tadan ko‘pi kompyuterni sekinlashtirishi mumkin, maksimal chegara: {max}.",
+  "lab.warn": "Har bir decoy oynali alohida jarayondir. Bir vaqtning o‘zida juda ko‘p bo‘lsa, kompyuterni qotirib qo‘yishi mumkin: har bir jarayon va oyna xotiradan foydalanadi va bir necha ming oynadan so‘ng Windows yangilarini yaratishni to‘xtatishi mumkin. Agar Decoy’ni yopsangiz, barcha decoy’lar to‘xtaydi.",
+  "lab.all": "Barchasi ({n})",
+  "lab.estimate": "{n} ta decoy taxminan {ram} RAM ishlatadi.",
+  "lab.confirm": "{n} tani ishga tushirish uchun yana bosing",
+  "lab.limit": "Windows {n} tadan keyin yangi jarayonlarni boshlashni to‘xtatdi: bu tizim chegarasi.",
+  "running.more": "…va yana {n} ta. Dastlabki 120 tasi ko‘rsatilgan.",
   "lab.hide": "Ushbu bo‘limni yashirish",
   "toast.labUnlocked": "Yashirin “Laboratoriya” bo‘limi ochildi",
   "toast.labHidden": "Bo‘lim yashirildi",
   "toast.labDone": "Ishga tushirilgan o‘yinlar: {n}",
-
   "tray.show": "Decoy’ni ochish",
   "tray.stop": "Barcha decoy’larni to‘xtatish",
   "tray.quit": "Chiqish",
-
   "notify.title": "Vaqt tugadi",
   "notify.body": "{name}: {n} daqiqa o‘tdi."
 }

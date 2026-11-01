@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Shqip" },
-
+  "_meta": {
+    "name": "Shqip"
+  },
   "nav.library": "Biblioteka",
   "nav.favorites": "Të preferuarat",
   "nav.running": "Në ekzekutim",
   "nav.settings": "Cilësimet",
-
   "discord.checking": "Po kontrollohet…",
   "discord.up": "Në ekzekutim",
   "discord.down": "Nuk po ekzekutohet",
-
   "window.minimize": "Minimizo",
   "window.maximize": "Maksimizo",
   "window.close": "Mbyll",
-
   "tag.live": "Në ekzekutim",
   "tag.noExe": "pa exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "nisës",
-
   "lib.title": "Biblioteka",
   "lib.subtitle": "{n} lojëra me proces të njohur · përditësuar më {date}",
   "lib.loading": "Po ngarkohet baza e të dhënave të lojërave…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Shto te të preferuarat",
   "lib.empty.title": "Nuk u gjet asgjë",
   "lib.empty.text": "Provoni një emër tjetër ose aktivizoni “Shfaq lojërat pa exe”.",
-
   "fav.title": "Të preferuarat",
   "fav.count": "{n} lojëra",
   "fav.hint": "Shënoni lojërat me yll",
   "fav.empty.title": "Këtu nuk ka asgjë ende",
   "fav.empty.text": "Shtypni yllin mbi një lojë për ta shtuar këtu.",
-
   "detail.process": "Procesi",
   "detail.duration": "Sa kohë të mbahet",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "E preferuar",
   "detail.close": "Mbyll",
   "detail.id": "ID {id}",
-
   "running.title": "Në ekzekutim",
   "running.count": "{n} decoy aktive",
   "running.none": "Asgjë nuk po ekzekutohet tani",
@@ -70,14 +64,36 @@
   "running.stop": "Ndalo",
   "running.empty.title": "Asgjë nuk po ekzekutohet",
   "running.empty.text": "Hapni një lojë në bibliotekë dhe shtypni “Nis decoy”.",
-
   "settings.title": "Cilësimet",
   "settings.general": "Të përgjithshme",
   "settings.language": "Gjuha",
   "settings.language.desc": "Gjuha e ndërfaqes. Gjuhët e reja shtohen si skedarë në dosjen locales.",
   "settings.stubs": "Decoy-t",
   "settings.defaultTime": "Kohëzgjatja e parazgjedhur",
-  "settings.defaultTime.desc": "Sa minuta të mbahet procesi (misionet e Discord zakonisodhe kërkojnë 15).",
+  "settings.defaultTime.desc": "Sa minuta të mbahet procesi. E paracaktuar është 16, jo 15: misionet e Discord kërkojnë 15 minuta lojë, por Discord-it i duhet deri në një minutë për të dalluar një lojë të re, kështu që saktësisht 15 nuk mjafton.",
+  "settings.smartTimer": "Kohëmatës inteligjent",
+  "settings.smartTimer.desc": "Numërimi mbrapsht fillon kur Discord ka dalluar decoy-n, jo kur e nisni ju. Për ta ditur këtë, aplikacioni lexon vetëm linjat rreth lojës aktive nga regjistri lokal i Discord; asgjë nuk ruhet dhe nuk dërgohet askund.",
+  "settings.updates": "Përditësimet",
+  "settings.checkNow": "Kontrollo tani",
+  "settings.autoUpdate": "Përditësime automatike",
+  "settings.autoUpdate.desc": "Kontrollo GitHub-in në nisje dhe çdo 6 orë dhe shkarko versione të reja në sfond. Instalimi pret gjithmonë konfirmimin tuaj, dhe skedarët verifikohen nga nënshkrimi i tyre digjital.",
+  "update.current": "Versioni i instaluar {v}",
+  "update.checking": "Po kontrollohet…",
+  "update.uptodate": "Jeni në versionin më të fundit",
+  "update.available": "Versioni {v} është i disponueshëm",
+  "update.downloading": "Po shkarkohet versioni {v}… {p}%",
+  "update.ready": "Versioni {v} është gati për t'u instaluar",
+  "update.installing": "Po instalohet dhe rifillohet…",
+  "update.download": "Shkarko",
+  "update.restart": "Rifillo dhe përditëso",
+  "update.later": "Më vonë",
+  "update.notes": "Çfarë ka të re",
+  "update.running": "Decoy-t aktive ({n}) do të ndalen.",
+  "update.error": "Nuk mund të përditësohej: {e}",
+  "detail.waiting": "po pritet Discord",
+  "detail.waitingNote": "Discord-it i duhet deri në një minutë për të dalluar një lojë. Numërimi mbrapsht fillon kur ai sheh decoy-n.",
+  "detail.detected": "Discord dalloi decoy-n",
+  "detail.assumed": "Discord nuk e ka konfirmuar, koha numërohet gjithsesi.",
   "settings.autoStop": "Ndalo me kohëmatës",
   "settings.autoStop.desc": "Decoy përfundon vetvetiu kur mbaron koha.",
   "settings.notify": "Njofto kur të përfundojë",
@@ -97,7 +113,6 @@
   "settings.files": "Skedarët",
   "settings.open": "Hap",
   "settings.legal": "Decoy nuk e përdor token-in tuaj të Discord dhe nuk pranon misione për ju. Simulimi i një procesi loje mund të bjerë ndesh me rregullat e Discord, përdoreni në rrezikun tuaj.",
-
   "toast.launched": "“{name}” u nis për {n} min. Discord duhet ta vërejë pas rreth 15 sekondash.",
   "toast.stopped": "Decoy u ndalua",
   "toast.allStopped": "Të gjitha decoy-t u ndaluan",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} lojëra morën skedarë exe: {names}",
   "toast.refreshAdded": "Baza e të dhënave u përditësua: +{n} lojëra të reja",
   "toast.refreshUpToDate": "Baza e të dhënave është tashmë e përditësuar",
-
   "nav.lab": "Laboratori",
   "lab.title": "Laboratori",
   "lab.subtitle": "Një skedë sekrete: nis shumë decoy njëherësh.",
@@ -115,16 +129,19 @@
   "lab.launch": "Nis {n} lojëra",
   "lab.launching": "Po nisen {done} nga {total}…",
   "lab.cancel": "Anulo",
-  "lab.warn": "Çdo decoy është një proces i veçantë me dritare. Më shumë se 200–300 njëherësh mund të ngadalësojnë kompjuterin tuaj, maksimumi është {max}.",
+  "lab.warn": "Çdo decoy është një proces i veçantë me dritare. Shumë njëkohësisht mund të bllokojnë kompjuterin tuaj: çdo proces dhe dritare përdor memorie, dhe pas disa mijëra dritaresh Windows mund të ndalojë së krijuari të tjera. Nëse mbyllni Decoy, të gjitha decoy-t ndalen.",
+  "lab.all": "Të gjitha ({n})",
+  "lab.estimate": "{n} decoy do të përdorin përafërsisht {ram} RAM.",
+  "lab.confirm": "Kliko përsëri për të nisur {n}",
+  "lab.limit": "Windows ndaloi nisjen e proceseve të reja pas {n}: ky është kufiri i sistemit.",
+  "running.more": "…dhe {n} të tjera. Shfaqen 120 të parat.",
   "lab.hide": "Fshih këtë skedë",
   "toast.labUnlocked": "Skeda sekrete “Laboratori” u zhbllokua",
   "toast.labHidden": "Skeda u fsheh",
   "toast.labDone": "Lojëra të nisura: {n}",
-
   "tray.show": "Hap Decoy",
   "tray.stop": "Ndalo të gjitha decoy-t",
   "tray.quit": "Dil",
-
   "notify.title": "Koha mbaroi",
   "notify.body": "{name}: kaluan {n} min."
 }

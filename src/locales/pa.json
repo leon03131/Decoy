@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "ਪੰਜਾਬੀ" },
-
+  "_meta": {
+    "name": "ਪੰਜਾਬੀ"
+  },
   "nav.library": "ਲਾਇਬ੍ਰੇਰੀ",
   "nav.favorites": "ਮਨਪਸੰਦ",
   "nav.running": "ਚੱਲ ਰਹੇ",
   "nav.settings": "ਸੈਟਿੰਗਾਂ",
-
   "discord.checking": "ਜਾਂਚ ਹੋ ਰਹੀ ਹੈ…",
   "discord.up": "ਚੱਲ ਰਿਹਾ ਹੈ",
   "discord.down": "ਬੰਦ ਹੈ",
-
   "window.minimize": "ਮਿਨੀਮਾਈਜ਼",
   "window.maximize": "ਮੈਕਸੀਮਾਈਜ਼",
   "window.close": "ਬੰਦ ਕਰੋ",
-
   "tag.live": "ਚਾਲੂ",
   "tag.noExe": "ਕੋਈ exe ਨਹੀਂ",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "ਲਾਂਚਰ",
-
   "lib.title": "ਲਾਇਬ੍ਰੇਰੀ",
   "lib.subtitle": "ਜਾਣੇ-ਪਛਾਣੇ ਪ੍ਰੋਸੈੱਸ ਵਾਲੀਆਂ {n} ਗੇਮਾਂ · {date} ਨੂੰ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ",
   "lib.loading": "ਗੇਮ ਡਾਟਾਬੇਸ ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "ਮਨਪਸੰਦ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰੋ",
   "lib.empty.title": "ਕੁਝ ਨਹੀਂ ਮਿਲਿਆ",
   "lib.empty.text": "ਕੋਈ ਹੋਰ ਨਾਮ ਅਜ਼ਮਾਓ ਜਾਂ “ਬਿਨਾਂ exe ਵਾਲੀਆਂ ਗੇਮਾਂ ਦਿਖਾਓ” ਚਾਲੂ ਕਰੋ।",
-
   "fav.title": "ਮਨਪਸੰਦ",
   "fav.count": "{n} ਗੇਮਾਂ",
   "fav.hint": "ਗੇਮਾਂ ਨੂੰ ਸਟਾਰ ਨਾਲ ਮਾਰਕ ਕਰੋ",
   "fav.empty.title": "ਇੱਥੇ ਅਜੇ ਕੁਝ ਨਹੀਂ ਹੈ",
   "fav.empty.text": "ਇੱਥੇ ਜੋੜਨ ਲਈ ਕਿਸੇ ਗੇਮ ਟਾਈਲ 'ਤੇ ਸਟਾਰ ਦਬਾਓ।",
-
   "detail.process": "ਪ੍ਰੋਸੈੱਸ",
   "detail.duration": "ਕਿੰਨੀ ਦੇਰ ਚਲਾਉਣਾ ਹੈ",
   "detail.minutes": "{n} ਮਿੰਟ",
@@ -62,7 +57,6 @@
   "detail.favorite": "ਮਨਪਸੰਦ",
   "detail.close": "ਬੰਦ ਕਰੋ",
   "detail.id": "ID {id}",
-
   "running.title": "ਚੱਲ ਰਹੇ",
   "running.count": "{n} ਐਕਟਿਵ Decoy",
   "running.none": "ਇਸ ਵੇਲੇ ਕੁਝ ਵੀ ਨਹੀਂ ਚੱਲ ਰਿਹਾ",
@@ -70,14 +64,36 @@
   "running.stop": "ਰੋਕੋ",
   "running.empty.title": "ਕੁਝ ਵੀ ਨਹੀਂ ਚੱਲ ਰਿਹਾ",
   "running.empty.text": "ਲਾਇਬ੍ਰੇਰੀ ਵਿੱਚ ਕੋਈ ਗੇਮ ਖੋਲ੍ਹੋ ਅਤੇ “Decoy ਸ਼ੁਰੂ ਕਰੋ” ਦਬਾਓ।",
-
   "settings.title": "ਸੈਟਿੰਗਾਂ",
   "settings.general": "ਆਮ",
   "settings.language": "ਭਾਸ਼ਾ",
   "settings.language.desc": "ਇੰਟਰਫ਼ੇਸ ਦੀ ਭਾਸ਼ਾ। ਨਵੀਆਂ ਭਾਸ਼ਾਵਾਂ locales ਫ਼ੋਲਡਰ ਵਿੱਚ ਫ਼ਾਈਲਾਂ ਵਜੋਂ ਜੋੜੀਆਂ ਜਾਂਦੀਆਂ ਹਨ।",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "ਮੂਲ ਮਿਆਦ",
-  "settings.defaultTime.desc": "ਪ੍ਰੋਸੈੱਸ ਨੂੰ ਕਿੰਨੇ ਮਿੰਟ ਚਲਦੇ ਰੱਖਣਾ ਹੈ (Discord ਕੁਐਸਟਾਂ ਲਈ ਆਮ ਤੌਰ 'ਤੇ 15 ਮਿੰਟ ਚਾਹੀਦੇ ਹਨ)।",
+  "settings.defaultTime.desc": "ਪ੍ਰੋਸੈੱਸ ਨੂੰ ਕਿੰਨੇ ਮਿੰਟ ਰੱਖਣਾ ਹੈ। ਪੂਰਵ-ਨਿਰਧਾਰਤ 15 ਨਹੀਂ ਸਗੋਂ 16 ਹੈ: Discord ਖੋਜਾਂ 15 ਮਿੰਟ ਖੇਡਣ ਦੀ ਮੰਗ ਕਰਦੀਆਂ ਹਨ, ਪਰ Discord ਨੂੰ ਨਵੀਂ ਗੇਮ ਦੇਖਣ ਲਈ ਇੱਕ ਮਿੰਟ ਤੱਕ ਦਾ ਸਮਾਂ ਲੱਗ ਸਕਦਾ ਹੈ।",
+  "settings.smartTimer": "ਸਮਾਰਟ ਟਾਈਮਰ",
+  "settings.smartTimer.desc": "ਕਾਊਂਟਡਾਊਨ ਉਦੋਂ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ ਜਦੋਂ Discord ਨੇ decoy ਨੂੰ ਦੇਖਿਆ ਹੋਵੇ, ਨਾ ਕਿ ਜਦੋਂ ਤੁਸੀਂ ਇਸਨੂੰ ਸ਼ੁਰੂ ਕਰਦੇ ਹੋ। ਇਹ ਜਾਣਨ ਲਈ, ਐਪ Discord ਦੇ ਸਥਾਨਕ ਲੌਗ ਤੋਂ ਸਿਰਫ਼ ਚੱਲ ਰਹੀ ਗੇਮ ਬਾਰੇ ਲਾਈਨਾਂ ਪੜ੍ਹਦੀ ਹੈ; ਕੁਝ ਵੀ ਸਟੋਰ ਜਾਂ ਕਿਤੇ ਭੇਜਿਆ ਨਹੀਂ ਜਾਂਦਾ।",
+  "settings.updates": "ਅੱਪਡੇਟ",
+  "settings.checkNow": "ਹੁਣੇ ਜਾਂਚ ਕਰੋ",
+  "settings.autoUpdate": "ਆਟੋਮੈਟਿਕ ਅੱਪਡੇਟ",
+  "settings.autoUpdate.desc": "ਸ਼ੁਰੂ ਵੇਲੇ ਅਤੇ ਹਰ 6 ਘੰਟਿਆਂ ਬਾਅਦ GitHub ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਪਿਛੋਕੜ ਵਿੱਚ ਨਵੇਂ ਸੰਸਕਰਣ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੰਸਟਾਲੇਸ਼ਨ ਹਮੇਸ਼ਾ ਤੁਹਾਡੀ ਪੁਸ਼ਟੀ ਦੀ ਉਡੀਕ ਕਰਦੀ ਹੈ, ਅਤੇ ਫ਼ਾਈਲਾਂ ਉਹਨਾਂ ਦੇ ਡਿਜੀਟਲ ਦਸਤਖਤ ਦੁਆਰਾ ਪ੍ਰਮਾਣਿਤ ਹੁੰਦੀਆਂ ਹਨ।",
+  "update.current": "ਇੰਸਟਾਲ ਕੀਤਾ ਸੰਸਕਰਣ {v}",
+  "update.checking": "ਜਾਂਚ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ…",
+  "update.uptodate": "ਤੁਸੀਂ ਨਵੀਨਤਮ ਸੰਸਕਰਣ 'ਤੇ ਹੋ",
+  "update.available": "ਸੰਸਕਰਣ {v} ਉਪਲਬਧ ਹੈ",
+  "update.downloading": "ਸੰਸਕਰਣ {v} ਡਾਊਨਲੋਡ ਹੋ ਰਿਹਾ ਹੈ… {p}%",
+  "update.ready": "ਸੰਸਕਰਣ {v} ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਤਿਆਰ ਹੈ",
+  "update.installing": "ਇੰਸਟਾਲ ਅਤੇ ਮੁੜ ਚਾਲੂ ਹੋ ਰਿਹਾ ਹੈ…",
+  "update.download": "ਡਾਊਨਲੋਡ ਕਰੋ",
+  "update.restart": "ਮੁੜ ਚਾਲੂ ਕਰੋ ਅਤੇ ਅੱਪਡੇਟ ਕਰੋ",
+  "update.later": "ਬਾਅਦ ਵਿੱਚ",
+  "update.notes": "ਨਵਾਂ ਕੀ ਹੈ",
+  "update.running": "ਚੱਲ ਰਹੇ decoy ({n}) ਬੰਦ ਹੋ ਜਾਣਗੇ।",
+  "update.error": "ਅੱਪਡੇਟ ਨਹੀਂ ਹੋ ਸਕਿਆ: {e}",
+  "detail.waiting": "Discord ਦੀ ਉਡੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ",
+  "detail.waitingNote": "Discord ਨੂੰ ਗੇਮ ਦੇਖਣ ਲਈ ਇੱਕ ਮਿੰਟ ਤੱਕ ਦਾ ਸਮਾਂ ਚਾਹੀਦਾ ਹੈ। ਜਦੋਂ ਇਹ decoy ਨੂੰ ਦੇਖਦਾ ਹੈ ਤਾਂ ਕਾਊਂਟਡਾਊਨ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ।",
+  "detail.detected": "Discord ਨੇ decoy ਨੂੰ ਦੇਖ ਲਿਆ ਹੈ",
+  "detail.assumed": "Discord ਨੇ ਪੁਸ਼ਟੀ ਨਹੀਂ ਕੀਤੀ, ਸਮਾਂ ਫਿਰ ਵੀ ਗਿਣਿਆ ਜਾ ਰਿਹਾ ਹੈ।",
   "settings.autoStop": "ਟਾਈਮਰ 'ਤੇ ਰੋਕੋ",
   "settings.autoStop.desc": "ਸਮਾਂ ਪੂਰਾ ਹੋਣ 'ਤੇ Decoy ਆਪਣੇ ਆਪ ਬੰਦ ਹੋ ਜਾਂਦਾ ਹੈ।",
   "settings.notify": "ਪੂਰਾ ਹੋਣ 'ਤੇ ਸੂਚਿਤ ਕਰੋ",
@@ -97,7 +113,6 @@
   "settings.files": "ਫ਼ਾਈਲਾਂ",
   "settings.open": "ਖੋਲ੍ਹੋ",
   "settings.legal": "Decoy ਤੁਹਾਡੇ Discord ਟੋਕਨ ਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕਰਦਾ ਅਤੇ ਤੁਹਾਡੇ ਲਈ ਕੁਐਸਟ ਸਵੀਕਾਰ ਨਹੀਂ ਕਰਦਾ। ਗੇਮ ਪ੍ਰੋਸੈੱਸ ਦੀ ਨਕਲ ਕਰਨਾ Discord ਦੇ ਨਿਯਮਾਂ ਦੇ ਵਿਰੁੱਧ ਹੋ ਸਕਦਾ ਹੈ, ਇਸਦੀ ਵਰਤੋਂ ਆਪਣੇ ਖ਼ੁਦ ਦੇ ਜੋਖਮ 'ਤੇ ਕਰੋ।",
-
   "toast.launched": "“{name}” {n} ਮਿੰਟ ਲਈ ਸ਼ੁਰੂ ਕੀਤਾ ਗਿਆ। Discord ਨੂੰ ਲਗਭਗ 15 ਸਕਿੰਟਾਂ ਵਿੱਚ ਇਸਦਾ ਪਤਾ ਲੱਗ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ।",
   "toast.stopped": "Decoy ਰੋਕਿਆ ਗਿਆ",
   "toast.allStopped": "ਸਾਰੇ Decoy ਰੋਕੇ ਗਏ",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} ਗੇਮਾਂ ਨੂੰ exe ਫ਼ਾਈਲਾਂ ਮਿਲੀਆਂ: {names}",
   "toast.refreshAdded": "ਡਾਟਾਬੇਸ ਅੱਪਡੇਟ ਹੋਇਆ: +{n} ਨਵੀਆਂ ਗੇਮਾਂ",
   "toast.refreshUpToDate": "ਡਾਟਾਬੇਸ ਪਹਿਲਾਂ ਹੀ ਅੱਪ-ਟੂ-ਡੇਟ ਹੈ",
-
   "nav.lab": "ਲੈਬ",
   "lab.title": "ਲੈਬ",
   "lab.subtitle": "ਇੱਕ ਗੁਪਤ ਟੈਬ: ਇੱਕੋ ਸਮੇਂ ਕਈ Decoy ਸ਼ੁਰੂ ਕਰਦੀ ਹੈ।",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} ਗੇਮਾਂ ਸ਼ੁਰੂ ਕਰੋ",
   "lab.launching": "{total} ਵਿੱਚੋਂ {done} ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ…",
   "lab.cancel": "ਰੱਦ ਕਰੋ",
-  "lab.warn": "ਹਰੇਕ Decoy ਵਿੰਡੋ ਦੇ ਨਾਲ ਇੱਕ ਵੱਖਰਾ ਪ੍ਰੋਸੈੱਸ ਹੈ। ਇੱਕੋ ਸਮੇਂ 200–300 ਤੋਂ ਵੱਧ ਤੁਹਾਡੇ ਕੰਪਿਊਟਰ ਨੂੰ ਹੌਲੀ ਕਰ ਸਕਦੇ ਹਨ, ਅਧਿਕਤਮ ਸੀਮਾ {max} ਹੈ।",
+  "lab.warn": "ਹਰ decoy ਵਿੰਡੋ ਵਾਲੀ ਇੱਕ ਵੱਖਰੀ ਪ੍ਰੋਸੈੱਸ ਹੈ। ਇੱਕੋ ਵਾਰ ਬਹੁਤ ਸਾਰੇ ਖੋਲ੍ਹਣ ਨਾਲ ਕੰਪਿਊਟਰ ਹੈਂਗ ਹੋ ਸਕਦਾ ਹੈ: ਹਰ ਪ੍ਰੋਸੈੱਸ ਅਤੇ ਵਿੰਡੋ ਮੈਮੋਰੀ ਵਰਤਦੀ ਹੈ, ਅਤੇ ਕੁਝ ਹਜ਼ਾਰ ਵਿੰਡੋਜ਼ ਤੋਂ ਬਾਅਦ Windows ਨਵੀਆਂ ਬਣਾਉਣਾ ਬੰਦ ਕਰ ਸਕਦੀ ਹੈ। ਜੇਕਰ ਤੁਸੀਂ Decoy ਬੰਦ ਕਰਦੇ ਹੋ, ਤਾਂ ਸਾਰੇ decoy ਰੁਕ ਜਾਂਦੇ ਹਨ।",
+  "lab.all": "ਸਾਰੇ ({n})",
+  "lab.estimate": "{n} decoy ਲਗਭਗ {ram} RAM ਦੀ ਵਰਤੋਂ ਕਰਨਗੇ।",
+  "lab.confirm": "{n} ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਦੁਬਾਰਾ ਕਲਿੱਕ ਕਰੋ",
+  "lab.limit": "Windows ਨੇ {n} ਤੋਂ ਬਾਅਦ ਨਵੀਂਆਂ ਪ੍ਰੋਸੈੱਸਾਂ ਸ਼ੁਰੂ ਕਰਨੀਆਂ ਬੰਦ ਕਰ ਦਿੱਤੀਆਂ: ਇਹ ਸਿਸਟਮ ਸੀਮਾ ਹੈ।",
+  "running.more": "…ਅਤੇ {n} ਹੋਰ। ਪਹਿਲੇ 120 ਦਿਖਾਏ ਗਏ ਹਨ।",
   "lab.hide": "ਇਹ ਟੈਬ ਲੁਕਾਓ",
   "toast.labUnlocked": "ਗੁਪਤ “ਲੈਬ” ਟੈਬ ਅਨਲੌਕ ਹੋ ਗਈ",
   "toast.labHidden": "ਟੈਬ ਲੁਕਾ ਦਿੱਤੀ ਗਈ",
   "toast.labDone": "ਸ਼ੁਰੂ ਕੀਤੀਆਂ ਗੇਮਾਂ: {n}",
-
   "tray.show": "Decoy ਖੋਲ੍ਹੋ",
   "tray.stop": "ਸਾਰੇ Decoy ਰੋਕੋ",
   "tray.quit": "ਬੰਦ ਕਰੋ",
-
   "notify.title": "ਸਮਾਂ ਸਮਾਪਤ",
   "notify.body": "{name}: {n} ਮਿੰਟ ਬੀਤ ਚੁੱਕੇ ਹਨ।"
 }

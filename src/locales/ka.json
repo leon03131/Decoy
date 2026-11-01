@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "ქართული" },
-
+  "_meta": {
+    "name": "ქართული"
+  },
   "nav.library": "ბიბლიოთეკა",
   "nav.favorites": "რჩეულები",
   "nav.running": "გაშვებული",
   "nav.settings": "პარამეტრები",
-
   "discord.checking": "მოწმდება…",
   "discord.up": "გაშვებულია",
   "discord.down": "არ არის გაშვებული",
-
   "window.minimize": "ჩაკეცვა",
   "window.maximize": "გაშლა",
   "window.close": "დახურვა",
-
   "tag.live": "გაშვებული",
   "tag.noExe": "exe-ის გარეშე",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "ლაუნჩერი",
-
   "lib.title": "ბიბლიოთეკა",
   "lib.subtitle": "{n} თამაში ცნობილი პროცესით · განახლებულია {date}",
   "lib.loading": "თამაშების ბაზა იტვირთება…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "რჩეულებში დამატება",
   "lib.empty.title": "ვერაფერი მოიძებნა",
   "lib.empty.text": "სცადეთ სხვა სახელი ან ჩართეთ „exe-ის გარეშე თამაშების ჩვენება“.",
-
   "fav.title": "რჩეულები",
   "fav.count": "{n} თამაში",
   "fav.hint": "მონიშნეთ თამაშები ვარსკვლავით",
   "fav.empty.title": "აქ ჯერ არაფერია",
   "fav.empty.text": "აქ დასამატებლად დააჭირეთ ვარსკვლავს თამაშის ბარათზე.",
-
   "detail.process": "პროცესი",
   "detail.duration": "ხანგრძლივობა",
   "detail.minutes": "{n} წთ",
@@ -62,7 +57,6 @@
   "detail.favorite": "რჩეული",
   "detail.close": "დახურვა",
   "detail.id": "ID {id}",
-
   "running.title": "გაშვებული",
   "running.count": "{n} აქტიური decoy",
   "running.none": "ამჟამად არაფერია გაშვებული",
@@ -70,14 +64,36 @@
   "running.stop": "შეჩერება",
   "running.empty.title": "არაფერია გაშვებული",
   "running.empty.text": "გახსენით თამაში ბიბლიოთეკაში და დააჭირეთ „Decoy-ს გაშვება“.",
-
   "settings.title": "პარამეტრები",
   "settings.general": "ზოგადი",
   "settings.language": "ენა",
   "settings.language.desc": "ინტერფეისის ენა. ახალი ენები ემატება ფაილების სახით locales საქაღალდეში.",
   "settings.stubs": "Decoy-ები",
   "settings.defaultTime": "ნაგულისხმევი დრო",
-  "settings.defaultTime.desc": "რამდენი წუთი დარჩეს პროცესი გაშვებული (Discord-ის დავალებებს ჩვეულებრივ 15 სჭირდება).",
+  "settings.defaultTime.desc": "რამდენი წუთით შენარჩუნდეს პროცესი. ნაგულისხმევია 16 და არა 15: Discord-ის ქვესტები მოითხოვს თამაშის 15 წუთს, მაგრამ Discord-ს შეიძლება ერთ წუთამდე დასჭირდეს ახალი თამაშის შემჩნევისთვის, ამიტომ ზუსტად 15 საკმარისი არ არის.",
+  "settings.smartTimer": "ჭკვიანი ტაიმერი",
+  "settings.smartTimer.desc": "ათვლა იწყება მაშინ, როდესაც Discord შეამჩნევს decoy-ს და არა მისი გაშვების მომენტში. ამის გასაგებად, აპლიკაცია კითხულობს მხოლოდ გაშვებული თამაშის შესახებ ხაზებს Discord-ის ლოკალური ჟურნალიდან; არაფერი ინახება და არ იგზავნება არსად.",
+  "settings.updates": "განახლებები",
+  "settings.checkNow": "შემოწმება ახლავე",
+  "settings.autoUpdate": "ავტომატური განახლება",
+  "settings.autoUpdate.desc": "შეამოწმეთ GitHub გაშვებისას და ყოველ 6 საათში და ჩამოტვირთეთ ახალი ვერსიები ფონურ რეჟიმში. ინსტალაცია ყოველთვის ელოდება თქვენს დადასტურებას, ხოლო ფაილები მოწმდება ციფრული ხელმოწერით.",
+  "update.current": "დაყენებული ვერსია {v}",
+  "update.checking": "მოწმდება…",
+  "update.uptodate": "თქვენ გაქვთ უახლესი ვერსია",
+  "update.available": "ხელმისაწვდომია ვერსია {v}",
+  "update.downloading": "იტვირთება ვერსია {v}… {p}%",
+  "update.ready": "ვერსია {v} მზადაა დასაყენებლად",
+  "update.installing": "ინსტალაცია და გადატვირთვა…",
+  "update.download": "ჩამოტვირთვა",
+  "update.restart": "გადატვირთვა და განახლება",
+  "update.later": "მოგვიანებით",
+  "update.notes": "რა არის ახალი",
+  "update.running": "გაშვებული decoy-ები ({n}) შეჩერდება.",
+  "update.error": "განახლება ვერ მოხერხდა: {e}",
+  "detail.waiting": "Discord-ის მოლოდინში",
+  "detail.waitingNote": "Discord-ს თამაშის შესამჩნევად ერთ წუთამდე სჭირდება. ათვლა იწყება მაშინ, როდესაც ის ხედავს decoy-ს.",
+  "detail.detected": "Discord-მა შეამჩნია decoy",
+  "detail.assumed": "Discord-ს არ დაუდასტურებია, დრო მაინც ითვლება.",
   "settings.autoStop": "ტაიმერით შეჩერება",
   "settings.autoStop.desc": "დროის ამოწურვისას decoy თავისით დაიხურება.",
   "settings.notify": "შეტყობინება დასრულებისას",
@@ -97,7 +113,6 @@
   "settings.files": "ფაილები",
   "settings.open": "გახსნა",
   "settings.legal": "Decoy არ იყენებს თქვენს Discord-ის ტოკენს და არ იღებს დავალებებს თქვენს მაგივრად. თამაშის პროცესის იმიტაცია შეიძლება ეწინააღმდეგებოდეს Discord-ის წესებს, გამოიყენეთ საკუთარი პასუხისმგებლობით.",
-
   "toast.launched": "„{name}“ გაეშვა {n} წუთით. Discord მას დაახლოებით 15 წამში დააფიქსირებს.",
   "toast.stopped": "Decoy შეჩერებულია",
   "toast.allStopped": "ყველა decoy შეჩერებულია",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} თამაშს დაემატა exe ფაილები: {names}",
   "toast.refreshAdded": "ბაზა განახლდა: +{n} ახალი თამაში",
   "toast.refreshUpToDate": "ბაზა უკვე განახლებულია",
-
   "nav.lab": "ლაბორატორია",
   "lab.title": "ლაბორატორია",
   "lab.subtitle": "საიდუმლო ჩანართი: ერთდროულად ბევრ decoy-ს უშვებს.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} თამაშის გაშვება",
   "lab.launching": "ეშვება {done} / {total}…",
   "lab.cancel": "გაუქმება",
-  "lab.warn": "თითოეული decoy ცალკე პროცესია ფანჯრით. ერთდროულად 200–300-ზე მეტმა შეიძლება კომპიუტერი შეანელოს, მაქსიმუმია {max}.",
+  "lab.warn": "თითოეული decoy არის ცალკე პროცესი ფანჯრით. ერთდროულად ზედმეტად ბევრმა შეიძლება გაყინოს თქვენი კომპიუტერი: თითოეული პროცესი და ფანჯარა მოიხმარს მეხსიერებას, და რამდენიმე ათასი ფანჯრის შემდეგ Windows-მა შეიძლება შეწყვიტოს ახლის შექმნა. თუ დახურავთ Decoy-ს, ყველა decoy შეჩერდება.",
+  "lab.all": "ყველა ({n})",
+  "lab.estimate": "{n} decoy გამოიყენებს დაახლოებით {ram} RAM-ს.",
+  "lab.confirm": "დააწკაპუნეთ ხელახლა {n}-ის გასაშვებად",
+  "lab.limit": "Windows-მა შეწყვიტა ახალი პროცესების გაშვება {n}-ის შემდეგ: ეს არის სისტემის ლიმიტი.",
+  "running.more": "…და კიდევ {n}. ნაჩვენებია პირველი 120.",
   "lab.hide": "ჩანართის დამალვა",
   "toast.labUnlocked": "საიდუმლო ჩანართი „ლაბორატორია“ განბლოკილია",
   "toast.labHidden": "ჩანართი დამალულია",
   "toast.labDone": "გაშვებული თამაშები: {n}",
-
   "tray.show": "Decoy-ს გახსნა",
   "tray.stop": "ყველა decoy-ს შეჩერება",
   "tray.quit": "გასვლა",
-
   "notify.title": "დრო ამოიწურა",
   "notify.body": "{name}: გავიდა {n} წთ."
 }

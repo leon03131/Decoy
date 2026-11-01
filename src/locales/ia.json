@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Interlingua" },
-
+  "_meta": {
+    "name": "Interlingua"
+  },
   "nav.library": "Bibliotheca",
   "nav.favorites": "Favoritos",
   "nav.running": "In execution",
   "nav.settings": "Configurationes",
-
   "discord.checking": "Verificante…",
   "discord.up": "In execution",
   "discord.down": "Non active",
-
   "window.minimize": "Minimisar",
   "window.maximize": "Maximisar",
   "window.close": "Clauder",
-
   "tag.live": "In execution",
   "tag.noExe": "sin exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "initiator",
-
   "lib.title": "Bibliotheca",
   "lib.subtitle": "{n} jocos con un processo cognoscite · actualisate {date}",
   "lib.loading": "Cargante le base de datos de jocos…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Adder al favoritos",
   "lib.empty.title": "Nihil trovate",
   "lib.empty.text": "Essaya un altere nomine o activa “Monstrar jocos sin exe”.",
-
   "fav.title": "Favoritos",
   "fav.count": "{n} jocos",
   "fav.hint": "Marca jocos con un stella",
   "fav.empty.title": "Nihil hic ancora",
   "fav.empty.text": "Presse le stella sur un tegula de joco pro adder lo hic.",
-
   "detail.process": "Processo",
   "detail.duration": "Quanto tempore mantener lo",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favorito",
   "detail.close": "Clauder",
   "detail.id": "ID {id}",
-
   "running.title": "In execution",
   "running.count": "{n} decoys active",
   "running.none": "Nihil es in execution justo nunc",
@@ -70,14 +64,36 @@
   "running.stop": "Stoppar",
   "running.empty.title": "Nihil es in execution",
   "running.empty.text": "Aperi un joco in le bibliotheca e presse “Initiar decoy”.",
-
   "settings.title": "Configurationes",
   "settings.general": "General",
   "settings.language": "Lingua",
   "settings.language.desc": "Lingua del interfacie. Nove linguas es addite como files in le dossier locales.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Duration predefinite",
-  "settings.defaultTime.desc": "Quante minutas mantener le processo (le quests de Discord require usualmente 15).",
+  "settings.defaultTime.desc": "Quante minutas retener le processo. Le valor predefinite es 16, non 15: le questas de Discord require 15 minutas de joco, sed Discord require usque a un minuta pro notar un nove joco, ergo exactemente 15 non suffice.",
+  "settings.smartTimer": "Temporisator intelligente",
+  "settings.smartTimer.desc": "Le conto a retro initia quando Discord ha notate le decoy, non quando tu lo initia. Pro saper isto, le application lege solmente le lineas super le joco in execution del registro local de Discord; nihil es immagazinate o inviate alicubi.",
+  "settings.updates": "Actualisationes",
+  "settings.checkNow": "Verificar ora",
+  "settings.autoUpdate": "Actualisationes automatic",
+  "settings.autoUpdate.desc": "Verificar GitHub al initio e cata 6 horas e discargar nove versiones in le fundo. Le installation sempre attende tu confirmation, e le files es verificate per lor signatura digital.",
+  "update.current": "Version installate {v}",
+  "update.checking": "Verificante…",
+  "update.uptodate": "Tu es sur le ultime version",
+  "update.available": "Version {v} es disponibile",
+  "update.downloading": "Discargante version {v}… {p}%",
+  "update.ready": "Version {v} es prest pro installar",
+  "update.installing": "Installante e reinitiante…",
+  "update.download": "Discargar",
+  "update.restart": "Reinitiar e actualisar",
+  "update.later": "Plus tarde",
+  "update.notes": "Novitates",
+  "update.running": "Le decoys in execution ({n}) se arrestara.",
+  "update.error": "Non poteva actualisar: {e}",
+  "detail.waiting": "attendente Discord",
+  "detail.waitingNote": "Discord require usque a un minuta pro notar un joco. Le conto a retro initia quando illo vide le decoy.",
+  "detail.detected": "Discord notava le decoy",
+  "detail.assumed": "Discord non lo ha confirmate, le tempore es contate totevia.",
   "settings.autoStop": "Stoppar con temporisator",
   "settings.autoStop.desc": "Le decoy se termina per se mesme quando le tempore ha expirate.",
   "settings.notify": "Notificar quando terminate",
@@ -97,7 +113,6 @@
   "settings.files": "Files",
   "settings.open": "Aperir",
   "settings.legal": "Decoy non usa tu token de Discord e non accepta quests pro te. Simular le processo de un joco pote contravenir al regulas de Discord, usa lo a tu proprie risco.",
-
   "toast.launched": "“{name}” initiate pro {n} min. Discord deberea remarcar lo in circa 15 secundas.",
   "toast.stopped": "Decoy stoppate",
   "toast.allStopped": "Tote le decoys stoppate",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} jocos recipeva files exe: {names}",
   "toast.refreshAdded": "Base de datos actualisate: +{n} nove jocos",
   "toast.refreshUpToDate": "Le base de datos es jam a die",
-
   "nav.lab": "Laboratorio",
   "lab.title": "Laboratorio",
   "lab.subtitle": "Un scheda secrete: initia multe decoys insimul.",
@@ -115,16 +129,19 @@
   "lab.launch": "Initiar {n} jocos",
   "lab.launching": "Initiante {done} de {total}…",
   "lab.cancel": "Cancellar",
-  "lab.warn": "Cata decoy es un processo separate con un fenestra. Plus de 200–300 insimul pote lentificar tu computator, le maximo es {max}.",
+  "lab.warn": "Cata decoy es un processo separate con un fenestra. Troppo a un sol vice pote gelar tu computator: cata processo e fenestra usa memoria, e post alcun milles de fenestras Windows pote cessar de crear plus. Si tu claude Decoy, tote le decoys se arresta.",
+  "lab.all": "Totes ({n})",
+  "lab.estimate": "{n} decoys usara circa {ram} de RAM.",
+  "lab.confirm": "Clicca de novo pro initiar {n}",
+  "lab.limit": "Windows cessava de initiar nove processos post {n}: ille es le limite del systema.",
+  "running.more": "…e {n} plus. Le prime 120 es monstrate.",
   "lab.hide": "Celar iste scheda",
   "toast.labUnlocked": "Scheda secrete “Laboratorio” disblocate",
   "toast.labHidden": "Scheda celate",
   "toast.labDone": "Jocos initiate: {n}",
-
   "tray.show": "Aperir Decoy",
   "tray.stop": "Stoppar tote le decoys",
   "tray.quit": "Quitar",
-
   "notify.title": "Le tempore ha expirate",
   "notify.body": "{name}: {n} min ha passate."
 }

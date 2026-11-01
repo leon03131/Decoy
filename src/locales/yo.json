@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Yorùbá" },
-
+  "_meta": {
+    "name": "Yorùbá"
+  },
   "nav.library": "Àkójọ",
   "nav.favorites": "Àwọn ayànfẹ́",
   "nav.running": "Ń ṣiṣẹ́",
   "nav.settings": "Àwọn ètò",
-
   "discord.checking": "Ń ṣàyẹ̀wò…",
   "discord.up": "Ń ṣiṣẹ́",
   "discord.down": "Kò ṣiṣẹ́",
-
   "window.minimize": "Ké kéré",
   "window.maximize": "Fẹ̀ síi",
   "window.close": "Tì í",
-
   "tag.live": "Ń ṣiṣẹ́",
   "tag.noExe": "kò sí exe",
   "tag.exeCount": "exe {n}",
   "tag.launcher": "olùbẹ̀rẹ̀",
-
   "lib.title": "Àkójọ",
   "lib.subtitle": "Àwọn eré {n} pẹ̀lú ìlànà tí a mọ̀ · túnṣe ní {date}",
   "lib.loading": "Ń gbé àkójọ eré wọlé…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Fi kún àwọn ayànfẹ́",
   "lib.empty.title": "Kò sí ohun tí a rí",
   "lib.empty.text": "Gbìyànjú orúkọ mìíràn tàbí tan “Fi àwọn eré tí kò ní exe hàn”.",
-
   "fav.title": "Àwọn ayànfẹ́",
   "fav.count": "Eré {n}",
   "fav.hint": "Fi ìràwọ̀ sàmì sí àwọn eré",
   "fav.empty.title": "Kò tíì sí nǹkan níhìn-ín",
   "fav.empty.text": "Tẹ ìràwọ̀ lórí àpótí eré láti fi kún ibí yìí.",
-
   "detail.process": "Ìlànà",
   "detail.duration": "Bí yóò ti pẹ́ tó",
   "detail.minutes": "Ìṣẹ́jú {n}",
@@ -62,7 +57,6 @@
   "detail.favorite": "Ayànfẹ́",
   "detail.close": "Tì í",
   "detail.id": "ID {id}",
-
   "running.title": "Ń ṣiṣẹ́",
   "running.count": "Àwọn decoy tí ń ṣiṣẹ́ {n}",
   "running.none": "Kò sí ohun tí ń ṣiṣẹ́ báyìí",
@@ -70,14 +64,36 @@
   "running.stop": "Dúró",
   "running.empty.title": "Kò sí ohun tí ń ṣiṣẹ́",
   "running.empty.text": "Ṣí eré kan nínú àkójọ kí o sì tẹ “Bẹ̀rẹ̀ decoy”.",
-
   "settings.title": "Àwọn ètò",
   "settings.general": "Gbogbogbò",
   "settings.language": "Èdè",
   "settings.language.desc": "Èdè ojú-ìbòjú. Àwọn èdè tuntun ni a ń fi kún un gẹ́gẹ́ bí fáìlì nínú àpò locales.",
   "settings.stubs": "Àwọn decoy",
   "settings.defaultTime": "Àkókò àkọ́bẹ̀rẹ̀",
-  "settings.defaultTime.desc": "Ìṣẹ́jú mélòó ni yóò fi pa ìlànà mọ́ (àwọn iṣẹ́ Discord sábà máa ń fẹ́ 15).",
+  "settings.defaultTime.desc": "Iye ìṣẹ́jú mélòó láti tọ́jú ìlànà náà. Àkọ́bẹ̀rẹ̀ jẹ́ 16, kì í ṣe 15: àwọn iṣẹ́ Discord ń béèrè fún ìṣẹ́jú 15 ti eré, ṣùgbọ́n Discord nílò tó ìṣẹ́jú kan láti ṣe àkíyèsí eré tuntun, nítorí náà 15 kò tó gangan.",
+  "settings.smartTimer": "Aago ọlọ́gbọ́n",
+  "settings.smartTimer.desc": "Kíkà àkókò yóò bẹ̀rẹ̀ nígbà tí Discord bá ti kíyèsí decoy náà, kì í ṣe nígbà tí o bẹ̀rẹ̀ rẹ̀. Láti mọ ìyẹn, ètò náà ka àwọn ìlà nípa eré tí ń ṣiṣẹ́ láti inú àkọsílẹ̀ agbègbè Discord nìkan; a kò fi ohun kankan pamọ́ tàbí fi ránṣẹ́ sí ibikíbi.",
+  "settings.updates": "Àwọn àtúnṣe",
+  "settings.checkNow": "Ṣàyẹ̀wò báyìí",
+  "settings.autoUpdate": "Àwọn àtúnṣe aládàáṣe",
+  "settings.autoUpdate.desc": "Ṣàyẹ̀wò GitHub ní ìbẹ̀rẹ̀ àti ní gbogbo wákàtí 6 kí o sì gba àwọn ẹ̀yà tuntun sílẹ̀ ní abẹ́lẹ̀. Fífi sórí ẹ̀rọ máa ń dúró de ìfìdímu rẹ nígbà gbogbo, a sì fìdí àwọn fáìlì mú pẹ̀lú ìfọwọ́sí oní-nọ́mbà wọn.",
+  "update.current": "Ẹ̀yà tí a fi sórí ẹ̀rọ {v}",
+  "update.checking": "Ń ṣàyẹ̀wò…",
+  "update.uptodate": "O wà lórí ẹ̀yà tuntun",
+  "update.available": "Ẹ̀yà {v} wà lárọ̀ọ́wọ́tó",
+  "update.downloading": "Ń gba ẹ̀yà {v} sílẹ̀… {p}%",
+  "update.ready": "Ẹ̀yà {v} ti ṣetán láti fi sórí ẹ̀rọ",
+  "update.installing": "Ń fi sórí ẹ̀rọ àti tún bẹ̀rẹ̀…",
+  "update.download": "Gba sílẹ̀",
+  "update.restart": "Tún bẹ̀rẹ̀ kí o sì ṣe àtúnṣe",
+  "update.later": "Nígbà mìíràn",
+  "update.notes": "Kí ló tuntun",
+  "update.running": "Àwọn decoy tí ń ṣiṣẹ́ ({n}) yóò dúró.",
+  "update.error": "Kò le ṣe àtúnṣe: {e}",
+  "detail.waiting": "ń dúró de Discord",
+  "detail.waitingNote": "Discord nílò tó ìṣẹ́jú kan láti ṣe àkíyèsí eré. Kíkà àkókò máa ń bẹ̀rẹ̀ nígbà tí ó bá rí decoy náà.",
+  "detail.detected": "Discord ṣe àkíyèsí decoy náà",
+  "detail.assumed": "Discord kò tíì fìdí rẹ̀ mú, a ṣì ka àkókò náà síbẹ̀.",
   "settings.autoStop": "Dá dúró nípa àago",
   "settings.autoStop.desc": "Decoy yóò parí fúnra rẹ̀ nígbà tí àkókò bá kọjá.",
   "settings.notify": "Fi ìfitónilétí ránṣẹ́ nígbà tí ó bá parí",
@@ -97,7 +113,6 @@
   "settings.files": "Àwọn fáìlì",
   "settings.open": "Ṣí i",
   "settings.legal": "Decoy kò lo àmì-ìdánimọ̀ Discord rẹ bẹ́ẹ̀ kò gba àwọn iṣẹ́ fún ọ. Fífi àfarawé ìlànà eré ṣe lè lòdì sí àwọn òfin Discord, lò ó lórí ewu ara rẹ.",
-
   "toast.launched": "“{name}” bẹ̀rẹ̀ fún ìṣẹ́jú {n}. Discord yẹ kí ó kíyèsí i láàárín ìṣẹ́jú-àáyá 15.",
   "toast.stopped": "Decoy ti dúró",
   "toast.allStopped": "Gbogbo decoy ti dúró",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "Àwọn eré {n} gba fáìlì exe: {names}",
   "toast.refreshAdded": "Àkójọ dátà ti túnṣe: +{n} àwọn eré tuntun",
   "toast.refreshUpToDate": "Àkójọ dátà ti wà ní àkókò",
-
   "nav.lab": "Yàrá-àdánwò",
   "lab.title": "Yàrá-àdánwò",
   "lab.subtitle": "Àbùdá àkànṣe: ó ń bẹ̀rẹ̀ ọ̀pọ̀lọpọ̀ decoy ní ẹ̀ẹ̀kan náà.",
@@ -115,16 +129,19 @@
   "lab.launch": "Bẹ̀rẹ̀ eré {n}",
   "lab.launching": "Ń bẹ̀rẹ̀ {done} nínú {total}…",
   "lab.cancel": "Fagilee",
-  "lab.warn": "Gbogbo decoy jẹ́ ìlànà ọ̀tọ̀ọ̀tọ̀ pẹ̀lú fèrèsé. Ju 200–300 ní ẹ̀ẹ̀kan náà lè fa kí kọ̀ǹpútà rẹ lọ́ra, iye tó pọ̀ jù ni {max}.",
+  "lab.warn": "Decoy kọ̀ọ̀kan jẹ́ ìlànà ọ̀tọ̀ọ̀tọ̀ pẹ̀lú fèrèsé kan. Púpọ̀ jù lẹ́ẹ̀kan náà le mú kọ̀mpútà rẹ dì: ìlànà àti fèrèsé kọ̀ọ̀kan ń lo ìrántí, lẹ́yìn ẹgbẹẹgbẹ̀rún fèrèsé díẹ̀ Windows le dáwọ́ dídá àwọn mìíràn dúró. Bí o bá ti Decoy, gbogbo decoy yóò dúró.",
+  "lab.all": "Gbogbo rẹ̀ ({n})",
+  "lab.estimate": "Àwọn decoy {n} yóò lo nǹkan bí {ram} ti RAM.",
+  "lab.confirm": "Tẹ́ ẹ lẹ́ẹ̀kan síi láti bẹ̀rẹ̀ {n}",
+  "lab.limit": "Windows dáwọ́ bíbẹ̀rẹ̀ àwọn ìlànà tuntun dúró lẹ́yìn {n}: ìyẹn ni ààlà ètò náà.",
+  "running.more": "…àti {n} síi. Àwọn 120 àkọ́kọ́ ni a fi hàn.",
   "lab.hide": "Fipamọ́ àbùdá yìí",
   "toast.labUnlocked": "A ti ṣí àbùdá àkànṣe “Yàrá-àdánwò” sílẹ̀",
   "toast.labHidden": "A ti fi àbùdá pamọ́",
   "toast.labDone": "Àwọn eré tí a bẹ̀rẹ̀: {n}",
-
   "tray.show": "Ṣí Decoy",
   "tray.stop": "Dá gbogbo decoy dúró",
   "tray.quit": "Jáde",
-
   "notify.title": "Àkókò ti kọjá",
   "notify.body": "{name}: ìṣẹ́jú {n} ti kọjá."
 }

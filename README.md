@@ -44,8 +44,13 @@ public detection list and keeps it up to date by itself.
   list view, favorites and a "Recent" row.
 - **One click.** Pick a game, pick the executable (if there are several), choose how long to keep it and press start.
   A countdown ring and a notification tell you when the time is up.
-- **Leaves nothing behind.** A decoy only exists while it runs: the tiny exe is created on start and deleted on
-  stop. Everything is stopped when you quit, and leftovers from a crash are swept on the next launch.
+- **Smart timer.** Discord needs a while to notice a new game, so the countdown can start only once Discord has actually
+  seen the decoy (the default time is 16 minutes: 15 for a typical "play for 15 minutes" task plus a minute of margin).
+- **Leaves nothing behind, never gets stuck.** A decoy only exists while it runs: the tiny exe is created on start and
+  deleted on stop. Decoys cannot outlive Decoy: they quit by themselves when it closes, crashes or is killed from Task
+  Manager, and anything left over is swept on the next launch.
+- **Updates itself, safely.** New versions are found on GitHub, downloaded in the background and installed when you
+  confirm. Every update is checked against a digital signature first (installed and portable copies both).
 - **Quiet.** Lives in the system tray, no windows or taskbar buttons for the decoys themselves.
 - **Speaks 178 languages.** The interface and this README are translated into 170+ languages, including right-to-left
   ones. Almost all of it is machine-translated, so corrections are very welcome. Adding a language is a single JSON
@@ -74,9 +79,11 @@ public detection list and keeps it up to date by itself.
    `.../cod26-cod.exe`.
 3. The stand-in does nothing except own one top-level window, parked far off-screen so you never see it. Discord
    only recognizes a process that owns a window, which is why a completely windowless process is ignored.
-4. Within roughly 15 seconds Discord shows the game as your current activity.
-5. When the timer ends or you press stop, Decoy ends the process and deletes the file. A Windows job object makes
-   sure decoys die together with Decoy, even if it crashes.
+4. Within roughly 15 seconds Discord shows the game as your current activity. With the *smart timer* on, Decoy sees
+   that moment in Discord's own local log and starts the countdown then.
+5. When the timer ends or you press stop, Decoy ends the process and deletes the file. Decoys are started with their
+   parent's process id and exit on their own when that process is gone; they also sit in a Windows job object, and
+   Decoy sweeps leftovers at start. So no decoy can be left running after Decoy is closed, whatever the reason.
 
 ## Install
 
@@ -98,9 +105,11 @@ Windows 10 updates).
 ## Usage
 
 1. Open **Library** and search for a game, or press `Ctrl` + `K` from anywhere.
-2. Click a game. In the panel on the right choose the process and how many minutes to hold it (Discord activities
-   usually ask for 15).
-3. Press **Start decoy**. Discord will show the game after a few seconds.
+2. Click a game. In the panel on the right choose the process and how many minutes to hold it. The default is **16**,
+   not 15: tasks ask for 15 minutes of play, but Discord needs up to a minute to notice a new game, so exactly 15 is
+   not enough.
+3. Press **Start decoy**. Discord will show the game after a few seconds; the ring first spins while Decoy waits for
+   Discord to notice it, then counts down.
 4. Watch it under **Running**, stop one or all at any time, or just leave Decoy in the tray.
 
 Games whose Discord entry has no executables yet are hidden by default (they cannot be detected). Turn on
@@ -126,8 +135,13 @@ cd Decoy
 npm install
 
 npm run tauri dev      # run in development mode with hot reload
-npm run tauri build    # produce the installer in src-tauri/target/release/bundle/nsis
+npm run build:local    # build the installer without update signing -> src-tauri/target/release/bundle/nsis
 ```
+
+`npm run tauri build` makes the signed update files used for releases and therefore needs the maintainer's signing key
+(see [docs/RELEASING.md](docs/RELEASING.md)); for your own builds use `build:local`. A build you make yourself cannot
+install maintainer updates, and an official update would replace it; turn off *Automatic updates* in Settings if you
+want to keep your own build.
 
 Useful checks:
 
@@ -172,8 +186,12 @@ docs/                   translating guide, screenshots
 ## Privacy
 
 - Decoy only uses the network to download Discord's public detection list (on first start, then at most once a day
-  or when you press refresh) and, for display, game icons and artwork from Discord's public CDN.
-- It does not read, store or send your Discord token or any account data, and it does not talk to the Discord client.
+  or when you press refresh), for display game icons and artwork from Discord's public CDN, and to look for updates
+  on this repository's GitHub releases (at startup and every 6 hours; update files are checked against a signature).
+- It never touches your Discord token or account. The smart timer reads one local file, Discord's own log
+  (`%APPDATA%\discord\logs\renderer_js.log`, also the PTB/Canary variants), only to see the lines that say which game
+  Discord is showing. Nothing from that file is stored or sent anywhere. Turn off *Smart timer* in Settings and Decoy
+  never opens it.
 - Settings (favorites, language, durations) are stored locally in the app's WebView storage; the game list cache and
   temporary decoy files live in `%LOCALAPPDATA%\app.decoy.desktop`.
 - No analytics, no crash reporting, no accounts.
@@ -181,6 +199,9 @@ docs/                   translating guide, screenshots
 ## Known limitations
 
 - Discord can change how detection works at any time. If a decoy stops being recognized, please open an issue.
+- The smart timer depends on what Discord writes to its log, and Discord only logs the game it currently shows. If it
+  cannot confirm a decoy within 90 seconds, Decoy starts the countdown anyway. Batches in the Lab do not use it.
+- Thousands of decoys at once (Lab) use memory and windows; Windows may refuse to create more after some thousands.
 - Some activities need more than a running process (for example being inside a particular experience of a game
   platform). Decoy only imitates the process.
 - Entries without executables in Discord's list cannot be detected.

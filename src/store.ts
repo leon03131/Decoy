@@ -11,6 +11,22 @@ export interface Settings {
   notify: boolean;
   closeToTray: boolean;
   showNoExe: boolean;
+  /** start the countdown when Discord has noticed the decoy (read from Discord's local log) */
+  smartTimer: boolean;
+  /** look for new versions on GitHub and download them in the background */
+  autoUpdate: boolean;
+}
+
+export type UpdateStatus = "idle" | "checking" | "uptodate" | "available" | "downloading" | "ready" | "installing" | "error";
+
+export interface UpdateState {
+  status: UpdateStatus;
+  version?: string;
+  notes?: string | null;
+  /** 0..1 while downloading (undefined when the size is unknown) */
+  progress?: number;
+  error?: string;
+  checkedMs?: number;
 }
 
 export interface Toast {
@@ -34,7 +50,10 @@ interface State {
   viewMode: "grid" | "list";
   lang: string;
   secret: boolean;
+  /** an update the user postponed with "Later": its banner stays hidden */
+  dismissedUpdate: string | null;
   // session
+  update: UpdateState;
   /** bumped when a language file finishes loading, so translated text re-renders */
   langRev: number;
   games: IndexedGame[];
@@ -65,6 +84,10 @@ interface State {
   refreshGames: () => Promise<void>;
   syncRunning: () => Promise<void>;
   setDiscordUp: (v: boolean) => void;
+  checkUpdate: (manual?: boolean) => Promise<void>;
+  downloadUpdate: () => Promise<void>;
+  installUpdate: () => Promise<void>;
+  dismissUpdate: () => void;
 }
 
 const index = (games: Game[]): IndexedGame[] =>
@@ -85,7 +108,10 @@ export const useStore = create<State>()(
       favorites: [],
       recent: [],
       lastExe: {},
-      settings: { minutes: 15, autoStop: true, notify: true, closeToTray: true, showNoExe: false },
+      // 16, not 15: quests ask for 15 minutes of play, and Discord needs up to a minute to notice a new game
+      settings: { minutes: 16, autoStop: true, notify: true, closeToTray: true, showNoExe: false, smartTimer: true, autoUpdate: true },
+      dismissedUpdate: null,
+      update: { status: "idle" },
       viewMode: "grid",
       lang: detectLang(),
       secret: false,
@@ -165,10 +191,72 @@ export const useStore = create<State>()(
         }
       },
       setDiscordUp: (discordUp) => set({ discordUp }),
+
+      // ---- updates (signed, from GitHub releases; see src-tauri/src/update.rs)
+      checkUpdate: async (manual = false) => {
+        const busy = get().update.status;
+        if (busy === "checking" || busy === "downloading" || busy === "installing") return;
+        const { tr, toast } = get();
+        set({ update: { ...get().update, status: "checking", error: undefined } });
+        try {
+          const info = await api.checkUpdate();
+          if (!info) {
+            set({ update: { status: "uptodate", checkedMs: Date.now() } });
+            if (manual) toast("ok", tr("update.uptodate"));
+            return;
+          }
+          const base = { version: info.version, notes: info.notes, checkedMs: Date.now() };
+          if (info.ready) {
+            set({ update: { ...base, status: "ready", progress: 1 } });
+          } else if (get().settings.autoUpdate || manual) {
+            set({ update: { ...base, status: "downloading", progress: 0 } });
+            await get().downloadUpdate();
+          } else {
+            set({ update: { ...base, status: "available" } });
+          }
+        } catch (e) {
+          set({ update: { status: "error", error: String(e), checkedMs: Date.now() } });
+          if (manual) toast("error", tr("update.error", { e: String(e) }));
+        }
+      },
+
+      downloadUpdate: async () => {
+        const cur = get().update;
+        set({ update: { ...cur, status: "downloading", progress: cur.progress ?? 0 } });
+        try {
+          await api.downloadUpdate();
+          set((s) => ({ update: { ...s.update, status: "ready", progress: 1 } }));
+        } catch (e) {
+          set((s) => ({ update: { ...s.update, status: "error", error: String(e) } }));
+          get().toast("error", get().tr("update.error", { e: String(e) }));
+        }
+      },
+
+      installUpdate: async () => {
+        set((s) => ({ update: { ...s.update, status: "installing" } }));
+        try {
+          await api.installUpdate(); // the app restarts; this only returns on failure
+        } catch (e) {
+          set((s) => ({ update: { ...s.update, status: "error", error: String(e) } }));
+          get().toast("error", get().tr("update.error", { e: String(e) }));
+        }
+      },
+
+      dismissUpdate: () => set((s) => ({ dismissedUpdate: s.update.version ?? null })),
     }),
     {
       name: "decoy-state",
-      partialize: (s) => ({ favorites: s.favorites, recent: s.recent, lastExe: s.lastExe, settings: s.settings, viewMode: s.viewMode, lang: s.lang, secret: s.secret }),
+      version: 2,
+      // v1 -> v2: the default duration became 16 minutes (quests need 15, Discord needs up to a minute to notice the game)
+      migrate: (persisted, version) => {
+        const s = persisted as { settings?: Partial<Settings> } | undefined;
+        if (s?.settings) {
+          if (version < 2 && s.settings.minutes === 15) s.settings.minutes = 16;
+          s.settings = { smartTimer: true, autoUpdate: true, ...s.settings };
+        }
+        return persisted as never;
+      },
+      partialize: (s) => ({ favorites: s.favorites, recent: s.recent, lastExe: s.lastExe, settings: s.settings, viewMode: s.viewMode, lang: s.lang, secret: s.secret, dismissedUpdate: s.dismissedUpdate }),
     },
   ),
 );

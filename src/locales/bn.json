@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "বাংলা" },
-
+  "_meta": {
+    "name": "বাংলা"
+  },
   "nav.library": "লাইব্রেরি",
   "nav.favorites": "প্রিয়",
   "nav.running": "চলমান",
   "nav.settings": "সেটিংস",
-
   "discord.checking": "যাচাই করা হচ্ছে…",
   "discord.up": "চলছে",
   "discord.down": "চলছে না",
-
   "window.minimize": "মিনিমাইজ",
   "window.maximize": "ম্যাক্সিমাইজ",
   "window.close": "বন্ধ করুন",
-
   "tag.live": "চলমান",
   "tag.noExe": "exe নেই",
   "tag.exeCount": "{n}টি exe",
   "tag.launcher": "লঞ্চার",
-
   "lib.title": "লাইব্রেরি",
   "lib.subtitle": "পরিচিত প্রসেসযুক্ত {n}টি গেম · আপডেট: {date}",
   "lib.loading": "গেম ডেটাবেস লোড হচ্ছে…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "প্রিয়তে যোগ করুন",
   "lib.empty.title": "কিছু পাওয়া যায়নি",
   "lib.empty.text": "অন্য নাম দিয়ে চেষ্টা করুন অথবা “exe ছাড়া গেমগুলো দেখান” চালু করুন।",
-
   "fav.title": "প্রিয়",
   "fav.count": "{n}টি গেম",
   "fav.hint": "স্টার দিয়ে গেম চিহ্নিত করুন",
   "fav.empty.title": "এখানে এখনও কিছু নেই",
   "fav.empty.text": "এখানে যোগ করতে কোনো গেমের টাইলে থাকা স্টারে চাপ দিন।",
-
   "detail.process": "প্রসেস",
   "detail.duration": "কতক্ষণ চালু রাখা হবে",
   "detail.minutes": "{n} মিনিট",
@@ -62,7 +57,6 @@
   "detail.favorite": "প্রিয়",
   "detail.close": "বন্ধ করুন",
   "detail.id": "ID {id}",
-
   "running.title": "চলমান",
   "running.count": "{n}টি সক্রিয় Decoy",
   "running.none": "বর্তমানে কিছুই চলছে না",
@@ -70,14 +64,36 @@
   "running.stop": "বন্ধ করুন",
   "running.empty.title": "কিছুই চলছে না",
   "running.empty.text": "লাইব্রেরি থেকে একটি গেম খুলুন এবং “Decoy চালু করুন”-এ চাপ দিন।",
-
   "settings.title": "সেটিংস",
   "settings.general": "সাধারণ",
   "settings.language": "ভাষা",
   "settings.language.desc": "ইন্টারফেসের ভাষা। locales ফোল্ডারে ফাইল হিসেবে নতুন ভাষা যোগ করা যায়।",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "ডিফল্ট সময়কাল",
-  "settings.defaultTime.desc": "প্রসেসটি কত মিনিট চালু রাখা হবে (Discord কোয়েস্টে সাধারণত ১৫ মিনিট লাগে)।",
+  "settings.defaultTime.desc": "প্রসেসটি কত মিনিট চালু রাখতে হবে। ডিফল্ট হলো ১৬, ১৫ নয়: Discord কোয়েস্টে ১৫ মিনিট খেলার প্রয়োজন হয়, কিন্তু নতুন গেম শনাক্ত করতে Discord-এর এক মিনিট পর্যন্ত সময় লাগতে পারে, তাই ঠিক ১৫ মিনিটে ঘাটতি পড়ে।",
+  "settings.smartTimer": "স্মার্ট টাইমার",
+  "settings.smartTimer.desc": "আপনি চালু করার সাথে সাথে নয়, বরং Discord যখন decoy শনাক্ত করে তখন কাউন্টডাউন শুরু হয়। এটি জানতে অ্যাপটি Discord-এর স্থানীয় লগ থেকে কেবল চলমান গেম সম্পর্কিত লাইনগুলো পড়ে; কোনো কিছুই কোথাও সংরক্ষণ বা পাঠানো হয় না।",
+  "settings.updates": "আপডেট",
+  "settings.checkNow": "এখনই পরীক্ষা করুন",
+  "settings.autoUpdate": "স্বয়ংক্রিয় আপডেট",
+  "settings.autoUpdate.desc": "শুরুতে এবং প্রতি ৬ ঘণ্টা পর পর GitHub পরীক্ষা করুন এবং ব্যাকগ্রাউন্ডে নতুন সংস্করণ ডাউনলোড করুন। ইনস্টলেশন সর্বদা আপনার অনুমোদনের অপেক্ষা করে এবং ফাইলগুলো ডিজিটাল স্বাক্ষর দ্বারা যাচাই করা হয়।",
+  "update.current": "ইনস্টল করা সংস্করণ {v}",
+  "update.checking": "যাচাই করা হচ্ছে…",
+  "update.uptodate": "আপনি সর্বশেষ সংস্করণে আছেন",
+  "update.available": "সংস্করণ {v} উপলব্ধ",
+  "update.downloading": "সংস্করণ {v} ডাউনলোড হচ্ছে… {p}%",
+  "update.ready": "সংস্করণ {v} ইনস্টল করতে প্রস্তুত",
+  "update.installing": "ইনস্টল ও রিস্টার্ট হচ্ছে…",
+  "update.download": "ডাউনলোড",
+  "update.restart": "রিস্টার্ট এবং আপডেট",
+  "update.later": "পরে",
+  "update.notes": "নতুন কি আছে",
+  "update.running": "চলমান decoy ({n}) বন্ধ হয়ে যাবে।",
+  "update.error": "আপডেট করা যায়নি: {e}",
+  "detail.waiting": "Discord-এর জন্য অপেক্ষমাণ",
+  "detail.waitingNote": "গেম শনাক্ত করতে Discord-এর এক মিনিট পর্যন্ত সময় লাগতে পারে। decoy দেখার পর কাউন্টডাউন শুরু হয়।",
+  "detail.detected": "Discord decoy শনাক্ত করেছে",
+  "detail.assumed": "Discord নিশ্চিত করেনি, তবে সময় গণনা চালিয়ে যাওয়া হচ্ছে।",
   "settings.autoStop": "টাইমার শেষে বন্ধ করুন",
   "settings.autoStop.desc": "সময় শেষ হলে Decoy স্বয়ংক্রিয়ভাবে বন্ধ হয়ে যাবে।",
   "settings.notify": "শেষ হলে বিজ্ঞপ্তি দিন",
@@ -97,7 +113,6 @@
   "settings.files": "ফাইল",
   "settings.open": "খুলুন",
   "settings.legal": "Decoy আপনার Discord টোকেন ব্যবহার করে না এবং আপনার হয়ে কোয়েস্ট গ্রহণ করে না। গেম প্রসেস নকল করা Discord-এর নিয়মের পরিপন্থী হতে পারে, নিজ ঝুঁকিতে ব্যবহার করুন।",
-
   "toast.launched": "“{name}” {n} মিনিটের জন্য চালু করা হয়েছে। প্রায় ১৫ সেকেন্ডের মধ্যে Discord এটি শনাক্ত করবে।",
   "toast.stopped": "Decoy বন্ধ করা হয়েছে",
   "toast.allStopped": "সব Decoy বন্ধ করা হয়েছে",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n}টি গেমের exe ফাইল পাওয়া গেছে: {names}",
   "toast.refreshAdded": "ডেটাবেস আপডেট হয়েছে: +{n}টি নতুন গেম",
   "toast.refreshUpToDate": "ডেটাবেস ইতিমধ্যেই আপ-টু-ডেট আছে",
-
   "nav.lab": "ল্যাব",
   "lab.title": "ল্যাব",
   "lab.subtitle": "একটি গোপন ট্যাব: একসাথে অনেকগুলো Decoy চালু করে।",
@@ -115,16 +129,19 @@
   "lab.launch": "{n}টি গেম চালু করুন",
   "lab.launching": "{total}-এর মধ্যে {done}টি চালু হচ্ছে…",
   "lab.cancel": "বাতিল",
-  "lab.warn": "প্রতিটি Decoy একটি উইন্ডোসহ আলাদা প্রসেস। একসাথে ২০০–৩০০টির বেশি চালালে আপনার কম্পিউটার ধীরগতির হতে পারে, সর্বোচ্চ সীমা {max}।",
+  "lab.warn": "প্রতিটি decoy হলো উইন্ডো সহ একটি পৃথক প্রসেস। একসাথে অনেক বেশি চালু করলে কম্পিউটার হ্যাং হতে পারে: প্রতিটি প্রসেস এবং উইন্ডো মেমরি ব্যবহার করে, এবং কয়েক হাজার উইন্ডোর পর Windows নতুন তৈরি করা বন্ধ করে দিতে পারে। আপনি Decoy বন্ধ করলে সব decoy বন্ধ হয়ে যাবে।",
+  "lab.all": "সব ({n})",
+  "lab.estimate": "{n}টি decoy আনুমানিক {ram} RAM ব্যবহার করবে।",
+  "lab.confirm": "{n} চালু করতে আবার ক্লিক করুন",
+  "lab.limit": "{n}টির পর Windows নতুন প্রসেস চালু করা বন্ধ করে দিয়েছে: এটি সিস্টেমের সীমা।",
+  "running.more": "…এবং আরও {n}টি। প্রথম ১২০টি দেখানো হচ্ছে।",
   "lab.hide": "এই ট্যাবটি লুকান",
   "toast.labUnlocked": "গোপন “ল্যাব” ট্যাব আনলক করা হয়েছে",
   "toast.labHidden": "ট্যাবটি লুকানো হয়েছে",
   "toast.labDone": "চালু হওয়া গেম: {n}",
-
   "tray.show": "Decoy খুলুন",
   "tray.stop": "সব Decoy বন্ধ করুন",
   "tray.quit": "প্রস্থান",
-
   "notify.title": "সময় শেষ",
   "notify.body": "{name}: {n} মিনিট পার হয়েছে।"
 }

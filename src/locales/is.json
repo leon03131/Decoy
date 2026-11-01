@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Íslenska" },
-
+  "_meta": {
+    "name": "Íslenska"
+  },
   "nav.library": "Safn",
   "nav.favorites": "Eftirlæti",
   "nav.running": "Í gangi",
   "nav.settings": "Stillingar",
-
   "discord.checking": "Athugar…",
   "discord.up": "Í gangi",
   "discord.down": "Ekki í gangi",
-
   "window.minimize": "Lágmarka",
   "window.maximize": "Hámarka",
   "window.close": "Loka",
-
   "tag.live": "Í gangi",
   "tag.noExe": "engin exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "ræsir",
-
   "lib.title": "Safn",
   "lib.subtitle": "{n} leikir með þekkt ferli · uppfært {date}",
   "lib.loading": "Hleður leikjagagnagrunni…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Bæta í eftirlæti",
   "lib.empty.title": "Ekkert fannst",
   "lib.empty.text": "Prófaðu annað nafn eða kveiktu á „Sýna leiki án exe“.",
-
   "fav.title": "Eftirlæti",
   "fav.count": "{n} leikir",
   "fav.hint": "Stjörnumerktu leiki",
   "fav.empty.title": "Ekkert hér ennþá",
   "fav.empty.text": "Smelltu á stjörnuna á leikjareit til að bæta honum hér við.",
-
   "detail.process": "Ferli",
   "detail.duration": "Hversu lengi á að halda því",
   "detail.minutes": "{n} mín",
@@ -62,7 +57,6 @@
   "detail.favorite": "Eftirlæti",
   "detail.close": "Loka",
   "detail.id": "ID {id}",
-
   "running.title": "Í gangi",
   "running.count": "{n} virk decoy",
   "running.none": "Ekkert er í gangi núna",
@@ -70,14 +64,36 @@
   "running.stop": "Stöðva",
   "running.empty.title": "Ekkert er í gangi",
   "running.empty.text": "Opnaðu leik í safninu og smelltu á „Ræsa decoy“.",
-
   "settings.title": "Stillingar",
   "settings.general": "Almennt",
   "settings.language": "Tungumál",
   "settings.language.desc": "Tungumál viðmóts. Nýjum tungumálum er bætt við sem skrám í locales-möppunni.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "Sjálfgefin tímalengd",
-  "settings.defaultTime.desc": "Hversu margar mínútur á að halda ferlinu gangandi (Discord-verkefni þurfa yfirleitt 15).",
+  "settings.defaultTime.desc": "Hversu margar mínútur á að halda ferlinu gangandi. Sjálfgefið er 16, ekki 15: Discord-verkefni biðja um 15 mínútna spilun, en Discord þarf allt að eina mínútu til að taka eftir nýjum leik, svo nákvæmlega 15 dugar ekki.",
+  "settings.smartTimer": "Snjalltímamælir",
+  "settings.smartTimer.desc": "Niðurtalning hefst þegar Discord hefur tekið eftir decoy, ekki þegar þú ræsir það. Til að vita það les forritið aðeins línurnar um leikinn sem er í gangi úr staðværum annál Discord; ekkert er vistað eða sent neitt.",
+  "settings.updates": "Uppfærslur",
+  "settings.checkNow": "Athuga núna",
+  "settings.autoUpdate": "Sjálfvirkar uppfærslur",
+  "settings.autoUpdate.desc": "Athugaðu GitHub við ræsingu og á 6 klukkustunda fresti og halaðu niður nýjum útgáfum í bakgrunni. Uppsetning bíður alltaf eftir staðfestingu þinni og skrár eru sannreyndar með stafrænni undirskrift þeirra.",
+  "update.current": "Uppsett útgáfa {v}",
+  "update.checking": "Athugar…",
+  "update.uptodate": "Þú ert með nýjustu útgáfuna",
+  "update.available": "Útgáfa {v} er í boði",
+  "update.downloading": "Halar niður útgáfu {v}… {p}%",
+  "update.ready": "Útgáfa {v} er tilbúin til uppsetningar",
+  "update.installing": "Setur upp og endurræsir…",
+  "update.download": "Hala niður",
+  "update.restart": "Endurræsa og uppfæra",
+  "update.later": "Seinna",
+  "update.notes": "Hvað er nýtt",
+  "update.running": "Decoy í gangi ({n}) munu stöðvast.",
+  "update.error": "Gat ekki uppfært: {e}",
+  "detail.waiting": "bíður eftir Discord",
+  "detail.waitingNote": "Discord þarf allt að eina mínútu til að taka eftir leik. Niðurtalning hefst þegar það sér decoy.",
+  "detail.detected": "Discord tók eftir decoy",
+  "detail.assumed": "Discord hefur ekki staðfest það, tíminn er samt talinn.",
   "settings.autoStop": "Stöðva á tímamæli",
   "settings.autoStop.desc": "Decoy stöðvast sjálfkrafa þegar tíminn er liðinn.",
   "settings.notify": "Láta vita þegar lokið er",
@@ -97,7 +113,6 @@
   "settings.files": "Skrár",
   "settings.open": "Opna",
   "settings.legal": "Decoy notar ekki Discord-tákn þitt (token) og tekur ekki við verkefnum fyrir þig. Að herma eftir leikjaferli gæti brotið gegn reglum Discord; notkun er á eigin ábyrgð.",
-
   "toast.launched": "„{name}“ ræst í {n} mín. Discord ætti að taka eftir því eftir um 15 sekúndur.",
   "toast.stopped": "Decoy stöðvað",
   "toast.allStopped": "Öll decoy stöðvuð",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} leikir fengu exe-skrár: {names}",
   "toast.refreshAdded": "Gagnagrunnur uppfærður: +{n} nýir leikir",
   "toast.refreshUpToDate": "Gagnagrunnurinn er þegar uppfærður",
-
   "nav.lab": "Tilraunastofa",
   "lab.title": "Tilraunastofa",
   "lab.subtitle": "Leynilegur flipi: ræsir mörg decoy samtímis.",
@@ -115,16 +129,19 @@
   "lab.launch": "Ræsa {n} leiki",
   "lab.launching": "Ræsir {done} af {total}…",
   "lab.cancel": "Hætta við",
-  "lab.warn": "Hvert decoy er sérstakt ferli með glugga. Fleiri en 200–300 samtímis gætu hægt á tölvunni þinni; hámarkið er {max}.",
+  "lab.warn": "Hvert decoy er sérstakt ferli með glugga. Of mörg í einu geta fryst tölvuna þína: hvert ferli og gluggi notar minni, og eftir nokkur þúsund glugga gæti Windows hætt að búa til fleiri. Ef þú lokar Decoy stöðvast öll decoy.",
+  "lab.all": "Allt ({n})",
+  "lab.estimate": "{n} decoy munu nota um það bil {ram} af vinnsluminni.",
+  "lab.confirm": "Smelltu aftur til að ræsa {n}",
+  "lab.limit": "Windows hætti að ræsa ný ferli eftir {n}: það eru kerfistakmörkin.",
+  "running.more": "…og {n} fleiri. Fyrstu 120 eru sýndir.",
   "lab.hide": "Fela þennan flipa",
   "toast.labUnlocked": "Leynilegi flipinn „Tilraunastofa“ opnaður",
   "toast.labHidden": "Flipi falinn",
   "toast.labDone": "Leikir ræstir: {n}",
-
   "tray.show": "Opna Decoy",
   "tray.stop": "Stöðva öll decoy",
   "tray.quit": "Hætta",
-
   "notify.title": "Tíminn er búinn",
   "notify.body": "{name}: {n} mín eru liðnar."
 }

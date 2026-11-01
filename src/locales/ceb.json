@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Binisaya" },
-
+  "_meta": {
+    "name": "Binisaya"
+  },
   "nav.library": "Library",
   "nav.favorites": "Mga Paborito",
   "nav.running": "Nagalihok",
   "nav.settings": "Mga Setting",
-
   "discord.checking": "Gisusi…",
   "discord.up": "Nagalihok",
   "discord.down": "Wala nagalihok",
-
   "window.minimize": "I-minimize",
   "window.maximize": "I-maximize",
   "window.close": "Iserado",
-
   "tag.live": "Nagalihok",
   "tag.noExe": "walay exe",
   "tag.exeCount": "{n} ka exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Library",
   "lib.subtitle": "{n} ka dula nga adunay nailhang proseso · na-update {date}",
   "lib.loading": "Gikarga ang database sa dula…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Idugang sa mga paborito",
   "lib.empty.title": "Walay nakit-an",
   "lib.empty.text": "Sulayi ang laing ngalan o i-on ang “Ipakita ang mga dula nga walay exe”.",
-
   "fav.title": "Mga Paborito",
   "fav.count": "{n} ka dula",
   "fav.hint": "Markahi ang mga dula og bituon",
   "fav.empty.title": "Wala pay sulod dinhi",
   "fav.empty.text": "Pindota ang bituon sa tile sa dula aron idugang kini dinhi.",
-
   "detail.process": "Proseso",
   "detail.duration": "Unsa kadugay padaganon",
   "detail.minutes": "{n} ka min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Paborito",
   "detail.close": "Iserado",
   "detail.id": "ID {id}",
-
   "running.title": "Nagalihok",
   "running.count": "{n} ka aktibong decoy",
   "running.none": "Walay nagdagan karon",
@@ -70,14 +64,36 @@
   "running.stop": "Ihunong",
   "running.empty.title": "Walay nagalihok",
   "running.empty.text": "Ablihi ang usa ka dula sa library ug pindota ang “Sugdi ang decoy”.",
-
   "settings.title": "Mga Setting",
   "settings.general": "Kinatibuk-an",
   "settings.language": "Pinulongan",
   "settings.language.desc": "Pinulongan sa interface. Ang mga bag-ong pinulongan idugang isip mga file sa folder sa locales.",
   "settings.stubs": "Mga Decoy",
   "settings.defaultTime": "Default nga gidugayon",
-  "settings.defaultTime.desc": "Pila ka minuto padaganon ang proseso (ang mga quest sa Discord kasagarang nagkinahanglan og 15).",
+  "settings.defaultTime.desc": "Pila ka minuto ipadayon ang proseso. Ang default kay 16, dili 15: ang mga Discord quest nagkinahanglan og 15 minutos nga pagdula, apan ang Discord nagkinahanglan og hangtod sa usa ka minuto aron mamatikdan ang bag-ong dula, mao nga ang eksaktong 15 dili paigo.",
+  "settings.smartTimer": "Smart timer",
+  "settings.smartTimer.desc": "Ang countdown magsugod kung mamatikdan sa Discord ang decoy, dili kung kanus-a nimo kini sugdan. Aron mahibal-an kana, ang app magbasa lamang sa mga linya bahin sa nagdagan nga dula gikan sa lokal nga log sa Discord; walay gitipigan o gipadala bisan asa.",
+  "settings.updates": "Mga update",
+  "settings.checkNow": "Susiha karon",
+  "settings.autoUpdate": "Awtomatikong mga update",
+  "settings.autoUpdate.desc": "Susiha ang GitHub sa pagsugod ug matag 6 ka oras ug i-download ang bag-ong mga bersyon sa background. Ang pag-install kanunay nga maghulat sa imong kumpirmasyon, ug ang mga file mapamatud-an pinaagi sa ilang digital nga pirma.",
+  "update.current": "Na-install nga bersyon {v}",
+  "update.checking": "Gisusi…",
+  "update.uptodate": "Naa ka sa pinakabag-ong bersyon",
+  "update.available": "Anaa na ang bersyon {v}",
+  "update.downloading": "Gi-download ang bersyon {v}… {p}%",
+  "update.ready": "Andam na i-install ang bersyon {v}",
+  "update.installing": "Gi-install ug gi-restart…",
+  "update.download": "I-download",
+  "update.restart": "I-restart ug i-update",
+  "update.later": "Unya na",
+  "update.notes": "Unsay bag-o",
+  "update.running": "Ang nagdagan nga mga decoy ({n}) mohunong.",
+  "update.error": "Wala ma-update: {e}",
+  "detail.waiting": "naghulat sa Discord",
+  "detail.waitingNote": "Ang Discord nagkinahanglan og hangtod sa usa ka minuto aron mamatikdan ang dula. Ang countdown magsugod kung makita na niini ang decoy.",
+  "detail.detected": "Namatikdan sa Discord ang decoy",
+  "detail.assumed": "Wala kini gikumpirma sa Discord, giihap gihapon ang oras.",
   "settings.autoStop": "Ihunong pinaagi sa timer",
   "settings.autoStop.desc": "Moundang ra ang decoy sa iyang kaugalingon inigkahurot sa oras.",
   "settings.notify": "Pahibalo inigkahuman",
@@ -97,7 +113,6 @@
   "settings.files": "Mga File",
   "settings.open": "Ablihi",
   "settings.legal": "Ang Decoy wala naggamit sa imong Discord token ug wala nagdawat og mga quest alang kanimo. Ang pagpakaaron-ingnon og proseso sa dula mahimong supak sa mga lagda sa Discord, gamita kini sa imong kaugalingong risgo.",
-
   "toast.launched": "Ang “{name}” gisugdan sulod sa {n} ka min. Mamatikdan kini sa Discord sulod sa mga 15 segundos.",
   "toast.stopped": "Gipahunong ang decoy",
   "toast.allStopped": "Gipahunong ang tanang decoy",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} ka dula ang nakadawat og mga exe file: {names}",
   "toast.refreshAdded": "Na-update ang database: +{n} ka bag-ong dula",
   "toast.refreshUpToDate": "Pinakabag-o na ang database",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "Usa ka sekreto nga tab: dungan nga magsugod og daghang decoy.",
@@ -115,16 +129,19 @@
   "lab.launch": "Sugdi ang {n} ka dula",
   "lab.launching": "Nagsugod sa {done} sa {total}…",
   "lab.cancel": "Kanselahon",
-  "lab.warn": "Ang matag decoy usa ka bulag nga proseso nga adunay bintana. Ang sobra sa 200–300 sa usa ka higayon mahimong mopahinay sa imong kompyuter, ang labing daghan kay {max}.",
+  "lab.warn": "Ang matag decoy usa ka lahi nga proseso nga adunay bintana. Ang sobra ka daghan sa usa ka higayon mahimong mopahinay o mofreeze sa imong kompyuter: ang matag proseso ug bintana naggamit og memorya, ug pagkahuman sa pipila ka libo nga mga bintana ang Windows mahimong mohunong sa paghimo og dugang pa. Kung imong isira ang Decoy, ang tanan nga decoy mohunong.",
+  "lab.all": "Tanan ({n})",
+  "lab.estimate": "Ang {n} ka decoy mogamit og gibanabana nga {ram} sa RAM.",
+  "lab.confirm": "I-klik pag-usab aron sugdan ang {n}",
+  "lab.limit": "Mihunong ang Windows sa pagsugod og bag-ong mga proseso pagkahuman sa {n}: kana ang limitasyon sa sistema.",
+  "running.more": "…ug dugang pang {n}. Ang unang 120 lang ang gipakita.",
   "lab.hide": "Itago kini nga tab",
   "toast.labUnlocked": "Naablihan ang sekreto nga tab nga “Lab”",
   "toast.labHidden": "Gitago ang tab",
   "toast.labDone": "Mga dula nga nasugdan: {n}",
-
   "tray.show": "Ablihi ang Decoy",
   "tray.stop": "Ihunong ang tanang decoy",
   "tray.quit": "Mobiya",
-
   "notify.title": "Nahurot na ang oras",
   "notify.body": "{name}: milabay na ang {n} ka min."
 }

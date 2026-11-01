@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Türkmençe" },
-
+  "_meta": {
+    "name": "Türkmençe"
+  },
   "nav.library": "Kitaphana",
   "nav.favorites": "Halananlar",
   "nav.running": "Işleýänler",
   "nav.settings": "Sazlamalar",
-
   "discord.checking": "Barlanýar…",
   "discord.up": "Işleýär",
   "discord.down": "Işlemeýär",
-
   "window.minimize": "Kiçeltmek",
   "window.maximize": "Ulaltmak",
   "window.close": "Ýapmak",
-
   "tag.live": "Işleýär",
   "tag.noExe": "exe ýok",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "goýberiji",
-
   "lib.title": "Kitaphana",
   "lib.subtitle": "Mälim prosesli {n} oýun · täzelenen wagty: {date}",
   "lib.loading": "Oýunlar maglumat binýady ýüklenýär…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Halananlara goş",
   "lib.empty.title": "Hiç zat tapylmady",
   "lib.empty.text": "Başga bir ady synap görüň ýa-da “exe faýly bolmadyk oýunlary görkez” sazlamasyny açyň.",
-
   "fav.title": "Halananlar",
   "fav.count": "{n} oýun",
   "fav.hint": "Oýunlary ýyldyzjyk bilen belläň",
   "fav.empty.title": "Bu ýer entek boş",
   "fav.empty.text": "Bu ýere goşmak üçin oýun plitkasyndaky ýyldyzjyga basyň.",
-
   "detail.process": "Proses",
   "detail.duration": "Näçe wagt saklamaly",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Halanan",
   "detail.close": "Ýap",
   "detail.id": "ID {id}",
-
   "running.title": "Işleýänler",
   "running.count": "{n} işjeň decoy",
   "running.none": "Häzir hiç zat işlemeýär",
@@ -70,14 +64,36 @@
   "running.stop": "Duruz",
   "running.empty.title": "Hiç zat işlemeýär",
   "running.empty.text": "Kitaphanadan bir oýun açyň we “Decoy başlat” düwmesine basyň.",
-
   "settings.title": "Sazlamalar",
   "settings.general": "Umumy",
   "settings.language": "Dil",
   "settings.language.desc": "Interfeýs dili. Täze diller locales bukjasynda faýl hökmünde goşulýar.",
   "settings.stubs": "Decoy-lar",
   "settings.defaultTime": "Bellenen wagt",
-  "settings.defaultTime.desc": "Prosesi näçe minut saklamaly (Discord tabşyryklary üçin köplenç 15 minut gerek).",
+  "settings.defaultTime.desc": "Prosesi näçe minut saklamaly. Bellenen wagt 15 däl-de, 16 minut: Discord tabşyryklary 15 minut oýnamagy talap edýär, ýöne Discord täze oýny görmek üçin bir minuta çenli wagt alýar, şonuň üçin dogry 15 ýetenok.",
+  "settings.smartTimer": "Akylly taýmer",
+  "settings.smartTimer.desc": "Wagty yza sanamak decoy başlan wagty däl-de, Discord ony görende başlaýar. Munuň üçin programma Discord-yň ýerli žurnalyndan diňe işleýän oýun baradaky setirleri okaýar; hiç zat ýazga alynmaýar we hiç ýere iberilmeýär.",
+  "settings.updates": "Täzelenmeler",
+  "settings.checkNow": "Häzir barla",
+  "settings.autoUpdate": "Awtomatik täzelenmeler",
+  "settings.autoUpdate.desc": "Açylanda we her 6 sagatdan GitHub-y barlaň hem-de täze wersiýalary arka planda göçürip alyň. Gurmak elmydama siziň tassyklamaňyza garaşýar we faýllar sanly goly bilen barlanýar.",
+  "update.current": "Gurlan wersiýa {v}",
+  "update.checking": "Barlanýar…",
+  "update.uptodate": "Siz iň soňky wersiýany ulanýarsyňyz",
+  "update.available": "Wersiýa {v} elýeterli",
+  "update.downloading": "Wersiýa {v} göçürilip alynýar… {p}%",
+  "update.ready": "Wersiýa {v} gurmaga taýyn",
+  "update.installing": "Gurnalýar we täzeden başladylýar…",
+  "update.download": "Göçürip al",
+  "update.restart": "Täzeden başlat we täzele",
+  "update.later": "Soňrak",
+  "update.notes": "Näme täzelik bar",
+  "update.running": "Işläp duran decoy ({n}) duruzylar.",
+  "update.error": "Täzeläp bolmady: {e}",
+  "detail.waiting": "Discord-a garaşylýar",
+  "detail.waitingNote": "Discord-a oýny görmek üçin bir minuta çenli wagt gerek bolup biler. Wagt sanamak decoy-y görende başlaýar.",
+  "detail.detected": "Discord decoy-y gördi",
+  "detail.assumed": "Discord tassyklamady, emma wagt barha sanalýar.",
   "settings.autoStop": "Taýmer boýunça duruz",
   "settings.autoStop.desc": "Wagt gutaranda decoy öz-özünden ýapylar.",
   "settings.notify": "Tamamlananda habar ber",
@@ -97,7 +113,6 @@
   "settings.files": "Faýllar",
   "settings.open": "Aç",
   "settings.legal": "Decoy siziň Discord tokeniňizi ulanmaýar we siziň ýeriňize tabşyryklary kabul etmeýär. Oýun prosesini ýasamak Discord düzgünlerine garşy gelip biler, töwekgelçilik öz üstüňizdedir.",
-
   "toast.launched": "“{name}” {n} min üçin başladylgy. Discord takmynan 15 sekuntdan ony görer.",
   "toast.stopped": "Decoy duruzuldy",
   "toast.allStopped": "Ähli decoy-lar duruzuldy",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} oýna exe faýllary goşuldy: {names}",
   "toast.refreshAdded": "Maglumat binýady täzelendi: +{n} täze oýun",
   "toast.refreshUpToDate": "Maglumat binýady eýýäm iň soňky ýagdaýda",
-
   "nav.lab": "Laboratoriýa",
   "lab.title": "Laboratoriýa",
   "lab.subtitle": "Gizlin bölme: birbada köp sanly decoy başladýar.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} oýun başlat",
   "lab.launching": "{done} / {total} başladylýar…",
   "lab.cancel": "Ýatyr",
-  "lab.warn": "Her decoy aýratyn penjireli prosesdir. Birbada 200–300-den gowragy kompýuteriňizi haýalladyp biler, iň ýokary çäk {max}.",
+  "lab.warn": "Her bir decoy aýratyn penjireli prosesdir. Birbada gaty köp bolmagy kompýuteriňizi doňduryp biler: her proses we penjire ýat ulanýar, birnäçe müň penjireden soň Windows täzesini döretmegi bes edip biler. Decoy ýapsaňyz, ähli decoy-lar duruzylar.",
+  "lab.all": "Ählisi ({n})",
+  "lab.estimate": "{n} decoy takmynan {ram} RAM ulanar.",
+  "lab.confirm": "{n} başlatmak üçin ýene basyň",
+  "lab.limit": "Windows {n} prosesden soň täzelerini başlatmagy bes etdi: bu ulgam çägidir.",
+  "running.more": "…we ýene {n}. Ilkinji 120 görkezilýär.",
   "lab.hide": "Bu bölmäni gizle",
   "toast.labUnlocked": "Gizlin “Laboratoriýa” bölmesi açyldy",
   "toast.labHidden": "Bölme gizlendi",
   "toast.labDone": "Başladylan oýunlar: {n}",
-
   "tray.show": "Decoy aç",
   "tray.stop": "Ähli decoy-lary duruz",
   "tray.quit": "Çyk",
-
   "notify.title": "Wagt doldy",
   "notify.body": "{name}: {n} min geçdi."
 }

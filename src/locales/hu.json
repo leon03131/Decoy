@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Magyar" },
-
+  "_meta": {
+    "name": "Magyar"
+  },
   "nav.library": "Könyvtár",
   "nav.favorites": "Kedvencek",
   "nav.running": "Futó",
   "nav.settings": "Beállítások",
-
   "discord.checking": "Ellenőrzés…",
   "discord.up": "Fut",
   "discord.down": "Nem fut",
-
   "window.minimize": "Kicsinyítés",
   "window.maximize": "Teljes méret",
   "window.close": "Bezárás",
-
   "tag.live": "Fut",
   "tag.noExe": "nincs exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "indító",
-
   "lib.title": "Könyvtár",
   "lib.subtitle": "{n} játék ismert folyamattal · frissítve: {date}",
   "lib.loading": "Játékadatbázis betöltése…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Hozzáadás a kedvencekhez",
   "lib.empty.title": "Nincs találat",
   "lib.empty.text": "Próbálj más nevet keresni, vagy kapcsold be az „Exe nélküli játékok megjelenítése” lehetőséget.",
-
   "fav.title": "Kedvencek",
   "fav.count": "{n} játék",
   "fav.hint": "Jelöld meg a játékokat csillaggal",
   "fav.empty.title": "Itt még nincs semmi",
   "fav.empty.text": "Kattints a csillagra egy játéknál a hozzáadáshoz.",
-
   "detail.process": "Folyamat",
   "detail.duration": "Meddig fusson",
   "detail.minutes": "{n} perc",
@@ -62,7 +57,6 @@
   "detail.favorite": "Kedvenc",
   "detail.close": "Bezárás",
   "detail.id": "ID {id}",
-
   "running.title": "Futó",
   "running.count": "{n} aktív decoy",
   "running.none": "Jelenleg semmi sem fut",
@@ -70,14 +64,36 @@
   "running.stop": "Leállítás",
   "running.empty.title": "Semmi sem fut",
   "running.empty.text": "Nyiss meg egy játékot a könyvtárban, és kattints a „Decoy indítása” gombra.",
-
   "settings.title": "Beállítások",
   "settings.general": "Általános",
   "settings.language": "Nyelv",
   "settings.language.desc": "A kezelőfelület nyelve. Új nyelvek a locales mappába helyezett fájlokkal adhatók hozzá.",
   "settings.stubs": "Decoyok",
   "settings.defaultTime": "Alapértelmezett időtartam",
-  "settings.defaultTime.desc": "Hány percig fusson a folyamat (a Discord-küldetésekhez általában 15 perc kell).",
+  "settings.defaultTime.desc": "Hány percig tartsa életben a folyamatot. Az alapértelmezett 16, nem 15: a Discord-küldetések 15 perc játékot kérnek, de a Discordnak akár egy percbe is telhet észrevenni az új játékot, így a pontosan 15 kevés.",
+  "settings.smartTimer": "Intelligens időzítő",
+  "settings.smartTimer.desc": "A visszaszámlálás akkor kezdődik, amikor a Discord észrevette a decoyt, nem az indításkor. Ennek kiderítéséhez az alkalmazás csak a futó játékra vonatkozó sorokat olvassa a Discord helyi naplójából; semmi sem tárolódik vagy küldődik el sehová.",
+  "settings.updates": "Frissítések",
+  "settings.checkNow": "Ellenőrzés most",
+  "settings.autoUpdate": "Automatikus frissítések",
+  "settings.autoUpdate.desc": "A GitHub ellenőrzése indításkor és 6 óránként, valamint az új verziók letöltése a háttérben. A telepítés mindig a jóváhagyására vár, a fájlok pedig digitális aláírásuk alapján ellenőrzöttek.",
+  "update.current": "Telepített verzió: {v}",
+  "update.checking": "Ellenőrzés…",
+  "update.uptodate": "A legújabb verziót használja",
+  "update.available": "A(z) {v} verzió elérhető",
+  "update.downloading": "{v} verzió letöltése… {p}%",
+  "update.ready": "A(z) {v} verzió készen áll a telepítésre",
+  "update.installing": "Telepítés és újraindítás…",
+  "update.download": "Letöltés",
+  "update.restart": "Újraindítás és frissítés",
+  "update.later": "Később",
+  "update.notes": "Újdonságok",
+  "update.running": "A futó decoyok ({n}) leállnak.",
+  "update.error": "Nem sikerült a frissítés: {e}",
+  "detail.waiting": "várakozás a Discordra",
+  "detail.waitingNote": "A Discordnak akár egy percbe is telhet észrevenni egy játékot. A visszaszámlálás akkor kezdődik, amikor meglátja a decoyt.",
+  "detail.detected": "A Discord észrevette a decoyt",
+  "detail.assumed": "A Discord nem erősítette meg, az időt ennek ellenére számoljuk.",
   "settings.autoStop": "Leállítás időzítővel",
   "settings.autoStop.desc": "A decoy magától leáll, amikor az idő lejár.",
   "settings.notify": "Értesítés befejezéskor",
@@ -97,7 +113,6 @@
   "settings.files": "Fájlok",
   "settings.open": "Megnyitás",
   "settings.legal": "A Decoy nem használja a Discord-tokenedet, és nem fogad el helyetted küldetéseket. A játékfolyamat színlelése sértheti a Discord szabályzatát, saját felelősségre használd.",
-
   "toast.launched": "„{name}” elindítva {n} percre. A Discord kb. 15 másodpercen belül észlelni fogja.",
   "toast.stopped": "Decoy leállítva",
   "toast.allStopped": "Minden decoy leállítva",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} játék kapott exe-fájlt: {names}",
   "toast.refreshAdded": "Adatbázis frissítve: +{n} új játék",
   "toast.refreshUpToDate": "Az adatbázis már naprakész",
-
   "nav.lab": "Labor",
   "lab.title": "Labor",
   "lab.subtitle": "Titkos fül: egyszerre több decoyt indít el.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} játék indítása",
   "lab.launching": "{done} / {total} indítása…",
   "lab.cancel": "Mégse",
-  "lab.warn": "Minden decoy egy külön ablakos folyamat. Egyszerre több mint 200–300 lelassíthatja a számítógépedet, a maximum {max}.",
+  "lab.warn": "Minden decoy egy különálló folyamat saját ablakkal. A túl sok egyszerre lefagyaszthatja a számítógépet: minden folyamat és ablak memóriát használ, és néhány ezer ablak után a Windows leállíthatja a továbbiak létrehozását. Ha bezárja a Decoyt, az összes decoy leáll.",
+  "lab.all": "Összes ({n})",
+  "lab.estimate": "{n} decoy nagyjából {ram} RAM-ot fog használni.",
+  "lab.confirm": "Kattintson újra a(z) {n} elindításához",
+  "lab.limit": "A Windows nem indított újabb folyamatokat {n} után: ez a rendszer korlátja.",
+  "running.more": "…és még {n}. Az első 120 látható.",
   "lab.hide": "Fül elrejtése",
   "toast.labUnlocked": "Titkos „Labor” fül feloldva",
   "toast.labHidden": "Fül elrejtve",
   "toast.labDone": "Elindított játékok: {n}",
-
   "tray.show": "Decoy megnyitása",
   "tray.stop": "Minden decoy leállítása",
   "tray.quit": "Kilépés",
-
   "notify.title": "Lejárt az idő",
   "notify.body": "{name}: eltelt {n} perc."
 }

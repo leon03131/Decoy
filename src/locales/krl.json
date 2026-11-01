@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Karjala" },
-
+  "_meta": {
+    "name": "Karjala"
+  },
   "nav.library": "Kirjasto",
   "nav.favorites": "Valitut",
   "nav.running": "Käynnis",
   "nav.settings": "Asetukset",
-
   "discord.checking": "Tarkistetah…",
   "discord.up": "Käynnis",
   "discord.down": "Ei käynnis",
-
   "window.minimize": "Pienennyä",
   "window.maximize": "Suurendua",
   "window.close": "Salbua",
-
   "tag.live": "Käynnis",
   "tag.noExe": "ei exeä",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "käynnistin",
-
   "lib.title": "Kirjasto",
   "lib.subtitle": "{n} kižua tunnetunke prosessinke · uvvistettu {date}",
   "lib.loading": "Kižutietokannua kuormatah…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Ližiä valittuloih",
   "lib.empty.title": "Nimidä ei löydynyh",
   "lib.empty.text": "Kokeile tostu nimie libo ota käyttöh ”Ozuttele kižat ilmai exeä”.",
-
   "fav.title": "Valitut",
   "fav.count": "{n} kižua",
   "fav.hint": "Merkiče kižat tiähtel",
   "fav.empty.title": "Täs ei ole vie nimidä",
   "fav.empty.text": "Painu tiähtie kižan kortis ližäkseces sit tänne.",
-
   "detail.process": "Prosessi",
   "detail.duration": "Muga hätken piettäh",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Valittu",
   "detail.close": "Salbua",
   "detail.id": "ID {id}",
-
   "running.title": "Käynnis",
   "running.count": "{n} aktiivistu decoy-prosessua",
   "running.none": "Täl aigua nimidä ei ole käynnis",
@@ -70,14 +64,36 @@
   "running.stop": "Seizata",
   "running.empty.title": "Nimidä ei ole käynnis",
   "running.empty.text": "Avua kiža kirjastos da paina ”Käynnistä decoy”.",
-
   "settings.title": "Asetukset",
   "settings.general": "Yleizet",
   "settings.language": "Kieli",
   "settings.language.desc": "Käyttöliittymän kieli. Uvvet kielet ližätäh failoina locales-papkah.",
   "settings.stubs": "Decoy-prosessat",
   "settings.defaultTime": "Aiga oletuksen mugah",
-  "settings.defaultTime.desc": "Muga moni minuuttua prosessua piettäh (Discord-tehtiävät ylezeh pyyttäh 15 min).",
+  "settings.defaultTime.desc": "Moni minutua pidiä prosessua. Oletus on 16, eigo 15: Discord-tehtävät pyytävät 15 minutin kižua, no Discord voibi ottua minutan uven kižan huomamah.",
+  "settings.smartTimer": "Älykäs taimeri",
+  "settings.smartTimer.desc": "Ajanlasku algaa silloi, konzu Discord huomai decoyn, eigo käynnistäjes. Sen tiijustamiseksu sovellus lugou vain Discordan paikallisesta logaspäi kižan rivit; nimidä ei tallendeta eigo työnnetä minnegi.",
+  "settings.updates": "Uvvistukset",
+  "settings.checkNow": "Tarkista nygöi",
+  "settings.autoUpdate": "Ičestäh uvvistus",
+  "settings.autoUpdate.desc": "Tarkista GitHub käynnistykses da joga 6 čuassuu sego lataa uvet versiet tagaperäl. Asennus vuottau ainos sinun vahvistustu, da failat tarkistetah digitaalisel allekirjutuksel.",
+  "update.current": "Asennettu versio {v}",
+  "update.checking": "Tarkistetah…",
+  "update.uptodate": "Sinul on viimeine versio",
+  "update.available": "Versio {v} on suatavilla",
+  "update.downloading": "Ladadah versiedu {v}… {p}%",
+  "update.ready": "Versio {v} on valmis asennettavakse",
+  "update.installing": "Asennetah da käynnistetäh uvvessah…",
+  "update.download": "Lataa",
+  "update.restart": "Käynnistä uvvessah da uvvista",
+  "update.later": "Myöhembi",
+  "update.notes": "Midä uutta",
+  "update.running": "Käynnissä olijat decoy-prosessat ({n}) seizatetah.",
+  "update.error": "Ei voinnuh uvvistaa: {e}",
+  "detail.waiting": "vuotetah Discordua",
+  "detail.waitingNote": "Discord voibi ottua minutan kižan huomamah. Ajanlasku algaa, konzu se nägyy decoyn.",
+  "detail.detected": "Discord huomai decoyn",
+  "detail.assumed": "Discord ei vahvistanuh, aigu laskietah kuitengi.",
   "settings.autoStop": "Seizata taimeril",
   "settings.autoStop.desc": "Decoy loppuu ičestäh, konzu aiga loppuu.",
   "settings.notify": "Ilmoita valmistumizes",
@@ -97,7 +113,6 @@
   "settings.files": "Failat",
   "settings.open": "Avua",
   "settings.legal": "Decoy ei käyttiä sinun Discord-tokenua eigo ota tehtiävii vastaan sinun iel. Kižaprosessan imituacii voi olla Discordin siändölöin vastaine, käytä omal vastvul.",
-
   "toast.launched": "”{name}” käynnistettih {n} minuutikse. Discord huomuau sen noin 15 sekunnis.",
   "toast.stopped": "Decoy seizatettu",
   "toast.allStopped": "Kaikki decoyt seizatettu",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} kižua sai exe-failat: {names}",
   "toast.refreshAdded": "Tietokandu uvvistettu: +{n} uutta kižua",
   "toast.refreshUpToDate": "Tietokandu on jo aijan mugaine",
-
   "nav.lab": "Laboratorii",
   "lab.title": "Laboratorii",
   "lab.subtitle": "Salaine välilehti: käynnistäy äijän decoy-prosessua kerral.",
@@ -115,16 +129,19 @@
   "lab.launch": "Käynnistä {n} kižua",
   "lab.launching": "Käynnistetäh {done} / {total}…",
   "lab.cancel": "Heitä",
-  "lab.warn": "Jogahine decoy on erilline prosessi ikkunanke. Enämbi migu 200–300 kerral voi hidastuttua tietokonetta, enimäismäärä on {max}.",
+  "lab.warn": "Joga decoy on erilline prosessi ikkunal. Liijan äijy kerrallah voibi jumiututtua tietokonehen: joga prosessi da ikkuna ottau muistie, da tuhanzien ikkunoin jälles Windows voibi loppie luadimas uuzii. Jos salbuat Decoyn, kai decoit seizatutah.",
+  "lab.all": "Kaikki ({n})",
+  "lab.estimate": "{n} decoy-prosessua ottau läs {ram} RAM-muistie.",
+  "lab.confirm": "Painai uvvessah käynnistääkseh {n}",
+  "lab.limit": "Windows loppi uuzien prosessoin käynnistämizen {n} jälles: se on sistieman raja.",
+  "running.more": "…da vie {n}. Enzimmäzet 120 ozutetah.",
   "lab.hide": "Peitä tämä välilehti",
   "toast.labUnlocked": "Salaine ”Laboratorii”-välilehti avattu",
   "toast.labHidden": "Välilehti peitetty",
   "toast.labDone": "Kižoi käynnistetty: {n}",
-
   "tray.show": "Avua Decoy",
   "tray.stop": "Seizata kaikki decoyt",
   "tray.quit": "Lopeta",
-
   "notify.title": "Aiga loppui",
   "notify.body": "{name}: {n} min on mennyh."
 }

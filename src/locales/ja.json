@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "日本語" },
-
+  "_meta": {
+    "name": "日本語"
+  },
   "nav.library": "ライブラリ",
   "nav.favorites": "お気に入り",
   "nav.running": "実行中",
   "nav.settings": "設定",
-
   "discord.checking": "確認中…",
   "discord.up": "起動中",
   "discord.down": "未起動",
-
   "window.minimize": "最小化",
   "window.maximize": "最大化",
   "window.close": "閉じる",
-
   "tag.live": "実行中",
   "tag.noExe": "exe なし",
   "tag.exeCount": "{n} 個の exe",
   "tag.launcher": "ランチャー",
-
   "lib.title": "ライブラリ",
   "lib.subtitle": "プロセス判明済みゲーム {n} 件 · 更新: {date}",
   "lib.loading": "ゲームデータベースを読み込み中…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "お気に入りに追加",
   "lib.empty.title": "見つかりませんでした",
   "lib.empty.text": "別の名前で検索するか、「exe なしのゲームを表示」を有効にしてください。",
-
   "fav.title": "お気に入り",
   "fav.count": "{n} 件のゲーム",
   "fav.hint": "星マークでお気に入りに登録",
   "fav.empty.title": "まだ何もありません",
   "fav.empty.text": "ゲームの星アイコンをクリックすると、ここに追加されます。",
-
   "detail.process": "プロセス",
   "detail.duration": "実行時間",
   "detail.minutes": "{n} 分",
@@ -62,7 +57,6 @@
   "detail.favorite": "お気に入り",
   "detail.close": "閉じる",
   "detail.id": "ID {id}",
-
   "running.title": "実行中",
   "running.count": "{n} 件のデコイが実行中",
   "running.none": "現在実行中のものはありません",
@@ -70,14 +64,36 @@
   "running.stop": "停止",
   "running.empty.title": "実行中のものはありません",
   "running.empty.text": "ライブラリでゲームを選び、「デコイを開始」を押してください。",
-
   "settings.title": "設定",
   "settings.general": "一般",
   "settings.language": "言語",
   "settings.language.desc": "インターフェースの表示言語。locales フォルダーにファイルを追加することで新しい言語を追加できます。",
   "settings.stubs": "デコイ",
   "settings.defaultTime": "デフォルトの実行時間",
-  "settings.defaultTime.desc": "プロセスを維持する時間（分単位。Discord クエストは通常 15 分必要です）。",
+  "settings.defaultTime.desc": "プロセスを維持する分数。デフォルトは15ではなく16です。Discordのクエストは15分のプレイを要求しますが、Discordが新しいゲームを認識するのに最大1分かかるため、ちょうど15分では足りなくなります。",
+  "settings.smartTimer": "スマートタイマー",
+  "settings.smartTimer.desc": "カウントダウンは起動時ではなく、Discordがデコイを認識したときに開始されます。これを検知するため、アプリはDiscordのローカルログから実行中のゲームに関する行のみを読み取ります。何も保存されず、どこにも送信されません。",
+  "settings.updates": "アップデート",
+  "settings.checkNow": "今すぐ確認",
+  "settings.autoUpdate": "自動アップデート",
+  "settings.autoUpdate.desc": "起動時および6時間ごとにGitHubを確認し、バックグラウンドで新しいバージョンをダウンロードします。インストールは常に確認を待ち、ファイルはデジタル署名によって検証されます。",
+  "update.current": "インストール済みバージョン {v}",
+  "update.checking": "確認中…",
+  "update.uptodate": "最新バージョンを使用しています",
+  "update.available": "バージョン {v} が利用可能です",
+  "update.downloading": "バージョン {v} をダウンロード中… {p}%",
+  "update.ready": "バージョン {v} のインストール準備が完了しました",
+  "update.installing": "インストールして再起動中…",
+  "update.download": "ダウンロード",
+  "update.restart": "再起動してアップデート",
+  "update.later": "後で",
+  "update.notes": "更新情報",
+  "update.running": "実行中のデコイ（{n}）は停止します。",
+  "update.error": "アップデートできませんでした: {e}",
+  "detail.waiting": "Discordを待機中",
+  "detail.waitingNote": "Discordがゲームを認識するまでに最大1分かかります。カウントダウンはDiscordがデコイを検出したときに始まります。",
+  "detail.detected": "Discordがデコイを認識しました",
+  "detail.assumed": "Discordは確認していませんが、時間はカウントされます。",
   "settings.autoStop": "タイマーで自動停止",
   "settings.autoStop.desc": "時間になるとデコイは自動的に終了します。",
   "settings.notify": "終了時に通知",
@@ -97,7 +113,6 @@
   "settings.files": "ファイル",
   "settings.open": "開く",
   "settings.legal": "Decoy は Discord トークンを使用せず、クエストの受諾を代行することもありません。ゲームプロセスの擬装は Discord の利用規約に抵触する可能性があるため、自己責任で使用してください。",
-
   "toast.launched": "「{name}」を {n} 分間で開始しました。約 15 秒で Discord に認識されます。",
   "toast.stopped": "デコイを停止しました",
   "toast.allStopped": "すべてのデコイを停止しました",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} 件のゲームに exe が追加されました: {names}",
   "toast.refreshAdded": "データベースを更新しました: 新規ゲーム +{n} 件",
   "toast.refreshUpToDate": "データベースはすでに最新です",
-
   "nav.lab": "ラボ",
   "lab.title": "ラボ",
   "lab.subtitle": "秘密のタブ: 多数のデコイを一度に起動します。",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} 件のゲームを起動",
   "lab.launching": "{total} 件中 {done} 件を起動中…",
   "lab.cancel": "キャンセル",
-  "lab.warn": "各デコイはウィンドウを持つ独立したプロセスです。一度に 200〜300 個を超えると PC の動作が重くなる可能性があります（最大 {max} 個）。",
+  "lab.warn": "デコイはそれぞれウィンドウを持つ独立したプロセスです。一度に多すぎるとコンピューターがフリーズする可能性があります。各プロセスとウィンドウがメモリを使用し、数千個のウィンドウの後にはWindowsがそれ以上の作成を停止することがあります。Decoyを閉じると、すべてのデコイが停止します。",
+  "lab.all": "すべて（{n}）",
+  "lab.estimate": "{n} 個のデコイは約 {ram} のRAMを使用します。",
+  "lab.confirm": "もう一度クリックして {n} 件を起動",
+  "lab.limit": "Windowsは {n} 件の後に新しいプロセスの起動を停止しました。これがシステムの制限です。",
+  "running.more": "…他 {n} 件。最初の 120 件を表示しています。",
   "lab.hide": "このタブを非表示にする",
   "toast.labUnlocked": "秘密のタブ「ラボ」がアンロックされました",
   "toast.labHidden": "タブを非表示にしました",
   "toast.labDone": "起動したゲーム: {n}",
-
   "tray.show": "Decoy を開く",
   "tray.stop": "すべてのデコイを停止",
   "tray.quit": "終了",
-
   "notify.title": "時間になりました",
   "notify.body": "{name}: {n} 分が経過しました。"
 }

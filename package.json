@@ -1,7 +1,7 @@
 {
   "name": "decoy",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Tiny stand-in processes that make Discord think a game is running.",
   "license": "MIT",
   "repository": {
@@ -13,6 +13,7 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "tauri": "tauri",
+    "build:local": "tauri build --config src-tauri/tauri.local.conf.json",
     "check-locales": "node scripts/check-locales.mjs",
     "readme-langs": "node scripts/update-readme-langs.mjs",
     "check-readmes": "node scripts/update-readme-langs.mjs --check"

@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Татарча" },
-
+  "_meta": {
+    "name": "Татарча"
+  },
   "nav.library": "Китапханә",
   "nav.favorites": "Сайланма",
   "nav.running": "Эшли",
   "nav.settings": "Көйләүләр",
-
   "discord.checking": "Тикшерү…",
   "discord.up": "Эшли",
   "discord.down": "Эшләми",
-
   "window.minimize": "Төрергә",
   "window.maximize": "Җәяргә",
   "window.close": "Ябарга",
-
   "tag.live": "Эшли",
   "tag.noExe": "exe юк",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "лаунчер",
-
   "lib.title": "Китапханә",
   "lib.subtitle": "Билгеле процессы булган {n} уен · яңартылды: {date}",
   "lib.loading": "Уеннар базасы йөкләнә…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Сайланмага өстәргә",
   "lib.empty.title": "Берни дә табылмады",
   "lib.empty.text": "Башка исемне кертеп карагыз яки «exe булмаганнарны күрсәтергә» кабызыгыз.",
-
   "fav.title": "Сайланма",
   "fav.count": "{n} уен",
   "fav.hint": "Уеннарны йолдызчык белән билгеләгез",
   "fav.empty.title": "Монда әлегә буш",
   "fav.empty.text": "Уенны монда өстәү өчен аның плиткәсендә йолдызчыкка басыгыз.",
-
   "detail.process": "Процесс",
   "detail.duration": "Күпме тотарга",
   "detail.minutes": "{n} мин",
@@ -62,7 +57,6 @@
   "detail.favorite": "Сайланма",
   "detail.close": "Ябарга",
   "detail.id": "ID {id}",
-
   "running.title": "Эшли",
   "running.count": "{n} актив Decoy",
   "running.none": "Хәзер берни дә эшләми",
@@ -70,14 +64,36 @@
   "running.stop": "Туктатырга",
   "running.empty.title": "Берни дә эшләми",
   "running.empty.text": "Китапханәдән уенны ачыгыз һәм «Decoy башларга» төймәсенә басыгыз.",
-
   "settings.title": "Көйләүләр",
   "settings.general": "Төп",
   "settings.language": "Тел",
   "settings.language.desc": "Интерфейс теле. Яңа телләр locales папкасына файл булып өстәлә.",
   "settings.stubs": "Decoy-лар",
   "settings.defaultTime": "Гадәти вакыт",
-  "settings.defaultTime.desc": "Процессны ничә минут тотарга (Discord биремнәренә гадәттә 15 кирәк).",
+  "settings.defaultTime.desc": "Процессны ничә минут тотарга. Гадәттә 15 түгел, ә 16: Discord биремнәре 15 минут уйнауны таләп итә, әмма Discord яңа уенны күреп алганчы бер минутка кадәр вакыт кирәк, шуңа күрә төгәл 15 җитми.",
+  "settings.smartTimer": "Акыллы таймер",
+  "settings.smartTimer.desc": "Кире санау сез җибәргәндә түгел, ә Discord decoy-ны күреп алгач башлана. Моны белү өчен кушымта Discord-ның җирле журналыннан бары тик эшли торган уен турындагы юлларны гына укый; бернәрсә дә сакланмый һәм беркая да җибәрелми.",
+  "settings.updates": "Яңартулар",
+  "settings.checkNow": "Хәзер тикшерергә",
+  "settings.autoUpdate": "Автоматик яңарту",
+  "settings.autoUpdate.desc": "Эшләтеп җибәргәндә һәм һәр 6 сәгать саен GitHub-ны тикшереп торырга һәм яңа версияләрне фонда йөкләргә. Урнаштыру һәрвакыт сезнең раслауны көтә, ә файллар цифрлы имза аша тикшерелә.",
+  "update.current": "Урнаштырылган версия {v}",
+  "update.checking": "Тикшерү…",
+  "update.uptodate": "Сездә иң соңгы версия",
+  "update.available": "Версия {v} чыкты",
+  "update.downloading": "Версия {v} йөкләнә… {p}%",
+  "update.ready": "Версия {v} урнаштырырга әзер",
+  "update.installing": "Урнаштыру һәм яңадан башлау…",
+  "update.download": "Йөкләргә",
+  "update.restart": "Яңадан башлап яңартырга",
+  "update.later": "Соңрак",
+  "update.notes": "Нәрсә яңа",
+  "update.running": "Эшләүче decoy-лар ({n}) туктатылачак.",
+  "update.error": "Яңартып булмады: {e}",
+  "detail.waiting": "Discord көтелә",
+  "detail.waitingNote": "Discord уенны күреп алсын өчен бер минутка кадәр вакыт кирәк. Кире санау ул decoy-ны күргәч башлана.",
+  "detail.detected": "Discord decoy-ны күреп алды",
+  "detail.assumed": "Discord расламады, шулай да вакыт санала.",
   "settings.autoStop": "Таймер буенча туктатырга",
   "settings.autoStop.desc": "Вакыт чыккач, Decoy үзе тәмамлана.",
   "settings.notify": "Тәмамлану турында белдерү",
@@ -97,7 +113,6 @@
   "settings.files": "Файллар",
   "settings.open": "Ачарга",
   "settings.legal": "Decoy сезнең Discord токенын кулланмый һәм сезнең өчен биремнәрне кабул итми. Уен процессын охшатып ясау Discord кагыйдәләренә каршы килергә мөмкин, үз җаваплылыгыгызда кулланыгыз.",
-
   "toast.launched": "«{name}» {n} минутка җибәрелде. Discord аны якынча 15 секундтан күрер.",
   "toast.stopped": "Decoy туктатылды",
   "toast.allStopped": "Бөтен Decoy-лар туктатылды",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} уенның exe файллары барлыкка килде: {names}",
   "toast.refreshAdded": "База яңартылды: +{n} яңа уен",
   "toast.refreshUpToDate": "База инде актуаль",
-
   "nav.lab": "Лаборатория",
   "lab.title": "Лаборатория",
   "lab.subtitle": "Яшерен бүлек: берьюлы күп Decoy җибәрә.",
@@ -115,16 +129,19 @@
   "lab.launch": "{n} уен җибәрергә",
   "lab.launching": "{total} уеннан {done} җибәрелә…",
   "lab.cancel": "Баш тарту",
-  "lab.warn": "Һәр Decoy — тәрәзәле аерым процесс. Берьюлы 200–300-дән артык булу санагычны әкренәйтергә мөмкин, максимум {max}.",
+  "lab.warn": "Һәр decoy — тәрәзәле аерым процесс. Берьюлы бик күп булса, санагыгыз катып калырга мөмкин: һәр процесс һәм тәрәзә хәтер куллана, ә берничә мең тәрәзәдән соң Windows яңаларын ясаудан туктарга мөмкин. Әгәр Decoy-ны япсагыз, барлык decoy-лар туктаячак.",
+  "lab.all": "Барысы ({n})",
+  "lab.estimate": "{n} decoy якынча {ram} RAM кулланачак.",
+  "lab.confirm": "{n} җибәрү өчен тагын бер басыгыз",
+  "lab.limit": "Windows {n} саннан соң яңа процесслар җибәрүне туктатты: бу система чиге.",
+  "running.more": "…һәм тагын {n}. Беренче 120 күрсәтелгән.",
   "lab.hide": "Бу бүлекне яшерергә",
   "toast.labUnlocked": "Яшерен «Лаборатория» бүлеге ачылды",
   "toast.labHidden": "Бүлек яшерелде",
   "toast.labDone": "Җибәрелгән уеннар: {n}",
-
   "tray.show": "Decoy-ны ачарга",
   "tray.stop": "Бөтен Decoy-ларны туктатырга",
   "tray.quit": "Чыгарга",
-
   "notify.title": "Вакыт чыкты",
   "notify.body": "{name}: {n} мин узды."
 }

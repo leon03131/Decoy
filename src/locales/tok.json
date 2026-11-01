@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "toki pona" },
-
+  "_meta": {
+    "name": "toki pona"
+  },
   "nav.library": "poki musi",
   "nav.favorites": "musi olin",
   "nav.running": "tawa lon",
   "nav.settings": "ante",
-
   "discord.checking": "alasa lukin…",
   "discord.up": "tawa lon",
   "discord.down": "tawa ala",
-
   "window.minimize": "lili e lipu",
   "window.maximize": "suli e lipu",
   "window.close": "pini",
-
   "tag.live": "tawa lon",
   "tag.noExe": "ilo exe li weka",
   "tag.exeCount": "ilo exe {n}",
   "tag.launcher": "ilo open",
-
   "lib.title": "poki musi",
   "lib.subtitle": "musi {n} pi ilo tawa lon · sin lon {date}",
   "lib.loading": "kama jo e poki musi…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "pana tawa musi olin",
   "lib.empty.title": "ala li lon",
   "lib.empty.text": "alasa kepeken nimi ante, anu o open e “pana lukin e musi pi ilo exe ala”.",
-
   "fav.title": "musi olin",
   "fav.count": "musi {n}",
   "fav.hint": "o sitelen e mun lili tawa musi",
   "fav.empty.title": "ijo ala li lon ni lon tenpo ni",
   "fav.empty.text": "o pilin e mun lili lon leko musi tawa ni: ona li kama lon ni.",
-
   "detail.process": "ilo tawa",
   "detail.duration": "tenpo tawa",
   "detail.minutes": "tenpo lili {n}",
@@ -62,7 +57,6 @@
   "detail.favorite": "musi olin",
   "detail.close": "pini",
   "detail.id": "ID {id}",
-
   "running.title": "tawa lon",
   "running.count": "Decoy tawa {n}",
   "running.none": "ala li tawa lon tenpo ni",
@@ -70,14 +64,36 @@
   "running.stop": "pini",
   "running.empty.title": "ala li tawa",
   "running.empty.text": "o open e musi lon poki musi, o pilin e “open e Decoy”.",
-
   "settings.title": "ante",
   "settings.general": "ante suli",
   "settings.language": "toki",
   "settings.language.desc": "toki pi ilo lukin. toki sin li kama kepeken lipu lon poki locales.",
   "settings.stubs": "ilo Decoy",
   "settings.defaultTime": "tenpo suli pi tenpo ale",
-  "settings.defaultTime.desc": "tenpo tawa mute (wile musi pi Discord li wile e tenpo lili 15).",
+  "settings.defaultTime.desc": "ilo li tawa tenpo pi mute seme. tenpo nanpa wan li 16, li 15 ala: musi pi Discord li wile e musi pi tenpo 15, taso Discord li wile e tenpo lili tawa lukin e musi sin, tan ni la 15 taso li lili mute.",
+  "settings.smartTimer": "ilo tenpo sona",
+  "settings.smartTimer.desc": "tenpo li open tan tenpo pi lukin pi Discord tawa Decoy, tan open sina ala. tawa sona ni la, ilo li lukin e sitelen lili taso lon lipu pi Discord lon ilo sina; ijo ala li awen, ijo ala li tawa ma ante.",
+  "settings.updates": "kama sin",
+  "settings.checkNow": "lukin lon tenpo ni",
+  "settings.autoUpdate": "kama sin li pali sama",
+  "settings.autoUpdate.desc": "lon open en tenpo suli 6 la lukin e GitHub, kama jo e leko sin lon len. pana lon ilo li awen e wile sina, lipu li kama suli kepeken sitelen sona pi nanpa.",
+  "update.current": "nanpa sin {v} lon ilo",
+  "update.checking": "alasa lukin…",
+  "update.uptodate": "sina jo e nanpa sin nanpa wan",
+  "update.available": "nanpa sin {v} li lon",
+  "update.downloading": "kama jo e nanpa sin {v}… {p}%",
+  "update.ready": "nanpa sin {v} li ken tawa ilo",
+  "update.installing": "pana tawa ilo li open sin…",
+  "update.download": "kama jo",
+  "update.restart": "open sin li kama sin",
+  "update.later": "tenpo kama",
+  "update.notes": "ijo sin seme",
+  "update.running": "Decoy lon pali ({n}) li pini.",
+  "update.error": "ken ala kama sin: {e}",
+  "detail.waiting": "awen e Discord",
+  "detail.waitingNote": "Discord li wile e tenpo lili tawa lukin e musi. tenpo li open lon lukin ona tawa Decoy.",
+  "detail.detected": "Discord li lukin e Decoy",
+  "detail.assumed": "Discord li toki ala, taso tenpo li tawa.",
   "settings.autoStop": "pini kepeken ilo tenpo",
   "settings.autoStop.desc": "tenpo li pini la Decoy li pini li tan ona sama.",
   "settings.notify": "pana e toki pi pini tenpo",
@@ -97,7 +113,6 @@
   "settings.files": "lipu",
   "settings.open": "open",
   "settings.legal": "Decoy li kepeken ala e nimi ken Discord sina, li pini ala e wile musi tawa sina. tawa musi pi lon ala li ken pakala e lawa pi Discord. o kepeken kepeken sona pi sina taso.",
-
   "toast.launched": "“{name}” li open tawa tenpo lili {n}. Discord li lukin e ona lon tenpo lili kama.",
   "toast.stopped": "Decoy li pini",
   "toast.allStopped": "ilo Decoy ale li pini",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "musi {n} li kama jo e ilo exe: {names}",
   "toast.refreshAdded": "poki sona li sin: +musi sin {n}",
   "toast.refreshUpToDate": "poki sona li sin lon tenpo ni",
-
   "nav.lab": "tomo alasa",
   "lab.title": "tomo alasa",
   "lab.subtitle": "lipu len: ona li open e ilo Decoy mute lon tenpo wan.",
@@ -115,16 +129,19 @@
   "lab.launch": "open e musi {n}",
   "lab.launching": "open e {done} pi {total}…",
   "lab.cancel": "ala",
-  "lab.warn": "ilo Decoy wan li ilo tawa wan pi lipu wan. mute pi suli tawa 200–300 lon tenpo wan li ken lili e wawa ilo sina, mute suli li {max}.",
+  "lab.warn": "Decoy ale li ilo lili pi tomo lili. mute ike lon tenpo wan li ken pini e ilo suli sina: ilo lili en tomo lili ale li moku e wawa sona, tenpo mute la Windows li ken pali ala e tomo sin. sina pini e Decoy la, Decoy ale li pini.",
+  "lab.all": "ale ({n})",
+  "lab.estimate": "Decoy {n} li moku e RAM pi mute {ram}.",
+  "lab.confirm": "noka sin tawa open e {n}",
+  "lab.limit": "Windows li pini open e ilo sin lon poka {n}: ni li suli pini pi ilo.",
+  "running.more": "…en {n} ante. nanpa 120 pi open taso li lon.",
   "lab.hide": "len e lipu ni",
   "toast.labUnlocked": "lipu len “tomo alasa” li open",
   "toast.labHidden": "lipu li len",
   "toast.labDone": "musi open: {n}",
-
   "tray.show": "open e Decoy",
   "tray.stop": "pini e ilo Decoy ale",
   "tray.quit": "weka",
-
   "notify.title": "tenpo li pini",
   "notify.body": "{name}: tenpo lili {n} li pini."
 }

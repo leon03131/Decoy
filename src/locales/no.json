@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Norsk" },
-
+  "_meta": {
+    "name": "Norsk"
+  },
   "nav.library": "Bibliotek",
   "nav.favorites": "Favoritter",
   "nav.running": "Kjører",
   "nav.settings": "Innstillinger",
-
   "discord.checking": "Sjekker…",
   "discord.up": "Kjører",
   "discord.down": "Kjører ikke",
-
   "window.minimize": "Minimer",
   "window.maximize": "Maksimer",
   "window.close": "Lukk",
-
   "tag.live": "Kjører",
   "tag.noExe": "ingen exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "oppstarter",
-
   "lib.title": "Bibliotek",
   "lib.subtitle": "{n} spill med kjent prosess · oppdatert {date}",
   "lib.loading": "Laster inn spilldatabasen…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Legg til i favoritter",
   "lib.empty.title": "Ingenting funnet",
   "lib.empty.text": "Prøv et annet navn eller slå på «Vis spill uten exe».",
-
   "fav.title": "Favoritter",
   "fav.count": "{n} spill",
   "fav.hint": "Merk spill med en stjerne",
   "fav.empty.title": "Ingenting her ennå",
   "fav.empty.text": "Trykk på stjernen på en spillflis for å legge det til her.",
-
   "detail.process": "Prosess",
   "detail.duration": "Hvor lenge den skal kjøre",
   "detail.minutes": "{n} min",
@@ -62,7 +57,6 @@
   "detail.favorite": "Favoritt",
   "detail.close": "Lukk",
   "detail.id": "ID {id}",
-
   "running.title": "Kjører",
   "running.count": "{n} aktive decoys",
   "running.none": "Ingenting kjører akkurat nå",
@@ -70,14 +64,36 @@
   "running.stop": "Stopp",
   "running.empty.title": "Ingenting kjører",
   "running.empty.text": "Åpne et spill i biblioteket og trykk «Start decoy».",
-
   "settings.title": "Innstillinger",
   "settings.general": "Generelt",
   "settings.language": "Språk",
   "settings.language.desc": "Grensesnittspråk. Nye språk legges til som filer i locales-mappen.",
   "settings.stubs": "Decoys",
   "settings.defaultTime": "Standard varighet",
-  "settings.defaultTime.desc": "Hvor mange minutter prosessen skal kjøre (Discord-oppdrag krever vanligvis 15).",
+  "settings.defaultTime.desc": "Hvor mange minutter prosessen skal holdes i gang. Standarden er 16, ikke 15: Discord-oppdrag krever 15 minutters spilletid, men Discord trenger opptil ett minutt på å oppdage et nytt spill, så akkurat 15 blir for lite.",
+  "settings.smartTimer": "Smart nedtelling",
+  "settings.smartTimer.desc": "Nedtellingen starter når Discord har oppdaget decoy-prosessen, ikke når du starter den. For å vite dette leser appen kun linjene om det aktive spillet fra Discords lokale logg; ingenting lagres eller sendes noe sted.",
+  "settings.updates": "Oppdateringer",
+  "settings.checkNow": "Sjekk nå",
+  "settings.autoUpdate": "Automatiske oppdateringer",
+  "settings.autoUpdate.desc": "Sjekk GitHub ved oppstart og hver 6. time, og last ned nye versjoner i bakgrunnen. Installering venter alltid på din bekreftelse, og filer verifiseres med sin digitale signatur.",
+  "update.current": "Installert versjon {v}",
+  "update.checking": "Sjekker…",
+  "update.uptodate": "Du har den nyeste versjonen",
+  "update.available": "Versjon {v} er tilgjengelig",
+  "update.downloading": "Laster ned versjon {v}… {p}%",
+  "update.ready": "Versjon {v} er klar til installering",
+  "update.installing": "Installerer og starter på nytt…",
+  "update.download": "Last ned",
+  "update.restart": "Start på nytt og oppdater",
+  "update.later": "Senere",
+  "update.notes": "Hva er nytt",
+  "update.running": "Aktive decoys ({n}) vil bli stoppet.",
+  "update.error": "Kunne ikke oppdatere: {e}",
+  "detail.waiting": "venter på Discord",
+  "detail.waitingNote": "Discord trenger opptil ett minutt på å oppdage et spill. Nedtellingen starter når den ser decoy-prosessen.",
+  "detail.detected": "Discord oppdaget decoy-prosessen",
+  "detail.assumed": "Discord har ikke bekreftet det, tiden telles likevel.",
   "settings.autoStop": "Stopp etter tidtaker",
   "settings.autoStop.desc": "Decoyen avsluttes automatisk når tiden er ute.",
   "settings.notify": "Varsle når ferdig",
@@ -97,7 +113,6 @@
   "settings.files": "Filer",
   "settings.open": "Åpne",
   "settings.legal": "Decoy bruker ikke din Discord-token og godtar ikke oppdrag for deg. Å etterligne en spillprosess kan være i strid med Discords vilkår, bruk på egen risiko.",
-
   "toast.launched": "«{name}» startet for {n} min. Discord bør oppdage det om omtrent 15 sekunder.",
   "toast.stopped": "Decoy stoppet",
   "toast.allStopped": "Alle decoys stoppet",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} spill fikk exe-filer: {names}",
   "toast.refreshAdded": "Databasen er oppdatert: +{n} nye spill",
   "toast.refreshUpToDate": "Databasen er allerede oppdatert",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "En hemmelig fane: starter mange decoys samtidig.",
@@ -115,16 +129,19 @@
   "lab.launch": "Start {n} spill",
   "lab.launching": "Starter {done} av {total}…",
   "lab.cancel": "Avbryt",
-  "lab.warn": "Hver decoy er en separat prosess med et vindu. Mer enn 200–300 samtidig kan gjøre datamaskinen treg, maksimum er {max}.",
+  "lab.warn": "Hver decoy er en egen prosess med et vindu. For mange samtidig kan låse datamaskinen: hver prosess og vindu bruker minne, og etter noen tusen vinduer kan Windows slutte å opprette nye. Hvis du lukker Decoy, stopper alle decoys.",
+  "lab.all": "Alle ({n})",
+  "lab.estimate": "{n} decoys vil bruke omtrent {ram} RAM.",
+  "lab.confirm": "Klikk igjen for å starte {n}",
+  "lab.limit": "Windows sluttet å starte nye prosesser etter {n}: det er systemgrensen.",
+  "running.more": "…og {n} flere. De første 120 vises.",
   "lab.hide": "Skjul denne fanen",
   "toast.labUnlocked": "Hemmelig «Lab»-fane låst opp",
   "toast.labHidden": "Fane skjult",
   "toast.labDone": "Spill startet: {n}",
-
   "tray.show": "Åpne Decoy",
   "tray.stop": "Stopp alle decoys",
   "tray.quit": "Avslutt",
-
   "notify.title": "Tiden er ute",
   "notify.body": "{name}: {n} min har gått."
 }

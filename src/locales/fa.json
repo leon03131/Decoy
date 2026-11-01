@@ -1,24 +1,22 @@
 {
-  "_meta": { "name": "فارسی", "rtl": true },
-
+  "_meta": {
+    "name": "فارسی",
+    "rtl": true
+  },
   "nav.library": "کتابخانه",
   "nav.favorites": "علاقه‌مندی‌ها",
   "nav.running": "در حال اجرا",
   "nav.settings": "تنظیمات",
-
   "discord.checking": "در حال بررسی…",
   "discord.up": "در حال اجرا",
   "discord.down": "در حال اجرا نیست",
-
   "window.minimize": "کوچک‌کردن",
   "window.maximize": "بزرگ‌کردن",
   "window.close": "بستن",
-
   "tag.live": "در حال اجرا",
   "tag.noExe": "بدون exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "لانچر",
-
   "lib.title": "کتابخانه",
   "lib.subtitle": "{n} بازی با پروسه مشخص · به‌روزرسانی در {date}",
   "lib.loading": "در حال بارگذاری پایگاه داده بازی‌ها…",
@@ -36,13 +34,11 @@
   "lib.addFavorite": "افزودن به علاقه‌مندی‌ها",
   "lib.empty.title": "چیزی پیدا نشد",
   "lib.empty.text": "نام دیگری را امتحان کنید یا «نمایش بازی‌های بدون exe» را فعال کنید.",
-
   "fav.title": "علاقه‌مندی‌ها",
   "fav.count": "{n} بازی",
   "fav.hint": "بازی‌ها را با ستاره علامت‌گذاری کنید",
   "fav.empty.title": "هنوز چیزی اینجا نیست",
   "fav.empty.text": "روی ستاره در کاشی بازی کلیک کنید تا به اینجا اضافه شود.",
-
   "detail.process": "پروسه",
   "detail.duration": "مدت زمان نگه‌داشتن",
   "detail.minutes": "{n} دقیقه",
@@ -62,7 +58,6 @@
   "detail.favorite": "علاقه‌مندی",
   "detail.close": "بستن",
   "detail.id": "شناسه ID {id}",
-
   "running.title": "در حال اجرا",
   "running.count": "{n} decoy فعال",
   "running.none": "در حال حاضر چیزی در حال اجرا نیست",
@@ -70,14 +65,36 @@
   "running.stop": "توقف",
   "running.empty.title": "چیزی در حال اجرا نیست",
   "running.empty.text": "یک بازی را در کتابخانه باز کنید و «شروع decoy» را بزنید.",
-
   "settings.title": "تنظیمات",
   "settings.general": "عمومی",
   "settings.language": "زبان",
   "settings.language.desc": "زبان رابط کاربری. زبان‌های جدید به‌صورت فایل در پوشه locales اضافه می‌شوند.",
   "settings.stubs": "Decoyها",
   "settings.defaultTime": "مدت زمان پیش‌فرض",
-  "settings.defaultTime.desc": "مدت زمان نگه‌داشتن پروسه به دقیقه (کوئست‌های Discord معمولاً به ۱۵ دقیقه نیاز دارند).",
+  "settings.defaultTime.desc": "مدت زمانی که پروسه باز بماند بر حسب دقیقه. پیش‌فرض ۱۶ است، نه ۱۵: مأموریت‌های Discord نیاز به ۱۵ دقیقه بازی دارند، اما Discord تا یک دقیقه برای تشخیص بازی جدید زمان لازم دارد، بنابراین دقیقاً ۱۵ دقیقه کافی نیست.",
+  "settings.smartTimer": "تایمر هوشمند",
+  "settings.smartTimer.desc": "شمارش معکوس زمانی شروع می‌شود که Discord متوجه decoy شود، نه در زمان راه‌اندازی آن. برای فهمیدن این موضوع، برنامه فقط خطوط مربوط به بازی در حال اجرا را از گزارش محلی Discord می‌خواند؛ هیچ چیز ذخیره یا به جایی ارسال نمی‌شود.",
+  "settings.updates": "به‌روزرسانی‌ها",
+  "settings.checkNow": "بررسی اکنون",
+  "settings.autoUpdate": "به‌روزرسانی خودکار",
+  "settings.autoUpdate.desc": "بررسی GitHub در هنگام راه‌اندازی و هر ۶ ساعت یک‌بار و دانلود نسخه‌های جدید در پس‌زمینه. نصب همیشه منتظر تأیید شما می‌ماند و فایل‌ها با امضای دیجیتال خود تأیید می‌شوند.",
+  "update.current": "نسخه نصب‌شده {v}",
+  "update.checking": "در حال بررسی…",
+  "update.uptodate": "شما در آخرین نسخه هستید",
+  "update.available": "نسخه {v} موجود است",
+  "update.downloading": "در حال دانلود نسخه {v}… {p}%",
+  "update.ready": "نسخه {v} آماده نصب است",
+  "update.installing": "در حال نصب و راه‌اندازی مجدد…",
+  "update.download": "دانلود",
+  "update.restart": "راه‌اندازی مجدد و به‌روزرسانی",
+  "update.later": "بعداً",
+  "update.notes": "تغییرات جدید",
+  "update.running": "Decoyهای در حال اجرا ({n}) متوقف خواهند شد.",
+  "update.error": "به‌روزرسانی ناموفق بود: {e}",
+  "detail.waiting": "در انتظار Discord",
+  "detail.waitingNote": "Discord برای تشخیص یک بازی به حداکثر یک دقیقه زمان نیاز دارد. شمارش معکوس زمانی شروع می‌شود که decoy را ببیند.",
+  "detail.detected": "Discord متوجه decoy شد",
+  "detail.assumed": "Discord تأیید نکرده است، زمان به هر حال محاسبه می‌شود.",
   "settings.autoStop": "توقف خودکار با تایمر",
   "settings.autoStop.desc": "پس از اتمام زمان، decoy به‌طور خودکار متوقف می‌شود.",
   "settings.notify": "اعلان هنگام اتمام",
@@ -97,7 +114,6 @@
   "settings.files": "فایل‌ها",
   "settings.open": "باز کردن",
   "settings.legal": "Decoy از توکن Discord شما استفاده نمی‌کند و کوئست‌ها را برای شما قبول نمی‌کند. جعل پروسه بازی ممکن است بر خلاف قوانین Discord باشد، با مسئولیت خودتان استفاده کنید.",
-
   "toast.launched": "«{name}» به مدت {n} دقیقه شروع شد. Discord پس از حدود ۱۵ ثانیه آن را شناسایی می‌کند.",
   "toast.stopped": "Decoy متوقف شد",
   "toast.allStopped": "همه decoyها متوقف شدند",
@@ -105,7 +121,6 @@
   "toast.refreshGained": "{n} بازی دارای فایل exe شدند: {names}",
   "toast.refreshAdded": "پایگاه داده به‌روز شد: +{n} بازی جدید",
   "toast.refreshUpToDate": "پایگاه داده در حال حاضر به‌روز است",
-
   "nav.lab": "آزمایشگاه",
   "lab.title": "آزمایشگاه",
   "lab.subtitle": "یک برگه مخفی: چندین decoy را هم‌زمان اجرا می‌کند.",
@@ -115,16 +130,19 @@
   "lab.launch": "شروع {n} بازی",
   "lab.launching": "در حال شروع {done} از {total}…",
   "lab.cancel": "لغو",
-  "lab.warn": "هر decoy یک پروسه جداگانه با پنجره است. اجرای بیش از ۲۰۰ تا ۳۰۰ مورد به‌طور هم‌زمان ممکن است سیستم را کند کند؛ حداکثر مجاز {max} است.",
+  "lab.warn": "هر decoy یک پروسه جداگانه همراه با یک پنجره است. اجرای هم‌زمان تعداد بسیار زیاد می‌تواند کامپیوتر شما را متوقف کند: هر پروسه و پنجره حافظه مصرف می‌کند و پس از چند هزار پنجره ممکن است Windows ایجاد پنجره‌های بیشتر را متوقف کند. اگر Decoy را ببندید، همه decoyها متوقف می‌شوند.",
+  "lab.all": "همه ({n})",
+  "lab.estimate": "{n} decoy تقریباً {ram} از RAM استفاده خواهد کرد.",
+  "lab.confirm": "برای شروع {n} دوباره کلیک کنید",
+  "lab.limit": "Windows راه‌اندازی پروسه‌های جدید را پس از {n} متوقف کرد: این محدودیت سیستم است.",
+  "running.more": "…و {n} مورد دیگر. ۱۲۰ مورد اول نشان داده شده‌اند.",
   "lab.hide": "پنهان‌کردن این برگه",
   "toast.labUnlocked": "برگه مخفی «آزمایشگاه» باز شد",
   "toast.labHidden": "برگه پنهان شد",
   "toast.labDone": "بازی‌های شروع‌شده: {n}",
-
   "tray.show": "باز کردن Decoy",
   "tray.stop": "توقف همه decoyها",
   "tray.quit": "خروج",
-
   "notify.title": "زمان تمام شد",
   "notify.body": "{name}: {n} دقیقه گذشت."
 }

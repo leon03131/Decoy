@@ -5,20 +5,24 @@ import { languages } from "../i18n-core";
 import { useT } from "../i18n";
 import { useStore } from "../store";
 import Select from "./Select";
-import { Cover, fmtTime, GameIcon, I, Ring, useNow } from "./ui";
+import { Cover, fmtTime, GameIcon, I, Ring, runClock, useNow } from "./ui";
+
+/** With thousands of decoys running only the first ones are drawn; the rest are summarised. */
+const RUNNING_SHOWN = 120;
 
 export function RunningView() {
   const t = useT();
   const { running, games, syncRunning, select, toast } = useStore();
   const now = useNow(1000);
   const byId = useMemo(() => new Map(games.map((g) => [g.id, g])), [games]);
+  const shown = running.length > RUNNING_SHOWN ? running.slice(0, RUNNING_SHOWN) : running;
 
   return (
     <section className="page">
       <div className="page-head row">
         <div>
           <h1>{t("running.title")}</h1>
-          <p>{running.length ? t("running.count", { n: running.length }) : t("running.none")}</p>
+          <p>{running.length ? t("running.count", { n: running.length.toLocaleString() }) : t("running.none")}</p>
         </div>
         {running.length > 0 && (
           <button
@@ -41,55 +45,71 @@ export function RunningView() {
           <p>{t("running.empty.text")}</p>
         </div>
       ) : (
-        <div className="run-grid">
-          {running.map((r) => {
-            const left = r.durationS - (now - r.startedMs) / 1000;
-            const g = byId.get(r.gameId);
-            return (
-              <motion.div key={r.key} layout className="run-card" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
-                {g && <Cover game={g} className="run-bg" />}
-                <div className="run-veil" />
-                <Ring progress={1 - left / r.durationS} size={92} stroke={6}>
-                  <div className="ring-time sm">{left <= 0 ? "✓" : fmtTime(left)}</div>
-                </Ring>
-                <div className="run-meta">
-                  <div className="run-title" onClick={() => g && select(g.id)}>
-                    {g && <GameIcon game={g} size={26} radius={8} />}
-                    <span>{r.gameName}</span>
+        <>
+          <div className="run-grid">
+            {shown.map((r) => {
+              const clock = runClock(r, now);
+              const g = byId.get(r.gameId);
+              return (
+                <motion.div key={r.key} layout={shown.length < 40} className="run-card" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
+                  {g && <Cover game={g} className="run-bg" />}
+                  <div className="run-veil" />
+                  <Ring progress={clock.progress} size={92} stroke={6} waiting={clock.phase === "waiting"}>
+                    <div className="ring-time sm">{clock.phase === "waiting" ? "…" : clock.phase === "done" ? "✓" : fmtTime(clock.left)}</div>
+                  </Ring>
+                  <div className="run-meta">
+                    <div className="run-title" onClick={() => g && select(g.id)}>
+                      {g && <GameIcon game={g} size={26} radius={8} />}
+                      <span>{r.gameName}</span>
+                    </div>
+                    <div className="run-exe">
+                      {r.exe} · PID {r.pid}
+                      {r.smart && clock.phase === "waiting" && <> · {t("detail.waiting")}</>}
+                      {r.detected && <> · ✓ {t("detail.detected")}</>}
+                    </div>
+                    <button
+                      className="btn danger sm"
+                      onClick={async () => {
+                        await api.stop(r.key);
+                        await syncRunning();
+                      }}
+                    >
+                      <I.stop size={11} />{t("running.stop")}
+                    </button>
                   </div>
-                  <div className="run-exe">{r.exe} · PID {r.pid}</div>
-                  <button
-                    className="btn danger sm"
-                    onClick={async () => {
-                      await api.stop(r.key);
-                      await syncRunning();
-                    }}
-                  >
-                    <I.stop size={11} />{t("running.stop")}
-                  </button>
-                </div>
-              </motion.div>
-            );
-          })}
-        </div>
+                </motion.div>
+              );
+            })}
+          </div>
+          {running.length > RUNNING_SHOWN && <p className="run-more">{t("running.more", { n: (running.length - RUNNING_SHOWN).toLocaleString() })}</p>}
+        </>
       )}
     </section>
   );
 }
 
-const LAB_PRESETS = [10, 25, 50, 100, 250, 500];
-const LAB_MAX = 500;
+// measured with 300 real decoys: about 1.6 MB of RAM each (process + window); rounded up
+const MB_PER_DECOY = 2;
+const LAB_PRESETS = [10, 50, 100, 500, 1000, 5000];
+/** From this many decoys on, the button needs a second click. */
+const LAB_CONFIRM_FROM = 1000;
+/** Stop a batch early when Windows keeps refusing to start decoys. */
+const LAB_MAX_FAILS_IN_A_ROW = 25;
+
+const fmtRam = (mb: number) => (mb >= 1024 ? `${(mb / 1024).toFixed(1)} GB` : `${Math.round(mb)} MB`);
 
 /** Secret tab: starts a batch of random decoys at once. The user picks how many, never which games. */
 export function LabView() {
   const t = useT();
   const { games, running, settings, syncRunning, toast, setSecret, setView, lang } = useStore();
   const eligible = useMemo(() => games.filter((g) => g.exes.length > 0), [games]);
-  const max = Math.min(LAB_MAX, eligible.length);
+  const max = eligible.length;
   const [count, setCount] = useState(25);
+  const [armed, setArmed] = useState(false);
   const [prog, setProg] = useState<{ done: number; total: number } | null>(null);
   const cancel = useRef(false);
-  const n = Math.max(1, Math.min(count, max || 1));
+  const n = Math.max(1, Math.min(Math.round(count) || 1, max || 1));
+  const big = n >= LAB_CONFIRM_FROM;
 
   const launchAll = async () => {
     cancel.current = false;
@@ -102,8 +122,10 @@ export function LabView() {
     const pick = pool.slice(0, n);
     setProg({ done: 0, total: pick.length });
     let ok = 0;
-    for (const g of pick) {
+    let failsInARow = 0;
+    for (let i = 0; i < pick.length; i++) {
       if (cancel.current) break;
+      const g = pick[i];
       try {
         await api.launch({
           gameId: g.id,
@@ -112,20 +134,37 @@ export function LabView() {
           minutes: settings.minutes,
           autoStop: settings.autoStop,
           notify: false,
+          smart: false, // Discord only reports one "visible" game, so there is nothing to wait for in a batch
           notifyTitle: "",
           notifyBody: "",
         });
         ok++;
+        failsInARow = 0;
       } catch {
-        /* skip a game that fails to start */
+        if (++failsInARow >= LAB_MAX_FAILS_IN_A_ROW) {
+          toast("error", t("lab.limit", { n: ok.toLocaleString() }));
+          break;
+        }
       }
-      setProg((p) => p && { ...p, done: p.done + 1 });
-      if (ok % 10 === 0) await syncRunning();
-      await new Promise((r) => setTimeout(r, 30));
+      if (i % 10 === 9) {
+        setProg({ done: i + 1, total: pick.length });
+        await new Promise((r) => setTimeout(r, 0)); // let the window repaint
+      }
     }
     await syncRunning();
     setProg(null);
-    toast("ok", t("toast.labDone", { n: ok }));
+    toast("ok", t("toast.labDone", { n: ok.toLocaleString() }));
+  };
+
+  const go = () => {
+    // thousands of processes can freeze the computer: ask once more
+    if (big && !armed) {
+      setArmed(true);
+      setTimeout(() => setArmed(false), 6000);
+      return;
+    }
+    setArmed(false);
+    void launchAll();
   };
 
   return (
@@ -139,31 +178,47 @@ export function LabView() {
         <h3>{t("lab.eligible", { n: eligible.length.toLocaleString(lang) })}</h3>
         <Row title={t("lab.count")} desc={t("lab.count.desc", { n: settings.minutes })}>
           <div className="stepper">
-            <button onClick={() => setCount(Math.max(1, n - 5))} disabled={!!prog}>−</button>
-            <span style={{ minWidth: 46 }}>{n}</span>
-            <button onClick={() => setCount(Math.min(max, n + 5))} disabled={!!prog}>+</button>
+            <button onClick={() => setCount(Math.max(1, n - Math.max(1, Math.round(n / 10))))} disabled={!!prog}>−</button>
+            <input
+              className="num"
+              type="number"
+              min={1}
+              max={max}
+              value={count}
+              disabled={!!prog}
+              onChange={(e) => setCount(Number(e.target.value))}
+              onBlur={() => setCount(n)}
+              aria-label={t("lab.count")}
+            />
+            <button onClick={() => setCount(Math.min(max, n + Math.max(1, Math.round(n / 10))))} disabled={!!prog}>+</button>
           </div>
         </Row>
         <div className="lab-presets">
-          {LAB_PRESETS.filter((p) => p <= max).map((p) => (
-            <button key={p} className={"chip" + (n === p ? " on" : "")} onClick={() => setCount(p)} disabled={!!prog}>{p}</button>
+          {LAB_PRESETS.filter((p) => p < max).map((p) => (
+            <button key={p} className={"chip" + (n === p ? " on" : "")} onClick={() => setCount(p)} disabled={!!prog}>{p.toLocaleString(lang)}</button>
           ))}
+          <button className={"chip" + (n === max ? " on" : "")} onClick={() => setCount(max)} disabled={!!prog || !max}>{t("lab.all", { n: max.toLocaleString(lang) })}</button>
+        </div>
+
+        <div className={"lab-estimate" + (big ? " hot" : "")}>
+          <I.warn size={15} />
+          <span>{t("lab.estimate", { n: n.toLocaleString(lang), ram: fmtRam(n * MB_PER_DECOY) })}</span>
         </div>
 
         {prog ? (
           <div className="lab-prog">
             <div className="bar"><i style={{ width: `${(prog.done / prog.total) * 100}%` }} /></div>
             <div className="lab-prog-row">
-              <span>{t("lab.launching", { done: prog.done, total: prog.total })}</span>
+              <span>{t("lab.launching", { done: prog.done.toLocaleString(lang), total: prog.total.toLocaleString(lang) })}</span>
               <button className="btn ghost sm" onClick={() => (cancel.current = true)}>{t("lab.cancel")}</button>
             </div>
           </div>
         ) : (
-          <button className="btn primary big lab-go" onClick={launchAll} disabled={!max}>
-            <I.play size={14} />{t("lab.launch", { n })}
+          <button className={"btn big lab-go " + (armed ? "danger" : "primary")} onClick={go} disabled={!max}>
+            <I.play size={14} />{armed ? t("lab.confirm", { n: n.toLocaleString(lang) }) : t("lab.launch", { n: n.toLocaleString(lang) })}
           </button>
         )}
-        <p className="lab-warn">{t("lab.warn", { max: LAB_MAX })}</p>
+        <p className="lab-warn">{t("lab.warn")}</p>
       </div>
 
       <div className="lab-foot">
@@ -176,7 +231,7 @@ export function LabView() {
               toast("info", t("toast.allStopped"));
             }}
           >
-            <I.stop size={13} />{t("running.stopAll")} · {running.length}
+            <I.stop size={13} />{t("running.stopAll")} · {running.length.toLocaleString(lang)}
           </button>
         )}
         <button
@@ -216,11 +271,20 @@ function Row({ title, desc, children }: { title: string; desc?: string; children
 
 export function SettingsView() {
   const t = useT();
-  const { settings, setSettings, refreshGames, refreshing, fetchedMs, games, lang, setLang } = useStore();
+  const { settings, setSettings, refreshGames, refreshing, fetchedMs, games, lang, setLang, update, checkUpdate } = useStore();
   const [info, setInfo] = useState<{ version: string; portable: boolean; dataDir: string } | null>(null);
   useEffect(() => {
     api.appInfo().then(setInfo).catch(() => {});
   }, []);
+
+  const updateStatus =
+    update.status === "checking" ? t("update.checking")
+    : update.status === "uptodate" ? t("update.uptodate")
+    : update.status === "available" || update.status === "downloading" || update.status === "ready" || update.status === "installing" ? t("update.available", { v: update.version ?? "" })
+    : update.status === "error" ? t("update.error", { e: update.error ?? "" })
+    : "";
+  const updateBusy = update.status === "checking" || update.status === "downloading" || update.status === "installing";
+
   return (
     <section className="page">
       <div className="page-head">
@@ -234,7 +298,7 @@ export function SettingsView() {
       <div className="panel">
         <h3>{t("settings.general")}</h3>
         <Row title={t("settings.language")} desc={t("settings.language.desc")}>
-<Select
+          <Select
             value={lang}
             onChange={setLang}
             searchPlaceholder={t("lib.search")}
@@ -242,16 +306,27 @@ export function SettingsView() {
             options={languages.map((l) => ({ value: l.code, label: l.name, hint: l.english && l.english !== l.name ? l.english : undefined }))}
           />
         </Row>
+        <Row title={t("settings.updates")} desc={t("update.current", { v: info?.version ?? "…" }) + (updateStatus ? " · " + updateStatus : "")}>
+          <button className="btn ghost" onClick={() => void checkUpdate(true)} disabled={updateBusy}>
+            <span className={update.status === "checking" ? "spin" : ""}><I.refresh size={16} /></span>{t("settings.checkNow")}
+          </button>
+        </Row>
+        <Row title={t("settings.autoUpdate")} desc={t("settings.autoUpdate.desc")}>
+          <Toggle on={settings.autoUpdate} onChange={(v) => setSettings({ autoUpdate: v })} />
+        </Row>
       </div>
 
       <div className="panel">
         <h3>{t("settings.stubs")}</h3>
-        <Row title={t("settings.defaultTime")} desc={t("settings.defaultTime.desc")}>
+        <Row title={t("settings.defaultTime")} desc={t("settings.defaultTime.desc", { n: settings.minutes })}>
           <div className="stepper">
             <button onClick={() => setSettings({ minutes: Math.max(1, settings.minutes - 1) })}>−</button>
             <span>{settings.minutes}</span>
             <button onClick={() => setSettings({ minutes: Math.min(240, settings.minutes + 1) })}>+</button>
           </div>
+        </Row>
+        <Row title={t("settings.smartTimer")} desc={t("settings.smartTimer.desc")}>
+          <Toggle on={settings.smartTimer} onChange={(v) => setSettings({ smartTimer: v })} />
         </Row>
         <Row title={t("settings.autoStop")} desc={t("settings.autoStop.desc")}>
           <Toggle on={settings.autoStop} onChange={(v) => setSettings({ autoStop: v })} />

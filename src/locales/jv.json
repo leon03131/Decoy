@@ -1,24 +1,21 @@
 {
-  "_meta": { "name": "Basa Jawa" },
-
+  "_meta": {
+    "name": "Basa Jawa"
+  },
   "nav.library": "Kapustakan",
   "nav.favorites": "Pilihan",
   "nav.running": "Mlaku",
   "nav.settings": "Setelan",
-
   "discord.checking": "Mriksa…",
   "discord.up": "Mlaku",
   "discord.down": "Ora mlaku",
-
   "window.minimize": "Cilikake",
   "window.maximize": "Gedhekake",
   "window.close": "Tutup",
-
   "tag.live": "Mlaku",
   "tag.noExe": "ora ana exe",
   "tag.exeCount": "{n} exe",
   "tag.launcher": "launcher",
-
   "lib.title": "Kapustakan",
   "lib.subtitle": "{n} game kanthi proses sing dimangerteni · dianyari {date}",
   "lib.loading": "Ngunggah basis data game…",
@@ -36,13 +33,11 @@
   "lib.addFavorite": "Tambah menyang pilihan",
   "lib.empty.title": "Ora ana sing ditemokake",
   "lib.empty.text": "Coba jeneng liyane utawa uripake “Tampilake game tanpa exe”.",
-
   "fav.title": "Pilihan",
   "fav.count": "{n} game",
   "fav.hint": "Tandhani game nganggo lintang",
   "fav.empty.title": "Durung ana apa-apa ing kene",
   "fav.empty.text": "Pencet lintang ing kothak game kanggo nambahake mrene.",
-
   "detail.process": "Proses",
   "detail.duration": "Suwene mlaku",
   "detail.minutes": "{n} mnt",
@@ -62,7 +57,6 @@
   "detail.favorite": "Pilihan",
   "detail.close": "Tutup",
   "detail.id": "ID {id}",
-
   "running.title": "Mlaku",
   "running.count": "{n} decoy aktif",
   "running.none": "Ora ana sing mlaku saiki",
@@ -70,14 +64,36 @@
   "running.stop": "Mandheg",
   "running.empty.title": "Ora ana sing mlaku",
   "running.empty.text": "Bukak game ing kapustakan banjur pencet “Mulai decoy”.",
-
   "settings.title": "Setelan",
   "settings.general": "Umum",
   "settings.language": "Basa",
   "settings.language.desc": "Basa antarmuka. Basa anyar ditambahake minangka berkas ing folder locales.",
   "settings.stubs": "Decoy",
   "settings.defaultTime": "Suwene standar",
-  "settings.defaultTime.desc": "Pira menit njaga proses (quest Discord biasane butuh 15).",
+  "settings.defaultTime.desc": "Pira menit proses bakal dipertahankan. Standare yaiku 16, dudu 15: misi Discord njaluk wektu muter 15 menit, nanging Discord mbutuhake nganti sakmenit kanggo ngelingi game anyar, dadi pas 15 menit ora cukup.",
+  "settings.smartTimer": "Timer pinter",
+  "settings.smartTimer.desc": "Ngetung mudhun diwiwiti nalika Discord wis ndeteksi decoy, dudu nalika sampeyan miwiti. Kanggo mangerteni babagan kasebut, aplikasi mung maca baris babagan game sing lagi mlaku saka log lokal Discord; ora ana sing disimpen utawa dikirim menyang endi wae.",
+  "settings.updates": "Pembaruan",
+  "settings.checkNow": "Priksa saiki",
+  "settings.autoUpdate": "Pembaruan otomatis",
+  "settings.autoUpdate.desc": "Priksa GitHub nalika wiwitan lan saben 6 jam banjur undhuh versi anyar ing latar mburi. Masang tansah ngenteni konfirmasi sampeyan, lan file diverifikasi nganggo tanda tangan digitale.",
+  "update.current": "Versi sing dipasang {v}",
+  "update.checking": "Mriksa…",
+  "update.uptodate": "Sampeyan ana ing versi paling anyar",
+  "update.available": "Versi {v} kasedhiya",
+  "update.downloading": "Ngundhuh versi {v}… {p}%",
+  "update.ready": "Versi {v} wis siap dipasang",
+  "update.installing": "Masang lan miwiti maneh…",
+  "update.download": "Undhuh",
+  "update.restart": "Wiwiti maneh lan anyari",
+  "update.later": "Mengko",
+  "update.notes": "Apa sing anyar",
+  "update.running": "Decoy sing lagi mlaku ({n}) bakal mandheg.",
+  "update.error": "Ora bisa nganyari: {e}",
+  "detail.waiting": "ngenteni Discord",
+  "detail.waitingNote": "Discord mbutuhake nganti sakmenit kanggo ndeteksi game. Ngetung mudhun diwiwiti nalika ndeteksi decoy.",
+  "detail.detected": "Discord wis ndeteksi decoy",
+  "detail.assumed": "Discord durung ngonfirmasi, nanging wektu tetep diitung.",
   "settings.autoStop": "Mandheg nganggo wektu",
   "settings.autoStop.desc": "Decoy bakal mandheg dhewe yen wektune wis entek.",
   "settings.notify": "Wenehi kabar yen rampung",
@@ -97,7 +113,6 @@
   "settings.files": "Berkas",
   "settings.open": "Bukak",
   "settings.legal": "Decoy ora nggunakake token Discord sampeyan lan ora nampa quest kanggo sampeyan. Malsokake proses game bisa wae nglanggar aturan Discord, gunakake kanthi resiko dhewe.",
-
   "toast.launched": "“{name}” diwiwiti suwene {n} mnt. Discord bakal ndeteksi kira-kira 15 detik maneh.",
   "toast.stopped": "Decoy mandheg",
   "toast.allStopped": "Kabeh decoy mandheg",
@@ -105,7 +120,6 @@
   "toast.refreshGained": "{n} game entuk berkas exe: {names}",
   "toast.refreshAdded": "Basis data dianyari: +{n} game anyar",
   "toast.refreshUpToDate": "Basis data wis paling anyar",
-
   "nav.lab": "Lab",
   "lab.title": "Lab",
   "lab.subtitle": "Tab rahasia: miwiti akeh decoy bebarengan.",
@@ -115,16 +129,19 @@
   "lab.launch": "Mulai {n} game",
   "lab.launching": "Miwiti {done} saka {total}…",
   "lab.cancel": "Batal",
-  "lab.warn": "Saben decoy iku proses kapisah kanthi jendhela. Luwih saka 200–300 bebarengan bisa ngalonake komputer sampeyan, maksimal yaiku {max}.",
+  "lab.warn": "Saben decoy yaiku proses kapisah sing duwe jendhela. Kakehan ing wektu sing padha bisa nggawe komputer macet: saben proses lan jendhela nganggo memori, lan sawise ewonan jendhela Windows bisa uga mandheg nggawe maneh. Yen sampeyan nutup Decoy, kabeh decoy mandheg.",
+  "lab.all": "Kabeh ({n})",
+  "lab.estimate": "{n} decoy bakal nganggo kira-kira {ram} RAM.",
+  "lab.confirm": "Klik maneh kanggo miwiti {n}",
+  "lab.limit": "Windows mandheg miwiti proses anyar sawise {n}: iku watesan sistem.",
+  "running.more": "…lan {n} liyane. 120 pisanan ditampilake.",
   "lab.hide": "Delikake tab iki",
   "toast.labUnlocked": "Tab rahasia “Lab” dibukak",
   "toast.labHidden": "Tab didelikake",
   "toast.labDone": "Game sing diwiwiti: {n}",
-
   "tray.show": "Bukak Decoy",
   "tray.stop": "Mandhegake kabeh decoy",
   "tray.quit": "Metu",
-
   "notify.title": "Wektune wis entek",
   "notify.body": "{name}: {n} mnt wis kliwat."
 }
