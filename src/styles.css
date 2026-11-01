@@ -285,7 +285,11 @@ h1 { font-size: 26px; font-weight: 650; letter-spacing: -0.03em; line-height: 1.
 /* lab: memory estimate and typed count */
 .lab-estimate { display: flex; align-items: center; gap: 10px; margin: 4px 0 14px; padding: 10px 13px; border-radius: 10px; font-size: 12.5px; line-height: 1.4; color: var(--muted); background: var(--surface); border: 1px solid var(--border); }
 .lab-estimate svg { flex: none; }
+.lab-estimate { align-items: flex-start; }
+.lab-estimate svg { margin-top: 2px; }
 .lab-estimate.hot { color: #f6d490; background: rgba(240, 184, 74, 0.08); border-color: rgba(240, 184, 74, 0.35); }
+.lab-estimate.bad { color: #ffc2c1; background: rgba(242, 112, 111, 0.09); border-color: rgba(242, 112, 111, 0.45); }
+.lab-risk { margin-top: 5px; font-size: 12px; line-height: 1.5; opacity: 0.92; }
 .stepper input.num { width: 76px; height: 100%; text-align: center; font-weight: 650; font-size: 13px; background: none; border: 0; outline: 0; appearance: textfield; -moz-appearance: textfield; user-select: text; }
 .stepper input.num::-webkit-outer-spin-button, .stepper input.num::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 

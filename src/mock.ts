@@ -63,6 +63,8 @@ export async function mockInvoke(cmd: string, args: any = {}): Promise<any> {
       }
       return info;
     }
+    case "discord_memory":
+      return 980;
     case "check_update":
       // preview the banner in a plain browser: localStorage.setItem('mockUpdate', '1')
       return localStorage.getItem("mockUpdate") ? { version: "9.9.9", current: "dev", notes: "Preview", ready: false } : null;

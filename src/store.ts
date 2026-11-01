@@ -15,6 +15,16 @@ export interface Settings {
   smartTimer: boolean;
   /** look for new versions on GitHub and download them in the background */
   autoUpdate: boolean;
+  /** Lab: allow more decoys than the safe maximum (Discord itself can break far above it) */
+  labUnlocked: boolean;
+}
+
+/** Set when the Discord guard stopped every decoy because Discord's memory use was ballooning. */
+export interface GuardEvent {
+  memoryMb: number;
+  growthMb: number;
+  count: number;
+  at: number;
 }
 
 export type UpdateStatus = "idle" | "checking" | "uptodate" | "available" | "downloading" | "ready" | "installing" | "error";
@@ -54,6 +64,7 @@ interface State {
   dismissedUpdate: string | null;
   // session
   update: UpdateState;
+  guard: GuardEvent | null;
   /** bumped when a language file finishes loading, so translated text re-renders */
   langRev: number;
   games: IndexedGame[];
@@ -88,6 +99,7 @@ interface State {
   downloadUpdate: () => Promise<void>;
   installUpdate: () => Promise<void>;
   dismissUpdate: () => void;
+  tripGuard: (e: Omit<GuardEvent, "at">) => void;
 }
 
 const index = (games: Game[]): IndexedGame[] =>
@@ -109,9 +121,10 @@ export const useStore = create<State>()(
       recent: [],
       lastExe: {},
       // 16, not 15: quests ask for 15 minutes of play, and Discord needs up to a minute to notice a new game
-      settings: { minutes: 16, autoStop: true, notify: true, closeToTray: true, showNoExe: false, smartTimer: true, autoUpdate: true },
+      settings: { minutes: 16, autoStop: true, notify: true, closeToTray: true, showNoExe: false, smartTimer: true, autoUpdate: true, labUnlocked: false },
       dismissedUpdate: null,
       update: { status: "idle" },
+      guard: null,
       viewMode: "grid",
       lang: detectLang(),
       secret: false,
@@ -243,6 +256,12 @@ export const useStore = create<State>()(
       },
 
       dismissUpdate: () => set((s) => ({ dismissedUpdate: s.update.version ?? null })),
+
+      tripGuard: (e) => {
+        set({ guard: { ...e, at: Date.now() } });
+        get().toast("error", get().tr("guard.tripped", { gb: (e.memoryMb / 1024).toFixed(1), grew: (e.growthMb / 1024).toFixed(1) }));
+        void get().syncRunning();
+      },
     }),
     {
       name: "decoy-state",

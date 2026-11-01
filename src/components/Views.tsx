@@ -90,29 +90,59 @@ export function RunningView() {
 
 // measured with 300 real decoys: about 1.6 MB of RAM each (process + window); rounded up
 const MB_PER_DECOY = 2;
-const LAB_PRESETS = [10, 50, 100, 500, 1000, 5000];
-/** From this many decoys on, the button needs a second click. */
-const LAB_CONFIRM_FROM = 1000;
+const LAB_PRESETS = [10, 50, 100, 250, 500, 1000, 2500, 5000, 10000];
+/** The default maximum. Above it Discord itself can break (see the unlock switch). */
+const LAB_SAFE_MAX = 1000;
+/** From this many decoys on Discord is asked to track a lot of games and may slow down. */
+const LAB_CAUTION_FROM = 250;
+/** From here on the button needs a second click. */
+const LAB_CONFIRM_FROM = 250;
 /** Stop a batch early when Windows keeps refusing to start decoys. */
 const LAB_MAX_FAILS_IN_A_ROW = 25;
+/** Pause between launches: Discord reacts to every new game, so they must not appear all at once. */
+const LAB_PACE_MS = 40;
+/** A longer breather after every this many decoys. */
+const LAB_BREATH_EVERY = 100;
+const LAB_BREATH_MS = 600;
+/** Re-check Discord's memory every this many launches. */
+const LAB_GUARD_EVERY = 25;
+/** Stop launching when Discord's memory grew this much (MB) since the batch began, or passes this total. */
+const LAB_DISCORD_GROWTH_MB = 1500;
+const LAB_DISCORD_TOTAL_MB = 4500;
 
 const fmtRam = (mb: number) => (mb >= 1024 ? `${(mb / 1024).toFixed(1)} GB` : `${Math.round(mb)} MB`);
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 /** Secret tab: starts a batch of random decoys at once. The user picks how many, never which games. */
 export function LabView() {
   const t = useT();
-  const { games, running, settings, syncRunning, toast, setSecret, setView, lang } = useStore();
+  const { games, running, settings, setSettings, syncRunning, toast, setSecret, setView, lang } = useStore();
   const eligible = useMemo(() => games.filter((g) => g.exes.length > 0), [games]);
-  const max = eligible.length;
+  const max = settings.labUnlocked ? eligible.length : Math.min(eligible.length, LAB_SAFE_MAX);
   const [count, setCount] = useState(25);
   const [armed, setArmed] = useState(false);
   const [prog, setProg] = useState<{ done: number; total: number } | null>(null);
+  const [discordMb, setDiscordMb] = useState<number | null>(null);
   const cancel = useRef(false);
   const n = Math.max(1, Math.min(Math.round(count) || 1, max || 1));
-  const big = n >= LAB_CONFIRM_FROM;
+  const caution = n >= LAB_CAUTION_FROM;
+  const danger = n > LAB_SAFE_MAX;
+
+  // how much memory Discord uses right now (it is the one that gets hurt by too many decoys)
+  useEffect(() => {
+    let alive = true;
+    const poll = () => api.discordMemory().then((mb) => alive && setDiscordMb(mb)).catch(() => {});
+    poll();
+    const id = setInterval(poll, 3000);
+    return () => {
+      alive = false;
+      clearInterval(id);
+    };
+  }, []);
 
   const launchAll = async () => {
     cancel.current = false;
+    const startedAt = Date.now();
     const busy = new Set(running.map((r) => r.gameId));
     const pool = eligible.filter((g) => !busy.has(g.id));
     for (let i = pool.length - 1; i > 0; i--) {
@@ -121,10 +151,15 @@ export function LabView() {
     }
     const pick = pool.slice(0, n);
     setProg({ done: 0, total: pick.length });
+    const baseMb = await api.discordMemory().catch(() => 0);
     let ok = 0;
     let failsInARow = 0;
+    let stoppedBy: "guard" | "discord" | null = null;
     for (let i = 0; i < pick.length; i++) {
       if (cancel.current) break;
+      // the backend guard stopped everything while this batch was running
+      const guard = useStore.getState().guard;
+      if (guard && guard.at >= startedAt) { stoppedBy = "guard"; break; }
       const g = pick[i];
       try {
         await api.launch({
@@ -146,19 +181,30 @@ export function LabView() {
           break;
         }
       }
-      if (i % 10 === 9) {
-        setProg({ done: i + 1, total: pick.length });
-        await new Promise((r) => setTimeout(r, 0)); // let the window repaint
+      // protect Discord: stop adding decoys as soon as its memory starts to balloon
+      if (i % LAB_GUARD_EVERY === LAB_GUARD_EVERY - 1) {
+        const now = await api.discordMemory().catch(() => 0);
+        if (baseMb && (now - baseMb > LAB_DISCORD_GROWTH_MB || now > LAB_DISCORD_TOTAL_MB)) {
+          stoppedBy = "discord";
+          break;
+        }
       }
+      if (i % 10 === 9) setProg({ done: i + 1, total: pick.length });
+      await sleep(i % LAB_BREATH_EVERY === LAB_BREATH_EVERY - 1 ? LAB_BREATH_MS : LAB_PACE_MS);
+    }
+    if (stoppedBy === "discord") {
+      await api.stopAll().catch(() => {});
+      const nowMb = await api.discordMemory().catch(() => 0);
+      toast("error", t("guard.tripped", { gb: (nowMb / 1024).toFixed(1), grew: (Math.max(0, nowMb - baseMb) / 1024).toFixed(1) }));
     }
     await syncRunning();
     setProg(null);
-    toast("ok", t("toast.labDone", { n: ok.toLocaleString() }));
+    if (!stoppedBy) toast("ok", t("toast.labDone", { n: ok.toLocaleString() }));
   };
 
   const go = () => {
-    // thousands of processes can freeze the computer: ask once more
-    if (big && !armed) {
+    // many decoys put real load on Discord: ask once more
+    if (n >= LAB_CONFIRM_FROM && !armed) {
       setArmed(true);
       setTimeout(() => setArmed(false), 6000);
       return;
@@ -200,9 +246,13 @@ export function LabView() {
           <button className={"chip" + (n === max ? " on" : "")} onClick={() => setCount(max)} disabled={!!prog || !max}>{t("lab.all", { n: max.toLocaleString(lang) })}</button>
         </div>
 
-        <div className={"lab-estimate" + (big ? " hot" : "")}>
+        <div className={"lab-estimate" + (danger ? " bad" : caution ? " hot" : "")}>
           <I.warn size={15} />
-          <span>{t("lab.estimate", { n: n.toLocaleString(lang), ram: fmtRam(n * MB_PER_DECOY) })}</span>
+          <div>
+            <div>{t("lab.estimate", { n: n.toLocaleString(lang), ram: fmtRam(n * MB_PER_DECOY) })}</div>
+            {caution && <div className="lab-risk">{danger ? t("lab.risk.high") : t("lab.risk.mid")}</div>}
+            {discordMb != null && discordMb > 0 && <div className="lab-risk">{t("lab.discordRam", { gb: (discordMb / 1024).toFixed(1) })}</div>}
+          </div>
         </div>
 
         {prog ? (
@@ -214,11 +264,21 @@ export function LabView() {
             </div>
           </div>
         ) : (
-          <button className={"btn big lab-go " + (armed ? "danger" : "primary")} onClick={go} disabled={!max}>
+          <button className={"btn big lab-go " + (armed || danger ? "danger" : "primary")} onClick={go} disabled={!max}>
             <I.play size={14} />{armed ? t("lab.confirm", { n: n.toLocaleString(lang) }) : t("lab.launch", { n: n.toLocaleString(lang) })}
           </button>
         )}
         <p className="lab-warn">{t("lab.warn")}</p>
+
+        <Row title={t("lab.unlock", { max: LAB_SAFE_MAX.toLocaleString(lang) })} desc={t("lab.unlock.desc")}>
+          <Toggle
+            on={settings.labUnlocked}
+            onChange={(v) => {
+              setSettings({ labUnlocked: v });
+              if (!v) setCount((c) => Math.min(c, LAB_SAFE_MAX));
+            }}
+          />
+        </Row>
       </div>
 
       <div className="lab-foot">

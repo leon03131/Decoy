@@ -201,7 +201,22 @@ docs/                   translating guide, screenshots
 - Discord can change how detection works at any time. If a decoy stops being recognized, please open an issue.
 - The smart timer depends on what Discord writes to its log, and Discord only logs the game it currently shows. If it
   cannot confirm a decoy within 90 seconds, Decoy starts the countdown anyway. Batches in the Lab do not use it.
-- Thousands of decoys at once (Lab) use memory and windows; Windows may refuse to create more after some thousands.
+- **Many decoys at once can hurt Discord itself.** Discord tracks and reports every game it detects, so each decoy
+  costs Discord work too. Once, 5,000 decoys started together drove Discord's renderer past 10 GB of RAM and into a
+  crash loop every 30 seconds, which only went away after its local data was reset. The hidden Lab therefore starts decoys
+  gradually, allows at most 1,000 by default, shows Discord's memory use live and stops every decoy if that memory
+  jumps. It is a safety net, not a guarantee; unlocking higher numbers is at your own risk. Windows itself may also
+  refuse to create more windows after some thousands.
+
+### If Discord ever gets stuck (huge memory use, crashing again and again)
+
+This is what repaired it after the 5,000-decoy incident, and it is reversible because nothing is deleted:
+
+1. Stop all decoys in Decoy (or close it) and quit Discord completely, including from the system tray.
+2. In `%APPDATA%\discord`, rename the folders `Local Storage` (and, if that is not enough, `module_data`, `Session
+   Storage` and `Cache`) to something like `Local Storage.bak`.
+3. Start Discord again. You may have to log in again. Do not move the `.bak` folders back; you can delete them once
+   Discord is stable.
 - Some activities need more than a running process (for example being inside a particular experience of a game
   platform). Decoy only imitates the process.
 - Entries without executables in Discord's list cannot be detected.

@@ -53,6 +53,8 @@ export interface UpdateInfo {
 export const api = {
   getGames: () => invoke<GamesPayload>("get_games"),
   refreshGames: () => invoke<GamesPayload>("refresh_games"),
+  /** private memory (MB) of all Discord processes together */
+  discordMemory: () => invoke<number>("discord_memory"),
   checkUpdate: () => invoke<UpdateInfo | null>("check_update"),
   downloadUpdate: () => invoke<void>("download_update"),
   installUpdate: () => invoke<void>("install_update"),

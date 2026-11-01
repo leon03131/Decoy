@@ -1,7 +1,7 @@
 {
   "name": "decoy",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Tiny stand-in processes that make Discord think a game is running.",
   "license": "MIT",
   "repository": {

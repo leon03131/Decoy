@@ -648,6 +648,78 @@ fn discord_running() -> bool {
     })
 }
 
+// ---------------------------------------------------------------- Discord guard
+
+/// Private memory (MB) used by all Discord processes together.
+fn discord_memory_mb() -> u64 {
+    use windows_sys::Win32::Foundation::CloseHandle;
+    use windows_sys::Win32::System::ProcessStatus::{K32GetProcessMemoryInfo, PROCESS_MEMORY_COUNTERS_EX};
+    use windows_sys::Win32::System::Threading::{OpenProcess, PROCESS_QUERY_LIMITED_INFORMATION};
+    let mut total: u64 = 0;
+    for (pid, name) in list_processes() {
+        let n = name.to_lowercase();
+        if !(n == "discord.exe" || n == "discordptb.exe" || n == "discordcanary.exe") {
+            continue;
+        }
+        unsafe {
+            let h = OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, 0, pid);
+            if h.is_null() {
+                continue;
+            }
+            let mut c: PROCESS_MEMORY_COUNTERS_EX = std::mem::zeroed();
+            c.cb = std::mem::size_of::<PROCESS_MEMORY_COUNTERS_EX>() as u32;
+            if K32GetProcessMemoryInfo(h, &mut c as *mut _ as *mut _, c.cb) != 0 {
+                total += c.PrivateUsage as u64;
+            }
+            CloseHandle(h);
+        }
+    }
+    total / (1024 * 1024)
+}
+
+#[tauri::command]
+async fn discord_memory() -> Result<u64, String> {
+    tauri::async_runtime::spawn_blocking(discord_memory_mb).await.map_err(|e| e.to_string())
+}
+
+/// From this many running decoys on, Discord's memory use is watched.
+const GUARD_MIN_DECOYS: usize = 50;
+/// Stop everything when Discord's memory grew by more than this (MB) since the watch began...
+const GUARD_GROWTH_MB: u64 = 2048;
+/// ...or when Discord uses more than this (MB) in total. (Normal use is about 1 GB.)
+const GUARD_TOTAL_MB: u64 = 5120;
+
+fn env_mb(name: &str, default: u64) -> u64 {
+    std::env::var(name).ok().and_then(|v| v.parse().ok()).unwrap_or(default)
+}
+
+/// Every running game is tracked and reported by Discord itself, so a very large number of decoys can push Discord
+/// into a runaway state (5,000 decoys once drove its renderer past 10 GB and into a crash loop). While many decoys run,
+/// this watches Discord's memory and stops all decoys the moment it starts to balloon.
+fn start_discord_guard(app: AppHandle) {
+    std::thread::spawn(move || {
+        let growth_limit = env_mb("DECOY_GUARD_GROWTH_MB", GUARD_GROWTH_MB); // overridable for tests
+        let total_limit = env_mb("DECOY_GUARD_TOTAL_MB", GUARD_TOTAL_MB);
+        let mut baseline: Option<u64> = None;
+        loop {
+            std::thread::sleep(Duration::from_secs(4));
+            let count = app.state::<AppState>().running.lock().unwrap().len();
+            if count < GUARD_MIN_DECOYS {
+                baseline = None;
+                continue;
+            }
+            let now = discord_memory_mb();
+            let base = *baseline.get_or_insert(now);
+            let growth = now.saturating_sub(base);
+            if now > total_limit || growth > growth_limit {
+                kill_all(&app);
+                baseline = None;
+                let _ = app.emit("guard-tripped", serde_json::json!({ "memoryMb": now, "growthMb": growth, "count": count }));
+            }
+        }
+    });
+}
+
 // ---------------------------------------------------------------- Discord notices a decoy
 
 /// Discord's renderer logs (stable, PTB, Canary). Only the lines about the game that Discord shows as
@@ -899,6 +971,7 @@ pub fn run() {
         .manage(update::UpdateState::default())
         .manage(AppState { running: Mutex::new(HashMap::new()), job: make_job(), close_to_tray: AtomicBool::new(true), tray_items: Mutex::new(None) })
         .invoke_handler(tauri::generate_handler![
+            discord_memory,
             update::check_update,
             update::download_update,
             update::install_update,
@@ -977,6 +1050,7 @@ pub fn run() {
                 }
             }
             start_discord_watcher(app.handle().clone());
+            start_discord_guard(app.handle().clone());
 
             // `decoy.exe --launch <exe path> [minutes]` starts a decoy right away (handy for scripts and tests)
             let args: Vec<String> = std::env::args().collect();

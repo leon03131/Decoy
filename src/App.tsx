@@ -61,6 +61,7 @@ export default function App() {
           }),
           listen("run-stopped", () => syncRunning()),
           listen("run-detected", () => syncRunning()),
+          listen<{ memoryMb: number; growthMb: number; count: number }>("guard-tripped", (e) => useStore.getState().tripGuard(e.payload)),
           listen<{ downloaded: number; total: number | null }>("update-progress", (e) => {
             const { downloaded, total } = e.payload;
             useStore.setState((s) => ({ update: { ...s.update, progress: total ? Math.min(1, downloaded / total) : undefined } }));

@@ -3,6 +3,17 @@
 All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [0.2.1] - 2026-11-02
+
+### Fixed
+- **Lab could break Discord.** Starting thousands of decoys at once made Discord's renderer balloon past 10 GB of RAM and
+  crash in a loop. Now decoys are started gradually, at most 1,000 by default (an explicit switch unlocks more), Discord's
+  memory use is shown live, and everything is stopped automatically if that memory jumps. A watchdog in the app does the
+  same whenever 50 or more decoys are running, however they were started.
+
+### Added
+- A troubleshooting note in the README on how to recover a Discord that got stuck.
+
 ## [0.2.0] - 2026-11-01
 
 ### Added
