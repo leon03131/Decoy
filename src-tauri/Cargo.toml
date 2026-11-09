@@ -1,6 +1,6 @@
 [package]
 name = "decoy"
-version = "0.2.1"
+version = "0.2.2"
 description = "Tiny stand-in processes that make Discord think a game is running."
 license = "MIT"
 repository = "https://github.com/leon03131/Decoy"

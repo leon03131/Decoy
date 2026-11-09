@@ -17,6 +17,8 @@ export interface Settings {
   autoUpdate: boolean;
   /** Lab: allow more decoys than the safe maximum (Discord itself can break far above it) */
   labUnlocked: boolean;
+  /** Lab: sort key of the last game launched in alphabetical order ("" = start from the beginning) */
+  labLast: string;
 }
 
 /** Set when the Discord guard stopped every decoy because Discord's memory use was ballooning. */
@@ -121,7 +123,7 @@ export const useStore = create<State>()(
       recent: [],
       lastExe: {},
       // 16, not 15: quests ask for 15 minutes of play, and Discord needs up to a minute to notice a new game
-      settings: { minutes: 16, autoStop: true, notify: true, closeToTray: true, showNoExe: false, smartTimer: true, autoUpdate: true, labUnlocked: false },
+      settings: { minutes: 16, autoStop: true, notify: true, closeToTray: true, showNoExe: false, smartTimer: true, autoUpdate: true, labUnlocked: false, labLast: "" },
       dismissedUpdate: null,
       update: { status: "idle" },
       guard: null,
@@ -271,7 +273,7 @@ export const useStore = create<State>()(
         const s = persisted as { settings?: Partial<Settings> } | undefined;
         if (s?.settings) {
           if (version < 2 && s.settings.minutes === 15) s.settings.minutes = 16;
-          s.settings = { smartTimer: true, autoUpdate: true, ...s.settings };
+          s.settings = { smartTimer: true, autoUpdate: true, labLast: "", ...s.settings };
         }
         return persisted as never;
       },

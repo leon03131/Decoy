@@ -3,6 +3,13 @@
 All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [0.2.2] - 2026-11-03
+
+### Changed
+- **Lab goes through the games in alphabetical order** instead of picking them at random. Each batch continues right
+  after the last game of the previous one, the position is remembered between launches, and the tab shows the progress
+  with a *Start over* button. Games that are already running are skipped, and the list wraps around at the end.
+
 ## [0.2.1] - 2026-11-02
 
 ### Fixed

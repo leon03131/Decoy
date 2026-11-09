@@ -116,6 +116,14 @@ Games whose Discord entry has no executables yet are hidden by default (they can
 *Show games without exe* to see them; the list is refreshed daily, so they become available as soon as Discord adds
 a process.
 
+### Lab: many games at once
+
+There is a hidden **Lab** tab (tap *Settings* ten times quickly). You choose only how many games to start; the games
+themselves go in **alphabetical order**, batch after batch: start 100, later another 100, and the next batch continues
+right after the last game of the previous one. Decoy remembers the position between launches, shows how far you got
+(*Done so far: N of M*) and has a *Start over* button. Games that are already running are skipped, and at the end of
+the list it wraps around. See *Known limitations* below for the limits that protect Discord.
+
 ### Command line
 
 ```

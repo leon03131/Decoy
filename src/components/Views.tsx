@@ -113,11 +113,17 @@ const LAB_DISCORD_TOTAL_MB = 4500;
 const fmtRam = (mb: number) => (mb >= 1024 ? `${(mb / 1024).toFixed(1)} GB` : `${Math.round(mb)} MB`);
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
-/** Secret tab: starts a batch of random decoys at once. The user picks how many, never which games. */
+/** Sort key of the Lab's alphabetical order; the last launched key is stored in settings. */
+const labKey = (g: { nameLc: string; id: string }) => g.nameLc + "\u0000" + g.id;
+
+/** Secret tab: starts a batch of decoys at once, going through the alphabetical list batch by batch. The user picks how many, never which games. */
 export function LabView() {
   const t = useT();
   const { games, running, settings, setSettings, syncRunning, toast, setSecret, setView, lang } = useStore();
   const eligible = useMemo(() => games.filter((g) => g.exes.length > 0), [games]);
+  const alpha = useMemo(() => [...eligible].sort((a, b) => (labKey(a) < labKey(b) ? -1 : 1)), [eligible]);
+  const doneBefore = settings.labLast ? alpha.filter((g) => labKey(g) <= settings.labLast).length : 0;
+  const nextGame = alpha[doneBefore >= alpha.length ? 0 : doneBefore];
   const max = settings.labUnlocked ? eligible.length : Math.min(eligible.length, LAB_SAFE_MAX);
   const [count, setCount] = useState(25);
   const [armed, setArmed] = useState(false);
@@ -144,17 +150,17 @@ export function LabView() {
     cancel.current = false;
     const startedAt = Date.now();
     const busy = new Set(running.map((r) => r.gameId));
-    const pool = eligible.filter((g) => !busy.has(g.id));
-    for (let i = pool.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [pool[i], pool[j]] = [pool[j], pool[i]];
-    }
-    const pick = pool.slice(0, n);
+    // alphabetical, continuing after the last game of the previous batch (wraps around at the end)
+    const ordered = alpha.filter((g) => !busy.has(g.id));
+    const from = ordered.findIndex((g) => labKey(g) > settings.labLast);
+    const start = from < 0 ? 0 : from;
+    const pick = ordered.slice(start).concat(ordered.slice(0, start)).slice(0, n);
     setProg({ done: 0, total: pick.length });
     const baseMb = await api.discordMemory().catch(() => 0);
     let ok = 0;
     let failsInARow = 0;
     let stoppedBy: "guard" | "discord" | null = null;
+    let done = 0;
     for (let i = 0; i < pick.length; i++) {
       if (cancel.current) break;
       // the backend guard stopped everything while this batch was running
@@ -181,6 +187,7 @@ export function LabView() {
           break;
         }
       }
+      done = i + 1;
       // protect Discord: stop adding decoys as soon as its memory starts to balloon
       if (i % LAB_GUARD_EVERY === LAB_GUARD_EVERY - 1) {
         const now = await api.discordMemory().catch(() => 0);
@@ -197,6 +204,8 @@ export function LabView() {
       const nowMb = await api.discordMemory().catch(() => 0);
       toast("error", t("guard.tripped", { gb: (nowMb / 1024).toFixed(1), grew: (Math.max(0, nowMb - baseMb) / 1024).toFixed(1) }));
     }
+    // remember where this batch ended, so the next one continues from there
+    if (done > 0) setSettings({ labLast: labKey(pick[done - 1]) });
     await syncRunning();
     setProg(null);
     if (!stoppedBy) toast("ok", t("toast.labDone", { n: ok.toLocaleString() }));
@@ -238,6 +247,12 @@ export function LabView() {
             />
             <button onClick={() => setCount(Math.min(max, n + Math.max(1, Math.round(n / 10))))} disabled={!!prog}>+</button>
           </div>
+        </Row>
+        <Row
+          title={t("lab.progress", { done: doneBefore.toLocaleString(lang), total: alpha.length.toLocaleString(lang) })}
+          desc={nextGame ? t("lab.next", { name: nextGame.name }) : ""}
+        >
+          <button className="btn ghost sm" onClick={() => setSettings({ labLast: "" })} disabled={!!prog || !settings.labLast}>{t("lab.reset")}</button>
         </Row>
         <div className="lab-presets">
           {LAB_PRESETS.filter((p) => p < max).map((p) => (
